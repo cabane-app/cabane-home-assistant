@@ -1,0 +1,16 @@
+{
+  "domain": "cabane",
+  "name": "Cabane",
+  "version": "0.1.0",
+  "integration_type": "service",
+  "dependencies": [
+    "websocket_api"
+  ],
+  "codeowners": [
+    "@julien-meichelbeck"
+  ],
+  "documentation": "https://github.com/julien-meichelbeck/cabane-home-assistant",
+  "issue_tracker": "https://github.com/julien-meichelbeck/cabane-home-assistant/issues",
+  "requirements": [],
+  "iot_class": "local_push"
+}
