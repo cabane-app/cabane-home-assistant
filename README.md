@@ -11,7 +11,7 @@ Choose **HACS** or **manual installation**, then enable the integration below.
 ### With HACS
 
 1. Open HACS in Home Assistant, open its menu, and choose **Custom repositories**.
-2. Add `https://github.com/julien-meichelbeck/cabane-home-assistant` with the type **Integration**.
+2. Add `https://github.com/cabane-app/cabane-home-assistant` with the type **Integration**.
 3. Find **Cabane** in HACS and download it.
 4. Continue with **Enable the integration** below.
 
@@ -19,7 +19,7 @@ This repository is added manually to HACS; it is not listed in the default catal
 
 ### Manual installation
 
-1. [Download this repository](https://github.com/julien-meichelbeck/cabane-home-assistant/archive/refs/heads/main.zip) and unzip it.
+1. [Download this repository](https://github.com/cabane-app/cabane-home-assistant/archive/refs/heads/main.zip) and unzip it.
 2. Find your Home Assistant configuration directory, the one containing `configuration.yaml`. On Home Assistant OS this is usually `/config`, accessible through a file editor or network share.
 3. Copy the **cabane** folder from `custom_components` into your Home Assistant `custom_components` directory. Create `custom_components` if needed.
 
@@ -78,7 +78,7 @@ Workspace backups contain household area/entity mappings. They do **not** contai
 | Load is disabled | Save this workspace once. To load a different saved workspace, use the Workspaces Import flow. |
 | Changes are not appearing on another device | Open the same workspace and enable auto-sync in that browser, or use **Load**. |
 
-If you need help, [open an issue](https://github.com/julien-meichelbeck/cabane-home-assistant/issues). Do not attach credentials or private workspace backups.
+If you need help, [open an issue](https://github.com/cabane-app/cabane-home-assistant/issues). Do not attach credentials or private workspace backups.
 
 ## Development
 
