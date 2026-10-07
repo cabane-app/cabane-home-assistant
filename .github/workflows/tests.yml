@@ -11,3 +11,5 @@ jobs:
         with:
           python-version: '3.13'
       - run: python -m unittest discover -s tests -v
+      - name: Validate complete vendored release
+        run: python scripts/package_release.py

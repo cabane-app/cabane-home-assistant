@@ -1,0 +1,14 @@
+{
+  "title": "Cabane",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up Cabane",
+        "description": "Add Cabane to the sidebar and enable shared workspace storage. The native panel uses your Home Assistant session; no additional sign-in is required. Install a complete integration release containing the native frontend assets."
+      }
+    },
+    "abort": {
+      "already_configured": "Cabane is already configured."
+    }
+  }
+}

@@ -1,0 +1,38 @@
+name: Package release
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m unittest discover -s tests -v
+      # Require the complete native artifact and matching release version.
+      - run: python scripts/package_release.py --version "$RELEASE_TAG"
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cabane-release
+          path: dist/cabane.zip
+          if-no-files-found: error
+  draft:
+    needs: package
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: cabane-release
+      - name: Create draft for acceptance review
+        run: gh release create "$RELEASE_TAG" cabane.zip --repo "$GITHUB_REPOSITORY" --verify-tag --draft --generate-notes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_TAG: ${{ github.ref_name }}

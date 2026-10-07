@@ -1,9 +1,11 @@
 {
   "domain": "cabane",
   "name": "Cabane",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "integration_type": "service",
   "dependencies": [
+    "frontend",
+    "http",
     "websocket_api"
   ],
   "codeowners": [
@@ -12,5 +14,6 @@
   "documentation": "https://github.com/cabane-app/cabane-home-assistant",
   "issue_tracker": "https://github.com/cabane-app/cabane-home-assistant/issues",
   "requirements": [],
-  "iot_class": "local_push"
+  "iot_class": "local_push",
+  "config_flow": true
 }
