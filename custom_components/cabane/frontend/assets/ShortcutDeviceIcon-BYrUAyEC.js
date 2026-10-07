@@ -111528,7 +111528,7 @@ function W9({ entry: e }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/furnish/catalog/thumbnailCache.ts
-var G9 = "cabane-model-previews-cf6b594dc03fcb83aeb6", K9 = /* @__PURE__ */ new Map(), q9 = 400;
+var G9 = "cabane-model-previews-2ad7a4b7f34fa6095c3e", K9 = /* @__PURE__ */ new Map(), q9 = 400;
 function J9(e, t) {
 	K9.delete(e), K9.set(e, t), K9.size > q9 && K9.delete(K9.keys().next().value);
 }

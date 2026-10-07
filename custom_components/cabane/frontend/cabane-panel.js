@@ -1,5 +1,5 @@
 import { r as e } from "./assets/rolldown-runtime-B0aSnxlc.js";
-import { $ as t, An as n, Bt as r, C as i, D as a, Dn as o, E as s, F as c, Ft as l, G as u, It as d, Jt as f, Lt as p, O as m, On as h, Q as g, Rt as _, S as v, U as y, Ut as b, Vt as x, X as S, Xt as C, Z as w, _ as T, _r as E, at as D, b as O, d as k, f as A, g as j, h as M, it as N, kn as ee, l as P, m as te, n as ne, nt as re, o as ie, qt as ae, rt as oe, st as F, t as I, tn as se, v as ce, w as le, y as ue, yr as de, zt as L } from "./assets/ShortcutDeviceIcon-5RYpA2WW.js";
+import { $ as t, An as n, Bt as r, C as i, D as a, Dn as o, E as s, F as c, Ft as l, G as u, It as d, Jt as f, Lt as p, O as m, On as h, Q as g, Rt as _, S as v, U as y, Ut as b, Vt as x, X as S, Xt as C, Z as w, _ as T, _r as E, at as D, b as O, d as k, f as A, g as j, h as M, it as N, kn as ee, l as P, m as te, n as ne, nt as re, o as ie, qt as ae, rt as oe, st as F, t as I, tn as se, v as ce, w as le, y as ue, yr as de, zt as L } from "./assets/ShortcutDeviceIcon-BYrUAyEC.js";
 //#region node_modules/react-router/dist/development/chunk-BV7QT456.mjs
 var R = /* @__PURE__ */ e(de(), 1), fe = (e) => {
 	throw TypeError(e);
@@ -5159,7 +5159,7 @@ function eo({ record: e, lifecycle: t, origin: n, onChangeOrigin: r, onRecordCha
 }
 //#endregion
 //#region apps/web/src/RoutedHomeEditor.tsx
-var to = (0, R.lazy)(() => import("./assets/HomeEditor-BZgz3di5.js").then((e) => ({ default: e.HomeEditor })));
+var to = (0, R.lazy)(() => import("./assets/HomeEditor-Pz8jXvh_.js").then((e) => ({ default: e.HomeEditor })));
 function no({ onClose: e, ...t }) {
 	let n = Z(), r = Or(), i = (0, R.useMemo)(() => ({
 		...n.state?.editorRequest,
@@ -5853,12 +5853,13 @@ function bo(e) {
 		#a;
 		#o;
 		#s;
+		#c = () => this.#l();
 		constructor() {
 			super();
 			let t = this.ownerDocument, n = this.attachShadow({ mode: "open" }), r = t.createElement("link");
 			r.rel = "stylesheet", r.href = new URL("cabane-panel.css", e.assetBaseUrl).href;
 			let i = t.createElement("style");
-			i.textContent = "\n        :host { display:grid; grid-template-rows:48px minmax(0,1fr); height:100%; min-height:0; min-width:0; contain:layout paint; }\n        .panel-toolbar { display:flex; gap:12px; align-items:center; background:var(--app-header-background-color,#f4efe5); color:var(--app-header-text-color,#35433a); font:500 16px system-ui; padding:0 12px; border-bottom:1px solid #80808030; }\n        .panel-toolbar button { display:grid; place-items:center; background:none; border:0; color:inherit; width:40px; height:40px; padding:8px; border-radius:8px; }\n        .panel-toolbar svg { width:24px; height:24px; fill:currentColor; }\n        .panel-content { position:relative; min-width:0; min-height:0; overflow:hidden; contain:layout paint; container:cabane / size; }\n        #root { position:relative; inset:auto; width:100%; height:100%; min-width:0; margin:0; overflow:hidden; }\n        #cabane-portals { position:absolute; inset:0; pointer-events:none; z-index:1000; }\n        #cabane-portals > * { pointer-events:auto; }\n        .panel-waiting { position:absolute; inset:0; display:grid; place-items:center; padding:24px; font:14px system-ui; background:#f4efe5; color:#35433a; }\n        .panel-waiting[hidden] { display:none; }\n      ";
+			i.textContent = "\n        :host { display:grid; grid-template-rows:48px minmax(0,1fr); height:calc(100dvh - var(--cabane-panel-top, 0px) - var(--safe-area-inset-bottom, 0px)); min-height:0; min-width:0; contain:layout paint; }\n        .panel-toolbar { display:flex; gap:12px; align-items:center; background:var(--app-header-background-color,#f4efe5); color:var(--app-header-text-color,#35433a); font:500 16px system-ui; padding:0 12px; border-bottom:1px solid #80808030; }\n        .panel-toolbar button { display:grid; place-items:center; background:none; border:0; color:inherit; width:40px; height:40px; padding:8px; border-radius:8px; }\n        .panel-toolbar svg { width:24px; height:24px; fill:currentColor; }\n        .panel-content { position:relative; min-width:0; min-height:0; overflow:hidden; contain:layout paint; container:cabane / size; }\n        #root { position:relative; inset:auto; width:100%; height:100%; min-width:0; margin:0; overflow:hidden; }\n        #cabane-portals { position:absolute; inset:0; pointer-events:none; z-index:1000; }\n        #cabane-portals > * { pointer-events:auto; }\n        .panel-waiting { position:absolute; inset:0; display:grid; place-items:center; padding:24px; font:14px system-ui; background:#f4efe5; color:#35433a; }\n        .panel-waiting[hidden] { display:none; }\n      ";
 			let a = t.createElement("header");
 			a.className = "panel-toolbar";
 			let o = t.createElement("button");
@@ -5874,7 +5875,7 @@ function bo(e) {
 			t !== this.#e?.connection && (this.#e = t ? {
 				connection: t,
 				origin: this.ownerDocument.location.origin
-			} : null, this.#l());
+			} : null, this.#u());
 		}
 		set narrow(e) {
 			this.toggleAttribute("narrow", e);
@@ -5882,16 +5883,17 @@ function bo(e) {
 		set route(e) {}
 		set panel(e) {}
 		connectedCallback() {
-			this.#r ??= yo(this.ownerDocument, new URL("cabane-fonts.css", e.assetBaseUrl).href), typeof ResizeObserver < "u" && (this.#n = new ResizeObserver(() => this.#c()), this.#n.observe(this.#i)), this.#c(), this.#l();
+			this.ownerDocument.defaultView?.addEventListener("resize", this.#c), this.#r ??= yo(this.ownerDocument, new URL("cabane-fonts.css", e.assetBaseUrl).href), typeof ResizeObserver < "u" && (this.#n = new ResizeObserver(() => this.#l()), this.#n.observe(this.#i)), this.#l(), this.#u();
 		}
 		disconnectedCallback() {
-			this.#t?.dispose(), this.#t = null, this.#n?.disconnect(), this.#n = null, this.#r?.(), this.#r = null, this.#o.replaceChildren();
+			this.ownerDocument.defaultView?.removeEventListener("resize", this.#c), this.#t?.dispose(), this.#t = null, this.#n?.disconnect(), this.#n = null, this.#r?.(), this.#r = null, this.#o.replaceChildren();
 		}
-		#c() {
+		#l() {
+			this.style.setProperty("--cabane-panel-top", `${Math.max(0, this.getBoundingClientRect().top)}px`);
 			let { width: e, height: t } = this.#i.getBoundingClientRect();
 			e > 0 && this.style.setProperty("--cabane-panel-width", `${e}px`), t > 0 && this.style.setProperty("--cabane-panel-height", `${t}px`);
 		}
-		#l() {
+		#u() {
 			if (this.isConnected) {
 				if (this.#s.hidden = !!this.#e, !this.#e) {
 					this.#t?.dispose(), this.#t = null;
