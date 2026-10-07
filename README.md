@@ -1,123 +1,115 @@
 # Cabane for Home Assistant
 
-Cabane runs as a native Home Assistant sidebar panel and stores your homes on
-Home Assistant. The bundled frontend uses your existing HA session without a
-second login, a separate server, or an iframe.
+Add Cabane to your Home Assistant sidebar and save your homes on your own
+instance. The panel runs locally and uses your existing Home Assistant session.
 
-The native frontend, borrowed-session runtime, integration setup, and release
-packaging are implemented. Automated tests include a browser host fixture;
-disposable Home Assistant installation and real iOS Companion acceptance remain
-release checks. See the [build and acceptance contract](docs/frontend-artifact.md).
+## What is Cabane?
 
-## Install a complete native-panel release
+[Cabane](https://cabane.my/) is a visual interface for your smart home. Draw your
+floor plan, view it in 3D, and connect rooms and devices to Home Assistant.
 
-Home Assistant 2024.7 or newer is required by the static asset API.
-Use HTTPS; plain HTTP is supported only for paired loopback development origins.
+You can use it in your browser at **[cabane.my](https://cabane.my/)** or install
+this integration to open it inside Home Assistant. The integration also lets you
+save and sync workspaces across browsers. A workspace includes your home, draft,
+and device mappings.
 
-1. Open **HACS → Custom repositories** and add
+## Install
+
+Requires **Home Assistant 2024.7 or newer** and **HTTPS**.
+
+1. In **HACS → Custom repositories**, add
    `https://github.com/cabane-app/cabane-home-assistant` as an **Integration**.
-2. Download **Cabane**, selecting a complete release, then restart Home Assistant.
-3. Open **Settings → Devices & services → Add integration → Cabane** and confirm.
-4. Open **Cabane** from the Home Assistant sidebar.
+2. Download **Cabane** and restart Home Assistant.
+3. Go to **Settings → Devices & services → Add integration → Cabane** and confirm.
+4. Open **Cabane** from the sidebar.
 
-The integration registers the panel and serves its bundled files locally. No
-`www` copy, manual `panel_custom` YAML, separate Cabane server, or second HA
-sign-in is needed. HACS downloads files; the HA setup step enables the integration.
-This is a custom repository, not a listing in HACS's default catalog.
+Cabane is a HACS custom repository, not part of the default catalog. No manual
+panel configuration or separate server is needed.
 
-For manual installation, download the release's **cabane.zip** asset and extract
-its contents into `/config/custom_components/cabane/` (or your HA configuration
-directory's equivalent), then restart and use the same setup flow. The folder must
-contain `__init__.py`, `manifest.json`, the other Python modules, `translations/`
-and the complete `frontend/` directory. GitHub's automatic source-code zip is not
-the native-panel installation asset.
+For manual installation, download **cabane.zip** from the
+[latest release](https://github.com/cabane-app/cabane-home-assistant/releases/latest)
+and extract it into `/config/custom_components/cabane/`. Keep the full archive
+contents, including `frontend/`. Restart Home Assistant, then follow steps 3–4.
+Use **cabane.zip**, not GitHub's source-code archive.
 
-## Existing installations and updates
+## Save and sync
 
-Existing `cabane:` YAML is imported into a single UI entry on startup. Your saved
-workspaces stay in `.storage/cabane.workspaces`. After confirming the entry appears
-in **Devices & services**, remove the old `cabane:` line; otherwise deleting the
-UI entry will cause it to be imported again on the next restart.
+In your workspace's **Home Assistant** page, choose **Use this Home Assistant**,
+then **Enable HA storage → Save**. On cabane.my, sign in to your Home Assistant
+instance first.
 
-Update through HACS, fully restart Home Assistant, then reload the browser or
-Companion frontend. Reloading YAML alone does not update Python code or already
-loaded JS. Each frontend build has a new asset URL namespace.
+- **Save** uploads the whole workspace to Home Assistant.
+- **Load** replaces the browser copy with the saved version, downloading a backup
+  of the browser copy first.
+- **Sync automatically** syncs changes while the workspace is open. Save once to
+  enable it. Offline edits stay in the browser until you reconnect.
+- **Delete saved copy** removes the Home Assistant copy and turns off sync. The
+  browser copy stays.
 
-A manually configured panel already using `/cabane` must be removed before the
-native panel can register. The integration reports that conflict and does not
-replace another panel. Existing external iframe dashboard cards are not converted
-automatically; open the native sidebar entry instead.
+On another browser, choose **Workspaces → Import → From Home Assistant**.
+If copies conflict, Cabane asks which one to keep.
 
-Removing or disabling the UI entry removes the sidebar panel. It does not delete
-saved workspaces. Static application routes and storage WebSocket handlers remain
-until the next HA restart. To fully disable the integration, remove its YAML and
-UI entry, then restart. Remove saved copies explicitly in Cabane if desired.
+### Moving from cabane.my
 
-## Bring your home into the panel
+The website and sidebar panel have separate browser storage. To move a home,
+save it to Home Assistant or export a private workspace backup on cabane.my,
+then import it in the panel. If the workspace connects to a different Home
+Assistant instance, change that connection explicitly.
 
-Browser storage under **cabane.my** is separate from storage under Home Assistant's
-origin. Opening the panel will not automatically reveal homes created on cabane.my.
-Before switching, save the home to HA storage or export a private workspace backup.
-In the native panel, import from that same HA instance or from the private backup.
-Existing workspace connections to a different HA instance must be explicitly
-changed; they must not silently attach to the host instance.
+## Updates and migration
 
-Both native and standalone Cabane support these storage features:
+Update through HACS, restart Home Assistant, then reload your browser or the
+Companion app. Reloading YAML alone is not enough.
 
-- **Save** uploads the whole workspace: published home, draft, and device mappings.
-- **Load** brings the saved copy into this browser. Cabane downloads the current
-  browser copy before replacing it.
-- **Sync automatically** keeps changes in sync while the workspace is open. Save
-  once before enabling it. Offline edits stay in the browser until reconnection.
-- **Delete saved copy** removes the HA copy and turns off sync; the browser copy stays.
+If you previously added `cabane:` to your YAML, the integration imports it on
+startup. Once Cabane appears in **Devices & services**, remove that YAML line.
+Saved workspaces remain in `.storage/cabane.workspaces`.
 
-To use storage, enable this integration. In Cabane's workspace **Home Assistant**
-page, choose **Use this Home Assistant** in the native panel, or sign in to your
-instance in standalone Cabane, then choose
-**Enable HA storage → Save**. On another browser use **Workspaces → Import → From
-Home Assistant**. Standalone Cabane still uses its own OAuth sign-in; the native
-panel uses HA's session instead. Conflicts ask which copy to keep.
+Remove any manual panel using `/cabane` before installing. Existing iframe cards
+are not migrated; use the sidebar entry instead.
 
-## Sharing and privacy
+To uninstall, remove the integration entry and any `cabane:` YAML, then restart
+Home Assistant. Saved workspaces remain unless you delete them in Cabane.
 
-All signed-in users of this HA instance can read, change, or delete its saved
-Cabane workspaces. Use separate workspaces for independent homes. Workspace
-backups contain household area/entity mappings, but no OAuth credentials or tokens.
-The integration makes no external network requests and stores workspaces locally.
-Keep HA backups that include the configuration directory; sync is not a backup.
+## Privacy and access
 
-Bundled application files are public static code, separate from authenticated
-workspace storage. The native frontend contract forbids public-site analytics,
-forwarding HA tokens to cabane.my, and closing or revoking HA's session when Cabane
-unmounts. The panel disposes its own subscriptions when closed and leaves HA connected.
+Workspaces are stored locally on Home Assistant. **Every signed-in user on that
+instance can read, edit, and delete them.** Backups include room and device
+mappings, but no OAuth credentials or tokens.
+
+The integration makes no external network requests. The sidebar panel uses Home
+Assistant's session; standalone Cabane signs in through OAuth.
+
+Include your Home Assistant configuration directory in your backups. Sync is
+not a backup.
 
 ## Troubleshooting
 
-| Problem | What to do |
+| Problem | Fix |
 | --- | --- |
-| Native frontend bundle missing or invalid | Reinstall a complete release and restart HA. Do not substitute the standalone web build. |
-| Cabane absent from Add integration | Restart HA after HACS installation and reload the frontend; confirm the integration files exist. |
-| Sidebar path already registered | Remove the conflicting manual panel configuration and restart HA. |
-| Home missing in the panel | Import from HA storage or a private backup; cabane.my browser storage is a different origin. |
-| Old UI after update | Restart HA and reload the browser or Companion frontend. |
-| Standalone sign-in fails | Use HTTPS for Cabane and HA; HTTP development is supported only for paired loopback addresses. Allow the OAuth popup. |
-| Load is disabled | Save once, or import a different saved workspace from the Workspaces screen. |
-| Changes absent on another device | Open the same workspace and enable auto-sync, or use Load. |
+| Cabane is missing from Add integration | Restart Home Assistant after installation and reload the frontend. |
+| Frontend bundle is missing or invalid | Reinstall the full **cabane.zip** release and restart. |
+| Sidebar path is already registered | Remove the manual panel using `/cabane` and restart. |
+| Home is missing in the panel | Import it from Home Assistant storage or a private backup. |
+| Old UI after an update | Restart Home Assistant and reload the browser or Companion app. |
+| Standalone sign-in fails | Use HTTPS for both Cabane and Home Assistant, and allow the sign-in popup. |
+| Load is disabled | Save once, or import a saved workspace from the Workspaces screen. |
+| Changes are missing on another device | Open the same workspace and enable auto-sync, or choose Load. |
 
-[Open an issue](https://github.com/cabane-app/cabane-home-assistant/issues) for help.
+Still stuck? [Open an issue](https://github.com/cabane-app/cabane-home-assistant/issues).
 Do not attach credentials or private workspace backups.
 
 ## Development
+
+Run the tests:
 
 ```sh
 python3 -m unittest discover -s tests -v
 ```
 
-Tests cover storage validation/conflicts, WebSocket registration, native artifact
-validation, install/update archive layout, config flow and panel lifecycle against
-HA API doubles. The real frontend is bundled, with its source revision and asset digests. No live
-HA instance, household device, or real iOS Companion acceptance has been exercised.
-See [the build/release contract](docs/frontend-artifact.md) for maintainer commands
-and the remaining HA installation and owner-device checks.
+See the [build and release guide](docs/frontend-artifact.md) for frontend bundling,
+packaging, and acceptance checks. Automated tests use Home Assistant API doubles;
+live installation and iOS Companion checks are separate release steps. Plain HTTP
+is supported only for paired loopback development origins.
 
-Licensed under the [MIT license](LICENSE).
+[MIT license](LICENSE).
