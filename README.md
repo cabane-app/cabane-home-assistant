@@ -32,6 +32,24 @@ and extract it into `/config/custom_components/cabane/`. Keep the full archive
 contents, including `frontend/`. Restart Home Assistant, then follow steps 3–4.
 Use **cabane.zip**, not GitHub's source-code archive.
 
+## Open Cabane directly
+
+The **Cabane** sidebar entry opens the panel in your browser or the Home Assistant
+Companion app, using your existing Home Assistant login.
+
+- **Browser:** bookmark your Home Assistant URL with `/cabane` at the end, for
+  example `https://your-home-assistant.example/cabane`.
+- **Companion app:** create a phone shortcut that opens
+  `homeassistant://navigate/cabane`. If you have multiple servers, add
+  `?server=Your%20Server%20Name`. See the
+  [Companion app URL handler](https://companion.home-assistant.io/docs/integrations/url-handler/)
+  for details.
+
+Cabane is a custom sidebar panel and does not appear in Home Assistant's default
+dashboard picker. The bookmark or shortcut opens it directly.
+
+If your home is on cabane.my, [import it into the panel once](#moving-from-cabanemy).
+
 ## Save and sync
 
 In your workspace's **Home Assistant** page, choose **Use this Home Assistant**,
