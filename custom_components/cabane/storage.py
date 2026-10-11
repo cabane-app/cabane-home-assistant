@@ -1,9 +1,13 @@
 """Versioned, instance-wide Cabane workspace documents."""
 
+from __future__ import annotations
+
 import asyncio
 import copy
 import json
 import re
+
+from .model_assets import AssetError, document_references
 
 MAX_DOCUMENT_BYTES = 5 * 1024 * 1024
 HOME_ID = re.compile(r"^[A-Za-z0-9_-]{1,128}$")
@@ -22,7 +26,11 @@ class CorruptStorageError(Exception):
 
 
 def validate_document(home_id: str, document: str) -> None:
-    if not isinstance(home_id, str) or not HOME_ID.fullmatch(home_id) or not isinstance(document, str):
+    if (
+        not isinstance(home_id, str)
+        or not HOME_ID.fullmatch(home_id)
+        or not isinstance(document, str)
+    ):
         raise InvalidDocumentError()
     if len(document.encode("utf-8")) > MAX_DOCUMENT_BYTES:
         raise InvalidDocumentError()
@@ -30,29 +38,54 @@ def validate_document(home_id: str, document: str) -> None:
         value = json.loads(document)
     except (ValueError, TypeError) as exc:
         raise InvalidDocumentError() from exc
-    if not isinstance(value, dict) or value.get("format") != "cabane-workspace" or value.get("version") != 1:
+    if (
+        not isinstance(value, dict)
+        or value.get("format") != "cabane-workspace"
+        or value.get("version") != 1
+    ):
         raise InvalidDocumentError()
     if set(value) != {"format", "version", "workspace", "record"}:
         raise InvalidDocumentError()
     metadata, record = value.get("workspace"), value.get("record")
-    if not isinstance(metadata, dict) or not isinstance(record, dict) or record.get("homeId") != home_id:
+    if (
+        not isinstance(metadata, dict)
+        or not isinstance(record, dict)
+        or record.get("homeId") != home_id
+    ):
         raise InvalidDocumentError()
     if set(metadata) != {"name", "homeAssistantUrl", "hasPublished"}:
         raise InvalidDocumentError()
-    if not set(record) <= {"schemaVersion", "homeId", "seedRevision", "revision", "draft", "published", "bindings", "draftUpdatedAt", "publishedAt"}:
+    if not set(record) <= {
+        "schemaVersion",
+        "homeId",
+        "seedRevision",
+        "revision",
+        "draft",
+        "published",
+        "bindings",
+        "draftUpdatedAt",
+        "publishedAt",
+    }:
         raise InvalidDocumentError()
     if not isinstance(metadata.get("name"), str) or not metadata["name"].strip():
         raise InvalidDocumentError()
-    if not (metadata.get("homeAssistantUrl") is None or isinstance(metadata.get("homeAssistantUrl"), str)):
+    if not (
+        metadata.get("homeAssistantUrl") is None
+        or isinstance(metadata.get("homeAssistantUrl"), str)
+    ):
         raise InvalidDocumentError()
-    if not isinstance(metadata.get("hasPublished"), bool) or record.get("schemaVersion") != 2:
+    if (
+        not isinstance(metadata.get("hasPublished"), bool)
+        or record.get("schemaVersion") != 2
+    ):
         raise InvalidDocumentError()
 
 
 class WorkspaceStore:
     """Uses one HA Store and one lock for atomic version checks."""
 
-    def __init__(self, backend):
+    def __init__(self, backend, assets=None):
+        self.assets = assets
         self._backend = backend
         self._lock = asyncio.Lock()
 
@@ -60,7 +93,11 @@ class WorkspaceStore:
         data = await self._backend.async_load()
         if data is None:
             return {"documents": {}, "versions": {}}
-        if not isinstance(data, dict) or not isinstance(data.get("documents"), dict) or not isinstance(data.get("versions"), dict):
+        if (
+            not isinstance(data, dict)
+            or not isinstance(data.get("documents"), dict)
+            or not isinstance(data.get("versions"), dict)
+        ):
             raise CorruptStorageError()
         return copy.deepcopy(data)
 
@@ -74,9 +111,18 @@ class WorkspaceStore:
                     metadata = json.loads(document)["workspace"]
                     version = data["versions"][home_id]
                 except (KeyError, TypeError, InvalidDocumentError, ValueError):
-                    result.append({"home_id": home_id, "name": "Damaged workspace", "version": data["versions"].get(home_id), "corrupt": True})
+                    result.append(
+                        {
+                            "home_id": home_id,
+                            "name": "Damaged workspace",
+                            "version": data["versions"].get(home_id),
+                            "corrupt": True,
+                        }
+                    )
                     continue
-                result.append({"home_id": home_id, "name": metadata["name"], "version": version})
+                result.append(
+                    {"home_id": home_id, "name": metadata["name"], "version": version}
+                )
             return sorted(result, key=lambda item: item["name"].lower())
 
     async def get(self, home_id: str) -> dict | None:
@@ -87,7 +133,9 @@ class WorkspaceStore:
             document = data["documents"].get(home_id)
             if document is None:
                 version = data["versions"].get(home_id)
-                return None if version is None else {"version": version, "document": None}
+                return (
+                    None if version is None else {"version": version, "document": None}
+                )
             version = data["versions"].get(home_id)
             if not isinstance(version, int):
                 raise CorruptStorageError()
@@ -97,7 +145,9 @@ class WorkspaceStore:
                 return {"version": version, "document": document, "corrupt": True}
             return {"version": version, "document": document}
 
-    async def put(self, home_id: str, document: str, expected_version: int | None) -> int:
+    async def put(
+        self, home_id: str, document: str, expected_version: int | None
+    ) -> int:
         validate_document(home_id, document)
         async with self._lock:
             data = await self._load()
@@ -112,7 +162,15 @@ class WorkspaceStore:
             version = (current or 0) + 1
             data["versions"][home_id] = version
             data["documents"][home_id] = document
-            await self._backend.async_save(data)
+            references = document_references(document)
+            if references and self.assets is None:
+                raise AssetError("Update the Cabane integration to store GLB files.")
+            if self.assets is not None:
+                async with self.assets.lock:
+                    await self.assets.verify_locked(references)
+                    await self._backend.async_save(data)
+            else:
+                await self._backend.async_save(data)
             return version
 
     async def delete(self, home_id: str, expected_version: int) -> None:
@@ -120,8 +178,26 @@ class WorkspaceStore:
             raise InvalidDocumentError()
         async with self._lock:
             data = await self._load()
-            if home_id not in data["documents"] or data["versions"].get(home_id) != expected_version:
+            if (
+                home_id not in data["documents"]
+                or data["versions"].get(home_id) != expected_version
+            ):
                 raise ConflictError()
             del data["documents"][home_id]
             data["versions"][home_id] = expected_version + 1
             await self._backend.async_save(data)
+
+    async def cleanup_assets(self):
+        if self.assets is None:
+            return
+        async with self._lock:
+            data = await self._load()
+            referenced = set()
+            try:
+                for home_id, document in data["documents"].items():
+                    validate_document(home_id, document)
+                    referenced.update(document_references(document))
+            except (AssetError, InvalidDocumentError, KeyError, TypeError, ValueError):
+                # A damaged document may still own files. Preserve recovery data.
+                return
+            await self.assets.cleanup(referenced)

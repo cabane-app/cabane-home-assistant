@@ -14,19 +14,31 @@ async def async_setup(hass, config):
     from homeassistant.config_entries import SOURCE_IMPORT
     from homeassistant.helpers.storage import Store
 
+    from datetime import timedelta
+    from homeassistant.helpers.event import async_track_time_interval
+    from .model_assets import ModelAssetStore
     from .storage import WorkspaceStore
     from .websocket import register_commands
 
     # Commands capture this store, so both must live for the HA process lifetime.
     # Panel failure/unload must not reset storage or register duplicate handlers.
     if DOMAIN not in hass.data:
-        store = WorkspaceStore(Store(hass, 1, "cabane.workspaces"))
+        assets = ModelAssetStore(hass.config.path(".storage", "cabane-assets"))
+        store = WorkspaceStore(Store(hass, 1, "cabane.workspaces"), assets)
+
+        async def cleanup(_now):
+            await store.cleanup_assets()
+
+        # Storage and cleanup live for the HA process lifetime, like the commands.
+        async_track_time_interval(hass, cleanup, timedelta(hours=1))
         register_commands(hass, store)
         hass.data[DOMAIN] = store
     if DOMAIN in config:
-        hass.async_create_task(hass.config_entries.flow.async_init(
-            DOMAIN, context={"source": SOURCE_IMPORT}, data={}
-        ))
+        hass.async_create_task(
+            hass.config_entries.flow.async_init(
+                DOMAIN, context={"source": SOURCE_IMPORT}, data={}
+            )
+        )
     return True
 
 

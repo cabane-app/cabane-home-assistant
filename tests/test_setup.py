@@ -2,6 +2,8 @@ import asyncio
 import sys
 import types
 import unittest
+import tempfile
+from pathlib import Path
 from unittest.mock import AsyncMock, patch
 
 from test_storage import MemoryStore, document
@@ -21,10 +23,13 @@ class SetupTests(unittest.IsolatedAsyncioTestCase):
         self.panel = types.ModuleType("custom_components.cabane.panel")
         self.panel.async_setup_panel = AsyncMock()
         self.panel.async_unload_panel = lambda hass, entry: None
+        event_module = types.ModuleType("homeassistant.helpers.event")
+        event_module.async_track_time_interval = lambda *args: None
         modules = {
             "homeassistant": types.ModuleType("homeassistant"),
             "homeassistant.helpers": types.ModuleType("homeassistant.helpers"),
             "homeassistant.helpers.storage": store_module,
+            "homeassistant.helpers.event": event_module,
             "homeassistant.config_entries": config_entries,
             "custom_components.cabane.websocket": websocket,
             "custom_components.cabane.panel": self.panel,
@@ -39,8 +44,18 @@ class SetupTests(unittest.IsolatedAsyncioTestCase):
             self.tasks.append(task)
             return task
 
-        self.hass = types.SimpleNamespace(data={}, async_create_task=create_task,
-            config_entries=types.SimpleNamespace(flow=types.SimpleNamespace(async_init=self.imports)))
+        directory = tempfile.TemporaryDirectory()
+        self.addCleanup(directory.cleanup)
+        self.hass = types.SimpleNamespace(
+            config=types.SimpleNamespace(
+                path=lambda *parts: str(Path(directory.name).joinpath(*parts))
+            ),
+            data={},
+            async_create_task=create_task,
+            config_entries=types.SimpleNamespace(
+                flow=types.SimpleNamespace(async_init=self.imports)
+            ),
+        )
 
     async def test_storage_survives_panel_unload_reload_without_reregistering(self):
         await cabane.async_setup(self.hass, {})
@@ -58,7 +73,9 @@ class SetupTests(unittest.IsolatedAsyncioTestCase):
     async def test_existing_yaml_imports_ui_entry(self):
         await cabane.async_setup(self.hass, {"cabane": {}})
         await asyncio.gather(*self.tasks)
-        self.imports.assert_awaited_once_with("cabane", context={"source": "import"}, data={})
+        self.imports.assert_awaited_once_with(
+            "cabane", context={"source": "import"}, data={}
+        )
 
     async def test_ui_setup_does_not_start_yaml_import(self):
         await cabane.async_setup(self.hass, {})
@@ -68,6 +85,8 @@ class SetupTests(unittest.IsolatedAsyncioTestCase):
         await cabane.async_setup(self.hass, {})
         self.panel.async_setup_panel.side_effect = ValueError("missing bundle")
         with self.assertRaisesRegex(ValueError, "missing bundle"):
-            await cabane.async_setup_entry(self.hass, types.SimpleNamespace(entry_id="one"))
+            await cabane.async_setup_entry(
+                self.hass, types.SimpleNamespace(entry_id="one")
+            )
         store = self.hass.data["cabane"]
         self.assertEqual(await store.put("home-1", document(), None), 1)

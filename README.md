@@ -67,6 +67,29 @@ instance first.
 On another browser, choose **Workspaces → Import → From Home Assistant**.
 If copies conflict, Cabane asks which one to keep.
 
+### Personal models
+
+In Arrange, **Import GLB** adds a personal furniture/device model to the active
+home. Original materials and embedded textures are preserved. **Download AI
+skill** provides standalone Blender/Three.js examples and a local validator;
+the Cabane aesthetic is optional.
+
+GLB 2.0 files must be self-contained: 10 MiB per file, 100 MiB of distinct assets
+per home, 100,000 triangles and 128 meshes per model. Animations, embedded lights
+and cameras are ignored; the Light and Camera profiles use Cabane's existing
+controls and viewer. No custom JavaScript is executed.
+
+Model files live in `.storage/cabane-assets`, addressed by SHA-256. Authenticated
+256 KiB transfers upload missing files before the workspace document. Moving
+instances only updates the document; interrupted uploads preserve the previous
+copy. Unreferenced files are removed after 24 hours. Include both the workspace
+store and this asset directory in HA backups. Complete Cabane exports use
+`.cabane` ZIP archives; old JSON imports remain supported.
+
+Update the integration and frontend together. Older integrations can save native
+homes but display an update request for homes containing personal GLBs. The
+[asset protocol](docs/model-assets.md) documents the commands and integrity rules.
+
 ### Moving from cabane.my
 
 The website and sidebar panel have separate browser storage. To move a home,
