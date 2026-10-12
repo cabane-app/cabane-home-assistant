@@ -1,5 +1,5 @@
 import { r as e } from "./rolldown-runtime-B0aSnxlc.js";
-import { A as t, Ar as n, Bn as r, Bt as i, Ci as a, Cn as o, Dr as s, Er as c, Fn as l, Ft as u, Gr as d, Gt as f, In as p, Ir as m, Jt as h, Kr as g, Ln as _, Lt as v, Mn as y, Mr as b, Nn as ee, Nr as te, Nt as x, O as S, Or as C, P as w, Pn as T, Pt as ne, Qn as re, Qt as E, R as ie, Rt as D, Sr as O, U as ae, Ur as k, Ut as oe, Vn as se, Vt as ce, Wr as le, Wt as ue, Xt as A, Yn as de, Zn as j, Zt as fe, _n as pe, _r as me, an as he, br as ge, bt as _e, ct as ve, ei as M, en as ye, hr as be, ht as xe, ii as Se, j as Ce, mr as we, mt as Te, n as N, ni as Ee, nn as De, nr as Oe, qn as P, qr as F, qt as ke, ri as Ae, rn as je, t as Me, ti as Ne, ui as Pe, vr as Fe, vt as Ie, wi as Le, wn as I, xn as Re, xr as ze, xt as Be, y as Ve, yn as He, yr as Ue, zn as We, zr as Ge, zt as Ke } from "./LaserIcon-BfTw7vE2.js";
+import { A as t, Ar as n, Bn as r, Bt as i, Ci as a, Cn as o, Dr as s, Er as c, Fn as l, Ft as u, Gr as d, Gt as f, In as p, Ir as m, Jt as h, Kr as g, Ln as _, Lt as v, Mn as y, Mr as b, Nn as ee, Nr as te, Nt as x, O as S, Or as C, P as w, Pn as T, Pt as ne, Qn as re, Qt as E, R as ie, Rt as D, Sr as O, U as ae, Ur as k, Ut as oe, Vn as se, Vt as ce, Wr as le, Wt as ue, Xt as A, Yn as de, Zn as j, Zt as fe, _n as pe, _r as me, an as he, br as ge, bt as _e, ct as ve, ei as M, en as ye, hr as be, ht as xe, ii as Se, j as Ce, mr as we, mt as Te, n as N, ni as Ee, nn as De, nr as Oe, qn as P, qr as F, qt as ke, ri as Ae, rn as je, t as Me, ti as Ne, ui as Pe, vr as Fe, vt as Ie, wi as Le, wn as I, xn as Re, xr as ze, xt as Be, y as Ve, yn as He, yr as Ue, zn as We, zr as Ge, zt as Ke } from "./LaserIcon-CoCjCYLG.js";
 //#region packages/engine/src/home-project/definitions.ts
 var L = (e) => e, qe = (e) => e, Je = (e) => {
 	if (e === void 0) return null;
@@ -3599,8 +3599,8 @@ function er({ state: e, visualState: t, reducedMotion: n }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/covers/motorized-curtain.tsx
-function tr({ state: e, visualState: t }) {
-	let n = ((t === "disconnected" || t === "unavailable" ? null : Te(e)) ?? 35) / 100, r = .94 - n * .7, i = .48 + n * .35;
+function tr({ state: e, visualState: t, color: n }) {
+	let r = ((t === "disconnected" || t === "unavailable" ? null : Te(e)) ?? 35) / 100, i = .94 - r * .7, a = .48 + r * .35;
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		name: "catalog-motorized-curtain",
 		children: [
@@ -3638,7 +3638,7 @@ function tr({ state: e, visualState: t }) {
 			}, e)),
 			[-1, 1].map((e) => /* @__PURE__ */ (0, U.jsxs)("mesh", {
 				position: [
-					e * i,
+					e * a,
 					1.14,
 					.125
 				],
@@ -3646,11 +3646,11 @@ function tr({ state: e, visualState: t }) {
 				receiveShadow: !0,
 				children: [
 					/* @__PURE__ */ (0, U.jsx)("boxGeometry", { args: [
-						r,
+						i,
 						2.28,
 						.07
 					] }),
-					/* @__PURE__ */ (0, U.jsx)(I, { color: e < 0 ? "#d8c8ad" : "#dfcfb6" }),
+					/* @__PURE__ */ (0, U.jsx)(I, { color: n ?? (e < 0 ? "#d8c8ad" : "#dfcfb6") }),
 					/* @__PURE__ */ (0, U.jsx)(o, {
 						color: "#81745f",
 						thickness: .004
@@ -3672,7 +3672,7 @@ function tr({ state: e, visualState: t }) {
 					.012,
 					2.22,
 					.004
-				] }), /* @__PURE__ */ (0, U.jsx)(I, { color: "#b6a78f" })]
+				] }), /* @__PURE__ */ (0, U.jsx)(I, { color: n ?? "#b6a78f" })]
 			}, e)),
 			/* @__PURE__ */ (0, U.jsxs)("mesh", {
 				position: [
@@ -10883,6 +10883,7 @@ var Aa = {
 		defaultRoomType: "living-room",
 		component: tr,
 		label: "Motorized curtain",
+		defaultColor: "#d8c8ad",
 		category: "Covers",
 		defaultSize: [
 			2,
@@ -14062,7 +14063,7 @@ function mo({ size: e = po } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/french-door-curtains.tsx
-function ho() {
+function ho({ color: e } = {}) {
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		name: "rideaux-porte-fenetre-chambre-enfant",
 		children: [/* @__PURE__ */ (0, U.jsxs)("mesh", {
@@ -14083,9 +14084,9 @@ function ho() {
 				1.76,
 				10
 			] }), /* @__PURE__ */ (0, U.jsx)(I, { color: "#d9d2c8" })]
-		}), [-.76, .76].map((e) => /* @__PURE__ */ (0, U.jsxs)("group", {
+		}), [-.76, .76].map((t) => /* @__PURE__ */ (0, U.jsxs)("group", {
 			position: [
-				e,
+				t,
 				0,
 				.035
 			],
@@ -14103,7 +14104,7 @@ function ho() {
 						.035
 					] }),
 					/* @__PURE__ */ (0, U.jsx)(I, {
-						color: "#d8d0c4",
+						color: e ?? "#d8d0c4",
 						transparent: !0,
 						opacity: .9
 					}),
@@ -14117,9 +14118,9 @@ function ho() {
 				-.12,
 				0,
 				.12
-			].map((e) => /* @__PURE__ */ (0, U.jsxs)("mesh", {
+			].map((t) => /* @__PURE__ */ (0, U.jsxs)("mesh", {
 				position: [
-					e,
+					t,
 					1.12,
 					.022
 				],
@@ -14127,9 +14128,9 @@ function ho() {
 					.018,
 					1.98,
 					.018
-				] }), /* @__PURE__ */ (0, U.jsx)(I, { color: "#bfb5a8" })]
-			}, e))]
-		}, e))]
+				] }), /* @__PURE__ */ (0, U.jsx)(I, { color: e ?? "#bfb5a8" })]
+			}, t))]
+		}, t))]
 	});
 }
 //#endregion
@@ -16875,7 +16876,7 @@ var Ts = [
 	.84,
 	.94
 ];
-function Es({ size: e = Ts }) {
+function Es({ size: e = Ts, color: t }) {
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		name: "three-seat-sofa",
 		scale: [
@@ -16925,7 +16926,7 @@ function Es({ size: e = Ts }) {
 					.235,
 					.01
 				],
-				color: "#c8b9a1",
+				color: t ?? "#c8b9a1",
 				radius: .055
 			}),
 			/* @__PURE__ */ (0, U.jsx)(K, {
@@ -16939,7 +16940,7 @@ function Es({ size: e = Ts }) {
 					.545,
 					-.38
 				],
-				color: "#cbbda7",
+				color: t ?? "#cbbda7",
 				radius: .035
 			}),
 			[-1, 1].map((e) => /* @__PURE__ */ (0, U.jsx)(K, {
@@ -16954,7 +16955,7 @@ function Es({ size: e = Ts }) {
 					.415,
 					0
 				],
-				color: "#d6c8b2",
+				color: t ?? "#d6c8b2",
 				radius: .07
 			}, e)),
 			[
@@ -16973,7 +16974,7 @@ function Es({ size: e = Ts }) {
 					.4175,
 					.08
 				],
-				color: "#e2d5bf"
+				color: t ?? "#e2d5bf"
 			}), /* @__PURE__ */ (0, U.jsx)(Cs, {
 				name: "sofa-back-cushion",
 				size: [
@@ -16991,7 +16992,7 @@ function Es({ size: e = Ts }) {
 					0,
 					0
 				],
-				color: "#ded0b9"
+				color: t ?? "#ded0b9"
 			})] }, e))
 		]
 	});
@@ -17674,12 +17675,12 @@ function Bs({ size: e = zs }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/sectional-sofa.tsx
-function Vs({ variant: e = "default" } = {}) {
-	let t = e === "right" || e === "cozy-right", n = e === "cozy" || e === "cozy-right";
+function Vs({ variant: e = "default", color: t } = {}) {
+	let n = e === "right" || e === "cozy-right", r = e === "cozy" || e === "cozy-right";
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		name: "canape-salon-custom",
 		scale: [
-			t ? -1 : 1,
+			n ? -1 : 1,
 			1,
 			1
 		],
@@ -17696,7 +17697,7 @@ function Vs({ variant: e = "default" } = {}) {
 					.31,
 					.02
 				],
-				color: "#d2ccbd",
+				color: t ?? "#d2ccbd",
 				radius: .055
 			}),
 			/* @__PURE__ */ (0, U.jsx)(K, {
@@ -17710,7 +17711,7 @@ function Vs({ variant: e = "default" } = {}) {
 					.31,
 					.43
 				],
-				color: "#d2ccbd",
+				color: t ?? "#d2ccbd",
 				radius: .055
 			}),
 			/* @__PURE__ */ (0, U.jsx)(K, {
@@ -17725,7 +17726,7 @@ function Vs({ variant: e = "default" } = {}) {
 					.675,
 					-.33
 				],
-				color: "#d2ccbd",
+				color: t ?? "#d2ccbd",
 				radius: .045
 			}),
 			/* @__PURE__ */ (0, U.jsx)(K, {
@@ -17770,7 +17771,7 @@ function Vs({ variant: e = "default" } = {}) {
 					.57,
 					.39
 				],
-				color: "#eee7d8"
+				color: t ?? "#eee7d8"
 			}),
 			[-.02, .84].map((e) => /* @__PURE__ */ (0, U.jsx)(Cs, {
 				name: "sectional-seat-cushion",
@@ -17784,7 +17785,7 @@ function Vs({ variant: e = "default" } = {}) {
 					.57,
 					.08
 				],
-				color: "#e9e4d7"
+				color: t ?? "#e9e4d7"
 			}, e)),
 			[
 				-.91,
@@ -17807,7 +17808,7 @@ function Vs({ variant: e = "default" } = {}) {
 					0,
 					0
 				],
-				color: "#e9e4d7"
+				color: t ?? "#e9e4d7"
 			}, e)),
 			[-1.37, 1.37].map((e) => /* @__PURE__ */ (0, U.jsxs)("group", { children: [/* @__PURE__ */ (0, U.jsx)(K, {
 				name: "sectional-arm",
@@ -17821,7 +17822,7 @@ function Vs({ variant: e = "default" } = {}) {
 					.455,
 					.01
 				],
-				color: "#ded9ca",
+				color: t ?? "#ded9ca",
 				radius: .065
 			}), /* @__PURE__ */ (0, U.jsx)(Cs, {
 				name: "sectional-arm-pad",
@@ -17835,9 +17836,9 @@ function Vs({ variant: e = "default" } = {}) {
 					.765,
 					.01
 				],
-				color: "#eee7d8"
+				color: t ?? "#eee7d8"
 			})] }, e)),
-			n && /* @__PURE__ */ (0, U.jsx)(ws, {}),
+			r && /* @__PURE__ */ (0, U.jsx)(ws, {}),
 			[
 				[-1.23, -.25],
 				[-.55, -.25],
@@ -31930,8 +31931,177 @@ function Yf({ size: e = Jf } = {}) {
 	});
 }
 //#endregion
-//#region packages/catalog/src/furnishing/definitions/index.ts
-var Xf = {
+//#region packages/catalog/src/furnishing/presets/curtains/single-window-curtain.tsx
+function Xf({ size: e, variant: t, color: n }) {
+	let r = t === "right" ? 1 : -1;
+	return /* @__PURE__ */ (0, U.jsxs)("group", {
+		name: "single-window-curtain",
+		scale: [
+			e[0] / 1.2,
+			e[1] / 2.4,
+			e[2] / .12
+		],
+		children: [
+			/* @__PURE__ */ (0, U.jsxs)("mesh", {
+				position: [
+					0,
+					2.36,
+					.06
+				],
+				castShadow: !0,
+				children: [
+					/* @__PURE__ */ (0, U.jsx)("boxGeometry", { args: [
+						1.2,
+						.08,
+						.12
+					] }),
+					/* @__PURE__ */ (0, U.jsx)(I, { color: "#dedbd3" }),
+					/* @__PURE__ */ (0, U.jsx)(o, {
+						color: "#aaa399",
+						thickness: .0015,
+						screenspace: !1
+					})
+				]
+			}),
+			/* @__PURE__ */ (0, U.jsxs)("mesh", {
+				position: [
+					r * .37,
+					1.16,
+					.075
+				],
+				castShadow: !0,
+				receiveShadow: !0,
+				children: [
+					/* @__PURE__ */ (0, U.jsx)("boxGeometry", { args: [
+						.42,
+						2.32,
+						.05
+					] }),
+					/* @__PURE__ */ (0, U.jsx)(I, { color: n ?? "#d8c8ad" }),
+					/* @__PURE__ */ (0, U.jsx)(o, {
+						color: "#a4957e",
+						thickness: .0015,
+						screenspace: !1
+					})
+				]
+			}),
+			[
+				-.15,
+				-.05,
+				.05,
+				.15
+			].map((e) => /* @__PURE__ */ (0, U.jsxs)("mesh", {
+				position: [
+					r * .37 + e,
+					1.16,
+					.102
+				],
+				castShadow: !0,
+				children: [/* @__PURE__ */ (0, U.jsx)("boxGeometry", { args: [
+					.018,
+					2.3,
+					.012
+				] }), /* @__PURE__ */ (0, U.jsx)(I, { color: n ?? "#c4b497" })]
+			}, e))
+		]
+	});
+}
+//#endregion
+//#region packages/catalog/src/furnishing/presets/children-bedroom/curtain-definition.tsx
+var Zf = L({
+	defaultRoomType: "bedroom",
+	component: ({ size: e, color: t }) => /* @__PURE__ */ (0, U.jsx)("group", {
+		scale: [
+			e[0] / 1.9,
+			e[1] / 2.205,
+			e[2] / .076
+		],
+		children: /* @__PURE__ */ (0, U.jsx)(ho, { color: t })
+	}),
+	label: "Children's curtains",
+	defaultColor: "#d8d0c4",
+	category: "Children",
+	defaultSize: [
+		1.9,
+		2.205,
+		.076
+	],
+	bounds: {
+		min: [
+			-.95,
+			.08,
+			-.01
+		],
+		max: [
+			.95,
+			2.285,
+			.066
+		]
+	},
+	resizePolicy: {
+		kind: "axes",
+		axes: [
+			"width",
+			"height",
+			"depth"
+		]
+	},
+	preferredPlacement: "wall",
+	outlineContact: !0,
+	complexity: {
+		visibleMeshes: 12,
+		triangles: 3200
+	}
+}), Qf = L({
+	defaultRoomType: "living-room",
+	component: Xf,
+	label: "Single window curtain",
+	defaultColor: "#d8c8ad",
+	category: "Decor",
+	variants: [{
+		id: "left",
+		label: "Gathered left"
+	}, {
+		id: "right",
+		label: "Gathered right"
+	}],
+	defaultSize: [
+		1.2,
+		2.4,
+		.12
+	],
+	bounds: {
+		min: [
+			-.6,
+			0,
+			0
+		],
+		max: [
+			.6,
+			2.4,
+			.12
+		]
+	},
+	resizePolicy: {
+		kind: "axes",
+		axes: [
+			"width",
+			"height",
+			"depth"
+		]
+	},
+	preferredPlacement: "wall",
+	windowFit: {
+		openingWidthRatio: .95,
+		openingHeightRatio: 2.32 / 2.4,
+		depthOffsetMeters: .003
+	},
+	outlineContact: !0,
+	complexity: {
+		visibleMeshes: 6,
+		triangles: 72
+	}
+}), $f = {
 	"white-display-column": L({
 		component: Bc,
 		label: "White display column",
@@ -33151,13 +33321,16 @@ var Xf = {
 	}),
 	"sectional-sofa": L({
 		defaultRoomType: "living-room",
-		component: ({ size: e, variant: t }) => /* @__PURE__ */ (0, U.jsx)("group", {
+		component: ({ size: e, variant: t, color: n }) => /* @__PURE__ */ (0, U.jsx)("group", {
 			scale: [
 				e[0] / 2.93,
 				e[1] / 1.227,
 				e[2] / 1.63
 			],
-			children: /* @__PURE__ */ (0, U.jsx)(Vs, { variant: t })
+			children: /* @__PURE__ */ (0, U.jsx)(Vs, {
+				variant: t,
+				color: n
+			})
 		}),
 		variants: [
 			{
@@ -33178,6 +33351,7 @@ var Xf = {
 			}
 		],
 		label: "Sectional sofa",
+		defaultColor: "#e9e4d7",
 		category: "Living room",
 		defaultSize: [
 			2.93,
@@ -33777,7 +33951,7 @@ var Xf = {
 			triangles: 3600
 		}
 	})
-}, Zf = {
+}, ep = {
 	"table-lamp": L({
 		legacyOnly: !0,
 		component: ({ size: e }) => /* @__PURE__ */ (0, U.jsx)("group", {
@@ -33909,7 +34083,7 @@ var Xf = {
 			triangles: 8e3
 		}
 	})
-}, Qf = {
+}, tp = {
 	"drying-rack": L({
 		component: Gf,
 		label: "Drying rack",
@@ -34735,7 +34909,7 @@ var Xf = {
 			triangles: 8e3
 		}
 	}),
-	...Xf,
+	...$f,
 	"outdoor-dining-table": L({
 		component: mf,
 		label: "Outdoor dining table",
@@ -35246,10 +35420,11 @@ var Xf = {
 			triangles: 7e3
 		}
 	}),
-	...Zf,
+	...ep,
 	"three-seat-sofa": L({
 		component: Es,
 		label: "3-seat sofa",
+		defaultColor: "#e2d5bf",
 		category: "Seating",
 		defaultRoomType: "living-room",
 		defaultSize: Ts,
@@ -36668,50 +36843,8 @@ var Xf = {
 			triangles: 4800
 		}
 	}),
-	"children-curtains": L({
-		defaultRoomType: "bedroom",
-		component: ({ size: e }) => /* @__PURE__ */ (0, U.jsx)("group", {
-			scale: [
-				e[0] / 1.9,
-				e[1] / 2.205,
-				e[2] / .076
-			],
-			children: /* @__PURE__ */ (0, U.jsx)(ho, {})
-		}),
-		label: "Children's curtains",
-		category: "Children",
-		defaultSize: [
-			1.9,
-			2.205,
-			.076
-		],
-		bounds: {
-			min: [
-				-.95,
-				.08,
-				-.01
-			],
-			max: [
-				.95,
-				2.285,
-				.066
-			]
-		},
-		resizePolicy: {
-			kind: "axes",
-			axes: [
-				"width",
-				"height",
-				"depth"
-			]
-		},
-		preferredPlacement: "wall",
-		outlineContact: !0,
-		complexity: {
-			visibleMeshes: 12,
-			triangles: 3200
-		}
-	}),
+	"single-window-curtain": Qf,
+	"children-curtains": Zf,
 	"children-floor-basket": L({
 		defaultRoomType: "bedroom",
 		component: ({ size: e }) => /* @__PURE__ */ (0, U.jsx)("group", {
@@ -37218,7 +37351,7 @@ var Xf = {
 			triangles: 6300
 		}
 	})
-}, $f = qe(Object.assign(Object.create(null), Qf)), ep = {
+}, np = qe(Object.assign(Object.create(null), tp)), rp = {
 	coordinates: {
 		metersPerPlanUnit: 1,
 		origin: [0, 0],
@@ -38260,7 +38393,7 @@ var Xf = {
 		upperFloorId: "first-floor",
 		widthMeters: 1.4
 	}]
-}, tp = /*#__PURE__*/ JSON.parse("[{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-pergola\",\"kind\":\"furnishing\",\"modelId\":\"wrought-iron-pergola\",\"placement\":{\"at\":[10,19.8],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[5,2.7,3]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-table\",\"kind\":\"furnishing\",\"modelId\":\"rectangular-dining-table\",\"placement\":{\"at\":[10,19.8],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[2.4,0.75,0.9]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-chair-north-0\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[9.3,19.200000000000003],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-chair-south-0\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[9.3,20.400000000000002],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-chair-north-1\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[10,19.200000000000003],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-chair-south-1\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[10,20.400000000000002],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-chair-north-2\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[10.700000000000001,19.200000000000003],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-chair-south-2\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[10.700000000000001,20.400000000000002],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-lounger-0-1\",\"kind\":\"furnishing\",\"modelId\":\"pool-chaise-longue\",\"placement\":{\"at\":[3,23.400000000000002],\"elevationMeters\":-0.049,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.8,0.85,2.1]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-lounger-0-2\",\"kind\":\"furnishing\",\"modelId\":\"pool-chaise-longue\",\"placement\":{\"at\":[3.1,25.5],\"elevationMeters\":-0.049,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.8,0.85,2.1]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-pool-table-0\",\"kind\":\"furnishing\",\"modelId\":\"rectangular-coffee-table\",\"placement\":{\"at\":[2.6,24.400000000000002],\"elevationMeters\":-0.049,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.6,0.4,0.4]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-olive-0\",\"kind\":\"furnishing\",\"modelId\":\"olive-tree\",\"placement\":{\"at\":[0.9,23.5],\"elevationMeters\":-0.049,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[3.8,3.6,3.2]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-olive-2\",\"kind\":\"furnishing\",\"modelId\":\"olive-tree\",\"placement\":{\"at\":[2.5,28],\"elevationMeters\":-0.049,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[3.8,3.6,3.2]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-shrub-2\",\"kind\":\"furnishing\",\"modelId\":\"garden-shrub\",\"placement\":{\"at\":[6,-2.5],\"elevationMeters\":-0.049,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.35,0.92,1.15]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"primary\",\"id\":\"garage-compact-car-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Compact car status\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"garage-compact-car\",\"kind\":\"device\",\"modelId\":\"compact-car\",\"placement\":{\"at\":[1.35,4.25],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[1.94,1.5,4]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"primary\",\"id\":\"garage-electric-sedan-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Electric sedan status\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"garage-electric-sedan\",\"kind\":\"device\",\"modelId\":\"electric-sedan\",\"placement\":{\"at\":[4.15,4.5],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[2.08,1.45,4.7]},{\"floorId\":\"ground-floor\",\"id\":\"garage-storage-shelf-west\",\"kind\":\"furnishing\",\"modelId\":\"oak-bookshelf\",\"placement\":{\"at\":[0.72,8.267],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.8,1.9,0.3]},{\"floorId\":\"ground-floor\",\"id\":\"garage-workbench\",\"kind\":\"furnishing\",\"modelId\":\"oak-desk\",\"placement\":{\"at\":[2.05,8.067],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.4,0.74,0.7]},{\"floorId\":\"ground-floor\",\"id\":\"garage-storage-shelf-east\",\"kind\":\"furnishing\",\"modelId\":\"oak-bookshelf\",\"placement\":{\"at\":[3.43,8.267],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.8,1.9,0.3]},{\"floorId\":\"ground-floor\",\"id\":\"garage-workbench-tool-shelf\",\"kind\":\"furnishing\",\"modelId\":\"floating-wall-shelf\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":1.35,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.05,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-day-wall\"},\"size\":[1.4,0.22,0.25]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"garage-ceiling-light-1-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Garage ceiling light 1\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"garage-ceiling-light-1\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"ceiling-light\",\"placement\":{\"at\":[1.55,4.35],\"dropMeters\":0.122,\"kind\":\"ceiling\",\"roomId\":\"ground-floor:room-1\",\"rotationYRadians\":0},\"size\":[0.4,0.12,0.4]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"garage-ceiling-light-2-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Garage ceiling light 2\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"garage-ceiling-light-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"ceiling-light\",\"placement\":{\"at\":[4.55,4.35],\"dropMeters\":0.122,\"kind\":\"ceiling\",\"roomId\":\"ground-floor:room-1\",\"rotationYRadians\":0},\"size\":[0.4,0.12,0.4]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"carbon_monoxide\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"garage-carbon-monoxide-alarm-entity\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Garage carbon monoxide alarm\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"garage-carbon-monoxide-alarm\",\"kind\":\"device\",\"modelId\":\"carbon-monoxide-alarm\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":1.6,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":10.6,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-wall\"},\"size\":[0.11,0.11,0.035]},{\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-tall-storage\",\"kind\":\"furnishing\",\"modelId\":\"flat-door-wardrobe\",\"placement\":{\"at\":[6.883,3.28],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1,2.2,0.6]},{\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-folding-cabinet\",\"kind\":\"furnishing\",\"modelId\":\"kitchen-base-cabinet\",\"placement\":{\"at\":[8.6,4.102],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.6,0.9,0.63]},{\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-sink-cabinet\",\"kind\":\"furnishing\",\"modelId\":\"kitchen-sink-cabinet\",\"placement\":{\"at\":[9.4,4.102],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[1,1.12,0.63]},{\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-folding-basket\",\"kind\":\"furnishing\",\"modelId\":\"wicker-towel-basket\",\"placement\":{\"at\":[8.6,4.02],\"elevationMeters\":0.902,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.38,0.315,0.31]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"switch\"],\"deviceRole\":\"primary\",\"id\":\"utility-laundry-washing-machine-power\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Washing machine\"},\"required\":true},{\"autoMap\":\"manual\",\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"secondary\",\"id\":\"utility-laundry-washing-machine-status\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Washing machine status\"},\"required\":false}],\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-washing-machine\",\"kind\":\"device\",\"modelId\":\"washing-machine\",\"placement\":{\"at\":[8.4,0.458],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.632,0.865,0.63]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"switch\"],\"deviceRole\":\"primary\",\"id\":\"utility-laundry-tumble-dryer-power\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Tumble dryer\"},\"required\":true},{\"autoMap\":\"manual\",\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"secondary\",\"id\":\"utility-laundry-tumble-dryer-status\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Tumble dryer status\"},\"required\":false}],\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-tumble-dryer\",\"kind\":\"device\",\"modelId\":\"tumble-dryer\",\"placement\":{\"at\":[9.1,0.488],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.6,0.85,0.65]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"water_heater\",\"switch\"],\"deviceRole\":\"primary\",\"id\":\"utility-laundry-water-heater-control\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Water heater\"},\"required\":true},{\"autoMap\":\"manual\",\"compatibleDeviceClasses\":[\"temperature\"],\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"secondary\",\"id\":\"utility-laundry-water-heater-temperature\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Water heater temperature\"},\"required\":false}],\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-water-heater\",\"kind\":\"device\",\"modelId\":\"water-heater\",\"placement\":{\"depthOffsetMeters\":0.209,\"elevationMeters\":0.85,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.9,\"rotationOffsetRadians\":0,\"wallId\":\"ground-service-divider\"},\"size\":[0.572,1.456,0.43]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"utility-laundry-ceiling-light-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Utility room light\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-ceiling-light\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"ceiling-light\",\"placement\":{\"at\":[8.25,2.3],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"stair-hall\",\"rotationYRadians\":0},\"size\":[0.4,0.12,0.4]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"moisture\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"utility-laundry-leak-sensor-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Laundry leak sensor\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-leak-sensor\",\"kind\":\"device\",\"modelId\":\"leak-sensor\",\"placement\":{\"at\":[8.68,0.96],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.2,0.14,0.2]},{\"floorId\":\"ground-floor\",\"id\":\"pantry-north-west-shelving\",\"kind\":\"furnishing\",\"modelId\":\"oak-bookshelf\",\"placement\":{\"at\":[6.734,5.08],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.8,1.9,0.3]},{\"floorId\":\"ground-floor\",\"id\":\"pantry-south-east-shelving\",\"kind\":\"furnishing\",\"modelId\":\"oak-bookshelf\",\"placement\":{\"at\":[9.766,7.78],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":-1.5707963267948966},\"size\":[0.8,1.9,0.3]},{\"floorId\":\"ground-floor\",\"id\":\"pantry-preparation-counter\",\"kind\":\"furnishing\",\"modelId\":\"kitchen-base-cabinet\",\"placement\":{\"at\":[7.2,8.101],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.1,0.9,0.63]},{\"floorId\":\"ground-floor\",\"id\":\"pantry-wall-cabinet\",\"kind\":\"furnishing\",\"modelId\":\"kitchen-wall-cabinet\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.38,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":7.2,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-day-wall\"},\"size\":[1.1,0.8,0.35]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"temperature\"],\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"primary\",\"id\":\"pantry-freezer-entity\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Pantry freezer temperature\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"pantry-freezer\",\"kind\":\"device\",\"modelId\":\"freezer\",\"placement\":{\"at\":[9.576,5.3],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":4.71238898038469},\"size\":[0.65,1.75,0.68]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"pantry-downlight-1-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Pantry downlight 1\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"pantry-downlight-1\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[7.35,6.5],\"dropMeters\":0.04,\"kind\":\"ceiling\",\"roomId\":\"pantry\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"pantry-downlight-2-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Pantry downlight 2\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"pantry-downlight-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[9.15,6.5],\"dropMeters\":0.04,\"kind\":\"ceiling\",\"roomId\":\"pantry\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"motion\",\"occupancy\",\"presence\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"pantry-motion-sensor-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Pantry presence\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"pantry-motion-sensor\",\"kind\":\"device\",\"modelId\":\"motion-sensor\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":2.35,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.75,\"rotationOffsetRadians\":0,\"wallId\":\"ground-utility-pantry-wall\"},\"size\":[0.14,0.135,0.081]},{\"floorId\":\"ground-floor\",\"id\":\"foyer-shoe-bench\",\"kind\":\"furnishing\",\"modelId\":\"entryway-shoe-bench\",\"placement\":{\"at\":[10.274,3.65],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1,0.5,0.38]},{\"floorId\":\"ground-floor\",\"id\":\"foyer-coat-rack\",\"kind\":\"furnishing\",\"modelId\":\"wall-coat-rack\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.24,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.65,\"rotationOffsetRadians\":0,\"wallId\":\"ground-service-divider\"},\"size\":[0.9,0.36,0.22]},{\"floorId\":\"ground-floor\",\"id\":\"foyer-console\",\"kind\":\"furnishing\",\"modelId\":\"hallway-console-table\",\"placement\":{\"depthOffsetMeters\":0.175,\"elevationMeters\":0.001,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":4.4541,\"rotationOffsetRadians\":0,\"wallId\":\"ground-east-wall\"},\"size\":[1.1,0.8,0.35]},{\"floorId\":\"ground-floor\",\"id\":\"foyer-framed-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"depthOffsetMeters\":0,\"elevationMeters\":1.35,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":4.6739,\"rotationOffsetRadians\":0,\"wallId\":\"ground-east-wall\"},\"size\":[0.8,0.6,0.04]},{\"floorId\":\"ground-floor\",\"id\":\"foyer-potted-plant\",\"kind\":\"furnishing\",\"modelId\":\"potted-plant\",\"placement\":{\"at\":[10.65,0.62],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":-0.39269908169872414},\"size\":[0.615,1.105,0.44]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"foyer-pendant-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Foyer pendant\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"foyer-pendant\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"terracotta-pendant\",\"placement\":{\"at\":[12,2.86],\"dropMeters\":0.82,\"kind\":\"ceiling\",\"roomId\":\"ground-floor:room-2\",\"rotationYRadians\":0},\"size\":[0.66,0.64,0.66]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"camera\"],\"deviceRole\":\"primary\",\"id\":\"foyer-camera-screen-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Entry camera screen\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"foyer-camera-screen\",\"kind\":\"device\",\"modelId\":\"camera-screen\",\"placement\":{\"at\":[13.916,0.78],\"elevationMeters\":1.2,\"kind\":\"absolute\",\"rotationYRadians\":-1.5707963267948966},\"size\":[0.98,0.62,0.061]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"alarm_control_panel\"],\"deviceRole\":\"primary\",\"id\":\"foyer-alarm-keypad-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Villa alarm\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"foyer-alarm-keypad\",\"kind\":\"device\",\"modelId\":\"alarm-keypad\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.3,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":10.65,\"rotationOffsetRadians\":0,\"wallId\":\"ground-north-wall\"},\"size\":[0.18,0.25,0.035]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"lock\"],\"deviceRole\":\"primary\",\"id\":\"foyer-smart-lock-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Front door lock\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"foyer-smart-lock\",\"kind\":\"device\",\"modelId\":\"smart-lock\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":0.96,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":12.98,\"rotationOffsetRadians\":0,\"wallId\":\"ground-north-wall\"},\"size\":[0.07,0.18,0.06]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"cover\"],\"deviceRole\":\"primary\",\"id\":\"guest-bedroom-east-blind-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"East window blind\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"guest-bedroom-east-blind\",\"kind\":\"device\",\"modelId\":\"motorized-blind\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":0.8,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.45,\"rotationOffsetRadians\":0,\"wallId\":\"ground-east-wall\"},\"size\":[2.05,1.45,0.12]},{\"floorId\":\"ground-floor\",\"id\":\"stair-hall-console\",\"kind\":\"furnishing\",\"modelId\":\"hallway-console-table\",\"placement\":{\"at\":[10.257,8],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1.1,0.8,0.35]},{\"floorId\":\"ground-floor\",\"id\":\"stair-hall-console-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"at\":[10.083,8],\"elevationMeters\":1.42,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.8,0.62,0.04]},{\"floorId\":\"ground-floor\",\"id\":\"stair-hall-landing-plant\",\"kind\":\"furnishing\",\"modelId\":\"potted-plant\",\"placement\":{\"at\":[13.6,10.5],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":-0.4487989505128276},\"size\":[0.615,1.105,0.44]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"stair-hall-downlight-1-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Stair hall downlight 1\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"stair-hall-downlight-1\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[10.6,7.55],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"ground-floor:room-2\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"stair-hall-downlight-2-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Stair hall downlight 2\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"stair-hall-downlight-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[13.4,9.25],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"ground-floor:room-2\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"stair-hall-wall-sconce-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Stair hall wall sconce\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"stair-hall-wall-sconce\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"wall-sconce\",\"placement\":{\"at\":[13.917,9.65],\"elevationMeters\":1.72,\"kind\":\"absolute\",\"rotationYRadians\":-1.5707963267948966},\"size\":[0.22,0.32,0.16]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"motion\",\"occupancy\",\"presence\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"stair-hall-motion-sensor-entity\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Stair hall motion\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"stair-hall-motion-sensor\",\"kind\":\"device\",\"modelId\":\"motion-sensor\",\"placement\":{\"at\":[13.4,0.7000000000000001],\"elevationMeters\":3,\"kind\":\"absolute\",\"rotationYRadians\":0.007142735669413403},\"size\":[0.14,0.135,0.081]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-equipped-kitchen\",\"kind\":\"furnishing\",\"modelId\":\"equipped-kitchen\",\"placement\":{\"at\":[0.5,9],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[3.89,2.23,2.54]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-counter-stool-1\",\"kind\":\"furnishing\",\"modelId\":\"counter-stool\",\"placement\":{\"at\":[1.55,12.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.502,0.9621666666666667,0.5229166666666667]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-counter-stool-2\",\"kind\":\"furnishing\",\"modelId\":\"counter-stool\",\"placement\":{\"at\":[2.55,12.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.502,0.9621666666666667,0.5229166666666667]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-counter-stool-3\",\"kind\":\"furnishing\",\"modelId\":\"counter-stool\",\"placement\":{\"at\":[3.55,12.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.502,0.9621666666666667,0.5229166666666667]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-table\",\"kind\":\"furnishing\",\"modelId\":\"rectangular-dining-table\",\"placement\":{\"at\":[10.7,14.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[2.8,0.75,1.1]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-north-west\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[9.6,13.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-north-center\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[10.7,13.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-north-east\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[11.8,13.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-south-west\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[9.6,15.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-south-center\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[10.7,15.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-south-east\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[11.8,15.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-west\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[8.9,14.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-east\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[12.5,14.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-reading-rug\",\"kind\":\"furnishing\",\"modelId\":\"neutral-area-rug\",\"placement\":{\"at\":[3.2,15],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[4.5,0.015,3.6],\"variant\":\"sage\"},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-reading-table\",\"kind\":\"furnishing\",\"modelId\":\"rectangular-coffee-table\",\"placement\":{\"at\":[3.1,15.5],\"elevationMeters\":0.017,\"kind\":\"absolute\",\"rotationYRadians\":4.71238898038469},\"size\":[1.1,0.4,0.6]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-reading-ficus\",\"kind\":\"furnishing\",\"modelId\":\"tall-ficus\",\"placement\":{\"at\":[0.85,16.95],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.901,1.643,0.503]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-sideboard\",\"kind\":\"furnishing\",\"modelId\":\"three-door-sideboard\",\"placement\":{\"at\":[6.85,8.808],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.8,0.82,0.45]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-sideboard-plant\",\"kind\":\"furnishing\",\"modelId\":\"potted-plant\",\"placement\":{\"at\":[7.4,8.81],\"elevationMeters\":0.823,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.3075,0.5525,0.22]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-sideboard-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.3,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":7.1,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-day-wall\"},\"size\":[1.5,1,0.04]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-kitchen-cabinet-lighting-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Kitchen cabinet lighting\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-kitchen-cabinet-lighting\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"kitchen-cabinet-lighting\",\"placement\":{\"at\":[0.5,9],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[3.89,2.23,2.54]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-kitchen-pendant-1-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Kitchen pendant 1\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-kitchen-pendant-1\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"woven-pendant\",\"placement\":{\"at\":[1.55,11.25],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"open-plan-living\",\"rotationYRadians\":0},\"size\":[0.704,0.482077922077922,0.7148051948051948]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-kitchen-pendant-2-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Kitchen pendant 2\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-kitchen-pendant-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"woven-pendant\",\"placement\":{\"at\":[2.55,11.25],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"open-plan-living\",\"rotationYRadians\":0},\"size\":[0.704,0.482077922077922,0.7148051948051948]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-kitchen-pendant-3-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Kitchen pendant 3\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-kitchen-pendant-3\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"woven-pendant\",\"placement\":{\"at\":[3.55,11.25],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"open-plan-living\",\"rotationYRadians\":0},\"size\":[0.704,0.482077922077922,0.7148051948051948]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-dining-pendant-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Dining pendant\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-pendant\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"woven-pendant\",\"placement\":{\"at\":[10.7,14.1],\"dropMeters\":0.15,\"kind\":\"ceiling\",\"roomId\":\"open-plan-living\",\"rotationYRadians\":0},\"size\":[0.847,0.58,0.86]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"climate\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-ac-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Living room AC\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-ac\",\"kind\":\"device\",\"modelId\":\"indoor-ac\",\"placement\":{\"depthOffsetMeters\":0.001,\"elevationMeters\":2.35,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":5.1857,\"rotationOffsetRadians\":0,\"wallId\":\"ground-service-divider\"},\"size\":[0.86,0.28,0.206]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-rug\",\"kind\":\"furnishing\",\"modelId\":\"neutral-area-rug\",\"placement\":{\"at\":[8,5.2],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[3,0.015,2.8]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-bed\",\"kind\":\"furnishing\",\"modelId\":\"double-bed\",\"placement\":{\"at\":[8.841,5.2],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":-1.5707963267948966},\"size\":[1.7,1.1,2.15]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-north-nightstand\",\"kind\":\"furnishing\",\"modelId\":\"oak-nightstand\",\"placement\":{\"at\":[9.716,4],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.45,0.5,0.4]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-south-nightstand\",\"kind\":\"furnishing\",\"modelId\":\"oak-nightstand\",\"placement\":{\"at\":[9.716,6.4],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.45,0.5,0.4]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-bedroom-north-table-lamp-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"North bedside lamp\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-north-table-lamp\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"table-lamp\",\"placement\":{\"at\":[9.716,4],\"elevationMeters\":0.501,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.32,0.52,0.32]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-bedroom-south-table-lamp-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"South bedside lamp\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-south-table-lamp\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"table-lamp\",\"placement\":{\"at\":[9.716,6.4],\"elevationMeters\":0.501,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.32,0.52,0.32]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-bed-bench\",\"kind\":\"furnishing\",\"modelId\":\"upholstered-ottoman\",\"placement\":{\"at\":[7.2,5.2],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.7,0.42,0.55]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-sideboard\",\"kind\":\"furnishing\",\"modelId\":\"three-door-sideboard\",\"placement\":{\"at\":[5.65,7.691],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[1.6,0.82,0.45]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.28,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.65,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-suite-wall\"},\"size\":[1.1,0.72,0.04]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-reading-chair\",\"kind\":\"furnishing\",\"modelId\":\"upholstered-armchair\",\"placement\":{\"at\":[8.8,1.2],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":-2.356194490192345},\"size\":[0.85,0.9,0.88]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-reading-plant\",\"kind\":\"furnishing\",\"modelId\":\"potted-plant\",\"placement\":{\"at\":[7.55,0.62],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0.39269908169872414},\"size\":[0.615,1.105,0.44]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-bedroom-pendant-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Primary bedroom pendant\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-pendant\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"woven-pendant\",\"placement\":{\"at\":[6,4],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"primary-bedroom\",\"rotationYRadians\":0},\"size\":[0.847,0.58,0.86]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"climate\"],\"deviceRole\":\"primary\",\"id\":\"primary-bedroom-ac-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Primary bedroom AC\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-ac\",\"kind\":\"device\",\"modelId\":\"indoor-ac\",\"placement\":{\"depthOffsetMeters\":0.002,\"elevationMeters\":2.28,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":5.2,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-gallery-wall\"},\"size\":[0.86,0.28,0.206]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"cover\"],\"deviceRole\":\"primary\",\"id\":\"primary-bedroom-north-blind-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"North window blind\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-north-blind\",\"kind\":\"device\",\"modelId\":\"motorized-blind\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":0.75,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3,\"rotationOffsetRadians\":0,\"wallId\":\"first-north-wall\"},\"size\":[2.8,1.425,0.12]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"cover\"],\"deviceRole\":\"primary\",\"id\":\"primary-bedroom-west-blind-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"West window blind\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-west-blind\",\"kind\":\"device\",\"modelId\":\"motorized-blind\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":0.75,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":11.7,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-wall\"},\"size\":[2.8,1.425,0.12]},{\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-bathtub\",\"kind\":\"furnishing\",\"modelId\":\"freestanding-bathtub\",\"placement\":{\"at\":[2.553,10],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1.7,0.6,0.78]},{\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-shower\",\"kind\":\"furnishing\",\"modelId\":\"shower-assembly\",\"placement\":{\"at\":[4.821,11.454],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[2.018,1.57,0.908]},{\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-toilet\",\"kind\":\"furnishing\",\"modelId\":\"compact-toilet\",\"placement\":{\"at\":[2.55,8.383],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.39,0.724,0.6]},{\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-vanity\",\"kind\":\"furnishing\",\"modelId\":\"dark-oak-vessel-vanity\",\"placement\":{\"at\":[5.25,8.343],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.8,1.23,0.52]},{\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-towel-basket\",\"kind\":\"furnishing\",\"modelId\":\"wicker-towel-basket\",\"placement\":{\"at\":[3.32,11.48],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":-0.39269908169872414},\"size\":[0.38,0.315,0.31]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-bathroom-ceiling-light-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Primary bathroom ceiling light\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-ceiling-light\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"ceiling-light\",\"placement\":{\"at\":[4.05,10],\"dropMeters\":0.08,\"kind\":\"ceiling\",\"roomId\":\"primary-bathroom\",\"rotationYRadians\":0},\"size\":[0.4,0.12,0.4]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-bathroom-illuminated-mirror-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Primary bathroom mirror light\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-illuminated-mirror\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"illuminated-round-mirror\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.3,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.25,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-suite-wall\"},\"size\":[0.8,0.8,0.045]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"climate\",\"switch\"],\"deviceRole\":\"primary\",\"id\":\"primary-bathroom-heated-towel-rail-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Primary bathroom towel warmer\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-heated-towel-rail\",\"kind\":\"device\",\"modelId\":\"heated-towel-rail\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":0.72,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":0.95,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-bath-divider\"},\"size\":[0.6,1.2,0.12]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"fan\",\"switch\"],\"deviceRole\":\"primary\",\"id\":\"primary-bathroom-extractor-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Primary bathroom extractor\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-extractor\",\"kind\":\"device\",\"modelId\":\"bathroom-extractor-fan\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":2.52,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.45,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-bath-divider\"},\"size\":[0.18,0.18,0.09]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"humidity\"],\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"primary\",\"id\":\"primary-bathroom-humidity-sensor-entity\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Primary bathroom humidity\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-humidity-sensor\",\"kind\":\"device\",\"modelId\":\"humidity-sensor\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.72,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.5,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-suite-wall\"},\"size\":[0.085,0.085,0.03]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"moisture\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"primary-bathroom-leak-sensor-entity\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Primary bathroom leak sensor\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-leak-sensor\",\"kind\":\"device\",\"modelId\":\"leak-sensor\",\"placement\":{\"at\":[5.34,8.78],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.2,0.14,0.2]},{\"floorId\":\"first-floor\",\"id\":\"primary-dressing-south-wardrobe\",\"kind\":\"furnishing\",\"modelId\":\"flat-door-wardrobe\",\"placement\":{\"at\":[8,11.617],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[3.2,2.2,0.6]},{\"floorId\":\"first-floor\",\"id\":\"primary-dressing-north-chest\",\"kind\":\"furnishing\",\"modelId\":\"chest-of-drawers\",\"placement\":{\"at\":[9.05,8.308],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.3,0.9,0.45]},{\"floorId\":\"first-floor\",\"id\":\"primary-dressing-center-rug\",\"kind\":\"furnishing\",\"modelId\":\"neutral-area-rug\",\"placement\":{\"at\":[8.15,9.65],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.4,0.015,1.6]},{\"floorId\":\"first-floor\",\"id\":\"primary-dressing-ottoman\",\"kind\":\"furnishing\",\"modelId\":\"upholstered-ottoman\",\"placement\":{\"at\":[8.55,9.15],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.7,0.42,0.55]},{\"floorId\":\"first-floor\",\"id\":\"primary-dressing-mirror\",\"kind\":\"furnishing\",\"modelId\":\"arched-mirror\",\"placement\":{\"depthOffsetMeters\":0.033,\"elevationMeters\":1.15,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":7.05,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-suite-wall\"},\"size\":[0.54,1.05,0.06]},{\"floorId\":\"first-floor\",\"id\":\"primary-dressing-west-shelf\",\"kind\":\"furnishing\",\"modelId\":\"floating-wall-shelf\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":1.3,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.05,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-bath-divider\"},\"size\":[1,0.22,0.25]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-dressing-downlight-1-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Dressing downlight 1\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-dressing-downlight-1\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[7.15,9.05],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"primary-dressing\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-dressing-downlight-2-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Dressing downlight 2\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-dressing-downlight-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[8.85,10.95],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"primary-dressing\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"motion\",\"occupancy\",\"presence\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"primary-dressing-motion-sensor-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Dressing occupancy\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-dressing-motion-sensor\",\"kind\":\"device\",\"modelId\":\"motion-sensor\",\"placement\":{\"at\":[8,10],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"primary-dressing\",\"rotationYRadians\":0},\"size\":[0.14,0.135,0.081]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-bed\",\"kind\":\"furnishing\",\"modelId\":\"single-bed\",\"placement\":{\"at\":[3.5,13.134],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1,0.95,2.1]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-nightstand\",\"kind\":\"furnishing\",\"modelId\":\"oak-nightstand\",\"placement\":{\"at\":[4.35,12.284],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.45,0.5,0.4]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-bookshelf\",\"kind\":\"furnishing\",\"modelId\":\"oak-bookshelf\",\"placement\":{\"at\":[5.7,12.234],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.8,1.9,0.3]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-desk\",\"kind\":\"furnishing\",\"modelId\":\"oak-desk\",\"placement\":{\"at\":[7.65,12.434],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.4,0.74,0.7]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-desk-chair\",\"kind\":\"furnishing\",\"modelId\":\"ergonomic-office-chair\",\"placement\":{\"at\":[7.5,12.8],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.68,1.04,0.68]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-wardrobe\",\"kind\":\"furnishing\",\"modelId\":\"flat-door-wardrobe\",\"placement\":{\"depthOffsetMeters\":0.3,\"elevationMeters\":0.001,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":14.9168,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-gallery-wall\"},\"size\":[1.6,2.2,0.6]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-rug\",\"kind\":\"furnishing\",\"modelId\":\"neutral-area-rug\",\"placement\":{\"at\":[6,14.65],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[2.5,0.015,1.45]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-bed-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.38,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":1.5,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-bedroom-wall\"},\"size\":[0.8,0.6,0.04]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"bedroom-four-bedside-lamp-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Bedroom four bedside lamp\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"bedroom-four-bedside-lamp\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"table-lamp\",\"placement\":{\"at\":[4.35,12.284],\"elevationMeters\":0.501,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.32,0.52,0.32]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"bedroom-four-pendant-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Bedroom four pendant\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"bedroom-four-pendant\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"children-pendant\",\"placement\":{\"at\":[6.2,14.1],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"bedroom-four\",\"rotationYRadians\":0},\"size\":[0.58,0.479,0.58]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"climate\"],\"deviceRole\":\"primary\",\"id\":\"bedroom-four-ac-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Bedroom four AC\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"bedroom-four-ac\",\"kind\":\"device\",\"modelId\":\"indoor-ac\",\"placement\":{\"depthOffsetMeters\":0.002,\"elevationMeters\":2.3,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":6.8,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-bedroom-wall\"},\"size\":[0.86,0.28,0.206]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"cover\"],\"deviceRole\":\"primary\",\"id\":\"bedroom-four-west-blind-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Bedroom four west blind\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"bedroom-four-west-blind\",\"kind\":\"device\",\"modelId\":\"motorized-blind\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":0.75,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.4,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-wall\"},\"size\":[2.25,1.425,0.12]},{\"floorId\":\"first-floor\",\"id\":\"upper-landing-console\",\"kind\":\"furnishing\",\"modelId\":\"hallway-console-table\",\"placement\":{\"at\":[10.257,4.2],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1.1,0.8,0.35]},{\"floorId\":\"first-floor\",\"id\":\"upper-landing-console-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":1.42,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":4.2,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-gallery-wall\"},\"size\":[0.8,0.62,0.04]},{\"floorId\":\"first-floor\",\"id\":\"upper-landing-north-plant\",\"kind\":\"furnishing\",\"modelId\":\"potted-plant\",\"placement\":{\"at\":[10.47,0.55],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0.4487989505128276},\"size\":[0.615,1.105,0.44]},{\"floorId\":\"first-floor\",\"id\":\"upper-landing-gallery-bench\",\"kind\":\"furnishing\",\"modelId\":\"entryway-shoe-bench\",\"placement\":{\"at\":[13.727,11.7],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1,0.5,0.38]},{\"floorId\":\"first-floor\",\"id\":\"upper-landing-bench-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"at\":[13.917,11.7],\"elevationMeters\":1.25,\"kind\":\"absolute\",\"rotationYRadians\":-1.5707963267948966},\"size\":[0.8,0.62,0.04]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"upper-landing-downlight-1-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Upper landing downlight 1\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"upper-landing-downlight-1\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[12,4.65],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"upper-landing\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"upper-landing-downlight-2-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Upper landing downlight 2\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"upper-landing-downlight-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[12,11.55],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"upper-landing\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"upper-landing-north-sconce-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"North gallery wall sconce\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"upper-landing-north-sconce\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"wall-sconce\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":1.72,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":5.18,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-gallery-wall\"},\"size\":[0.22,0.32,0.16]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"upper-landing-south-sconce-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"South gallery wall sconce\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"upper-landing-south-sconce\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"wall-sconce\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":1.72,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":0.45,\"rotationOffsetRadians\":0,\"wallId\":\"first-east-gallery-wall--split-3\"},\"size\":[0.22,0.32,0.16]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"motion\",\"occupancy\",\"presence\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"upper-landing-motion-sensor-entity\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Upper landing motion\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"upper-landing-motion-sensor\",\"kind\":\"device\",\"modelId\":\"motion-sensor\",\"placement\":{\"at\":[13.45,5.42],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"upper-landing\",\"rotationYRadians\":0},\"size\":[0.14,0.135,0.081]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"low-garden-lantern-primary\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Low garden lantern\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"low-garden-lantern\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"low-garden-lantern\",\"placement\":{\"at\":[10.700000000000001,-0.8],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.24,0.35,0.24],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"low-garden-lantern-primary-copy\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Low garden lantern\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"low-garden-lantern-copy\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"low-garden-lantern\",\"placement\":{\"at\":[13.200000000000001,-0.8],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.24,0.35,0.24],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"low-garden-lantern-2-primary\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Low garden lantern\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"low-garden-lantern-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"low-garden-lantern\",\"placement\":{\"at\":[10.700000000000001,-2.4000000000000004],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.24,0.35,0.24],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"low-garden-lantern-2-primary-copy\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Low garden lantern\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"low-garden-lantern-2-copy\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"low-garden-lantern\",\"placement\":{\"at\":[13.200000000000001,-2.4000000000000004],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.24,0.35,0.24],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"low-garden-lantern-2-primary-copy-copy\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Low garden lantern\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"low-garden-lantern-2-copy-copy\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"low-garden-lantern\",\"placement\":{\"at\":[13.200000000000001,-3.9000000000000004],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.24,0.35,0.24],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"low-garden-lantern-primary-copy-2\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Low garden lantern\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"low-garden-lantern-copy-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"low-garden-lantern\",\"placement\":{\"at\":[10.700000000000001,-3.9000000000000004],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.24,0.35,0.24],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"deciduous-tree\",\"kind\":\"furnishing\",\"modelId\":\"deciduous-tree\",\"placement\":{\"at\":[13.5,28.700000000000003],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[2.4,4.2,2.4],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"deciduous-tree-copy\",\"kind\":\"furnishing\",\"modelId\":\"deciduous-tree\",\"placement\":{\"at\":[15.200000000000001,25.900000000000002],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":4.71238898038469},\"size\":[2.4,4.2,2.4],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"deciduous-tree-copy-copy\",\"kind\":\"furnishing\",\"modelId\":\"deciduous-tree\",\"placement\":{\"at\":[0,-1.7000000000000002],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":4.71238898038469},\"size\":[2.4,4.2,2.4],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-reading-rug-copy\",\"kind\":\"furnishing\",\"modelId\":\"neutral-area-rug\",\"placement\":{\"at\":[10.700000000000001,14],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[4.5,0.015,3.6],\"variant\":\"terracotta\"},{\"floorId\":\"ground-floor\",\"id\":\"sectional-sofa\",\"kind\":\"furnishing\",\"modelId\":\"sectional-sofa\",\"placement\":{\"at\":[4.6000000000000005,15.200000000000001],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":4.71238898038469},\"size\":[2.93,1.227,1.63],\"variant\":\"cozy\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"media_player\"],\"deviceRole\":\"primary\",\"id\":\"television-primary\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Wall television\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"television\",\"kind\":\"device\",\"modelId\":\"wall-television\",\"placement\":{\"depthOffsetMeters\":0.005,\"elevationMeters\":1.08,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.0689,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-wall\"},\"size\":[2.4,1.36,0.07]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"media_player\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-speaker-primary\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Living room speaker\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-speaker\",\"kind\":\"device\",\"modelId\":\"speaker\",\"placement\":{\"depthOffsetMeters\":0.21,\"elevationMeters\":0.55,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.45,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-wall\"},\"size\":[0.26,0.39,0.26]},{\"floorId\":\"ground-floor\",\"id\":\"low-media-console\",\"kind\":\"furnishing\",\"modelId\":\"low-media-console\",\"placement\":{\"depthOffsetMeters\":0.20999999999999996,\"elevationMeters\":0.001,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.0659,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-wall\"},\"size\":[1.6,0.55,0.42],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"outdoor-bbq\",\"kind\":\"furnishing\",\"modelId\":\"outdoor-bbq\",\"placement\":{\"at\":[1.1,18.900000000000002],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1.2,1.1,0.6],\"variant\":\"default\"}]"), np = ye(JSON.stringify({
+}, ip = /*#__PURE__*/ JSON.parse("[{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-pergola\",\"kind\":\"furnishing\",\"modelId\":\"wrought-iron-pergola\",\"placement\":{\"at\":[10,19.8],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[5,2.7,3]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-table\",\"kind\":\"furnishing\",\"modelId\":\"rectangular-dining-table\",\"placement\":{\"at\":[10,19.8],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[2.4,0.75,0.9]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-chair-north-0\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[9.3,19.200000000000003],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-chair-south-0\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[9.3,20.400000000000002],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-chair-north-1\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[10,19.200000000000003],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-chair-south-1\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[10,20.400000000000002],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-chair-north-2\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[10.700000000000001,19.200000000000003],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-chair-south-2\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[10.700000000000001,20.400000000000002],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-lounger-0-1\",\"kind\":\"furnishing\",\"modelId\":\"pool-chaise-longue\",\"placement\":{\"at\":[3,23.400000000000002],\"elevationMeters\":-0.049,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.8,0.85,2.1]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-lounger-0-2\",\"kind\":\"furnishing\",\"modelId\":\"pool-chaise-longue\",\"placement\":{\"at\":[3.1,25.5],\"elevationMeters\":-0.049,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.8,0.85,2.1]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-pool-table-0\",\"kind\":\"furnishing\",\"modelId\":\"rectangular-coffee-table\",\"placement\":{\"at\":[2.6,24.400000000000002],\"elevationMeters\":-0.049,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.6,0.4,0.4]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-olive-0\",\"kind\":\"furnishing\",\"modelId\":\"olive-tree\",\"placement\":{\"at\":[0.9,23.5],\"elevationMeters\":-0.049,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[3.8,3.6,3.2]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-olive-2\",\"kind\":\"furnishing\",\"modelId\":\"olive-tree\",\"placement\":{\"at\":[2.5,28],\"elevationMeters\":-0.049,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[3.8,3.6,3.2]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-shrub-2\",\"kind\":\"furnishing\",\"modelId\":\"garden-shrub\",\"placement\":{\"at\":[6,-2.5],\"elevationMeters\":-0.049,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.35,0.92,1.15]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"primary\",\"id\":\"garage-compact-car-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Compact car status\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"garage-compact-car\",\"kind\":\"device\",\"modelId\":\"compact-car\",\"placement\":{\"at\":[1.35,4.25],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[1.94,1.5,4]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"primary\",\"id\":\"garage-electric-sedan-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Electric sedan status\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"garage-electric-sedan\",\"kind\":\"device\",\"modelId\":\"electric-sedan\",\"placement\":{\"at\":[4.15,4.5],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[2.08,1.45,4.7]},{\"floorId\":\"ground-floor\",\"id\":\"garage-storage-shelf-west\",\"kind\":\"furnishing\",\"modelId\":\"oak-bookshelf\",\"placement\":{\"at\":[0.72,8.267],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.8,1.9,0.3]},{\"floorId\":\"ground-floor\",\"id\":\"garage-workbench\",\"kind\":\"furnishing\",\"modelId\":\"oak-desk\",\"placement\":{\"at\":[2.05,8.067],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.4,0.74,0.7]},{\"floorId\":\"ground-floor\",\"id\":\"garage-storage-shelf-east\",\"kind\":\"furnishing\",\"modelId\":\"oak-bookshelf\",\"placement\":{\"at\":[3.43,8.267],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.8,1.9,0.3]},{\"floorId\":\"ground-floor\",\"id\":\"garage-workbench-tool-shelf\",\"kind\":\"furnishing\",\"modelId\":\"floating-wall-shelf\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":1.35,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.05,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-day-wall\"},\"size\":[1.4,0.22,0.25]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"garage-ceiling-light-1-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Garage ceiling light 1\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"garage-ceiling-light-1\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"ceiling-light\",\"placement\":{\"at\":[1.55,4.35],\"dropMeters\":0.122,\"kind\":\"ceiling\",\"roomId\":\"ground-floor:room-1\",\"rotationYRadians\":0},\"size\":[0.4,0.12,0.4]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"garage-ceiling-light-2-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Garage ceiling light 2\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"garage-ceiling-light-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"ceiling-light\",\"placement\":{\"at\":[4.55,4.35],\"dropMeters\":0.122,\"kind\":\"ceiling\",\"roomId\":\"ground-floor:room-1\",\"rotationYRadians\":0},\"size\":[0.4,0.12,0.4]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"carbon_monoxide\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"garage-carbon-monoxide-alarm-entity\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Garage carbon monoxide alarm\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"garage-carbon-monoxide-alarm\",\"kind\":\"device\",\"modelId\":\"carbon-monoxide-alarm\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":1.6,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":10.6,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-wall\"},\"size\":[0.11,0.11,0.035]},{\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-tall-storage\",\"kind\":\"furnishing\",\"modelId\":\"flat-door-wardrobe\",\"placement\":{\"at\":[6.883,3.28],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1,2.2,0.6]},{\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-folding-cabinet\",\"kind\":\"furnishing\",\"modelId\":\"kitchen-base-cabinet\",\"placement\":{\"at\":[8.6,4.102],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.6,0.9,0.63]},{\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-sink-cabinet\",\"kind\":\"furnishing\",\"modelId\":\"kitchen-sink-cabinet\",\"placement\":{\"at\":[9.4,4.102],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[1,1.12,0.63]},{\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-folding-basket\",\"kind\":\"furnishing\",\"modelId\":\"wicker-towel-basket\",\"placement\":{\"at\":[8.6,4.02],\"elevationMeters\":0.902,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.38,0.315,0.31]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"switch\"],\"deviceRole\":\"primary\",\"id\":\"utility-laundry-washing-machine-power\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Washing machine\"},\"required\":true},{\"autoMap\":\"manual\",\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"secondary\",\"id\":\"utility-laundry-washing-machine-status\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Washing machine status\"},\"required\":false}],\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-washing-machine\",\"kind\":\"device\",\"modelId\":\"washing-machine\",\"placement\":{\"at\":[8.4,0.458],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.632,0.865,0.63]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"switch\"],\"deviceRole\":\"primary\",\"id\":\"utility-laundry-tumble-dryer-power\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Tumble dryer\"},\"required\":true},{\"autoMap\":\"manual\",\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"secondary\",\"id\":\"utility-laundry-tumble-dryer-status\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Tumble dryer status\"},\"required\":false}],\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-tumble-dryer\",\"kind\":\"device\",\"modelId\":\"tumble-dryer\",\"placement\":{\"at\":[9.1,0.488],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.6,0.85,0.65]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"water_heater\",\"switch\"],\"deviceRole\":\"primary\",\"id\":\"utility-laundry-water-heater-control\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Water heater\"},\"required\":true},{\"autoMap\":\"manual\",\"compatibleDeviceClasses\":[\"temperature\"],\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"secondary\",\"id\":\"utility-laundry-water-heater-temperature\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Water heater temperature\"},\"required\":false}],\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-water-heater\",\"kind\":\"device\",\"modelId\":\"water-heater\",\"placement\":{\"depthOffsetMeters\":0.209,\"elevationMeters\":0.85,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.9,\"rotationOffsetRadians\":0,\"wallId\":\"ground-service-divider\"},\"size\":[0.572,1.456,0.43]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"utility-laundry-ceiling-light-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Utility room light\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-ceiling-light\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"ceiling-light\",\"placement\":{\"at\":[8.25,2.3],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"stair-hall\",\"rotationYRadians\":0},\"size\":[0.4,0.12,0.4]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"moisture\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"utility-laundry-leak-sensor-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Laundry leak sensor\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-leak-sensor\",\"kind\":\"device\",\"modelId\":\"leak-sensor\",\"placement\":{\"at\":[8.68,0.96],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.2,0.14,0.2]},{\"floorId\":\"ground-floor\",\"id\":\"pantry-north-west-shelving\",\"kind\":\"furnishing\",\"modelId\":\"oak-bookshelf\",\"placement\":{\"at\":[6.734,5.08],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.8,1.9,0.3]},{\"floorId\":\"ground-floor\",\"id\":\"pantry-south-east-shelving\",\"kind\":\"furnishing\",\"modelId\":\"oak-bookshelf\",\"placement\":{\"at\":[9.766,7.78],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":-1.5707963267948966},\"size\":[0.8,1.9,0.3]},{\"floorId\":\"ground-floor\",\"id\":\"pantry-preparation-counter\",\"kind\":\"furnishing\",\"modelId\":\"kitchen-base-cabinet\",\"placement\":{\"at\":[7.2,8.101],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.1,0.9,0.63]},{\"floorId\":\"ground-floor\",\"id\":\"pantry-wall-cabinet\",\"kind\":\"furnishing\",\"modelId\":\"kitchen-wall-cabinet\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.38,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":7.2,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-day-wall\"},\"size\":[1.1,0.8,0.35]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"temperature\"],\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"primary\",\"id\":\"pantry-freezer-entity\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Pantry freezer temperature\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"pantry-freezer\",\"kind\":\"device\",\"modelId\":\"freezer\",\"placement\":{\"at\":[9.576,5.3],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":4.71238898038469},\"size\":[0.65,1.75,0.68]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"pantry-downlight-1-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Pantry downlight 1\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"pantry-downlight-1\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[7.35,6.5],\"dropMeters\":0.04,\"kind\":\"ceiling\",\"roomId\":\"pantry\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"pantry-downlight-2-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Pantry downlight 2\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"pantry-downlight-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[9.15,6.5],\"dropMeters\":0.04,\"kind\":\"ceiling\",\"roomId\":\"pantry\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"motion\",\"occupancy\",\"presence\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"pantry-motion-sensor-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Pantry presence\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"pantry-motion-sensor\",\"kind\":\"device\",\"modelId\":\"motion-sensor\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":2.35,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.75,\"rotationOffsetRadians\":0,\"wallId\":\"ground-utility-pantry-wall\"},\"size\":[0.14,0.135,0.081]},{\"floorId\":\"ground-floor\",\"id\":\"foyer-shoe-bench\",\"kind\":\"furnishing\",\"modelId\":\"entryway-shoe-bench\",\"placement\":{\"at\":[10.274,3.65],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1,0.5,0.38]},{\"floorId\":\"ground-floor\",\"id\":\"foyer-coat-rack\",\"kind\":\"furnishing\",\"modelId\":\"wall-coat-rack\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.24,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.65,\"rotationOffsetRadians\":0,\"wallId\":\"ground-service-divider\"},\"size\":[0.9,0.36,0.22]},{\"floorId\":\"ground-floor\",\"id\":\"foyer-console\",\"kind\":\"furnishing\",\"modelId\":\"hallway-console-table\",\"placement\":{\"depthOffsetMeters\":0.175,\"elevationMeters\":0.001,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":4.4541,\"rotationOffsetRadians\":0,\"wallId\":\"ground-east-wall\"},\"size\":[1.1,0.8,0.35]},{\"floorId\":\"ground-floor\",\"id\":\"foyer-framed-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"depthOffsetMeters\":0,\"elevationMeters\":1.35,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":4.6739,\"rotationOffsetRadians\":0,\"wallId\":\"ground-east-wall\"},\"size\":[0.8,0.6,0.04]},{\"floorId\":\"ground-floor\",\"id\":\"foyer-potted-plant\",\"kind\":\"furnishing\",\"modelId\":\"potted-plant\",\"placement\":{\"at\":[10.65,0.62],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":-0.39269908169872414},\"size\":[0.615,1.105,0.44]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"foyer-pendant-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Foyer pendant\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"foyer-pendant\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"terracotta-pendant\",\"placement\":{\"at\":[12,2.86],\"dropMeters\":0.82,\"kind\":\"ceiling\",\"roomId\":\"ground-floor:room-2\",\"rotationYRadians\":0},\"size\":[0.66,0.64,0.66]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"camera\"],\"deviceRole\":\"primary\",\"id\":\"foyer-camera-screen-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Entry camera screen\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"foyer-camera-screen\",\"kind\":\"device\",\"modelId\":\"camera-screen\",\"placement\":{\"at\":[13.916,0.78],\"elevationMeters\":1.2,\"kind\":\"absolute\",\"rotationYRadians\":-1.5707963267948966},\"size\":[0.98,0.62,0.061]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"alarm_control_panel\"],\"deviceRole\":\"primary\",\"id\":\"foyer-alarm-keypad-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Villa alarm\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"foyer-alarm-keypad\",\"kind\":\"device\",\"modelId\":\"alarm-keypad\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.3,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":10.65,\"rotationOffsetRadians\":0,\"wallId\":\"ground-north-wall\"},\"size\":[0.18,0.25,0.035]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"lock\"],\"deviceRole\":\"primary\",\"id\":\"foyer-smart-lock-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Front door lock\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"foyer-smart-lock\",\"kind\":\"device\",\"modelId\":\"smart-lock\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":0.96,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":12.98,\"rotationOffsetRadians\":0,\"wallId\":\"ground-north-wall\"},\"size\":[0.07,0.18,0.06]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"cover\"],\"deviceRole\":\"primary\",\"id\":\"guest-bedroom-east-blind-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"East window blind\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"guest-bedroom-east-blind\",\"kind\":\"device\",\"modelId\":\"motorized-blind\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":0.8,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.45,\"rotationOffsetRadians\":0,\"wallId\":\"ground-east-wall\"},\"size\":[2.05,1.45,0.12]},{\"floorId\":\"ground-floor\",\"id\":\"stair-hall-console\",\"kind\":\"furnishing\",\"modelId\":\"hallway-console-table\",\"placement\":{\"at\":[10.257,8],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1.1,0.8,0.35]},{\"floorId\":\"ground-floor\",\"id\":\"stair-hall-console-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"at\":[10.083,8],\"elevationMeters\":1.42,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.8,0.62,0.04]},{\"floorId\":\"ground-floor\",\"id\":\"stair-hall-landing-plant\",\"kind\":\"furnishing\",\"modelId\":\"potted-plant\",\"placement\":{\"at\":[13.6,10.5],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":-0.4487989505128276},\"size\":[0.615,1.105,0.44]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"stair-hall-downlight-1-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Stair hall downlight 1\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"stair-hall-downlight-1\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[10.6,7.55],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"ground-floor:room-2\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"stair-hall-downlight-2-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Stair hall downlight 2\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"stair-hall-downlight-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[13.4,9.25],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"ground-floor:room-2\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"stair-hall-wall-sconce-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Stair hall wall sconce\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"stair-hall-wall-sconce\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"wall-sconce\",\"placement\":{\"at\":[13.917,9.65],\"elevationMeters\":1.72,\"kind\":\"absolute\",\"rotationYRadians\":-1.5707963267948966},\"size\":[0.22,0.32,0.16]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"motion\",\"occupancy\",\"presence\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"stair-hall-motion-sensor-entity\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Stair hall motion\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"stair-hall-motion-sensor\",\"kind\":\"device\",\"modelId\":\"motion-sensor\",\"placement\":{\"at\":[13.4,0.7000000000000001],\"elevationMeters\":3,\"kind\":\"absolute\",\"rotationYRadians\":0.007142735669413403},\"size\":[0.14,0.135,0.081]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-equipped-kitchen\",\"kind\":\"furnishing\",\"modelId\":\"equipped-kitchen\",\"placement\":{\"at\":[0.5,9],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[3.89,2.23,2.54]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-counter-stool-1\",\"kind\":\"furnishing\",\"modelId\":\"counter-stool\",\"placement\":{\"at\":[1.55,12.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.502,0.9621666666666667,0.5229166666666667]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-counter-stool-2\",\"kind\":\"furnishing\",\"modelId\":\"counter-stool\",\"placement\":{\"at\":[2.55,12.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.502,0.9621666666666667,0.5229166666666667]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-counter-stool-3\",\"kind\":\"furnishing\",\"modelId\":\"counter-stool\",\"placement\":{\"at\":[3.55,12.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.502,0.9621666666666667,0.5229166666666667]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-table\",\"kind\":\"furnishing\",\"modelId\":\"rectangular-dining-table\",\"placement\":{\"at\":[10.7,14.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[2.8,0.75,1.1]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-north-west\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[9.6,13.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-north-center\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[10.7,13.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-north-east\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[11.8,13.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-south-west\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[9.6,15.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-south-center\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[10.7,15.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-south-east\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[11.8,15.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-west\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[8.9,14.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-east\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[12.5,14.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-reading-rug\",\"kind\":\"furnishing\",\"modelId\":\"neutral-area-rug\",\"placement\":{\"at\":[3.2,15],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[4.5,0.015,3.6],\"variant\":\"sage\"},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-reading-table\",\"kind\":\"furnishing\",\"modelId\":\"rectangular-coffee-table\",\"placement\":{\"at\":[3.1,15.5],\"elevationMeters\":0.017,\"kind\":\"absolute\",\"rotationYRadians\":4.71238898038469},\"size\":[1.1,0.4,0.6]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-reading-ficus\",\"kind\":\"furnishing\",\"modelId\":\"tall-ficus\",\"placement\":{\"at\":[0.85,16.95],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.901,1.643,0.503]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-sideboard\",\"kind\":\"furnishing\",\"modelId\":\"three-door-sideboard\",\"placement\":{\"at\":[6.85,8.808],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.8,0.82,0.45]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-sideboard-plant\",\"kind\":\"furnishing\",\"modelId\":\"potted-plant\",\"placement\":{\"at\":[7.4,8.81],\"elevationMeters\":0.823,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.3075,0.5525,0.22]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-sideboard-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.3,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":7.1,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-day-wall\"},\"size\":[1.5,1,0.04]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-kitchen-cabinet-lighting-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Kitchen cabinet lighting\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-kitchen-cabinet-lighting\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"kitchen-cabinet-lighting\",\"placement\":{\"at\":[0.5,9],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[3.89,2.23,2.54]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-kitchen-pendant-1-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Kitchen pendant 1\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-kitchen-pendant-1\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"woven-pendant\",\"placement\":{\"at\":[1.55,11.25],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"open-plan-living\",\"rotationYRadians\":0},\"size\":[0.704,0.482077922077922,0.7148051948051948]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-kitchen-pendant-2-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Kitchen pendant 2\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-kitchen-pendant-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"woven-pendant\",\"placement\":{\"at\":[2.55,11.25],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"open-plan-living\",\"rotationYRadians\":0},\"size\":[0.704,0.482077922077922,0.7148051948051948]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-kitchen-pendant-3-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Kitchen pendant 3\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-kitchen-pendant-3\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"woven-pendant\",\"placement\":{\"at\":[3.55,11.25],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"open-plan-living\",\"rotationYRadians\":0},\"size\":[0.704,0.482077922077922,0.7148051948051948]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-dining-pendant-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Dining pendant\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-pendant\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"woven-pendant\",\"placement\":{\"at\":[10.7,14.1],\"dropMeters\":0.15,\"kind\":\"ceiling\",\"roomId\":\"open-plan-living\",\"rotationYRadians\":0},\"size\":[0.847,0.58,0.86]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"climate\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-ac-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Living room AC\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-ac\",\"kind\":\"device\",\"modelId\":\"indoor-ac\",\"placement\":{\"depthOffsetMeters\":0.001,\"elevationMeters\":2.35,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":5.1857,\"rotationOffsetRadians\":0,\"wallId\":\"ground-service-divider\"},\"size\":[0.86,0.28,0.206]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-rug\",\"kind\":\"furnishing\",\"modelId\":\"neutral-area-rug\",\"placement\":{\"at\":[8,5.2],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[3,0.015,2.8]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-bed\",\"kind\":\"furnishing\",\"modelId\":\"double-bed\",\"placement\":{\"at\":[8.841,5.2],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":-1.5707963267948966},\"size\":[1.7,1.1,2.15]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-north-nightstand\",\"kind\":\"furnishing\",\"modelId\":\"oak-nightstand\",\"placement\":{\"at\":[9.716,4],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.45,0.5,0.4]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-south-nightstand\",\"kind\":\"furnishing\",\"modelId\":\"oak-nightstand\",\"placement\":{\"at\":[9.716,6.4],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.45,0.5,0.4]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-bedroom-north-table-lamp-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"North bedside lamp\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-north-table-lamp\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"table-lamp\",\"placement\":{\"at\":[9.716,4],\"elevationMeters\":0.501,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.32,0.52,0.32]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-bedroom-south-table-lamp-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"South bedside lamp\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-south-table-lamp\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"table-lamp\",\"placement\":{\"at\":[9.716,6.4],\"elevationMeters\":0.501,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.32,0.52,0.32]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-bed-bench\",\"kind\":\"furnishing\",\"modelId\":\"upholstered-ottoman\",\"placement\":{\"at\":[7.2,5.2],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.7,0.42,0.55]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-sideboard\",\"kind\":\"furnishing\",\"modelId\":\"three-door-sideboard\",\"placement\":{\"at\":[5.65,7.691],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[1.6,0.82,0.45]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.28,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.65,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-suite-wall\"},\"size\":[1.1,0.72,0.04]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-reading-chair\",\"kind\":\"furnishing\",\"modelId\":\"upholstered-armchair\",\"placement\":{\"at\":[8.8,1.2],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":-2.356194490192345},\"size\":[0.85,0.9,0.88]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-reading-plant\",\"kind\":\"furnishing\",\"modelId\":\"potted-plant\",\"placement\":{\"at\":[7.55,0.62],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0.39269908169872414},\"size\":[0.615,1.105,0.44]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-bedroom-pendant-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Primary bedroom pendant\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-pendant\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"woven-pendant\",\"placement\":{\"at\":[6,4],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"primary-bedroom\",\"rotationYRadians\":0},\"size\":[0.847,0.58,0.86]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"climate\"],\"deviceRole\":\"primary\",\"id\":\"primary-bedroom-ac-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Primary bedroom AC\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-ac\",\"kind\":\"device\",\"modelId\":\"indoor-ac\",\"placement\":{\"depthOffsetMeters\":0.002,\"elevationMeters\":2.28,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":5.2,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-gallery-wall\"},\"size\":[0.86,0.28,0.206]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"cover\"],\"deviceRole\":\"primary\",\"id\":\"primary-bedroom-north-blind-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"North window blind\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-north-blind\",\"kind\":\"device\",\"modelId\":\"motorized-blind\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":0.75,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3,\"rotationOffsetRadians\":0,\"wallId\":\"first-north-wall\"},\"size\":[2.8,1.425,0.12]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"cover\"],\"deviceRole\":\"primary\",\"id\":\"primary-bedroom-west-blind-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"West window blind\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-west-blind\",\"kind\":\"device\",\"modelId\":\"motorized-blind\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":0.75,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":11.7,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-wall\"},\"size\":[2.8,1.425,0.12]},{\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-bathtub\",\"kind\":\"furnishing\",\"modelId\":\"freestanding-bathtub\",\"placement\":{\"at\":[2.553,10],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1.7,0.6,0.78]},{\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-shower\",\"kind\":\"furnishing\",\"modelId\":\"shower-assembly\",\"placement\":{\"at\":[4.821,11.454],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[2.018,1.57,0.908]},{\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-toilet\",\"kind\":\"furnishing\",\"modelId\":\"compact-toilet\",\"placement\":{\"at\":[2.55,8.383],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.39,0.724,0.6]},{\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-vanity\",\"kind\":\"furnishing\",\"modelId\":\"dark-oak-vessel-vanity\",\"placement\":{\"at\":[5.25,8.343],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.8,1.23,0.52]},{\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-towel-basket\",\"kind\":\"furnishing\",\"modelId\":\"wicker-towel-basket\",\"placement\":{\"at\":[3.32,11.48],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":-0.39269908169872414},\"size\":[0.38,0.315,0.31]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-bathroom-ceiling-light-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Primary bathroom ceiling light\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-ceiling-light\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"ceiling-light\",\"placement\":{\"at\":[4.05,10],\"dropMeters\":0.08,\"kind\":\"ceiling\",\"roomId\":\"primary-bathroom\",\"rotationYRadians\":0},\"size\":[0.4,0.12,0.4]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-bathroom-illuminated-mirror-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Primary bathroom mirror light\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-illuminated-mirror\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"illuminated-round-mirror\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.3,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.25,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-suite-wall\"},\"size\":[0.8,0.8,0.045]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"climate\",\"switch\"],\"deviceRole\":\"primary\",\"id\":\"primary-bathroom-heated-towel-rail-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Primary bathroom towel warmer\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-heated-towel-rail\",\"kind\":\"device\",\"modelId\":\"heated-towel-rail\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":0.72,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":0.95,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-bath-divider\"},\"size\":[0.6,1.2,0.12]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"fan\",\"switch\"],\"deviceRole\":\"primary\",\"id\":\"primary-bathroom-extractor-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Primary bathroom extractor\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-extractor\",\"kind\":\"device\",\"modelId\":\"bathroom-extractor-fan\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":2.52,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.45,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-bath-divider\"},\"size\":[0.18,0.18,0.09]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"humidity\"],\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"primary\",\"id\":\"primary-bathroom-humidity-sensor-entity\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Primary bathroom humidity\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-humidity-sensor\",\"kind\":\"device\",\"modelId\":\"humidity-sensor\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.72,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.5,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-suite-wall\"},\"size\":[0.085,0.085,0.03]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"moisture\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"primary-bathroom-leak-sensor-entity\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Primary bathroom leak sensor\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-leak-sensor\",\"kind\":\"device\",\"modelId\":\"leak-sensor\",\"placement\":{\"at\":[5.34,8.78],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.2,0.14,0.2]},{\"floorId\":\"first-floor\",\"id\":\"primary-dressing-south-wardrobe\",\"kind\":\"furnishing\",\"modelId\":\"flat-door-wardrobe\",\"placement\":{\"at\":[8,11.617],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[3.2,2.2,0.6]},{\"floorId\":\"first-floor\",\"id\":\"primary-dressing-north-chest\",\"kind\":\"furnishing\",\"modelId\":\"chest-of-drawers\",\"placement\":{\"at\":[9.05,8.308],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.3,0.9,0.45]},{\"floorId\":\"first-floor\",\"id\":\"primary-dressing-center-rug\",\"kind\":\"furnishing\",\"modelId\":\"neutral-area-rug\",\"placement\":{\"at\":[8.15,9.65],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.4,0.015,1.6]},{\"floorId\":\"first-floor\",\"id\":\"primary-dressing-ottoman\",\"kind\":\"furnishing\",\"modelId\":\"upholstered-ottoman\",\"placement\":{\"at\":[8.55,9.15],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.7,0.42,0.55]},{\"floorId\":\"first-floor\",\"id\":\"primary-dressing-mirror\",\"kind\":\"furnishing\",\"modelId\":\"arched-mirror\",\"placement\":{\"depthOffsetMeters\":0.033,\"elevationMeters\":1.15,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":7.05,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-suite-wall\"},\"size\":[0.54,1.05,0.06]},{\"floorId\":\"first-floor\",\"id\":\"primary-dressing-west-shelf\",\"kind\":\"furnishing\",\"modelId\":\"floating-wall-shelf\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":1.3,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.05,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-bath-divider\"},\"size\":[1,0.22,0.25]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-dressing-downlight-1-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Dressing downlight 1\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-dressing-downlight-1\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[7.15,9.05],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"primary-dressing\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-dressing-downlight-2-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Dressing downlight 2\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-dressing-downlight-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[8.85,10.95],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"primary-dressing\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"motion\",\"occupancy\",\"presence\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"primary-dressing-motion-sensor-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Dressing occupancy\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-dressing-motion-sensor\",\"kind\":\"device\",\"modelId\":\"motion-sensor\",\"placement\":{\"at\":[8,10],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"primary-dressing\",\"rotationYRadians\":0},\"size\":[0.14,0.135,0.081]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-bed\",\"kind\":\"furnishing\",\"modelId\":\"single-bed\",\"placement\":{\"at\":[3.5,13.134],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1,0.95,2.1]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-nightstand\",\"kind\":\"furnishing\",\"modelId\":\"oak-nightstand\",\"placement\":{\"at\":[4.35,12.284],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.45,0.5,0.4]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-bookshelf\",\"kind\":\"furnishing\",\"modelId\":\"oak-bookshelf\",\"placement\":{\"at\":[5.7,12.234],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.8,1.9,0.3]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-desk\",\"kind\":\"furnishing\",\"modelId\":\"oak-desk\",\"placement\":{\"at\":[7.65,12.434],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.4,0.74,0.7]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-desk-chair\",\"kind\":\"furnishing\",\"modelId\":\"ergonomic-office-chair\",\"placement\":{\"at\":[7.5,12.8],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.68,1.04,0.68]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-wardrobe\",\"kind\":\"furnishing\",\"modelId\":\"flat-door-wardrobe\",\"placement\":{\"depthOffsetMeters\":0.3,\"elevationMeters\":0.001,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":14.9168,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-gallery-wall\"},\"size\":[1.6,2.2,0.6]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-rug\",\"kind\":\"furnishing\",\"modelId\":\"neutral-area-rug\",\"placement\":{\"at\":[6,14.65],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[2.5,0.015,1.45]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-bed-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.38,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":1.5,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-bedroom-wall\"},\"size\":[0.8,0.6,0.04]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"bedroom-four-bedside-lamp-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Bedroom four bedside lamp\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"bedroom-four-bedside-lamp\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"table-lamp\",\"placement\":{\"at\":[4.35,12.284],\"elevationMeters\":0.501,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.32,0.52,0.32]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"bedroom-four-pendant-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Bedroom four pendant\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"bedroom-four-pendant\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"children-pendant\",\"placement\":{\"at\":[6.2,14.1],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"bedroom-four\",\"rotationYRadians\":0},\"size\":[0.58,0.479,0.58]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"climate\"],\"deviceRole\":\"primary\",\"id\":\"bedroom-four-ac-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Bedroom four AC\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"bedroom-four-ac\",\"kind\":\"device\",\"modelId\":\"indoor-ac\",\"placement\":{\"depthOffsetMeters\":0.002,\"elevationMeters\":2.3,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":6.8,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-bedroom-wall\"},\"size\":[0.86,0.28,0.206]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"cover\"],\"deviceRole\":\"primary\",\"id\":\"bedroom-four-west-blind-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Bedroom four west blind\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"bedroom-four-west-blind\",\"kind\":\"device\",\"modelId\":\"motorized-blind\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":0.75,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.4,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-wall\"},\"size\":[2.25,1.425,0.12]},{\"floorId\":\"first-floor\",\"id\":\"upper-landing-console\",\"kind\":\"furnishing\",\"modelId\":\"hallway-console-table\",\"placement\":{\"at\":[10.257,4.2],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1.1,0.8,0.35]},{\"floorId\":\"first-floor\",\"id\":\"upper-landing-console-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":1.42,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":4.2,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-gallery-wall\"},\"size\":[0.8,0.62,0.04]},{\"floorId\":\"first-floor\",\"id\":\"upper-landing-north-plant\",\"kind\":\"furnishing\",\"modelId\":\"potted-plant\",\"placement\":{\"at\":[10.47,0.55],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0.4487989505128276},\"size\":[0.615,1.105,0.44]},{\"floorId\":\"first-floor\",\"id\":\"upper-landing-gallery-bench\",\"kind\":\"furnishing\",\"modelId\":\"entryway-shoe-bench\",\"placement\":{\"at\":[13.727,11.7],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1,0.5,0.38]},{\"floorId\":\"first-floor\",\"id\":\"upper-landing-bench-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"at\":[13.917,11.7],\"elevationMeters\":1.25,\"kind\":\"absolute\",\"rotationYRadians\":-1.5707963267948966},\"size\":[0.8,0.62,0.04]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"upper-landing-downlight-1-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Upper landing downlight 1\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"upper-landing-downlight-1\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[12,4.65],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"upper-landing\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"upper-landing-downlight-2-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Upper landing downlight 2\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"upper-landing-downlight-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[12,11.55],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"upper-landing\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"upper-landing-north-sconce-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"North gallery wall sconce\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"upper-landing-north-sconce\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"wall-sconce\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":1.72,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":5.18,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-gallery-wall\"},\"size\":[0.22,0.32,0.16]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"upper-landing-south-sconce-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"South gallery wall sconce\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"upper-landing-south-sconce\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"wall-sconce\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":1.72,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":0.45,\"rotationOffsetRadians\":0,\"wallId\":\"first-east-gallery-wall--split-3\"},\"size\":[0.22,0.32,0.16]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"motion\",\"occupancy\",\"presence\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"upper-landing-motion-sensor-entity\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Upper landing motion\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"upper-landing-motion-sensor\",\"kind\":\"device\",\"modelId\":\"motion-sensor\",\"placement\":{\"at\":[13.45,5.42],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"upper-landing\",\"rotationYRadians\":0},\"size\":[0.14,0.135,0.081]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"low-garden-lantern-primary\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Low garden lantern\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"low-garden-lantern\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"low-garden-lantern\",\"placement\":{\"at\":[10.700000000000001,-0.8],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.24,0.35,0.24],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"low-garden-lantern-primary-copy\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Low garden lantern\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"low-garden-lantern-copy\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"low-garden-lantern\",\"placement\":{\"at\":[13.200000000000001,-0.8],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.24,0.35,0.24],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"low-garden-lantern-2-primary\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Low garden lantern\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"low-garden-lantern-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"low-garden-lantern\",\"placement\":{\"at\":[10.700000000000001,-2.4000000000000004],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.24,0.35,0.24],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"low-garden-lantern-2-primary-copy\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Low garden lantern\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"low-garden-lantern-2-copy\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"low-garden-lantern\",\"placement\":{\"at\":[13.200000000000001,-2.4000000000000004],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.24,0.35,0.24],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"low-garden-lantern-2-primary-copy-copy\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Low garden lantern\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"low-garden-lantern-2-copy-copy\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"low-garden-lantern\",\"placement\":{\"at\":[13.200000000000001,-3.9000000000000004],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.24,0.35,0.24],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"low-garden-lantern-primary-copy-2\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Low garden lantern\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"low-garden-lantern-copy-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"low-garden-lantern\",\"placement\":{\"at\":[10.700000000000001,-3.9000000000000004],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.24,0.35,0.24],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"deciduous-tree\",\"kind\":\"furnishing\",\"modelId\":\"deciduous-tree\",\"placement\":{\"at\":[13.5,28.700000000000003],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[2.4,4.2,2.4],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"deciduous-tree-copy\",\"kind\":\"furnishing\",\"modelId\":\"deciduous-tree\",\"placement\":{\"at\":[15.200000000000001,25.900000000000002],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":4.71238898038469},\"size\":[2.4,4.2,2.4],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"deciduous-tree-copy-copy\",\"kind\":\"furnishing\",\"modelId\":\"deciduous-tree\",\"placement\":{\"at\":[0,-1.7000000000000002],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":4.71238898038469},\"size\":[2.4,4.2,2.4],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-reading-rug-copy\",\"kind\":\"furnishing\",\"modelId\":\"neutral-area-rug\",\"placement\":{\"at\":[10.700000000000001,14],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[4.5,0.015,3.6],\"variant\":\"terracotta\"},{\"floorId\":\"ground-floor\",\"id\":\"sectional-sofa\",\"kind\":\"furnishing\",\"modelId\":\"sectional-sofa\",\"placement\":{\"at\":[4.6000000000000005,15.200000000000001],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":4.71238898038469},\"size\":[2.93,1.227,1.63],\"variant\":\"cozy\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"media_player\"],\"deviceRole\":\"primary\",\"id\":\"television-primary\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Wall television\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"television\",\"kind\":\"device\",\"modelId\":\"wall-television\",\"placement\":{\"depthOffsetMeters\":0.005,\"elevationMeters\":1.08,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.0689,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-wall\"},\"size\":[2.4,1.36,0.07]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"media_player\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-speaker-primary\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Living room speaker\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-speaker\",\"kind\":\"device\",\"modelId\":\"speaker\",\"placement\":{\"depthOffsetMeters\":0.21,\"elevationMeters\":0.55,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.45,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-wall\"},\"size\":[0.26,0.39,0.26]},{\"floorId\":\"ground-floor\",\"id\":\"low-media-console\",\"kind\":\"furnishing\",\"modelId\":\"low-media-console\",\"placement\":{\"depthOffsetMeters\":0.20999999999999996,\"elevationMeters\":0.001,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.0659,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-wall\"},\"size\":[1.6,0.55,0.42],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"outdoor-bbq\",\"kind\":\"furnishing\",\"modelId\":\"outdoor-bbq\",\"placement\":{\"at\":[1.1,18.900000000000002],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1.2,1.1,0.6],\"variant\":\"default\"}]"), ap = ye(JSON.stringify({
 	assumptions: [
 		{
 			basis: "user",
@@ -38438,12 +38571,12 @@ var Xf = {
 			order: 6
 		}
 	],
-	...ep,
-	sceneItems: tp
+	...rp,
+	sceneItems: ip
 }));
-if (!np.valid) throw Error(np.issues.map((e) => e.message).join("\n"));
-var rp = np.project, ip = "#eee9de", ap = "#f5f2eb", op = "#eee8dc", sp = "#d3c9bc", cp = "#b77b43", lp = "#d09a62", up = "#b78332", dp = "#292b2a", fp = "#665c50";
-function $({ size: e, position: t, color: n, outline: r = fp, receiveShadow: i = !1 }) {
+if (!ap.valid) throw Error(ap.issues.map((e) => e.message).join("\n"));
+var op = ap.project, sp = "#eee9de", cp = "#f5f2eb", lp = "#eee8dc", up = "#d3c9bc", dp = "#b77b43", fp = "#d09a62", pp = "#b78332", mp = "#292b2a", hp = "#665c50";
+function $({ size: e, position: t, color: n, outline: r = hp, receiveShadow: i = !1 }) {
 	return /* @__PURE__ */ (0, U.jsxs)("mesh", {
 		position: t,
 		castShadow: !0,
@@ -38459,7 +38592,7 @@ function $({ size: e, position: t, color: n, outline: r = fp, receiveShadow: i =
 		]
 	});
 }
-function pp({ width: e, height: t, position: n }) {
+function gp({ width: e, height: t, position: n }) {
 	return /* @__PURE__ */ (0, U.jsxs)("mesh", {
 		position: n,
 		receiveShadow: !0,
@@ -38467,12 +38600,12 @@ function pp({ width: e, height: t, position: n }) {
 			e,
 			t,
 			.018
-		] }), /* @__PURE__ */ (0, U.jsx)(I, { color: ap })]
+		] }), /* @__PURE__ */ (0, U.jsx)(I, { color: cp })]
 	});
 }
 //#endregion
 //#region home/src/extensions/kitchen/brass-cabinet-handle.tsx
-function mp({ position: e, vertical: t = !1 }) {
+function _p({ position: e, vertical: t = !1 }) {
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		position: e,
 		children: [/* @__PURE__ */ (0, U.jsx)($, {
@@ -38490,7 +38623,7 @@ function mp({ position: e, vertical: t = !1 }) {
 				0,
 				0
 			],
-			color: up,
+			color: pp,
 			outline: "#6f4d20"
 		}), [-1, 1].map((e) => /* @__PURE__ */ (0, U.jsxs)("mesh", {
 			castShadow: !0,
@@ -38507,13 +38640,13 @@ function mp({ position: e, vertical: t = !1 }) {
 				.018,
 				.018,
 				.045
-			] }), /* @__PURE__ */ (0, U.jsx)(I, { color: up })]
+			] }), /* @__PURE__ */ (0, U.jsx)(I, { color: pp })]
 		}, e))]
 	});
 }
 //#endregion
 //#region home/src/extensions/kitchen/cabinet-joint.tsx
-function hp({ from: e, to: t, color: n, thickness: r = .006 }) {
+function vp({ from: e, to: t, color: n, thickness: r = .006 }) {
 	let i = t[0] - e[0], a = t[1] - e[1], o = t[2] - e[2], s = Math.hypot(i, a, o), c = Math.hypot(i, o), l = -Math.atan2(o, i), u = Math.atan2(a, c);
 	return /* @__PURE__ */ (0, U.jsxs)("mesh", {
 		position: [
@@ -38535,17 +38668,17 @@ function hp({ from: e, to: t, color: n, thickness: r = .006 }) {
 }
 //#endregion
 //#region home/src/extensions/kitchen/stone-vein.tsx
-function gp({ points: e, width: t }) {
-	return e.slice(1).map((n, r) => /* @__PURE__ */ (0, U.jsx)(hp, {
+function yp({ points: e, width: t }) {
+	return e.slice(1).map((n, r) => /* @__PURE__ */ (0, U.jsx)(vp, {
 		from: e[r],
 		to: n,
-		color: sp,
+		color: up,
 		thickness: t
 	}, `${n[0]}-${n[2]}`));
 }
 //#endregion
 //#region home/src/extensions/kitchen/kitchen-cabinetry.tsx
-var _p = .55, vp = .66, yp = 1.9000000000000001, bp = 2.23, xp = 1.5550000000000002, Sp = bp, Cp = Sp / 1.65, wp = [
+var bp = .55, xp = .66, Sp = 1.9000000000000001, Cp = 2.23, wp = 1.5550000000000002, Tp = Cp, Ep = Tp / 1.65, Dp = [
 	{
 		center: 1.09,
 		width: .58,
@@ -38571,7 +38704,7 @@ var _p = .55, vp = .66, yp = 1.9000000000000001, bp = 2.23, xp = 1.5550000000000
 		width: .35,
 		kind: "door"
 	}
-], Tp = [
+], Op = [
 	{
 		center: 1.115,
 		width: .67,
@@ -38617,7 +38750,7 @@ var _p = .55, vp = .66, yp = 1.9000000000000001, bp = 2.23, xp = 1.5550000000000
 		kind: "solid"
 	}
 ];
-function Ep() {
+function kp() {
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		name: "colonne-garde-manger",
 		position: [
@@ -38629,50 +38762,50 @@ function Ep() {
 			/* @__PURE__ */ (0, U.jsx)($, {
 				size: [
 					.72,
-					Sp,
+					Tp,
 					.54
 				],
 				position: [
 					0,
-					Sp / 2,
+					Tp / 2,
 					0
 				],
-				color: ip
+				color: sp
 			}),
-			/* @__PURE__ */ (0, U.jsx)(pp, {
+			/* @__PURE__ */ (0, U.jsx)(gp, {
 				width: .68,
 				height: 2.16,
 				position: [
 					0,
-					Sp / 2,
+					Tp / 2,
 					.28
 				]
 			}),
-			/* @__PURE__ */ (0, U.jsx)(hp, {
+			/* @__PURE__ */ (0, U.jsx)(vp, {
 				from: [
 					-.34,
-					1.04 * Cp,
+					1.04 * Ep,
 					.291
 				],
 				to: [
 					.34,
-					1.04 * Cp,
+					1.04 * Ep,
 					.291
 				],
 				color: "#a69e93"
 			}),
-			/* @__PURE__ */ (0, U.jsx)(mp, {
+			/* @__PURE__ */ (0, U.jsx)(_p, {
 				position: [
 					.25,
-					1.32 * Cp,
+					1.32 * Ep,
 					.335
 				],
 				vertical: !0
 			}),
-			/* @__PURE__ */ (0, U.jsx)(mp, {
+			/* @__PURE__ */ (0, U.jsx)(_p, {
 				position: [
 					.25,
-					.68 * Cp,
+					.68 * Ep,
 					.335
 				],
 				vertical: !0
@@ -38680,7 +38813,7 @@ function Ep() {
 		]
 	});
 }
-function Dp({ width: e, position: t }) {
+function Ap({ width: e, position: t }) {
 	let n = .64, r = .028;
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		position: t,
@@ -38726,7 +38859,7 @@ function Dp({ width: e, position: t }) {
 					0,
 					.018
 				],
-				color: ap,
+				color: cp,
 				outline: "#a49c90"
 			}, `vertical-${t}`)),
 			[-1, 1].map((t) => /* @__PURE__ */ (0, U.jsx)($, {
@@ -38740,7 +38873,7 @@ function Dp({ width: e, position: t }) {
 					t * (n / 2 - r / 2),
 					.018
 				],
-				color: ap,
+				color: cp,
 				outline: "#a49c90"
 			}, `edge-${t}`)),
 			/* @__PURE__ */ (0, U.jsx)($, {
@@ -38754,7 +38887,7 @@ function Dp({ width: e, position: t }) {
 					0,
 					.02
 				],
-				color: ap,
+				color: cp,
 				outline: "#a49c90"
 			}),
 			[-1, 1].map((t) => /* @__PURE__ */ (0, U.jsx)($, {
@@ -38768,13 +38901,13 @@ function Dp({ width: e, position: t }) {
 					n / 6 * t,
 					.02
 				],
-				color: ap,
+				color: cp,
 				outline: "#a49c90"
 			}, `row-${t}`))
 		]
 	});
 }
-function Op({ center: e, width: t }) {
+function jp({ center: e, width: t }) {
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		position: [
 			e,
@@ -38782,7 +38915,7 @@ function Op({ center: e, width: t }) {
 			.31
 		],
 		children: [
-			/* @__PURE__ */ (0, U.jsx)(pp, {
+			/* @__PURE__ */ (0, U.jsx)(gp, {
 				width: t,
 				height: .78,
 				position: [
@@ -38791,7 +38924,7 @@ function Op({ center: e, width: t }) {
 					.291
 				]
 			}),
-			/* @__PURE__ */ (0, U.jsx)(hp, {
+			/* @__PURE__ */ (0, U.jsx)(vp, {
 				from: [
 					-t / 2,
 					.63,
@@ -38804,7 +38937,7 @@ function Op({ center: e, width: t }) {
 				],
 				color: "#aaa298"
 			}),
-			/* @__PURE__ */ (0, U.jsx)(mp, { position: [
+			/* @__PURE__ */ (0, U.jsx)(_p, { position: [
 				0,
 				.7,
 				.335
@@ -38812,21 +38945,21 @@ function Op({ center: e, width: t }) {
 		]
 	});
 }
-function kp({ cabinet: e }) {
+function Mp({ cabinet: e }) {
 	return e.kind === "microwave" ? null : e.kind === "glass" ? /* @__PURE__ */ (0, U.jsxs)("group", {
 		position: [
 			e.center,
-			_p,
+			bp,
 			.25
 		],
-		children: [/* @__PURE__ */ (0, U.jsx)(Dp, {
+		children: [/* @__PURE__ */ (0, U.jsx)(Ap, {
 			width: e.width,
 			position: [
 				0,
 				1.35,
 				.235
 			]
-		}), /* @__PURE__ */ (0, U.jsx)(mp, {
+		}), /* @__PURE__ */ (0, U.jsx)(_p, {
 			position: [
 				e.handleSide * (e.width / 2 - .055),
 				1.13,
@@ -38837,10 +38970,10 @@ function kp({ cabinet: e }) {
 	}) : /* @__PURE__ */ (0, U.jsxs)("group", {
 		position: [
 			e.center,
-			_p,
+			bp,
 			.25
 		],
-		children: [/* @__PURE__ */ (0, U.jsx)(pp, {
+		children: [/* @__PURE__ */ (0, U.jsx)(gp, {
 			width: e.width,
 			height: .64,
 			position: [
@@ -38848,7 +38981,7 @@ function kp({ cabinet: e }) {
 				1.35,
 				.211
 			]
-		}), /* @__PURE__ */ (0, U.jsx)(mp, {
+		}), /* @__PURE__ */ (0, U.jsx)(_p, {
 			position: [
 				(e.center < 2.8 ? 1 : -1) * (e.width / 2 - .055),
 				1.13,
@@ -38858,11 +38991,11 @@ function kp({ cabinet: e }) {
 		})]
 	});
 }
-function Ap() {
+function Np() {
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		name: "custom-kitchen-cabinetry",
 		children: [
-			/* @__PURE__ */ (0, U.jsx)(Ep, {}),
+			/* @__PURE__ */ (0, U.jsx)(kp, {}),
 			/* @__PURE__ */ (0, U.jsx)($, {
 				size: [
 					2.93,
@@ -38874,9 +39007,9 @@ function Ap() {
 					.415,
 					.31
 				],
-				color: ip
+				color: sp
 			}),
-			wp.filter((e) => e.kind === "door").map((e) => /* @__PURE__ */ (0, U.jsx)(Op, {
+			Dp.filter((e) => e.kind === "door").map((e) => /* @__PURE__ */ (0, U.jsx)(jp, {
 				center: e.center,
 				width: e.width
 			}, e.center)),
@@ -38885,7 +39018,7 @@ function Ap() {
 				2.04,
 				2.7,
 				3.36
-			].map((e) => /* @__PURE__ */ (0, U.jsx)(hp, {
+			].map((e) => /* @__PURE__ */ (0, U.jsx)(vp, {
 				from: [
 					e,
 					.035,
@@ -38901,17 +39034,17 @@ function Ap() {
 			/* @__PURE__ */ (0, U.jsx)($, {
 				size: [
 					3.04,
-					vp,
+					xp,
 					.4
 				],
 				position: [
 					2.3,
-					yp,
+					Sp,
 					.25
 				],
-				color: ip
+				color: sp
 			}),
-			Tp.map((e) => /* @__PURE__ */ (0, U.jsx)(kp, { cabinet: e }, e.center)),
+			Op.map((e) => /* @__PURE__ */ (0, U.jsx)(Mp, { cabinet: e }, e.center)),
 			[
 				1.45,
 				1.83,
@@ -38920,7 +39053,7 @@ function Ap() {
 				3.07,
 				3.33,
 				3.59
-			].map((e) => /* @__PURE__ */ (0, U.jsx)(hp, {
+			].map((e) => /* @__PURE__ */ (0, U.jsx)(vp, {
 				from: [
 					e,
 					1.58,
@@ -38944,7 +39077,7 @@ function Ap() {
 					.875,
 					.33
 				],
-				color: op,
+				color: lp,
 				outline: "#81776b",
 				receiveShadow: !0
 			}),
@@ -38959,10 +39092,10 @@ function Ap() {
 					1.005,
 					.035
 				],
-				color: op,
+				color: lp,
 				outline: "#94897d"
 			}),
-			/* @__PURE__ */ (0, U.jsx)(gp, {
+			/* @__PURE__ */ (0, U.jsx)(yp, {
 				points: [
 					[
 						1.43,
@@ -38992,7 +39125,7 @@ function Ap() {
 				],
 				width: .007
 			}),
-			/* @__PURE__ */ (0, U.jsx)(gp, {
+			/* @__PURE__ */ (0, U.jsx)(yp, {
 				points: [
 					[
 						2.86,
@@ -39027,7 +39160,7 @@ function Ap() {
 }
 //#endregion
 //#region home/src/extensions/kitchen/oven-and-hob.tsx
-function jp() {
+function Pp() {
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		name: "four-et-plaque-induction-custom",
 		children: [
@@ -39042,7 +39175,7 @@ function jp() {
 					.37,
 					.612
 				],
-				color: dp,
+				color: mp,
 				outline: "#171817"
 			}),
 			/* @__PURE__ */ (0, U.jsx)($, {
@@ -39123,7 +39256,7 @@ function jp() {
 }
 //#endregion
 //#region home/src/extensions/kitchen/integrated-microwave.tsx
-function Mp() {
+function Fp() {
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		name: "micro-ondes-integre-custom",
 		children: [
@@ -39138,7 +39271,7 @@ function Mp() {
 					1.8,
 					.47
 				],
-				color: dp,
+				color: mp,
 				outline: "#171817"
 			}),
 			/* @__PURE__ */ (0, U.jsx)($, {
@@ -39172,7 +39305,7 @@ function Mp() {
 }
 //#endregion
 //#region home/src/extensions/kitchen/kitchen-sink.tsx
-function Np() {
+function Ip() {
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		name: "evier-et-robinet-custom",
 		children: [
@@ -39216,7 +39349,7 @@ function Np() {
 					.026,
 					.28,
 					12
-				] }), /* @__PURE__ */ (0, U.jsx)(I, { color: up })]
+				] }), /* @__PURE__ */ (0, U.jsx)(I, { color: pp })]
 			}),
 			/* @__PURE__ */ (0, U.jsxs)("mesh", {
 				position: [
@@ -39231,7 +39364,7 @@ function Np() {
 					8,
 					18,
 					Math.PI
-				] }), /* @__PURE__ */ (0, U.jsx)(I, { color: up })]
+				] }), /* @__PURE__ */ (0, U.jsx)(I, { color: pp })]
 			}),
 			/* @__PURE__ */ (0, U.jsxs)("mesh", {
 				position: [
@@ -39245,14 +39378,14 @@ function Np() {
 					.018,
 					.14,
 					10
-				] }), /* @__PURE__ */ (0, U.jsx)(I, { color: up })]
+				] }), /* @__PURE__ */ (0, U.jsx)(I, { color: pp })]
 			})
 		]
 	});
 }
 //#endregion
 //#region home/src/extensions/kitchen/kitchen-peninsula.tsx
-function Pp() {
+function Lp() {
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		name: "retour-et-barre-du-u-custom",
 		children: [
@@ -39267,7 +39400,7 @@ function Pp() {
 					.425,
 					1.15
 				],
-				color: ip,
+				color: sp,
 				outline: "#71685d"
 			}),
 			/* @__PURE__ */ (0, U.jsxs)("mesh", {
@@ -39281,13 +39414,13 @@ function Pp() {
 					.018,
 					.72,
 					1.64
-				] }), /* @__PURE__ */ (0, U.jsx)(I, { color: ap })]
+				] }), /* @__PURE__ */ (0, U.jsx)(I, { color: cp })]
 			}),
 			[
 				.74,
 				1.16,
 				1.58
-			].map((e) => /* @__PURE__ */ (0, U.jsx)(hp, {
+			].map((e) => /* @__PURE__ */ (0, U.jsx)(vp, {
 				from: [
 					3.286,
 					.07,
@@ -39300,7 +39433,7 @@ function Pp() {
 				],
 				color: "#aaa298"
 			}, e)),
-			/* @__PURE__ */ (0, U.jsx)(hp, {
+			/* @__PURE__ */ (0, U.jsx)(vp, {
 				from: [
 					3.286,
 					.63,
@@ -39329,7 +39462,7 @@ function Pp() {
 					Math.PI / 2,
 					0
 				],
-				children: /* @__PURE__ */ (0, U.jsx)(mp, { position: [
+				children: /* @__PURE__ */ (0, U.jsx)(_p, { position: [
 					0,
 					0,
 					0
@@ -39346,7 +39479,7 @@ function Pp() {
 					.425,
 					2.16
 				],
-				color: cp,
+				color: dp,
 				outline: "#664326"
 			}),
 			/* @__PURE__ */ (0, U.jsxs)("mesh", {
@@ -39360,13 +39493,13 @@ function Pp() {
 					2.34,
 					.72,
 					.018
-				] }), /* @__PURE__ */ (0, U.jsx)(I, { color: lp })]
+				] }), /* @__PURE__ */ (0, U.jsx)(I, { color: fp })]
 			}),
 			[
 				1.79,
 				2.59,
 				3.39
-			].map((e) => /* @__PURE__ */ (0, U.jsx)(hp, {
+			].map((e) => /* @__PURE__ */ (0, U.jsx)(vp, {
 				from: [
 					e,
 					.07,
@@ -39390,7 +39523,7 @@ function Pp() {
 					.89,
 					1.2
 				],
-				color: op,
+				color: lp,
 				outline: "#81776b",
 				receiveShadow: !0
 			}),
@@ -39405,11 +39538,11 @@ function Pp() {
 					.89,
 					2.1
 				],
-				color: op,
+				color: lp,
 				outline: "#81776b",
 				receiveShadow: !0
 			}),
-			/* @__PURE__ */ (0, U.jsx)(gp, {
+			/* @__PURE__ */ (0, U.jsx)(yp, {
 				points: [
 					[
 						3.2,
@@ -39444,7 +39577,7 @@ function Pp() {
 				],
 				width: .007
 			}),
-			/* @__PURE__ */ (0, U.jsx)(gp, {
+			/* @__PURE__ */ (0, U.jsx)(yp, {
 				points: [
 					[
 						1.35,
@@ -39489,7 +39622,7 @@ function Pp() {
 }
 //#endregion
 //#region home/src/extensions/kitchen/model.tsx
-function Fp({ size: e }) {
+function Rp({ size: e }) {
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		name: "equipped-kitchen-model",
 		scale: [
@@ -39498,17 +39631,17 @@ function Fp({ size: e }) {
 			e[2] / 2.54
 		],
 		children: [
-			/* @__PURE__ */ (0, U.jsx)(Ap, {}),
-			/* @__PURE__ */ (0, U.jsx)(jp, {}),
-			/* @__PURE__ */ (0, U.jsx)(Mp, {}),
 			/* @__PURE__ */ (0, U.jsx)(Np, {}),
-			/* @__PURE__ */ (0, U.jsx)(Pp, {})
+			/* @__PURE__ */ (0, U.jsx)(Pp, {}),
+			/* @__PURE__ */ (0, U.jsx)(Fp, {}),
+			/* @__PURE__ */ (0, U.jsx)(Ip, {}),
+			/* @__PURE__ */ (0, U.jsx)(Lp, {})
 		]
 	});
 }
-var Ip = L({
+var zp = L({
 	defaultRoomType: "kitchen",
-	component: Fp,
+	component: Rp,
 	label: "Equipped kitchen",
 	category: "Kitchen",
 	defaultSize: [
@@ -39538,22 +39671,22 @@ var Ip = L({
 		visibleMeshes: 180,
 		triangles: 34e3
 	}
-}), Lp = "#fff2c8", Rp = "#f2b75c", zp = 1.35 + .66 / 2 - .022;
-function Bp({ state: e }) {
+}), Bp = "#fff2c8", Vp = "#f2b75c", Hp = 1.35 + .66 / 2 - .022;
+function Up({ state: e }) {
 	let t = _e(e);
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		name: "eclairage-cuisine-custom",
 		children: [
-			Tp.filter((e) => e.kind === "glass").map((e) => /* @__PURE__ */ (0, U.jsxs)("group", {
+			Op.filter((e) => e.kind === "glass").map((e) => /* @__PURE__ */ (0, U.jsxs)("group", {
 				position: [
 					e.center,
-					_p,
+					bp,
 					0
 				],
 				children: [/* @__PURE__ */ (0, U.jsxs)("mesh", {
 					position: [
 						0,
-						zp,
+						Hp,
 						.45
 					],
 					rotation: [
@@ -39578,8 +39711,8 @@ function Bp({ state: e }) {
 						0
 					],
 					children: [/* @__PURE__ */ (0, U.jsx)("circleGeometry", { args: [.016, 20] }), /* @__PURE__ */ (0, U.jsx)(I, {
-						color: t > 0 ? Lp : "#b9b1a0",
-						emissive: Rp,
+						color: t > 0 ? Bp : "#b9b1a0",
+						emissive: Vp,
 						emissiveIntensity: t * .15
 					})]
 				})]
@@ -39592,7 +39725,7 @@ function Bp({ state: e }) {
 				],
 				position: [
 					2.27,
-					xp,
+					wp,
 					.38
 				],
 				color: "#d9d4ca",
@@ -39602,7 +39735,7 @@ function Bp({ state: e }) {
 				name: "kitchen-light-strip-emitter",
 				position: [
 					2.27,
-					xp - .017,
+					wp - .017,
 					.38
 				],
 				children: [/* @__PURE__ */ (0, U.jsx)("boxGeometry", { args: [
@@ -39610,8 +39743,8 @@ function Bp({ state: e }) {
 					.008,
 					.038
 				] }), /* @__PURE__ */ (0, U.jsx)(I, {
-					color: t > 0 ? Lp : "#b9b1a0",
-					emissive: Rp,
+					color: t > 0 ? Bp : "#b9b1a0",
+					emissive: Vp,
 					emissiveIntensity: t * .27
 				})]
 			})
@@ -39620,15 +39753,15 @@ function Bp({ state: e }) {
 }
 //#endregion
 //#region home/src/extensions/kitchen/lighting-model.tsx
-function Vp({ state: e, visualState: t }) {
+function Wp({ state: e, visualState: t }) {
 	return /* @__PURE__ */ (0, U.jsx)("group", {
 		name: `device-state-${t}`,
-		children: /* @__PURE__ */ (0, U.jsx)(Bp, { state: e })
+		children: /* @__PURE__ */ (0, U.jsx)(Up, { state: e })
 	});
 }
-var Hp = M({
+var Gp = M({
 	defaultRoomType: "kitchen",
-	component: Vp,
+	component: Wp,
 	label: "Kitchen cabinet lighting",
 	category: "Lighting",
 	defaultSize: [
@@ -39671,18 +39804,18 @@ var Hp = M({
 		visibleMeshes: 11,
 		triangles: 2e3
 	}
-}), Up = Ee({
+}), Kp = Ee({
 	furnishingModels: {
-		...$f,
-		"equipped-kitchen": Ip
+		...np,
+		"equipped-kitchen": zp
 	},
-	deviceModels: { "kitchen-cabinet-lighting": Hp },
+	deviceModels: { "kitchen-cabinet-lighting": Gp },
 	roomFurnishings: {},
 	openingModels: {}
-}), Wp = je(rp, Up), Gp = Ae(Na, Wp.extensions.deviceModels), Kp = {
-	furnishingModels: Object.assign(Object.create(null), $f, Wp.extensions.furnishingModels),
-	deviceModels: Gp
-}, qp = (e) => je(e, Wp.extensions), Jp = (e) => ({
+}), qp = je(op, Kp), Jp = Ae(Na, qp.extensions.deviceModels), Yp = {
+	furnishingModels: Object.assign(Object.create(null), np, qp.extensions.furnishingModels),
+	deviceModels: Jp
+}, Xp = (e) => je(e, qp.extensions), Zp = (e) => ({
 	rooms: Object.fromEntries(e.floors.flatMap((e) => e.rooms).map((e) => [e.id, {
 		room: e,
 		displayName: e.name,
@@ -39701,8 +39834,8 @@ var Hp = M({
 	}])),
 	openings: {},
 	issues: []
-}), Yp = (e, t) => {
-	let n = u(Ye(e), Kp), r = Be(e, Kp), i = E(t, "Home");
+}), Qp = (e, t) => {
+	let n = u(Ye(e), Yp), r = Be(e, Yp), i = E(t, "Home");
 	return {
 		...x(n, i),
 		resetToSeed: (e) => ne(n, e, E(t, e.draft.home.name), 0),
@@ -39752,27 +39885,27 @@ var Hp = M({
 		}
 	};
 };
-async function Xp(e, t, n, r) {
+async function $p(e, t, n, r) {
 	if (!t) return e;
 	let a = i(t);
 	if (e.bindings[a]) return e;
 	let o = n.getItem(ke(a, e.homeId)) ?? n.getItem(f(a, e.homeId));
 	if (o === null) return e;
-	let s = qp(e.published), c = JSON.parse(o), l = h(c, s);
+	let s = Xp(e.published), c = JSON.parse(o), l = h(c, s);
 	if (!l.valid || !l.profile) throw Error(`Saved connections need recovery: ${l.issues[0]?.message ?? "Invalid profile"}`);
-	let u = ce(Ke(e.bindings, a, c, s, s), qp(e.draft));
+	let u = ce(Ke(e.bindings, a, c, s, s), Xp(e.draft));
 	return r({
 		...e,
 		bindings: u
 	}, e.revision);
 }
-async function Zp(e, t) {
-	let n = u(Ye(window.indexedDB), Kp);
-	return Xp(e, t, window.localStorage, (e, t) => n.replace(e, t));
+async function em(e, t) {
+	let n = u(Ye(window.indexedDB), Yp);
+	return $p(e, t, window.localStorage, (e, t) => n.replace(e, t));
 }
 //#endregion
 //#region apps/web/src/editor-connect/profile-transfer.ts
-function Qp(e, t, n, r) {
+function tm(e, t, n, r) {
 	let a = i(t), o = JSON.parse(n), s = h(o, r);
 	if (!s.valid || !s.profile) throw Error(s.issues[0]?.message ?? "Invalid profile.");
 	let c = {
@@ -39790,7 +39923,7 @@ function Qp(e, t, n, r) {
 	if (l.length) throw Error(l[0].message);
 	return c;
 }
-function $p(e, t, n) {
+function nm(e, t, n) {
 	let r = fn(t, n);
 	if (r.record.homeId !== e.homeId) throw Error("This backup belongs to another home.");
 	let i = r.record.draft, a = De(i, {
@@ -39811,13 +39944,13 @@ function $p(e, t, n) {
 		}
 	};
 }
-function em(e, t) {
+function rm(e, t) {
 	let n = URL.createObjectURL(new Blob([e], { type: "application/json" })), r = document.createElement("a");
 	r.href = n, r.download = t, r.click(), URL.revokeObjectURL(n);
 }
 //#endregion
 //#region apps/web/src/editor-chrome/EditorIcon.tsx
-var tm = {
+var im = {
 	check: /* @__PURE__ */ (0, U.jsx)("path", { d: "m5 12 4 4L19 6" }),
 	roof: /* @__PURE__ */ (0, U.jsx)("path", { d: "m2 12 10-8 10 8M5 10v10h14V10M2 12h20" }),
 	spawn: /* @__PURE__ */ (0, U.jsxs)(U.Fragment, { children: [/* @__PURE__ */ (0, U.jsx)("path", { d: "M18 9c0 5-6 11-6 11S6 14 6 9a6 6 0 1 1 12 0Z" }), /* @__PURE__ */ (0, U.jsx)("circle", {
@@ -39987,7 +40120,7 @@ var tm = {
 	chevronLeft: /* @__PURE__ */ (0, U.jsx)("path", { d: "m15 5-7 7 7 7" }),
 	chevron: /* @__PURE__ */ (0, U.jsx)("path", { d: "m9 5 7 7-7 7" })
 };
-function nm({ name: e }) {
+function am({ name: e }) {
 	return e === "construct" || e === "furnish" || e === "connect" ? /* @__PURE__ */ (0, U.jsx)(S, {
 		name: e,
 		className: "editor-icon"
@@ -40001,15 +40134,15 @@ function nm({ name: e }) {
 		strokeLinejoin: "round",
 		"aria-hidden": "true",
 		focusable: "false",
-		children: tm[e]
+		children: im[e]
 	});
 }
 //#endregion
 //#region apps/web/src/editor-reference-plan/reference-storage.ts
-var rm = "cabane-reference-plans-v1";
-async function im(e, t) {
+var om = "cabane-reference-plans-v1";
+async function sm(e, t) {
 	let n = await new Promise((e, t) => {
-		let n = indexedDB.open(rm, 1);
+		let n = indexedDB.open(om, 1);
 		n.onupgradeneeded = () => {
 			n.result.createObjectStore("homes"), n.result.createObjectStore("assets");
 		}, n.onsuccess = () => e(n.result), n.onerror = () => t(n.error ?? /* @__PURE__ */ Error("IndexedDB request failed."));
@@ -40030,19 +40163,19 @@ async function im(e, t) {
 		}
 	});
 }
-var am = (e) => im("readonly", (t, n) => {
+var cm = (e) => sm("readonly", (t, n) => {
 	let r = t.objectStore("homes").get(e);
 	r.onsuccess = () => n(r.result ?? {
 		plans: {},
 		preferences: {}
 	});
-}), om = (e, t, n) => im("readwrite", (r) => {
+}), lm = (e, t, n) => sm("readwrite", (r) => {
 	for (let [t, i] of n) r.objectStore("assets").put(i, [e, t]);
 	r.objectStore("homes").put(t, e);
-}), sm = (e, t) => im("readonly", (n, r) => {
+}), um = (e, t) => sm("readonly", (n, r) => {
 	let i = n.objectStore("assets").get([e, t]);
 	i.onsuccess = () => r(i.result);
-}), cm = (e, t) => im("readwrite", (n) => {
+}), dm = (e, t) => sm("readwrite", (n) => {
 	let r = new Set(t), i = n.objectStore("assets").openKeyCursor();
 	i.onsuccess = () => {
 		let t = i.result;
@@ -40050,16 +40183,16 @@ var am = (e) => im("readonly", (t, n) => {
 		let a = t.key;
 		a[0] === e && !r.has(a[1]) && n.objectStore("assets").delete(t.key), t.continue();
 	};
-}), lm = (e) => im("readwrite", (t) => {
+}), fm = (e) => sm("readwrite", (t) => {
 	t.objectStore("homes").delete(e);
 	let n = t.objectStore("assets").openKeyCursor();
 	n.onsuccess = () => {
 		let r = n.result;
 		r && (r.key[0] === e && t.objectStore("assets").delete(r.key), r.continue());
 	};
-}), um = /* @__PURE__ */ new Map();
-function dm(e) {
-	if (um.has(e)) return um.get(e);
+}), pm = /* @__PURE__ */ new Map();
+function mm(e) {
+	if (pm.has(e)) return pm.get(e);
 	try {
 		let n = t(window.localStorage, e);
 		return {
@@ -40073,7 +40206,7 @@ function dm(e) {
 		};
 	}
 }
-function fm(e, n) {
+function hm(e, n) {
 	let r = !1;
 	try {
 		let { record: i } = t(window.localStorage, e);
@@ -40082,31 +40215,31 @@ function fm(e, n) {
 			buildTutorial: n
 		});
 	} catch {}
-	return um.set(e, {
+	return pm.set(e, {
 		state: n,
 		durable: r
 	}), r;
 }
-function pm(e) {
-	let t = dm(e);
-	return t.state ? t.durable : fm(e, w());
+function gm(e) {
+	let t = mm(e);
+	return t.state ? t.durable : hm(e, w());
 }
-function mm(e) {
-	um.delete(e);
+function _m(e) {
+	pm.delete(e);
 }
 //#endregion
 //#region apps/web/src/walk-tools.ts
-var hm = [{
+var vm = [{
 	id: "cabane.laser",
 	label: "Laser",
 	defaultShortcut: !0,
 	shortcutKey: "G",
 	Icon: Me,
-	Scene: (0, H.lazy)(() => import("./LaserWalkTool-DGixQ_dG.js").then((e) => ({ default: e.LaserWalkTool })))
+	Scene: (0, H.lazy)(() => import("./LaserWalkTool-MpJbAef3.js").then((e) => ({ default: e.LaserWalkTool })))
 }];
 //#endregion
 //#region apps/web/src/editor-connect/useConnectSignIn.ts
-function gm(e, t) {
+function ym(e, t) {
 	let n = ie(), [r, i] = (0, H.useState)(null), a = (0, H.useRef)(!1);
 	return (0, H.useEffect)(() => {
 		!r || e.origin !== r || e.status === "unconfigured" || [
@@ -40127,11 +40260,11 @@ function gm(e, t) {
 }
 //#endregion
 //#region apps/web/src/editor-connect/connect-navigation.ts
-var _m = "cabane:editor-return:v1";
-function vm(e, t) {
+var bm = "cabane:editor-return:v1";
+function xm(e, t) {
 	return fe(e).find((n) => ae(e, n.id).some((e) => e.relationships.some((e) => e.id === t)));
 }
-function ym(e, t) {
+function Sm(e, t) {
 	try {
 		if (!e) return null;
 		let n = JSON.parse(e);
@@ -40168,87 +40301,87 @@ function ym(e, t) {
 		return null;
 	}
 }
-function bm(e) {
+function Cm(e) {
 	try {
-		return typeof window > "u" ? null : ym(window.sessionStorage.getItem(_m), e);
+		return typeof window > "u" ? null : Sm(window.sessionStorage.getItem(bm), e);
 	} catch {
 		return null;
 	}
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/door-frame-dimensions.ts
-var xm = .07, Sm = .025, Cm = .003, wm = .003;
-function Tm(e, t, n, r, i, a = r / 2) {
-	let o = Math.min(xm / 2 + Cm, e / 4), s = (e - 2 * o - (t === 2 ? wm : 0)) / t, c = t === 2 ? e / 2 - o - wm / 2 : e - o - xm / 2 - .001, l = Math.sqrt(Math.max(0, c ** 2 - r ** 2));
+var wm = .07, Tm = .025, Em = .003, Dm = .003;
+function Om(e, t, n, r, i, a = r / 2) {
+	let o = Math.min(wm / 2 + Em, e / 4), s = (e - 2 * o - (t === 2 ? Dm : 0)) / t, c = t === 2 ? e / 2 - o - Dm / 2 : e - o - wm / 2 - .001, l = Math.sqrt(Math.max(0, c ** 2 - r ** 2));
 	return {
 		inset: o,
 		leafWidth: Math.max(.08, Math.min(s, l)),
-		pivotZ: i * (n + Sm) / 2,
+		pivotZ: i * (n + Tm) / 2,
 		leafZ: -i * a
 	};
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/roll-up-door-frame.tsx
-function Em({ width: e, height: t, depth: n, jambWidth: r, headerHeight: i }) {
+function km({ width: e, color: t, height: n, depth: r, jambWidth: i, headerHeight: a }) {
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		name: "roll-up-door-frame",
-		children: [[r / 2, e - r / 2].map((e) => /* @__PURE__ */ (0, U.jsxs)("mesh", {
+		children: [[i / 2, e - i / 2].map((e) => /* @__PURE__ */ (0, U.jsxs)("mesh", {
 			position: [
 				e,
-				t / 2,
+				n / 2,
 				0
 			],
 			castShadow: !0,
 			receiveShadow: !0,
 			children: [/* @__PURE__ */ (0, U.jsx)("boxGeometry", { args: [
-				r,
-				t,
-				n
-			] }), /* @__PURE__ */ (0, U.jsx)(I, { color: "#7d8581" })]
+				i,
+				n,
+				r
+			] }), /* @__PURE__ */ (0, U.jsx)(I, { color: t ?? "#7d8581" })]
 		}, e)), /* @__PURE__ */ (0, U.jsxs)("mesh", {
 			position: [
 				e / 2,
-				t - i / 2,
+				n - a / 2,
 				0
 			],
 			castShadow: !0,
 			receiveShadow: !0,
 			children: [/* @__PURE__ */ (0, U.jsx)("boxGeometry", { args: [
-				e - r * 2,
-				i,
-				n
-			] }), /* @__PURE__ */ (0, U.jsx)(I, { color: "#dddcd6" })]
+				e - i * 2,
+				a,
+				r
+			] }), /* @__PURE__ */ (0, U.jsx)(I, { color: t ?? "#dddcd6" })]
 		})]
 	});
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/roll-up-door-slats.tsx
-function Dm({ width: e, clearHeight: t, travel: n, finish: r, side: i }) {
-	let a = Math.max(1, Math.ceil(t / .16)), o = t / a, s = .85 + n;
+function Am({ width: e, clearHeight: t, travel: n, finish: r, color: i, side: a }) {
+	let o = Math.max(1, Math.ceil(t / .16)), s = t / o, c = .85 + n;
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		name: "roll-up-door-slats",
-		children: [Array.from({ length: a }, (i, a) => {
-			let s = a * o + n, c = Math.min(o, t - s);
-			return c <= 1e-6 ? null : /* @__PURE__ */ (0, U.jsxs)("mesh", {
+		children: [Array.from({ length: o }, (a, o) => {
+			let c = o * s + n, l = Math.min(s, t - c);
+			return l <= 1e-6 ? null : /* @__PURE__ */ (0, U.jsxs)("mesh", {
 				position: [
 					0,
-					s + c / 2,
+					c + l / 2,
 					0
 				],
 				castShadow: !0,
 				receiveShadow: !0,
 				children: [/* @__PURE__ */ (0, U.jsx)("boxGeometry", { args: [
 					e,
-					c,
+					l,
 					.045
-				] }), /* @__PURE__ */ (0, U.jsx)(I, { color: r === "wood" ? a % 2 ? "#ba9365" : "#ad8559" : a % 2 ? "#e8e6df" : "#dddcd6" })]
-			}, a);
-		}), s + .025 < t && /* @__PURE__ */ (0, U.jsxs)("mesh", {
+				] }), /* @__PURE__ */ (0, U.jsx)(I, { color: i ?? (r === "wood" ? o % 2 ? "#ba9365" : "#ad8559" : o % 2 ? "#e8e6df" : "#dddcd6") })]
+			}, o);
+		}), c + .025 < t && /* @__PURE__ */ (0, U.jsxs)("mesh", {
 			name: "roll-up-door-handle",
 			position: [
 				0,
-				s,
-				i * .03
+				c,
+				a * .03
 			],
 			castShadow: !0,
 			children: [/* @__PURE__ */ (0, U.jsx)("boxGeometry", { args: [
@@ -40261,7 +40394,7 @@ function Dm({ width: e, clearHeight: t, travel: n, finish: r, side: i }) {
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/roll-up-door-model.tsx
-function Om({ wall: e, opening: t, floor: n, position: r }) {
+function jm({ wall: e, opening: t, floor: n, position: r }) {
 	let i = Se(e, t, n.coordinates), a = i.widthMeters, o = t.openingHeightMeters, s = Ie(a, o, r);
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		name: "opening-roll-up-door",
@@ -40275,7 +40408,8 @@ function Om({ wall: e, opening: t, floor: n, position: r }) {
 			i.rotationY,
 			0
 		],
-		children: [/* @__PURE__ */ (0, U.jsx)(Em, {
+		children: [/* @__PURE__ */ (0, U.jsx)(km, {
+			...Oe({ color: t.color }),
 			width: a,
 			height: o,
 			depth: e.thicknessMeters,
@@ -40286,10 +40420,11 @@ function Om({ wall: e, opening: t, floor: n, position: r }) {
 				0,
 				0
 			],
-			children: /* @__PURE__ */ (0, U.jsx)(Dm, {
+			children: /* @__PURE__ */ (0, U.jsx)(Am, {
 				width: s.clearWidth,
 				...s,
 				finish: t.finish,
+				...Oe({ color: t.color }),
 				side: t.openingSide === "left" ? -1 : 1
 			})
 		})]
@@ -40297,7 +40432,7 @@ function Om({ wall: e, opening: t, floor: n, position: r }) {
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/animation/animated-opening-leaf.tsx
-function km({ operation: e, open: t, reducedMotion: n, direction: r, travel: i, children: a }) {
+function Mm({ operation: e, open: t, reducedMotion: n, direction: r, travel: i, children: a }) {
 	let o = (0, H.useRef)(null), { invalidate: s } = re();
 	return (0, H.useEffect)(() => {
 		s();
@@ -40320,28 +40455,28 @@ function km({ operation: e, open: t, reducedMotion: n, direction: r, travel: i, 
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/door-frame.tsx
-function Am({ wall: e, width: t, height: n }) {
+function Nm({ wall: e, width: t, height: n, color: r = "#d8d2c6" }) {
 	return /* @__PURE__ */ (0, U.jsx)(U.Fragment, { children: [
 		[
 			0,
 			n / 2,
-			xm,
+			wm,
 			n + .08
 		],
 		[
 			t,
 			n / 2,
-			xm,
+			wm,
 			n + .08
 		],
 		[
 			t / 2,
 			n + .031,
-			t + xm,
+			t + wm,
 			.078
 		]
-	].map(([t, n, r, i], a) => /* @__PURE__ */ (0, U.jsxs)("mesh", {
-		name: `opening-door-frame-${a}`,
+	].map(([t, n, i, a], s) => /* @__PURE__ */ (0, U.jsxs)("mesh", {
+		name: `opening-door-frame-${s}`,
 		position: [
 			t,
 			n,
@@ -40350,22 +40485,22 @@ function Am({ wall: e, width: t, height: n }) {
 		castShadow: !0,
 		children: [
 			/* @__PURE__ */ (0, U.jsx)("boxGeometry", { args: [
-				r,
 				i,
-				e.thicknessMeters + Sm
+				a,
+				e.thicknessMeters + Tm
 			] }),
-			/* @__PURE__ */ (0, U.jsx)(I, { color: "#d8d2c6" }),
+			/* @__PURE__ */ (0, U.jsx)(I, { color: r }),
 			/* @__PURE__ */ (0, U.jsx)(o, {
 				color: "#676965",
 				thickness: .006,
 				screenspace: !1
 			})
 		]
-	}, a)) });
+	}, s)) });
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/white-lever-door-handles.tsx
-function jm({ width: e, side: t }) {
+function Pm({ width: e, side: t }) {
 	let n = Math.min(.027, e * .15), r = Math.min(.095, e * .5), i = Math.min(.035, e * .18);
 	return /* @__PURE__ */ (0, U.jsx)("group", {
 		name: "opening-white-lever-handles",
@@ -40441,7 +40576,7 @@ function jm({ width: e, side: t }) {
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/panel-door-handles.tsx
-function Mm({ width: e, side: t = 1 }) {
+function Fm({ width: e, side: t = 1 }) {
 	let n = Math.min(.035, e * .15), r = Math.min(.16, e * .5), i = Math.min(.055, e * .18);
 	return /* @__PURE__ */ (0, U.jsx)("group", {
 		name: "opening-door-handles",
@@ -40523,7 +40658,7 @@ function Mm({ width: e, side: t = 1 }) {
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/concealed-door-leaf.tsx
-function Nm({ width: e, height: t, finish: n, handleSide: r }) {
+function Im({ width: e, height: t, finish: n, color: r, handleSide: i }) {
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		name: "concealed-door-leaf",
 		children: [/* @__PURE__ */ (0, U.jsx)(N, {
@@ -40535,17 +40670,17 @@ function Nm({ width: e, height: t, finish: n, handleSide: r }) {
 			radius: .002,
 			smoothness: 2,
 			castShadow: !0,
-			children: /* @__PURE__ */ (0, U.jsx)(I, { color: n === "white" ? "#f1f0eb" : "#b89a73" })
-		}), /* @__PURE__ */ (0, U.jsx)(Mm, {
+			children: /* @__PURE__ */ (0, U.jsx)(I, { color: r ?? (n === "white" ? "#f1f0eb" : "#b89a73") })
+		}), /* @__PURE__ */ (0, U.jsx)(Fm, {
 			width: e,
-			side: r
+			side: i
 		})]
 	});
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/flush-door-leaf.tsx
-function Pm({ width: e, height: t, finish: n, handleSide: r = 1, knob: i = !1 }) {
-	let a = Math.min(.36, e * .65);
+function Lm({ width: e, height: t, finish: n, color: r, handleSide: i = 1, knob: a = !1 }) {
+	let o = Math.min(.36, e * .65);
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		name: "flush-door-leaf",
 		children: [/* @__PURE__ */ (0, U.jsx)(N, {
@@ -40557,11 +40692,11 @@ function Pm({ width: e, height: t, finish: n, handleSide: r = 1, knob: i = !1 })
 			radius: .002,
 			smoothness: 2,
 			castShadow: !0,
-			children: /* @__PURE__ */ (0, U.jsx)(I, { color: n === "white" ? "#e9e8e2" : "#b89a73" })
-		}), i ? /* @__PURE__ */ (0, U.jsxs)("group", {
+			children: /* @__PURE__ */ (0, U.jsx)(I, { color: r ?? (n === "white" ? "#e9e8e2" : "#b89a73") })
+		}), a ? /* @__PURE__ */ (0, U.jsxs)("group", {
 			name: "flush-door-knob",
 			position: [
-				r * (e / 2 - Math.min(.04, e * .2)),
+				i * (e / 2 - Math.min(.04, e * .2)),
 				Math.min(1.05, t * .45) - t / 2,
 				0
 			],
@@ -40601,7 +40736,7 @@ function Pm({ width: e, height: t, finish: n, handleSide: r = 1, knob: i = !1 })
 				Math.min(1.05, t * .45) - t / 2,
 				0
 			],
-			children: [[-a * .4, a * .4].map((e) => /* @__PURE__ */ (0, U.jsxs)("mesh", {
+			children: [[-o * .4, o * .4].map((e) => /* @__PURE__ */ (0, U.jsxs)("mesh", {
 				position: [
 					e,
 					0,
@@ -40619,7 +40754,7 @@ function Pm({ width: e, height: t, finish: n, handleSide: r = 1, knob: i = !1 })
 					.044
 				],
 				children: [/* @__PURE__ */ (0, U.jsx)("boxGeometry", { args: [
-					a,
+					o,
 					.012,
 					.018
 				] }), /* @__PURE__ */ (0, U.jsx)(I, { color: "#292c29" })]
@@ -40629,7 +40764,7 @@ function Pm({ width: e, height: t, finish: n, handleSide: r = 1, knob: i = !1 })
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/opening-frame-box.tsx
-function Fm({ size: e, position: t, color: n = "#e7e2d8" }) {
+function Rm({ size: e, position: t, color: n = "#e7e2d8" }) {
 	return /* @__PURE__ */ (0, U.jsxs)(N, {
 		args: e,
 		position: t,
@@ -40645,7 +40780,7 @@ function Fm({ size: e, position: t, color: n = "#e7e2d8" }) {
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/windows/framed-glass-panel.tsx
-function Im({ width: e, height: t, columns: n, rows: r, privacy: i = !1, frameDepth: a = .065, frameColor: o = "#e7e2d8" }) {
+function zm({ width: e, height: t, columns: n, rows: r, privacy: i = !1, frameDepth: a = .065, frameColor: o = "#e7e2d8" }) {
 	let s = Math.min(.055, e * .14, t * .14), c = Math.max(.02, e - s * 2), l = Math.max(.02, t - s * 2), u = i && r === 2 ? [-l * .18] : Array.from({ length: Math.max(0, r - 1) }, (e, t) => -l / 2 + l * ((t + 1) / r));
 	return /* @__PURE__ */ (0, U.jsxs)("group", { children: [
 		/* @__PURE__ */ (0, U.jsxs)("mesh", {
@@ -40661,7 +40796,7 @@ function Im({ width: e, height: t, columns: n, rows: r, privacy: i = !1, frameDe
 				depthWrite: !1
 			})]
 		}),
-		[-1, 1].map((n) => /* @__PURE__ */ (0, U.jsx)(Fm, {
+		[-1, 1].map((n) => /* @__PURE__ */ (0, U.jsx)(Rm, {
 			size: [
 				s,
 				t,
@@ -40674,7 +40809,7 @@ function Im({ width: e, height: t, columns: n, rows: r, privacy: i = !1, frameDe
 			],
 			color: o
 		}, `vertical-${n}`)),
-		[-1, 1].map((n) => /* @__PURE__ */ (0, U.jsx)(Fm, {
+		[-1, 1].map((n) => /* @__PURE__ */ (0, U.jsx)(Rm, {
 			size: [
 				e,
 				s,
@@ -40687,7 +40822,7 @@ function Im({ width: e, height: t, columns: n, rows: r, privacy: i = !1, frameDe
 			],
 			color: o
 		}, `horizontal-${n}`)),
-		Array.from({ length: Math.max(0, n - 1) }, (e, t) => /* @__PURE__ */ (0, U.jsx)(Fm, {
+		Array.from({ length: Math.max(0, n - 1) }, (e, t) => /* @__PURE__ */ (0, U.jsx)(Rm, {
 			size: [
 				.026,
 				l,
@@ -40700,7 +40835,7 @@ function Im({ width: e, height: t, columns: n, rows: r, privacy: i = !1, frameDe
 			],
 			color: o
 		}, `column-${t}`)),
-		u.map((e, t) => /* @__PURE__ */ (0, U.jsx)(Fm, {
+		u.map((e, t) => /* @__PURE__ */ (0, U.jsx)(Rm, {
 			size: [
 				c,
 				i ? .022 : .026,
@@ -40717,21 +40852,21 @@ function Im({ width: e, height: t, columns: n, rows: r, privacy: i = !1, frameDe
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/steel-glazing/arched-steel-glass-panel.tsx
-function Lm({ width: e, height: t, privacy: n = !1 }) {
-	let r = (0, H.useMemo)(() => {
+function Bm({ width: e, height: t, privacy: n = !1, frameColor: r = "#292e2d" }) {
+	let i = (0, H.useMemo)(() => {
 		let n = e * .4, r = Math.min(.022, e * .055), i = -t / 2 + .055, a = t / 2 - .065 - n, o = new Ge();
 		return o.moveTo(-n, i), o.lineTo(-n, a), o.absarc(0, a, n, Math.PI, 0, !0), o.lineTo(n, i), o.lineTo(n - r, i), o.lineTo(n - r, a), o.absarc(0, a, n - r, 0, Math.PI, !1), o.lineTo(-n + r, i), o.closePath(), o;
 	}, [e, t]);
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		name: "arched-steel-glass-panel",
-		children: [/* @__PURE__ */ (0, U.jsx)(Im, {
+		children: [/* @__PURE__ */ (0, U.jsx)(zm, {
 			width: e,
 			height: t,
 			columns: 1,
 			rows: 1,
 			privacy: n,
 			frameDepth: .045,
-			frameColor: "#292e2d"
+			frameColor: r
 		}), /* @__PURE__ */ (0, U.jsxs)("mesh", {
 			name: "steel-arch",
 			position: [
@@ -40740,17 +40875,17 @@ function Lm({ width: e, height: t, privacy: n = !1 }) {
 				-.018
 			],
 			castShadow: !0,
-			children: [/* @__PURE__ */ (0, U.jsx)("extrudeGeometry", { args: [r, {
+			children: [/* @__PURE__ */ (0, U.jsx)("extrudeGeometry", { args: [i, {
 				depth: .036,
 				bevelEnabled: !1,
 				curveSegments: 32
-			}] }), /* @__PURE__ */ (0, U.jsx)(I, { color: "#292e2d" })]
+			}] }), /* @__PURE__ */ (0, U.jsx)(I, { color: r })]
 		})]
 	});
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/glass-door-handle.tsx
-function Rm({ width: e, side: t }) {
+function Vm({ width: e, side: t }) {
 	return /* @__PURE__ */ (0, U.jsx)("group", {
 		name: "opening-glass-door-handle",
 		position: [
@@ -40782,33 +40917,33 @@ function Rm({ width: e, side: t }) {
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/plank-door-leaf.tsx
-var zm = .065;
-function Bm({ width: e, height: t, handleSide: n, finish: r, railHangers: i = !0, depthScale: a = 1 }) {
-	let s = r === "white", c = s ? "#e6e3dc" : "#85583b", l = s ? "#f1f0eb" : "#9c6b49", u = s ? "#bdbbb5" : "#68432e", d = Math.max(.02, e - Math.min(.12, e * .3)), f = Math.min(.1, e * .22), p = Math.min(.075, e * .22), m = Math.max(.2, t - .16), h = Math.max(4, Math.round(e / .096)), g = d / h, _ = Math.hypot(d, m), v = Math.atan2(m, d);
+var Hm = .065;
+function Um({ width: e, height: t, handleSide: n, finish: r, color: i, railHangers: a = !0, depthScale: s = 1 }) {
+	let c = r === "white", l = i ?? (c ? "#e6e3dc" : "#85583b"), u = i ?? (c ? "#f1f0eb" : "#9c6b49"), d = c ? "#bdbbb5" : "#68432e", f = Math.max(.02, e - Math.min(.12, e * .3)), p = Math.min(.1, e * .22), m = Math.min(.075, e * .22), h = Math.max(.2, t - .16), g = Math.max(4, Math.round(e / .096)), _ = f / g, v = Math.hypot(f, h), y = Math.atan2(h, f);
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		scale: [
 			1,
 			1,
-			a
+			s
 		],
 		children: [
 			/* @__PURE__ */ (0, U.jsxs)(N, {
 				args: [
 					e,
 					t,
-					zm
+					Hm
 				],
 				radius: .018,
 				smoothness: 3,
 				castShadow: !0,
-				children: [/* @__PURE__ */ (0, U.jsx)(I, { color: c }), /* @__PURE__ */ (0, U.jsx)(o, {
+				children: [/* @__PURE__ */ (0, U.jsx)(I, { color: l }), /* @__PURE__ */ (0, U.jsx)(o, {
 					thickness: .006,
-					color: u,
+					color: d,
 					screenspace: !1
 				})]
 			}),
-			Array.from({ length: h }, (e, t) => {
-				let n = -d / 2 + g * (t + .5);
+			Array.from({ length: g }, (e, t) => {
+				let n = -f / 2 + _ * (t + .5);
 				return /* @__PURE__ */ (0, U.jsxs)("group", { children: [/* @__PURE__ */ (0, U.jsxs)("mesh", {
 					position: [
 						n,
@@ -40817,24 +40952,24 @@ function Bm({ width: e, height: t, handleSide: n, finish: r, railHangers: i = !0
 					],
 					castShadow: !0,
 					children: [/* @__PURE__ */ (0, U.jsx)("boxGeometry", { args: [
-						Math.max(.01, g - .008),
-						m,
+						Math.max(.01, _ - .008),
+						h,
 						.018
-					] }), /* @__PURE__ */ (0, U.jsx)(I, { color: t % 3 == 1 ? l : c })]
-				}), t < h - 1 && /* @__PURE__ */ (0, U.jsxs)("mesh", {
+					] }), /* @__PURE__ */ (0, U.jsx)(I, { color: t % 3 == 1 ? u : l })]
+				}), t < g - 1 && /* @__PURE__ */ (0, U.jsxs)("mesh", {
 					position: [
-						n + g / 2,
+						n + _ / 2,
 						0,
 						.052
 					],
 					children: [/* @__PURE__ */ (0, U.jsx)("boxGeometry", { args: [
 						.006,
-						m - .01,
+						h - .01,
 						.009
-					] }), /* @__PURE__ */ (0, U.jsx)(I, { color: u })]
+					] }), /* @__PURE__ */ (0, U.jsx)(I, { color: d })]
 				})] }, t);
 			}),
-			[-1, 1].map((n) => /* @__PURE__ */ (0, U.jsx)(Fm, {
+			[-1, 1].map((n) => /* @__PURE__ */ (0, U.jsx)(Rm, {
 				size: [
 					e - Math.min(.04, e * .12),
 					.1,
@@ -40845,33 +40980,33 @@ function Bm({ width: e, height: t, handleSide: n, finish: r, railHangers: i = !0
 					n * (t / 2 - .07),
 					.068
 				],
-				color: u
+				color: d
 			}, `plank-horizontal-${n}`)),
-			[-1, 1].map((n) => /* @__PURE__ */ (0, U.jsx)(Fm, {
+			[-1, 1].map((n) => /* @__PURE__ */ (0, U.jsx)(Rm, {
 				size: [
-					f,
+					p,
 					t - .1,
 					.045
 				],
 				position: [
-					n * (e / 2 - f / 2),
+					n * (e / 2 - p / 2),
 					0,
 					.068
 				],
-				color: u
+				color: d
 			}, `plank-vertical-${n}`)),
 			[-1, 1].map((e) => /* @__PURE__ */ (0, U.jsxs)(N, {
 				args: [
-					_,
-					p,
+					v,
+					m,
 					.045
 				],
-				radius: Math.min(.014, p / 4),
+				radius: Math.min(.014, m / 4),
 				smoothness: 2,
 				rotation: [
 					0,
 					0,
-					e * v
+					e * y
 				],
 				position: [
 					0,
@@ -40879,9 +41014,9 @@ function Bm({ width: e, height: t, handleSide: n, finish: r, railHangers: i = !0
 					.096
 				],
 				castShadow: !0,
-				children: [/* @__PURE__ */ (0, U.jsx)(I, { color: l }), /* @__PURE__ */ (0, U.jsx)(o, {
+				children: [/* @__PURE__ */ (0, U.jsx)(I, { color: u }), /* @__PURE__ */ (0, U.jsx)(o, {
 					thickness: .004,
-					color: u,
+					color: d,
 					screenspace: !1
 				})]
 			}, e)),
@@ -40892,7 +41027,7 @@ function Bm({ width: e, height: t, handleSide: n, finish: r, railHangers: i = !0
 					0,
 					.135
 				],
-				children: [[-1, 1].map((t) => /* @__PURE__ */ (0, U.jsx)(Fm, {
+				children: [[-1, 1].map((t) => /* @__PURE__ */ (0, U.jsx)(Rm, {
 					size: [
 						Math.min(.07, e * .35),
 						.08,
@@ -40904,7 +41039,7 @@ function Bm({ width: e, height: t, handleSide: n, finish: r, railHangers: i = !0
 						.014
 					],
 					color: "#747a79"
-				}, t)), /* @__PURE__ */ (0, U.jsx)(Fm, {
+				}, t)), /* @__PURE__ */ (0, U.jsx)(Rm, {
 					size: [
 						Math.min(.045, e * .25),
 						.34,
@@ -40918,7 +41053,7 @@ function Bm({ width: e, height: t, handleSide: n, finish: r, railHangers: i = !0
 					color: "#909695"
 				})]
 			}),
-			i && [-.36, .36].map((n) => /* @__PURE__ */ (0, U.jsxs)("group", {
+			a && [-.36, .36].map((n) => /* @__PURE__ */ (0, U.jsxs)("group", {
 				name: "opening-plank-rail-hanger",
 				position: [
 					n * e,
@@ -40946,7 +41081,7 @@ function Bm({ width: e, height: t, handleSide: n, finish: r, railHangers: i = !0
 							screenspace: !1
 						})
 					]
-				}), /* @__PURE__ */ (0, U.jsx)(Fm, {
+				}), /* @__PURE__ */ (0, U.jsx)(Rm, {
 					size: [
 						.075,
 						.34,
@@ -40965,42 +41100,46 @@ function Bm({ width: e, height: t, handleSide: n, finish: r, railHangers: i = !0
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/door-leaf.tsx
-function Vm({ opening: e, width: t, height: n, handleSide: r, plankDepthScale: i = 1 }) {
-	let a = e.finish === "white", s = a ? "#d8d2c6" : "#9c6b49";
-	return e.variant === "concealed" ? /* @__PURE__ */ (0, U.jsx)(Nm, {
+function Wm({ opening: e, width: t, height: n, handleSide: r, plankDepthScale: i = 1 }) {
+	let a = e.finish === "white", s = e.color ?? (a ? "#d8d2c6" : "#9c6b49");
+	return e.variant === "concealed" ? /* @__PURE__ */ (0, U.jsx)(Im, {
 		width: t,
 		height: n,
 		finish: e.finish,
+		...Oe({ color: e.color }),
 		handleSide: r
-	}) : e.variant === "flush" || e.variant === "flush-knob" ? /* @__PURE__ */ (0, U.jsx)(Pm, {
+	}) : e.variant === "flush" || e.variant === "flush-knob" ? /* @__PURE__ */ (0, U.jsx)(Lm, {
 		width: t,
 		height: n,
 		finish: e.finish,
+		...Oe({ color: e.color }),
 		handleSide: r,
 		knob: e.variant === "flush-knob"
-	}) : e.variant === "steel-arched" ? /* @__PURE__ */ (0, U.jsxs)("group", { children: [/* @__PURE__ */ (0, U.jsx)(Lm, {
+	}) : e.variant === "steel-arched" ? /* @__PURE__ */ (0, U.jsxs)("group", { children: [/* @__PURE__ */ (0, U.jsx)(Bm, {
 		width: t,
-		height: n
-	}), /* @__PURE__ */ (0, U.jsx)(Rm, {
+		height: n,
+		...Oe({ frameColor: e.color })
+	}), /* @__PURE__ */ (0, U.jsx)(Vm, {
 		width: t,
 		side: r
-	})] }) : e.variant === "french" || e.variant === "full-glass" ? /* @__PURE__ */ (0, U.jsxs)("group", { children: [/* @__PURE__ */ (0, U.jsx)(Im, {
+	})] }) : e.variant === "french" || e.variant === "full-glass" ? /* @__PURE__ */ (0, U.jsxs)("group", { children: [/* @__PURE__ */ (0, U.jsx)(zm, {
 		width: t,
 		height: n,
 		columns: e.variant === "french" ? 2 : 1,
 		rows: e.variant === "french" ? 5 : 1,
 		frameColor: s
-	}), e.variant === "french" ? /* @__PURE__ */ (0, U.jsx)(Mm, {
+	}), e.variant === "french" ? /* @__PURE__ */ (0, U.jsx)(Fm, {
 		width: t,
 		side: r
-	}) : /* @__PURE__ */ (0, U.jsx)(Rm, {
+	}) : /* @__PURE__ */ (0, U.jsx)(Vm, {
 		width: t,
 		side: r
-	})] }) : e.variant === "plank" ? /* @__PURE__ */ (0, U.jsx)(Bm, {
+	})] }) : e.variant === "plank" ? /* @__PURE__ */ (0, U.jsx)(Um, {
 		width: t,
 		height: n,
 		handleSide: r,
 		finish: e.finish,
+		...Oe({ color: e.color }),
 		depthScale: i,
 		railHangers: e.operation === "sliding"
 	}) : /* @__PURE__ */ (0, U.jsxs)("group", { children: [/* @__PURE__ */ (0, U.jsxs)(N, {
@@ -41012,39 +41151,39 @@ function Vm({ opening: e, width: t, height: n, handleSide: r, plankDepthScale: i
 		radius: .018,
 		smoothness: 3,
 		castShadow: !0,
-		children: [/* @__PURE__ */ (0, U.jsx)(I, { color: a ? "#f1f0eb" : "#b89a73" }), /* @__PURE__ */ (0, U.jsx)(o, {
+		children: [/* @__PURE__ */ (0, U.jsx)(I, { color: e.color ?? (a ? "#f1f0eb" : "#b89a73") }), /* @__PURE__ */ (0, U.jsx)(o, {
 			color: a ? "#676965" : "#493c31",
 			thickness: a ? .008 : .01,
 			screenspace: !1
 		})]
-	}), e.variant === "panel-white-lever" ? /* @__PURE__ */ (0, U.jsx)(jm, {
+	}), e.variant === "panel-white-lever" ? /* @__PURE__ */ (0, U.jsx)(Pm, {
 		width: t,
 		side: r
-	}) : /* @__PURE__ */ (0, U.jsx)(Mm, {
+	}) : /* @__PURE__ */ (0, U.jsx)(Fm, {
 		width: t,
 		side: r
 	})] });
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/plank-door-rail.tsx
-var Hm = .055, Um = .004, Wm = .04;
-function Gm({ openingWidth: e, leafWidth: t, orientation: n }) {
+var Gm = .055, Km = .004, qm = .04;
+function Jm({ openingWidth: e, leafWidth: t, orientation: n }) {
 	let r = Infinity, i = -Infinity;
 	for (let a of n.leaves) {
 		let n = a.startRatio * e, o = n + t, s = a.slideSign, c = n + s * t, l = o + s * t;
 		r = Math.min(r, n, c), i = Math.max(i, o, l);
 	}
 	return {
-		startX: r - Wm,
-		endX: i + Wm
+		startX: r - qm,
+		endX: i + qm
 	};
 }
-function Km({ width: e, height: t, wallThickness: n, leafWidth: r, orientation: i }) {
-	let { startX: a, endX: o } = Gm({
+function Ym({ width: e, height: t, wallThickness: n, leafWidth: r, orientation: i }) {
+	let { startX: a, endX: o } = Jm({
 		openingWidth: e,
 		leafWidth: r,
 		orientation: i
-	}), s = o - a, c = (a + o) / 2, l = n / 2 + Um + Hm / 2;
+	}), s = o - a, c = (a + o) / 2, l = n / 2 + Km + Gm / 2;
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		name: "opening-plank-rail",
 		position: [
@@ -41059,11 +41198,11 @@ function Km({ width: e, height: t, wallThickness: n, leafWidth: r, orientation: 
 				0,
 				0
 			],
-			children: /* @__PURE__ */ (0, U.jsx)(Fm, {
+			children: /* @__PURE__ */ (0, U.jsx)(Rm, {
 				size: [
 					s,
 					.065,
-					Hm
+					Gm
 				],
 				position: [
 					0,
@@ -41072,11 +41211,11 @@ function Km({ width: e, height: t, wallThickness: n, leafWidth: r, orientation: 
 				],
 				color: "#242525"
 			})
-		}), [a, o].map((e) => /* @__PURE__ */ (0, U.jsx)(Fm, {
+		}), [a, o].map((e) => /* @__PURE__ */ (0, U.jsx)(Rm, {
 			size: [
 				.075,
 				.13,
-				Hm
+				Gm
 			],
 			position: [
 				e,
@@ -41089,16 +41228,16 @@ function Km({ width: e, height: t, wallThickness: n, leafWidth: r, orientation: 
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/door-model.tsx
-var qm = .004;
-function Jm({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
-	if (t.operation === "roll-up") return /* @__PURE__ */ (0, U.jsx)(Om, {
+var Xm = .004;
+function Zm({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
+	if (t.operation === "roll-up") return /* @__PURE__ */ (0, U.jsx)(jm, {
 		wall: e,
 		opening: t,
 		floor: n,
 		position: r,
 		reducedMotion: i
 	});
-	let a = Se(e, t, n.coordinates), o = Re(t), s = t.leafCount === 2, c = t.variant === "concealed", l = t.frontSide === void 0 ? o.sideSign : t.frontSide === "left" ? -1 : 1, u = t.variant === "flush" || t.variant === "flush-knob", d = s ? 0 : u || c ? .006 : .018, f = u && t.variant !== "flush-knob" && !s ? Math.max(0, Math.min(t.frontOverlayMeters ?? .03, t.offsetFromWallStartPlanUnits * n.coordinates.metersPerPlanUnit, (Pe(e) - t.offsetFromWallStartPlanUnits - t.widthPlanUnits) * n.coordinates.metersPerPlanUnit)) : 0, p = t.operation === "hinged" && !u && !c && t.variant !== "full-glass" && t.variant !== "steel-arched", m = p && t.variant === "plank" ? Math.min(1, a.widthMeters / t.leafCount / .4) : 1, h = p ? Tm(a.widthMeters, t.leafCount, e.thicknessMeters, t.variant === "panel" || t.variant === "panel-white-lever" ? .05 : t.variant === "plank" ? .151 * m : .065, o.sideSign, t.variant === "plank" ? .1185 * m : void 0) : null, g = h?.leafWidth ?? Math.max(.08, a.widthMeters / t.leafCount - d + 2 * f), _ = f > 0 ? f - d / 2 : 0, v = Math.max(.08, t.openingHeightMeters - (u || c ? .026 : .03)), y = t.operation === "sliding" && t.variant === "plank", b = e.thicknessMeters / 2 + qm + zm / 2;
+	let a = Se(e, t, n.coordinates), o = Re(t), s = t.leafCount === 2, c = t.variant === "concealed", l = t.frontSide === void 0 ? o.sideSign : t.frontSide === "left" ? -1 : 1, u = t.variant === "flush" || t.variant === "flush-knob", d = s ? 0 : u || c ? .006 : .018, f = u && t.variant !== "flush-knob" && !s ? Math.max(0, Math.min(t.frontOverlayMeters ?? .03, t.offsetFromWallStartPlanUnits * n.coordinates.metersPerPlanUnit, (Pe(e) - t.offsetFromWallStartPlanUnits - t.widthPlanUnits) * n.coordinates.metersPerPlanUnit)) : 0, p = t.operation === "hinged" && !u && !c && t.variant !== "full-glass" && t.variant !== "steel-arched", m = p && t.variant === "plank" ? Math.min(1, a.widthMeters / t.leafCount / .4) : 1, h = p ? Om(a.widthMeters, t.leafCount, e.thicknessMeters, t.variant === "panel" || t.variant === "panel-white-lever" ? .05 : t.variant === "plank" ? .151 * m : .065, o.sideSign, t.variant === "plank" ? .1185 * m : void 0) : null, g = h?.leafWidth ?? Math.max(.08, a.widthMeters / t.leafCount - d + 2 * f), _ = f > 0 ? f - d / 2 : 0, v = Math.max(.08, t.openingHeightMeters - (u || c ? .026 : .03)), y = t.operation === "sliding" && t.variant === "plank", b = e.thicknessMeters / 2 + Xm + Hm / 2;
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		name: `opening-model-${t.variant}`,
 		position: [
@@ -41112,12 +41251,13 @@ function Jm({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
 			0
 		],
 		children: [
-			t.variant !== "full-glass" && t.variant !== "steel-arched" && !u && !c && /* @__PURE__ */ (0, U.jsx)(Am, {
+			t.variant !== "full-glass" && t.variant !== "steel-arched" && !u && !c && /* @__PURE__ */ (0, U.jsx)(Nm, {
+				...Oe({ color: t.color }),
 				wall: e,
 				width: a.widthMeters,
 				height: t.openingHeightMeters
 			}),
-			t.operation === "sliding" && t.variant === "plank" && /* @__PURE__ */ (0, U.jsx)(Km, {
+			t.operation === "sliding" && t.variant === "plank" && /* @__PURE__ */ (0, U.jsx)(Ym, {
 				width: a.widthMeters,
 				height: t.openingHeightMeters,
 				wallThickness: e.thicknessMeters,
@@ -41133,7 +41273,7 @@ function Jm({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
 						t.openingHeightMeters / 2,
 						y ? b * o.sideSign : c ? (e.thicknessMeters / 2 - .025) * l : u ? (e.thicknessMeters / 2 + (t.frontOverlayMeters === 0 ? -.01 : .012)) * o.sideSign : h?.pivotZ ?? (s ? 0 : d % 2 == 0 ? -.016 : .016) * o.sideSign
 					],
-					children: /* @__PURE__ */ (0, U.jsx)(km, {
+					children: /* @__PURE__ */ (0, U.jsx)(Mm, {
 						operation: t.operation,
 						open: r > 0,
 						reducedMotion: i,
@@ -41150,7 +41290,7 @@ function Jm({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
 								1,
 								o.sideSign
 							],
-							children: /* @__PURE__ */ (0, U.jsx)(Vm, {
+							children: /* @__PURE__ */ (0, U.jsx)(Wm, {
 								opening: t,
 								width: g,
 								height: v,
@@ -41166,14 +41306,14 @@ function Jm({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/passages/arched-passage-spandrel.ts
-var Ym = (e, t) => {
+var Qm = (e, t) => {
 	let n = e.openingHeightMeters - e.archRiseMeters, r = new Ge();
 	return r.moveTo(0, n), r.quadraticCurveTo(t * .22, e.openingHeightMeters, t / 2, e.openingHeightMeters), r.quadraticCurveTo(t * .78, e.openingHeightMeters, t, n), r.lineTo(t, e.openingHeightMeters), r.lineTo(0, e.openingHeightMeters), r.closePath(), r;
 };
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/passages/passage-model.tsx
-function Xm({ wall: e, opening: t, floor: n }) {
-	let r = Se(e, t, n.coordinates), { openingHeightMeters: i, variant: a } = t, o = t.variant === "arched" ? t.archRiseMeters : 0, s = (0, H.useMemo)(() => a === "arched" ? Ym({
+function $m({ wall: e, opening: t, floor: n }) {
+	let r = Se(e, t, n.coordinates), { openingHeightMeters: i, variant: a } = t, o = t.variant === "arched" ? t.archRiseMeters : 0, s = (0, H.useMemo)(() => a === "arched" ? Qm({
 		openingHeightMeters: i,
 		archRiseMeters: o
 	}, r.widthMeters) : null, [
@@ -41210,7 +41350,7 @@ function Xm({ wall: e, opening: t, floor: n }) {
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/windows/window-handle.tsx
-function Zm({ handleSide: e, faceSide: t, width: n, glazing: r }) {
+function eh({ handleSide: e, faceSide: t, width: n, glazing: r }) {
 	return r === "clear" ? /* @__PURE__ */ (0, U.jsx)("group", {
 		name: "opening-window-handle-clear",
 		position: [
@@ -41223,7 +41363,7 @@ function Zm({ handleSide: e, faceSide: t, width: n, glazing: r }) {
 			1,
 			t
 		],
-		children: /* @__PURE__ */ (0, U.jsx)(Fm, {
+		children: /* @__PURE__ */ (0, U.jsx)(Rm, {
 			size: [
 				.045,
 				.2,
@@ -41284,7 +41424,7 @@ function Zm({ handleSide: e, faceSide: t, width: n, glazing: r }) {
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/windows/window-model.tsx
-function Qm({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
+function th({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
 	let a = Se(e, t, n.coordinates), o = Re(t), s = a.widthMeters / t.panelCount, c = t.variant === "muntined" ? t.muntins.columns : 1, l = t.variant === "muntined" ? t.muntins.rows : 1;
 	return /* @__PURE__ */ (0, U.jsxs)("group", {
 		name: `opening-model-${t.variant}`,
@@ -41306,7 +41446,7 @@ function Qm({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
 					0,
 					0
 				],
-				children: /* @__PURE__ */ (0, U.jsx)(km, {
+				children: /* @__PURE__ */ (0, U.jsx)(Mm, {
 					operation: t.operation,
 					open: r > 0,
 					reducedMotion: i,
@@ -41318,18 +41458,20 @@ function Qm({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
 							0,
 							0
 						],
-						children: [t.variant === "steel-arched" ? /* @__PURE__ */ (0, U.jsx)(Lm, {
+						children: [t.variant === "steel-arched" ? /* @__PURE__ */ (0, U.jsx)(Bm, {
 							width: Math.max(.08, s),
 							height: t.openingHeightMeters,
-							privacy: t.glazing === "privacy"
-						}) : /* @__PURE__ */ (0, U.jsx)(Im, {
+							privacy: t.glazing === "privacy",
+							...Oe({ frameColor: t.color })
+						}) : /* @__PURE__ */ (0, U.jsx)(zm, {
 							width: Math.max(.08, s),
 							height: t.openingHeightMeters,
 							columns: c,
 							rows: l,
 							privacy: t.glazing === "privacy",
+							...Oe({ frameColor: t.color }),
 							frameDepth: t.glazing === "privacy" ? .105 : .09
-						}), t.operation === "casement" && /* @__PURE__ */ (0, U.jsx)(Zm, {
+						}), t.operation === "casement" && /* @__PURE__ */ (0, U.jsx)(eh, {
 							width: s,
 							glazing: t.glazing,
 							handleSide: e.extentSign,
@@ -41338,7 +41480,7 @@ function Qm({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
 					})
 				})
 			}, n);
-		}), t.variant !== "steel-arched" && /* @__PURE__ */ (0, U.jsx)(Fm, {
+		}), t.variant !== "steel-arched" && /* @__PURE__ */ (0, U.jsx)(Rm, {
 			size: [
 				a.widthMeters + .08,
 				.055,
@@ -41348,17 +41490,18 @@ function Qm({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
 				a.widthMeters / 2,
 				-t.openingHeightMeters / 2 - .02,
 				0
-			]
+			],
+			...Oe({ color: t.color })
 		})]
 	});
 }
 //#endregion
 //#region packages/catalog/src/architecture/registry.ts
-var $m = He({
-	door: Jm,
-	window: Qm,
-	passage: Xm
-}), eh = [
+var nh = He({
+	door: Zm,
+	window: th,
+	passage: $m
+}), rh = [
 	{
 		id: "panel-wood",
 		label: "Panel wood",
@@ -41454,8 +41597,8 @@ var $m = He({
 			heightMeters: 2.3
 		}
 	}
-], th = () => void 0, nh = {};
-function rh({ entry: e }) {
+], ih = () => void 0, ah = {};
+function oh({ entry: e }) {
 	if (e.kind === "procedural") {
 		let t = e.definition.component;
 		return /* @__PURE__ */ (0, U.jsx)(t, {});
@@ -41465,10 +41608,10 @@ function rh({ entry: e }) {
 		return /* @__PURE__ */ (0, U.jsx)(t, {
 			variant: pe(e.definition).id,
 			size: e.definition.defaultSize,
-			entityStatesBySlotId: nh,
+			entityStatesBySlotId: ah,
 			reducedMotion: !0,
 			walkMode: !1,
-			onInteract: th
+			onInteract: ih
 		});
 	}
 	let t = e.definition.component;
@@ -41477,7 +41620,7 @@ function rh({ entry: e }) {
 		visualState: "disconnected",
 		reducedMotion: !0,
 		walkMode: !1,
-		onInteract: th,
+		onInteract: ih,
 		slot: {
 			id: `preview-${e.key}`,
 			model: e.modelId,
@@ -41492,37 +41635,37 @@ function rh({ entry: e }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/furnish/catalog/thumbnailCache.ts
-var ih = "cabane-model-previews-6053eff593d2d48f45a5", ah = /* @__PURE__ */ new Map(), oh = 400;
-function sh(e, t) {
-	ah.delete(e), ah.set(e, t), ah.size > oh && ah.delete(ah.keys().next().value);
+var sh = "cabane-model-previews-9cc3005c79fa3a93fb90", ch = /* @__PURE__ */ new Map(), lh = 400;
+function uh(e, t) {
+	ch.delete(e), ch.set(e, t), ch.size > lh && ch.delete(ch.keys().next().value);
 }
-async function ch() {
-	return await caches.open(ih);
+async function dh() {
+	return await caches.open(sh);
 }
-async function lh(e) {
-	let t = ah.get(e);
+async function fh(e) {
+	let t = ch.get(e);
 	if (t) return t;
 	try {
-		let t = await (await (await ch()).match(e))?.blob();
-		return t && sh(e, t), t;
+		let t = await (await (await dh()).match(e))?.blob();
+		return t && uh(e, t), t;
 	} catch {
 		return;
 	}
 }
-function uh(e, t) {
+function ph(e, t) {
 	t.toBlob((t) => {
-		t && (sh(e, t), (async () => {
+		t && (uh(e, t), (async () => {
 			try {
-				let n = await ch();
+				let n = await dh();
 				await n.put(e, new Response(t));
 				let r = await n.keys();
-				for (let e of r.slice(0, Math.max(0, r.length - oh))) await n.delete(e);
-				for (let e of await caches.keys()) e.startsWith("cabane-model-previews-") && e !== ih && await caches.delete(e);
+				for (let e of r.slice(0, Math.max(0, r.length - lh))) await n.delete(e);
+				for (let e of await caches.keys()) e.startsWith("cabane-model-previews-") && e !== sh && await caches.delete(e);
 			} catch {}
 		})());
 	}, "image/png");
 }
-async function dh(e, t, n, r, i) {
+async function mh(e, t, n, r, i) {
 	let a = URL.createObjectURL(e);
 	try {
 		let e = new Image();
@@ -41537,7 +41680,7 @@ async function dh(e, t, n, r, i) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/furnish/catalog/ModelThumbnailRenderer.tsx
-var fh = (0, H.createContext)(() => () => void 0), ph = class extends H.Component {
+var hh = (0, H.createContext)(() => () => void 0), gh = class extends H.Component {
 	state = { failed: !1 };
 	static getDerivedStateFromError() {
 		return { failed: !0 };
@@ -41549,14 +41692,14 @@ var fh = (0, H.createContext)(() => () => void 0), ph = class extends H.Componen
 		return this.state.failed ? null : this.props.children;
 	}
 };
-function mh({ onError: e }) {
+function _h({ onError: e }) {
 	let t = re((e) => e.gl);
 	return (0, H.useEffect)(() => {
 		let n = t.domElement;
 		return n.addEventListener("webglcontextlost", e), () => n.removeEventListener("webglcontextlost", e);
 	}, [t, e]), null;
 }
-function hh({ request: e, aspect: t, done: n }) {
+function vh({ request: e, aspect: t, done: n }) {
 	let { invalidate: r, size: i } = re(), a = (0, H.useRef)(new b(-1, 1, 1, -1, .01, 100)), o = (0, H.useRef)(!1), { min: s, max: c } = e.entry.definition.bounds, l = Math.max(...c.map((e, t) => e - s[t]), .01), u = s.map((e, t) => (e + c[t]) / 2), d = c.map((e, t) => (e - s[t]) / l);
 	return (0, H.useLayoutEffect)(() => {
 		let { min: t, max: n } = e.entry.definition.bounds, s = Math.max(...n.map((e, n) => e - t[n]), .01), c = n.map((e, n) => (e - t[n]) / s), l = a.current;
@@ -41588,7 +41731,7 @@ function hh({ request: e, aspect: t, done: n }) {
 					t.width = Math.max(1, Math.round(n.width * i)), t.height = Math.max(1, Math.round(n.height * i));
 					let a = t.getContext("2d");
 					if (!a) throw Error("Preview canvas unavailable");
-					a.drawImage(r.domElement, 0, 0, t.width, t.height), e.cacheKey && uh(e.cacheKey.replace(/[^/]+$/, `${t.width}:${t.height}`), t);
+					a.drawImage(r.domElement, 0, 0, t.width, t.height), e.cacheKey && ph(e.cacheKey.replace(/[^/]+$/, `${t.width}:${t.height}`), t);
 				}
 				n(!1);
 			} catch {
@@ -41617,7 +41760,7 @@ function hh({ request: e, aspect: t, done: n }) {
 					-u[1],
 					-u[2]
 				],
-				children: /* @__PURE__ */ (0, U.jsx)(rh, { entry: e.entry })
+				children: /* @__PURE__ */ (0, U.jsx)(oh, { entry: e.entry })
 			})
 		}),
 		[
@@ -41651,7 +41794,7 @@ function hh({ request: e, aspect: t, done: n }) {
 		}, e))
 	] });
 }
-function gh({ children: e, scrollRoot: t, enabled: n }) {
+function yh({ children: e, scrollRoot: t, enabled: n }) {
 	let r = (0, H.useRef)(/* @__PURE__ */ new Map()), i = (0, H.useRef)(null), a = (0, H.useRef)(!0), [o, s] = (0, H.useState)(null), [c, l] = (0, H.useState)(0), [u, d] = (0, H.useState)(!1), f = (0, H.useCallback)(() => {
 		if (!a.current || i.current) return;
 		let e = r.current.values().next().value;
@@ -41681,9 +41824,9 @@ function gh({ children: e, scrollRoot: t, enabled: n }) {
 			s = u;
 			let d = ++o, p = new URL(`/__cabane_preview__/${encodeURIComponent(e.entry.key)}/${e.transparent ? "clear" : "opaque"}/${u}`, location.origin).href, m = () => !a && i && o === d && e.canvas.isConnected;
 			(async () => {
-				let t = await lh(p);
+				let t = await fh(p);
 				if (m()) {
-					if (t && await dh(t, e.canvas, c, l, m)) {
+					if (t && await mh(t, e.canvas, c, l, m)) {
 						e.report(!1);
 						return;
 					}
@@ -41710,7 +41853,7 @@ function gh({ children: e, scrollRoot: t, enabled: n }) {
 		n,
 		u
 	]), g = o?.canvas.getBoundingClientRect(), _ = g && g.height > 0 ? g.width / g.height : 1.2;
-	return /* @__PURE__ */ (0, U.jsxs)(fh.Provider, {
+	return /* @__PURE__ */ (0, U.jsxs)(hh.Provider, {
 		value: h,
 		children: [e, n && !u && c > 0 && /* @__PURE__ */ (0, U.jsx)("div", {
 			"aria-hidden": "true",
@@ -41719,7 +41862,7 @@ function gh({ children: e, scrollRoot: t, enabled: n }) {
 				width: 160 * _,
 				height: 160
 			},
-			children: /* @__PURE__ */ (0, U.jsx)(ph, {
+			children: /* @__PURE__ */ (0, U.jsx)(gh, {
 				onError: m,
 				children: /* @__PURE__ */ (0, U.jsxs)(de, {
 					events: Ve,
@@ -41732,9 +41875,9 @@ function gh({ children: e, scrollRoot: t, enabled: n }) {
 						powerPreference: "low-power"
 					},
 					fallback: /* @__PURE__ */ (0, U.jsx)("span", { children: "Preview unavailable" }),
-					children: [/* @__PURE__ */ (0, U.jsx)(mh, { onError: m }), o && /* @__PURE__ */ (0, U.jsx)(ph, {
+					children: [/* @__PURE__ */ (0, U.jsx)(_h, { onError: m }), o && /* @__PURE__ */ (0, U.jsx)(gh, {
 						onError: () => p(o, !0),
-						children: /* @__PURE__ */ (0, U.jsx)(hh, {
+						children: /* @__PURE__ */ (0, U.jsx)(vh, {
 							request: o,
 							aspect: _,
 							done: (e) => p(o, e)
@@ -41745,8 +41888,8 @@ function gh({ children: e, scrollRoot: t, enabled: n }) {
 		})]
 	});
 }
-function _h({ entry: e, showAdd: t = !0, fallback: n, transparent: r = !1 }) {
-	let i = (0, H.useRef)(null), a = (0, H.useContext)(fh), [o, s] = (0, H.useState)(!1);
+function bh({ entry: e, showAdd: t = !0, fallback: n, transparent: r = !1 }) {
+	let i = (0, H.useRef)(null), a = (0, H.useContext)(hh), [o, s] = (0, H.useState)(!1);
 	return (0, H.useEffect)(() => {
 		if (i.current) return s(!1), a({
 			canvas: i.current,
@@ -41779,15 +41922,15 @@ function _h({ entry: e, showAdd: t = !0, fallback: n, transparent: r = !1 }) {
 }
 //#endregion
 //#region apps/web/src/editor-action-bar/ShortcutDeviceIcon.tsx
-function vh({ children: e }) {
+function xh({ children: e }) {
 	let t = (0, H.useRef)(null);
-	return /* @__PURE__ */ (0, U.jsx)(gh, {
+	return /* @__PURE__ */ (0, U.jsx)(yh, {
 		scrollRoot: t,
 		enabled: !0,
 		children: e
 	});
 }
-function yh({ modelId: e, models: t }) {
+function Sh({ modelId: e, models: t }) {
 	let n = t[e], r = (0, H.useMemo)(() => n ? {
 		key: `device:${e}`,
 		kind: "device",
@@ -41796,13 +41939,13 @@ function yh({ modelId: e, models: t }) {
 	} : null, [n, e]);
 	return /* @__PURE__ */ (0, U.jsx)("span", {
 		className: "scene-action-device-preview",
-		children: r ? /* @__PURE__ */ (0, U.jsx)(_h, {
+		children: r ? /* @__PURE__ */ (0, U.jsx)(bh, {
 			entry: r,
 			showAdd: !1,
 			transparent: !0,
-			fallback: /* @__PURE__ */ (0, U.jsx)(nm, { name: "devices" })
-		}) : /* @__PURE__ */ (0, U.jsx)(nm, { name: "devices" })
+			fallback: /* @__PURE__ */ (0, U.jsx)(am, { name: "devices" })
+		}) : /* @__PURE__ */ (0, U.jsx)(am, { name: "devices" })
 	});
 }
 //#endregion
-export { Zp as A, Ye as B, nm as C, qp as D, $p as E, fn as F, sn as I, on as L, Wp as M, rp as N, Yp as O, mn as P, un as R, om as S, Qp as T, fm as _, eh as a, sm as b, Jm as c, bm as d, gm as f, dm as g, mm as h, gh as i, Kp as j, Jp as k, _m as l, pm as m, vh as n, $m as o, hm as p, _h as r, Qm as s, yh as t, vm as u, cm as v, em as w, am as x, lm as y, ln as z };
+export { em as A, Ye as B, am as C, Xp as D, nm as E, fn as F, sn as I, on as L, qp as M, op as N, Qp as O, mn as P, un as R, lm as S, tm as T, hm as _, rh as a, um as b, Zm as c, Cm as d, ym as f, mm as g, _m as h, yh as i, Yp as j, Zp as k, bm as l, gm as m, xh as n, nh as o, vm as p, bh as r, th as s, Sh as t, xm as u, dm as v, rm as w, cm as x, fm as y, ln as z };
