@@ -41492,7 +41492,7 @@ function rh({ entry: e }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/furnish/catalog/thumbnailCache.ts
-var ih = "cabane-model-previews-8e6b97e74239a8265196", ah = /* @__PURE__ */ new Map(), oh = 400;
+var ih = "cabane-model-previews-6053eff593d2d48f45a5", ah = /* @__PURE__ */ new Map(), oh = 400;
 function sh(e, t) {
 	ah.delete(e), ah.set(e, t), ah.size > oh && ah.delete(ah.keys().next().value);
 }
