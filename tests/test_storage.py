@@ -1,5 +1,6 @@
 import asyncio
 import json
+from pathlib import Path
 import unittest
 
 from custom_components.cabane.storage import WorkspaceStore, ConflictError, InvalidDocumentError
@@ -28,6 +29,19 @@ class FailingStore(MemoryStore):
 
 
 class WorkspaceStoreTests(unittest.IsolatedAsyncioTestCase):
+    async def test_outdoor_platform_document_is_preserved_across_reload(self):
+        payload = (Path(__file__).parent / "fixtures/outdoor-workspace.json").read_text()
+        home_id = json.loads(payload)["record"]["homeId"]
+        backend = MemoryStore()
+        self.assertEqual(await WorkspaceStore(backend).put(home_id, payload, None), 1)
+        restored = await WorkspaceStore(backend).get(home_id)
+        self.assertEqual(restored["document"], payload)
+        for slice_name in ("draft", "published"):
+            floor = json.loads(restored["document"])["record"][slice_name]["floors"][0]
+            platform = floor["outdoorPlatforms"][0]
+            self.assertEqual(platform["id"], "terrace")
+            self.assertEqual(platform["edges"][0]["configuration"]["heightMeters"], 0.42)
+
     async def test_round_trip_and_reload(self):
         backend = MemoryStore()
         store = WorkspaceStore(backend)

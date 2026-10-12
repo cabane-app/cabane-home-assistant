@@ -98,6 +98,23 @@ Use the implemented producer and complete the release checks:
    Vendoring replaces the complete frontend tree, dropping old chunks. Review
    and commit `custom_components/cabane/frontend/` with the integration changes.
    These are maintainer steps; end users never copy frontend assets.
+
+   Verify workspace schema compatibility against the **vendored** bundle as well:
+
+   ```sh
+   node scripts/verify_workspace_import.mjs /path/to/smart-home-3d
+   ```
+
+   The producer checkout supplies its installed, pinned Playwright and synthetic
+   HA host fixture (run `npm ci` and `npm run browser:install` there first).
+   The test imports the synthetic outdoor-platform workspace through the panel's
+   normal HA import screen and checks both persisted draft and published records,
+   including edge IDs, finishes and overrides. It makes no household requests.
+   An optional second argument selects another bundle directory; the v0.2.1
+   bundle reproduces issue #3 with `Property “outdoorPlatforms” is not part of
+   the HomeProject schema.` Version 0.3.0 includes the compatible frontend;
+   storage has always preserved these fields unchanged.
+
 3. Test the resulting `dist/cabane.zip` on a disposable HA instance. The archive
    has integration files at its root, including `frontend/` and translations;
    it must be extracted into `custom_components/cabane/`, not `/config`.

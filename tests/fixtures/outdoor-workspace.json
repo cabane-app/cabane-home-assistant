@@ -1,0 +1,338 @@
+{
+  "format": "cabane-workspace",
+  "version": 1,
+  "workspace": {
+    "name": "Outdoor platform fixture",
+    "homeAssistantUrl": null,
+    "hasPublished": true
+  },
+  "record": {
+    "schemaVersion": 2,
+    "homeId": "outdoor-ha-fixture",
+    "seedRevision": "blank-v1",
+    "revision": 0,
+    "draft": {
+      "schemaVersion": 2,
+      "seedRevision": "blank-v1",
+      "home": {
+        "id": "outdoor-ha-fixture",
+        "name": "Outdoor platform fixture",
+        "locale": "en",
+        "palette": {
+          "accent": "#d48a54",
+          "secondary": "#758f83",
+          "exterior": "#c97370",
+          "interior": "#e4e0d8",
+          "ground": "#91a06a"
+        }
+      },
+      "coordinates": {
+        "origin": [0, 0],
+        "metersPerPlanUnit": 1,
+        "scaleBasis": "measured"
+      },
+      "floors": [
+        {
+          "floorToFloorHeightMeters": 2.5,
+          "id": "ground-floor",
+          "name": "Ground floor",
+          "coordinates": {
+            "origin": [0, 0],
+            "metersPerPlanUnit": 1,
+            "scaleBasis": "measured"
+          },
+          "defaultWallHeightMeters": 2.5,
+          "defaultCeilingHeightMeters": 2.5,
+          "footprint": [
+            [0, 0],
+            [4, 0],
+            [4, 4],
+            [0, 4]
+          ],
+          "rooms": [
+            {
+              "id": "ground-floor:room-1",
+              "name": "Living room",
+              "polygon": [
+                [0, 0],
+                [4, 0],
+                [4, 4],
+                [0, 4]
+              ],
+              "accent": "#c9a477",
+              "dashboardSlots": [],
+              "devices": []
+            }
+          ],
+          "walls": [
+            {
+              "id": "wall-0",
+              "from": [0, 0],
+              "to": [4, 0],
+              "classification": "exterior",
+              "thicknessMeters": 0.2
+            },
+            {
+              "id": "wall-1",
+              "from": [4, 0],
+              "to": [4, 4],
+              "classification": "exterior",
+              "thicknessMeters": 0.2
+            },
+            {
+              "id": "wall-2",
+              "from": [4, 4],
+              "to": [0, 4],
+              "classification": "exterior",
+              "thicknessMeters": 0.2
+            },
+            {
+              "id": "wall-3",
+              "from": [0, 4],
+              "to": [0, 0],
+              "classification": "exterior",
+              "thicknessMeters": 0.2
+            }
+          ],
+          "wallJunctions": [
+            {
+              "id": "junction-wall-0-wall-3-0-0",
+              "at": [0, 0],
+              "wallIds": ["wall-0", "wall-3"]
+            },
+            {
+              "id": "junction-wall-0-wall-1-4-0",
+              "at": [4, 0],
+              "wallIds": ["wall-0", "wall-1"]
+            },
+            {
+              "id": "junction-wall-1-wall-2-4-4",
+              "at": [4, 4],
+              "wallIds": ["wall-1", "wall-2"]
+            },
+            {
+              "id": "junction-wall-2-wall-3-0-4",
+              "at": [0, 4],
+              "wallIds": ["wall-2", "wall-3"]
+            }
+          ],
+          "openings": [],
+          "ceilings": [
+            {
+              "id": "ground-floor:room-1-ceiling",
+              "kind": "flat",
+              "roomIds": ["ground-floor:room-1"],
+              "heightMeters": 2.5
+            }
+          ],
+          "outdoorPlatforms": [
+            {
+              "id": "terrace",
+              "polygon": [
+                [4, 0],
+                [6, 0],
+                [6, 4],
+                [4, 4]
+              ],
+              "finish": {
+                "kind": "solid",
+                "color": "#c8b79b"
+              },
+              "defaultEdge": {
+                "kind": "railing",
+                "heightMeters": 1
+              },
+              "edges": [
+                {
+                  "id": "terrace-edge-0",
+                  "configuration": {
+                    "kind": "low-wall",
+                    "heightMeters": 0.42
+                  }
+                },
+                {
+                  "id": "terrace-edge-1"
+                },
+                {
+                  "id": "terrace-edge-2"
+                },
+                {
+                  "id": "terrace-edge-3"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "stairs": [],
+      "sceneItems": [],
+      "roomProfiles": {},
+      "openingProfiles": {},
+      "shortcuts": [],
+      "assumptions": []
+    },
+    "published": {
+      "schemaVersion": 2,
+      "seedRevision": "blank-v1",
+      "home": {
+        "id": "outdoor-ha-fixture",
+        "name": "Outdoor platform fixture",
+        "locale": "en",
+        "palette": {
+          "accent": "#d48a54",
+          "secondary": "#758f83",
+          "exterior": "#c97370",
+          "interior": "#e4e0d8",
+          "ground": "#91a06a"
+        }
+      },
+      "coordinates": {
+        "origin": [0, 0],
+        "metersPerPlanUnit": 1,
+        "scaleBasis": "measured"
+      },
+      "floors": [
+        {
+          "floorToFloorHeightMeters": 2.5,
+          "id": "ground-floor",
+          "name": "Ground floor",
+          "coordinates": {
+            "origin": [0, 0],
+            "metersPerPlanUnit": 1,
+            "scaleBasis": "measured"
+          },
+          "defaultWallHeightMeters": 2.5,
+          "defaultCeilingHeightMeters": 2.5,
+          "footprint": [
+            [0, 0],
+            [4, 0],
+            [4, 4],
+            [0, 4]
+          ],
+          "rooms": [
+            {
+              "id": "ground-floor:room-1",
+              "name": "Living room",
+              "polygon": [
+                [0, 0],
+                [4, 0],
+                [4, 4],
+                [0, 4]
+              ],
+              "accent": "#c9a477",
+              "dashboardSlots": [],
+              "devices": []
+            }
+          ],
+          "walls": [
+            {
+              "id": "wall-0",
+              "from": [0, 0],
+              "to": [4, 0],
+              "classification": "exterior",
+              "thicknessMeters": 0.2
+            },
+            {
+              "id": "wall-1",
+              "from": [4, 0],
+              "to": [4, 4],
+              "classification": "exterior",
+              "thicknessMeters": 0.2
+            },
+            {
+              "id": "wall-2",
+              "from": [4, 4],
+              "to": [0, 4],
+              "classification": "exterior",
+              "thicknessMeters": 0.2
+            },
+            {
+              "id": "wall-3",
+              "from": [0, 4],
+              "to": [0, 0],
+              "classification": "exterior",
+              "thicknessMeters": 0.2
+            }
+          ],
+          "wallJunctions": [
+            {
+              "id": "junction-wall-0-wall-3-0-0",
+              "at": [0, 0],
+              "wallIds": ["wall-0", "wall-3"]
+            },
+            {
+              "id": "junction-wall-0-wall-1-4-0",
+              "at": [4, 0],
+              "wallIds": ["wall-0", "wall-1"]
+            },
+            {
+              "id": "junction-wall-1-wall-2-4-4",
+              "at": [4, 4],
+              "wallIds": ["wall-1", "wall-2"]
+            },
+            {
+              "id": "junction-wall-2-wall-3-0-4",
+              "at": [0, 4],
+              "wallIds": ["wall-2", "wall-3"]
+            }
+          ],
+          "openings": [],
+          "ceilings": [
+            {
+              "id": "ground-floor:room-1-ceiling",
+              "kind": "flat",
+              "roomIds": ["ground-floor:room-1"],
+              "heightMeters": 2.5
+            }
+          ],
+          "outdoorPlatforms": [
+            {
+              "id": "terrace",
+              "polygon": [
+                [4, 0],
+                [6, 0],
+                [6, 4],
+                [4, 4]
+              ],
+              "finish": {
+                "kind": "solid",
+                "color": "#c8b79b"
+              },
+              "defaultEdge": {
+                "kind": "railing",
+                "heightMeters": 1
+              },
+              "edges": [
+                {
+                  "id": "terrace-edge-0",
+                  "configuration": {
+                    "kind": "low-wall",
+                    "heightMeters": 0.42
+                  }
+                },
+                {
+                  "id": "terrace-edge-1"
+                },
+                {
+                  "id": "terrace-edge-2"
+                },
+                {
+                  "id": "terrace-edge-3"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "stairs": [],
+      "sceneItems": [],
+      "roomProfiles": {},
+      "openingProfiles": {},
+      "shortcuts": [],
+      "assumptions": []
+    },
+    "bindings": {},
+    "draftUpdatedAt": 1791842316113,
+    "publishedAt": 1791842316113
+  }
+}
