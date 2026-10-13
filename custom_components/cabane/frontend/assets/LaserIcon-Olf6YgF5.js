@@ -51892,7 +51892,7 @@ function WR(e) {
 function GR({ showRoof: e = !1, controlsRef: t, elevation: n = 0, buildingFloors: r, floor: i, room: a, roomFrame: o = null, roomRequestKey: s = 0, reducedMotion: c = !1 }) {
 	let l = (0, p.useRef)(null), u = (0, p.useRef)(null), d = (0, p.useCallback)((e) => {
 		l.current = e, typeof t == "function" ? t(e) : t && (t.current = e);
-	}, [t]), { width: f, height: h } = by((e) => e.size), g = (0, p.useMemo)(() => {
+	}, [t]), f = (0, p.useCallback)(() => u.current?.(), []), { width: h, height: g } = by((e) => e.size), _ = (0, p.useMemo)(() => {
 		let t = ze(i);
 		if (r?.length) {
 			for (let e of r) {
@@ -51901,7 +51901,7 @@ function GR({ showRoof: e = !1, controlsRef: t, elevation: n = 0, buildingFloors
 			}
 			t.width = t.maxX - t.minX, t.depth = t.maxZ - t.minZ, t.centerX = (t.minX + t.maxX) / 2, t.centerZ = (t.minZ + t.maxZ) / 2;
 		}
-		let a = FT(r ?? []), o = a[0]?.elevationMeters ?? 0, s = (a.length ? a.at(-1).elevationMeters + r.at(-1).floorToFloorHeightMeters - o : 0) + (e ? 2 + A + .16 : 0), c = Math.max(t.width, t.depth, s, 2), l = e || (r?.length ?? 0) > 1, u = l ? o + s / 2 : .2 + n, d = UR(f, h, l ? {
+		let a = FT(r ?? []), o = a[0]?.elevationMeters ?? 0, s = (a.length ? a.at(-1).elevationMeters + r.at(-1).floorToFloorHeightMeters - o : 0) + (e ? 2 + A + .16 : 0), c = Math.max(t.width, t.depth, s, 2), l = e || (r?.length ?? 0) > 1, u = l ? o + s / 2 : .2 + n, d = UR(h, g, l ? {
 			width: t.width,
 			depth: t.depth + s * .75
 		} : t, !1);
@@ -51922,34 +51922,34 @@ function GR({ showRoof: e = !1, controlsRef: t, elevation: n = 0, buildingFloors
 		r,
 		n,
 		i,
-		h,
+		g,
 		e,
-		f
-	]), [_] = (0, p.useState)(g), v = (0, p.useMemo)(() => {
-		let e = new W(...g.target);
+		h
+	]), [v] = (0, p.useState)(_), y = (0, p.useMemo)(() => {
+		let e = new W(..._.target);
 		return {
 			target: e,
-			offset: new Zf().setFromVector3(new W(...g.position).sub(e)),
-			zoom: g.zoom
+			offset: new Zf().setFromVector3(new W(..._.position).sub(e)),
+			zoom: _.zoom
 		};
-	}, [g]), y = (0, p.useCallback)((e) => {
-		e?.lookAt(..._.target);
-	}, [_]);
+	}, [_]), b = (0, p.useCallback)((e) => {
+		e?.lookAt(...v.target);
+	}, [v]);
 	return /* @__PURE__ */ (0, m.jsxs)("group", { children: [
 		/* @__PURE__ */ (0, m.jsx)(iw, {
-			ref: y,
+			ref: b,
 			makeDefault: !0,
-			position: _.position,
-			zoom: _.zoom,
+			position: v.position,
+			zoom: v.zoom,
 			near: .1,
 			far: 150
 		}),
 		/* @__PURE__ */ (0, m.jsx)(HR, {}),
 		/* @__PURE__ */ (0, m.jsx)(sw, {
 			ref: d,
-			onStart: () => u.current?.(),
+			onStart: f,
 			makeDefault: !0,
-			target: _.target,
+			target: v.target,
 			enablePan: !0,
 			enableRotate: !0,
 			enableZoom: !0,
@@ -51967,7 +51967,7 @@ function GR({ showRoof: e = !1, controlsRef: t, elevation: n = 0, buildingFloors
 		/* @__PURE__ */ (0, m.jsx)(PR, {
 			controls: l,
 			interruptRef: u,
-			defaultPose: v,
+			defaultPose: y,
 			enabled: !e,
 			floor: i,
 			room: a,
