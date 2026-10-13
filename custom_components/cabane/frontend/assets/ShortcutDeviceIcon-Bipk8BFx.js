@@ -1,5 +1,5 @@
 import { r as e } from "./rolldown-runtime-B0aSnxlc.js";
-import { A as t, Ar as n, Bn as r, Bt as i, Ci as a, Cn as o, Dr as s, Er as c, Fn as l, Ft as u, Gr as d, Gt as f, In as p, Ir as m, Jt as h, Kr as g, Ln as _, Lt as v, Mn as y, Mr as b, Nn as ee, Nr as te, Nt as x, O as S, Or as C, P as w, Pn as T, Pt as ne, Qn as re, Qt as E, R as ie, Rt as D, Sr as O, U as ae, Ur as k, Ut as oe, Vn as se, Vt as ce, Wr as le, Wt as ue, Xt as A, Yn as de, Zn as j, Zt as fe, _n as pe, _r as me, an as he, br as ge, bt as _e, ct as ve, ei as M, en as ye, hr as be, ht as xe, ii as Se, j as Ce, mr as we, mt as Te, n as N, ni as Ee, nn as De, nr as Oe, qn as P, qr as F, qt as ke, ri as Ae, rn as je, t as Me, ti as Ne, ui as Pe, vr as Fe, vt as Ie, wi as Le, wn as I, xn as Re, xr as ze, xt as Be, y as Ve, yn as He, yr as Ue, zn as We, zr as Ge, zt as Ke } from "./LaserIcon-CoCjCYLG.js";
+import { A as t, Ar as n, Bn as r, Bt as i, Ci as a, Cn as o, Dr as s, Er as c, Fn as l, Ft as u, Gr as d, Gt as f, In as p, Ir as m, Jt as h, Kr as g, Ln as _, Lt as v, Mn as y, Mr as b, Nn as ee, Nr as te, Nt as x, O as S, Or as C, P as w, Pn as T, Pt as ne, Qn as re, Qt as E, R as ie, Rt as D, Sr as O, U as ae, Ur as k, Ut as oe, Vn as se, Vt as ce, Wr as le, Wt as ue, Xt as A, Yn as de, Zn as j, Zt as fe, _n as pe, _r as me, an as he, br as ge, bt as _e, ct as ve, ei as M, en as ye, hr as be, ht as xe, ii as Se, j as Ce, mr as we, mt as Te, n as N, ni as Ee, nn as De, nr as Oe, qn as P, qr as F, qt as ke, ri as Ae, rn as je, t as Me, ti as Ne, ui as Pe, vr as Fe, vt as Ie, wi as Le, wn as I, xn as Re, xr as ze, xt as Be, y as Ve, yn as He, yr as Ue, zn as We, zr as Ge, zt as Ke } from "./LaserIcon-BUzhFV4u.js";
 //#region packages/engine/src/home-project/definitions.ts
 var L = (e) => e, qe = (e) => e, Je = (e) => {
 	if (e === void 0) return null;
@@ -40235,7 +40235,7 @@ var vm = [{
 	defaultShortcut: !0,
 	shortcutKey: "G",
 	Icon: Me,
-	Scene: (0, H.lazy)(() => import("./LaserWalkTool-MpJbAef3.js").then((e) => ({ default: e.LaserWalkTool })))
+	Scene: (0, H.lazy)(() => import("./LaserWalkTool-D08oCl0-.js").then((e) => ({ default: e.LaserWalkTool })))
 }];
 //#endregion
 //#region apps/web/src/editor-connect/useConnectSignIn.ts
@@ -41635,7 +41635,7 @@ function oh({ entry: e }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/furnish/catalog/thumbnailCache.ts
-var sh = "cabane-model-previews-9cc3005c79fa3a93fb90", ch = /* @__PURE__ */ new Map(), lh = 400;
+var sh = "cabane-model-previews-8d9379605a4e834f8e27", ch = /* @__PURE__ */ new Map(), lh = 400;
 function uh(e, t) {
 	ch.delete(e), ch.set(e, t), ch.size > lh && ch.delete(ch.keys().next().value);
 }

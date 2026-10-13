@@ -1,6 +1,6 @@
 import { r as e } from "./assets/rolldown-runtime-B0aSnxlc.js";
-import { $n as t, A as n, B as r, Bn as i, Bt as a, Ci as o, Ct as s, Et as c, F as l, Fn as u, Ft as d, Gn as f, Gt as p, I as m, L as h, M as g, Mn as _, R as v, Rn as y, St as b, Tt as x, Un as S, Vn as C, Wn as w, Wt as T, er as E, h as D, j as O, k, mn as A, nr as j, qt as M, s as ee, tn as te, tr as N, v as ne, vi as re, wi as P, wt as F, xi as ie, xt as ae } from "./assets/LaserIcon-CoCjCYLG.js";
-import { A as I, B as L, C as R, D as oe, E as se, F as ce, I as le, L as z, N as ue, O as de, P as fe, R as pe, d as me, f as he, h as ge, j as _e, l as ve, m as ye, n as be, o as xe, p as Se, t as Ce, w as we, y as Te, z as Ee } from "./assets/ShortcutDeviceIcon-3u6xLiHI.js";
+import { $n as t, A as n, B as r, Bn as i, Bt as a, Ci as o, Ct as s, Et as c, F as l, Fn as u, Ft as d, Gn as f, Gt as p, I as m, L as h, M as g, Mn as _, R as v, Rn as y, St as b, Tt as x, Un as S, Vn as C, Wn as w, Wt as T, er as E, h as D, j as O, k, mn as A, nr as j, qt as M, s as ee, tn as te, tr as N, v as ne, vi as re, wi as P, wt as F, xi as ie, xt as ae } from "./assets/LaserIcon-BUzhFV4u.js";
+import { A as I, B as L, C as R, D as oe, E as se, F as ce, I as le, L as z, N as ue, O as de, P as fe, R as pe, d as me, f as he, h as ge, j as _e, l as ve, m as ye, n as be, o as xe, p as Se, t as Ce, w as we, y as Te, z as Ee } from "./assets/ShortcutDeviceIcon-Bipk8BFx.js";
 //#region node_modules/react-router/dist/development/chunk-BV7QT456.mjs
 var B = /* @__PURE__ */ e(P(), 1), De = (e) => {
 	throw TypeError(e);
@@ -5923,7 +5923,7 @@ function Vo({ record: e, lifecycle: t, origin: n, onChangeOrigin: i, onRecordCha
 }
 //#endregion
 //#region apps/web/src/RoutedHomeEditor.tsx
-var Ho = (0, B.lazy)(() => import("./assets/HomeEditor-TLhOEjq9.js").then((e) => ({ default: e.HomeEditor })));
+var Ho = (0, B.lazy)(() => import("./assets/HomeEditor-CtVTWBtC.js").then((e) => ({ default: e.HomeEditor })));
 function Uo({ onClose: e, ...t }) {
 	let n = X(), r = Kr(), i = (0, B.useMemo)(() => ({
 		...n.state?.editorRequest,
@@ -6711,12 +6711,13 @@ function ss(e) {
 		#a;
 		#o;
 		#s;
+		#c = () => this.#l();
 		constructor() {
 			super();
 			let t = this.ownerDocument, n = this.attachShadow({ mode: "open" }), r = t.createElement("link");
 			r.rel = "stylesheet", r.href = new URL("cabane-panel.css", e.assetBaseUrl).href;
 			let i = t.createElement("style");
-			i.textContent = "\n        :host { display:grid; grid-template-rows:48px minmax(0,1fr); height:100%; min-height:0; min-width:0; contain:layout paint; }\n        .panel-toolbar { display:flex; gap:12px; align-items:center; background:var(--app-header-background-color,#f4efe5); color:var(--app-header-text-color,#35433a); font:500 16px system-ui; padding:0 12px; border-bottom:1px solid #80808030; }\n        .panel-toolbar button { display:grid; place-items:center; background:none; border:0; color:inherit; width:40px; height:40px; padding:8px; border-radius:8px; }\n        .panel-toolbar svg { width:24px; height:24px; fill:currentColor; }\n        .panel-content { position:relative; min-width:0; min-height:0; overflow:hidden; contain:layout paint; container:cabane / size; }\n        #root { position:relative; inset:auto; width:100%; height:100%; min-width:0; margin:0; overflow:hidden; }\n        #cabane-portals { position:absolute; inset:0; pointer-events:none; z-index:1000; }\n        #cabane-portals > * { pointer-events:auto; }\n        .panel-waiting { position:absolute; inset:0; display:grid; place-items:center; padding:24px; font:14px system-ui; background:#f4efe5; color:#35433a; }\n        .panel-waiting[hidden] { display:none; }\n      ";
+			i.textContent = "\n        :host { display:grid; grid-template-rows:48px minmax(0,1fr); height:calc(100dvh - var(--cabane-panel-top, 0px) - var(--safe-area-inset-bottom, 0px)); min-height:0; min-width:0; contain:layout paint; }\n        .panel-toolbar { display:flex; gap:12px; align-items:center; background:var(--app-header-background-color,#f4efe5); color:var(--app-header-text-color,#35433a); font:500 16px system-ui; padding:0 12px; border-bottom:1px solid #80808030; }\n        .panel-toolbar button { display:grid; place-items:center; background:none; border:0; color:inherit; width:40px; height:40px; padding:8px; border-radius:8px; }\n        .panel-toolbar svg { width:24px; height:24px; fill:currentColor; }\n        .panel-content { position:relative; min-width:0; min-height:0; overflow:hidden; contain:layout paint; container:cabane / size; }\n        #root { position:relative; inset:auto; width:100%; height:100%; min-width:0; margin:0; overflow:hidden; }\n        #cabane-portals { position:absolute; inset:0; pointer-events:none; z-index:1000; }\n        #cabane-portals > * { pointer-events:auto; }\n        .panel-waiting { position:absolute; inset:0; display:grid; place-items:center; padding:24px; font:14px system-ui; background:#f4efe5; color:#35433a; }\n        .panel-waiting[hidden] { display:none; }\n      ";
 			let a = t.createElement("header");
 			a.className = "panel-toolbar";
 			let o = t.createElement("button");
@@ -6732,7 +6733,7 @@ function ss(e) {
 			t !== this.#e?.connection && (this.#e = t ? {
 				connection: t,
 				origin: this.ownerDocument.location.origin
-			} : null, this.#l());
+			} : null, this.#u());
 		}
 		set narrow(e) {
 			this.toggleAttribute("narrow", e);
@@ -6740,16 +6741,17 @@ function ss(e) {
 		set route(e) {}
 		set panel(e) {}
 		connectedCallback() {
-			this.#r ??= os(this.ownerDocument, new URL("cabane-fonts.css", e.assetBaseUrl).href), typeof ResizeObserver < "u" && (this.#n = new ResizeObserver(() => this.#c()), this.#n.observe(this.#i)), this.#c(), this.#l();
+			this.ownerDocument.defaultView?.addEventListener("resize", this.#c), this.#r ??= os(this.ownerDocument, new URL("cabane-fonts.css", e.assetBaseUrl).href), typeof ResizeObserver < "u" && (this.#n = new ResizeObserver(() => this.#l()), this.#n.observe(this.#i)), this.#l(), this.#u();
 		}
 		disconnectedCallback() {
-			this.#t?.dispose(), this.#t = null, this.#n?.disconnect(), this.#n = null, this.#r?.(), this.#r = null, this.#o.replaceChildren();
+			this.ownerDocument.defaultView?.removeEventListener("resize", this.#c), this.#t?.dispose(), this.#t = null, this.#n?.disconnect(), this.#n = null, this.#r?.(), this.#r = null, this.#o.replaceChildren();
 		}
-		#c() {
+		#l() {
+			this.style.setProperty("--cabane-panel-top", `${Math.max(0, this.getBoundingClientRect().top)}px`);
 			let { width: e, height: t } = this.#i.getBoundingClientRect();
 			e > 0 && this.style.setProperty("--cabane-panel-width", `${e}px`), t > 0 && this.style.setProperty("--cabane-panel-height", `${t}px`);
 		}
-		#l() {
+		#u() {
 			if (this.isConnected) {
 				if (this.#s.hidden = !!this.#e, !this.#e) {
 					this.#t?.dispose(), this.#t = null;
