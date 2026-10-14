@@ -1,5 +1,5 @@
 import { r as e } from "./rolldown-runtime-B0aSnxlc.js";
-import { $n as t, An as n, Br as r, Cr as i, Di as a, Dr as o, Ei as s, En as c, Fr as l, Gr as u, Hr as d, Ir as f, Lr as p, Mr as m, Nr as h, Qn as g, Qr as _, Si as v, Tr as y, Vr as b, Xn as ee, Xr as x, Yr as S, Zr as C, er as w, ir as T, jr as te, n as E, rr as D, t as ne, vr as re, yr as O, yt as ie, zr as k } from "./LaserIcon-Xw9Esh2F.js";
+import { $n as t, An as n, Br as r, Cr as i, Di as a, Dr as o, Ei as s, En as c, Fr as l, Gr as u, Hr as d, Ir as f, Lr as p, Mr as m, Nr as h, Qn as g, Qr as _, Si as v, Tr as y, Vr as b, Xn as ee, Xr as x, Yr as S, Zr as C, er as w, ir as T, jr as te, n as E, rr as D, t as ne, vr as re, yr as O, yt as ie, zr as k } from "./LaserIcon-b38F24Sn.js";
 //#region packages/engine/src/walk-tools/raycast-walk-scene.ts
 function A(e, t) {
 	let n = e.intersectObjects(t.children, !0).find((e) => {
@@ -745,8 +745,8 @@ function Pe({ coarsePointer: e }) {
 				children: [/* @__PURE__ */ (0, L.jsx)(ne, {}), /* @__PURE__ */ (0, L.jsxs)("div", { children: [/* @__PURE__ */ (0, L.jsx)("h2", { children: "Pew pew!" }), /* @__PURE__ */ (0, L.jsx)("p", { children: "Your home, a little more playful." })] })]
 			}),
 			/* @__PURE__ */ (0, L.jsxs)("p", { children: [
-				/* @__PURE__ */ (0, L.jsx)("strong", { children: "Toggle lights." }),
-				" Aim at a connected light, then",
+				/* @__PURE__ */ (0, L.jsx)("strong", { children: "Toggle devices." }),
+				" Aim at a connected light, fan, AC, sprinkler, or TV, then",
 				" ",
 				e ? "tap the lightning button" : "left-click or press F",
 				" to turn it on or off."

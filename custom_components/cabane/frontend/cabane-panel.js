@@ -1,6 +1,6 @@
 import { r as e } from "./assets/rolldown-runtime-B0aSnxlc.js";
-import { A as t, B as n, Bn as r, Bt as i, Ct as a, Di as o, Ei as s, Et as c, F as l, Ft as u, Gn as d, Gt as f, Hn as p, I as m, Kn as h, L as g, Ln as _, M as v, Pn as y, R as b, St as x, Tt as S, Un as C, Wt as w, h as T, ir as E, j as D, k as O, mn as k, nr as A, qn as j, qt as M, rr as N, s as ee, tn as P, tr as te, v as ne, wi as F, wt as I, xi as re, xt as ie } from "./assets/LaserIcon-Xw9Esh2F.js";
-import { A as ae, B as L, C as R, D as oe, E as se, F as ce, I as le, L as z, N as ue, O as de, P as fe, R as pe, d as me, f as he, h as ge, j as _e, l as ve, m as ye, n as be, o as xe, p as Se, t as Ce, w as we, y as Te, z as Ee } from "./assets/ShortcutDeviceIcon-C1U3RoE2.js";
+import { A as t, B as n, Bn as r, Bt as i, Ct as a, Di as o, Ei as s, Et as c, F as l, Ft as u, Gn as d, Gt as f, Hn as p, I as m, Kn as h, L as g, Ln as _, M as v, Pn as y, R as b, St as x, Tt as S, Un as C, Wt as w, h as T, ir as E, j as D, k as O, mn as k, nr as A, qn as j, qt as M, rr as N, s as ee, tn as P, tr as te, v as ne, wi as F, wt as I, xi as re, xt as ie } from "./assets/LaserIcon-b38F24Sn.js";
+import { A as ae, B as L, C as R, D as oe, E as se, F as ce, I as le, L as z, N as ue, O as de, P as fe, R as pe, d as me, f as he, h as ge, j as _e, l as ve, m as ye, n as be, o as xe, p as Se, t as Ce, w as we, y as Te, z as Ee } from "./assets/ShortcutDeviceIcon-Cz6rMY-W.js";
 //#region node_modules/react-router/dist/development/chunk-BV7QT456.mjs
 var B = /* @__PURE__ */ e(o(), 1), De = (e) => {
 	throw TypeError(e);
@@ -5923,7 +5923,7 @@ function Vo({ record: e, lifecycle: t, origin: r, onChangeOrigin: i, onRecordCha
 }
 //#endregion
 //#region apps/web/src/RoutedHomeEditor.tsx
-var Ho = (0, B.lazy)(() => import("./assets/HomeEditor-r7hQ6Dce.js").then((e) => ({ default: e.HomeEditor })));
+var Ho = (0, B.lazy)(() => import("./assets/HomeEditor-DaF-vw9M.js").then((e) => ({ default: e.HomeEditor })));
 function Uo({ onClose: e, ...t }) {
 	let n = X(), r = Kr(), i = (0, B.useMemo)(() => ({
 		...n.state?.editorRequest,
