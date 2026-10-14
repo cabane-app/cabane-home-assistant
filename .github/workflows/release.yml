@@ -28,11 +28,19 @@ jobs:
     permissions:
       contents: write
     steps:
+      - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
           name: cabane-release
-      - name: Create draft for acceptance review
-        run: gh release create "$RELEASE_TAG" cabane.zip --repo "$GITHUB_REPOSITORY" --verify-tag --draft --generate-notes
+      - name: Publish a validated contract release or create a manual-release draft
+        shell: bash
+        run: |
+          notes="docs/releases/$RELEASE_TAG.md"
+          if [ -f "$notes" ]; then
+            gh release create "$RELEASE_TAG" cabane.zip --repo "$GITHUB_REPOSITORY" --verify-tag --notes-file "$notes" --latest
+          else
+            gh release create "$RELEASE_TAG" cabane.zip --repo "$GITHUB_REPOSITORY" --verify-tag --draft --generate-notes
+          fi
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           RELEASE_TAG: ${{ github.ref_name }}
