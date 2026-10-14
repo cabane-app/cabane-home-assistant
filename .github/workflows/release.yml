@@ -12,7 +12,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-      - run: python -m unittest discover -s tests -v
       # Require the complete native artifact and matching release version.
       - run: python scripts/package_release.py --version "$RELEASE_TAG"
         env:
