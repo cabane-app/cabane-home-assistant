@@ -1,6 +1,6 @@
 import { r as e } from "./assets/rolldown-runtime-B0aSnxlc.js";
-import { A as t, B as n, Bn as r, Bt as i, Ct as a, Di as o, Ei as s, Et as c, F as l, Ft as u, Gn as d, Gt as f, Hn as p, I as m, Kn as h, L as g, Ln as _, M as v, Pn as y, R as b, St as x, Tt as S, Un as C, Wt as w, h as T, ir as E, j as D, k as O, mn as k, nr as A, qn as j, qt as M, rr as N, s as ee, tn as P, tr as te, v as ne, wi as F, wt as I, xi as re, xt as ie } from "./assets/LaserIcon-C2Xjp7yr.js";
-import { A as ae, B as L, C as R, D as oe, E as se, F as ce, I as le, L as z, N as ue, O as de, P as fe, R as pe, d as me, f as he, h as ge, j as _e, l as ve, m as ye, n as be, o as xe, p as Se, t as Ce, w as we, y as Te, z as Ee } from "./assets/ShortcutDeviceIcon-D3eoe4Y9.js";
+import { A as t, B as n, Bn as r, Bt as i, Ct as a, Di as o, Ei as s, Et as c, F as l, Ft as u, Gn as d, Gt as f, Hn as p, I as m, Kn as h, L as g, Ln as _, M as v, Pn as y, R as b, St as x, Tt as S, Un as C, Wt as w, h as T, ir as E, j as D, k as O, mn as k, nr as A, qn as j, qt as M, rr as N, s as ee, tn as P, tr as te, v as ne, wi as F, wt as I, xi as re, xt as ie } from "./assets/LaserIcon-DzceArqg.js";
+import { A as ae, B as L, C as R, D as oe, E as se, F as ce, I as le, L as z, N as ue, O as de, P as fe, R as pe, d as me, f as he, h as ge, j as _e, l as ve, m as ye, n as be, o as xe, p as Se, t as Ce, w as we, y as Te, z as Ee } from "./assets/ShortcutDeviceIcon-Ctd2aIuh.js";
 //#region node_modules/react-router/dist/development/chunk-BV7QT456.mjs
 var B = /* @__PURE__ */ e(o(), 1), De = (e) => {
 	throw TypeError(e);
@@ -5065,8 +5065,35 @@ function ko(e) {
 	});
 }
 //#endregion
-//#region apps/web/src/workspaces/workspace-tool-state.ts
+//#region apps/web/src/workspaces/workspace-weather-source.ts
 function Ao(e, t, n) {
+	let r = i(t), a = e.bindings[r] ?? {
+		draft: w(e.homeId),
+		published: w(e.homeId),
+		manualRoomIds: [],
+		manualSlotIds: []
+	};
+	return {
+		...e,
+		bindings: {
+			...e.bindings,
+			[r]: {
+				...a,
+				draft: {
+					...a.draft,
+					weatherSource: n
+				},
+				published: {
+					...a.published,
+					weatherSource: n
+				}
+			}
+		}
+	};
+}
+//#endregion
+//#region apps/web/src/workspaces/workspace-tool-state.ts
+function jo(e, t, n) {
 	if (!/^[a-z0-9]+(?:[.-][a-z0-9]+)+$/.test(t)) throw Error("Tool storage requires a namespaced ID.");
 	let r = (e) => ({
 		...e,
@@ -5084,7 +5111,7 @@ function Ao(e, t, n) {
 }
 //#endregion
 //#region apps/web/src/workspaces/useWorkspaceToolStorage.ts
-function jo(e, t, n) {
+function Mo(e, t, n) {
 	let r = (0, B.useRef)(e), i = (0, B.useRef)({
 		onSaved: t,
 		onError: n
@@ -5105,7 +5132,7 @@ function jo(e, t, n) {
 				read: (e) => r.current.published.toolState?.[e],
 				write: (t, n) => {
 					let o = structuredClone(n), s = e.then(async () => {
-						let e = r.current, n = await a.replace(Ao(e, t, o), e.revision);
+						let e = r.current, n = await a.replace(jo(e, t, o), e.revision);
 						r.current = n, i.current.onSaved(n);
 					});
 					return e = s.catch((e) => {
@@ -5113,13 +5140,22 @@ function jo(e, t, n) {
 					}), s;
 				}
 			},
-			flush: () => e
+			flush: () => e,
+			saveWeatherSource: (t, n) => {
+				let o = r.current.homeId, s = e.then(async () => {
+					let e = r.current;
+					if (e.homeId !== o) throw Error("This home is no longer active.");
+					let s = await a.replace(Ao(e, t, n), e.revision);
+					r.current = s, i.current.onSaved(s);
+				});
+				return e = s.catch(() => void 0), s;
+			}
 		};
 	}, [a]);
 }
 //#endregion
 //#region apps/web/src/workspaces/WorkspaceDestinations.tsx
-function Mo({ id: e, origin: t, intent: n, ready: r, panelReady: i }) {
+function No({ id: e, origin: t, intent: n, ready: r, panelReady: i }) {
 	let a = b(), [o, s] = (0, B.useState)(n === "device" ? n : null), [c, l] = (0, B.useState)("");
 	(0, B.useEffect)(() => {
 		n === "device" && s(n);
@@ -5231,10 +5267,10 @@ function Mo({ id: e, origin: t, intent: n, ready: r, panelReady: i }) {
 }
 //#endregion
 //#region apps/web/src/workspaces/ha-integration-links.ts
-var No = "https://github.com/cabane-app/cabane-home-assistant", Po = `${No}#install`;
+var Po = "https://github.com/cabane-app/cabane-home-assistant", Fo = `${Po}#install`;
 //#endregion
 //#region apps/web/src/workspaces/WorkspaceHaInstall.tsx
-function Fo({ origin: e, checking: t, panelError: n, onCheck: r }) {
+function Io({ origin: e, checking: t, panelError: n, onCheck: r }) {
 	return /* @__PURE__ */ (0, Q.jsxs)("div", {
 		className: "ha-setup-surface",
 		children: [
@@ -5248,7 +5284,7 @@ function Fo({ origin: e, checking: t, panelError: n, onCheck: r }) {
 							"In HACS, add",
 							" ",
 							/* @__PURE__ */ (0, Q.jsx)("a", {
-								href: No,
+								href: Po,
 								target: "_blank",
 								rel: "noreferrer",
 								children: "cabane-app/cabane-home-assistant"
@@ -5297,7 +5333,7 @@ function Fo({ origin: e, checking: t, panelError: n, onCheck: r }) {
 					/* @__PURE__ */ (0, Q.jsx)("summary", { children: "Install manually or get help" }),
 					/* @__PURE__ */ (0, Q.jsx)("p", { children: "Use the full cabane.zip release, including its frontend. Restart Home Assistant, then add the Cabane integration." }),
 					/* @__PURE__ */ (0, Q.jsxs)("a", {
-						href: Po,
+						href: Fo,
 						target: "_blank",
 						rel: "noreferrer",
 						children: ["Setup guide", /* @__PURE__ */ (0, Q.jsx)(R, { name: "external" })]
@@ -5309,8 +5345,8 @@ function Fo({ origin: e, checking: t, panelError: n, onCheck: r }) {
 }
 //#endregion
 //#region apps/web/src/workspaces/WorkspaceHaStorage.tsx
-var Io = (0, B.createContext)(null);
-function Lo({ id: e, origin: t, repository: n, hidden: r = !1, children: i }) {
+var Lo = (0, B.createContext)(null);
+function Ro({ id: e, origin: t, repository: n, hidden: r = !1, children: i }) {
 	let { runtime: a, coordinator: o } = Xa(n, t), [s, c] = (0, B.useState)({ kind: "off" }), l = (0, B.useRef)(!1), u = (0, B.useRef)(0), d = (0, B.useCallback)(async () => {
 		if (r || !t || l.current) return;
 		let n = u.current;
@@ -5342,7 +5378,7 @@ function Lo({ id: e, origin: t, repository: n, hidden: r = !1, children: i }) {
 		return () => {
 			u.current += 1, window.clearInterval(e);
 		};
-	}, [d]), /* @__PURE__ */ (0, Q.jsx)(Io.Provider, {
+	}, [d]), /* @__PURE__ */ (0, Q.jsx)(Lo.Provider, {
 		value: r ? null : {
 			id: e,
 			origin: t,
@@ -5354,13 +5390,13 @@ function Lo({ id: e, origin: t, repository: n, hidden: r = !1, children: i }) {
 		children: i
 	});
 }
-var Ro = () => (0, B.useContext)(Io);
-function zo() {
-	let e = (0, B.useContext)(Io);
-	return e ? /* @__PURE__ */ (0, Q.jsx)(Bo, { ...e }) : null;
+var zo = () => (0, B.useContext)(Lo);
+function Bo() {
+	let e = (0, B.useContext)(Lo);
+	return e ? /* @__PURE__ */ (0, Q.jsx)(Vo, { ...e }) : null;
 }
-function Bo({ id: e, origin: t, repository: n }) {
-	let r = X(), i = b(), a = !!(i && i.origin === t), o = Xa(n, t), s = (0, B.useContext)(Io), c = s?.coordinator ?? o.coordinator, { runtime: l, client: u } = o, [d, f] = (0, B.useState)("checking"), p = (0, B.useRef)(0), [m, h] = (0, B.useState)(!1), [g, _] = (0, B.useState)(!1), [v, x] = (0, B.useState)(!1), [S, C] = (0, B.useState)(!1), [w, T] = (0, B.useState)(!1), [E, D] = (0, B.useState)({ kind: "off" }), [O, k] = (0, B.useState)(!1), [A, j] = (0, B.useState)(null), [M, N] = (0, B.useState)(null), ee = (0, B.useCallback)(async () => {
+function Vo({ id: e, origin: t, repository: n }) {
+	let r = X(), i = b(), a = !!(i && i.origin === t), o = Xa(n, t), s = (0, B.useContext)(Lo), c = s?.coordinator ?? o.coordinator, { runtime: l, client: u } = o, [d, f] = (0, B.useState)("checking"), p = (0, B.useRef)(0), [m, h] = (0, B.useState)(!1), [g, _] = (0, B.useState)(!1), [v, x] = (0, B.useState)(!1), [S, C] = (0, B.useState)(!1), [w, T] = (0, B.useState)(!1), [E, D] = (0, B.useState)({ kind: "off" }), [O, k] = (0, B.useState)(!1), [A, j] = (0, B.useState)(null), [M, N] = (0, B.useState)(null), ee = (0, B.useCallback)(async () => {
 		if (!t) return;
 		let n = await Ga(window.indexedDB, t, e);
 		T(n?.enabled ?? !1);
@@ -5481,7 +5517,7 @@ function Bo({ id: e, origin: t, repository: n }) {
 				role: "status",
 				children: "Checking the Cabane integration…"
 			}) : /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [
-				(d !== "ready" || !g) && /* @__PURE__ */ (0, Q.jsx)(Fo, {
+				(d !== "ready" || !g) && /* @__PURE__ */ (0, Q.jsx)(Io, {
 					origin: t,
 					checking: v,
 					panelError: d === "error" || !!A,
@@ -5533,7 +5569,7 @@ function Bo({ id: e, origin: t, repository: n }) {
 						role: "status",
 						children: "Sync paused. Your changes are saved in this browser."
 					}),
-					t && S && w && /* @__PURE__ */ (0, Q.jsx)(Mo, {
+					t && S && w && /* @__PURE__ */ (0, Q.jsx)(No, {
 						id: e,
 						origin: t,
 						intent: ae,
@@ -5605,8 +5641,8 @@ function Bo({ id: e, origin: t, repository: n }) {
 }
 //#endregion
 //#region apps/web/src/workspaces/HomeAssistantPage.tsx
-function Vo({ record: e, lifecycle: t, origin: r, onChangeOrigin: i, onRecordChange: a, isDemo: o, onCreatePersonal: s }) {
-	let c = X(), u = no(c.search) === "dashboard", d = b(), f = A("cabane-icon.png"), p = n(), m = Ro(), [h, g] = (0, B.useState)(r ?? ""), [_, v] = (0, B.useState)(!r), [x, S] = (0, B.useState)(!1), [C, w] = (0, B.useState)(null), [T, E] = (0, B.useState)(null), [D, O] = (0, B.useState)(null), k = [
+function Ho({ record: e, lifecycle: t, origin: r, onChangeOrigin: i, onRecordChange: a, isDemo: o, onCreatePersonal: s }) {
+	let c = X(), u = no(c.search) === "dashboard", d = b(), f = A("cabane-icon.png"), p = n(), m = zo(), [h, g] = (0, B.useState)(r ?? ""), [_, v] = (0, B.useState)(!r), [x, S] = (0, B.useState)(!1), [C, w] = (0, B.useState)(null), [T, E] = (0, B.useState)(null), [D, O] = (0, B.useState)(null), k = [
 		"authenticating",
 		"connecting",
 		"reconnecting"
@@ -5852,7 +5888,7 @@ function Vo({ record: e, lifecycle: t, origin: r, onChangeOrigin: i, onRecordCha
 							})
 						]
 					})]
-				}), /* @__PURE__ */ (0, Q.jsx)(zo, {})] }),
+				}), /* @__PURE__ */ (0, Q.jsx)(Bo, {})] }),
 				/* @__PURE__ */ (0, Q.jsxs)(P, {
 					className: u ? "ha-setup-disclosure" : void 0,
 					children: [u && /* @__PURE__ */ (0, Q.jsx)("summary", { children: "File backups" }), /* @__PURE__ */ (0, Q.jsxs)("section", {
@@ -5923,8 +5959,8 @@ function Vo({ record: e, lifecycle: t, origin: r, onChangeOrigin: i, onRecordCha
 }
 //#endregion
 //#region apps/web/src/RoutedHomeEditor.tsx
-var Ho = (0, B.lazy)(() => import("./assets/HomeEditor-FiaB7-n3.js").then((e) => ({ default: e.HomeEditor })));
-function Uo({ onClose: e, ...t }) {
+var Uo = (0, B.lazy)(() => import("./assets/HomeEditor-BN19xemz.js").then((e) => ({ default: e.HomeEditor })));
+function Wo({ onClose: e, ...t }) {
 	let n = X(), r = Kr(), i = (0, B.useMemo)(() => ({
 		...n.state?.editorRequest,
 		...so(n.pathname)
@@ -5939,7 +5975,7 @@ function Uo({ onClose: e, ...t }) {
 			className: "direction-project-loading",
 			children: "Opening the editor…"
 		}),
-		children: /* @__PURE__ */ (0, Q.jsx)(Ho, {
+		children: /* @__PURE__ */ (0, Q.jsx)(Uo, {
 			...t,
 			initialRequest: i,
 			onWorkspaces: () => void r("/workspaces"),
@@ -5960,32 +5996,32 @@ function Uo({ onClose: e, ...t }) {
 }
 //#endregion
 //#region apps/web/src/mobile-editor/MobileEditorPrompt.tsx
-var Wo = "cabane:mobile-editor-prompt-dismissed", Go = "https://cabane.my";
-function Ko() {
+var Go = "cabane:mobile-editor-prompt-dismissed", Ko = "https://cabane.my";
+function qo() {
 	return window.matchMedia("(max-width: 760px)").matches;
 }
-function qo() {
+function Jo() {
 	try {
-		return window.sessionStorage.getItem(Wo) === "true";
+		return window.sessionStorage.getItem(Go) === "true";
 	} catch {
 		return !1;
 	}
 }
-function Jo({ workspaceId: e, demoWorkspaceId: t }) {
+function Yo({ workspaceId: e, demoWorkspaceId: t }) {
 	let n = Kr(), [r] = Ca(), [i, a] = (0, B.useState)(""), o = r.get("mode") === "arrange" ? "furnish" : "construct", s = () => {
 		try {
-			window.sessionStorage.setItem(Wo, "true");
+			window.sessionStorage.setItem(Go, "true");
 		} catch {}
 		n(lo({ mode: o }, e), { replace: !0 });
 	}, c = async () => {
 		try {
 			navigator.share ? (await navigator.share({
 				title: "Cabane",
-				url: Go
-			}), a("Link shared.")) : navigator.clipboard?.writeText ? (await navigator.clipboard.writeText(Go), a("Link copied. Open it on your other device.")) : a(`Open ${Go} on your other device.`);
+				url: Ko
+			}), a("Link shared.")) : navigator.clipboard?.writeText ? (await navigator.clipboard.writeText(Ko), a("Link copied. Open it on your other device.")) : a(`Open ${Ko} on your other device.`);
 		} catch (e) {
 			if (e instanceof DOMException && e.name === "AbortError") return;
-			a(`Sharing was unavailable. Open ${Go} on your other device.`);
+			a(`Sharing was unavailable. Open ${Ko} on your other device.`);
 		}
 	};
 	return /* @__PURE__ */ (0, Q.jsx)("main", {
@@ -6098,11 +6134,11 @@ function Jo({ workspaceId: e, demoWorkspaceId: t }) {
 }
 //#endregion
 //#region apps/web/src/ConnectedProduct.tsx
-function Yo({ record: e, lifecycle: t, homeAssistantUrl: n, onHomeAssistantUrlChange: r, recoveryMessage: a, recoveryRaw: o, initialRequest: s, onboarding: c, demoWorkspaceId: l }) {
+function Xo({ record: e, lifecycle: t, homeAssistantUrl: n, onHomeAssistantUrlChange: r, recoveryMessage: a, recoveryRaw: o, initialRequest: s, onboarding: c, demoWorkspaceId: l }) {
 	let [u, d] = (0, B.useState)(e), f = (0, B.useMemo)(() => u.publishedAt === 0 ? null : oe(u.published), [u.published, u.publishedAt]), p = (0, B.useMemo)(() => k(u.published, _e).deviceModels, [u.published]), [m, h] = (0, B.useState)({
 		message: a,
 		raw: o
-	}), [g, _] = (0, B.useState)(null), v = jo(u, d, _), [y, x] = (0, B.useState)(!1), S = Kr(), C = X(), E = b(), [D] = (0, B.useState)(() => s ?? (E ? null : me(e.homeId))), O = (0, B.useEffectEvent)(() => {
+	}), [g, _] = (0, B.useState)(null), v = Mo(u, d, _), [y, x] = (0, B.useState)(!1), S = Kr(), C = X(), E = b(), [D] = (0, B.useState)(() => s ?? (E ? null : me(e.homeId))), O = (0, B.useEffectEvent)(() => {
 		if (D) {
 			let e = new URLSearchParams(C.search);
 			D.destination && e.set("action", D.destination), S(`${lo(D, u.homeId)}${e.size ? `?${e}` : ""}`, {
@@ -6116,14 +6152,19 @@ function Yo({ record: e, lifecycle: t, homeAssistantUrl: n, onHomeAssistantUrlCh
 	}, []);
 	let A = async (e) => {
 		await v.flush();
-		let t = (e.mode === "construct" || e.mode === "furnish") && !e.panel && Ko() && !qo() ? oo(u.homeId, e.mode) : lo(e, u.homeId);
+		let t = (e.mode === "construct" || e.mode === "furnish") && !e.panel && qo() && !Jo() ? oo(u.homeId, e.mode) : lo(e, u.homeId);
 		S(t, { state: { editorRequest: e } });
 	}, j = n ? i(n) : null, M = (0, B.useMemo)(() => ({
 		profile: (j ? u.bindings[j]?.published : void 0) ?? w(u.homeId),
+		saveWeatherSource: j ? (e) => v.saveWeatherSource(j, e) : void 0,
 		loaded: !0,
 		hasStoredProfile: !!(j && u.bindings[j]),
 		save: () => void 0
-	}), [j, u]), N = /* @__PURE__ */ (0, Q.jsx)(Uo, {
+	}), [
+		j,
+		u,
+		v
+	]), N = /* @__PURE__ */ (0, Q.jsx)(Wo, {
 		initialRecord: u,
 		lifecycle: t,
 		recoveryMessage: m.message,
@@ -6210,7 +6251,7 @@ function Yo({ record: e, lifecycle: t, homeAssistantUrl: n, onHomeAssistantUrlCh
 		}),
 		/* @__PURE__ */ (0, Q.jsx)(Ai, {
 			path: "/workspaces/:workspaceId/home-assistant",
-			element: /* @__PURE__ */ (0, Q.jsx)(Vo, {
+			element: /* @__PURE__ */ (0, Q.jsx)(Ho, {
 				record: u,
 				lifecycle: t,
 				origin: n,
@@ -6227,14 +6268,14 @@ function Yo({ record: e, lifecycle: t, homeAssistantUrl: n, onHomeAssistantUrlCh
 		}),
 		/* @__PURE__ */ (0, Q.jsx)(Ai, {
 			path: "/workspaces/:workspaceId/mobile-editor",
-			element: /* @__PURE__ */ (0, Q.jsx)(Jo, {
+			element: /* @__PURE__ */ (0, Q.jsx)(Yo, {
 				workspaceId: u.homeId,
 				demoWorkspaceId: l
 			})
 		}),
 		ao.map(({ path: e, handle: t }) => /* @__PURE__ */ (0, Q.jsx)(Ai, {
 			path: e,
-			element: (t.mode === "construct" || t.mode === "furnish") && !t.panel && Ko() && !qo() ? e === "/build" ? /* @__PURE__ */ (0, Q.jsx)(Jo, {
+			element: (t.mode === "construct" || t.mode === "furnish") && !t.panel && qo() && !Jo() ? e === "/build" ? /* @__PURE__ */ (0, Q.jsx)(Yo, {
 				workspaceId: u.homeId,
 				demoWorkspaceId: l
 			}) : /* @__PURE__ */ (0, Q.jsx)(ki, {
@@ -6253,7 +6294,7 @@ function Yo({ record: e, lifecycle: t, homeAssistantUrl: n, onHomeAssistantUrlCh
 }
 //#endregion
 //#region apps/web/src/workspaces/WorkspaceModelAssetNotice.tsx
-function Xo({ record: e, id: t }) {
+function Zo({ record: e, id: t }) {
 	let [n, r] = (0, B.useState)(!1);
 	return (0, B.useEffect)(() => {
 		let t = !0;
@@ -6289,7 +6330,7 @@ function Xo({ record: e, id: t }) {
 }
 //#endregion
 //#region apps/web/src/workspaces/WorkspaceHost.tsx
-function Zo({ id: e, repository: t, onboarding: n, demoWorkspaceId: r }) {
+function Qo({ id: e, repository: t, onboarding: n, demoWorkspaceId: r }) {
 	let i = X(), a = Kr(), o = (0, B.useCallback)((t) => yo(e, t), [e]), s = n.state?.demoWorkspaceId === e, [c] = (0, B.useState)(() => de(window.indexedDB, e)), [l, u] = (0, B.useState)(null), [d, f] = (0, B.useState)(null);
 	return (0, B.useEffect)(() => {
 		let n = !0;
@@ -6355,15 +6396,15 @@ function Zo({ id: e, repository: t, onboarding: n, demoWorkspaceId: r }) {
 		children: /* @__PURE__ */ (0, Q.jsx)(m, {
 			hostSession: s ? null : void 0,
 			homeAssistantUrl: s ? null : l.metadata.homeAssistantUrl,
-			children: /* @__PURE__ */ (0, Q.jsxs)(Lo, {
+			children: /* @__PURE__ */ (0, Q.jsxs)(Ro, {
 				id: e,
 				origin: l.metadata.homeAssistantUrl,
 				repository: t,
 				hidden: s,
-				children: [/* @__PURE__ */ (0, Q.jsx)(Xo, {
+				children: [/* @__PURE__ */ (0, Q.jsx)(Zo, {
 					record: l.record,
 					id: e
-				}), /* @__PURE__ */ (0, Q.jsx)(Yo, {
+				}), /* @__PURE__ */ (0, Q.jsx)(Xo, {
 					demoWorkspaceId: r,
 					onboarding: {
 						isDemo: s,
@@ -6401,7 +6442,7 @@ function Zo({ id: e, repository: t, onboarding: n, demoWorkspaceId: r }) {
 }
 //#endregion
 //#region apps/web/src/workspaces/BuildWorkspaceEntry.tsx
-function Qo({ onboarding: e }) {
+function $o({ onboarding: e }) {
 	let t = (0, B.useRef)(!1);
 	return (0, B.useEffect)(() => {
 		t.current || (t.current = !0, e.start("build"));
@@ -6424,31 +6465,31 @@ function Qo({ onboarding: e }) {
 }
 //#endregion
 //#region apps/web/src/workspaces/migrate-single-home-storage.ts
-var $o = "cabane:ha-url:v1", es = "cabane:ha-auth:v1";
-function ts(e) {
-	return S(e.getItem($o));
+var es = "cabane:ha-url:v1", ts = "cabane:ha-auth:v1";
+function ns(e) {
+	return S(e.getItem(es));
 }
-async function ns(e, t, n) {
+async function rs(e, t, n) {
 	if (await e.migrationDone()) return;
 	let r = await e.read(t);
 	if (r?.error) return;
-	let i = ts(n);
+	let i = ns(n);
 	r?.record && i && !r.metadata.homeAssistantUrl && (r = await e.setConnection(t, r.record.revision, i)), r?.record && i && await ae(r.record, i);
-	let a = n.getItem(es);
+	let a = n.getItem(ts);
 	if (a) {
 		let e = JSON.parse(a), t = S(e.hassUrl);
 		if (!t || !e.clientId) throw Error("The saved Home Assistant sign-in needs recovery.");
 		let r = x(t, e.clientId);
 		if (n.getItem(r) === null && n.setItem(r, a), !I(n, t, e.clientId)) throw Error("Could not preserve the saved Home Assistant sign-in.");
 	}
-	n.removeItem(es), n.removeItem($o), r?.record && i && (n.removeItem(M(i, t)), n.removeItem(f(i, t))), await e.finishMigration();
+	n.removeItem(ts), n.removeItem(es), r?.record && i && (n.removeItem(M(i, t)), n.removeItem(f(i, t))), await e.finishMigration();
 }
 //#endregion
 //#region apps/web/src/workspaces/initialize-workspaces.ts
-async function rs(e, t, { skipLegacyMigration: n = !1 } = {}) {
+async function is(e, t, { skipLegacyMigration: n = !1 } = {}) {
 	let r = ie(e, _e), i, a = null;
 	try {
-		!n && !await r.migrationDone() && (a = ts(t));
+		!n && !await r.migrationDone() && (a = ns(t));
 	} catch (e) {
 		i = e instanceof Error ? e.message : "Saved connection data needs recovery.";
 	}
@@ -6461,7 +6502,7 @@ async function rs(e, t, { skipLegacyMigration: n = !1 } = {}) {
 	};
 	await r.initialize(o, a);
 	try {
-		n || await ns(r, ue.home.id, t);
+		n || await rs(r, ue.home.id, t);
 	} catch (e) {
 		i = e instanceof Error ? e.message : "Saved connection data needs recovery.";
 	}
@@ -6472,7 +6513,7 @@ async function rs(e, t, { skipLegacyMigration: n = !1 } = {}) {
 }
 //#endregion
 //#region apps/web/src/workspaces/WorkspaceApplication.tsx
-function is() {
+function as() {
 	let e = X(), t = b(), n = Kr(), [r, i] = (0, B.useState)(null);
 	(0, B.useEffect)(() => {
 		e.pathname !== "/" && i(null);
@@ -6480,7 +6521,7 @@ function is() {
 	let [a, o] = (0, B.useState)(null), s = Co(a), [c, l] = (0, B.useState)(null), [u, d] = (0, B.useState)(null), [f, p] = (0, B.useState)(), [m] = (0, B.useState)(() => !!t), [h] = (0, B.useState)(() => t ? null : me());
 	(0, B.useEffect)(() => {
 		let e = !0;
-		return rs(window.indexedDB, window.localStorage, { skipLegacyMigration: m }).then(async (t) => {
+		return is(window.indexedDB, window.localStorage, { skipLegacyMigration: m }).then(async (t) => {
 			let n = await t.repository.list();
 			e && (o(t.repository), l(n), p(t.migrationError));
 		}).catch((t) => {
@@ -6585,7 +6626,7 @@ function is() {
 			children: "Workspaces"
 		})]
 	});
-	if (w && !s.state?.destinations.build) return /* @__PURE__ */ (0, Q.jsx)(Qo, { onboarding: s });
+	if (w && !s.state?.destinations.build) return /* @__PURE__ */ (0, Q.jsx)($o, { onboarding: s });
 	let T = C ? s.state?.demoWorkspaceId : w ? s.state?.destinations.build : co(e.pathname);
 	if (T) return /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [s.error && /* @__PURE__ */ (0, Q.jsxs)("div", {
 		className: "workspace-connection-error",
@@ -6606,7 +6647,7 @@ function is() {
 				children: "Dismiss"
 			})
 		]
-	}), s.loaded ? /* @__PURE__ */ (0, Q.jsx)(Zo, {
+	}), s.loaded ? /* @__PURE__ */ (0, Q.jsx)(Qo, {
 		id: T,
 		repository: a,
 		onboarding: s,
@@ -6685,10 +6726,10 @@ function is() {
 }
 //#endregion
 //#region apps/web/src/panel/panel-element.ts
-var as = /* @__PURE__ */ new WeakMap();
-function os(e, t) {
-	let n = as.get(e);
-	n || as.set(e, n = /* @__PURE__ */ new Map());
+var os = /* @__PURE__ */ new WeakMap();
+function ss(e, t) {
+	let n = os.get(e);
+	n || os.set(e, n = /* @__PURE__ */ new Map());
 	let r = n.get(t);
 	if (!r) {
 		let i = e.createElement("link");
@@ -6701,7 +6742,7 @@ function os(e, t) {
 		--r.count === 0 && (r.link.remove(), n.delete(t));
 	};
 }
-function ss(e) {
+function cs(e) {
 	return class extends HTMLElement {
 		#e = null;
 		#t = null;
@@ -6741,7 +6782,7 @@ function ss(e) {
 		set route(e) {}
 		set panel(e) {}
 		connectedCallback() {
-			this.ownerDocument.defaultView?.addEventListener("resize", this.#c), this.#r ??= os(this.ownerDocument, new URL("cabane-fonts.css", e.assetBaseUrl).href), typeof ResizeObserver < "u" && (this.#n = new ResizeObserver(() => this.#l()), this.#n.observe(this.#i)), this.#l(), this.#u();
+			this.ownerDocument.defaultView?.addEventListener("resize", this.#c), this.#r ??= ss(this.ownerDocument, new URL("cabane-fonts.css", e.assetBaseUrl).href), typeof ResizeObserver < "u" && (this.#n = new ResizeObserver(() => this.#l()), this.#n.observe(this.#i)), this.#l(), this.#u();
 		}
 		disconnectedCallback() {
 			this.ownerDocument.defaultView?.removeEventListener("resize", this.#c), this.#t?.dispose(), this.#t = null, this.#n?.disconnect(), this.#n = null, this.#r?.(), this.#r = null, this.#o.replaceChildren();
@@ -6770,24 +6811,24 @@ function ss(e) {
 }
 //#endregion
 //#region apps/web/src/panel/main.tsx
-var cs = new URL(
+var ls = new URL(
 	/* @vite-ignore */
 	"./",
 	import.meta.url
 ).href;
-customElements.get("cabane-panel") || customElements.define("cabane-panel", ss({
-	assetBaseUrl: cs,
+customElements.get("cabane-panel") || customElements.define("cabane-panel", cs({
+	assetBaseUrl: ls,
 	mount({ container: e, portalContainer: t, root: n, session: r }) {
 		let i = (0, Ma.createRoot)(e), a = Ci([{
 			path: "*",
 			errorElement: /* @__PURE__ */ (0, Q.jsx)(Aa, {}),
-			element: /* @__PURE__ */ (0, Q.jsx)(is, {})
+			element: /* @__PURE__ */ (0, Q.jsx)(as, {})
 		}], { initialEntries: ["/"] }), o = {
 			root: n,
 			container: e,
 			portalContainer: t,
 			eventTarget: n,
-			assetBaseUrl: cs
+			assetBaseUrl: ls
 		}, s = (e) => i.render(/* @__PURE__ */ (0, Q.jsx)(B.StrictMode, { children: /* @__PURE__ */ (0, Q.jsx)(ja, { children: /* @__PURE__ */ (0, Q.jsx)(te, {
 			environment: o,
 			children: /* @__PURE__ */ (0, Q.jsx)(g, {
