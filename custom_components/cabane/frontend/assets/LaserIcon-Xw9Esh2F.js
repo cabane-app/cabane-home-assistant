@@ -27599,7 +27599,7 @@ var z_ = [
 	{
 		id: "travertine",
 		label: "Travertine",
-		representativeColor: "#d9c7aa",
+		representativeColor: "#e0d2b9",
 		repeatMeters: 1.2
 	},
 	{
@@ -27724,56 +27724,26 @@ var z_ = [
 		r === "horizontal" ? (e.fillRect(0, o * a, i, a), H_(e, n, 1, 0, o * a, i, o * a), H_(e, n, 1, s, o * a, s, (o + 1) * a)) : (e.fillRect(o * a, 0, a, i), H_(e, n, 1, o * a, 0, o * a, i), H_(e, n, 1, o * a, s, (o + 1) * a, s));
 	}
 }, W_ = (e, t) => {
-	let n = e.canvas.width;
-	e.fillStyle = t ? "#ded3c0" : "#dcc9ac", e.fillRect(0, 0, n, n);
-	let r = 72341, i = () => (r = r * 48271 % 2147483647, r / 2147483647);
-	for (let t = 0; t < 85; t += 1) {
-		let r = i() * n, a = i() * n, o = n * (.004 + i() * .012);
-		e.fillStyle = t % 3 == 0 ? "rgba(245, 231, 208, 0.22)" : "rgba(156, 128, 94, 0.12)", e.beginPath(), e.ellipse(r, a, o * 1.8, o * .5, 0, 0, Math.PI * 2), e.fill();
+	let n = e.canvas.width, r = (e, t, n) => {
+		let r = Math.sin(e % n * 127.1 + t % n * 311.7 + 72.3) * 43758.5453;
+		return r - Math.floor(r);
+	}, i = (e, t, i) => {
+		let a = e / n * i, o = t / n * i, s = Math.floor(a), c = Math.floor(o), l = a - s, u = o - c, d = l * l * (3 - 2 * l), f = u * u * (3 - 2 * u), p = r(s, c, i) * (1 - d) + r(s + 1, c, i) * d, m = r(s, c + 1, i) * (1 - d) + r(s + 1, c + 1, i) * d;
+		return p * (1 - f) + m * f;
+	}, a = 72341, o = () => (a = a * 48271 % 2147483647, a / 2147483647);
+	for (let r = 0; r < n; r += 1) for (let a = 0; a < n; a += 1) {
+		let s = (i(a, r, 5) - .5) * 26 + (i(a, r, 13) - .5) * 14 + (i(a, r, 31) - .5) * 8, c = o(), l = c < .035 ? -12 : c > .82 ? 9 : (c - .5) * 4, u = [
+			0,
+			-4,
+			3,
+			-1
+		][Math.floor(a / (n / 2)) + Math.floor(r / (n / 2)) * 2], d = (s + l + u) * (t ? .55 : 1);
+		e.fillStyle = `rgb(${Math.round(224 + d)}, ${Math.round(210 + d)}, ${Math.round(185 + d)})`, e.fillRect(a, r, 1, 1);
 	}
-	e.fillStyle = t ? "rgba(171, 151, 124, 0.2)" : "rgba(156, 128, 94, 0.24)";
-	for (let [r, i, a] of [
-		[
-			.12,
-			.38,
-			.08
-		],
-		[
-			.37,
-			.12,
-			.05
-		],
-		[
-			.57,
-			.43,
-			.1
-		],
-		[
-			.76,
-			.27,
-			.06
-		],
-		[
-			.2,
-			.74,
-			.1
-		],
-		[
-			.62,
-			.92,
-			.07
-		],
-		[
-			.86,
-			.58,
-			.05
-		]
-	]) e.fillRect(r * n, i * n, a * n, t ? 1 : 2);
-	let a = t ? "rgba(143, 128, 108, 0.15)" : "rgba(132, 112, 86, 0.18)";
-	H_(e, a, 1, 0, n / 3, n, n / 3), H_(e, a, 1, 0, n * 2 / 3, n, n * 2 / 3);
-	for (let t = 0; t < 3; t += 1) {
-		let r = t % 2 == 0 ? n / 2 : n / 4;
-		H_(e, a, 1, r, t * n / 3, r, (t + 1) * n / 3);
+	let s = n * .006;
+	for (let t = 0; t <= 2; t += 1) {
+		let r = t * n / 2;
+		H_(e, "rgba(247, 241, 222, 0.55)", s * 2.2, r, 0, r, n), H_(e, "rgba(247, 241, 222, 0.55)", s * 2.2, 0, r, n, r), H_(e, "#f1ead8", s, r, 0, r, n), H_(e, "#f1ead8", s, 0, r, n, r);
 	}
 }, G_ = (e, t, n, r, i, a) => {
 	let o = e.canvas.width;
@@ -78661,14 +78631,14 @@ var b2 = {
 	carbon_dioxide: ["620", "ppm"],
 	pressure: ["1013", "hPa"]
 };
-function x2(e, t, n) {
-	let r = n.compatibleDeviceClasses?.[0], i = {
+function x2(e, t, n, r = !1) {
+	let i = n.compatibleDeviceClasses?.[0], a = {
 		friendly_name: n.presentation.label,
-		...r ? { device_class: r } : {}
-	}, a = "off";
+		...i ? { device_class: i } : {}
+	}, o = "off";
 	switch (t) {
 		case "light":
-			Object.assign(i, {
+			o = r ? "on" : "off", Object.assign(a, {
 				supported_color_modes: ["rgb"],
 				color_mode: "rgb",
 				brightness: 180,
@@ -78680,13 +78650,13 @@ function x2(e, t, n) {
 			});
 			break;
 		case "cover":
-			a = "open", Object.assign(i, {
+			o = "open", Object.assign(a, {
 				current_position: 65,
 				supported_features: 7
 			});
 			break;
 		case "climate":
-			a = "heat", Object.assign(i, {
+			o = "heat", Object.assign(a, {
 				temperature: 21,
 				current_temperature: 20.5,
 				temperature_unit: "°C",
@@ -78703,27 +78673,27 @@ function x2(e, t, n) {
 			});
 			break;
 		case "sensor": {
-			let e = r ? b2[r] : void 0;
-			a = e?.[0] ?? (r ? "unknown" : "idle"), e && (i.unit_of_measurement = e[1]);
+			let e = i ? b2[i] : void 0;
+			o = e?.[0] ?? (i ? "unknown" : "idle"), e && (a.unit_of_measurement = e[1]);
 			break;
 		}
 		case "binary_sensor":
-			a = [
+			o = [
 				"occupancy",
 				"presence",
 				"connectivity"
-			].includes(r ?? "") ? "on" : "off";
+			].includes(i ?? "") ? "on" : "off";
 			break;
 		case "lock":
-			a = "locked";
+			o = "locked";
 			break;
 		case "alarm_control_panel":
-			a = "disarmed", Object.assign(i, {
+			o = "disarmed", Object.assign(a, {
 				supported_features: 3,
 				code_arm_required: !1
 			});
 			break;
-		case "media_player": a = "playing", Object.assign(i, {
+		case "media_player": o = "playing", Object.assign(a, {
 			supported_features: 16389,
 			volume_level: .45,
 			media_title: "Demo playlist"
@@ -78731,9 +78701,9 @@ function x2(e, t, n) {
 	}
 	return {
 		entityId: e,
-		state: a,
-		attributes: i,
-		available: a !== "unknown",
+		state: o,
+		attributes: a,
+		available: o !== "unknown",
 		stale: !1
 	};
 }
@@ -78825,18 +78795,18 @@ function T2(e, t) {
 //#endregion
 //#region packages/engine/src/onboarding/demo/demo-session-definition.ts
 var E2 = (e) => Array.from(e, (e) => e.codePointAt(0).toString(16)).join("_");
-function D2(e) {
-	let t = e.floors.flatMap((e) => e.rooms), n = new Set(e.floors.flatMap((e) => e.openings.filter((e) => e.kind === "door").map((e) => e.id))), r = rk(e).flatMap((e) => {
-		if ((e.kind === "opening-contact" || e.kind === "opening-cover") && e.openingId && n.has(e.openingId)) return [];
-		let r = y2(e.spec), i = t.find((t) => t.id === e.roomIds[0]);
-		return r ? [{
+function D2(e, t = !1) {
+	let n = e.floors.flatMap((e) => e.rooms), r = new Set(e.floors.flatMap((e) => e.openings.filter((e) => e.kind === "door").map((e) => e.id))), i = rk(e).flatMap((e) => {
+		if ((e.kind === "opening-contact" || e.kind === "opening-cover") && e.openingId && r.has(e.openingId)) return [];
+		let t = y2(e.spec), i = n.find((t) => t.id === e.roomIds[0]);
+		return t ? [{
 			descriptor: e,
-			domain: r,
+			domain: t,
 			room: i,
-			entityId: `${r}.cabane_demo_${E2(e.slotId)}`,
+			entityId: `${t}.cabane_demo_${E2(e.slotId)}`,
 			areaId: i ? `cabane_demo_${E2(i.id)}` : null
 		}] : [];
-	}), i = r.find((e) => e.domain === "light") ?? r.find((e) => e.domain === "switch"), a = new Map(r.flatMap((e) => e.room && e.areaId ? [[e.room.id, {
+	}), a = i.find((e) => e.domain === "light") ?? i.find((e) => e.domain === "switch"), o = new Map(i.flatMap((e) => e.room && e.areaId ? [[e.room.id, {
 		room: e.room,
 		areaId: e.areaId
 	}]] : []));
@@ -78844,19 +78814,19 @@ function D2(e) {
 		runtime: {
 			status: "connected",
 			configured: !1,
-			canMutate: r.some((e) => !["sensor", "binary_sensor"].includes(e.domain)),
+			canMutate: i.some((e) => !["sensor", "binary_sensor"].includes(e.domain)),
 			origin: null,
 			error: null,
-			areas: [...a.values()].map(({ room: e, areaId: t }) => ({
+			areas: [...o.values()].map(({ room: e, areaId: t }) => ({
 				area_id: t,
 				name: e.name,
 				icon: "mdi:home-outline",
 				picture: null,
-				temperature_entity_id: r.find((t) => t.room?.id === e.id && t.domain === "sensor" && t.descriptor.spec.compatibleDeviceClasses?.[0] === "temperature")?.entityId ?? null,
-				humidity_entity_id: r.find((t) => t.room?.id === e.id && t.domain === "sensor" && t.descriptor.spec.compatibleDeviceClasses?.[0] === "humidity")?.entityId ?? null
+				temperature_entity_id: i.find((t) => t.room?.id === e.id && t.domain === "sensor" && t.descriptor.spec.compatibleDeviceClasses?.[0] === "temperature")?.entityId ?? null,
+				humidity_entity_id: i.find((t) => t.room?.id === e.id && t.domain === "sensor" && t.descriptor.spec.compatibleDeviceClasses?.[0] === "humidity")?.entityId ?? null
 			})),
 			devices: [],
-			entityRegistry: r.map(({ entityId: e, areaId: t, descriptor: n }) => ({
+			entityRegistry: i.map(({ entityId: e, areaId: t, descriptor: n }) => ({
 				entity_id: e,
 				area_id: t,
 				device_id: null,
@@ -78866,79 +78836,79 @@ function D2(e) {
 				name: n.spec.presentation.label,
 				original_name: n.spec.presentation.label
 			})),
-			entityStates: Object.fromEntries(r.map(({ entityId: e, domain: t, descriptor: n }) => [e, x2(e, t, n.spec)]))
+			entityStates: Object.fromEntries(i.map(({ entityId: e, domain: n, descriptor: r }) => [e, x2(e, n, r.spec, t)]))
 		},
 		profile: {
 			schemaVersion: 1,
 			homeId: e.home.id,
-			roomAreaIds: Object.fromEntries([...a.values()].map(({ room: e, areaId: t }) => [e.id, t])),
-			entityIdsBySlotId: Object.fromEntries(r.map(({ descriptor: e, entityId: t }) => [e.slotId, t]))
+			roomAreaIds: Object.fromEntries([...o.values()].map(({ room: e, areaId: t }) => [e.id, t])),
+			entityIdsBySlotId: Object.fromEntries(i.map(({ descriptor: e, entityId: t }) => [e.slotId, t]))
 		},
-		sampleEntityId: i?.entityId ?? null,
-		sampleRoomId: i?.room?.id ?? null,
-		sampleSlotId: i?.descriptor.slotId ?? null,
-		sampleLabel: i?.descriptor.spec.presentation.label ?? null
+		sampleEntityId: a?.entityId ?? null,
+		sampleRoomId: a?.room?.id ?? null,
+		sampleSlotId: a?.descriptor.slotId ?? null,
+		sampleLabel: a?.descriptor.spec.presentation.label ?? null
 	};
 }
 //#endregion
 //#region packages/engine/src/onboarding/demo/DemoHomeAssistantSession.tsx
-function O2({ manifest: e, children: t, onInteraction: n }) {
-	let r = (0, p.useMemo)(() => D2(e), [e]), [i, a] = (0, p.useState)(() => ({
-		definition: r,
-		profile: r.profile,
-		entityStates: r.runtime.entityStates
-	})), o = (0, p.useRef)(i);
-	i.definition !== r && (o.current = {
-		definition: r,
-		profile: r.profile,
-		entityStates: r.runtime.entityStates
-	}, a(o.current));
-	let s = (0, p.useRef)(!0);
-	(0, p.useEffect)(() => (s.current = !0, () => {
-		s.current = !1;
+function O2({ manifest: e, night: t, children: n, onInteraction: r }) {
+	let i = (0, p.useMemo)(() => D2(e, t), [e, t]), [a, o] = (0, p.useState)(() => ({
+		definition: i,
+		profile: i.profile,
+		entityStates: i.runtime.entityStates
+	})), s = (0, p.useRef)(a);
+	a.definition !== i && (s.current = {
+		definition: i,
+		profile: i.profile,
+		entityStates: i.runtime.entityStates
+	}, o(s.current));
+	let c = (0, p.useRef)(!0);
+	(0, p.useEffect)(() => (c.current = !0, () => {
+		c.current = !1;
 	}), []);
-	let c = (0, p.useCallback)(async (e) => {
-		if (!s.current || o.current.definition !== r) throw Error("This demo session is no longer active.");
-		let t = T2(o.current.entityStates, e);
-		o.current = {
-			...o.current,
+	let l = (0, p.useCallback)(async (e) => {
+		if (!c.current || s.current.definition !== i) throw Error("This demo session is no longer active.");
+		let t = T2(s.current.entityStates, e);
+		s.current = {
+			...s.current,
 			entityStates: t
-		}, a(o.current), n?.();
-	}, [r, n]), l = (0, p.useMemo)(() => ({
-		...r.runtime,
-		entityStates: i.entityStates,
+		}, o(s.current), r?.();
+	}, [i, r]), u = (0, p.useMemo)(() => ({
+		...i.runtime,
+		entityStates: a.entityStates,
 		connect: () => void 0,
 		disconnect: async () => void 0,
 		retry: () => void 0,
 		refreshing: !1,
 		refreshError: null,
 		refresh: async () => void 0,
-		callService: c,
+		callService: l,
 		cameraClient: null,
 		sendStorageMessage: async () => {
 			throw Error("The demo cannot access Home Assistant storage.");
 		}
 	}), [
-		c,
-		r,
-		i
-	]), u = (0, p.useMemo)(() => ({
-		profile: i.profile,
+		l,
+		i,
+		a
+	]), d = (0, p.useMemo)(() => ({
+		profile: a.profile,
 		loaded: !0,
 		hasStoredProfile: !1,
 		save: (e) => {
-			!s.current || o.current.definition !== r || (o.current = {
-				...o.current,
+			!c.current || s.current.definition !== i || (s.current = {
+				...s.current,
 				profile: e
-			}, a(o.current));
+			}, o(s.current));
 		}
-	}), [r, i]);
+	}), [i, a]);
 	return /* @__PURE__ */ (0, m.jsx)(GF, {
-		value: l,
-		children: t({
-			manager: u,
-			sampleAvailable: r.sampleEntityId !== null,
-			sampleLabel: r.sampleLabel
+		value: u,
+		children: n({
+			manager: d,
+			sampleAvailable: i.sampleEntityId !== null,
+			sampleLabel: i.sampleLabel
 		})
 	});
 }
@@ -79197,11 +79167,11 @@ function I2(e, t, n, r, i) {
 //#endregion
 //#region packages/engine/src/onboarding/OnboardingExperience.tsx
 function L2({ manifest: e, architectureModels: t, deviceModels: n, homeAssistantUrl: r, onHomeAssistantUrlChange: i, renderActionBarDeviceIcon: a, walkTools: o, onEditHome: s, onCustomizeActionBar: c, onHomeAssistantSettings: l, onWorkspaces: u, onImportBrowserData: d, onExportBrowserData: f = () => void 0, bindingManager: h, onOpenConnect: g, constructionApplied: _ = !1, onboarding: v }) {
-	let y = WF(), b = (0, p.useRef)(null), x = XP(e, y, h), { setupState: S, updateSetupRecord: C } = j2(e.home.id, _), w = S.record.launch ?? uI(), T = v?.isDemo ?? !1, E = (0, p.useMemo)(() => T ? k2(e) : e, [T, e]), [D, O] = (0, p.useState)(() => v?.welcome ? "intro" : null), [k, A] = (0, p.useState)(!1), [j, M] = (0, p.useState)(!1), [N, P] = (0, p.useState)(!1);
+	let y = WF(), b = (0, p.useRef)(null), x = XP(e, y, h), { setupState: S, updateSetupRecord: C } = j2(e.home.id, _), w = S.record.launch ?? uI(), T = v?.isDemo ?? !1, [E] = (0, p.useState)(() => mT(Y0(), void 0, /* @__PURE__ */ new Date())), D = (0, p.useMemo)(() => T ? k2(e) : e, [T, e]), [O, k] = (0, p.useState)(() => v?.welcome ? "intro" : null), [A, j] = (0, p.useState)(!1), [M, N] = (0, p.useState)(!1), [P, F] = (0, p.useState)(!1);
 	(0, p.useEffect)(() => {
-		T && O(v?.welcome ? "intro" : null);
+		T && k(v?.welcome ? "intro" : null);
 	}, [T, v?.welcome]);
-	let F = (0, p.useCallback)(() => {
+	let I = (0, p.useCallback)(() => {
 		C((e) => ({
 			...e,
 			activated: !0,
@@ -79209,17 +79179,17 @@ function L2({ manifest: e, architectureModels: t, deviceModels: n, homeAssistant
 				...e.launch ?? uI(),
 				firstControlConfirmed: !0
 			}
-		})), M(!0);
-	}, [C]), I = e.floors.flatMap((e) => e.rooms.flatMap((e) => e.devices.flatMap((t) => t.entitySlots.filter((e) => e.compatibleDomains.includes("light") && x.profile.entityIdsBySlotId[e.id]).map((n) => ({
+		})), N(!0);
+	}, [C]), L = e.floors.flatMap((e) => e.rooms.flatMap((e) => e.devices.flatMap((t) => t.entitySlots.filter((e) => e.compatibleDomains.includes("light") && x.profile.entityIdsBySlotId[e.id]).map((n) => ({
 		roomId: e.id,
 		deviceId: t.id,
 		slotId: n.id
-	}))))), L = I.find((e) => e.slotId === w.target?.slotId) ?? I[0] ?? w.target, R = L ? x.profile.entityIdsBySlotId[L.slotId] : void 0, ee = !T && (w.entry === "connect" || w.entry === "build"), z = I2(y, ee && !S.record.activated && !w.firstControlConfirmed, F, e.home.id, R), te = () => {
-		g ? g("devices", L?.roomId) : O("connection");
-	}, B = () => {
-		O(null), v?.dismiss("welcome"), requestAnimationFrame(() => b.current?.querySelector("summary[aria-label=\"Open scene menu\"]")?.focus());
-	}, V = (e) => /* @__PURE__ */ (0, m.jsx)(g2, {
-		manifest: E,
+	}))))), R = L.find((e) => e.slotId === w.target?.slotId) ?? L[0] ?? w.target, ee = R ? x.profile.entityIdsBySlotId[R.slotId] : void 0, z = !T && (w.entry === "connect" || w.entry === "build"), te = I2(y, z && !S.record.activated && !w.firstControlConfirmed, I, e.home.id, ee), B = () => {
+		g ? g("devices", R?.roomId) : k("connection");
+	}, V = () => {
+		k(null), v?.dismiss("welcome"), requestAnimationFrame(() => b.current?.querySelector("summary[aria-label=\"Open scene menu\"]")?.focus());
+	}, ne = (e) => /* @__PURE__ */ (0, m.jsx)(g2, {
+		manifest: D,
 		architectureModels: t,
 		deviceModels: n,
 		bindingManager: e,
@@ -79235,25 +79205,25 @@ function L2({ manifest: e, architectureModels: t, deviceModels: n, homeAssistant
 			label: "Getting started",
 			detail: "Explore the demo or build your home",
 			attention: !1,
-			onOpen: () => v?.openWelcome ? v.openWelcome() : O("intro")
-		} : ee && !S.record.activated ? {
+			onOpen: () => v?.openWelcome ? v.openWelcome() : k("intro")
+		} : z && !S.record.activated ? {
 			label: "Continue setup",
 			detail: "Connect a device in this home",
 			attention: !1,
-			onOpen: te
+			onOpen: B
 		} : void 0,
-		setupOpen: D !== null,
+		setupOpen: O !== null,
 		onWorkspaces: u,
 		onHomeAssistantSettings: l,
-		focusRoomId: ee && R && !S.record.activated ? L?.roomId : void 0,
+		focusRoomId: z && ee && !S.record.activated ? R?.roomId : void 0,
 		onEditHome: s,
 		onCustomizeActionBar: c,
 		onOpenConnect: g,
 		onExportBrowserData: f
-	}), ne = T && k && !v?.nudgeDismissed, re = R ? y.entityStates[R] : void 0, ie = ee && y.status === "connected" && !!(re?.available && !re.stale) && !S.record.activated && !N;
+	}), re = T && A && !v?.nudgeDismissed, ie = ee ? y.entityStates[ee] : void 0, ae = z && y.status === "connected" && !!(ie?.available && !ie.stale) && !S.record.activated && !P;
 	return /* @__PURE__ */ (0, m.jsxs)("div", {
 		ref: b,
-		className: `cabane-app setup-shell ${D ? "setup-shell--open onboarding-shell--open" : "setup-shell--closed"}`,
+		className: `cabane-app setup-shell ${O ? "setup-shell--open onboarding-shell--open" : "setup-shell--closed"}`,
 		style: {
 			"--home-accent": e.home.palette.accent,
 			"--home-secondary": e.home.palette.secondary
@@ -79263,30 +79233,31 @@ function L2({ manifest: e, architectureModels: t, deviceModels: n, homeAssistant
 				className: "setup-shell__scene",
 				children: T ? /* @__PURE__ */ (0, m.jsx)(O2, {
 					manifest: e,
-					onInteraction: () => A(!0),
-					children: ({ manager: e }) => V(e)
+					night: E,
+					onInteraction: () => j(!0),
+					children: ({ manager: e }) => ne(e)
 				}) : /* @__PURE__ */ (0, m.jsx)(GF, {
-					value: z,
-					children: V(x)
+					value: te,
+					children: ne(x)
 				})
 			}),
-			D === "intro" && /* @__PURE__ */ (0, m.jsx)(N2, {
+			O === "intro" && /* @__PURE__ */ (0, m.jsx)(N2, {
 				links: v?.links,
 				busy: v?.busy ?? !1,
 				error: S.warning,
-				onExplore: B,
+				onExplore: V,
 				onBuild: () => void v?.start("build"),
-				onDismiss: B
+				onDismiss: V
 			}),
-			D === "connection" && /* @__PURE__ */ (0, m.jsx)(oI, {
+			O === "connection" && /* @__PURE__ */ (0, m.jsx)(oI, {
 				homeAssistantUrl: r,
 				runtime: y,
 				onHomeAssistantUrlChange: i,
 				onImportBrowserData: d,
-				onClose: () => O(null),
-				onDefer: () => O(null)
+				onClose: () => k(null),
+				onDefer: () => k(null)
 			}),
-			!D && (ne || j || ie) && /* @__PURE__ */ (0, m.jsxs)("aside", {
+			!O && (re || M || ae) && /* @__PURE__ */ (0, m.jsxs)("aside", {
 				className: "onboarding-nudge",
 				"aria-live": "polite",
 				children: [
@@ -79295,22 +79266,22 @@ function L2({ manifest: e, architectureModels: t, deviceModels: n, homeAssistant
 						className: "onboarding-nudge__dismiss",
 						"aria-label": "Dismiss suggestion",
 						onClick: () => {
-							v?.dismiss("nudge"), M(!1), P(!0);
+							v?.dismiss("nudge"), N(!1), F(!0);
 						},
 						children: "×"
 					}),
-					/* @__PURE__ */ (0, m.jsx)("strong", { children: j ? "Your home is connected." : ie ? "Try your light." : "Ready to build your home?" }),
-					/* @__PURE__ */ (0, m.jsx)("p", { children: j ? "Keep connecting devices or make this home yours." : ie ? "Use its control in this room to see your real home respond." : "Start with an empty home, then connect your own devices." }),
-					!ie && /* @__PURE__ */ (0, m.jsxs)("div", { children: [j && /* @__PURE__ */ (0, m.jsx)("button", {
+					/* @__PURE__ */ (0, m.jsx)("strong", { children: M ? "Your home is connected." : ae ? "Try your light." : "Ready to build your home?" }),
+					/* @__PURE__ */ (0, m.jsx)("p", { children: M ? "Keep connecting devices or make this home yours." : ae ? "Use its control in this room to see your real home respond." : "Start with an empty home, then connect your own devices." }),
+					!ae && /* @__PURE__ */ (0, m.jsxs)("div", { children: [M && /* @__PURE__ */ (0, m.jsx)("button", {
 						type: "button",
 						disabled: v?.busy,
-						onClick: te,
+						onClick: B,
 						children: "Connect another device"
 					}), /* @__PURE__ */ (0, m.jsx)("button", {
 						type: "button",
 						disabled: v?.busy,
-						onClick: () => j ? s?.("furnish") : void v?.start("build"),
-						children: j ? "Make this home yours" : "Build my home"
+						onClick: () => M ? s?.("furnish") : void v?.start("build"),
+						children: M ? "Make this home yours" : "Build my home"
 					})] })
 				]
 			})
