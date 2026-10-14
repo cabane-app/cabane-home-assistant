@@ -139,6 +139,13 @@ try {
       `${slice} retains platform polygons, finishes, edge IDs and overrides`,
     );
   }
+  for (const slice of ["draft", "published"]) {
+    assert.deepEqual(
+      record[slice].floors[0].walls.map((wall) => wall.edgeColor),
+      fixture.record[slice].floors[0].walls.map((wall) => wall.edgeColor),
+      `${slice} retains wall edge colors`,
+    );
+  }
   assert.equal(
     await page.evaluate(() =>
       window.__hostFixture.stats.requests.some(
@@ -149,7 +156,7 @@ try {
     "loading must not rewrite the saved document",
   );
   console.log(
-    "Bundled panel HA import passed: outdoor platforms survive in draft and published records.",
+    "Bundled panel HA import passed: outdoor platforms and wall edge colors survive in draft and published records.",
   );
 } catch (error) {
   console.error(

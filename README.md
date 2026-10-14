@@ -136,7 +136,7 @@ not a backup.
 | Standalone sign-in fails | Use HTTPS for both Cabane and Home Assistant, and allow the sign-in popup. |
 | Load is disabled | Save once, or import a saved workspace from the Workspaces screen. |
 | Changes are missing on another device | Open the same workspace and enable auto-sync, or choose Load. |
-| Loading reports that `outdoorPlatforms` is not part of the HomeProject schema | The receiving frontend is older than the saved home. Update the integration to 0.3.0 or newer, restart HA and reload the panel. On cabane.my, reload the website in the receiving browser. Keep the saved copy; no manual JSON edits are needed. |
+| Loading reports that `outdoorPlatforms` or `edgeColor` is not part of the HomeProject schema | The receiving frontend is older than the saved home. Update the integration to 0.3.4 or newer, restart HA and reload the panel. On cabane.my, reload the website in the receiving browser. Keep the saved copy; no manual JSON edits are needed. |
 
 Still stuck? [Open an issue](https://github.com/cabane-app/cabane-home-assistant/issues).
 Do not attach credentials or private workspace backups.
