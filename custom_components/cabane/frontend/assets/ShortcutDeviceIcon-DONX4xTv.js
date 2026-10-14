@@ -1,5 +1,5 @@
 import { r as e } from "./rolldown-runtime-B0aSnxlc.js";
-import { $n as t, A as n, Ar as r, Bt as i, Cn as a, Cr as o, Di as s, Ei as c, En as l, Fn as u, Fr as d, Ft as f, Gt as p, Hn as m, Hr as h, In as g, Jr as _, Jt as v, Kr as y, Ln as b, Lt as ee, Mr as te, Nt as x, O as S, Or as C, P as w, Pn as T, Pr as ne, Pt as re, Qt as E, R as ie, Rn as ae, Rr as D, Rt as oe, Sn as O, Sr as se, Tn as k, U as ce, Un as A, Ut as le, Vn as j, Vt as ue, Wt as de, Xr as M, Xt as fe, Yn as N, Yr as pe, Zn as me, Zt as he, _n as ge, _r as _e, ai as ve, an as ye, br as be, bt as xe, ct as Se, en as Ce, er as we, gr as Te, ht as Ee, ii as De, ir as Oe, j as ke, jn as Ae, kr as je, mt as Me, n as P, nn as Ne, oi as Pe, pi as Fe, qr as Ie, qt as Le, ri as F, rn as Re, si as ze, t as Be, vt as Ve, wr as He, xr as Ue, xt as We, y as Ge, yn as Ke, yr as qe, zn as Je, zr as Ye, zt as Xe } from "./LaserIcon-b38F24Sn.js";
+import { $n as t, A as n, Ar as r, Bt as i, Cn as a, Cr as o, Di as s, Ei as c, En as l, Fn as u, Fr as d, Ft as f, Gt as p, Hn as m, Hr as h, In as g, Jr as _, Jt as v, Kr as y, Ln as b, Lt as ee, Mr as te, Nt as x, O as S, Or as C, P as w, Pn as T, Pr as ne, Pt as re, Qt as E, R as ie, Rn as ae, Rr as D, Rt as oe, Sn as O, Sr as se, Tn as k, U as ce, Un as A, Ut as le, Vn as j, Vt as ue, Wt as de, Xr as M, Xt as fe, Yn as N, Yr as pe, Zn as me, Zt as he, _n as ge, _r as _e, ai as ve, an as ye, br as be, bt as xe, ct as Se, en as Ce, er as we, gr as Te, ht as Ee, ii as De, ir as Oe, j as ke, jn as Ae, kr as je, mt as Me, n as P, nn as Ne, oi as Pe, pi as Fe, qr as Ie, qt as Le, ri as F, rn as Re, si as ze, t as Be, vt as Ve, wr as He, xr as Ue, xt as We, y as Ge, yn as Ke, yr as qe, zn as Je, zr as Ye, zt as Xe } from "./LaserIcon-DmLsPqS7.js";
 //#region node_modules/@react-three/drei/core/Billboard.js
 var I = /* @__PURE__ */ e(s()), Ze = /* @__PURE__ */ I.forwardRef(function({ children: e, follow: n = !0, lockX: r = !1, lockY: i = !1, lockZ: a = !1, ...o }, s) {
 	let c = I.useRef(null), l = I.useRef(null), u = new Ye();
@@ -5896,21 +5896,186 @@ function Yr({ state: e, visualState: t, variant: n }) {
 	return /* @__PURE__ */ (0, H.jsx)(qr, { bulbFinish: n === "plain" ? void 0 : Dr(t, e) });
 }
 //#endregion
+//#region packages/catalog/src/device/presets/lighting/rattan-bell-pendant/woven-bell-geometry.ts
+var Xr = new be([
+	new M(.246, .004, 0),
+	new M(.244, .09, 0),
+	new M(.218, .19, 0),
+	new M(.155, .28, 0),
+	new M(.075, .355, 0),
+	new M(.039, .405, 0),
+	new M(.037, .48, 0)
+]);
+function Zr() {
+	let e = [
+		[],
+		[],
+		[]
+	];
+	for (let t = 0; t < 80; t++) {
+		let n = t / 80 * Math.PI * 2, r = Array.from({ length: 33 }, (e, r) => {
+			let i = r / 32, a = Xr.getPoint(i), o = a.x + Math.sin(i * Math.PI * 24 + t * Math.PI) * .001;
+			return new M(Math.cos(n) * o, a.y, Math.sin(n) * o);
+		});
+		e[t % 3].push(new _(new be(r), 40, .0022, 4, !1));
+	}
+	for (let t = 0; t <= 12; t++) {
+		let n = Xr.getPoint(t / 12), r = new Ie(n.x, t === 0 ? .004 : .0026, 6, 80);
+		r.rotateX(Math.PI / 2), r.translate(0, n.y, 0), e[t % 3].push(r);
+	}
+	return e.map((e) => {
+		let t = N(e);
+		return e.forEach((e) => e.dispose()), t;
+	});
+}
+//#endregion
+//#region packages/catalog/src/device/presets/lighting/rattan-bell-pendant/rattan-bell-pendant.tsx
+var Qr = [
+	.5,
+	1.2,
+	.5
+], $r = [
+	"#bc9461",
+	"#cba574",
+	"#c29c69"
+];
+function ei({ size: e = Qr, brightness: t = 0 }) {
+	let n = (0, I.useMemo)(Zr, []);
+	return (0, I.useEffect)(() => () => n.forEach((e) => e.dispose()), [n]), /* @__PURE__ */ (0, H.jsxs)("group", {
+		name: "rattan-bell-pendant",
+		scale: [
+			e[0] / .5,
+			e[1] / 1.2,
+			e[2] / .5
+		],
+		children: [
+			n.map((e, t) => /* @__PURE__ */ (0, H.jsx)("mesh", {
+				name: "open-rattan-weave",
+				geometry: e,
+				castShadow: !0,
+				receiveShadow: !0,
+				children: /* @__PURE__ */ (0, H.jsx)(l, { color: $r[t] })
+			}, t)),
+			/* @__PURE__ */ (0, H.jsxs)("mesh", {
+				name: "white-ceiling-rose",
+				position: [
+					0,
+					1.185,
+					0
+				],
+				castShadow: !0,
+				children: [
+					/* @__PURE__ */ (0, H.jsx)("cylinderGeometry", { args: [
+						.055,
+						.04,
+						.03,
+						32
+					] }),
+					/* @__PURE__ */ (0, H.jsx)(l, { color: "#eeeae2" }),
+					/* @__PURE__ */ (0, H.jsx)(k, {
+						color: "#bab3a8",
+						thickness: .001,
+						screenspace: !1
+					})
+				]
+			}),
+			/* @__PURE__ */ (0, H.jsxs)("mesh", {
+				name: "white-pendant-cord",
+				position: [
+					0,
+					.8125,
+					0
+				],
+				children: [/* @__PURE__ */ (0, H.jsx)("cylinderGeometry", { args: [
+					.003,
+					.003,
+					.725,
+					8
+				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: "#e5e0d6" })]
+			}),
+			/* @__PURE__ */ (0, H.jsxs)("mesh", {
+				name: "bulb-socket",
+				position: [
+					0,
+					.419,
+					0
+				],
+				children: [/* @__PURE__ */ (0, H.jsx)("cylinderGeometry", { args: [
+					.018,
+					.021,
+					.07,
+					16
+				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: "#e5e0d6" })]
+			}),
+			/* @__PURE__ */ (0, H.jsxs)("mesh", {
+				name: "opal-bulb",
+				position: [
+					0,
+					.355,
+					0
+				],
+				scale: [
+					1,
+					1.25,
+					1
+				],
+				children: [/* @__PURE__ */ (0, H.jsx)("sphereGeometry", { args: [
+					.034,
+					20,
+					12
+				] }), /* @__PURE__ */ (0, H.jsx)(l, {
+					color: "#f4ead4",
+					emissive: "#ffe1a3",
+					emissiveIntensity: t
+				})]
+			}),
+			[
+				0,
+				1,
+				2
+			].map((e) => /* @__PURE__ */ (0, H.jsxs)("mesh", {
+				name: "shade-support-spoke",
+				position: [
+					0,
+					.455,
+					0
+				],
+				rotation: [
+					0,
+					e * Math.PI * 2 / 3,
+					0
+				],
+				children: [/* @__PURE__ */ (0, H.jsx)("boxGeometry", { args: [
+					.074,
+					.003,
+					.003
+				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: "#c7b899" })]
+			}, e))
+		]
+	});
+}
+//#endregion
+//#region packages/catalog/src/device/presets/lighting/rattan-bell-pendant/model.tsx
+function ti({ state: e, visualState: t }) {
+	let n = t === "connected-active" ? .72 * xe(e) : 0;
+	return /* @__PURE__ */ (0, H.jsx)(ei, { brightness: n });
+}
+//#endregion
 //#region packages/catalog/src/device/presets/media/camera-screen-display.ts
-var Xr = .9, Zr = .54, Qr = .012, $r = .04, ei = .98, ti = .006, ni = .002, ri = 5.6, ii = .035, ai = .96, oi = (e, t) => {
+var ni = .9, ri = .54, ii = .012, ai = .04, oi = .98, si = .006, ci = .002, li = 5.6, ui = .035, di = .96, fi = (e, t) => {
 	if (t) return {
 		verticalOffset: 0,
 		normalOffset: 0,
 		glowPulse: .5
 	};
-	let n = e * Math.PI * 2 / ri;
+	let n = e * Math.PI * 2 / li;
 	return {
-		verticalOffset: Math.sin(n) * ti,
-		normalOffset: Math.cos(n) * ni,
+		verticalOffset: Math.sin(n) * si,
+		normalOffset: Math.cos(n) * ci,
 		glowPulse: .5 + Math.sin(n * .75) * .5
 	};
-}, si = .78, ci = si * 9 / 16, li = .31, ui = $r + Qr / 2, di = Qr / 2 + .004, fi = di + .004, q = fi + .004;
-function pi({ position: e, size: t }) {
+}, pi = .78, mi = pi * 9 / 16, hi = .31, gi = ai + ii / 2, _i = ii / 2 + .004, vi = _i + .004, q = vi + .004;
+function yi({ position: e, size: t }) {
 	return /* @__PURE__ */ (0, H.jsxs)("mesh", {
 		position: e,
 		renderOrder: 12,
@@ -5925,8 +6090,8 @@ function pi({ position: e, size: t }) {
 		})]
 	});
 }
-var mi = [
-	/* @__PURE__ */ (0, H.jsx)(pi, {
+var bi = [
+	/* @__PURE__ */ (0, H.jsx)(yi, {
 		position: [
 			-.405,
 			.252,
@@ -5938,7 +6103,7 @@ var mi = [
 			.002
 		]
 	}, "tl-h"),
-	/* @__PURE__ */ (0, H.jsx)(pi, {
+	/* @__PURE__ */ (0, H.jsx)(yi, {
 		position: [
 			-.432,
 			.212,
@@ -5950,7 +6115,7 @@ var mi = [
 			.002
 		]
 	}, "tl-v"),
-	/* @__PURE__ */ (0, H.jsx)(pi, {
+	/* @__PURE__ */ (0, H.jsx)(yi, {
 		position: [
 			.405,
 			.252,
@@ -5962,7 +6127,7 @@ var mi = [
 			.002
 		]
 	}, "tr-h"),
-	/* @__PURE__ */ (0, H.jsx)(pi, {
+	/* @__PURE__ */ (0, H.jsx)(yi, {
 		position: [
 			.432,
 			.212,
@@ -5974,7 +6139,7 @@ var mi = [
 			.002
 		]
 	}, "tr-v"),
-	/* @__PURE__ */ (0, H.jsx)(pi, {
+	/* @__PURE__ */ (0, H.jsx)(yi, {
 		position: [
 			-.405,
 			-.252,
@@ -5986,7 +6151,7 @@ var mi = [
 			.002
 		]
 	}, "bl-h"),
-	/* @__PURE__ */ (0, H.jsx)(pi, {
+	/* @__PURE__ */ (0, H.jsx)(yi, {
 		position: [
 			-.432,
 			-.212,
@@ -5998,7 +6163,7 @@ var mi = [
 			.002
 		]
 	}, "bl-v"),
-	/* @__PURE__ */ (0, H.jsx)(pi, {
+	/* @__PURE__ */ (0, H.jsx)(yi, {
 		position: [
 			.405,
 			-.252,
@@ -6010,7 +6175,7 @@ var mi = [
 			.002
 		]
 	}, "br-h"),
-	/* @__PURE__ */ (0, H.jsx)(pi, {
+	/* @__PURE__ */ (0, H.jsx)(yi, {
 		position: [
 			.432,
 			-.212,
@@ -6023,18 +6188,18 @@ var mi = [
 		]
 	}, "br-v")
 ];
-function hi({ liveMedia: e, visualState: n, reducedMotion: r }) {
+function xi({ liveMedia: e, visualState: n, reducedMotion: r }) {
 	let i = (0, I.useRef)(null), { invalidate: a } = we(), o = e?.state === "playing", s = e?.state === "connecting", c = e?.previewState === "cors-blocked", u = o && !c ? "#9afff6" : s ? "#f3b562" : c ? "#f0a56a" : "#6f958f";
 	return (0, I.useEffect)(() => {
 		if (r) return;
 		let e = globalThis.setInterval(() => a(), 1e3 / 12);
 		return () => globalThis.clearInterval(e);
 	}, [a, r]), (0, I.useEffect)(() => {
-		r && (i.current?.position.set(0, 0, ui), a());
+		r && (i.current?.position.set(0, 0, gi), a());
 	}, [a, r]), t(({ clock: e }) => {
 		if (!i.current) return;
-		let t = oi(e.elapsedTime, r);
-		i.current.position.set(0, t.verticalOffset, ui + t.normalOffset);
+		let t = fi(e.elapsedTime, r);
+		i.current.position.set(0, t.verticalOffset, gi + t.normalOffset);
 	}), /* @__PURE__ */ (0, H.jsx)("group", {
 		name: "catalog-camera-screen",
 		children: /* @__PURE__ */ (0, H.jsxs)("group", {
@@ -6042,11 +6207,11 @@ function hi({ liveMedia: e, visualState: n, reducedMotion: r }) {
 			children: [/* @__PURE__ */ (0, H.jsxs)("mesh", {
 				position: [
 					0,
-					li,
+					hi,
 					-.001
 				],
 				renderOrder: 2,
-				children: [/* @__PURE__ */ (0, H.jsx)("planeGeometry", { args: [ei, .62] }), /* @__PURE__ */ (0, H.jsx)(l, {
+				children: [/* @__PURE__ */ (0, H.jsx)("planeGeometry", { args: [oi, .62] }), /* @__PURE__ */ (0, H.jsx)(l, {
 					color: "#65d8ce",
 					emissive: "#2e9e98",
 					emissiveIntensity: .38,
@@ -6060,20 +6225,20 @@ function hi({ liveMedia: e, visualState: n, reducedMotion: r }) {
 				position: [
 					0,
 					0,
-					ui
+					gi
 				],
 				children: [
 					/* @__PURE__ */ (0, H.jsx)(P, {
 						args: [
-							Xr,
-							Zr,
-							Qr
+							ni,
+							ri,
+							ii
 						],
 						radius: .012,
 						smoothness: 2,
 						position: [
 							0,
-							li,
+							hi,
 							0
 						],
 						renderOrder: 5,
@@ -6082,7 +6247,7 @@ function hi({ liveMedia: e, visualState: n, reducedMotion: r }) {
 							emissive: "#298f8a",
 							emissiveIntensity: .4,
 							transparent: !0,
-							opacity: ii,
+							opacity: ui,
 							depthWrite: !1,
 							toneMapped: !1
 						})
@@ -6097,8 +6262,8 @@ function hi({ liveMedia: e, visualState: n, reducedMotion: r }) {
 						smoothness: 1,
 						position: [
 							0,
-							li,
-							di
+							hi,
+							_i
 						],
 						renderOrder: 7,
 						children: /* @__PURE__ */ (0, H.jsx)(l, {
@@ -6114,26 +6279,26 @@ function hi({ liveMedia: e, visualState: n, reducedMotion: r }) {
 					/* @__PURE__ */ (0, H.jsx)("group", {
 						position: [
 							0,
-							li,
-							fi
+							hi,
+							vi
 						],
 						children: /* @__PURE__ */ (0, H.jsx)(Ee, {
 							media: e,
-							width: si,
-							height: ci,
-							opacity: ai
+							width: pi,
+							height: mi,
+							opacity: di
 						})
 					}),
 					/* @__PURE__ */ (0, H.jsxs)("group", {
 						name: "camera-screen-holographic-reticle",
 						position: [
 							0,
-							li,
+							hi,
 							0
 						],
 						children: [
-							mi,
-							/* @__PURE__ */ (0, H.jsx)(pi, {
+							bi,
+							/* @__PURE__ */ (0, H.jsx)(yi, {
 								position: [
 									.06,
 									.268,
@@ -6145,7 +6310,7 @@ function hi({ liveMedia: e, visualState: n, reducedMotion: r }) {
 									.001
 								]
 							}),
-							/* @__PURE__ */ (0, H.jsx)(pi, {
+							/* @__PURE__ */ (0, H.jsx)(yi, {
 								position: [
 									-.08,
 									-.268,
@@ -6157,7 +6322,7 @@ function hi({ liveMedia: e, visualState: n, reducedMotion: r }) {
 									.001
 								]
 							}),
-							/* @__PURE__ */ (0, H.jsx)(pi, {
+							/* @__PURE__ */ (0, H.jsx)(yi, {
 								position: [
 									-.449,
 									0,
@@ -6169,7 +6334,7 @@ function hi({ liveMedia: e, visualState: n, reducedMotion: r }) {
 									.001
 								]
 							}),
-							/* @__PURE__ */ (0, H.jsx)(pi, {
+							/* @__PURE__ */ (0, H.jsx)(yi, {
 								position: [
 									.449,
 									.035,
@@ -6181,7 +6346,7 @@ function hi({ liveMedia: e, visualState: n, reducedMotion: r }) {
 									.001
 								]
 							}),
-							Array.from({ length: 7 }, (e, t) => /* @__PURE__ */ (0, H.jsx)(pi, {
+							Array.from({ length: 7 }, (e, t) => /* @__PURE__ */ (0, H.jsx)(yi, {
 								position: [
 									-.415,
 									-.09 + t * .025,
@@ -6197,7 +6362,7 @@ function hi({ liveMedia: e, visualState: n, reducedMotion: r }) {
 								.025,
 								.012,
 								.006
-							].map((e, t) => /* @__PURE__ */ (0, H.jsx)(pi, {
+							].map((e, t) => /* @__PURE__ */ (0, H.jsx)(yi, {
 								position: [
 									-.3 + t * .035,
 									-.249,
@@ -6260,11 +6425,11 @@ function hi({ liveMedia: e, visualState: n, reducedMotion: r }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/media/connected-frame.tsx
-var gi = [
+var Si = [
 	.72,
 	.52,
 	.045
-], _i = gi[0], vi = gi[1], yi = gi[2], bi = .045, xi = _i - bi * 2, Si = vi - bi * 2, Ci = yi / 2 - .001, wi = (e) => e === "oak" ? {
+], Ci = Si[0], wi = Si[1], Ti = Si[2], Ei = .045, Di = Ci - Ei * 2, Oi = wi - Ei * 2, ki = Ti / 2 - .001, Ai = (e) => e === "oak" ? {
 	vertical: "#b9824f",
 	horizontal: "#c99863",
 	outline: "#5f402a",
@@ -6275,8 +6440,8 @@ var gi = [
 	outline: "#111514",
 	inset: "#171b1a"
 };
-function Ti({ finish: e, liveMedia: t, visualState: n }) {
-	let r = wi(e), i = (e, t, n, i) => /* @__PURE__ */ (0, H.jsxs)("mesh", {
+function ji({ finish: e, liveMedia: t, visualState: n }) {
+	let r = Ai(e), i = (e, t, n, i) => /* @__PURE__ */ (0, H.jsxs)("mesh", {
 		name: e,
 		position: t,
 		castShadow: !0,
@@ -6298,68 +6463,68 @@ function Ti({ finish: e, liveMedia: t, visualState: n }) {
 				name: "connected-frame-screen-inset",
 				position: [
 					0,
-					vi / 2,
+					wi / 2,
 					.005
 				],
 				children: [/* @__PURE__ */ (0, H.jsx)("boxGeometry", { args: [
-					xi,
-					Si,
+					Di,
+					Oi,
 					.012
 				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: r.inset })]
 			}),
 			/* @__PURE__ */ (0, H.jsx)("group", {
 				position: [
 					0,
-					vi / 2,
+					wi / 2,
 					.012
 				],
 				children: /* @__PURE__ */ (0, H.jsx)(Ee, {
 					media: t,
-					width: xi - .012,
-					height: Si - .012,
+					width: Di - .012,
+					height: Oi - .012,
 					opacity: .9
 				})
 			}),
 			i("connected-frame-left-rail", [
-				-_i / 2 + bi / 2,
-				vi / 2,
-				Ci
+				-Ci / 2 + Ei / 2,
+				wi / 2,
+				ki
 			], [
-				bi,
-				vi,
-				yi
+				Ei,
+				wi,
+				Ti
 			], r.vertical),
 			i("connected-frame-right-rail", [
-				_i / 2 - bi / 2,
-				vi / 2,
-				Ci
+				Ci / 2 - Ei / 2,
+				wi / 2,
+				ki
 			], [
-				bi,
-				vi,
-				yi
+				Ei,
+				wi,
+				Ti
 			], r.vertical),
 			i("connected-frame-top-rail", [
 				0,
-				vi - bi / 2,
-				Ci
+				wi - Ei / 2,
+				ki
 			], [
-				xi,
-				bi,
-				yi
+				Di,
+				Ei,
+				Ti
 			], r.horizontal),
 			i("connected-frame-bottom-rail", [
 				0,
-				bi / 2,
-				Ci
+				Ei / 2,
+				ki
 			], [
-				xi,
-				bi,
-				yi
+				Di,
+				Ei,
+				Ti
 			], r.horizontal),
 			/* @__PURE__ */ (0, H.jsx)(W, {
 				visualState: n,
 				position: [
-					_i / 2 - .0225,
+					Ci / 2 - .0225,
 					.0225,
 					.037
 				],
@@ -6368,21 +6533,21 @@ function Ti({ finish: e, liveMedia: t, visualState: n }) {
 		]
 	});
 }
-function Ei(e) {
-	return /* @__PURE__ */ (0, H.jsx)(Ti, {
+function Mi(e) {
+	return /* @__PURE__ */ (0, H.jsx)(ji, {
 		...e,
 		finish: "oak"
 	});
 }
-function Di(e) {
-	return /* @__PURE__ */ (0, H.jsx)(Ti, {
+function Ni(e) {
+	return /* @__PURE__ */ (0, H.jsx)(ji, {
 		...e,
 		finish: "black"
 	});
 }
 //#endregion
 //#region packages/catalog/src/device/presets/media/speaker.tsx
-function Oi({ visualState: e, reducedMotion: n }) {
+function Pi({ visualState: e, reducedMotion: n }) {
 	let r = e === "connected-active", i = (0, I.useRef)(null);
 	return t(({ clock: e, invalidate: t }) => {
 		if (!i.current) return;
@@ -6466,7 +6631,7 @@ function Oi({ visualState: e, reducedMotion: n }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/media/television-picture.tsx
-function ki({ width: e, height: n, reducedMotion: r }) {
+function Fi({ width: e, height: n, reducedMotion: r }) {
 	let i = (0, I.useRef)(null), a = (0, I.useRef)(0);
 	return t(({ invalidate: e }, t) => {
 		r || !i.current || (a.current += Math.min(t, .05), i.current.position.x = Math.sin(a.current * .35) * .035, i.current.rotation.z = Math.sin(a.current * .25) * .035, e());
@@ -6548,7 +6713,7 @@ function ki({ width: e, height: n, reducedMotion: r }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/media/television.tsx
-var Ai = "#28312f", ji = "#596360", Mi = (e) => {
+var Ii = "#28312f", Li = "#596360", Ri = (e) => {
 	switch (e) {
 		case "connected-active": return {
 			screen: "#6f9aa3",
@@ -6568,7 +6733,7 @@ var Ai = "#28312f", ji = "#596360", Mi = (e) => {
 		};
 	}
 };
-function Ni() {
+function zi() {
 	return /* @__PURE__ */ (0, H.jsx)("group", {
 		name: "catalog-television-rounded-shell",
 		position: [
@@ -6586,16 +6751,16 @@ function Ni() {
 			smoothness: 2,
 			castShadow: !0,
 			receiveShadow: !0,
-			children: /* @__PURE__ */ (0, H.jsx)(l, { color: Ai })
+			children: /* @__PURE__ */ (0, H.jsx)(l, { color: Ii })
 		})
 	});
 }
-function Pi({ visualState: e, liveMedia: t, reducedMotion: n }) {
-	let r = Mi(e);
+function Bi({ visualState: e, liveMedia: t, reducedMotion: n }) {
+	let r = Ri(e);
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "catalog-television",
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(Ni, {}),
+			/* @__PURE__ */ (0, H.jsx)(zi, {}),
 			/* @__PURE__ */ (0, H.jsxs)("mesh", {
 				position: [
 					0,
@@ -6627,7 +6792,7 @@ function Pi({ visualState: e, liveMedia: t, reducedMotion: n }) {
 					.515,
 					.047
 				],
-				children: /* @__PURE__ */ (0, H.jsx)(ki, {
+				children: /* @__PURE__ */ (0, H.jsx)(Fi, {
 					width: 1.405,
 					height: .675,
 					reducedMotion: n
@@ -6696,7 +6861,7 @@ function Pi({ visualState: e, liveMedia: t, reducedMotion: n }) {
 						.1,
 						5,
 						12
-					] }), /* @__PURE__ */ (0, H.jsx)(l, { color: ji })]
+					] }), /* @__PURE__ */ (0, H.jsx)(l, { color: Li })]
 				}), /* @__PURE__ */ (0, H.jsxs)("mesh", {
 					position: [
 						0,
@@ -6710,7 +6875,7 @@ function Pi({ visualState: e, liveMedia: t, reducedMotion: n }) {
 							.028,
 							.15
 						] }),
-						/* @__PURE__ */ (0, H.jsx)(l, { color: ji }),
+						/* @__PURE__ */ (0, H.jsx)(l, { color: Li }),
 						/* @__PURE__ */ (0, H.jsx)(k, {
 							color: "#303937",
 							thickness: .004,
@@ -6745,12 +6910,12 @@ function Pi({ visualState: e, liveMedia: t, reducedMotion: n }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/media/wall-television.tsx
-var Fi = [
+var Vi = [
 	2.4,
 	1.36,
 	.07
 ];
-function Ii({ visualState: e, reducedMotion: t }) {
+function Hi({ visualState: e, reducedMotion: t }) {
 	let n = e === "connected-active";
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "catalog-wall-television",
@@ -6798,7 +6963,7 @@ function Ii({ visualState: e, reducedMotion: t }) {
 					.68,
 					.0686
 				],
-				children: /* @__PURE__ */ (0, H.jsx)(ki, {
+				children: /* @__PURE__ */ (0, H.jsx)(Fi, {
 					width: 2.352,
 					height: 1.312,
 					reducedMotion: t
@@ -6830,12 +6995,12 @@ function Ii({ visualState: e, reducedMotion: t }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/media/compact-wall-television.tsx
-var Li = [
+var Ui = [
 	1.58,
 	.9,
 	.07
 ];
-function Ri(e) {
+function Wi(e) {
 	return /* @__PURE__ */ (0, H.jsx)("group", {
 		name: "compact-wall-television",
 		scale: [
@@ -6843,12 +7008,12 @@ function Ri(e) {
 			.9 / 1.36,
 			1
 		],
-		children: /* @__PURE__ */ (0, H.jsx)(Ii, { ...e })
+		children: /* @__PURE__ */ (0, H.jsx)(Hi, { ...e })
 	});
 }
 //#endregion
 //#region packages/catalog/src/device/presets/security/video-doorbell.tsx
-function zi({ visualState: e }) {
+function Gi({ visualState: e }) {
 	let t = e === "connected-active";
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "catalog-video-doorbell",
@@ -6933,7 +7098,7 @@ function zi({ visualState: e }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/security/indoor-security-camera.tsx
-function Bi({ visualState: e }) {
+function Ki({ visualState: e }) {
 	let t = e === "connected-active";
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "catalog-indoor-security-camera",
@@ -7030,7 +7195,7 @@ function Bi({ visualState: e }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/security/smart-lock.tsx
-function Vi({ visualState: e }) {
+function qi({ visualState: e }) {
 	let t = e === "connected-active";
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "catalog-smart-lock",
@@ -7120,11 +7285,11 @@ function Vi({ visualState: e }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/security/alarm-keypad.tsx
-var Hi = Array.from({ length: 12 }, (e, t) => ({
+var Ji = Array.from({ length: 12 }, (e, t) => ({
 	x: (t % 3 - 1) * .044,
 	y: .134 - Math.floor(t / 3) * .034
 }));
-function Ui({ visualState: e }) {
+function Yi({ visualState: e }) {
 	let t = e === "connected-active";
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "catalog-alarm-keypad",
@@ -7167,7 +7332,7 @@ function Ui({ visualState: e }) {
 					emissiveIntensity: t ? .32 : .06
 				})
 			}),
-			Hi.map(({ x: e, y: t }, n) => /* @__PURE__ */ (0, H.jsxs)("mesh", {
+			Ji.map(({ x: e, y: t }, n) => /* @__PURE__ */ (0, H.jsxs)("mesh", {
 				name: `alarm-key-${n + 1}`,
 				position: [
 					e,
@@ -7194,7 +7359,7 @@ function Ui({ visualState: e }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/security/siren.tsx
-function Wi({ visualState: e }) {
+function Xi({ visualState: e }) {
 	let t = e === "connected-active";
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "catalog-siren",
@@ -7291,7 +7456,7 @@ function Wi({ visualState: e }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/sensors/leak-sensor.tsx
-function Gi({ visualState: e }) {
+function Zi({ visualState: e }) {
 	let t = e === "connected-active";
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "catalog-leak-sensor",
@@ -7366,7 +7531,7 @@ function Gi({ visualState: e }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/sensors/motion-sensor.tsx
-function Ki({ visualState: e }) {
+function Qi({ visualState: e }) {
 	let t = e === "connected-active";
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "catalog-motion-sensor",
@@ -7446,7 +7611,7 @@ function Ki({ visualState: e }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/sensors/opening-contact.tsx
-function qi({ visualState: e }) {
+function $i({ visualState: e }) {
 	let t = e === "connected-active";
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "catalog-opening-contact",
@@ -7505,12 +7670,12 @@ function qi({ visualState: e }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/sensors/thermometer.tsx
-var Ji = (e) => {
+var ea = (e) => {
 	let t = Number(e?.state);
 	return Number.isFinite(t) ? t : 20;
 };
-function Yi({ state: e, visualState: t }) {
-	let n = ((Math.max(-10, Math.min(40, Ji(e))) + 10) / 50 - .5) * Math.PI * 1.3;
+function ta({ state: e, visualState: t }) {
+	let n = ((Math.max(-10, Math.min(40, ea(e))) + 10) / 50 - .5) * Math.PI * 1.3;
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "catalog-thermometer",
 		children: [
@@ -7583,7 +7748,7 @@ function Yi({ state: e, visualState: t }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/sensors/smoke-alarm.tsx
-function Xi({ visualState: e }) {
+function na({ visualState: e }) {
 	let t = e === "connected-active";
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "catalog-smoke-alarm",
@@ -7669,7 +7834,7 @@ function Xi({ visualState: e }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/sensors/carbon-monoxide-alarm.tsx
-function Zi({ visualState: e }) {
+function ra({ visualState: e }) {
 	let t = e === "connected-active";
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "catalog-carbon-monoxide-alarm",
@@ -7741,7 +7906,7 @@ function Zi({ visualState: e }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/sensors/humidity-sensor.tsx
-function Qi({ state: e, visualState: t }) {
+function ia({ state: e, visualState: t }) {
 	let n = typeof e?.attributes.native_value == "number" ? e.attributes.native_value : Number(e?.state ?? 50), r = Number.isFinite(n) && n >= 65;
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "catalog-humidity-sensor",
@@ -7812,7 +7977,7 @@ function Qi({ state: e, visualState: t }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/sensors/air-quality-monitor.tsx
-function $i({ state: e, visualState: t }) {
+function aa({ state: e, visualState: t }) {
 	let n = Number(e?.state), r = Number.isFinite(n) && n > 1e3;
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "catalog-air-quality-monitor",
@@ -7885,7 +8050,7 @@ function $i({ state: e, visualState: t }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/sensors/energy-monitor.tsx
-function ea({ visualState: e }) {
+function oa({ visualState: e }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "catalog-energy-monitor",
 		children: [
@@ -7954,7 +8119,7 @@ function ea({ visualState: e }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/sensors/weather-station.tsx
-function ta({ state: e, visualState: t }) {
+function sa({ state: e, visualState: t }) {
 	let n = Number(e?.state), r = t === "connected-active" && Number.isFinite(n);
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "catalog-weather-station",
@@ -8044,14 +8209,14 @@ function ta({ state: e, visualState: t }) {
 }
 //#endregion
 //#region node_modules/three/examples/jsm/geometries/RoundedBoxGeometry.js
-var na = new M();
-function ra(e, t, n, r, i, a) {
+var ca = new M();
+function la(e, t, n, r, i, a) {
 	let o = 2 * Math.PI * i / 4, s = Math.max(a - 2 * i, 0), c = Math.PI / 4;
-	na.copy(t), na[r] = 0, na.normalize();
-	let l = .5 * o / (o + s), u = 1 - na.angleTo(e) / c;
-	return Math.sign(na[n]) === 1 ? u * l : s / (o + s) + l + l * (1 - u);
+	ca.copy(t), ca[r] = 0, ca.normalize();
+	let l = .5 * o / (o + s), u = 1 - ca.angleTo(e) / c;
+	return Math.sign(ca[n]) === 1 ? u * l : s / (o + s) + l + l * (1 - u);
 }
-var ia = class e extends _e {
+var ua = class e extends _e {
 	constructor(e = 1, t = 1, n = 1, r = 2, i = .1) {
 		let a = r * 2 + 1;
 		if (i = Math.min(e / 2, t / 2, n / 2, i), super(1, 1, 1, a, a, a), this.type = "RoundedBoxGeometry", this.parameters = {
@@ -8066,21 +8231,21 @@ var ia = class e extends _e {
 		let s = new M(), c = new M(), l = new M(e, t, n).divideScalar(2).subScalar(i), u = this.attributes.position.array, d = this.attributes.normal.array, f = this.attributes.uv.array, p = u.length / 6, m = new M(), h = .5 / a;
 		for (let r = 0, a = 0; r < u.length; r += 3, a += 2) switch (s.fromArray(u, r), c.copy(s), c.x -= Math.sign(c.x) * h, c.y -= Math.sign(c.y) * h, c.z -= Math.sign(c.z) * h, c.normalize(), u[r + 0] = l.x * Math.sign(s.x) + c.x * i, u[r + 1] = l.y * Math.sign(s.y) + c.y * i, u[r + 2] = l.z * Math.sign(s.z) + c.z * i, d[r + 0] = c.x, d[r + 1] = c.y, d[r + 2] = c.z, Math.floor(r / p)) {
 			case 0:
-				m.set(1, 0, 0), f[a + 0] = ra(m, c, "z", "y", i, n), f[a + 1] = 1 - ra(m, c, "y", "z", i, t);
+				m.set(1, 0, 0), f[a + 0] = la(m, c, "z", "y", i, n), f[a + 1] = 1 - la(m, c, "y", "z", i, t);
 				break;
 			case 1:
-				m.set(-1, 0, 0), f[a + 0] = 1 - ra(m, c, "z", "y", i, n), f[a + 1] = 1 - ra(m, c, "y", "z", i, t);
+				m.set(-1, 0, 0), f[a + 0] = 1 - la(m, c, "z", "y", i, n), f[a + 1] = 1 - la(m, c, "y", "z", i, t);
 				break;
 			case 2:
-				m.set(0, 1, 0), f[a + 0] = 1 - ra(m, c, "x", "z", i, e), f[a + 1] = ra(m, c, "z", "x", i, n);
+				m.set(0, 1, 0), f[a + 0] = 1 - la(m, c, "x", "z", i, e), f[a + 1] = la(m, c, "z", "x", i, n);
 				break;
 			case 3:
-				m.set(0, -1, 0), f[a + 0] = 1 - ra(m, c, "x", "z", i, e), f[a + 1] = 1 - ra(m, c, "z", "x", i, n);
+				m.set(0, -1, 0), f[a + 0] = 1 - la(m, c, "x", "z", i, e), f[a + 1] = 1 - la(m, c, "z", "x", i, n);
 				break;
 			case 4:
-				m.set(0, 0, 1), f[a + 0] = 1 - ra(m, c, "x", "y", i, e), f[a + 1] = 1 - ra(m, c, "y", "x", i, t);
+				m.set(0, 0, 1), f[a + 0] = 1 - la(m, c, "x", "y", i, e), f[a + 1] = 1 - la(m, c, "y", "x", i, t);
 				break;
-			case 5: m.set(0, 0, -1), f[a + 0] = ra(m, c, "x", "y", i, e), f[a + 1] = 1 - ra(m, c, "y", "x", i, t);
+			case 5: m.set(0, 0, -1), f[a + 0] = la(m, c, "x", "y", i, e), f[a + 1] = 1 - la(m, c, "y", "x", i, t);
 		}
 	}
 	static fromJSON(t) {
@@ -8098,7 +8263,7 @@ var ia = class e extends _e {
 };
 function Y(e, t, n, r = .018) {
 	return {
-		geometry: (r > 0 ? new ia(...e, 1, Math.min(r, ...e.map((e) => e / 2))) : new _e(...e)).translate(...t),
+		geometry: (r > 0 ? new ua(...e, 1, Math.min(r, ...e.map((e) => e / 2))) : new _e(...e)).translate(...t),
 		color: n
 	};
 }
@@ -8108,7 +8273,7 @@ function X(e, t = J.trim, n = .005) {
 		color: t
 	};
 }
-function aa(e, t) {
+function da(e, t) {
 	let n = e.flat(), r = [];
 	for (let t = 1; t < e.length - 1; t++) r.push(0, t, t + 1);
 	let i = [...r, ...r.flatMap((e, t, n) => t % 3 == 0 ? [
@@ -8121,7 +8286,7 @@ function aa(e, t) {
 		color: t
 	};
 }
-function oa(e, t, n, r = .025, i) {
+function fa(e, t, n, r = .025, i) {
 	let a = new o(e, {
 		depth: t * 2,
 		bevelEnabled: r > 0,
@@ -8144,7 +8309,7 @@ function oa(e, t, n, r = .025, i) {
 		color: n
 	};
 }
-function sa({ halfLength: e, halfWidth: t, sill: n, shoulder: r, axles: i, tireRadius: a, color: o }) {
+function pa({ halfLength: e, halfWidth: t, sill: n, shoulder: r, axles: i, tireRadius: a, color: o }) {
 	let s = a + .055, c = [], l = [], u = new Set(Array.from({ length: 73 }, (t, n) => -e + n * e * 2 / 72));
 	for (let e of i) {
 		for (let t = 0; t <= 32; t++) u.add(e + Math.cos(t * Math.PI / 32) * s);
@@ -8195,7 +8360,7 @@ function sa({ halfLength: e, halfWidth: t, sill: n, shoulder: r, axles: i, tireR
 		color: o
 	};
 }
-function ca(e, t) {
+function ma(e, t) {
 	let n = /* @__PURE__ */ new Map();
 	for (let { geometry: t, color: r } of e) {
 		let e = t.index ? t.toNonIndexed() : t.clone();
@@ -8212,7 +8377,7 @@ function ca(e, t) {
 		};
 	});
 }
-function la({ batches: e }) {
+function ha({ batches: e }) {
 	return /* @__PURE__ */ (0, H.jsx)("group", {
 		dispose: null,
 		children: e.map(({ name: e, geometry: t, color: n }) => /* @__PURE__ */ (0, H.jsxs)("mesh", {
@@ -8234,10 +8399,10 @@ function la({ batches: e }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/vehicles/vehicle-cabin.ts
-function ua(e) {
+function ga(e) {
 	let { rearBase: t, rearTop: n, frontTop: r, frontBase: i, belt: a, roof: o, halfWidth: s, split: c, color: l } = e, u = new h();
 	u.moveTo(t, a), u.lineTo(i, a), u.lineTo(r + .08, o - .1), u.quadraticCurveTo(r + .03, o - .025, r - .04, o - .025), u.lineTo(n + .06, o - .025), u.quadraticCurveTo(n, o - .025, n - .05, o - .1), u.closePath();
-	let d = [oa(u, s, l, .025, {
+	let d = [fa(u, s, l, .025, {
 		belt: a,
 		slope: .22
 	})], f = (e) => (s + .025) * (1 - (e - a) * .22 / s) + .003, p = o - .115, m = a + .075;
@@ -8259,13 +8424,13 @@ function ua(e) {
 		]];
 		for (let e of s) {
 			let t = e.map(([e, t]) => o(e, t));
-			d.push(aa(t, J.glass)), d.push(X([...t, t[0]], J.trim, .01));
+			d.push(da(t, J.glass)), d.push(X([...t, t[0]], J.trim, .01));
 			let [n, r, i] = [
 				e[0],
 				e[1],
 				e[2]
 			];
-			d.push(aa([
+			d.push(da([
 				o(n[0] * .12 + r[0] * .88, n[1] * .12 + r[1] * .88, .002),
 				o(r[0] * .88 + i[0] * .12, r[1], .002),
 				o(r[0] * .65 + i[0] * .35, r[1], .002),
@@ -8301,7 +8466,7 @@ function ua(e) {
 				p(u)
 			]
 		];
-		if (d.push(aa(m, J.glass), X([...m, m[0]], J.trim, .012)), e) for (let e of [-1, 1]) d.push(X([[
+		if (d.push(da(m, J.glass), X([...m, m[0]], J.trim, .012)), e) for (let e of [-1, 1]) d.push(X([[
 			e * .48,
 			l + .012,
 			p(l) + .013
@@ -8311,7 +8476,7 @@ function ua(e) {
 			p(l + .045) + .013
 		]], J.recess, .008));
 	}
-	return e.glassRoof && d.push(aa([
+	return e.glassRoof && d.push(da([
 		[
 			-s * .75,
 			o + 3e-4,
@@ -8336,7 +8501,7 @@ function ua(e) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/vehicles/vehicle-trim.ts
-function da({ halfWidth: e, mirrorWidth: t, belt: n, frontDoor: r, rearDoor: i, rearEdge: a, axles: o, tireRadius: s, color: c, rugged: l = !1 }) {
+function _a({ halfWidth: e, mirrorWidth: t, belt: n, frontDoor: r, rearDoor: i, rearEdge: a, axles: o, tireRadius: s, color: c, rugged: l = !1 }) {
 	let u = [];
 	for (let d of [-1, 1]) {
 		let f = d * (e + .028);
@@ -8465,7 +8630,7 @@ function da({ halfWidth: e, mirrorWidth: t, belt: n, frontDoor: r, rearDoor: i, 
 }
 //#endregion
 //#region packages/catalog/src/device/presets/vehicles/vehicle-wheels.tsx
-function fa({ radius: e, track: t, axles: n, spokes: r = 10, rugged: i = !1 }) {
+function va({ radius: e, track: t, axles: n, spokes: r = 10, rugged: i = !1 }) {
 	let a = [], o = i ? .27 : .23;
 	for (let s of [-1, 1]) for (let c of n) {
 		let n = s * t / 2, l = (t, r, i, o, l = 32) => {
@@ -8515,22 +8680,22 @@ function fa({ radius: e, track: t, axles: n, spokes: r = 10, rugged: i = !1 }) {
 			l.geometry.rotateX(s).translate(n, e, c), a.push(l);
 		}
 	}
-	return ca(a, "vehicle-wheels");
+	return ma(a, "vehicle-wheels");
 }
 //#endregion
 //#region packages/catalog/src/device/presets/vehicles/compact-car.tsx
-var pa = [
+var ya = [
 	1.94,
 	1.5,
 	4
-], ma = "#5c91b0", ha = [-1.26, 1.25], ga = ca([
-	sa({
+], ba = "#5c91b0", xa = [-1.26, 1.25], Sa = ma([
+	pa({
 		halfLength: 1.925,
 		halfWidth: .835,
 		sill: .27,
-		axles: ha,
+		axles: xa,
 		tireRadius: .3,
-		color: ma,
+		color: ba,
 		shoulder: [
 			[1.925, .73],
 			[1.72, .86],
@@ -8539,7 +8704,7 @@ var pa = [
 			[-1.925, .84]
 		]
 	}),
-	...ua({
+	...ga({
 		rearBase: -1.68,
 		rearTop: -1.14,
 		frontTop: .32,
@@ -8548,18 +8713,18 @@ var pa = [
 		roof: 1.5,
 		halfWidth: .755,
 		split: -.35,
-		color: ma
+		color: ba
 	}),
-	...da({
+	..._a({
 		halfWidth: .835,
 		mirrorWidth: 1.94,
 		belt: .94,
 		frontDoor: .83,
 		rearDoor: -.25,
 		rearEdge: -.83,
-		axles: ha,
+		axles: xa,
 		tireRadius: .3,
-		color: ma
+		color: ba
 	}),
 	Y([
 		1.55,
@@ -8569,7 +8734,7 @@ var pa = [
 		0,
 		.44,
 		1.91
-	], ma, .065),
+	], ba, .065),
 	Y([
 		1.25,
 		.12,
@@ -8605,7 +8770,7 @@ var pa = [
 		0,
 		.43,
 		-1.91
-	], ma, .06),
+	], ba, .06),
 	Y([
 		1.28,
 		.07,
@@ -8676,7 +8841,7 @@ var pa = [
 			.86,
 			1.7
 		]
-	], ma, .01),
+	], ba, .01),
 	X([
 		[
 			.68,
@@ -8693,7 +8858,7 @@ var pa = [
 			.86,
 			1.7
 		]
-	], ma, .01),
+	], ba, .01),
 	Y([
 		1.28,
 		.035,
@@ -8702,7 +8867,7 @@ var pa = [
 		0,
 		1.451,
 		-1.13
-	], ma, .016),
+	], ba, .016),
 	...[-1, 1].flatMap((e) => [
 		Y([
 			.41,
@@ -8759,19 +8924,19 @@ var pa = [
 			-1.957
 		], J.lens, .008)
 	])
-], "compact-body"), _a = fa({
+], "compact-body"), Ca = va({
 	radius: .3,
 	track: 1.55,
-	axles: ha,
+	axles: xa,
 	spokes: 8
 });
-function va({ visualState: e }) {
+function wa({ visualState: e }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "catalog-compact-car",
 		userData: { walkCollider: !0 },
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(la, { batches: ga }),
-			/* @__PURE__ */ (0, H.jsx)(la, { batches: _a }),
+			/* @__PURE__ */ (0, H.jsx)(ha, { batches: Sa }),
+			/* @__PURE__ */ (0, H.jsx)(ha, { batches: Ca }),
 			/* @__PURE__ */ (0, H.jsx)(W, {
 				visualState: e,
 				position: [
@@ -8786,18 +8951,18 @@ function va({ visualState: e }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/vehicles/electric-sedan.tsx
-var ya = [
+var Ta = [
 	2.08,
 	1.45,
 	4.7
-], ba = "#e1e5e0", xa = [-1.48, 1.43], Sa = ca([
-	sa({
+], Ea = "#e1e5e0", Da = [-1.48, 1.43], Oa = ma([
+	pa({
 		halfLength: 2.275,
 		halfWidth: .895,
 		sill: .255,
-		axles: xa,
+		axles: Da,
 		tireRadius: .33,
-		color: ba,
+		color: Ea,
 		shoulder: [
 			[2.275, .7],
 			[1.96, .81],
@@ -8806,7 +8971,7 @@ var ya = [
 			[-2.275, .81]
 		]
 	}),
-	...ua({
+	...ga({
 		rearBase: -1.78,
 		rearTop: -.76,
 		frontTop: .36,
@@ -8815,19 +8980,19 @@ var ya = [
 		roof: 1.45,
 		halfWidth: .795,
 		split: -.27,
-		color: ba,
+		color: Ea,
 		glassRoof: !0
 	}),
-	...da({
+	..._a({
 		halfWidth: .895,
 		mirrorWidth: 2.08,
 		belt: .905,
 		frontDoor: .97,
 		rearDoor: -.18,
 		rearEdge: -1.02,
-		axles: xa,
+		axles: Da,
 		tireRadius: .33,
-		color: ba
+		color: Ea
 	}),
 	Y([
 		1.72,
@@ -8837,7 +9002,7 @@ var ya = [
 		0,
 		.45,
 		2.26
-	], ba, .07),
+	], Ea, .07),
 	Y([
 		1.29,
 		.058,
@@ -8864,7 +9029,7 @@ var ya = [
 		0,
 		.45,
 		-2.26
-	], ba, .075),
+	], Ea, .075),
 	Y([
 		1.36,
 		.078,
@@ -8904,7 +9069,7 @@ var ya = [
 			.835,
 			-2.23
 		]
-	], ba, .018),
+	], Ea, .018),
 	X([
 		[
 			-.7,
@@ -8921,7 +9086,7 @@ var ya = [
 			.795,
 			2.04
 		]
-	], ba, .012),
+	], Ea, .012),
 	X([
 		[
 			.7,
@@ -8938,7 +9103,7 @@ var ya = [
 			.795,
 			2.04
 		]
-	], ba, .012),
+	], Ea, .012),
 	...[-1, 1].flatMap((e) => [
 		Y([
 			.45,
@@ -9035,19 +9200,19 @@ var ya = [
 			-1.91
 		]
 	], J.trim, .004)
-], "electric-body"), Ca = fa({
+], "electric-body"), ka = va({
 	radius: .33,
 	track: 1.69,
-	axles: xa,
+	axles: Da,
 	spokes: 10
 });
-function wa({ visualState: e }) {
+function Aa({ visualState: e }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "catalog-electric-sedan",
 		userData: { walkCollider: !0 },
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(la, { batches: Sa }),
-			/* @__PURE__ */ (0, H.jsx)(la, { batches: Ca }),
+			/* @__PURE__ */ (0, H.jsx)(ha, { batches: Oa }),
+			/* @__PURE__ */ (0, H.jsx)(ha, { batches: ka }),
 			/* @__PURE__ */ (0, H.jsx)(W, {
 				visualState: e,
 				position: [
@@ -9062,7 +9227,7 @@ function wa({ visualState: e }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/vehicles/pickup-bed.ts
-function Ta(e) {
+function ja(e) {
 	return [
 		Y([
 			1.74,
@@ -9191,18 +9356,18 @@ function Ta(e) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/vehicles/pickup-truck.tsx
-var Ea = [
+var Ma = [
 	2.24,
 	1.86,
 	5.4
-], Da = "#687d79", Oa = [-1.75, 1.75], ka = ca([
-	sa({
+], Na = "#687d79", Pa = [-1.75, 1.75], Fa = ma([
+	pa({
 		halfLength: 2.58,
 		halfWidth: .955,
 		sill: .4,
-		axles: Oa,
+		axles: Pa,
 		tireRadius: .4,
-		color: Da,
+		color: Na,
 		shoulder: [
 			[2.58, 1.01],
 			[2.22, 1.14],
@@ -9212,7 +9377,7 @@ var Ea = [
 			[-2.58, .72]
 		]
 	}),
-	...ua({
+	...ga({
 		rearBase: -.62,
 		rearTop: -.48,
 		frontTop: .73,
@@ -9221,21 +9386,21 @@ var Ea = [
 		roof: 1.86,
 		halfWidth: .84,
 		split: .08,
-		color: Da
+		color: Na
 	}),
-	...da({
+	..._a({
 		halfWidth: .955,
 		mirrorWidth: 2.24,
 		belt: 1.13,
 		frontDoor: 1.15,
 		rearDoor: .15,
 		rearEdge: -.55,
-		axles: Oa,
+		axles: Pa,
 		tireRadius: .4,
-		color: Da,
+		color: Na,
 		rugged: !0
 	}),
-	...Ta(Da),
+	...ja(Na),
 	Y([
 		1.98,
 		.22,
@@ -9324,7 +9489,7 @@ var Ea = [
 			1.07,
 			2.38
 		]
-	], Da, .018),
+	], Na, .018),
 	X([
 		[
 			.76,
@@ -9341,7 +9506,7 @@ var Ea = [
 			1.07,
 			2.38
 		]
-	], Da, .018),
+	], Na, .018),
 	...[-1, 1].flatMap((e) => [
 		Y([
 			.34,
@@ -9398,20 +9563,20 @@ var Ea = [
 			-2.604
 		], J.lens, .01)
 	])
-], "pickup-body"), Aa = fa({
+], "pickup-body"), Ia = va({
 	radius: .4,
 	track: 1.84,
-	axles: Oa,
+	axles: Pa,
 	spokes: 6,
 	rugged: !0
 });
-function ja({ visualState: e }) {
+function La({ visualState: e }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "catalog-pickup-truck",
 		userData: { walkCollider: !0 },
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(la, { batches: ka }),
-			/* @__PURE__ */ (0, H.jsx)(la, { batches: Aa }),
+			/* @__PURE__ */ (0, H.jsx)(ha, { batches: Fa }),
+			/* @__PURE__ */ (0, H.jsx)(ha, { batches: Ia }),
 			/* @__PURE__ */ (0, H.jsx)(W, {
 				visualState: e,
 				position: [
@@ -9426,7 +9591,7 @@ function ja({ visualState: e }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/irrigation/sprinkler-spray.tsx
-function Ma({ reducedMotion: e }) {
+function Ra({ reducedMotion: e }) {
 	let n = (0, I.useRef)(null), r = (0, I.useRef)(0);
 	return t(({ invalidate: t }, i) => {
 		e || !n.current || (r.current += Math.min(i, .05), n.current.children.forEach((e, t) => {
@@ -9461,7 +9626,7 @@ function Ma({ reducedMotion: e }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/irrigation/pop-up-sprinkler.tsx
-function Na({ visualState: e, reducedMotion: n }) {
+function za({ visualState: e, reducedMotion: n }) {
 	let i = e === "connected-active", a = (0, I.useRef)(null), o = (0, I.useRef)([
 		1,
 		i ? 1 : .08,
@@ -9554,7 +9719,7 @@ function Na({ visualState: e, reducedMotion: n }) {
 						.1,
 						0
 					],
-					children: /* @__PURE__ */ (0, H.jsx)(Ma, { reducedMotion: n ?? !1 })
+					children: /* @__PURE__ */ (0, H.jsx)(Ra, { reducedMotion: n ?? !1 })
 				})
 			]
 		})]
@@ -9562,7 +9727,7 @@ function Na({ visualState: e, reducedMotion: n }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/irrigation/rotating-sprinkler.tsx
-function Pa({ visualState: e, reducedMotion: n }) {
+function Ba({ visualState: e, reducedMotion: n }) {
 	let r = (0, I.useRef)(null), i = e === "connected-active";
 	return t(({ invalidate: e }, t) => {
 		!i || n || !r.current || (r.current.rotation.y += Math.min(t, .05) * 1.5, e());
@@ -9643,14 +9808,14 @@ function Pa({ visualState: e, reducedMotion: n }) {
 							12
 						] }), /* @__PURE__ */ (0, H.jsx)(l, { color: "#334f3d" })]
 					})]
-				}, e)), i && /* @__PURE__ */ (0, H.jsx)(Ma, { reducedMotion: n ?? !1 })]
+				}, e)), i && /* @__PURE__ */ (0, H.jsx)(Ra, { reducedMotion: n ?? !1 })]
 			})
 		]
 	});
 }
 //#endregion
 //#region packages/catalog/src/device/presets/irrigation/smart-hose-timer.tsx
-function Fa({ visualState: e }) {
+function Va({ visualState: e }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "catalog-smart-hose-timer",
 		children: [
@@ -9726,7 +9891,7 @@ function Fa({ visualState: e }) {
 }
 //#endregion
 //#region packages/catalog/src/device/presets/irrigation/soil-moisture-sensor.tsx
-function Ia({ visualState: e }) {
+function Ha({ visualState: e }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "catalog-soil-moisture-sensor",
 		children: [
@@ -9783,16 +9948,57 @@ function Ia({ visualState: e }) {
 	});
 }
 //#endregion
-//#region packages/catalog/src/device/definitions/wall-television.ts
-var La = {
+//#region packages/catalog/src/device/definitions/rattan-bell-pendant.ts
+var Ua = F({
+	component: ti,
+	label: "Rattan bell pendant",
+	category: "Lighting",
+	defaultRoomType: "dining-room",
+	defaultSize: Qr,
+	bounds: {
+		min: [
+			-.25,
+			0,
+			-.25
+		],
+		max: [
+			.25,
+			1.2,
+			.25
+		]
+	},
+	resizePolicy: { kind: "uniform" },
+	preferredPlacement: "ceiling",
+	supportedDomains: ["light"],
+	mountKind: "surface",
+	outlineContact: !0,
+	sceneLight: {
+		position: [
+			0,
+			.355,
+			0
+		],
+		color: "#ffe1a3",
+		maxIntensity: 4,
+		distance: 4.5
+	},
+	interaction: {
+		target: "device-dashboard",
+		tapTolerancePixels: 10
+	},
+	complexity: {
+		visibleMeshes: 10,
+		triangles: 4e4
+	}
+}), Wa = {
 	target: "device-dashboard",
 	tapTolerancePixels: 10
-}, Ra = F({
-	component: Ri,
+}, Ga = F({
+	component: Wi,
 	label: "Compact wall television",
 	category: "Media",
 	defaultRoomType: "living-room",
-	defaultSize: Li,
+	defaultSize: Ui,
 	bounds: {
 		min: [
 			-.79,
@@ -9813,17 +10019,17 @@ var La = {
 	supportedDomains: ["media_player"],
 	mountKind: "wall",
 	outlineContact: !0,
-	interaction: La,
+	interaction: Wa,
 	complexity: {
 		visibleMeshes: 7,
 		triangles: 160
 	}
-}), za = F({
+}), Ka = F({
 	defaultRoomType: "living-room",
-	component: Ii,
+	component: Hi,
 	label: "Wall television · 110 inch",
 	category: "Media",
-	defaultSize: Fi,
+	defaultSize: Vi,
 	resizePolicy: { kind: "fixed" },
 	preferredPlacement: "wall",
 	supportedDomains: ["media_player"],
@@ -9841,7 +10047,7 @@ var La = {
 		]
 	},
 	outlineContact: !0,
-	interaction: La,
+	interaction: Wa,
 	complexity: {
 		visibleMeshes: 7,
 		triangles: 160
@@ -9849,7 +10055,7 @@ var La = {
 }), Z = {
 	target: "device-dashboard",
 	tapTolerancePixels: 10
-}, Ba = De({
+}, qa = De({
 	"indoor-ac": F({
 		defaultRoomType: "bedroom",
 		component: qn,
@@ -10080,7 +10286,7 @@ var La = {
 	}),
 	speaker: F({
 		defaultRoomType: "living-room",
-		component: Oi,
+		component: Pi,
 		label: "Speaker",
 		category: "Media",
 		defaultSize: [
@@ -10113,7 +10319,7 @@ var La = {
 	}),
 	television: F({
 		defaultRoomType: "living-room",
-		component: Pi,
+		component: Bi,
 		label: "Television",
 		category: "Media",
 		defaultSize: [
@@ -10154,11 +10360,11 @@ var La = {
 			triangles: 4260
 		}
 	}),
-	"compact-wall-television": Ra,
-	"wall-television": za,
+	"compact-wall-television": Ga,
+	"wall-television": Ka,
 	"camera-screen": F({
 		defaultRoomType: "entryway",
-		component: hi,
+		component: xi,
 		label: "Camera screen",
 		category: "Media",
 		defaultSize: [
@@ -10198,10 +10404,10 @@ var La = {
 	}),
 	"connected-frame-oak": F({
 		defaultRoomType: "living-room",
-		component: Ei,
+		component: Mi,
 		label: "Connected frame · Oak",
 		category: "Media",
-		defaultSize: gi,
+		defaultSize: Si,
 		resizePolicy: { kind: "uniform" },
 		preferredPlacement: "wall",
 		supportedDomains: ["camera"],
@@ -10234,10 +10440,10 @@ var La = {
 	}),
 	"connected-frame-black": F({
 		defaultRoomType: "living-room",
-		component: Di,
+		component: Ni,
 		label: "Connected frame · Black",
 		category: "Media",
-		defaultSize: gi,
+		defaultSize: Si,
 		resizePolicy: { kind: "uniform" },
 		preferredPlacement: "wall",
 		supportedDomains: ["camera"],
@@ -10311,6 +10517,7 @@ var La = {
 			triangles: 420
 		}
 	}),
+	"rattan-bell-pendant": Ua,
 	"terracotta-pendant": F({
 		defaultRoomType: "dining-room",
 		component: Tr,
@@ -10650,7 +10857,7 @@ var La = {
 	}),
 	"opening-contact": F({
 		defaultRoomType: "entryway",
-		component: qi,
+		component: $i,
 		label: "Opening contact",
 		category: "Sensors",
 		defaultSize: [
@@ -10689,7 +10896,7 @@ var La = {
 	}),
 	thermometer: F({
 		defaultRoomType: "bedroom",
-		component: Yi,
+		component: ta,
 		label: "Thermometer",
 		category: "Sensors",
 		defaultSize: [
@@ -10723,7 +10930,7 @@ var La = {
 	}),
 	"motion-sensor": F({
 		defaultRoomType: "hallway",
-		component: Ki,
+		component: Qi,
 		label: "Motion sensor",
 		category: "Sensors",
 		defaultSize: [
@@ -10798,7 +11005,7 @@ var La = {
 	}),
 	"leak-sensor": F({
 		defaultRoomType: "bathroom",
-		component: Gi,
+		component: Zi,
 		label: "Leak sensor",
 		category: "Sensors",
 		defaultSize: [
@@ -11281,7 +11488,7 @@ var La = {
 	}),
 	"video-doorbell": F({
 		defaultRoomType: "entryway",
-		component: zi,
+		component: Gi,
 		label: "Video doorbell",
 		category: "Security",
 		defaultSize: [
@@ -11321,7 +11528,7 @@ var La = {
 	}),
 	"indoor-security-camera": F({
 		defaultRoomType: "living-room",
-		component: Bi,
+		component: Ki,
 		label: "Indoor security camera",
 		category: "Security",
 		defaultSize: [
@@ -11361,7 +11568,7 @@ var La = {
 	}),
 	"smoke-alarm": F({
 		defaultRoomType: "hallway",
-		component: Xi,
+		component: na,
 		label: "Smoke alarm",
 		category: "Safety",
 		defaultSize: [
@@ -11395,7 +11602,7 @@ var La = {
 	}),
 	"carbon-monoxide-alarm": F({
 		defaultRoomType: "hallway",
-		component: Zi,
+		component: ra,
 		label: "Carbon monoxide alarm",
 		category: "Safety",
 		defaultSize: [
@@ -11429,7 +11636,7 @@ var La = {
 	}),
 	"humidity-sensor": F({
 		defaultRoomType: "bathroom",
-		component: Qi,
+		component: ia,
 		label: "Humidity sensor",
 		category: "Sensors",
 		defaultSize: [
@@ -11463,7 +11670,7 @@ var La = {
 	}),
 	"air-quality-monitor": F({
 		defaultRoomType: "bedroom",
-		component: $i,
+		component: aa,
 		label: "Air quality monitor",
 		category: "Sensors",
 		defaultSize: [
@@ -11502,7 +11709,7 @@ var La = {
 	}),
 	"energy-monitor": F({
 		defaultRoomType: "laundry",
-		component: ea,
+		component: oa,
 		label: "Energy monitor",
 		category: "Energy",
 		defaultSize: [
@@ -11741,7 +11948,7 @@ var La = {
 	}),
 	"smart-lock": F({
 		defaultRoomType: "entryway",
-		component: Vi,
+		component: qi,
 		label: "Smart lock",
 		category: "Security",
 		defaultSize: [
@@ -11774,7 +11981,7 @@ var La = {
 	}),
 	"alarm-keypad": F({
 		defaultRoomType: "entryway",
-		component: Ui,
+		component: Yi,
 		label: "Alarm keypad",
 		category: "Security",
 		defaultSize: [
@@ -11806,7 +12013,7 @@ var La = {
 		}
 	}),
 	"rotating-sprinkler": F({
-		component: Pa,
+		component: Ba,
 		label: "Rotating sprinkler",
 		category: "Irrigation",
 		defaultRoomType: "outdoor",
@@ -11840,7 +12047,7 @@ var La = {
 		}
 	}),
 	"smart-hose-timer": F({
-		component: Fa,
+		component: Va,
 		label: "Smart hose timer",
 		category: "Irrigation",
 		defaultRoomType: "outdoor",
@@ -11874,7 +12081,7 @@ var La = {
 		}
 	}),
 	"soil-moisture-sensor": F({
-		component: Ia,
+		component: Ha,
 		label: "Soil moisture sensor",
 		category: "Irrigation",
 		defaultRoomType: "outdoor",
@@ -11910,7 +12117,7 @@ var La = {
 	}),
 	"pop-up-sprinkler": F({
 		defaultRoomType: "outdoor",
-		component: Na,
+		component: za,
 		label: "Pop-up sprinkler",
 		category: "Irrigation",
 		defaultSize: [
@@ -11977,7 +12184,7 @@ var La = {
 	}),
 	siren: F({
 		defaultRoomType: "hallway",
-		component: Wi,
+		component: Xi,
 		label: "Siren",
 		category: "Safety",
 		defaultSize: [
@@ -12231,7 +12438,7 @@ var La = {
 	}),
 	"weather-station": F({
 		defaultRoomType: "living-room",
-		component: ta,
+		component: sa,
 		label: "Weather station",
 		category: "Sensors",
 		defaultSize: [
@@ -12268,12 +12475,12 @@ var La = {
 		}
 	}),
 	"compact-car": F({
-		component: va,
+		component: wa,
 		label: "Compact European car",
 		category: "Vehicles",
 		defaultRoomType: "outdoor",
 		placementEnvironment: "indoor-outdoor",
-		defaultSize: pa,
+		defaultSize: ya,
 		resizePolicy: { kind: "fixed" },
 		preferredPlacement: "absolute",
 		mountKind: "surface",
@@ -12298,12 +12505,12 @@ var La = {
 		}
 	}),
 	"electric-sedan": F({
-		component: wa,
+		component: Aa,
 		label: "Tesla-like electric sedan",
 		category: "Vehicles",
 		defaultRoomType: "outdoor",
 		placementEnvironment: "indoor-outdoor",
-		defaultSize: ya,
+		defaultSize: Ta,
 		resizePolicy: { kind: "fixed" },
 		preferredPlacement: "absolute",
 		mountKind: "surface",
@@ -12328,12 +12535,12 @@ var La = {
 		}
 	}),
 	"pickup-truck": F({
-		component: ja,
+		component: La,
 		label: "Pickup truck",
 		category: "Vehicles",
 		defaultRoomType: "outdoor",
 		placementEnvironment: "indoor-outdoor",
-		defaultSize: Ea,
+		defaultSize: Ma,
 		resizePolicy: { kind: "fixed" },
 		preferredPlacement: "absolute",
 		mountKind: "surface",
@@ -12358,10 +12565,10 @@ var La = {
 		}
 	})
 });
-Object.freeze(Object.keys(Ba));
+Object.freeze(Object.keys(qa));
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bathroom/arched-mirror.tsx
-function Va() {
+function Ja() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "arched-wood-mirror",
 		children: [
@@ -12432,12 +12639,12 @@ function Va() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bathroom/dark-oak-vessel-vanity.tsx
-var Ha = [
+var Ya = [
 	.8,
 	1.23,
 	.52
 ];
-function Ua({ size: e = Ha }) {
+function Xa({ size: e = Ya }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "dark-oak-vessel-vanity",
 		scale: [
@@ -12650,7 +12857,7 @@ function Ua({ size: e = Ha }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/construction/four-leg-oak-table.tsx
-function Wa({ width: e, height: t, depth: n, topThickness: r, legWidth: i }) {
+function Za({ width: e, height: t, depth: n, topThickness: r, legWidth: i }) {
 	let a = t - r, o = e / 2 - i / 2 - .065, s = n / 2 - i / 2 - .065;
 	return /* @__PURE__ */ (0, H.jsxs)("group", { children: [
 		/* @__PURE__ */ (0, H.jsx)(G, {
@@ -12713,7 +12920,7 @@ function Wa({ width: e, height: t, depth: n, topThickness: r, legWidth: i }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bathroom/concealed-toilet-bowl.tsx
-var Ga = [
+var Qa = [
 	[0, .19],
 	[.075, .19],
 	[.13, .22],
@@ -12727,7 +12934,7 @@ var Ga = [
 	[.09, .285],
 	[.045, .265],
 	[0, .265]
-].map(([e, t]) => new pe(e, t)), Ka = [
+].map(([e, t]) => new pe(e, t)), $a = [
 	[.166, .426],
 	[.193, .426],
 	[.2, .433],
@@ -12738,7 +12945,7 @@ var Ga = [
 	[.152, .433],
 	[.166, .426]
 ].map(([e, t]) => new pe(e, t));
-function qa() {
+function eo() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		position: [
 			.438,
@@ -12755,13 +12962,13 @@ function qa() {
 				name: "hollow-ceramic-bowl",
 				castShadow: !0,
 				receiveShadow: !0,
-				children: [/* @__PURE__ */ (0, H.jsx)("latheGeometry", { args: [Ga, 32] }), /* @__PURE__ */ (0, H.jsx)(l, { color: "#e9e7e0" })]
+				children: [/* @__PURE__ */ (0, H.jsx)("latheGeometry", { args: [Qa, 32] }), /* @__PURE__ */ (0, H.jsx)(l, { color: "#e9e7e0" })]
 			}),
 			/* @__PURE__ */ (0, H.jsxs)("mesh", {
 				name: "open-toilet-seat",
 				castShadow: !0,
 				receiveShadow: !0,
-				children: [/* @__PURE__ */ (0, H.jsx)("latheGeometry", { args: [Ka, 32] }), /* @__PURE__ */ (0, H.jsx)(l, { color: "#faf9f4" })]
+				children: [/* @__PURE__ */ (0, H.jsx)("latheGeometry", { args: [$a, 32] }), /* @__PURE__ */ (0, H.jsx)(l, { color: "#faf9f4" })]
 			}),
 			[-.11, .11].map((e) => /* @__PURE__ */ (0, H.jsxs)("mesh", {
 				name: "seat-support",
@@ -12781,7 +12988,7 @@ function qa() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bathroom/concealed-cistern-toilet.tsx
-function Ja() {
+function to() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "concealed-cistern-toilet",
 		children: [
@@ -12858,13 +13065,13 @@ function Ja() {
 				radius: .025,
 				outline: !1
 			}),
-			/* @__PURE__ */ (0, H.jsx)(qa, {})
+			/* @__PURE__ */ (0, H.jsx)(eo, {})
 		]
 	});
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bathroom/towel-rail.tsx
-function Ya() {
+function no() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "towel-rail",
 		children: [
@@ -12929,7 +13136,7 @@ function Ya() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bathroom/vanity-accessories.tsx
-function Xa() {
+function ro() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "vanity-accessories",
 		children: [
@@ -12993,7 +13200,7 @@ function Xa() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bathroom/vessel-sink-and-faucet.tsx
-function Za() {
+function io() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "vessel-sink-and-faucet",
 		children: [
@@ -13088,7 +13295,7 @@ function Za() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bathroom/wicker-hamper.tsx
-function Qa() {
+function ao() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "wicker-hamper",
 		children: [
@@ -13168,7 +13375,7 @@ function Qa() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bathroom/wicker-towel-basket.tsx
-function $a() {
+function oo() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "wicker-towel-basket",
 		children: [
@@ -13243,12 +13450,12 @@ function $a() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bathroom/wooden-vanity.tsx
-var eo = [
+var so = [
 	-.72,
 	-.24,
 	.24,
 	.72
-], to = [
+], co = [
 	.2,
 	.25,
 	.3,
@@ -13259,7 +13466,7 @@ var eo = [
 	.55,
 	.6
 ];
-function no() {
+function lo() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "wooden-vanity",
 		children: [
@@ -13310,7 +13517,7 @@ function no() {
 					2.01
 				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: "#a87550" })]
 			}),
-			eo.flatMap((e) => to.map((t) => /* @__PURE__ */ (0, H.jsxs)("mesh", {
+			so.flatMap((e) => co.map((t) => /* @__PURE__ */ (0, H.jsxs)("mesh", {
 				position: [
 					-.26,
 					t,
@@ -13323,7 +13530,7 @@ function no() {
 					.38
 				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: Math.round(t * 100) % 10 == 0 ? "#704a35" : "#7f563d" })]
 			}, `${e}-${t}`))),
-			eo.map((e) => /* @__PURE__ */ (0, H.jsxs)("mesh", {
+			so.map((e) => /* @__PURE__ */ (0, H.jsxs)("mesh", {
 				position: [
 					-.278,
 					.44,
@@ -13367,12 +13574,12 @@ function no() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bathroom/freestanding-bathtub.tsx
-var ro = [
+var uo = [
 	1.7,
 	.6,
 	.78
 ];
-function io({ size: e = ro }) {
+function fo({ size: e = uo }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "freestanding-bathtub",
 		scale: [
@@ -13504,7 +13711,7 @@ function Q({ size: e, position: t, color: n, outline: r = "#77726b", rotation: i
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bathroom/compact-toilet.tsx
-function ao() {
+function po() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "toilettes-suite-parentale-custom",
 		userData: { walkCollider: !0 },
@@ -13606,8 +13813,8 @@ function ao() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bathroom/family-bathtub.tsx
-var oo = "#eeeae3", so = "#f8f5ef", co = "#918d86", lo = "#858d8b";
-function uo() {
+var mo = "#eeeae3", ho = "#f8f5ef", go = "#918d86", _o = "#858d8b";
+function vo() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "family-bathroom-bathtub",
 		userData: { walkCollider: !0 },
@@ -13626,9 +13833,9 @@ function uo() {
 						.53,
 						.065
 					] }),
-					/* @__PURE__ */ (0, H.jsx)(l, { color: oo }),
+					/* @__PURE__ */ (0, H.jsx)(l, { color: mo }),
 					/* @__PURE__ */ (0, H.jsx)(k, {
-						color: co,
+						color: go,
 						thickness: .004,
 						screenspace: !1
 					})
@@ -13646,7 +13853,7 @@ function uo() {
 					1.64,
 					.53,
 					.065
-				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: oo })]
+				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: mo })]
 			}),
 			[-.7875, .7875].map((e) => /* @__PURE__ */ (0, H.jsxs)("mesh", {
 				position: [
@@ -13662,9 +13869,9 @@ function uo() {
 						.53,
 						.65
 					] }),
-					/* @__PURE__ */ (0, H.jsx)(l, { color: oo }),
+					/* @__PURE__ */ (0, H.jsx)(l, { color: mo }),
 					/* @__PURE__ */ (0, H.jsx)(k, {
-						color: co,
+						color: go,
 						thickness: .004,
 						screenspace: !1
 					})
@@ -13681,7 +13888,7 @@ function uo() {
 					1.51,
 					.17,
 					.65
-				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: so })]
+				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: ho })]
 			}),
 			/* @__PURE__ */ (0, H.jsxs)("mesh", {
 				position: [
@@ -13713,9 +13920,9 @@ function uo() {
 						.04,
 						.06
 					] }),
-					/* @__PURE__ */ (0, H.jsx)(l, { color: so }),
+					/* @__PURE__ */ (0, H.jsx)(l, { color: ho }),
 					/* @__PURE__ */ (0, H.jsx)(k, {
-						color: co,
+						color: go,
 						thickness: .003,
 						screenspace: !1
 					})
@@ -13732,7 +13939,7 @@ function uo() {
 					.06,
 					.04,
 					.64
-				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: so })]
+				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: ho })]
 			}, e)),
 			/* @__PURE__ */ (0, H.jsxs)("mesh", {
 				position: [
@@ -13745,7 +13952,7 @@ function uo() {
 					.045,
 					.012,
 					18
-				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: lo })]
+				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: _o })]
 			}),
 			/* @__PURE__ */ (0, H.jsxs)("group", {
 				position: [
@@ -13772,7 +13979,7 @@ function uo() {
 								.025,
 								.15,
 								12
-							] }), /* @__PURE__ */ (0, H.jsx)(l, { color: lo })]
+							] }), /* @__PURE__ */ (0, H.jsx)(l, { color: _o })]
 						}), /* @__PURE__ */ (0, H.jsxs)("mesh", {
 							position: [
 								0,
@@ -13785,7 +13992,7 @@ function uo() {
 								.055,
 								.025,
 								14
-							] }), /* @__PURE__ */ (0, H.jsx)(l, { color: lo })]
+							] }), /* @__PURE__ */ (0, H.jsx)(l, { color: _o })]
 						})]
 					}, e)),
 					/* @__PURE__ */ (0, H.jsxs)("mesh", {
@@ -13800,7 +14007,7 @@ function uo() {
 							.032,
 							.21,
 							12
-						] }), /* @__PURE__ */ (0, H.jsx)(l, { color: lo })]
+						] }), /* @__PURE__ */ (0, H.jsx)(l, { color: _o })]
 					}),
 					/* @__PURE__ */ (0, H.jsxs)("mesh", {
 						position: [
@@ -13819,7 +14026,7 @@ function uo() {
 							.032,
 							.18,
 							12
-						] }), /* @__PURE__ */ (0, H.jsx)(l, { color: lo })]
+						] }), /* @__PURE__ */ (0, H.jsx)(l, { color: _o })]
 					})
 				]
 			})
@@ -13828,7 +14035,7 @@ function uo() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bathroom/wide-shower-tray.tsx
-function fo() {
+function yo() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "receveur-douche-suite-parentale-custom",
 		userData: { walkCollider: !0 },
@@ -13863,7 +14070,7 @@ function fo() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bathroom/frameless-shower-screen.tsx
-function po() {
+function bo() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "frameless-walk-in-shower-screen",
 		children: [
@@ -13931,7 +14138,7 @@ function po() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bathroom/shower-column.tsx
-function mo() {
+function xo() {
 	let e = "#4c4d4b", t = "#747875", n = "#262725";
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "wall-mounted-rain-shower-column",
@@ -14100,28 +14307,28 @@ function mo() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bathroom/shower-assembly.tsx
-var ho = [
+var So = [
 	2.018,
 	2.3,
 	.908
 ];
-function go({ size: e = ho }) {
+function Co({ size: e = So }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "shower-assembly",
 		scale: [
-			e[0] / ho[0],
-			e[1] / ho[1],
-			e[2] / ho[2]
+			e[0] / So[0],
+			e[1] / So[1],
+			e[2] / So[2]
 		],
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(fo, {}),
+			/* @__PURE__ */ (0, H.jsx)(yo, {}),
 			/* @__PURE__ */ (0, H.jsx)("group", {
 				position: [
 					0,
 					0,
 					.445
 				],
-				children: /* @__PURE__ */ (0, H.jsx)(po, {})
+				children: /* @__PURE__ */ (0, H.jsx)(bo, {})
 			}),
 			/* @__PURE__ */ (0, H.jsx)("group", {
 				position: [
@@ -14129,14 +14336,14 @@ function go({ size: e = ho }) {
 					0,
 					-.035
 				],
-				children: /* @__PURE__ */ (0, H.jsx)(mo, {})
+				children: /* @__PURE__ */ (0, H.jsx)(xo, {})
 			})
 		]
 	});
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bathroom/transparent-bath-screen.tsx
-function _o() {
+function wo() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "family-bathroom-transparent-bath-screen",
 		children: [/* @__PURE__ */ (0, H.jsxs)("mesh", {
@@ -14173,12 +14380,12 @@ function _o() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bathroom/toilet-paper-holder.tsx
-var vo = [
+var To = [
 	.18,
 	.12,
 	.14
 ];
-function yo({ size: e = vo } = {}) {
+function Eo({ size: e = To } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "toilet-paper-holder",
 		scale: [
@@ -14280,12 +14487,12 @@ function yo({ size: e = vo } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bathroom/medicine-cabinet.tsx
-var bo = [
+var Do = [
 	.5,
 	.65,
 	.16
 ];
-function xo({ size: e = bo } = {}) {
+function Oo({ size: e = Do } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "medicine-cabinet",
 		scale: [
@@ -14420,7 +14627,7 @@ function xo({ size: e = bo } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/french-door-curtains.tsx
-function So({ color: e } = {}) {
+function ko({ color: e } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "rideaux-porte-fenetre-chambre-enfant",
 		children: [/* @__PURE__ */ (0, H.jsxs)("mesh", {
@@ -14492,7 +14699,7 @@ function So({ color: e } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/rounded-bedroom-furniture-block.tsx
-function Co({ size: e, position: t, color: n, rotation: r = [
+function Ao({ size: e, position: t, color: n, rotation: r = [
 	0,
 	0,
 	0
@@ -14515,7 +14722,7 @@ function Co({ size: e, position: t, color: n, rotation: r = [
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/narrow-toy-shelf.tsx
-function wo() {
+function jo() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		position: [
 			-.1,
@@ -14582,7 +14789,7 @@ function wo() {
 		]
 	});
 }
-function To() {
+function Mo() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		position: [
 			.02,
@@ -14648,7 +14855,7 @@ function To() {
 		]
 	});
 }
-function Eo() {
+function No() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		position: [
 			-.02,
@@ -14691,12 +14898,12 @@ function Eo() {
 		})]
 	});
 }
-function Do() {
+function Po() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "etagere-jouets-etroite-photo",
 		userData: { walkCollider: !0 },
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(Co, {
+			/* @__PURE__ */ (0, H.jsx)(Ao, {
 				size: [
 					.43,
 					.94,
@@ -14712,7 +14919,7 @@ function Do() {
 				outlineColor: "#73736d",
 				outlineThickness: .004
 			}),
-			[-.23, .23].map((e) => /* @__PURE__ */ (0, H.jsx)(Co, {
+			[-.23, .23].map((e) => /* @__PURE__ */ (0, H.jsx)(Ao, {
 				size: [
 					.045,
 					1.02,
@@ -14732,7 +14939,7 @@ function Do() {
 				.34,
 				.67,
 				1
-			].map((e) => /* @__PURE__ */ (0, H.jsx)(Co, {
+			].map((e) => /* @__PURE__ */ (0, H.jsx)(Ao, {
 				size: [
 					.415,
 					.05,
@@ -14747,16 +14954,16 @@ function Do() {
 				radius: .015,
 				outlineColor: "#73736d"
 			}, e)),
-			/* @__PURE__ */ (0, H.jsx)(Eo, {}),
-			/* @__PURE__ */ (0, H.jsx)(To, {}),
-			/* @__PURE__ */ (0, H.jsx)(wo, {})
+			/* @__PURE__ */ (0, H.jsx)(No, {}),
+			/* @__PURE__ */ (0, H.jsx)(Mo, {}),
+			/* @__PURE__ */ (0, H.jsx)(jo, {})
 		]
 	});
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/toddler-table-set.tsx
-var Oo = "#c8945b", ko = "#dfb77f", Ao = "#67482f";
-function jo({ position: e, rotationY: t }) {
+var Fo = "#c8945b", Io = "#dfb77f", Lo = "#67482f";
+function Ro({ position: e, rotationY: t }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		position: e,
 		rotation: [
@@ -14782,7 +14989,7 @@ function jo({ position: e, rotationY: t }) {
 					.29,
 					5,
 					10
-				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: Oo })]
+				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: Fo })]
 			}, `${e}-${t}`))),
 			/* @__PURE__ */ (0, H.jsxs)("mesh", {
 				position: [
@@ -14798,9 +15005,9 @@ function jo({ position: e, rotationY: t }) {
 						.055,
 						28
 					] }),
-					/* @__PURE__ */ (0, H.jsx)(l, { color: ko }),
+					/* @__PURE__ */ (0, H.jsx)(l, { color: Io }),
 					/* @__PURE__ */ (0, H.jsx)(k, {
-						color: Ao,
+						color: Lo,
 						thickness: .005,
 						screenspace: !1
 					})
@@ -14832,7 +15039,7 @@ function jo({ position: e, rotationY: t }) {
 					.25,
 					5,
 					10
-				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: Oo })]
+				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: Fo })]
 			}, e)),
 			/* @__PURE__ */ (0, H.jsxs)("mesh", {
 				position: [
@@ -14849,9 +15056,9 @@ function jo({ position: e, rotationY: t }) {
 						28,
 						Math.PI
 					] }),
-					/* @__PURE__ */ (0, H.jsx)(l, { color: ko }),
+					/* @__PURE__ */ (0, H.jsx)(l, { color: Io }),
 					/* @__PURE__ */ (0, H.jsx)(k, {
-						color: Ao,
+						color: Lo,
 						thickness: .004,
 						screenspace: !1
 					})
@@ -14873,12 +15080,12 @@ function jo({ position: e, rotationY: t }) {
 					.15,
 					4,
 					8
-				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: ko })]
+				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: Io })]
 			}, e))
 		]
 	});
 }
-function Mo() {
+function zo() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "table-et-chaises-enfant-photo",
 		userData: { walkCollider: !0 },
@@ -14898,9 +15105,9 @@ function Mo() {
 						.065,
 						32
 					] }),
-					/* @__PURE__ */ (0, H.jsx)(l, { color: ko }),
+					/* @__PURE__ */ (0, H.jsx)(l, { color: Io }),
 					/* @__PURE__ */ (0, H.jsx)(k, {
-						color: Ao,
+						color: Lo,
 						thickness: .006,
 						screenspace: !1
 					})
@@ -14937,7 +15144,7 @@ function Mo() {
 					.39,
 					5,
 					10
-				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: Oo })]
+				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: Fo })]
 			}, `${e}-${t}`))),
 			/* @__PURE__ */ (0, H.jsxs)("mesh", {
 				position: [
@@ -14961,7 +15168,7 @@ function Mo() {
 					})
 				]
 			}),
-			/* @__PURE__ */ (0, H.jsx)(jo, {
+			/* @__PURE__ */ (0, H.jsx)(Ro, {
 				position: [
 					-.52,
 					0,
@@ -14969,7 +15176,7 @@ function Mo() {
 				],
 				rotationY: Math.PI / 2
 			}),
-			/* @__PURE__ */ (0, H.jsx)(jo, {
+			/* @__PURE__ */ (0, H.jsx)(Ro, {
 				position: [
 					.05,
 					0,
@@ -14982,7 +15189,7 @@ function Mo() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/woven-floor-basket.tsx
-var No = "#b78958", Po = "#d2a66f", Fo = "#6d4c31", Io = [
+var Bo = "#b78958", Vo = "#d2a66f", Ho = "#6d4c31", Uo = [
 	[0, 0],
 	[.34, 0],
 	[.29, .48],
@@ -14995,7 +15202,7 @@ var No = "#b78958", Po = "#d2a66f", Fo = "#6d4c31", Io = [
 	[.313, .03],
 	[0, .03]
 ].map(([e, t]) => new pe(e, t));
-function Lo() {
+function Wo() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "panier-de-sol-tresse-photo",
 		children: [
@@ -15004,10 +15211,10 @@ function Lo() {
 				castShadow: !0,
 				receiveShadow: !0,
 				children: [
-					/* @__PURE__ */ (0, H.jsx)("latheGeometry", { args: [Io, 32] }),
-					/* @__PURE__ */ (0, H.jsx)(l, { color: No }),
+					/* @__PURE__ */ (0, H.jsx)("latheGeometry", { args: [Uo, 32] }),
+					/* @__PURE__ */ (0, H.jsx)(l, { color: Bo }),
 					/* @__PURE__ */ (0, H.jsx)(k, {
-						color: Fo,
+						color: Ho,
 						thickness: .006,
 						screenspace: !1
 					})
@@ -15031,7 +15238,7 @@ function Lo() {
 						.008,
 						.36,
 						6
-					] }), /* @__PURE__ */ (0, H.jsx)(l, { color: t % 2 == 0 ? Po : "#c4935f" })]
+					] }), /* @__PURE__ */ (0, H.jsx)(l, { color: t % 2 == 0 ? Vo : "#c4935f" })]
 				}, n);
 			}),
 			[
@@ -15056,19 +15263,19 @@ function Lo() {
 					.009,
 					6,
 					32
-				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: t % 2 == 0 ? Po : Fo })]
+				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: t % 2 == 0 ? Vo : Ho })]
 			}, e))
 		]
 	});
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/wooden-crib.tsx
-var Ro = [
+var Go = [
 	.76,
 	.95,
 	1.46
 ];
-function zo({ size: e = Ro }) {
+function Ko({ size: e = Go }) {
 	let t = [
 		-.56,
 		-.37,
@@ -15181,10 +15388,10 @@ function zo({ size: e = Ro }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/cabin-bed/cabin-bed-finish.ts
-var Bo = "#c9985f", Vo = "#dfb37a", Ho = "#68482f", Uo = "#dda5a4", Wo = "#edc9c4";
+var qo = "#c9985f", Jo = "#dfb37a", Yo = "#68482f", Xo = "#dda5a4", Zo = "#edc9c4";
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/cabin-bed/timber.tsx
-function Go({ length: e, position: t, rotation: n = [
+function Qo({ length: e, position: t, rotation: n = [
 	0,
 	0,
 	0
@@ -15200,9 +15407,9 @@ function Go({ length: e, position: t, rotation: n = [
 				6,
 				12
 			] }),
-			/* @__PURE__ */ (0, H.jsx)(l, { color: Vo }),
+			/* @__PURE__ */ (0, H.jsx)(l, { color: Jo }),
 			/* @__PURE__ */ (0, H.jsx)(k, {
-				color: Ho,
+				color: Yo,
 				thickness: .005,
 				screenspace: !1
 			})
@@ -15211,7 +15418,7 @@ function Go({ length: e, position: t, rotation: n = [
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/cabin-bed/cushion.tsx
-function Ko({ position: e, color: t, scale: n, rotationY: r = 0 }) {
+function $o({ position: e, color: t, scale: n, rotationY: r = 0 }) {
 	return /* @__PURE__ */ (0, H.jsxs)("mesh", {
 		position: e,
 		rotation: [
@@ -15238,7 +15445,7 @@ function Ko({ position: e, color: t, scale: n, rotationY: r = 0 }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/cabin-bed/plush-bear.tsx
-function qo() {
+function es() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		position: [
 			-.23,
@@ -15350,7 +15557,7 @@ function qo() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/cabin-bed/canopy-roof.tsx
-function Jo({ side: e, roofAngle: t, roofBeamLength: n }) {
+function ts({ side: e, roofAngle: t, roofBeamLength: n }) {
 	return /* @__PURE__ */ (0, H.jsx)("group", { children: Array.from({ length: 9 }, (r, i) => {
 		let a = -1.02 + i * .255, o = i % 2 == 0 ? -.012 : 0;
 		return /* @__PURE__ */ (0, H.jsxs)("mesh", {
@@ -15373,7 +15580,7 @@ function Jo({ side: e, roofAngle: t, roofBeamLength: n }) {
 				1,
 				2
 			] }), /* @__PURE__ */ (0, H.jsx)(l, {
-				color: i % 2 == 0 ? Wo : Uo,
+				color: i % 2 == 0 ? Zo : Xo,
 				side: 2
 			})]
 		}, a);
@@ -15381,14 +15588,14 @@ function Jo({ side: e, roofAngle: t, roofBeamLength: n }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/cabin-bed/guard-rail.tsx
-function Yo({ z: e }) {
+function ns({ z: e }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		position: [
 			-.565,
 			0,
 			e
 		],
-		children: [[.25, .62].map((e) => /* @__PURE__ */ (0, H.jsx)(Go, {
+		children: [[.25, .62].map((e) => /* @__PURE__ */ (0, H.jsx)(Qo, {
 			length: .64,
 			radius: .024,
 			position: [
@@ -15407,7 +15614,7 @@ function Yo({ z: e }) {
 			0,
 			.11,
 			.22
-		].map((e) => /* @__PURE__ */ (0, H.jsx)(Go, {
+		].map((e) => /* @__PURE__ */ (0, H.jsx)(Qo, {
 			length: .35,
 			radius: .018,
 			position: [
@@ -15420,7 +15627,7 @@ function Yo({ z: e }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/cabin-bed/cabin-bed.tsx
-function Xo() {
+function rs() {
 	let e = .55, t = 1.18, n = 1.12, r = Math.atan2(.5399999999999998, e), i = Math.hypot(.5399999999999998, e);
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "lit-cabane-bedroom-three-custom",
@@ -15443,10 +15650,10 @@ function Xo() {
 						1,
 						6
 					] }),
-					/* @__PURE__ */ (0, H.jsx)(l, { color: Bo }),
+					/* @__PURE__ */ (0, H.jsx)(l, { color: qo }),
 					/* @__PURE__ */ (0, H.jsx)(k, {
 						thickness: .007,
-						color: Ho,
+						color: Yo,
 						screenspace: !1
 					})
 				]
@@ -15491,7 +15698,7 @@ function Xo() {
 					8
 				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: "#f0d0ca" })]
 			}),
-			[-.55, e].flatMap((e) => [-1.18, t].map((t) => /* @__PURE__ */ (0, H.jsx)(Go, {
+			[-.55, e].flatMap((e) => [-1.18, t].map((t) => /* @__PURE__ */ (0, H.jsx)(Qo, {
 				length: n,
 				position: [
 					e,
@@ -15499,7 +15706,7 @@ function Xo() {
 					t
 				]
 			}, `${e}-${t}`))),
-			[-.55, e].map((e) => /* @__PURE__ */ (0, H.jsx)(Go, {
+			[-.55, e].map((e) => /* @__PURE__ */ (0, H.jsx)(Qo, {
 				length: t * 2,
 				radius: .035,
 				position: [
@@ -15513,7 +15720,7 @@ function Xo() {
 					0
 				]
 			}, `base-${e}`)),
-			[-.55, e].map((e) => /* @__PURE__ */ (0, H.jsx)(Go, {
+			[-.55, e].map((e) => /* @__PURE__ */ (0, H.jsx)(Qo, {
 				length: t * 2,
 				position: [
 					e,
@@ -15526,7 +15733,7 @@ function Xo() {
 					0
 				]
 			}, `eave-${e}`)),
-			/* @__PURE__ */ (0, H.jsx)(Go, {
+			/* @__PURE__ */ (0, H.jsx)(Qo, {
 				length: t * 2,
 				position: [
 					0,
@@ -15539,7 +15746,7 @@ function Xo() {
 					0
 				]
 			}),
-			[-1.18, t].flatMap((t) => [-1, 1].map((n) => /* @__PURE__ */ (0, H.jsx)(Go, {
+			[-1.18, t].flatMap((t) => [-1, 1].map((n) => /* @__PURE__ */ (0, H.jsx)(Qo, {
 				length: i,
 				position: [
 					n * e * .5,
@@ -15552,12 +15759,12 @@ function Xo() {
 					n * (Math.PI / 2 - r)
 				]
 			}, `${t}-${n}`))),
-			/* @__PURE__ */ (0, H.jsx)(Jo, {
+			/* @__PURE__ */ (0, H.jsx)(ts, {
 				side: -1,
 				roofAngle: r,
 				roofBeamLength: i
 			}),
-			/* @__PURE__ */ (0, H.jsx)(Jo, {
+			/* @__PURE__ */ (0, H.jsx)(ts, {
 				side: 1,
 				roofAngle: r,
 				roofBeamLength: i
@@ -15577,7 +15784,7 @@ function Xo() {
 					5,
 					12
 				] }), /* @__PURE__ */ (0, H.jsx)(l, {
-					color: Wo,
+					color: Zo,
 					side: 2
 				})]
 			}),
@@ -15603,7 +15810,7 @@ function Xo() {
 						5
 					] }),
 					/* @__PURE__ */ (0, H.jsx)(l, {
-						color: Wo,
+						color: Zo,
 						side: 2
 					}),
 					/* @__PURE__ */ (0, H.jsx)(k, {
@@ -15613,9 +15820,9 @@ function Xo() {
 					})
 				]
 			}, e)),
-			/* @__PURE__ */ (0, H.jsx)(Yo, { z: -.82 }),
-			/* @__PURE__ */ (0, H.jsx)(Yo, { z: .82 }),
-			/* @__PURE__ */ (0, H.jsx)(Ko, {
+			/* @__PURE__ */ (0, H.jsx)(ns, { z: -.82 }),
+			/* @__PURE__ */ (0, H.jsx)(ns, { z: .82 }),
+			/* @__PURE__ */ (0, H.jsx)($o, {
 				position: [
 					-.28,
 					.5,
@@ -15629,7 +15836,7 @@ function Xo() {
 				],
 				rotationY: -.08
 			}),
-			/* @__PURE__ */ (0, H.jsx)(Ko, {
+			/* @__PURE__ */ (0, H.jsx)($o, {
 				position: [
 					.05,
 					.49,
@@ -15643,7 +15850,7 @@ function Xo() {
 				],
 				rotationY: .05
 			}),
-			/* @__PURE__ */ (0, H.jsx)(Ko, {
+			/* @__PURE__ */ (0, H.jsx)($o, {
 				position: [
 					.31,
 					.5,
@@ -15657,16 +15864,16 @@ function Xo() {
 				],
 				rotationY: .1
 			}),
-			/* @__PURE__ */ (0, H.jsx)(qo, {})
+			/* @__PURE__ */ (0, H.jsx)(es, {})
 		]
 	});
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/changing-table/changing-table-finish.ts
-var Zo = "#eeeae5", Qo = "#f5f1eb", $o = "#b59573", es = "#b9956b", ts = "#d3b58d", ns = "#776960";
+var is = "#eeeae5", as = "#f5f1eb", os = "#b59573", ss = "#b9956b", cs = "#d3b58d", ls = "#776960";
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/changing-table/tapered-changing-leg.tsx
-function rs({ x: e, z: t }) {
+function us({ x: e, z: t }) {
 	return /* @__PURE__ */ (0, H.jsxs)("mesh", {
 		position: [
 			e,
@@ -15686,7 +15893,7 @@ function rs({ x: e, z: t }) {
 				.2,
 				10
 			] }),
-			/* @__PURE__ */ (0, H.jsx)(l, { color: $o }),
+			/* @__PURE__ */ (0, H.jsx)(l, { color: os }),
 			/* @__PURE__ */ (0, H.jsx)(k, {
 				color: "#6e513b",
 				thickness: .004,
@@ -15697,7 +15904,7 @@ function rs({ x: e, z: t }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/changing-table/wicker-front.tsx
-function is() {
+function ds() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		position: [
 			0,
@@ -15713,7 +15920,7 @@ function is() {
 						.3,
 						.028
 					] }),
-					/* @__PURE__ */ (0, H.jsx)(l, { color: es }),
+					/* @__PURE__ */ (0, H.jsx)(l, { color: ss }),
 					/* @__PURE__ */ (0, H.jsx)(k, {
 						color: "#75563c",
 						thickness: .004,
@@ -15740,7 +15947,7 @@ function is() {
 					.005,
 					.265,
 					6
-				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: ts })]
+				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: cs })]
 			}, `wicker-v-${e}`)),
 			[
 				-.105,
@@ -15782,7 +15989,7 @@ function is() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/changing-table/changing-table.tsx
-function as() {
+function fs() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "meuble-a-langer-bedroom-two-custom",
 		userData: { walkCollider: !0 },
@@ -15792,7 +15999,7 @@ function as() {
 				[.31, -.15],
 				[-.31, .15],
 				[.31, .15]
-			].map(([e, t]) => /* @__PURE__ */ (0, H.jsx)(rs, {
+			].map(([e, t]) => /* @__PURE__ */ (0, H.jsx)(us, {
 				x: e,
 				z: t
 			}, `${e}-${t}`)),
@@ -15810,9 +16017,9 @@ function as() {
 						.57,
 						.42
 					] }),
-					/* @__PURE__ */ (0, H.jsx)(l, { color: Zo }),
+					/* @__PURE__ */ (0, H.jsx)(l, { color: is }),
 					/* @__PURE__ */ (0, H.jsx)(k, {
-						color: ns,
+						color: ls,
 						thickness: .006,
 						screenspace: !1
 					})
@@ -15842,7 +16049,7 @@ function as() {
 					.012
 				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: "#b4a99d" })]
 			}),
-			/* @__PURE__ */ (0, H.jsx)(is, {}),
+			/* @__PURE__ */ (0, H.jsx)(ds, {}),
 			/* @__PURE__ */ (0, H.jsxs)("mesh", {
 				position: [
 					0,
@@ -15857,9 +16064,9 @@ function as() {
 						.075,
 						.47
 					] }),
-					/* @__PURE__ */ (0, H.jsx)(l, { color: Qo }),
+					/* @__PURE__ */ (0, H.jsx)(l, { color: as }),
 					/* @__PURE__ */ (0, H.jsx)(k, {
-						color: ns,
+						color: ls,
 						thickness: .006,
 						screenspace: !1
 					})
@@ -15929,10 +16136,10 @@ function as() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/cube-storage/cube-storage-finish.ts
-var os = "#efede8", ss = "#77716a", cs = "#b98f62", ls = "#d4b181";
+var ps = "#efede8", ms = "#77716a", hs = "#b98f62", gs = "#d4b181";
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/cube-storage/woven-cube-bin.tsx
-function us({ x: e, y: t }) {
+function _s({ x: e, y: t }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		position: [
 			e,
@@ -15948,7 +16155,7 @@ function us({ x: e, y: t }) {
 						.27,
 						.285
 					] }),
-					/* @__PURE__ */ (0, H.jsx)(l, { color: cs }),
+					/* @__PURE__ */ (0, H.jsx)(l, { color: hs }),
 					/* @__PURE__ */ (0, H.jsx)(k, {
 						color: "#745438",
 						thickness: .004,
@@ -15972,7 +16179,7 @@ function us({ x: e, y: t }) {
 					.009,
 					.235,
 					.01
-				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: ls })]
+				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: gs })]
 			}, e)),
 			[
 				-.09,
@@ -16008,7 +16215,7 @@ function us({ x: e, y: t }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/cube-storage/fox-fabric-bin.tsx
-function ds() {
+function vs() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		position: [
 			-.195,
@@ -16095,7 +16302,7 @@ function ds() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/cube-storage/storage-top-giraffe.tsx
-function fs() {
+function ys() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "peluche-girafe-rangement-bedroom-two",
 		position: [
@@ -16157,7 +16364,7 @@ function fs() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/cube-storage/cube-storage.tsx
-function ps() {
+function bs() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "kallax-bedroom-two-custom",
 		userData: { walkCollider: !0 },
@@ -16176,9 +16383,9 @@ function ps() {
 						.78,
 						.34
 					] }),
-					/* @__PURE__ */ (0, H.jsx)(l, { color: os }),
+					/* @__PURE__ */ (0, H.jsx)(l, { color: ps }),
 					/* @__PURE__ */ (0, H.jsx)(k, {
-						color: ss,
+						color: ms,
 						thickness: .005,
 						screenspace: !1
 					})
@@ -16202,9 +16409,9 @@ function ps() {
 						.07,
 						.34
 					] }),
-					/* @__PURE__ */ (0, H.jsx)(l, { color: os }),
+					/* @__PURE__ */ (0, H.jsx)(l, { color: ps }),
 					/* @__PURE__ */ (0, H.jsx)(k, {
-						color: ss,
+						color: ms,
 						thickness: .005,
 						screenspace: !1
 					})
@@ -16222,28 +16429,28 @@ function ps() {
 					.07,
 					.71,
 					.34
-				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: os })]
+				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: ps })]
 			}),
-			/* @__PURE__ */ (0, H.jsx)(us, {
+			/* @__PURE__ */ (0, H.jsx)(_s, {
 				x: -.195,
 				y: .215
 			}),
-			/* @__PURE__ */ (0, H.jsx)(us, {
+			/* @__PURE__ */ (0, H.jsx)(_s, {
 				x: .195,
 				y: .215
 			}),
-			/* @__PURE__ */ (0, H.jsx)(us, {
+			/* @__PURE__ */ (0, H.jsx)(_s, {
 				x: .195,
 				y: .565
 			}),
-			/* @__PURE__ */ (0, H.jsx)(ds, {}),
-			/* @__PURE__ */ (0, H.jsx)(fs, {})
+			/* @__PURE__ */ (0, H.jsx)(vs, {}),
+			/* @__PURE__ */ (0, H.jsx)(ys, {})
 		]
 	});
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/round-wall-display.tsx
-function ms() {
+function xs() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "etagere-ronde-bedroom-two-photo",
 		children: [
@@ -16307,7 +16514,7 @@ function ms() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/two-tier-wall-shelves.tsx
-function hs() {
+function Ss() {
 	return /* @__PURE__ */ (0, H.jsx)("group", {
 		name: "etagere-murale-bedroom-two-photo",
 		children: [{
@@ -16363,7 +16570,7 @@ function hs() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/shelf-plush.tsx
-function gs({ position: e, color: t }) {
+function Cs({ position: e, color: t }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		position: e,
 		children: [
@@ -16428,7 +16635,7 @@ function gs({ position: e, color: t }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/three-tier-wall-shelves.tsx
-function _s() {
+function ws() {
 	return /* @__PURE__ */ (0, H.jsx)("group", {
 		name: "etageres-murales-bedroom-three-photo",
 		children: [
@@ -16477,7 +16684,7 @@ function _s() {
 						8
 					] }), /* @__PURE__ */ (0, H.jsx)(l, { color: "#d6a16f" })]
 				}),
-				[-.13, .13].slice(0, t === 2 ? 2 : 1).map((e, n) => /* @__PURE__ */ (0, H.jsx)(gs, {
+				[-.13, .13].slice(0, t === 2 ? 2 : 1).map((e, n) => /* @__PURE__ */ (0, H.jsx)(Cs, {
 					position: [
 						.08,
 						.045,
@@ -16495,7 +16702,7 @@ function _s() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/decor/pampas-vase.tsx
-function vs() {
+function Ts() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "vase-pampa-salon",
 		children: [/* @__PURE__ */ (0, H.jsxs)("mesh", {
@@ -16572,7 +16779,7 @@ function vs() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/decor/potted-plant.tsx
-function ys({ potColor: e = "#c6785e", potOutlineColor: t = "#75493c" }) {
+function Es({ potColor: e = "#c6785e", potOutlineColor: t = "#75493c" }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "potted-plant",
 		children: [/* @__PURE__ */ (0, H.jsxs)("mesh", {
@@ -16630,12 +16837,12 @@ function ys({ potColor: e = "#c6785e", potOutlineColor: t = "#75493c" }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/decor/framed-wall-art.tsx
-var bs = [
+var Ds = [
 	.8,
 	.6,
 	.04
 ];
-function xs({ size: e = bs }) {
+function Os({ size: e = Ds }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "framed-wall-art",
 		scale: [
@@ -16717,7 +16924,7 @@ function xs({ size: e = bs }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/decor/organic-wall-mirror.tsx
-function Ss() {
+function ks() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "miroir-organique-couloir-custom",
 		children: [/* @__PURE__ */ (0, H.jsxs)("mesh", {
@@ -16773,7 +16980,7 @@ function Ss() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/decor/tall-ficus.tsx
-function Cs() {
+function As() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "grand-ficus-salon-custom",
 		children: [
@@ -16877,12 +17084,12 @@ function Cs() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/decor/ring-ceramic-vase.tsx
-var ws = [
+var js = [
 	.18,
 	.3,
 	.06
 ];
-function Ts({ size: e = ws }) {
+function Ms({ size: e = js }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "ring-ceramic-vase",
 		scale: [
@@ -16941,12 +17148,12 @@ function Ts({ size: e = ws }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/decor/decorative-globe.tsx
-var Es = [
+var Ns = [
 	.278,
 	.339,
 	.24
 ];
-function Ds({ size: e = Es }) {
+function Ps({ size: e = Ns }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "decorative-globe",
 		scale: [
@@ -17011,12 +17218,12 @@ function Ds({ size: e = Es }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/decor/trailing-shelf-plant.tsx
-var Os = [
+var Fs = [
 	.26,
 	.57,
 	.18
 ];
-function ks({ size: e = Os }) {
+function Is({ size: e = Fs }) {
 	let t = [
 		[
 			-.1,
@@ -17124,7 +17331,7 @@ function ks({ size: e = Os }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/sofa-upholstery/tailored-cushion.tsx
-function As({ size: e, position: t, rotation: n = [
+function Ls({ size: e, position: t, rotation: n = [
 	0,
 	0,
 	0
@@ -17162,11 +17369,11 @@ function As({ size: e, position: t, rotation: n = [
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/sofa-upholstery/cozy-sofa-cushions.tsx
-function js() {
+function Rs() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "cozy-sofa-cushions",
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(As, {
+			/* @__PURE__ */ (0, H.jsx)(Ls, {
 				name: "terracotta-throw-cushion",
 				size: [
 					.43,
@@ -17185,7 +17392,7 @@ function js() {
 				],
 				color: "#bf7658"
 			}),
-			/* @__PURE__ */ (0, H.jsx)(As, {
+			/* @__PURE__ */ (0, H.jsx)(Ls, {
 				name: "beige-throw-cushion",
 				size: [
 					.4,
@@ -17204,7 +17411,7 @@ function js() {
 				],
 				color: "#e4cfaa"
 			}),
-			/* @__PURE__ */ (0, H.jsx)(As, {
+			/* @__PURE__ */ (0, H.jsx)(Ls, {
 				name: "clay-lumbar-cushion",
 				size: [
 					.48,
@@ -17228,12 +17435,12 @@ function js() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/three-seat-sofa.tsx
-var Ms = [
+var zs = [
 	2.2,
 	.84,
 	.94
 ];
-function Ns({ size: e = Ms, color: t }) {
+function Bs({ size: e = zs, color: t }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "three-seat-sofa",
 		scale: [
@@ -17319,7 +17526,7 @@ function Ns({ size: e = Ms, color: t }) {
 				-.596,
 				0,
 				.596
-			].map((e) => /* @__PURE__ */ (0, H.jsxs)("group", { children: [/* @__PURE__ */ (0, H.jsx)(As, {
+			].map((e) => /* @__PURE__ */ (0, H.jsxs)("group", { children: [/* @__PURE__ */ (0, H.jsx)(Ls, {
 				name: "sofa-seat-cushion",
 				size: [
 					.582,
@@ -17332,7 +17539,7 @@ function Ns({ size: e = Ms, color: t }) {
 					.08
 				],
 				color: t ?? "#e2d5bf"
-			}), /* @__PURE__ */ (0, H.jsx)(As, {
+			}), /* @__PURE__ */ (0, H.jsx)(Ls, {
 				name: "sofa-back-cushion",
 				size: [
 					.582,
@@ -17356,12 +17563,12 @@ function Ns({ size: e = Ms, color: t }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/rectangular-coffee-table.tsx
-var Ps = [
+var Vs = [
 	1.1,
 	.4,
 	.6
 ];
-function Fs({ size: e = Ps }) {
+function Hs({ size: e = Vs }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "rectangular-coffee-table",
 		scale: [
@@ -17421,12 +17628,12 @@ function Fs({ size: e = Ps }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/upholstered-armchair.tsx
-var Is = [
+var Us = [
 	.85,
 	.9,
 	.88
 ];
-function Ls({ size: e = Is }) {
+function Ws({ size: e = Us }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "upholstered-armchair",
 		scale: [
@@ -17529,7 +17736,7 @@ function Ls({ size: e = Is }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/fluffy-rug-layers.tsx
-function Rs() {
+function Gs() {
 	let e = (0, I.useMemo)(() => {
 		let e = new D(1.99, 2.99, 80, 120);
 		e.rotateX(-Math.PI / 2);
@@ -17564,7 +17771,7 @@ function Rs() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/rug-patterns.ts
-var zs = {
+var Ks = {
 	terracotta: {
 		field: "#dfcdb6",
 		outline: "#8d5d49",
@@ -17908,12 +18115,12 @@ var zs = {
 			]
 		]
 	}
-}, Bs = [
+}, qs = [
 	2,
 	.015,
 	3
-], Vs = (e) => Object.hasOwn(zs, e);
-function Hs() {
+], Js = (e) => Object.hasOwn(Ks, e);
+function Ys() {
 	return /* @__PURE__ */ (0, H.jsxs)(H.Fragment, { children: [
 		/* @__PURE__ */ (0, H.jsx)(G, {
 			name: "area-rug-field",
@@ -17965,8 +18172,8 @@ function Hs() {
 		}, e))
 	] });
 }
-function Us({ variant: e }) {
-	let t = zs[e];
+function Xs({ variant: e }) {
+	let t = Ks[e];
 	return /* @__PURE__ */ (0, H.jsxs)(H.Fragment, { children: [
 		/* @__PURE__ */ (0, H.jsx)(G, {
 			name: "area-rug-field",
@@ -18033,7 +18240,7 @@ function Us({ variant: e }) {
 		}, `${e}-${s}`))
 	] });
 }
-function Ws({ size: e = Bs, variant: t = "default" }) {
+function Zs({ size: e = qs, variant: t = "default" }) {
 	return /* @__PURE__ */ (0, H.jsx)("group", {
 		name: "neutral-area-rug",
 		scale: [
@@ -18041,17 +18248,17 @@ function Ws({ size: e = Bs, variant: t = "default" }) {
 			e[1] / .015,
 			e[2] / 3
 		],
-		children: t === "fluffy" ? /* @__PURE__ */ (0, H.jsx)(Rs, {}) : Vs(t) ? /* @__PURE__ */ (0, H.jsx)(Us, { variant: t }) : /* @__PURE__ */ (0, H.jsx)(Hs, {})
+		children: t === "fluffy" ? /* @__PURE__ */ (0, H.jsx)(Gs, {}) : Js(t) ? /* @__PURE__ */ (0, H.jsx)(Xs, { variant: t }) : /* @__PURE__ */ (0, H.jsx)(Ys, {})
 	});
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/low-media-console.tsx
-var Gs = [
+var Qs = [
 	1.6,
 	.55,
 	.42
 ];
-function Ks({ size: e = Gs }) {
+function $s({ size: e = Qs }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "low-media-console",
 		scale: [
@@ -18157,12 +18364,12 @@ function Ks({ size: e = Gs }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/upholstered-ottoman.tsx
-var qs = [
+var ec = [
 	.7,
 	.42,
 	.55
 ];
-function Js({ size: e = qs }) {
+function tc({ size: e = ec }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "upholstered-ottoman",
 		scale: [
@@ -18233,7 +18440,7 @@ function Js({ size: e = qs }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/sectional-sofa.tsx
-function Ys({ variant: e = "default", color: t } = {}) {
+function nc({ variant: e = "default", color: t } = {}) {
 	let n = e === "right" || e === "cozy-right", r = e === "cozy" || e === "cozy-right";
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "canape-salon-custom",
@@ -18317,7 +18524,7 @@ function Ys({ variant: e = "default", color: t } = {}) {
 				color: "#ad895b",
 				radius: .012
 			}),
-			/* @__PURE__ */ (0, H.jsx)(As, {
+			/* @__PURE__ */ (0, H.jsx)(Ls, {
 				name: "chaise-seat-cushion",
 				size: [
 					.84,
@@ -18331,7 +18538,7 @@ function Ys({ variant: e = "default", color: t } = {}) {
 				],
 				color: t ?? "#eee7d8"
 			}),
-			[-.02, .84].map((e) => /* @__PURE__ */ (0, H.jsx)(As, {
+			[-.02, .84].map((e) => /* @__PURE__ */ (0, H.jsx)(Ls, {
 				name: "sectional-seat-cushion",
 				size: [
 					.8,
@@ -18349,7 +18556,7 @@ function Ys({ variant: e = "default", color: t } = {}) {
 				-.91,
 				-.02,
 				.84
-			].map((e) => /* @__PURE__ */ (0, H.jsx)(As, {
+			].map((e) => /* @__PURE__ */ (0, H.jsx)(Ls, {
 				name: "sectional-back-cushion",
 				size: [
 					.81,
@@ -18382,7 +18589,7 @@ function Ys({ variant: e = "default", color: t } = {}) {
 				],
 				color: t ?? "#ded9ca",
 				radius: .065
-			}), /* @__PURE__ */ (0, H.jsx)(As, {
+			}), /* @__PURE__ */ (0, H.jsx)(Ls, {
 				name: "sectional-arm-pad",
 				size: [
 					.18,
@@ -18396,7 +18603,7 @@ function Ys({ variant: e = "default", color: t } = {}) {
 				],
 				color: t ?? "#eee7d8"
 			})] }, e)),
-			r && /* @__PURE__ */ (0, H.jsx)(js, {}),
+			r && /* @__PURE__ */ (0, H.jsx)(Rs, {}),
 			[
 				[-1.23, -.25],
 				[-.55, -.25],
@@ -18425,7 +18632,7 @@ function Ys({ variant: e = "default", color: t } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/media-wall/cabinet-box.tsx
-function Xs({ size: e, position: t, color: n, outlineThickness: r = .006 }) {
+function rc({ size: e, position: t, color: n, outlineThickness: r = .006 }) {
 	return /* @__PURE__ */ (0, H.jsxs)("mesh", {
 		position: t,
 		castShadow: !0,
@@ -18443,7 +18650,7 @@ function Xs({ size: e, position: t, color: n, outlineThickness: r = .006 }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/media-wall/cabinet-joint.tsx
-function Zs({ size: e, position: t }) {
+function ic({ size: e, position: t }) {
 	return /* @__PURE__ */ (0, H.jsxs)("mesh", {
 		position: t,
 		children: [/* @__PURE__ */ (0, H.jsx)("boxGeometry", { args: [...e] }), /* @__PURE__ */ (0, H.jsx)(l, { color: "#aaa49a" })]
@@ -18451,12 +18658,12 @@ function Zs({ size: e, position: t }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/media-wall/media-wall.tsx
-function Qs() {
+function ac() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "mur-tv-salon-custom",
 		userData: { walkCollider: !0 },
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(Xs, {
+			/* @__PURE__ */ (0, H.jsx)(rc, {
 				size: [
 					2.25,
 					.4,
@@ -18482,7 +18689,7 @@ function Qs() {
 					.018
 				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: "#f7f4ed" })]
 			}),
-			[-.38, .38].map((e) => /* @__PURE__ */ (0, H.jsx)(Zs, {
+			[-.38, .38].map((e) => /* @__PURE__ */ (0, H.jsx)(ic, {
 				size: [
 					.006,
 					.32,
@@ -18494,7 +18701,7 @@ function Qs() {
 					-.214
 				]
 			}, e)),
-			/* @__PURE__ */ (0, H.jsx)(Zs, {
+			/* @__PURE__ */ (0, H.jsx)(ic, {
 				size: [
 					2.18,
 					.006,
@@ -18506,7 +18713,7 @@ function Qs() {
 					-.214
 				]
 			}),
-			/* @__PURE__ */ (0, H.jsx)(Xs, {
+			/* @__PURE__ */ (0, H.jsx)(rc, {
 				size: [
 					2.31,
 					.065,
@@ -18527,7 +18734,7 @@ function Qs() {
 					0
 				],
 				children: [
-					/* @__PURE__ */ (0, H.jsx)(Xs, {
+					/* @__PURE__ */ (0, H.jsx)(rc, {
 						size: [
 							1.05,
 							.72,
@@ -18553,7 +18760,7 @@ function Qs() {
 							.018
 						] }), /* @__PURE__ */ (0, H.jsx)(l, { color: "#f7f4ed" })]
 					}),
-					/* @__PURE__ */ (0, H.jsx)(Zs, {
+					/* @__PURE__ */ (0, H.jsx)(ic, {
 						size: [
 							.006,
 							.64,
@@ -18565,7 +18772,7 @@ function Qs() {
 							-.214
 						]
 					}),
-					/* @__PURE__ */ (0, H.jsx)(Zs, {
+					/* @__PURE__ */ (0, H.jsx)(ic, {
 						size: [
 							.98,
 							.006,
@@ -18577,7 +18784,7 @@ function Qs() {
 							-.214
 						]
 					}),
-					/* @__PURE__ */ (0, H.jsx)(Xs, {
+					/* @__PURE__ */ (0, H.jsx)(rc, {
 						size: [
 							1.09,
 							.06,
@@ -18621,14 +18828,14 @@ function Qs() {
 					.465,
 					-.08
 				],
-				children: /* @__PURE__ */ (0, H.jsx)(vs, {})
+				children: /* @__PURE__ */ (0, H.jsx)(Ts, {})
 			})
 		]
 	});
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/round-coffee-table.tsx
-function $s() {
+function oc() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "petite-table-basse-salon-custom",
 		userData: { walkCollider: !0 },
@@ -18740,12 +18947,12 @@ function $s() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/two-seat-loveseat.tsx
-var ec = [
+var sc = [
 	1.6,
 	.82,
 	.88
 ];
-function tc({ size: e = ec } = {}) {
+function cc({ size: e = sc } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "two-seat-loveseat",
 		scale: [
@@ -18944,12 +19151,12 @@ function tc({ size: e = ec } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/indoor-chaise-longue.tsx
-var nc = [
+var lc = [
 	.8,
 	.8,
 	1.65
 ];
-function rc({ size: e = nc } = {}) {
+function uc({ size: e = lc } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "indoor-chaise-longue",
 		scale: [
@@ -19073,12 +19280,12 @@ function rc({ size: e = nc } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/pedestal-side-table.tsx
-var ic = [
+var dc = [
 	.5,
 	.55,
 	.5
 ];
-function ac({ size: e = ic } = {}) {
+function fc({ size: e = dc } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "pedestal-side-table",
 		scale: [
@@ -19136,12 +19343,12 @@ function ac({ size: e = ic } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/c-shaped-sofa-table.tsx
-var oc = [
+var pc = [
 	.4,
 	.62,
 	.45
 ];
-function sc({ size: e = oc } = {}) {
+function mc({ size: e = pc } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "c-shaped-sofa-table",
 		scale: [
@@ -19217,12 +19424,12 @@ function sc({ size: e = oc } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/blanket-storage-trunk.tsx
-var cc = [
+var hc = [
 	.95,
 	.46,
 	.48
 ];
-function lc({ size: e = cc } = {}) {
+function gc({ size: e = hc } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "blanket-storage-trunk",
 		scale: [
@@ -19346,12 +19553,12 @@ function lc({ size: e = cc } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/floor-magazine-rack.tsx
-var uc = [
+var _c = [
 	.42,
 	.45,
 	.3
 ];
-function dc({ size: e = uc } = {}) {
+function vc({ size: e = _c } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "floor-magazine-rack",
 		scale: [
@@ -19457,12 +19664,12 @@ function dc({ size: e = uc } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/vinyl-record-cabinet.tsx
-var fc = [
+var yc = [
 	.9,
 	.7,
 	.4
 ];
-function pc({ size: e = fc } = {}) {
+function bc({ size: e = yc } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "vinyl-record-cabinet",
 		scale: [
@@ -19661,12 +19868,12 @@ function pc({ size: e = fc } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/open-display-bookcase.tsx
-var mc = [
+var xc = [
 	1,
 	1.6,
 	.35
 ];
-function hc({ size: e = mc } = {}) {
+function Sc({ size: e = xc } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "open-display-bookcase",
 		scale: [
@@ -19848,12 +20055,12 @@ function hc({ size: e = mc } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/two-tier-bar-cart.tsx
-var gc = [
+var Cc = [
 	.7,
 	.8,
 	.42
 ];
-function _c({ size: e = gc } = {}) {
+function wc({ size: e = Cc } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "two-tier-bar-cart",
 		scale: [
@@ -20143,12 +20350,12 @@ function _c({ size: e = gc } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/slatted-room-divider.tsx
-var vc = [
+var Tc = [
 	1.2,
 	1.8,
 	.4
 ];
-function yc({ size: e = vc } = {}) {
+function Ec({ size: e = Tc } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "slatted-room-divider",
 		scale: [
@@ -20405,7 +20612,7 @@ function yc({ size: e = vc } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/curved-sofa-base.tsx
-function bc() {
+function Dc() {
 	let e = (0, I.useMemo)(() => {
 		let e = new h();
 		return e.moveTo(-1.28, -.3), e.bezierCurveTo(-1.28, -.53, -.5, -.53, 0, -.53), e.bezierCurveTo(.5, -.53, 1.28, -.53, 1.28, -.3), e.lineTo(1.28, .28), e.bezierCurveTo(1.28, .53, .4, .53, 0, .53), e.bezierCurveTo(-.4, .53, -1.28, .53, -1.28, .28), e.closePath(), e;
@@ -20447,12 +20654,12 @@ function bc() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/curved-three-seat-sofa.tsx
-var xc = [
+var Oc = [
 	2.6,
 	.88,
 	1.1
 ];
-function Sc({ size: e = xc }) {
+function kc({ size: e = Oc }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "curved-three-seat-sofa",
 		scale: [
@@ -20461,7 +20668,7 @@ function Sc({ size: e = xc }) {
 			e[2] / 1.1
 		],
 		userData: { walkCollider: !0 },
-		children: [/* @__PURE__ */ (0, H.jsx)(bc, {}), [
+		children: [/* @__PURE__ */ (0, H.jsx)(Dc, {}), [
 			-.8,
 			0,
 			.8
@@ -20512,12 +20719,12 @@ function Sc({ size: e = xc }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/sage-tub-armchair.tsx
-var Cc = [
+var Ac = [
 	.78,
 	.86,
 	.8
 ];
-function wc({ size: e = Cc }) {
+function jc({ size: e = Ac }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "sage-tub-armchair",
 		scale: [
@@ -20604,12 +20811,12 @@ function wc({ size: e = Cc }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/sage-rounded-footstool.tsx
-var Tc = [
+var Mc = [
 	.48,
 	.45,
 	.46
 ];
-function Ec({ size: e = Tc }) {
+function Nc({ size: e = Mc }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "sage-rounded-footstool",
 		scale: [
@@ -20648,12 +20855,12 @@ function Ec({ size: e = Tc }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/hexagonal-side-table.tsx
-var Dc = [
+var Pc = [
 	.6,
 	.43,
 	.5196152423
 ];
-function Oc({ size: e = Dc, variant: t = "default" }) {
+function Fc({ size: e = Pc, variant: t = "default" }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "hexagonal-side-table",
 		scale: [
@@ -20698,12 +20905,12 @@ function Oc({ size: e = Dc, variant: t = "default" }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/six-door-oak-sideboard.tsx
-var kc = [
+var Ic = [
 	3,
 	.74,
 	.42
 ];
-function Ac({ size: e = kc }) {
+function Lc({ size: e = Ic }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "six-door-oak-sideboard",
 		scale: [
@@ -20778,7 +20985,7 @@ function Ac({ size: e = kc }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/arched-bookcase-frame.tsx
-function jc() {
+function Rc() {
 	let e = (0, I.useMemo)(() => {
 		let e = new h();
 		e.moveTo(-.5, 0), e.lineTo(.5, 0), e.lineTo(.5, 1.73), e.lineTo(-.5, 1.73), e.closePath();
@@ -20820,12 +21027,12 @@ function jc() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/double-arched-bookcase.tsx
-var Mc = [
+var zc = [
 	1,
 	1.73,
 	.36
 ];
-function Nc({ size: e = Mc }) {
+function Bc({ size: e = zc }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "double-arched-bookcase",
 		scale: [
@@ -20833,7 +21040,7 @@ function Nc({ size: e = Mc }) {
 			e[1] / 1.73,
 			e[2] / .36
 		],
-		children: [/* @__PURE__ */ (0, H.jsx)(jc, {}), [-.245, .245].map((e, t) => /* @__PURE__ */ (0, H.jsx)("group", { children: (t === 0 ? [.62, 1.16] : [
+		children: [/* @__PURE__ */ (0, H.jsx)(Rc, {}), [-.245, .245].map((e, t) => /* @__PURE__ */ (0, H.jsx)("group", { children: (t === 0 ? [.62, 1.16] : [
 			.48,
 			.98,
 			1.39
@@ -20857,12 +21064,12 @@ function Nc({ size: e = Mc }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/media-shelf-surround.tsx
-var Pc = [
+var Vc = [
 	2,
 	1.73,
 	.36
 ];
-function Fc({ size: e = Pc }) {
+function Hc({ size: e = Vc }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "media-shelf-surround",
 		scale: [
@@ -20935,12 +21142,12 @@ function Fc({ size: e = Pc }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/slim-soundbar.tsx
-var Ic = [
+var Uc = [
 	1.05,
 	.065,
 	.12
 ];
-function Lc({ size: e = Ic }) {
+function Wc({ size: e = Uc }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "slim-soundbar",
 		scale: [
@@ -20981,7 +21188,7 @@ function Lc({ size: e = Ic }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/globe-lamp-arm.tsx
-function Rc({ end: e }) {
+function Gc({ end: e }) {
 	let t = new M(0, .18, 0), n = new M(...e), r = n.clone().sub(t), i = n.clone().add(t).multiplyScalar(.5), a = new Ye().setFromUnitVectors(new M(0, 1, 0), r.clone().normalize());
 	return /* @__PURE__ */ (0, H.jsxs)("mesh", {
 		name: "ceiling-lamp-arm",
@@ -21006,12 +21213,12 @@ function Rc({ end: e }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/six-globe-ceiling-lamp.tsx
-var zc = [
+var Kc = [
 	.9,
 	.42,
 	.8062177826
 ];
-function Bc({ size: e = zc }) {
+function qc({ size: e = Kc }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "six-globe-ceiling-lamp",
 		scale: [
@@ -21061,7 +21268,7 @@ function Bc({ size: e = zc }) {
 			}),
 			Array.from({ length: 6 }, (e, t) => {
 				let n = t * Math.PI / 3, r = Math.cos(n) * .35, i = Math.sin(n) * .35;
-				return /* @__PURE__ */ (0, H.jsxs)("group", { children: [/* @__PURE__ */ (0, H.jsx)(Rc, { end: [
+				return /* @__PURE__ */ (0, H.jsxs)("group", { children: [/* @__PURE__ */ (0, H.jsx)(Gc, { end: [
 					r,
 					.13,
 					i
@@ -21084,12 +21291,12 @@ function Bc({ size: e = zc }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/book-row.tsx
-var Vc = [
+var Jc = [
 	.4,
 	.28,
 	.18
 ];
-function Hc({ size: e = Vc }) {
+function Yc({ size: e = Jc }) {
 	return /* @__PURE__ */ (0, H.jsx)("group", {
 		name: "book-row",
 		scale: [
@@ -21122,12 +21329,12 @@ function Hc({ size: e = Vc }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/white-tapered-wall-sconce.tsx
-var Uc = [
+var Xc = [
 	.18,
 	.23,
 	.12
 ];
-function Wc({ size: e = Uc }) {
+function Zc({ size: e = Xc }) {
 	let t = (0, I.useMemo)(() => {
 		let e = new qe();
 		e.setAttribute("position", new He([
@@ -21217,12 +21424,12 @@ function Wc({ size: e = Uc }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/tufted-diamond-rug.tsx
-var Gc = [
+var Qc = [
 	2.6,
 	.016,
 	2
 ];
-function Kc({ size: e = Gc }) {
+function $c({ size: e = Qc }) {
 	let t = (0, I.useMemo)(() => {
 		let e = new h();
 		e.moveTo(0, .3), e.lineTo(.22, 0), e.lineTo(0, -.3), e.lineTo(-.22, 0), e.closePath();
@@ -21297,12 +21504,12 @@ function Kc({ size: e = Gc }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/living-room/white-display-column.tsx
-var qc = [
+var el = [
 	.6,
 	2.4,
 	.3
 ];
-function Jc({ size: e = qc }) {
+function tl({ size: e = el }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "white-display-column",
 		scale: [
@@ -21366,12 +21573,12 @@ function Jc({ size: e = qc }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/dining-room/rectangular-dining-table.tsx
-var Yc = [
+var nl = [
 	1.8,
 	.75,
 	.9
 ];
-function Xc({ size: e = Yc }) {
+function rl({ size: e = nl }) {
 	return /* @__PURE__ */ (0, H.jsx)("group", {
 		name: "rectangular-dining-table",
 		scale: [
@@ -21380,7 +21587,7 @@ function Xc({ size: e = Yc }) {
 			e[2] / .9
 		],
 		userData: { walkCollider: !0 },
-		children: /* @__PURE__ */ (0, H.jsx)(Wa, {
+		children: /* @__PURE__ */ (0, H.jsx)(Za, {
 			width: 1.8,
 			height: .75,
 			depth: .9,
@@ -21391,7 +21598,7 @@ function Xc({ size: e = Yc }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/dining-room/curved-chair-back.tsx
-function Zc() {
+function il() {
 	let e = (0, I.useMemo)(() => {
 		let e = new h();
 		return e.moveTo(-.245, -.125), e.quadraticCurveTo(0, -.325, .245, -.125), e.lineTo(.232, -.1), e.quadraticCurveTo(0, -.289, -.232, -.1), e.closePath(), e;
@@ -21428,12 +21635,12 @@ function Zc() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/dining-room/oak-dining-chair.tsx
-var Qc = [
+var al = [
 	.49,
 	.82,
 	.5
 ];
-function $c({ size: e = Qc }) {
+function ol({ size: e = al }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "oak-dining-chair",
 		scale: [
@@ -21501,18 +21708,18 @@ function $c({ size: e = Qc }) {
 					10
 				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: "#c9a674" })]
 			}, e)),
-			/* @__PURE__ */ (0, H.jsx)(Zc, {})
+			/* @__PURE__ */ (0, H.jsx)(il, {})
 		]
 	});
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/dining-room/three-door-sideboard.tsx
-var el = [
+var sl = [
 	1.6,
 	.82,
 	.45
 ];
-function tl({ size: e = el }) {
+function cl({ size: e = sl }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "three-door-sideboard",
 		scale: [
@@ -21599,7 +21806,7 @@ function tl({ size: e = el }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/dining-room/photo-dining-set/dining-construction/oak-frame.tsx
-function nl(e, t, n, r = n) {
+function ll(e, t, n, r = n) {
 	let i = new M(...e), a = new M(...t), o = new se(r, n, i.distanceTo(a), 10);
 	if (o.applyQuaternion(new Ye().setFromUnitVectors(new M(0, 1, 0), a.clone().sub(i).normalize())), o.translate(...i.clone().add(a).multiplyScalar(.5).toArray()), e[1] === 0) {
 		let e = o.attributes.position;
@@ -21608,10 +21815,10 @@ function nl(e, t, n, r = n) {
 	}
 	return o;
 }
-function rl(e, t, n = 16) {
+function ul(e, t, n = 16) {
 	return new _(new be(e.map((e) => new M(...e))), n, t, 5, !1);
 }
-function il() {
+function dl() {
 	let e = new be([
 		new M(-.232, .675, .135),
 		new M(-.257, .716, -.04),
@@ -21638,7 +21845,7 @@ function il() {
 	let r = new qe();
 	return r.setAttribute("position", new He(t, 3)), r.setIndex(n), r.computeVertexNormals(), r;
 }
-function al({ geometry: e, color: t = "#bd905b", outline: n = !0, name: r }) {
+function fl({ geometry: e, color: t = "#bd905b", outline: n = !0, name: r }) {
 	return /* @__PURE__ */ (0, H.jsxs)("mesh", {
 		name: r,
 		geometry: e,
@@ -21653,9 +21860,9 @@ function al({ geometry: e, color: t = "#bd905b", outline: n = !0, name: r }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/dining-room/photo-dining-set/dining-construction/woven-seat.tsx
-var ol = Array.from({ length: 28 }, (e, t) => {
+var pl = Array.from({ length: 28 }, (e, t) => {
 	let n = .215 - t * .0073, r = .181 - t * .0061, i = .454 + .004 * Math.sin(t * .7);
-	return rl([
+	return ul([
 		[
 			-n,
 			i,
@@ -21702,23 +21909,23 @@ var ol = Array.from({ length: 28 }, (e, t) => {
 			-r
 		]
 	], .0038, 32);
-}), sl = new _e(.416, .018, .358);
-sl.translate(0, .442, 0);
-var cl = N([sl, ...ol.filter((e, t) => t % 2 == 0)]);
-sl.dispose();
-var ll = N(ol.filter((e, t) => t % 2 == 1));
-ol.forEach((e) => e.dispose());
-function ul() {
+}), ml = new _e(.416, .018, .358);
+ml.translate(0, .442, 0);
+var hl = N([ml, ...pl.filter((e, t) => t % 2 == 0)]);
+ml.dispose();
+var gl = N(pl.filter((e, t) => t % 2 == 1));
+pl.forEach((e) => e.dispose());
+function _l() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "envelope-woven-rush-seat",
-		children: [/* @__PURE__ */ (0, H.jsx)(al, {
+		children: [/* @__PURE__ */ (0, H.jsx)(fl, {
 			name: "rush-natural",
-			geometry: cl,
+			geometry: hl,
 			color: "#b58e56",
 			outline: !1
-		}), /* @__PURE__ */ (0, H.jsx)(al, {
+		}), /* @__PURE__ */ (0, H.jsx)(fl, {
 			name: "rush-light",
-			geometry: ll,
+			geometry: gl,
 			color: "#c5a36d",
 			outline: !1
 		})]
@@ -21726,8 +21933,8 @@ function ul() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/dining-room/photo-dining-set/dining-chair.tsx
-var dl = [-1, 1].flatMap((e) => [
-	nl([
+var vl = [-1, 1].flatMap((e) => [
+	ll([
 		e * .222,
 		0,
 		.182
@@ -21736,7 +21943,7 @@ var dl = [-1, 1].flatMap((e) => [
 		.671,
 		.13
 	], .013, .019),
-	nl([
+	ll([
 		e * .205,
 		0,
 		-.181
@@ -21745,7 +21952,7 @@ var dl = [-1, 1].flatMap((e) => [
 		.748,
 		-.174
 	], .013, .021),
-	nl([
+	ll([
 		e * .205,
 		.425,
 		-.168
@@ -21754,7 +21961,7 @@ var dl = [-1, 1].flatMap((e) => [
 		.425,
 		.171
 	], .019),
-	nl([
+	ll([
 		e * .212,
 		.235,
 		-.166
@@ -21764,7 +21971,7 @@ var dl = [-1, 1].flatMap((e) => [
 		.163
 	], .011)
 ]);
-dl.push(nl([
+vl.push(ll([
 	-.213,
 	.425,
 	.171
@@ -21772,7 +21979,7 @@ dl.push(nl([
 	.213,
 	.425,
 	.171
-], .021), nl([
+], .021), ll([
 	-.201,
 	.425,
 	-.168
@@ -21780,7 +21987,7 @@ dl.push(nl([
 	.201,
 	.425,
 	-.168
-], .018), nl([
+], .018), ll([
 	-.212,
 	.255,
 	-.166
@@ -21788,7 +21995,7 @@ dl.push(nl([
 	.212,
 	.255,
 	-.166
-], .011), rl([
+], .011), ul([
 	[
 		0,
 		.442,
@@ -21809,7 +22016,7 @@ dl.push(nl([
 		.754,
 		-.202
 	]
-], .013, 14), rl([
+], .013, 14), ul([
 	[
 		0,
 		.568,
@@ -21826,10 +22033,10 @@ dl.push(nl([
 		-.202
 	]
 ], .013, 10));
-var fl = N(dl);
-dl.forEach((e) => e.dispose());
-var pl = il();
-function ml({ position: e, rotationY: t }) {
+var yl = N(vl);
+vl.forEach((e) => e.dispose());
+var bl = dl();
+function xl({ position: e, rotationY: t }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "chaise-repas-cannee-custom",
 		position: e,
@@ -21839,22 +22046,22 @@ function ml({ position: e, rotationY: t }) {
 			0
 		],
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(al, {
+			/* @__PURE__ */ (0, H.jsx)(fl, {
 				name: "wishbone-chair-joined-frame",
-				geometry: fl
+				geometry: yl
 			}),
-			/* @__PURE__ */ (0, H.jsx)(al, {
+			/* @__PURE__ */ (0, H.jsx)(fl, {
 				name: "continuous-bentwood-back-and-arms",
-				geometry: pl,
+				geometry: bl,
 				color: "#cba16b"
 			}),
-			/* @__PURE__ */ (0, H.jsx)(ul, {})
+			/* @__PURE__ */ (0, H.jsx)(_l, {})
 		]
 	});
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/dining-room/photo-dining-set/dining-table.tsx
-var hl = new je([
+var Sl = new je([
 	[0, .728],
 	[.571, .728],
 	[.591, .733],
@@ -21863,7 +22070,7 @@ var hl = new je([
 	[.598, .757],
 	[.592, .761],
 	[0, .761]
-].map((e) => new pe(...e)), 64), gl = [-1, 1].flatMap((e) => [-1, 1].map((t) => nl([
+].map((e) => new pe(...e)), 64), Cl = [-1, 1].flatMap((e) => [-1, 1].map((t) => ll([
 	e * .382,
 	0,
 	t * .332
@@ -21872,7 +22079,7 @@ var hl = new je([
 	.737,
 	t * .272
 ], .017, .032)));
-for (let e of [-1, 1]) gl.push(nl([
+for (let e of [-1, 1]) Cl.push(ll([
 	-.325,
 	.696,
 	e * .274
@@ -21880,7 +22087,7 @@ for (let e of [-1, 1]) gl.push(nl([
 	.325,
 	.696,
 	e * .274
-], .027)), gl.push(nl([
+], .027)), Cl.push(ll([
 	e * .323,
 	.696,
 	-.274
@@ -21889,9 +22096,9 @@ for (let e of [-1, 1]) gl.push(nl([
 	.696,
 	.274
 ], .027));
-var _l = N(gl);
-gl.forEach((e) => e.dispose());
-var vl = [
+var wl = N(Cl);
+Cl.forEach((e) => e.dispose());
+var Tl = [
 	-.42,
 	-.29,
 	-.13,
@@ -21900,7 +22107,7 @@ var vl = [
 	.41
 ].map((e, t) => {
 	let n = Math.sqrt(.576 ** 2 - e * e);
-	return rl([
+	return ul([
 		[
 			-n,
 			.7622,
@@ -21927,25 +22134,25 @@ var vl = [
 			e
 		]
 	], 6e-4, 20);
-}), yl = N(vl);
-vl.forEach((e) => e.dispose());
-function bl() {
+}), El = N(Tl);
+Tl.forEach((e) => e.dispose());
+function Dl() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "thin-rounded-oak-dining-table",
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(al, {
+			/* @__PURE__ */ (0, H.jsx)(fl, {
 				name: "tapered-table-legs-and-aprons",
-				geometry: _l,
+				geometry: wl,
 				color: "#af7f49"
 			}),
-			/* @__PURE__ */ (0, H.jsx)(al, {
+			/* @__PURE__ */ (0, H.jsx)(fl, {
 				name: "soft-bevel-solid-oak-top",
-				geometry: hl,
+				geometry: Sl,
 				color: "#b48650"
 			}),
-			/* @__PURE__ */ (0, H.jsx)(al, {
+			/* @__PURE__ */ (0, H.jsx)(fl, {
 				name: "subtle-longitudinal-oak-grain",
-				geometry: yl,
+				geometry: El,
 				color: "#9e743f",
 				outline: !1
 			})
@@ -21954,12 +22161,12 @@ function bl() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/dining-room/photo-dining-set/table-plant.tsx
-var xl = Array.from({ length: 25 }, (e, t) => {
+var Ol = Array.from({ length: 25 }, (e, t) => {
 	let n = new Ie(.018 + t * .008, .0045, 5, 48);
 	return n.rotateX(Math.PI / 2), n.scale(1, 1, .76), n.translate(0, .766, 0), n;
-}), Sl = N(xl);
-xl.forEach((e) => e.dispose());
-var Cl = new je([
+}), kl = N(Ol);
+Ol.forEach((e) => e.dispose());
+var Al = new je([
 	[0, .773],
 	[.065, .773],
 	[.079, .789],
@@ -21969,9 +22176,9 @@ var Cl = new je([
 	[.082, .915],
 	[.08, .895],
 	[0, .895]
-].map((e) => new pe(...e)), 32), wl = Array.from({ length: 24 }, (e, t) => {
+].map((e) => new pe(...e)), 32), jl = Array.from({ length: 24 }, (e, t) => {
 	let n = t * Math.PI / 12;
-	return rl([
+	return ul([
 		[
 			.067 * Math.cos(n),
 			.784,
@@ -21988,14 +22195,14 @@ var Cl = new je([
 			.09 * Math.sin(n)
 		]
 	], .003, 6);
-}), Tl = N(wl);
-wl.forEach((e) => e.dispose());
-var El = new se(.081, .081, .006, 24);
-El.translate(0, .897, 0);
-var Dl = [], Ol = [];
+}), Ml = N(jl);
+jl.forEach((e) => e.dispose());
+var Nl = new se(.081, .081, .006, 24);
+Nl.translate(0, .897, 0);
+var Pl = [], Fl = [];
 for (let e = 0; e < 26; e++) {
 	let t = e * 2.39996, n = .045 + e % 5 * .019, r = .939 + e % 7 * .021, i = Math.cos(t) * n, a = Math.sin(t) * n;
-	Dl.push(rl([
+	Pl.push(ul([
 		[
 			0,
 			.899,
@@ -22013,10 +22220,10 @@ for (let e = 0; e < 26; e++) {
 		]
 	], .002, 6));
 	let o = new y(1, 8, 6);
-	o.scale(.026, .006, .045), o.rotateX(.2 + e % 4 * .23), o.rotateY(-t + .5), o.translate(i, r, a), Ol.push(o);
+	o.scale(.026, .006, .045), o.rotateX(.2 + e % 4 * .23), o.rotateY(-t + .5), o.translate(i, r, a), Fl.push(o);
 }
-var kl = new y(1, 8, 6);
-kl.scale(.019, .03, .009), kl.translate(.01, 1.09, 0), Ol.push(kl), Dl.push(rl([
+var Il = new y(1, 8, 6);
+Il.scale(.019, .03, .009), Il.translate(.01, 1.09, 0), Fl.push(Il), Pl.push(ul([
 	[
 		0,
 		.9,
@@ -22033,50 +22240,50 @@ kl.scale(.019, .03, .009), kl.translate(.01, 1.09, 0), Ol.push(kl), Dl.push(rl([
 		0
 	]
 ], .002, 8));
-var Al = N(Dl), jl = N(Ol.filter((e, t) => t % 2 == 0)), Ml = N(Ol.filter((e, t) => t % 2 == 1));
-[...Dl, ...Ol].forEach((e) => e.dispose());
-function Nl() {
+var Ll = N(Pl), Rl = N(Fl.filter((e, t) => t % 2 == 0)), zl = N(Fl.filter((e, t) => t % 2 == 1));
+[...Pl, ...Fl].forEach((e) => e.dispose());
+function Bl() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "plante-table-salon",
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(al, {
+			/* @__PURE__ */ (0, H.jsx)(fl, {
 				name: "coiled-woven-table-mat",
-				geometry: Sl,
+				geometry: kl,
 				color: "#a27a43",
 				outline: !1
 			}),
-			/* @__PURE__ */ (0, H.jsx)(al, {
+			/* @__PURE__ */ (0, H.jsx)(fl, {
 				name: "sage-ceramic-planter",
-				geometry: Cl,
+				geometry: Al,
 				color: "#87934d"
 			}),
-			/* @__PURE__ */ (0, H.jsx)(al, {
+			/* @__PURE__ */ (0, H.jsx)(fl, {
 				name: "vertical-planter-fluting",
-				geometry: Tl,
+				geometry: Ml,
 				color: "#98a15b",
 				outline: !1
 			}),
-			/* @__PURE__ */ (0, H.jsx)(al, {
+			/* @__PURE__ */ (0, H.jsx)(fl, {
 				name: "potting-soil",
-				geometry: El,
+				geometry: Nl,
 				color: "#403a25",
 				outline: !1
 			}),
-			/* @__PURE__ */ (0, H.jsx)(al, {
+			/* @__PURE__ */ (0, H.jsx)(fl, {
 				name: "connected-plant-stems",
-				geometry: Al,
+				geometry: Ll,
 				color: "#48532d",
 				outline: !1
 			}),
-			/* @__PURE__ */ (0, H.jsx)(al, {
+			/* @__PURE__ */ (0, H.jsx)(fl, {
 				name: "individual-dark-leaves",
-				geometry: jl,
+				geometry: Rl,
 				color: "#344a29",
 				outline: !1
 			}),
-			/* @__PURE__ */ (0, H.jsx)(al, {
+			/* @__PURE__ */ (0, H.jsx)(fl, {
 				name: "individual-light-leaves",
-				geometry: Ml,
+				geometry: zl,
 				color: "#506334",
 				outline: !1
 			})
@@ -22085,7 +22292,7 @@ function Nl() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/dining-room/photo-dining-set/dining-set.tsx
-function Pl({ footprintScale: e = 1 }) {
+function Vl({ footprintScale: e = 1 }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "coin-repas-salon-custom",
 		scale: [
@@ -22095,9 +22302,9 @@ function Pl({ footprintScale: e = 1 }) {
 		],
 		userData: { walkCollider: !0 },
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(bl, {}),
-			/* @__PURE__ */ (0, H.jsx)(Nl, {}),
-			/* @__PURE__ */ (0, H.jsx)(ml, {
+			/* @__PURE__ */ (0, H.jsx)(Dl, {}),
+			/* @__PURE__ */ (0, H.jsx)(Bl, {}),
+			/* @__PURE__ */ (0, H.jsx)(xl, {
 				position: [
 					0,
 					0,
@@ -22105,7 +22312,7 @@ function Pl({ footprintScale: e = 1 }) {
 				],
 				rotationY: 0
 			}),
-			/* @__PURE__ */ (0, H.jsx)(ml, {
+			/* @__PURE__ */ (0, H.jsx)(xl, {
 				position: [
 					0,
 					0,
@@ -22113,7 +22320,7 @@ function Pl({ footprintScale: e = 1 }) {
 				],
 				rotationY: Math.PI
 			}),
-			/* @__PURE__ */ (0, H.jsx)(ml, {
+			/* @__PURE__ */ (0, H.jsx)(xl, {
 				position: [
 					-.79,
 					0,
@@ -22121,7 +22328,7 @@ function Pl({ footprintScale: e = 1 }) {
 				],
 				rotationY: Math.PI / 2
 			}),
-			/* @__PURE__ */ (0, H.jsx)(ml, {
+			/* @__PURE__ */ (0, H.jsx)(xl, {
 				position: [
 					.79,
 					0,
@@ -22134,12 +22341,12 @@ function Pl({ footprintScale: e = 1 }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bedroom/oak-nightstand.tsx
-var Fl = [
+var Hl = [
 	.45,
 	.5,
 	.4
 ];
-function Il({ size: e = Fl }) {
+function Ul({ size: e = Hl }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "oak-nightstand",
 		scale: [
@@ -22265,12 +22472,12 @@ function Il({ size: e = Fl }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bedroom/flat-door-wardrobe.tsx
-var Ll = [
+var Wl = [
 	2,
 	2.2,
 	.6
 ];
-function Rl({ size: e = Ll }) {
+function Gl({ size: e = Wl }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "flat-door-wardrobe",
 		scale: [
@@ -22349,12 +22556,12 @@ function Rl({ size: e = Ll }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bedroom/single-bed.tsx
-var zl = [
+var Kl = [
 	1,
 	.95,
 	2.1
 ];
-function Bl({ size: e = zl }) {
+function ql({ size: e = Kl }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "single-bed",
 		scale: [
@@ -22490,12 +22697,12 @@ function Bl({ size: e = zl }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bedroom/double-bed.tsx
-var Vl = [
+var Jl = [
 	1.7,
 	1.1,
 	2.15
 ];
-function Hl({ size: e = Vl }) {
+function Yl({ size: e = Jl }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "double-bed",
 		scale: [
@@ -22615,12 +22822,12 @@ function Hl({ size: e = Vl }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bedroom/chest-of-drawers.tsx
-var Ul = [
+var Xl = [
 	1,
 	.9,
 	.45
 ];
-function Wl({ size: e = Ul }) {
+function Zl({ size: e = Xl }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "chest-of-drawers",
 		scale: [
@@ -22709,7 +22916,7 @@ function Wl({ size: e = Ul }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bedroom/dresser-with-tv.tsx
-function Gl() {
+function Ql() {
 	let e = "#c79a69", t = "#5f432f", n = "#242526";
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "commode-pin-et-television-parentale-custom",
@@ -22888,12 +23095,12 @@ function Gl() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bedroom/knob-door-wardrobe.tsx
-var Kl = [
+var $l = [
 	1,
 	2.4,
 	.6
 ];
-function ql({ size: e = Kl, variant: t = "default" }) {
+function eu({ size: e = $l, variant: t = "default" }) {
 	let n = t === "single-left" || t === "single-right", r = n ? [0] : [-.25, .25];
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "knob-door-wardrobe",
@@ -22952,12 +23159,12 @@ function ql({ size: e = Kl, variant: t = "default" }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bedroom/overbed-bridge-cabinet.tsx
-var Jl = [
+var tu = [
 	2,
 	.65,
 	.4
 ];
-function Yl({ size: e = Jl }) {
+function nu({ size: e = tu }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "overbed-bridge-cabinet",
 		scale: [
@@ -23017,12 +23224,12 @@ function Yl({ size: e = Jl }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bedroom/shelf-headboard.tsx
-var Xl = [
+var ru = [
 	2,
 	1.15,
 	.22
 ];
-function Zl({ size: e = Xl }) {
+function iu({ size: e = ru }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "shelf-headboard",
 		scale: [
@@ -23090,12 +23297,12 @@ function Zl({ size: e = Xl }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bedroom/headboard-free-double-bed.tsx
-var Ql = [
+var au = [
 	1.64,
 	.66,
 	2.04
 ];
-function $l({ size: e = Ql }) {
+function ou({ size: e = au }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "headboard-free-double-bed",
 		scale: [
@@ -23177,12 +23384,12 @@ function $l({ size: e = Ql }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bedroom/round-globe-wall-lamp.tsx
-var eu = [
+var su = [
 	.24,
 	.24,
 	.16
 ];
-function tu({ size: e = eu }) {
+function cu({ size: e = su }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "round-globe-wall-lamp",
 		scale: [
@@ -23223,12 +23430,12 @@ function tu({ size: e = eu }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bedroom/wall-reading-spot.tsx
-var nu = [
+var lu = [
 	.09,
 	.12,
 	.13
 ];
-function ru({ size: e = nu }) {
+function uu({ size: e = lu }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "wall-reading-spot",
 		scale: [
@@ -23293,12 +23500,12 @@ function ru({ size: e = nu }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/bedroom/oak-wall-uplight.tsx
-var iu = [
+var du = [
 	.12,
 	.25,
 	.09
 ];
-function au({ size: e = iu }) {
+function fu({ size: e = du }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "oak-wall-uplight",
 		scale: [
@@ -23337,12 +23544,12 @@ function au({ size: e = iu }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/office/oak-desk.tsx
-var ou = [
+var pu = [
 	1.4,
 	.74,
 	.7
 ];
-function su({ size: e = ou }) {
+function mu({ size: e = pu }) {
 	return /* @__PURE__ */ (0, H.jsx)("group", {
 		name: "oak-desk",
 		scale: [
@@ -23351,7 +23558,7 @@ function su({ size: e = ou }) {
 			e[2] / .7
 		],
 		userData: { walkCollider: !0 },
-		children: /* @__PURE__ */ (0, H.jsx)(Wa, {
+		children: /* @__PURE__ */ (0, H.jsx)(Za, {
 			width: 1.4,
 			height: .74,
 			depth: .7,
@@ -23362,7 +23569,7 @@ function su({ size: e = ou }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/office/office-chair-base.tsx
-function cu() {
+function hu() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "office-chair-base",
 		children: [
@@ -23460,12 +23667,12 @@ function cu() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/office/ergonomic-office-chair.tsx
-var lu = [
+var gu = [
 	.68,
 	1.04,
 	.68
 ];
-function uu({ size: e = lu }) {
+function _u({ size: e = gu }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "ergonomic-office-chair",
 		scale: [
@@ -23475,7 +23682,7 @@ function uu({ size: e = lu }) {
 		],
 		userData: { walkCollider: !0 },
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(cu, {}),
+			/* @__PURE__ */ (0, H.jsx)(hu, {}),
 			/* @__PURE__ */ (0, H.jsx)(G, {
 				size: [
 					.43,
@@ -23652,12 +23859,12 @@ function uu({ size: e = lu }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/office/drawer-pedestal-desk.tsx
-var du = [
+var vu = [
 	1.8,
 	.75,
 	.6
 ];
-function fu({ size: e = du }) {
+function yu({ size: e = vu }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "drawer-pedestal-desk",
 		scale: [
@@ -23730,7 +23937,7 @@ function fu({ size: e = du }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/office/folding-chair-frame.tsx
-function pu() {
+function bu() {
 	return /* @__PURE__ */ (0, H.jsx)("group", { children: [-.205, .205].map((e) => /* @__PURE__ */ (0, H.jsxs)("group", { children: [[-.25, .25].map((t) => /* @__PURE__ */ (0, H.jsxs)("mesh", {
 		name: "folding-chair-foot",
 		position: [
@@ -23777,12 +23984,12 @@ function pu() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/office/white-folding-chair.tsx
-var mu = [
+var xu = [
 	.46,
 	.8,
 	.52
 ];
-function hu({ size: e = mu }) {
+function Su({ size: e = xu }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "white-folding-chair",
 		scale: [
@@ -23792,7 +23999,7 @@ function hu({ size: e = mu }) {
 		],
 		userData: { walkCollider: !0 },
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(pu, {}),
+			/* @__PURE__ */ (0, H.jsx)(bu, {}),
 			/* @__PURE__ */ (0, H.jsx)(G, {
 				name: "folding-chair-seat",
 				size: [
@@ -23832,12 +24039,12 @@ function hu({ size: e = mu }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/office/desktop-monitor.tsx
-var gu = [
+var Cu = [
 	.54,
 	.42,
 	.18
 ];
-function _u({ size: e = gu }) {
+function wu({ size: e = Cu }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "desktop-monitor",
 		scale: [
@@ -23907,12 +24114,12 @@ function _u({ size: e = gu }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/office/open-laptop.tsx
-var vu = [
+var Tu = [
 	.34,
 	.24,
 	.24
 ];
-function yu({ size: e = vu }) {
+function Eu({ size: e = Tu }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "open-laptop",
 		scale: [
@@ -23999,12 +24206,12 @@ function yu({ size: e = vu }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/storage/oak-bookshelf.tsx
-var bu = [
+var Du = [
 	.8,
 	1.9,
 	.3
 ];
-function xu({ size: e = bu }) {
+function Ou({ size: e = Du }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "oak-bookshelf",
 		scale: [
@@ -24097,12 +24304,12 @@ function xu({ size: e = bu }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/storage/white-corner-wardrobe.tsx
-var Su = [
+var ku = [
 	1.8,
 	2.35,
 	1.2
 ];
-function Cu({ size: e = Su }) {
+function Au({ size: e = ku }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "white-corner-wardrobe",
 		scale: [
@@ -24287,7 +24494,7 @@ function Cu({ size: e = Su }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/storage/rounded-storage-panel.tsx
-function wu({ size: e, position: t, color: n, outline: r = "#716760", castShadow: i = !1 }) {
+function ju({ size: e, position: t, color: n, outline: r = "#716760", castShadow: i = !1 }) {
 	return /* @__PURE__ */ (0, H.jsxs)("mesh", {
 		position: t,
 		castShadow: i,
@@ -24305,7 +24512,7 @@ function wu({ size: e, position: t, color: n, outline: r = "#716760", castShadow
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/storage/cane-wardrobe/woven-inset.tsx
-function Tu({ width: e, height: t, y: n, z: r }) {
+function Mu({ width: e, height: t, y: n, z: r }) {
 	let i = Math.max(4, Math.round(t / .12));
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		position: [
@@ -24314,7 +24521,7 @@ function Tu({ width: e, height: t, y: n, z: r }) {
 			r
 		],
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(wu, {
+			/* @__PURE__ */ (0, H.jsx)(ju, {
 				size: [
 					e,
 					t,
@@ -24363,9 +24570,9 @@ function Tu({ width: e, height: t, y: n, z: r }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/storage/cane-wardrobe/cane-door.tsx
-function Eu({ width: e, height: t, frontZ: n }) {
+function Nu({ width: e, height: t, frontZ: n }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", { children: [
-		/* @__PURE__ */ (0, H.jsx)(wu, {
+		/* @__PURE__ */ (0, H.jsx)(ju, {
 			size: [
 				e,
 				t,
@@ -24379,13 +24586,13 @@ function Eu({ width: e, height: t, frontZ: n }) {
 			color: "#e7ddd5",
 			outline: "#756b65"
 		}),
-		/* @__PURE__ */ (0, H.jsx)(Tu, {
+		/* @__PURE__ */ (0, H.jsx)(Mu, {
 			width: e - .13,
 			height: .78,
 			y: t - .48,
 			z: n + .025
 		}),
-		/* @__PURE__ */ (0, H.jsx)(Tu, {
+		/* @__PURE__ */ (0, H.jsx)(Mu, {
 			width: e - .13,
 			height: .68,
 			y: .48,
@@ -24395,13 +24602,13 @@ function Eu({ width: e, height: t, frontZ: n }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/storage/cane-wardrobe/cane-wardrobe.tsx
-function Du({ width: e }) {
+function Pu({ width: e }) {
 	let t = 2.15, n = .38, r = e / 2 - .025;
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "placard-cannage-couloir-custom",
 		userData: { walkCollider: !0 },
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(wu, {
+			/* @__PURE__ */ (0, H.jsx)(ju, {
 				size: [
 					e - .11,
 					2.0949999999999998,
@@ -24414,7 +24621,7 @@ function Du({ width: e }) {
 				],
 				color: "#ded5ce"
 			}),
-			[-1, 1].map((r) => /* @__PURE__ */ (0, H.jsx)(wu, {
+			[-1, 1].map((r) => /* @__PURE__ */ (0, H.jsx)(ju, {
 				size: [
 					.055,
 					t,
@@ -24427,7 +24634,7 @@ function Du({ width: e }) {
 				],
 				color: "#e8dfd8"
 			}, r)),
-			/* @__PURE__ */ (0, H.jsx)(wu, {
+			/* @__PURE__ */ (0, H.jsx)(ju, {
 				size: [
 					e,
 					.055,
@@ -24446,7 +24653,7 @@ function Du({ width: e }) {
 					0,
 					0
 				],
-				children: [/* @__PURE__ */ (0, H.jsx)(Eu, {
+				children: [/* @__PURE__ */ (0, H.jsx)(Nu, {
 					width: r,
 					height: 2.07,
 					frontZ: .21
@@ -24474,13 +24681,13 @@ function Du({ width: e }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/storage/open-shelf-closet.tsx
-function Ou() {
+function Fu() {
 	let e = 2.15;
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "placard-etageres-couloir-custom",
 		userData: { walkCollider: !0 },
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(wu, {
+			/* @__PURE__ */ (0, H.jsx)(ju, {
 				size: [
 					.63,
 					2.14,
@@ -24493,7 +24700,7 @@ function Ou() {
 				],
 				color: "#e9e5df"
 			}),
-			[-1, 1].map((t) => /* @__PURE__ */ (0, H.jsx)(wu, {
+			[-1, 1].map((t) => /* @__PURE__ */ (0, H.jsx)(ju, {
 				size: [
 					.045,
 					e,
@@ -24506,7 +24713,7 @@ function Ou() {
 				],
 				color: "#eeeae5"
 			}, t)),
-			/* @__PURE__ */ (0, H.jsx)(wu, {
+			/* @__PURE__ */ (0, H.jsx)(ju, {
 				size: [
 					.63,
 					.64,
@@ -24537,7 +24744,7 @@ function Ou() {
 				1.44,
 				1.8,
 				2.12
-			].map((e) => /* @__PURE__ */ (0, H.jsx)(wu, {
+			].map((e) => /* @__PURE__ */ (0, H.jsx)(ju, {
 				size: [
 					.6599999999999999,
 					.035,
@@ -24556,12 +24763,12 @@ function Ou() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/storage/utility-shelving.tsx
-var ku = [
+var Iu = [
 	.9,
 	1.8,
 	.45
 ];
-function Au({ size: e = ku } = {}) {
+function Lu({ size: e = Iu } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "utility-shelving",
 		scale: [
@@ -24715,12 +24922,12 @@ function Au({ size: e = ku } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/storage/workbench.tsx
-var ju = [
+var Ru = [
 	1.5,
 	.9,
 	.65
 ];
-function Mu({ size: e = ju } = {}) {
+function zu({ size: e = Ru } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "workbench",
 		scale: [
@@ -24829,12 +25036,12 @@ function Mu({ size: e = ju } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/storage/toolbox.tsx
-var Nu = [
+var Bu = [
 	.45,
 	.3,
 	.24
 ];
-function Pu({ size: e = Nu } = {}) {
+function Vu({ size: e = Bu } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "toolbox",
 		scale: [
@@ -24955,7 +25162,7 @@ function Pu({ size: e = Nu } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/kitchen/kitchen-base-cabinet-case.tsx
-function Fu({ width: e, depth: t, frontColor: n = "#f4f2ec", worktopColor: r = "#d6b984" }) {
+function Hu({ width: e, depth: t, frontColor: n = "#f4f2ec", worktopColor: r = "#d6b984" }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "kitchen-base-cabinet-case",
 		children: [
@@ -25007,12 +25214,12 @@ function Fu({ width: e, depth: t, frontColor: n = "#f4f2ec", worktopColor: r = "
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/kitchen/kitchen-base-cabinet.tsx
-var Iu = [
+var Uu = [
 	.6,
 	.9,
 	.63
 ];
-function Lu({ size: e = Iu, variant: t = "default" }) {
+function Wu({ size: e = Uu, variant: t = "default" }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "kitchen-base-cabinet",
 		scale: [
@@ -25022,7 +25229,7 @@ function Lu({ size: e = Iu, variant: t = "default" }) {
 		],
 		userData: { walkCollider: !0 },
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(Fu, {
+			/* @__PURE__ */ (0, H.jsx)(Hu, {
 				frontColor: K(t),
 				width: .8,
 				depth: .63
@@ -25087,12 +25294,12 @@ function Lu({ size: e = Iu, variant: t = "default" }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/kitchen/kitchen-sink-cabinet.tsx
-var Ru = [
+var Gu = [
 	.6,
 	1.12,
 	.63
 ];
-function zu({ size: e = Ru, variant: t = "default" }) {
+function Ku({ size: e = Gu, variant: t = "default" }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "kitchen-sink-cabinet",
 		scale: [
@@ -25102,7 +25309,7 @@ function zu({ size: e = Ru, variant: t = "default" }) {
 		],
 		userData: { walkCollider: !0 },
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(Fu, {
+			/* @__PURE__ */ (0, H.jsx)(Hu, {
 				frontColor: K(t),
 				width: 1,
 				depth: .63,
@@ -25205,12 +25412,12 @@ function zu({ size: e = Ru, variant: t = "default" }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/kitchen/kitchen-wall-cabinet.tsx
-var Bu = [
+var qu = [
 	.6,
 	.8,
 	.35
 ];
-function Vu({ size: e = Bu, variant: t = "default" }) {
+function Ju({ size: e = qu, variant: t = "default" }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "kitchen-wall-cabinet",
 		scale: [
@@ -25278,12 +25485,12 @@ function Vu({ size: e = Bu, variant: t = "default" }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/kitchen/counter-stool.tsx
-var Hu = [
+var Yu = [
 	.48,
 	.92,
 	.5
 ];
-function Uu({ size: e = Hu }) {
+function Xu({ size: e = Yu }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "counter-stool",
 		scale: [
@@ -25392,12 +25599,12 @@ function Uu({ size: e = Hu }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/kitchen/kitchen-pantry-cabinet.tsx
-var Wu = [
+var Zu = [
 	.6,
 	2.1,
 	.63
 ];
-function Gu({ size: e = Wu, variant: t = "default" }) {
+function Qu({ size: e = Zu, variant: t = "default" }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "kitchen-pantry-cabinet",
 		scale: [
@@ -25502,12 +25709,12 @@ function Gu({ size: e = Wu, variant: t = "default" }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/kitchen/kitchen-island.tsx
-var Ku = [
+var $u = [
 	1.5,
 	.9,
 	.9
 ];
-function qu({ size: e = Ku, variant: t = "default" }) {
+function ed({ size: e = $u, variant: t = "default" }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "kitchen-island",
 		scale: [
@@ -25657,12 +25864,12 @@ function qu({ size: e = Ku, variant: t = "default" }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/kitchen/kitchen-hob-cabinet.tsx
-var Ju = [
+var td = [
 	.6,
 	.91,
 	.63
 ];
-function Yu({ size: e = Ju, variant: t = "default" }) {
+function nd({ size: e = td, variant: t = "default" }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "kitchen-hob-cabinet",
 		scale: [
@@ -25672,7 +25879,7 @@ function Yu({ size: e = Ju, variant: t = "default" }) {
 		],
 		userData: { walkCollider: !0 },
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(Lu, {
+			/* @__PURE__ */ (0, H.jsx)(Wu, {
 				size: [
 					.6,
 					.9,
@@ -25717,12 +25924,12 @@ function Yu({ size: e = Ju, variant: t = "default" }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/kitchen/two-step-stool.tsx
-var Xu = [
+var rd = [
 	.45,
 	.45,
 	.5
 ];
-function Zu({ size: e = Xu } = {}) {
+function id({ size: e = rd } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "two-step-stool",
 		scale: [
@@ -25863,12 +26070,12 @@ function Zu({ size: e = Xu } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/kitchen/kitchen-trolley.tsx
-var Qu = [
+var ad = [
 	.7,
 	.9,
 	.45
 ];
-function $u({ size: e = Qu } = {}) {
+function od({ size: e = ad } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "kitchen-trolley",
 		scale: [
@@ -26132,12 +26339,12 @@ function $u({ size: e = Qu } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/kitchen/bread-bin.tsx
-var ed = [
+var sd = [
 	.4,
 	.25,
 	.25
 ];
-function td({ size: e = ed } = {}) {
+function cd({ size: e = sd } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "bread-bin",
 		scale: [
@@ -26198,12 +26405,12 @@ function td({ size: e = ed } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/kitchen/dish-drying-rack.tsx
-var nd = [
+var ld = [
 	.45,
 	.15,
 	.32
 ];
-function rd({ size: e = nd } = {}) {
+function ud({ size: e = ld } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "dish-drying-rack",
 		scale: [
@@ -26624,12 +26831,12 @@ function rd({ size: e = nd } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/entryway/entryway-shoe-bench.tsx
-var id = [
+var dd = [
 	1,
 	.5,
 	.38
 ];
-function ad({ size: e = id }) {
+function fd({ size: e = dd }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "entryway-shoe-bench",
 		scale: [
@@ -26693,12 +26900,12 @@ function ad({ size: e = id }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/entryway/wall-coat-rack.tsx
-var od = [
+var pd = [
 	.8,
 	.32,
 	.22
 ];
-function sd({ size: e = od }) {
+function md({ size: e = pd }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "wall-coat-rack",
 		scale: [
@@ -26784,14 +26991,14 @@ function sd({ size: e = od }) {
 		]
 	});
 }
-var cd = 1.6515, ld = cd / 3, ud = 1.68, dd = "#d5ae79", fd = "#e8c994", pd = "#b98755", md = "#8e653f";
+var hd = 1.6515, gd = hd / 3, _d = 1.68, vd = "#d5ae79", yd = "#e8c994", bd = "#b98755", xd = "#8e653f";
 //#endregion
 //#region packages/catalog/src/furnishing/presets/entryway/louvered-closet/closet-panel-block.tsx
-function hd({ size: e, position: t, color: n, rotation: r = [
+function Sd({ size: e, position: t, color: n, rotation: r = [
 	0,
 	0,
 	0
-], outline: i = md }) {
+], outline: i = xd }) {
 	return /* @__PURE__ */ (0, H.jsxs)("mesh", {
 		position: t,
 		rotation: r,
@@ -26810,17 +27017,17 @@ function hd({ size: e, position: t, color: n, rotation: r = [
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/entryway/louvered-closet/louver-band.tsx
-function gd({ bottom: e, top: t }) {
+function Cd({ bottom: e, top: t }) {
 	let n = .062, r = Math.floor((t - e) / n);
 	return /* @__PURE__ */ (0, H.jsx)("group", {
 		name: "lames-persienne-entree",
 		children: Array.from({ length: r }, (t, r) => {
 			let i = e + n * (r + .5);
-			return /* @__PURE__ */ (0, H.jsx)(hd, {
+			return /* @__PURE__ */ (0, H.jsx)(Sd, {
 				size: [
 					.052,
 					.026,
-					ld - .15
+					gd - .15
 				],
 				position: [
 					.036,
@@ -26832,7 +27039,7 @@ function gd({ bottom: e, top: t }) {
 					0,
 					-.2
 				],
-				color: r % 3 == 1 ? fd : dd,
+				color: r % 3 == 1 ? yd : vd,
 				outline: "#795137"
 			}, i);
 		})
@@ -26840,94 +27047,94 @@ function gd({ bottom: e, top: t }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/entryway/louvered-closet/sliding-louver-panel.tsx
-function _d({ position: e }) {
+function wd({ position: e }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "panneau-coulissant-persienne-entree",
 		position: e,
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(hd, {
+			/* @__PURE__ */ (0, H.jsx)(Sd, {
 				size: [
 					.038,
-					ud - .16,
-					ld - .12
+					_d - .16,
+					gd - .12
 				],
 				position: [
 					-.012,
-					ud / 2,
+					_d / 2,
 					0
 				],
-				color: pd
+				color: bd
 			}),
-			/* @__PURE__ */ (0, H.jsx)(gd, {
+			/* @__PURE__ */ (0, H.jsx)(Cd, {
 				bottom: .16,
 				top: .73
 			}),
-			/* @__PURE__ */ (0, H.jsx)(gd, {
+			/* @__PURE__ */ (0, H.jsx)(Cd, {
 				bottom: .88,
 				top: 1.62
 			}),
-			[-1, 1].map((e) => /* @__PURE__ */ (0, H.jsx)(hd, {
+			[-1, 1].map((e) => /* @__PURE__ */ (0, H.jsx)(Sd, {
 				size: [
 					.064,
-					ud,
+					_d,
 					.07
 				],
 				position: [
 					.012,
-					ud / 2,
-					e * (ld / 2 - .035)
+					_d / 2,
+					e * (gd / 2 - .035)
 				],
-				color: dd
+				color: vd
 			}, e)),
-			[.0525, ud - .0525].map((e) => /* @__PURE__ */ (0, H.jsx)(hd, {
+			[.0525, _d - .0525].map((e) => /* @__PURE__ */ (0, H.jsx)(Sd, {
 				size: [
 					.064,
 					.105,
-					ld
+					gd
 				],
 				position: [
 					.012,
 					e,
 					0
 				],
-				color: dd
+				color: vd
 			}, e)),
-			/* @__PURE__ */ (0, H.jsx)(hd, {
+			/* @__PURE__ */ (0, H.jsx)(Sd, {
 				size: [
 					.068,
 					.13,
-					ld - .07
+					gd - .07
 				],
 				position: [
 					.018,
 					.805,
 					0
 				],
-				color: dd
+				color: vd
 			})
 		]
 	});
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/entryway/louvered-closet/louvered-closet.tsx
-function vd() {
-	let e = Array.from({ length: 3 }, (e, t) => (t - 1) * ld);
+function Td() {
+	let e = Array.from({ length: 3 }, (e, t) => (t - 1) * gd);
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "portes-coulissantes-placard-entree-custom",
 		userData: { walkCollider: !0 },
-		children: [[.0275, ud + .0275].map((e) => /* @__PURE__ */ (0, H.jsx)(hd, {
+		children: [[.0275, _d + .0275].map((e) => /* @__PURE__ */ (0, H.jsx)(Sd, {
 			size: [
 				.075,
 				.055,
-				cd - .07
+				hd - .07
 			],
 			position: [
 				.015,
 				e,
 				0
 			],
-			color: pd
-		}, e)), e.map((e, t) => /* @__PURE__ */ (0, H.jsx)(_d, { position: [
+			color: bd
+		}, e)), e.map((e, t) => /* @__PURE__ */ (0, H.jsx)(wd, { position: [
 			t === 1 ? .018 : 0,
 			0,
 			e
@@ -26936,12 +27143,12 @@ function vd() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/entryway/shoe-cabinet.tsx
-var yd = [
+var Ed = [
 	.8,
 	1.1,
 	.3
 ];
-function bd({ size: e = yd } = {}) {
+function Dd({ size: e = Ed } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "shoe-cabinet",
 		scale: [
@@ -27122,12 +27329,12 @@ function bd({ size: e = yd } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/entryway/umbrella-stand.tsx
-var xd = [
+var Od = [
 	.28,
 	.55,
 	.28
 ];
-function Sd({ size: e = xd } = {}) {
+function kd({ size: e = Od } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "umbrella-stand",
 		scale: [
@@ -27398,12 +27605,12 @@ function Sd({ size: e = xd } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/entryway/freestanding-coat-stand.tsx
-var Cd = [
+var Ad = [
 	.5,
 	1.75,
 	.5
 ];
-function wd({ size: e = Cd } = {}) {
+function jd({ size: e = Ad } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "freestanding-coat-stand",
 		scale: [
@@ -27600,12 +27807,12 @@ function wd({ size: e = Cd } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/hallway/hallway-console-table.tsx
-var Td = [
+var Md = [
 	1.1,
 	.8,
 	.35
 ];
-function Ed({ size: e = Td }) {
+function Nd({ size: e = Md }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "hallway-console-table",
 		scale: [
@@ -27694,12 +27901,12 @@ function Ed({ size: e = Td }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/hallway/floating-wall-shelf.tsx
-var Dd = [
+var Pd = [
 	.8,
 	.22,
 	.25
 ];
-function Od({ size: e = Dd }) {
+function Fd({ size: e = Pd }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "floating-wall-shelf",
 		scale: [
@@ -27768,7 +27975,7 @@ function Od({ size: e = Dd }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/deciduous-tree/deciduous-crown-geometry.ts
-var kd = [
+var Id = [
 	[
 		-.61,
 		2.65,
@@ -27833,7 +28040,7 @@ var kd = [
 		.45,
 		.56
 	]
-], Ad = [
+], Ld = [
 	"#568743",
 	"#669747",
 	"#487b45",
@@ -27843,14 +28050,14 @@ var kd = [
 	"#6e9b47",
 	"#92b65c"
 ];
-function jd() {
-	let e = kd.flatMap(([e, t, n, r, i, a], o) => Array.from({ length: 4 }, (s, c) => {
+function Rd() {
+	let e = Id.flatMap(([e, t, n, r, i, a], o) => Array.from({ length: 4 }, (s, c) => {
 		let l = o * 1.7 + c * 2.39996, u = c > 0, d = new C(1, 2), f = d.getAttribute("position");
 		for (let s = 0; s < f.count; s++) {
 			let c = f.getX(s), d = f.getY(s), p = f.getZ(s), m = 1 + .075 * Math.sin(c * 7 + o) * Math.cos(p * 6 - d * 5), h = u ? .48 : 1;
 			f.setXYZ(s, e + c * r * m * h + (u ? Math.cos(l) * r * .68 : 0), t + d * i * m * h + (u ? .12 * Math.sin(l * 2) : 0), n + p * a * m * h + (u ? Math.sin(l) * a * .68 : 0));
 		}
-		let p = new Ue(Ad[o]).multiplyScalar(u ? 1.025 : 1);
+		let p = new Ue(Ld[o]).multiplyScalar(u ? 1.025 : 1);
 		return d.setAttribute("color", new He(Array.from({ length: f.count }, () => [
 			p.r,
 			p.g,
@@ -27861,7 +28068,7 @@ function jd() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/deciduous-tree/deciduous-wood-geometry.ts
-function Md() {
+function zd() {
 	let e = [], t = (t, n, r, i = 9) => {
 		let a = new be(t.map((e) => new M(...e)));
 		for (let t = 0; t < i; t++) {
@@ -28010,16 +28217,16 @@ function Md() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/deciduous-tree/deciduous-tree.tsx
-var Nd = [
+var Bd = [
 	2.4,
 	4.2,
 	2.4
 ];
-function Pd({ size: e }) {
+function Vd({ size: e }) {
 	let t = (0, I.useMemo)(() => {
 		let e = {
-			wood: Md(),
-			crown: jd()
+			wood: zd(),
+			crown: Rd()
 		}, t = new Te();
 		Object.values(e).forEach((e) => {
 			e.computeBoundingBox(), t.union(e.boundingBox);
@@ -28057,7 +28264,7 @@ function Pd({ size: e }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/garden-hedge/hedge-foliage.tsx
-var Fd = "#68825b", Id = "#485f43", Ld = [
+var Hd = "#68825b", Ud = "#485f43", Wd = [
 	[
 		-.7,
 		.42,
@@ -28091,7 +28298,7 @@ var Fd = "#68825b", Id = "#485f43", Ld = [
 		"#58734f"
 	]
 ];
-function Rd() {
+function Gd() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "garden-hedge-clipped-foliage",
 		children: [/* @__PURE__ */ (0, H.jsx)(G, {
@@ -28106,10 +28313,10 @@ function Rd() {
 				.74,
 				0
 			],
-			color: Fd,
-			outlineColor: Id,
+			color: Hd,
+			outlineColor: Ud,
 			radius: .08
-		}), [-1, 1].flatMap((e) => Ld.map(([t, n, r, i, a, o], s) => /* @__PURE__ */ (0, H.jsx)(G, {
+		}), [-1, 1].flatMap((e) => Wd.map(([t, n, r, i, a, o], s) => /* @__PURE__ */ (0, H.jsx)(G, {
 			name: "garden-hedge-foliage-patch",
 			size: [
 				i,
@@ -28134,19 +28341,19 @@ function Rd() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/garden-hedge/garden-hedge.tsx
-var zd = [
+var Kd = [
 	2,
 	1.4,
 	.6
 ];
-function Bd({ size: e = zd }) {
+function qd({ size: e = Kd }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "garden-hedge",
 		userData: { walkCollider: !0 },
 		scale: [
-			e[0] / zd[0],
-			e[1] / zd[1],
-			e[2] / zd[2]
+			e[0] / Kd[0],
+			e[1] / Kd[1],
+			e[2] / Kd[2]
 		],
 		children: [[
 			-.66,
@@ -28168,16 +28375,16 @@ function Bd({ size: e = zd }) {
 				.24,
 				8
 			] }), /* @__PURE__ */ (0, H.jsx)(l, { color: "#70563b" })]
-		}, e)), /* @__PURE__ */ (0, H.jsx)(Rd, {})]
+		}, e)), /* @__PURE__ */ (0, H.jsx)(Gd, {})]
 	});
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/garden-shrub.tsx
-var Vd = [
+var Jd = [
 	1.35,
 	.92,
 	1.15
-], Hd = [
+], Yd = [
 	[
 		-.275,
 		.4,
@@ -28207,15 +28414,15 @@ var Vd = [
 		"#4f7148"
 	]
 ];
-function Ud({ size: e }) {
+function Xd({ size: e }) {
 	return /* @__PURE__ */ (0, H.jsx)("group", {
 		name: "garden-shrub",
 		scale: [
-			e[0] / Vd[0],
-			e[1] / Vd[1],
-			e[2] / Vd[2]
+			e[0] / Jd[0],
+			e[1] / Jd[1],
+			e[2] / Jd[2]
 		],
-		children: Hd.map(([e, t, n, r, i], a) => /* @__PURE__ */ (0, H.jsxs)("mesh", {
+		children: Yd.map(([e, t, n, r, i], a) => /* @__PURE__ */ (0, H.jsxs)("mesh", {
 			position: [
 				e,
 				t,
@@ -28233,7 +28440,7 @@ function Ud({ size: e }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/olive-tree/olive-tree-structure.ts
-var Wd = [
+var Zd = [
 	[
 		0,
 		.06,
@@ -28264,7 +28471,7 @@ var Wd = [
 		.03,
 		.14
 	]
-], Gd = [
+], Qd = [
 	{
 		center: [
 			-1.12,
@@ -28469,21 +28676,21 @@ var Wd = [
 			.03
 		]
 	}
-], Kd = [
+], $d = [
 	"#829365",
 	"#9daa7e",
 	"#bbc49b"
 ].map((e) => new Ue(e));
-function qd() {
+function ef() {
 	let e = [], t = [], n = [], r = (n, r) => {
 		e.push(n.x, n.y, n.z), t.push(r.r, r.g, r.b);
 	};
-	Gd.forEach(({ center: t, radius: i }, a) => {
+	Qd.forEach(({ center: t, radius: i }, a) => {
 		let o = new M(...t);
 		for (let t = 0; t < 22; t++) {
 			let s = t * 2.399963 + a * .71, c = -.7 + 1.6 * (t + .5) / 22, l = Math.sqrt(1 - c * c), u = new M(Math.cos(s) * l, c, Math.sin(s) * l), d = new M(u.x * i[0], u.y * i[1], u.z * i[2]), f = new M(-u.z, 0, u.x).normalize(), p = f.clone().cross(u).normalize();
 			for (let i = 0; i < 5; i++) {
-				let s = i % 2 == 0 ? 1 : -1, c = o.clone().addScaledVector(d, .45 + i * .105), l = u.clone().multiplyScalar(.8).addScaledVector(f, i === 4 ? 0 : s * .65).normalize(), m = p.clone().cross(l).normalize(), h = .31 + .035 * Math.sin(t + a * 2 + i), g = c.clone().addScaledVector(l, h * .5), _ = Kd[(t + a) % Kd.length], v = e.length / 3;
+				let s = i % 2 == 0 ? 1 : -1, c = o.clone().addScaledVector(d, .45 + i * .105), l = u.clone().multiplyScalar(.8).addScaledVector(f, i === 4 ? 0 : s * .65).normalize(), m = p.clone().cross(l).normalize(), h = .31 + .035 * Math.sin(t + a * 2 + i), g = c.clone().addScaledVector(l, h * .5), _ = $d[(t + a) % $d.length], v = e.length / 3;
 				r(g.clone().addScaledVector(p, .008), _);
 				for (let e = 0; e < 12; e++) {
 					let t = e / 12 * Math.PI * 2;
@@ -28497,8 +28704,8 @@ function qd() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/olive-tree/olive-crown-geometry.ts
-function Jd() {
-	let e = Gd.flatMap(({ center: e, radius: t }, n) => [-1, 1].map((r) => {
+function tf() {
+	let e = Qd.flatMap(({ center: e, radius: t }, n) => [-1, 1].map((r) => {
 		let i = new C(1, 1);
 		i.scale(.043, .062, .043), i.translate(e[0] + r * t[0] * .34, e[1] - t[1] * .62, e[2] + t[2] * .2);
 		let a = new Ue(n % 3 == 0 ? "#8b914e" : "#424039");
@@ -28507,7 +28714,7 @@ function Jd() {
 			a.g,
 			a.b
 		]).flat(), 3)), i;
-	})), t = qd(), n = N(e);
+	})), t = ef(), n = N(e);
 	return e.forEach((e) => e.dispose()), {
 		leaves: t,
 		olives: n
@@ -28515,7 +28722,7 @@ function Jd() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/olive-tree/olive-branch-geometry.ts
-function Yd(e, t = 12, n = 12, r = .13) {
+function nf(e, t = 12, n = 12, r = .13) {
 	let i = new be(e.map(([e, t, n]) => new M(e, t, n))), a = i.computeFrenetFrames(t, !1), o = [], s = [], c = [], l = new Ue("#665847"), u = new Ue("#a99677");
 	for (let d = 0; d <= t; d++) {
 		let f = d / t, p = i.getPoint(f), m = Math.min(e.length - 2, Math.floor(f * (e.length - 1))), h = f * (e.length - 1) - m, g = e[m][3] * (1 - h) + e[m + 1][3] * h;
@@ -28539,10 +28746,10 @@ function Yd(e, t = 12, n = 12, r = .13) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/olive-tree/olive-wood-geometry.ts
-function Xd() {
+function rf() {
 	let e = Array.from({ length: 7 }, (e, t) => {
 		let n = t * Math.PI * 2 / 7 + .23, r = .48 + .09 * Math.sin(t * 3);
-		return Yd([
+		return nf([
 			[
 				-.05,
 				.29,
@@ -28562,9 +28769,9 @@ function Xd() {
 				.025
 			]
 		], 6, 12, .03);
-	}), t = [Yd(Wd, 24, 16, .09), ...e], n = Gd.map(({ center: e, fork: t }, n) => {
+	}), t = [nf(Zd, 24, 16, .09), ...e], n = Qd.map(({ center: e, fork: t }, n) => {
 		let r = n % 2 == 0 ? -.13 : .14;
-		return Yd([
+		return nf([
 			[...t, .135],
 			[
 				t[0] * .45 + e[0] * .55,
@@ -28588,16 +28795,16 @@ function Xd() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/olive-tree/olive-tree.tsx
-var Zd = [
+var af = [
 	3.8,
 	3.6,
 	3.2
 ];
-function Qd({ size: e = Zd }) {
+function of({ size: e = af }) {
 	let t = (0, I.useMemo)(() => {
 		let e = {
-			...Xd(),
-			...Jd()
+			...rf(),
+			...tf()
 		}, t = new Te();
 		for (let n of Object.values(e)) n.computeBoundingBox(), t.union(n.boundingBox);
 		let n = t.getSize(new M()), r = t.getCenter(new M()), i = new te().makeScale(3.8 / n.x, 3.6 / n.y, 3.2 / n.z).multiply(new te().makeTranslation(-r.x, -t.min.y, -r.z));
@@ -28653,12 +28860,12 @@ function Qd({ size: e = Zd }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/pool-chaise-longue/chaise-upholstery.tsx
-var $d = 42 * Math.PI / 180, ef = .72, tf = .09, nf = ef / 2, rf = tf / 2, af = nf * Math.sin($d) + rf * Math.cos($d), of = nf * Math.cos($d) + rf * Math.sin($d), sf = [
+var sf = 42 * Math.PI / 180, cf = .72, lf = .09, uf = cf / 2, df = lf / 2, ff = uf * Math.sin(sf) + df * Math.cos(sf), pf = uf * Math.cos(sf) + df * Math.sin(sf), mf = [
 	0,
-	.85 - af,
-	-1.05 + of
-], cf = "#94a58c", lf = "#687662";
-function uf() {
+	.85 - ff,
+	-1.05 + pf
+], hf = "#94a58c", gf = "#687662";
+function _f() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "pool-chaise-upholstery",
 		children: [/* @__PURE__ */ (0, H.jsx)(G, {
@@ -28673,31 +28880,31 @@ function uf() {
 				.255,
 				.3
 			],
-			color: cf,
-			outlineColor: lf,
+			color: hf,
+			outlineColor: gf,
 			radius: .035
 		}), /* @__PURE__ */ (0, H.jsx)(G, {
 			name: "pool-chaise-reclined-back-cushion",
 			size: [
 				.68,
-				tf,
-				ef
+				lf,
+				cf
 			],
-			position: [...sf],
+			position: [...mf],
 			rotation: [
-				$d,
+				sf,
 				0,
 				0
 			],
-			color: cf,
-			outlineColor: lf,
+			color: hf,
+			outlineColor: gf,
 			radius: .035
 		})]
 	});
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/pool-chaise-longue/chaise-frame.tsx
-var df = "#a87745", ff = "#6d4a2c", pf = (e, t, n, r = [
+var vf = "#a87745", yf = "#6d4a2c", bf = (e, t, n, r = [
 	0,
 	0,
 	0
@@ -28706,15 +28913,15 @@ var df = "#a87745", ff = "#6d4a2c", pf = (e, t, n, r = [
 	size: t,
 	position: n,
 	rotation: r,
-	color: df,
-	outlineColor: ff,
+	color: vf,
+	outlineColor: yf,
 	radius: .015
 }, e);
-function mf() {
+function xf() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "pool-chaise-teak-frame",
 		children: [
-			[-.36, .36].map((e) => pf(`pool-chaise-side-rail-${e}`, [
+			[-.36, .36].map((e) => bf(`pool-chaise-side-rail-${e}`, [
 				.08,
 				.08,
 				1.5
@@ -28723,7 +28930,7 @@ function mf() {
 				.17,
 				.3
 			])),
-			[-.39, .98].map((e) => pf(`pool-chaise-cross-rail-${e}`, [
+			[-.39, .98].map((e) => bf(`pool-chaise-cross-rail-${e}`, [
 				.64,
 				.08,
 				.08
@@ -28732,7 +28939,7 @@ function mf() {
 				.17,
 				e
 			])),
-			[-.36, .36].flatMap((e) => [-.35, .82].map((t) => pf(`pool-chaise-leg-${e}-${t}`, [
+			[-.36, .36].flatMap((e) => [-.35, .82].map((t) => bf(`pool-chaise-leg-${e}-${t}`, [
 				.08,
 				.17,
 				.08
@@ -28741,16 +28948,16 @@ function mf() {
 				.085,
 				t
 			]))),
-			[-.285, .285].map((e) => pf(`pool-chaise-back-support-${e}`, [
+			[-.285, .285].map((e) => bf(`pool-chaise-back-support-${e}`, [
 				.05,
 				.05,
 				.64
 			], [
 				e,
-				sf[1] - .045,
-				sf[2] - .04
+				mf[1] - .045,
+				mf[2] - .04
 			], [
-				$d,
+				sf,
 				0,
 				0
 			])),
@@ -28775,7 +28982,7 @@ function mf() {
 						.72,
 						16
 					] }),
-					/* @__PURE__ */ (0, H.jsx)(l, { color: ff }),
+					/* @__PURE__ */ (0, H.jsx)(l, { color: yf }),
 					/* @__PURE__ */ (0, H.jsx)(k, {
 						color: "#55402d",
 						thickness: .0015,
@@ -28788,31 +28995,31 @@ function mf() {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/pool-chaise-longue/pool-chaise-longue.tsx
-var hf = [
+var Sf = [
 	.8,
 	.85,
 	2.1
 ];
-function gf({ size: e = hf }) {
+function Cf({ size: e = Sf }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "pool-chaise-longue",
 		userData: { walkCollider: !0 },
 		scale: [
-			e[0] / hf[0],
-			e[1] / hf[1],
-			e[2] / hf[2]
+			e[0] / Sf[0],
+			e[1] / Sf[1],
+			e[2] / Sf[2]
 		],
-		children: [/* @__PURE__ */ (0, H.jsx)(mf, {}), /* @__PURE__ */ (0, H.jsx)(uf, {})]
+		children: [/* @__PURE__ */ (0, H.jsx)(xf, {}), /* @__PURE__ */ (0, H.jsx)(_f, {})]
 	});
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/outdoor-bbq.tsx
-var _f = [
+var wf = [
 	1.2,
 	1.1,
 	.6
 ];
-function vf({ size: e = _f }) {
+function Tf({ size: e = wf }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "outdoor-bbq",
 		scale: [
@@ -29015,12 +29222,12 @@ function vf({ size: e = _f }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/wooden-garden-swing.tsx
-var yf = [
+var Ef = [
 	2.2,
 	2.1,
 	1.4
 ];
-function bf({ size: e = yf }) {
+function Df({ size: e = Ef }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "wooden-garden-swing",
 		scale: [
@@ -29292,12 +29499,12 @@ function bf({ size: e = yf }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/outdoor-dining-table.tsx
-var xf = [
+var Of = [
 	1.6,
 	.75,
 	.9
 ];
-function Sf({ size: e = xf }) {
+function kf({ size: e = Of }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "outdoor-dining-table",
 		scale: [
@@ -29466,12 +29673,12 @@ function Sf({ size: e = xf }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/outdoor-dining-chair.tsx
-var Cf = [
+var Af = [
 	.56,
 	.85,
 	.58
 ];
-function wf({ size: e = Cf }) {
+function jf({ size: e = Af }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "outdoor-dining-chair",
 		scale: [
@@ -29724,12 +29931,12 @@ function wf({ size: e = Cf }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/garden-bench.tsx
-var Tf = [
+var Mf = [
 	1.5,
 	.9,
 	.6
 ];
-function Ef({ size: e = Tf }) {
+function Nf({ size: e = Mf }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "garden-bench",
 		scale: [
@@ -29996,12 +30203,12 @@ function Ef({ size: e = Tf }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/outdoor-side-table.tsx
-var Df = [
+var Pf = [
 	.5,
 	.45,
 	.5
 ];
-function Of({ size: e = Df }) {
+function Ff({ size: e = Pf }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "outdoor-side-table",
 		scale: [
@@ -30064,12 +30271,12 @@ function Of({ size: e = Df }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/patio-parasol.tsx
-var kf = [
+var If = [
 	2.4,
 	2.5,
 	2.4
 ];
-function Af({ size: e = kf }) {
+function Lf({ size: e = If }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "patio-parasol",
 		scale: [
@@ -30149,7 +30356,7 @@ function Af({ size: e = kf }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/outdoor-basin.tsx
-function jf({ name: e, radius: t, height: n, position: r, color: i }) {
+function Rf({ name: e, radius: t, height: n, position: r, color: i }) {
 	let a = [
 		[0, 0],
 		[t * .66, 0],
@@ -30169,12 +30376,12 @@ function jf({ name: e, radius: t, height: n, position: r, color: i }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/terracotta-planter.tsx
-var Mf = [
+var zf = [
 	.5,
 	.5,
 	.5
 ];
-function Nf({ size: e = Mf }) {
+function Bf({ size: e = zf }) {
 	return /* @__PURE__ */ (0, H.jsx)("group", {
 		name: "terracotta-planter",
 		scale: [
@@ -30183,7 +30390,7 @@ function Nf({ size: e = Mf }) {
 			e[2] / .5
 		],
 		userData: { walkCollider: !0 },
-		children: /* @__PURE__ */ (0, H.jsx)(jf, {
+		children: /* @__PURE__ */ (0, H.jsx)(Rf, {
 			name: "planter",
 			radius: .25,
 			height: .5,
@@ -30198,12 +30405,12 @@ function Nf({ size: e = Mf }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/raised-garden-bed.tsx
-var Pf = [
+var Vf = [
 	1.2,
 	.4,
 	.8
 ];
-function Ff({ size: e = Pf }) {
+function Hf({ size: e = Vf }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "raised-garden-bed",
 		scale: [
@@ -30288,12 +30495,12 @@ function Ff({ size: e = Pf }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/outdoor-storage-box.tsx
-var If = [
+var Uf = [
 	1.2,
 	.6,
 	.55
 ];
-function Lf({ size: e = If }) {
+function Wf({ size: e = Uf }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "outdoor-storage-box",
 		scale: [
@@ -30392,12 +30599,12 @@ function Lf({ size: e = If }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/garden-hose-reel.tsx
-var Rf = [
+var Gf = [
 	.48,
 	.6,
 	.42
 ];
-function zf({ size: e = Rf }) {
+function Kf({ size: e = Gf }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "garden-hose-reel",
 		scale: [
@@ -30685,12 +30892,12 @@ function zf({ size: e = Rf }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/watering-can.tsx
-var Bf = [
+var qf = [
 	.54,
 	.36,
 	.22
 ];
-function Vf({ size: e = Bf }) {
+function Jf({ size: e = qf }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "watering-can",
 		scale: [
@@ -30786,12 +30993,12 @@ function Vf({ size: e = Bf }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/garden-birdbath.tsx
-var Hf = [
+var Yf = [
 	.6,
 	.8,
 	.6
 ];
-function Uf({ size: e = Hf }) {
+function Xf({ size: e = Yf }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "garden-birdbath",
 		scale: [
@@ -30833,7 +31040,7 @@ function Uf({ size: e = Hf }) {
 					24
 				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: "#c8c4b0" })]
 			}),
-			/* @__PURE__ */ (0, H.jsx)(jf, {
+			/* @__PURE__ */ (0, H.jsx)(Rf, {
 				name: "basin",
 				radius: .3,
 				height: .14,
@@ -30849,12 +31056,12 @@ function Uf({ size: e = Hf }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/outdoor-fire-pit.tsx
-var Wf = [
+var Zf = [
 	.8,
 	.4,
 	.8
 ];
-function Gf({ size: e = Wf }) {
+function Qf({ size: e = Zf }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "outdoor-fire-pit",
 		scale: [
@@ -30864,7 +31071,7 @@ function Gf({ size: e = Wf }) {
 		],
 		userData: { walkCollider: !0 },
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(jf, {
+			/* @__PURE__ */ (0, H.jsx)(Rf, {
 				name: "fire-bowl",
 				radius: .4,
 				height: .26,
@@ -30922,12 +31129,12 @@ function Gf({ size: e = Wf }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/garden-compost-bin.tsx
-var Kf = [
+var $f = [
 	.8,
 	1,
 	.8
 ];
-function qf({ size: e = Kf }) {
+function ep({ size: e = $f }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "garden-compost-bin",
 		scale: [
@@ -31040,12 +31247,12 @@ function qf({ size: e = Kf }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/wheelie-bin.tsx
-var Jf = [
+var tp = [
 	.58,
 	1.05,
 	.64
 ];
-function Yf({ size: e = Jf }) {
+function np({ size: e = tp }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "wheelie-bin",
 		scale: [
@@ -31158,12 +31365,12 @@ function Yf({ size: e = Jf }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/outdoor/garden-trellis.tsx
-var Xf = [
+var rp = [
 	.9,
 	1.8,
 	.12
 ];
-function Zf({ size: e = Xf }) {
+function ip({ size: e = rp }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "garden-trellis",
 		scale: [
@@ -31402,12 +31609,12 @@ function Zf({ size: e = Xf }) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/laundry/drying-rack.tsx
-var Qf = [
+var ap = [
 	1.2,
 	.95,
 	.6
 ];
-function $f({ size: e = Qf } = {}) {
+function op({ size: e = ap } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "drying-rack",
 		scale: [
@@ -31710,12 +31917,12 @@ function $f({ size: e = Qf } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/laundry/ironing-board.tsx
-var ep = [
+var sp = [
 	1.2,
 	.9,
 	.4
 ];
-function tp({ size: e = ep } = {}) {
+function cp({ size: e = sp } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "ironing-board",
 		scale: [
@@ -31854,12 +32061,12 @@ function tp({ size: e = ep } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/laundry/laundry-carry-basket.tsx
-var np = [
+var lp = [
 	.6,
 	.35,
 	.4
 ];
-function rp({ size: e = np } = {}) {
+function up({ size: e = lp } = {}) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "laundry-carry-basket",
 		scale: [
@@ -32490,7 +32697,7 @@ function rp({ size: e = np } = {}) {
 }
 //#endregion
 //#region packages/catalog/src/furnishing/presets/curtains/single-window-curtain.tsx
-function ip({ size: e, variant: t, color: n }) {
+function dp({ size: e, variant: t, color: n }) {
 	let r = t === "right" ? 1 : -1;
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "single-window-curtain",
@@ -32565,163 +32772,8 @@ function ip({ size: e, variant: t, color: n }) {
 	});
 }
 //#endregion
-//#region packages/catalog/src/furnishing/presets/rattan-bell-pendant/woven-bell-geometry.ts
-var ap = new be([
-	new M(.246, .004, 0),
-	new M(.244, .09, 0),
-	new M(.218, .19, 0),
-	new M(.155, .28, 0),
-	new M(.075, .355, 0),
-	new M(.039, .405, 0),
-	new M(.037, .48, 0)
-]);
-function op() {
-	let e = [
-		[],
-		[],
-		[]
-	];
-	for (let t = 0; t < 80; t++) {
-		let n = t / 80 * Math.PI * 2, r = Array.from({ length: 33 }, (e, r) => {
-			let i = r / 32, a = ap.getPoint(i), o = a.x + Math.sin(i * Math.PI * 24 + t * Math.PI) * .001;
-			return new M(Math.cos(n) * o, a.y, Math.sin(n) * o);
-		});
-		e[t % 3].push(new _(new be(r), 40, .0022, 4, !1));
-	}
-	for (let t = 0; t <= 12; t++) {
-		let n = ap.getPoint(t / 12), r = new Ie(n.x, t === 0 ? .004 : .0026, 6, 80);
-		r.rotateX(Math.PI / 2), r.translate(0, n.y, 0), e[t % 3].push(r);
-	}
-	return e.map((e) => {
-		let t = N(e);
-		return e.forEach((e) => e.dispose()), t;
-	});
-}
-//#endregion
-//#region packages/catalog/src/furnishing/presets/rattan-bell-pendant/rattan-bell-pendant.tsx
-var sp = [
-	.5,
-	1.2,
-	.5
-], cp = [
-	"#bc9461",
-	"#cba574",
-	"#c29c69"
-];
-function lp({ size: e = sp }) {
-	let t = (0, I.useMemo)(op, []);
-	return (0, I.useEffect)(() => () => t.forEach((e) => e.dispose()), [t]), /* @__PURE__ */ (0, H.jsxs)("group", {
-		name: "rattan-bell-pendant",
-		scale: [
-			e[0] / .5,
-			e[1] / 1.2,
-			e[2] / .5
-		],
-		children: [
-			t.map((e, t) => /* @__PURE__ */ (0, H.jsx)("mesh", {
-				name: "open-rattan-weave",
-				geometry: e,
-				castShadow: !0,
-				receiveShadow: !0,
-				children: /* @__PURE__ */ (0, H.jsx)(l, { color: cp[t] })
-			}, t)),
-			/* @__PURE__ */ (0, H.jsxs)("mesh", {
-				name: "white-ceiling-rose",
-				position: [
-					0,
-					1.185,
-					0
-				],
-				castShadow: !0,
-				children: [
-					/* @__PURE__ */ (0, H.jsx)("cylinderGeometry", { args: [
-						.055,
-						.04,
-						.03,
-						32
-					] }),
-					/* @__PURE__ */ (0, H.jsx)(l, { color: "#eeeae2" }),
-					/* @__PURE__ */ (0, H.jsx)(k, {
-						color: "#bab3a8",
-						thickness: .001,
-						screenspace: !1
-					})
-				]
-			}),
-			/* @__PURE__ */ (0, H.jsxs)("mesh", {
-				name: "white-pendant-cord",
-				position: [
-					0,
-					.8125,
-					0
-				],
-				children: [/* @__PURE__ */ (0, H.jsx)("cylinderGeometry", { args: [
-					.003,
-					.003,
-					.725,
-					8
-				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: "#e5e0d6" })]
-			}),
-			/* @__PURE__ */ (0, H.jsxs)("mesh", {
-				name: "bulb-socket",
-				position: [
-					0,
-					.419,
-					0
-				],
-				children: [/* @__PURE__ */ (0, H.jsx)("cylinderGeometry", { args: [
-					.018,
-					.021,
-					.07,
-					16
-				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: "#e5e0d6" })]
-			}),
-			/* @__PURE__ */ (0, H.jsxs)("mesh", {
-				name: "opal-bulb",
-				position: [
-					0,
-					.355,
-					0
-				],
-				scale: [
-					1,
-					1.25,
-					1
-				],
-				children: [/* @__PURE__ */ (0, H.jsx)("sphereGeometry", { args: [
-					.034,
-					20,
-					12
-				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: "#f4ead4" })]
-			}),
-			[
-				0,
-				1,
-				2
-			].map((e) => /* @__PURE__ */ (0, H.jsxs)("mesh", {
-				name: "shade-support-spoke",
-				position: [
-					0,
-					.455,
-					0
-				],
-				rotation: [
-					0,
-					e * Math.PI * 2 / 3,
-					0
-				],
-				children: [/* @__PURE__ */ (0, H.jsx)("boxGeometry", { args: [
-					.074,
-					.003,
-					.003
-				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: "#c7b899" })]
-			}, e))
-		]
-	});
-}
-//#endregion
 //#region packages/catalog/src/furnishing/presets/children-bedroom/curtain-definition.tsx
-var up = L({
+var fp = L({
 	defaultRoomType: "bedroom",
 	component: ({ size: e, color: t }) => /* @__PURE__ */ (0, H.jsx)("group", {
 		scale: [
@@ -32729,7 +32781,7 @@ var up = L({
 			e[1] / 2.205,
 			e[2] / .076
 		],
-		children: /* @__PURE__ */ (0, H.jsx)(So, { color: t })
+		children: /* @__PURE__ */ (0, H.jsx)(ko, { color: t })
 	}),
 	label: "Children's curtains",
 	defaultColor: "#d8d0c4",
@@ -32765,9 +32817,9 @@ var up = L({
 		visibleMeshes: 12,
 		triangles: 3200
 	}
-}), dp = L({
+}), pp = L({
 	defaultRoomType: "living-room",
-	component: ip,
+	component: dp,
 	label: "Single window curtain",
 	defaultColor: "#d8c8ad",
 	category: "Decor",
@@ -32814,13 +32866,14 @@ var up = L({
 		visibleMeshes: 6,
 		triangles: 72
 	}
-}), fp = {
+}), mp = {
 	"rattan-bell-pendant": L({
-		component: lp,
+		legacyOnly: !0,
+		component: ei,
 		label: "Rattan bell pendant",
 		category: "Lighting",
 		defaultRoomType: "dining-room",
-		defaultSize: sp,
+		defaultSize: Qr,
 		bounds: {
 			min: [
 				-.25,
@@ -32842,11 +32895,11 @@ var up = L({
 		}
 	}),
 	"white-display-column": L({
-		component: Jc,
+		component: tl,
 		label: "White display column",
 		category: "Storage",
 		defaultRoomType: "living-room",
-		defaultSize: qc,
+		defaultSize: el,
 		bounds: {
 			min: [
 				-.3,
@@ -32875,11 +32928,11 @@ var up = L({
 		}
 	}),
 	"trailing-shelf-plant": L({
-		component: ks,
+		component: Is,
 		label: "Trailing shelf plant",
 		category: "Decor",
 		defaultRoomType: "living-room",
-		defaultSize: Os,
+		defaultSize: Fs,
 		bounds: {
 			min: [
 				-.13,
@@ -32908,11 +32961,11 @@ var up = L({
 		}
 	}),
 	"decorative-globe": L({
-		component: Ds,
+		component: Ps,
 		label: "Decorative globe",
 		category: "Decor",
 		defaultRoomType: "living-room",
-		defaultSize: Es,
+		defaultSize: Ns,
 		bounds: {
 			min: [
 				-.139,
@@ -32941,11 +32994,11 @@ var up = L({
 		}
 	}),
 	"ring-ceramic-vase": L({
-		component: Ts,
+		component: Ms,
 		label: "Ring ceramic vase",
 		category: "Decor",
 		defaultRoomType: "living-room",
-		defaultSize: ws,
+		defaultSize: js,
 		bounds: {
 			min: [
 				-.09,
@@ -32974,11 +33027,11 @@ var up = L({
 		}
 	}),
 	"tufted-diamond-rug": L({
-		component: Kc,
+		component: $c,
 		label: "Tufted diamond rug",
 		category: "Decor",
 		defaultRoomType: "living-room",
-		defaultSize: Gc,
+		defaultSize: Qc,
 		bounds: {
 			min: [
 				-1.3,
@@ -33007,11 +33060,11 @@ var up = L({
 		}
 	}),
 	"white-tapered-wall-sconce": L({
-		component: Wc,
+		component: Zc,
 		label: "White tapered wall sconce",
 		category: "Lighting",
 		defaultRoomType: "living-room",
-		defaultSize: Uc,
+		defaultSize: Xc,
 		bounds: {
 			min: [
 				-.09,
@@ -33040,11 +33093,11 @@ var up = L({
 		}
 	}),
 	"book-row": L({
-		component: Hc,
+		component: Yc,
 		label: "Book row",
 		category: "Decor",
 		defaultRoomType: "living-room",
-		defaultSize: Vc,
+		defaultSize: Jc,
 		bounds: {
 			min: [
 				-.2,
@@ -33073,11 +33126,11 @@ var up = L({
 		}
 	}),
 	"six-globe-ceiling-lamp": L({
-		component: Bc,
+		component: qc,
 		label: "Six globe ceiling lamp",
 		category: "Lighting",
 		defaultRoomType: "living-room",
-		defaultSize: zc,
+		defaultSize: Kc,
 		bounds: {
 			min: [
 				-.45,
@@ -33106,11 +33159,11 @@ var up = L({
 		}
 	}),
 	"slim-soundbar": L({
-		component: Lc,
+		component: Wc,
 		label: "Slim soundbar",
 		category: "Media",
 		defaultRoomType: "living-room",
-		defaultSize: Ic,
+		defaultSize: Uc,
 		bounds: {
 			min: [
 				-.525,
@@ -33139,11 +33192,11 @@ var up = L({
 		}
 	}),
 	"media-shelf-surround": L({
-		component: Fc,
+		component: Hc,
 		label: "Media shelf surround",
 		category: "Storage",
 		defaultRoomType: "living-room",
-		defaultSize: Pc,
+		defaultSize: Vc,
 		bounds: {
 			min: [
 				-1,
@@ -33172,11 +33225,11 @@ var up = L({
 		}
 	}),
 	"double-arched-bookcase": L({
-		component: Nc,
+		component: Bc,
 		label: "Double arched bookcase",
 		category: "Storage",
 		defaultRoomType: "living-room",
-		defaultSize: Mc,
+		defaultSize: zc,
 		bounds: {
 			min: [
 				-.5,
@@ -33205,11 +33258,11 @@ var up = L({
 		}
 	}),
 	"six-door-oak-sideboard": L({
-		component: Ac,
+		component: Lc,
 		label: "Six door oak sideboard",
 		category: "Storage",
 		defaultRoomType: "living-room",
-		defaultSize: kc,
+		defaultSize: Ic,
 		bounds: {
 			min: [
 				-1.5,
@@ -33238,11 +33291,11 @@ var up = L({
 		}
 	}),
 	"hexagonal-side-table": L({
-		component: Oc,
+		component: Fc,
 		label: "Hexagonal side table",
 		category: "Tables",
 		defaultRoomType: "living-room",
-		defaultSize: Dc,
+		defaultSize: Pc,
 		bounds: {
 			min: [
 				-.3,
@@ -33278,11 +33331,11 @@ var up = L({
 		}
 	}),
 	"sage-rounded-footstool": L({
-		component: Ec,
+		component: Nc,
 		label: "Sage rounded footstool",
 		category: "Seating",
 		defaultRoomType: "living-room",
-		defaultSize: Tc,
+		defaultSize: Mc,
 		bounds: {
 			min: [
 				-.24,
@@ -33311,11 +33364,11 @@ var up = L({
 		}
 	}),
 	"sage-tub-armchair": L({
-		component: wc,
+		component: jc,
 		label: "Sage tub armchair",
 		category: "Seating",
 		defaultRoomType: "living-room",
-		defaultSize: Cc,
+		defaultSize: Ac,
 		bounds: {
 			min: [
 				-.39,
@@ -33344,11 +33397,11 @@ var up = L({
 		}
 	}),
 	"curved-three-seat-sofa": L({
-		component: Sc,
+		component: kc,
 		label: "Curved three seat sofa",
 		category: "Seating",
 		defaultRoomType: "living-room",
-		defaultSize: xc,
+		defaultSize: Oc,
 		bounds: {
 			min: [
 				-1.3,
@@ -33377,11 +33430,11 @@ var up = L({
 		}
 	}),
 	"oak-wall-uplight": L({
-		component: au,
+		component: fu,
 		label: "Oak wall uplight",
 		category: "Lighting",
 		defaultRoomType: "bedroom",
-		defaultSize: iu,
+		defaultSize: du,
 		bounds: {
 			min: [
 				-.06,
@@ -33410,11 +33463,11 @@ var up = L({
 		}
 	}),
 	"wall-reading-spot": L({
-		component: ru,
+		component: uu,
 		label: "Wall reading spot",
 		category: "Lighting",
 		defaultRoomType: "bedroom",
-		defaultSize: nu,
+		defaultSize: lu,
 		bounds: {
 			min: [
 				-.045,
@@ -33443,7 +33496,7 @@ var up = L({
 		}
 	}),
 	"open-laptop": L({
-		component: yu,
+		component: Eu,
 		label: "Open laptop",
 		category: "Office",
 		defaultRoomType: "bedroom",
@@ -33480,7 +33533,7 @@ var up = L({
 		}
 	}),
 	"round-globe-wall-lamp": L({
-		component: tu,
+		component: cu,
 		label: "Round globe wall lamp",
 		category: "Lighting",
 		defaultRoomType: "bedroom",
@@ -33517,7 +33570,7 @@ var up = L({
 		}
 	}),
 	"knob-door-wardrobe": L({
-		component: ql,
+		component: eu,
 		label: "Knob door wardrobe",
 		category: "Storage",
 		defaultRoomType: "bedroom",
@@ -33568,7 +33621,7 @@ var up = L({
 		}
 	}),
 	"overbed-bridge-cabinet": L({
-		component: Yl,
+		component: nu,
 		label: "Overbed bridge cabinet",
 		category: "Storage",
 		defaultRoomType: "bedroom",
@@ -33605,7 +33658,7 @@ var up = L({
 		}
 	}),
 	"shelf-headboard": L({
-		component: Zl,
+		component: iu,
 		label: "Shelf headboard",
 		category: "Bedroom",
 		defaultRoomType: "bedroom",
@@ -33642,7 +33695,7 @@ var up = L({
 		}
 	}),
 	"headboard-free-double-bed": L({
-		component: $l,
+		component: ou,
 		label: "Headboard free double bed",
 		category: "Bedroom",
 		defaultRoomType: "bedroom",
@@ -33679,7 +33732,7 @@ var up = L({
 		}
 	}),
 	"drawer-pedestal-desk": L({
-		component: fu,
+		component: yu,
 		label: "Drawer pedestal desk",
 		category: "Office",
 		defaultRoomType: "bedroom",
@@ -33716,7 +33769,7 @@ var up = L({
 		}
 	}),
 	"white-folding-chair": L({
-		component: hu,
+		component: Su,
 		label: "White folding chair",
 		category: "Office",
 		defaultRoomType: "bedroom",
@@ -33753,7 +33806,7 @@ var up = L({
 		}
 	}),
 	"desktop-monitor": L({
-		component: _u,
+		component: wu,
 		label: "Desktop monitor",
 		category: "Office",
 		defaultRoomType: "bedroom",
@@ -33802,7 +33855,7 @@ var up = L({
 				e[1] / 1.735,
 				e[0] / 1.6515
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(vd, {})
+			children: /* @__PURE__ */ (0, H.jsx)(Td, {})
 		}),
 		label: "Louvered closet",
 		category: "Entrance",
@@ -33846,7 +33899,7 @@ var up = L({
 				e[1] / .782,
 				e[2] / .78
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(uo, {})
+			children: /* @__PURE__ */ (0, H.jsx)(vo, {})
 		}),
 		label: "Family bathtub",
 		category: "Bathroom",
@@ -33890,7 +33943,7 @@ var up = L({
 				e[1] / 1.42,
 				e[2] / .04
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(_o, {})
+			children: /* @__PURE__ */ (0, H.jsx)(wo, {})
 		}),
 		label: "Bath screen",
 		category: "Bathroom",
@@ -33934,7 +33987,7 @@ var up = L({
 				e[1] / 2.15,
 				e[2] / .474
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(Du, { width: e[0] })
+			children: /* @__PURE__ */ (0, H.jsx)(Pu, { width: e[0] })
 		}),
 		label: "Cane wardrobe",
 		category: "Hallway",
@@ -33978,7 +34031,7 @@ var up = L({
 				e[1] / 2.15,
 				e[2] / .403
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(Ou, {})
+			children: /* @__PURE__ */ (0, H.jsx)(Fu, {})
 		}),
 		label: "Open hallway shelf",
 		category: "Hallway",
@@ -34022,7 +34075,7 @@ var up = L({
 				e[1] / 1.1,
 				e[2] / .09
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(Ss, {})
+			children: /* @__PURE__ */ (0, H.jsx)(ks, {})
 		}),
 		label: "Organic wall mirror",
 		category: "Hallway",
@@ -34066,7 +34119,7 @@ var up = L({
 				e[1] / 1.227,
 				e[2] / 1.63
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(Ys, {
+			children: /* @__PURE__ */ (0, H.jsx)(nc, {
 				variant: t,
 				color: n
 			})
@@ -34132,7 +34185,7 @@ var up = L({
 				e[1] / 1.12,
 				e[2] / 1.785
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(Pl, { footprintScale: .88 })
+			children: /* @__PURE__ */ (0, H.jsx)(Vl, { footprintScale: .88 })
 		}),
 		label: "Dining set",
 		category: "Living room",
@@ -34181,7 +34234,7 @@ var up = L({
 				e[1] / 1.378,
 				e[2] / .433
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(Qs, {})
+			children: /* @__PURE__ */ (0, H.jsx)(ac, {})
 		}),
 		label: "Media wall",
 		category: "Living room",
@@ -34225,7 +34278,7 @@ var up = L({
 				e[1] / .386,
 				e[2] / .612
 			],
-			children: /* @__PURE__ */ (0, H.jsx)($s, {})
+			children: /* @__PURE__ */ (0, H.jsx)(oc, {})
 		}),
 		label: "Round coffee table",
 		category: "Living room",
@@ -34269,7 +34322,7 @@ var up = L({
 				e[1] / 1.643,
 				e[2] / .503
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(Cs, {})
+			children: /* @__PURE__ */ (0, H.jsx)(As, {})
 		}),
 		label: "Tall ficus",
 		category: "Living room",
@@ -34313,7 +34366,7 @@ var up = L({
 				e[1] / 1.52,
 				e[2] / .595
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(Gl, {})
+			children: /* @__PURE__ */ (0, H.jsx)(Ql, {})
 		}),
 		label: "Dresser with TV",
 		category: "Primary suite",
@@ -34351,10 +34404,10 @@ var up = L({
 	}),
 	"shower-assembly": L({
 		defaultRoomType: "bathroom",
-		component: go,
+		component: Co,
 		label: "Shower assembly",
 		category: "Bathroom",
-		defaultSize: ho,
+		defaultSize: So,
 		bounds: {
 			min: [
 				-1,
@@ -34390,7 +34443,7 @@ var up = L({
 				e[1] / .724,
 				e[2] / .6
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(ao, {})
+			children: /* @__PURE__ */ (0, H.jsx)(po, {})
 		}),
 		label: "Compact toilet",
 		category: "Primary suite",
@@ -34434,7 +34487,7 @@ var up = L({
 				e[1] / .947,
 				e[2] / .497
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(as, {})
+			children: /* @__PURE__ */ (0, H.jsx)(fs, {})
 		}),
 		label: "Changing table",
 		category: "Children",
@@ -34478,7 +34531,7 @@ var up = L({
 				e[1] / 1.202,
 				e[2] / .412
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(ps, {})
+			children: /* @__PURE__ */ (0, H.jsx)(bs, {})
 		}),
 		label: "Cube storage",
 		category: "Children",
@@ -34522,7 +34575,7 @@ var up = L({
 				e[1] / 1.696,
 				e[2] / 2.432
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(Xo, {})
+			children: /* @__PURE__ */ (0, H.jsx)(rs, {})
 		}),
 		label: "Cabin bed",
 		category: "Children",
@@ -34566,7 +34619,7 @@ var up = L({
 				e[1] / .568,
 				e[2] / .86
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(hs, {})
+			children: /* @__PURE__ */ (0, H.jsx)(Ss, {})
 		}),
 		label: "Two-tier wall shelves",
 		category: "Children",
@@ -34610,7 +34663,7 @@ var up = L({
 				e[1] / .77,
 				e[2] / .23
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(ms, {})
+			children: /* @__PURE__ */ (0, H.jsx)(xs, {})
 		}),
 		label: "Round wall display",
 		category: "Children",
@@ -34654,7 +34707,7 @@ var up = L({
 				e[1] / .989,
 				e[2] / .88
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(_s, {})
+			children: /* @__PURE__ */ (0, H.jsx)(ws, {})
 		}),
 		label: "Three-tier wall shelves",
 		category: "Children",
@@ -34690,7 +34743,7 @@ var up = L({
 			triangles: 3600
 		}
 	})
-}, pp = {
+}, hp = {
 	"table-lamp": L({
 		legacyOnly: !0,
 		component: ({ size: e }) => /* @__PURE__ */ (0, H.jsx)("group", {
@@ -34822,13 +34875,13 @@ var up = L({
 			triangles: 8e3
 		}
 	})
-}, mp = {
+}, gp = {
 	"drying-rack": L({
-		component: $f,
+		component: op,
 		label: "Drying rack",
 		category: "Household",
 		defaultRoomType: "laundry",
-		defaultSize: Qf,
+		defaultSize: ap,
 		bounds: {
 			min: [
 				-.6,
@@ -34857,11 +34910,11 @@ var up = L({
 		}
 	}),
 	"ironing-board": L({
-		component: tp,
+		component: cp,
 		label: "Ironing board",
 		category: "Household",
 		defaultRoomType: "laundry",
-		defaultSize: ep,
+		defaultSize: sp,
 		bounds: {
 			min: [
 				-.6,
@@ -34890,11 +34943,11 @@ var up = L({
 		}
 	}),
 	"two-step-stool": L({
-		component: Zu,
+		component: id,
 		label: "Two step stool",
 		category: "Household",
 		defaultRoomType: "kitchen",
-		defaultSize: Xu,
+		defaultSize: rd,
 		bounds: {
 			min: [
 				-.225,
@@ -34923,11 +34976,11 @@ var up = L({
 		}
 	}),
 	"utility-shelving": L({
-		component: Au,
+		component: Lu,
 		label: "Utility shelving",
 		category: "Storage",
 		defaultRoomType: "laundry",
-		defaultSize: ku,
+		defaultSize: Iu,
 		bounds: {
 			min: [
 				-.45,
@@ -34956,11 +35009,11 @@ var up = L({
 		}
 	}),
 	workbench: L({
-		component: Mu,
+		component: zu,
 		label: "Workbench",
 		category: "Storage",
 		defaultRoomType: "laundry",
-		defaultSize: ju,
+		defaultSize: Ru,
 		bounds: {
 			min: [
 				-.75,
@@ -34989,11 +35042,11 @@ var up = L({
 		}
 	}),
 	toolbox: L({
-		component: Pu,
+		component: Vu,
 		label: "Toolbox",
 		category: "Storage",
 		defaultRoomType: "laundry",
-		defaultSize: Nu,
+		defaultSize: Bu,
 		bounds: {
 			min: [
 				-.225,
@@ -35022,11 +35075,11 @@ var up = L({
 		}
 	}),
 	"shoe-cabinet": L({
-		component: bd,
+		component: Dd,
 		label: "Shoe cabinet",
 		category: "Storage",
 		defaultRoomType: "entryway",
-		defaultSize: yd,
+		defaultSize: Ed,
 		bounds: {
 			min: [
 				-.4,
@@ -35055,11 +35108,11 @@ var up = L({
 		}
 	}),
 	"umbrella-stand": L({
-		component: Sd,
+		component: kd,
 		label: "Umbrella stand",
 		category: "Storage",
 		defaultRoomType: "entryway",
-		defaultSize: xd,
+		defaultSize: Od,
 		bounds: {
 			min: [
 				-.14,
@@ -35088,11 +35141,11 @@ var up = L({
 		}
 	}),
 	"freestanding-coat-stand": L({
-		component: wd,
+		component: jd,
 		label: "Freestanding coat stand",
 		category: "Storage",
 		defaultRoomType: "entryway",
-		defaultSize: Cd,
+		defaultSize: Ad,
 		bounds: {
 			min: [
 				-.25,
@@ -35121,11 +35174,11 @@ var up = L({
 		}
 	}),
 	"laundry-carry-basket": L({
-		component: rp,
+		component: up,
 		label: "Laundry carry basket",
 		category: "Household",
 		defaultRoomType: "laundry",
-		defaultSize: np,
+		defaultSize: lp,
 		bounds: {
 			min: [
 				-.3,
@@ -35154,11 +35207,11 @@ var up = L({
 		}
 	}),
 	"kitchen-trolley": L({
-		component: $u,
+		component: od,
 		label: "Kitchen trolley",
 		category: "Household",
 		defaultRoomType: "kitchen",
-		defaultSize: Qu,
+		defaultSize: ad,
 		bounds: {
 			min: [
 				-.35,
@@ -35187,11 +35240,11 @@ var up = L({
 		}
 	}),
 	"bread-bin": L({
-		component: td,
+		component: cd,
 		label: "Bread bin",
 		category: "Household",
 		defaultRoomType: "kitchen",
-		defaultSize: ed,
+		defaultSize: sd,
 		bounds: {
 			min: [
 				-.2,
@@ -35220,11 +35273,11 @@ var up = L({
 		}
 	}),
 	"dish-drying-rack": L({
-		component: rd,
+		component: ud,
 		label: "Dish drying rack",
 		category: "Household",
 		defaultRoomType: "kitchen",
-		defaultSize: nd,
+		defaultSize: ld,
 		bounds: {
 			min: [
 				-.225,
@@ -35253,11 +35306,11 @@ var up = L({
 		}
 	}),
 	"toilet-paper-holder": L({
-		component: yo,
+		component: Eo,
 		label: "Toilet paper holder",
 		category: "Bathroom",
 		defaultRoomType: "bathroom",
-		defaultSize: vo,
+		defaultSize: To,
 		bounds: {
 			min: [
 				-.09,
@@ -35286,11 +35339,11 @@ var up = L({
 		}
 	}),
 	"medicine-cabinet": L({
-		component: xo,
+		component: Oo,
 		label: "Medicine cabinet",
 		category: "Bathroom",
 		defaultRoomType: "bathroom",
-		defaultSize: bo,
+		defaultSize: Do,
 		bounds: {
 			min: [
 				-.25,
@@ -35319,11 +35372,11 @@ var up = L({
 		}
 	}),
 	"two-seat-loveseat": L({
-		component: tc,
+		component: cc,
 		label: "Two seat loveseat",
 		category: "Seating",
 		defaultRoomType: "living-room",
-		defaultSize: ec,
+		defaultSize: sc,
 		bounds: {
 			min: [
 				-.8,
@@ -35352,11 +35405,11 @@ var up = L({
 		}
 	}),
 	"indoor-chaise-longue": L({
-		component: rc,
+		component: uc,
 		label: "Indoor chaise longue",
 		category: "Seating",
 		defaultRoomType: "living-room",
-		defaultSize: nc,
+		defaultSize: lc,
 		bounds: {
 			min: [
 				-.4,
@@ -35385,11 +35438,11 @@ var up = L({
 		}
 	}),
 	"pedestal-side-table": L({
-		component: ac,
+		component: fc,
 		label: "Pedestal side table",
 		category: "Tables",
 		defaultRoomType: "living-room",
-		defaultSize: ic,
+		defaultSize: dc,
 		bounds: {
 			min: [
 				-.25,
@@ -35418,11 +35471,11 @@ var up = L({
 		}
 	}),
 	"c-shaped-sofa-table": L({
-		component: sc,
+		component: mc,
 		label: "C shaped sofa table",
 		category: "Tables",
 		defaultRoomType: "living-room",
-		defaultSize: oc,
+		defaultSize: pc,
 		bounds: {
 			min: [
 				-.2,
@@ -35451,11 +35504,11 @@ var up = L({
 		}
 	}),
 	"blanket-storage-trunk": L({
-		component: lc,
+		component: gc,
 		label: "Blanket storage trunk",
 		category: "Storage",
 		defaultRoomType: "living-room",
-		defaultSize: cc,
+		defaultSize: hc,
 		bounds: {
 			min: [
 				-.475,
@@ -35484,11 +35537,11 @@ var up = L({
 		}
 	}),
 	"floor-magazine-rack": L({
-		component: dc,
+		component: vc,
 		label: "Floor magazine rack",
 		category: "Storage",
 		defaultRoomType: "living-room",
-		defaultSize: uc,
+		defaultSize: _c,
 		bounds: {
 			min: [
 				-.21,
@@ -35517,11 +35570,11 @@ var up = L({
 		}
 	}),
 	"vinyl-record-cabinet": L({
-		component: pc,
+		component: bc,
 		label: "Vinyl record cabinet",
 		category: "Storage",
 		defaultRoomType: "living-room",
-		defaultSize: fc,
+		defaultSize: yc,
 		bounds: {
 			min: [
 				-.45,
@@ -35550,11 +35603,11 @@ var up = L({
 		}
 	}),
 	"open-display-bookcase": L({
-		component: hc,
+		component: Sc,
 		label: "Open display bookcase",
 		category: "Storage",
 		defaultRoomType: "living-room",
-		defaultSize: mc,
+		defaultSize: xc,
 		bounds: {
 			min: [
 				-.5,
@@ -35583,11 +35636,11 @@ var up = L({
 		}
 	}),
 	"two-tier-bar-cart": L({
-		component: _c,
+		component: wc,
 		label: "Two tier bar cart",
 		category: "Tables",
 		defaultRoomType: "living-room",
-		defaultSize: gc,
+		defaultSize: Cc,
 		bounds: {
 			min: [
 				-.35,
@@ -35616,11 +35669,11 @@ var up = L({
 		}
 	}),
 	"slatted-room-divider": L({
-		component: yc,
+		component: Ec,
 		label: "Slatted room divider",
 		category: "Decor",
 		defaultRoomType: "living-room",
-		defaultSize: vc,
+		defaultSize: Tc,
 		bounds: {
 			min: [
 				-.6,
@@ -35648,13 +35701,13 @@ var up = L({
 			triangles: 8e3
 		}
 	}),
-	...fp,
+	...mp,
 	"outdoor-dining-table": L({
-		component: Sf,
+		component: kf,
 		label: "Outdoor dining table",
 		category: "Tables",
 		defaultRoomType: "outdoor",
-		defaultSize: xf,
+		defaultSize: Of,
 		bounds: {
 			min: [
 				-.8,
@@ -35684,11 +35737,11 @@ var up = L({
 		}
 	}),
 	"outdoor-dining-chair": L({
-		component: wf,
+		component: jf,
 		label: "Outdoor dining chair",
 		category: "Seating",
 		defaultRoomType: "outdoor",
-		defaultSize: Cf,
+		defaultSize: Af,
 		bounds: {
 			min: [
 				-.28,
@@ -35718,11 +35771,11 @@ var up = L({
 		}
 	}),
 	"garden-bench": L({
-		component: Ef,
+		component: Nf,
 		label: "Garden bench",
 		category: "Seating",
 		defaultRoomType: "outdoor",
-		defaultSize: Tf,
+		defaultSize: Mf,
 		bounds: {
 			min: [
 				-.75,
@@ -35752,11 +35805,11 @@ var up = L({
 		}
 	}),
 	"outdoor-side-table": L({
-		component: Of,
+		component: Ff,
 		label: "Outdoor side table",
 		category: "Tables",
 		defaultRoomType: "outdoor",
-		defaultSize: Df,
+		defaultSize: Pf,
 		bounds: {
 			min: [
 				-.25,
@@ -35786,11 +35839,11 @@ var up = L({
 		}
 	}),
 	"patio-parasol": L({
-		component: Af,
+		component: Lf,
 		label: "Patio parasol",
 		category: "Garden structures",
 		defaultRoomType: "outdoor",
-		defaultSize: kf,
+		defaultSize: If,
 		bounds: {
 			min: [
 				-1.2,
@@ -35820,11 +35873,11 @@ var up = L({
 		}
 	}),
 	"terracotta-planter": L({
-		component: Nf,
+		component: Bf,
 		label: "Terracotta planter",
 		category: "Vegetation",
 		defaultRoomType: "outdoor",
-		defaultSize: Mf,
+		defaultSize: zf,
 		bounds: {
 			min: [
 				-.25,
@@ -35854,11 +35907,11 @@ var up = L({
 		}
 	}),
 	"raised-garden-bed": L({
-		component: Ff,
+		component: Hf,
 		label: "Raised garden bed",
 		category: "Garden structures",
 		defaultRoomType: "outdoor",
-		defaultSize: Pf,
+		defaultSize: Vf,
 		bounds: {
 			min: [
 				-.6,
@@ -35888,11 +35941,11 @@ var up = L({
 		}
 	}),
 	"outdoor-storage-box": L({
-		component: Lf,
+		component: Wf,
 		label: "Outdoor storage box",
 		category: "Storage",
 		defaultRoomType: "outdoor",
-		defaultSize: If,
+		defaultSize: Uf,
 		bounds: {
 			min: [
 				-.6,
@@ -35922,11 +35975,11 @@ var up = L({
 		}
 	}),
 	"garden-hose-reel": L({
-		component: zf,
+		component: Kf,
 		label: "Garden hose reel",
 		category: "Garden tools",
 		defaultRoomType: "outdoor",
-		defaultSize: Rf,
+		defaultSize: Gf,
 		bounds: {
 			min: [
 				-.24,
@@ -35956,11 +36009,11 @@ var up = L({
 		}
 	}),
 	"watering-can": L({
-		component: Vf,
+		component: Jf,
 		label: "Watering can",
 		category: "Garden tools",
 		defaultRoomType: "outdoor",
-		defaultSize: Bf,
+		defaultSize: qf,
 		bounds: {
 			min: [
 				-.27,
@@ -35990,11 +36043,11 @@ var up = L({
 		}
 	}),
 	"garden-birdbath": L({
-		component: Uf,
+		component: Xf,
 		label: "Garden birdbath",
 		category: "Decor",
 		defaultRoomType: "outdoor",
-		defaultSize: Hf,
+		defaultSize: Yf,
 		bounds: {
 			min: [
 				-.3,
@@ -36024,11 +36077,11 @@ var up = L({
 		}
 	}),
 	"outdoor-fire-pit": L({
-		component: Gf,
+		component: Qf,
 		label: "Outdoor fire pit",
 		category: "Garden structures",
 		defaultRoomType: "outdoor",
-		defaultSize: Wf,
+		defaultSize: Zf,
 		bounds: {
 			min: [
 				-.4,
@@ -36058,11 +36111,11 @@ var up = L({
 		}
 	}),
 	"garden-compost-bin": L({
-		component: qf,
+		component: ep,
 		label: "Garden compost bin",
 		category: "Garden tools",
 		defaultRoomType: "outdoor",
-		defaultSize: Kf,
+		defaultSize: $f,
 		bounds: {
 			min: [
 				-.4,
@@ -36092,11 +36145,11 @@ var up = L({
 		}
 	}),
 	"wheelie-bin": L({
-		component: Yf,
+		component: np,
 		label: "Wheelie bin",
 		category: "Garden tools",
 		defaultRoomType: "outdoor",
-		defaultSize: Jf,
+		defaultSize: tp,
 		bounds: {
 			min: [
 				-.29,
@@ -36126,11 +36179,11 @@ var up = L({
 		}
 	}),
 	"garden-trellis": L({
-		component: Zf,
+		component: ip,
 		label: "Garden trellis",
 		category: "Garden structures",
 		defaultRoomType: "outdoor",
-		defaultSize: Xf,
+		defaultSize: rp,
 		bounds: {
 			min: [
 				-.45,
@@ -36159,14 +36212,14 @@ var up = L({
 			triangles: 7e3
 		}
 	}),
-	...pp,
+	...hp,
 	"three-seat-sofa": L({
-		component: Ns,
+		component: Bs,
 		label: "3-seat sofa",
 		defaultColor: "#e2d5bf",
 		category: "Seating",
 		defaultRoomType: "living-room",
-		defaultSize: Ms,
+		defaultSize: zs,
 		bounds: {
 			min: [
 				-1.1,
@@ -36195,11 +36248,11 @@ var up = L({
 		}
 	}),
 	"rectangular-dining-table": L({
-		component: Xc,
+		component: rl,
 		label: "Rectangular dining table",
 		category: "Tables",
 		defaultRoomType: "dining-room",
-		defaultSize: Yc,
+		defaultSize: nl,
 		bounds: {
 			min: [
 				-.9,
@@ -36228,11 +36281,11 @@ var up = L({
 		}
 	}),
 	"oak-dining-chair": L({
-		component: $c,
+		component: ol,
 		label: "Oak dining chair",
 		category: "Seating",
 		defaultRoomType: "dining-room",
-		defaultSize: Qc,
+		defaultSize: al,
 		bounds: {
 			min: [
 				-.245,
@@ -36261,11 +36314,11 @@ var up = L({
 		}
 	}),
 	"oak-nightstand": L({
-		component: Il,
+		component: Ul,
 		label: "Small oak nightstand",
 		category: "Storage",
 		defaultRoomType: "bedroom",
-		defaultSize: Fl,
+		defaultSize: Hl,
 		bounds: {
 			min: [
 				-.225,
@@ -36294,11 +36347,11 @@ var up = L({
 		}
 	}),
 	"flat-door-wardrobe": L({
-		component: Rl,
+		component: Gl,
 		label: "Flat-door wardrobe",
 		category: "Storage",
 		defaultRoomType: "bedroom",
-		defaultSize: Ll,
+		defaultSize: Wl,
 		bounds: {
 			min: [
 				-1,
@@ -36327,11 +36380,11 @@ var up = L({
 		}
 	}),
 	"oak-desk": L({
-		component: su,
+		component: mu,
 		label: "Oak desk",
 		category: "Tables",
 		defaultRoomType: "office",
-		defaultSize: ou,
+		defaultSize: pu,
 		bounds: {
 			min: [
 				-.7,
@@ -36360,11 +36413,11 @@ var up = L({
 		}
 	}),
 	"ergonomic-office-chair": L({
-		component: uu,
+		component: _u,
 		label: "Ergonomic office chair",
 		category: "Seating",
 		defaultRoomType: "office",
-		defaultSize: lu,
+		defaultSize: gu,
 		bounds: {
 			min: [
 				-.34,
@@ -36393,11 +36446,11 @@ var up = L({
 		}
 	}),
 	"oak-bookshelf": L({
-		component: xu,
+		component: Ou,
 		label: "Oak bookshelf",
 		category: "Storage",
 		defaultRoomType: "office",
-		defaultSize: bu,
+		defaultSize: Du,
 		bounds: {
 			min: [
 				-.4,
@@ -36426,11 +36479,11 @@ var up = L({
 		}
 	}),
 	"single-bed": L({
-		component: Bl,
+		component: ql,
 		label: "Single bed · 90 × 200",
 		category: "Beds",
 		defaultRoomType: "bedroom",
-		defaultSize: zl,
+		defaultSize: Kl,
 		bounds: {
 			min: [
 				-.5,
@@ -36459,11 +36512,11 @@ var up = L({
 		}
 	}),
 	"double-bed": L({
-		component: Hl,
+		component: Yl,
 		label: "Double bed · 160 × 200",
 		category: "Beds",
 		defaultRoomType: "bedroom",
-		defaultSize: Vl,
+		defaultSize: Jl,
 		bounds: {
 			min: [
 				-.85,
@@ -36492,11 +36545,11 @@ var up = L({
 		}
 	}),
 	"rectangular-coffee-table": L({
-		component: Fs,
+		component: Hs,
 		label: "Rectangular coffee table",
 		category: "Tables",
 		defaultRoomType: "living-room",
-		defaultSize: Ps,
+		defaultSize: Vs,
 		bounds: {
 			min: [
 				-.55,
@@ -36525,11 +36578,11 @@ var up = L({
 		}
 	}),
 	"upholstered-armchair": L({
-		component: Ls,
+		component: Ws,
 		label: "Upholstered armchair",
 		category: "Seating",
 		defaultRoomType: "living-room",
-		defaultSize: Is,
+		defaultSize: Us,
 		bounds: {
 			min: [
 				-.425,
@@ -36558,11 +36611,11 @@ var up = L({
 		}
 	}),
 	"chest-of-drawers": L({
-		component: Wl,
+		component: Zl,
 		label: "Chest of drawers",
 		category: "Storage",
 		defaultRoomType: "bedroom",
-		defaultSize: Ul,
+		defaultSize: Xl,
 		bounds: {
 			min: [
 				-.5,
@@ -36591,7 +36644,7 @@ var up = L({
 		}
 	}),
 	"neutral-area-rug": L({
-		component: Ws,
+		component: Zs,
 		label: "Rug",
 		category: "Decor",
 		defaultRoomType: "living-room",
@@ -36661,7 +36714,7 @@ var up = L({
 				label: "Fluffy white"
 			}
 		],
-		defaultSize: Bs,
+		defaultSize: qs,
 		bounds: {
 			min: [
 				-1,
@@ -36690,11 +36743,11 @@ var up = L({
 		}
 	}),
 	"low-media-console": L({
-		component: Ks,
+		component: $s,
 		label: "Low media console",
 		category: "Storage",
 		defaultRoomType: "living-room",
-		defaultSize: Gs,
+		defaultSize: Qs,
 		bounds: {
 			min: [
 				-.8,
@@ -36723,11 +36776,11 @@ var up = L({
 		}
 	}),
 	"three-door-sideboard": L({
-		component: tl,
+		component: cl,
 		label: "Three-door sideboard",
 		category: "Storage",
 		defaultRoomType: "dining-room",
-		defaultSize: el,
+		defaultSize: sl,
 		bounds: {
 			min: [
 				-.8,
@@ -36757,11 +36810,11 @@ var up = L({
 	}),
 	"kitchen-base-cabinet": L({
 		variants: Dn,
-		component: Lu,
+		component: Wu,
 		label: "Kitchen base cabinet",
 		category: "Kitchen",
 		defaultRoomType: "kitchen",
-		defaultSize: Iu,
+		defaultSize: Uu,
 		bounds: {
 			min: [
 				-.3,
@@ -36791,11 +36844,11 @@ var up = L({
 	}),
 	"kitchen-sink-cabinet": L({
 		variants: Dn,
-		component: zu,
+		component: Ku,
 		label: "Kitchen sink cabinet",
 		category: "Kitchen",
 		defaultRoomType: "kitchen",
-		defaultSize: Ru,
+		defaultSize: Gu,
 		bounds: {
 			min: [
 				-.3,
@@ -36825,11 +36878,11 @@ var up = L({
 	}),
 	"kitchen-wall-cabinet": L({
 		variants: Dn,
-		component: Vu,
+		component: Ju,
 		label: "Kitchen wall cabinet",
 		category: "Kitchen",
 		defaultRoomType: "kitchen",
-		defaultSize: Bu,
+		defaultSize: qu,
 		bounds: {
 			min: [
 				-.3,
@@ -36858,11 +36911,11 @@ var up = L({
 		}
 	}),
 	"freestanding-bathtub": L({
-		component: io,
+		component: fo,
 		label: "Freestanding bathtub",
 		category: "Bathroom",
 		defaultRoomType: "bathroom",
-		defaultSize: ro,
+		defaultSize: uo,
 		bounds: {
 			min: [
 				-.85,
@@ -36891,11 +36944,11 @@ var up = L({
 		}
 	}),
 	"dark-oak-vessel-vanity": L({
-		component: Ua,
+		component: Xa,
 		label: "Dark oak vessel vanity · 80 cm",
 		category: "Bathroom",
 		defaultRoomType: "bathroom",
-		defaultSize: Ha,
+		defaultSize: Ya,
 		bounds: {
 			min: [
 				-.4,
@@ -36924,11 +36977,11 @@ var up = L({
 		}
 	}),
 	"white-corner-wardrobe": L({
-		component: Cu,
+		component: Au,
 		label: "White corner wardrobe · 180 cm",
 		category: "Storage",
 		defaultRoomType: "bedroom",
-		defaultSize: Su,
+		defaultSize: ku,
 		bounds: {
 			min: [
 				-.9,
@@ -36957,11 +37010,11 @@ var up = L({
 		}
 	}),
 	"entryway-shoe-bench": L({
-		component: ad,
+		component: fd,
 		label: "Entryway shoe bench",
 		category: "Entryway",
 		defaultRoomType: "entryway",
-		defaultSize: id,
+		defaultSize: dd,
 		bounds: {
 			min: [
 				-.5,
@@ -36990,11 +37043,11 @@ var up = L({
 		}
 	}),
 	"wall-coat-rack": L({
-		component: sd,
+		component: md,
 		label: "Wall coat rack",
 		category: "Entryway",
 		defaultRoomType: "entryway",
-		defaultSize: od,
+		defaultSize: pd,
 		bounds: {
 			min: [
 				-.4,
@@ -37023,11 +37076,11 @@ var up = L({
 		}
 	}),
 	"hallway-console-table": L({
-		component: Ed,
+		component: Nd,
 		label: "Hallway console table",
 		category: "Tables",
 		defaultRoomType: "hallway",
-		defaultSize: Td,
+		defaultSize: Md,
 		bounds: {
 			min: [
 				-.55,
@@ -37056,11 +37109,11 @@ var up = L({
 		}
 	}),
 	"floating-wall-shelf": L({
-		component: Od,
+		component: Fd,
 		label: "Floating wall shelf",
 		category: "Storage",
 		defaultRoomType: "hallway",
-		defaultSize: Dd,
+		defaultSize: Pd,
 		bounds: {
 			min: [
 				-.4,
@@ -37089,11 +37142,11 @@ var up = L({
 		}
 	}),
 	"framed-wall-art": L({
-		component: xs,
+		component: Os,
 		label: "Framed wall art",
 		category: "Decor",
 		defaultRoomType: "living-room",
-		defaultSize: bs,
+		defaultSize: Ds,
 		bounds: {
 			min: [
 				-.4,
@@ -37122,11 +37175,11 @@ var up = L({
 		}
 	}),
 	"wooden-crib": L({
-		component: zo,
+		component: Ko,
 		label: "Wooden crib · 70 × 140",
 		category: "Children",
 		defaultRoomType: "bedroom",
-		defaultSize: Ro,
+		defaultSize: Go,
 		bounds: {
 			min: [
 				-.38,
@@ -37155,11 +37208,11 @@ var up = L({
 		}
 	}),
 	"counter-stool": L({
-		component: Uu,
+		component: Xu,
 		label: "Counter stool",
 		category: "Seating",
 		defaultRoomType: "kitchen",
-		defaultSize: Hu,
+		defaultSize: Yu,
 		bounds: {
 			min: [
 				-.24,
@@ -37188,11 +37241,11 @@ var up = L({
 		}
 	}),
 	"upholstered-ottoman": L({
-		component: Js,
+		component: tc,
 		label: "Upholstered ottoman",
 		category: "Seating",
 		defaultRoomType: "living-room",
-		defaultSize: qs,
+		defaultSize: ec,
 		bounds: {
 			min: [
 				-.35,
@@ -37228,7 +37281,7 @@ var up = L({
 				e[1] / 1.05,
 				e[2] / .06
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(Va, {})
+			children: /* @__PURE__ */ (0, H.jsx)(Ja, {})
 		}),
 		label: "Arched mirror",
 		category: "Bathroom",
@@ -37272,7 +37325,7 @@ var up = L({
 				e[1] / 1.16,
 				e[2] / .58
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(Ja, {})
+			children: /* @__PURE__ */ (0, H.jsx)(to, {})
 		}),
 		label: "Concealed-cistern toilet",
 		category: "Bathroom",
@@ -37316,7 +37369,7 @@ var up = L({
 				e[1] / 1.105,
 				e[2] / .44
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(ys, {})
+			children: /* @__PURE__ */ (0, H.jsx)(Es, {})
 		}),
 		label: "Potted plant",
 		category: "Decor",
@@ -37365,7 +37418,7 @@ var up = L({
 				e[1] / .507,
 				e[0] / .62
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(Ya, {})
+			children: /* @__PURE__ */ (0, H.jsx)(no, {})
 		}),
 		label: "Towel rail",
 		category: "Bathroom",
@@ -37409,7 +37462,7 @@ var up = L({
 				e[1] / .31,
 				e[2] / .4
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(Xa, {})
+			children: /* @__PURE__ */ (0, H.jsx)(ro, {})
 		}),
 		label: "Vanity accessories",
 		category: "Bathroom",
@@ -37453,7 +37506,7 @@ var up = L({
 				e[1] / .36,
 				e[2] / .48
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(Za, {})
+			children: /* @__PURE__ */ (0, H.jsx)(io, {})
 		}),
 		label: "Vessel sink and faucet",
 		category: "Bathroom",
@@ -37497,7 +37550,7 @@ var up = L({
 				e[1] / .593,
 				e[2] / .46
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(Qa, {})
+			children: /* @__PURE__ */ (0, H.jsx)(ao, {})
 		}),
 		label: "Wicker hamper",
 		category: "Bathroom",
@@ -37541,7 +37594,7 @@ var up = L({
 				e[1] / .315,
 				e[2] / .31
 			],
-			children: /* @__PURE__ */ (0, H.jsx)($a, {})
+			children: /* @__PURE__ */ (0, H.jsx)(oo, {})
 		}),
 		label: "Wicker towel basket",
 		category: "Bathroom",
@@ -37590,7 +37643,7 @@ var up = L({
 				e[1] / .805,
 				e[0] / 2.18
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(no, {})
+			children: /* @__PURE__ */ (0, H.jsx)(lo, {})
 		}),
 		label: "Wooden vanity",
 		category: "Bathroom",
@@ -37626,8 +37679,8 @@ var up = L({
 			triangles: 4800
 		}
 	}),
-	"single-window-curtain": dp,
-	"children-curtains": up,
+	"single-window-curtain": pp,
+	"children-curtains": fp,
 	"children-floor-basket": L({
 		defaultRoomType: "bedroom",
 		component: ({ size: e }) => /* @__PURE__ */ (0, H.jsx)("group", {
@@ -37636,7 +37689,7 @@ var up = L({
 				e[1] / .512,
 				e[2] / .68
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(Lo, {})
+			children: /* @__PURE__ */ (0, H.jsx)(Wo, {})
 		}),
 		label: "Children's floor basket",
 		category: "Children",
@@ -37680,7 +37733,7 @@ var up = L({
 				e[1] / 1.065,
 				e[2] / .285
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(Do, {})
+			children: /* @__PURE__ */ (0, H.jsx)(Po, {})
 		}),
 		label: "Children's toy shelf",
 		category: "Children",
@@ -37724,7 +37777,7 @@ var up = L({
 				e[1] / .838,
 				e[2] / 1.12
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(Mo, {})
+			children: /* @__PURE__ */ (0, H.jsx)(zo, {})
 		}),
 		label: "Toddler table set",
 		category: "Children",
@@ -37761,11 +37814,11 @@ var up = L({
 		}
 	}),
 	"deciduous-tree": L({
-		component: Pd,
+		component: Vd,
 		label: "Deciduous tree",
 		category: "Vegetation",
 		defaultRoomType: "outdoor",
-		defaultSize: Nd,
+		defaultSize: Bd,
 		bounds: {
 			min: [
 				-1.2,
@@ -37795,11 +37848,11 @@ var up = L({
 		}
 	}),
 	"olive-tree": L({
-		component: Qd,
+		component: of,
 		label: "Olive tree · Olivier",
 		category: "Vegetation",
 		defaultRoomType: "outdoor",
-		defaultSize: Zd,
+		defaultSize: af,
 		bounds: {
 			min: [
 				-1.9,
@@ -37864,11 +37917,11 @@ var up = L({
 		}
 	}),
 	"garden-shrub": L({
-		component: Ud,
+		component: Xd,
 		label: "Garden shrub",
 		category: "Vegetation",
 		defaultRoomType: "outdoor",
-		defaultSize: Vd,
+		defaultSize: Jd,
 		bounds: {
 			min: [
 				-.675,
@@ -37898,11 +37951,11 @@ var up = L({
 		}
 	}),
 	"pool-chaise-longue": L({
-		component: gf,
+		component: Cf,
 		label: "Pool chaise longue",
 		category: "Seating",
 		defaultRoomType: "outdoor",
-		defaultSize: hf,
+		defaultSize: Sf,
 		bounds: {
 			min: [
 				-.4,
@@ -37931,11 +37984,11 @@ var up = L({
 		}
 	}),
 	"garden-hedge": L({
-		component: Bd,
+		component: qd,
 		label: "Garden hedge",
 		category: "Vegetation",
 		defaultRoomType: "outdoor",
-		defaultSize: zd,
+		defaultSize: Kd,
 		bounds: {
 			min: [
 				-1,
@@ -37965,11 +38018,11 @@ var up = L({
 		}
 	}),
 	"kitchen-pantry-cabinet": L({
-		component: Gu,
+		component: Qu,
 		label: "Kitchen pantry cabinet",
 		category: "Kitchen",
 		defaultRoomType: "kitchen",
-		defaultSize: Wu,
+		defaultSize: Zu,
 		bounds: {
 			min: [
 				-.3,
@@ -37999,11 +38052,11 @@ var up = L({
 		}
 	}),
 	"kitchen-island": L({
-		component: qu,
+		component: ed,
 		label: "Kitchen island",
 		category: "Kitchen",
 		defaultRoomType: "kitchen",
-		defaultSize: Ku,
+		defaultSize: $u,
 		bounds: {
 			min: [
 				-.75,
@@ -38033,11 +38086,11 @@ var up = L({
 		}
 	}),
 	"kitchen-hob-cabinet": L({
-		component: Yu,
+		component: nd,
 		label: "Kitchen hob cabinet",
 		category: "Kitchen",
 		defaultRoomType: "kitchen",
-		defaultSize: Ju,
+		defaultSize: td,
 		bounds: {
 			min: [
 				-.3,
@@ -38067,11 +38120,11 @@ var up = L({
 		}
 	}),
 	"outdoor-bbq": L({
-		component: vf,
+		component: Tf,
 		label: "Outdoor bbq",
 		category: "Garden structures",
 		defaultRoomType: "outdoor",
-		defaultSize: _f,
+		defaultSize: wf,
 		bounds: {
 			min: [
 				-.6,
@@ -38101,11 +38154,11 @@ var up = L({
 		}
 	}),
 	"wooden-garden-swing": L({
-		component: bf,
+		component: Df,
 		label: "Wooden garden swing",
 		category: "Garden structures",
 		defaultRoomType: "outdoor",
-		defaultSize: yf,
+		defaultSize: Ef,
 		bounds: {
 			min: [
 				-1.1,
@@ -38134,7 +38187,7 @@ var up = L({
 			triangles: 6300
 		}
 	})
-}, hp = Qe(Object.assign(Object.create(null), mp)), gp = {
+}, _p = Qe(Object.assign(Object.create(null), gp)), vp = {
 	coordinates: {
 		metersPerPlanUnit: 1,
 		origin: [0, 0],
@@ -39171,7 +39224,7 @@ var up = L({
 		upperRunMeters: 1.2,
 		widthMeters: 1
 	}]
-}, _p = /*#__PURE__*/ JSON.parse("[{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"villa-garden-dining-pergola-light-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Pergola string lights\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-pergola\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"pergola-string-lights\",\"placement\":{\"at\":[10,19.8],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[5,2.7,3],\"variant\":\"string-lights\"},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-table\",\"kind\":\"furnishing\",\"modelId\":\"rectangular-dining-table\",\"placement\":{\"at\":[10,19.8],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[2.4,0.75,0.9]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-chair-north-0\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[9.3,19.200000000000003],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-chair-south-0\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[9.3,20.400000000000002],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-chair-north-1\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[10,19.200000000000003],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-chair-south-1\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[10,20.400000000000002],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-chair-north-2\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[10.700000000000001,19.200000000000003],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-chair-south-2\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[10.700000000000001,20.400000000000002],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-lounger-0-1\",\"kind\":\"furnishing\",\"modelId\":\"pool-chaise-longue\",\"placement\":{\"at\":[3,23.400000000000002],\"elevationMeters\":-0.049,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.8,0.85,2.1]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-lounger-0-2\",\"kind\":\"furnishing\",\"modelId\":\"pool-chaise-longue\",\"placement\":{\"at\":[3.1,25.5],\"elevationMeters\":-0.049,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.8,0.85,2.1]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-pool-table-0\",\"kind\":\"furnishing\",\"modelId\":\"rectangular-coffee-table\",\"placement\":{\"at\":[2.6,24.400000000000002],\"elevationMeters\":-0.049,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.6,0.4,0.4]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-olive-0\",\"kind\":\"furnishing\",\"modelId\":\"olive-tree\",\"placement\":{\"at\":[0.9,23.5],\"elevationMeters\":-0.049,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[3.8,3.6,3.2]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-olive-2\",\"kind\":\"furnishing\",\"modelId\":\"olive-tree\",\"placement\":{\"at\":[2.5,28],\"elevationMeters\":-0.049,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[3.8,3.6,3.2]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-shrub-2\",\"kind\":\"furnishing\",\"modelId\":\"garden-shrub\",\"placement\":{\"at\":[6,-2.5],\"elevationMeters\":-0.049,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.35,0.92,1.15]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"primary\",\"id\":\"garage-compact-car-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Compact car status\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"garage-compact-car\",\"kind\":\"device\",\"modelId\":\"compact-car\",\"placement\":{\"at\":[1.35,4.25],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[1.94,1.5,4]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"primary\",\"id\":\"garage-electric-sedan-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Electric sedan status\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"garage-electric-sedan\",\"kind\":\"device\",\"modelId\":\"electric-sedan\",\"placement\":{\"at\":[4.15,4.5],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[2.08,1.45,4.7]},{\"floorId\":\"ground-floor\",\"id\":\"garage-storage-shelf-west\",\"kind\":\"furnishing\",\"modelId\":\"oak-bookshelf\",\"placement\":{\"at\":[0.72,8.267],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.8,1.9,0.3]},{\"floorId\":\"ground-floor\",\"id\":\"garage-workbench\",\"kind\":\"furnishing\",\"modelId\":\"oak-desk\",\"placement\":{\"at\":[2.05,8.067],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.4,0.74,0.7]},{\"floorId\":\"ground-floor\",\"id\":\"garage-storage-shelf-east\",\"kind\":\"furnishing\",\"modelId\":\"oak-bookshelf\",\"placement\":{\"at\":[3.43,8.267],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.8,1.9,0.3]},{\"floorId\":\"ground-floor\",\"id\":\"garage-workbench-tool-shelf\",\"kind\":\"furnishing\",\"modelId\":\"floating-wall-shelf\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":1.35,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.05,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-day-wall\"},\"size\":[1.4,0.22,0.25]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"garage-ceiling-light-1-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Garage ceiling light 1\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"garage-ceiling-light-1\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"ceiling-light\",\"placement\":{\"at\":[1.55,4.35],\"dropMeters\":0.122,\"kind\":\"ceiling\",\"roomId\":\"ground-floor:room-1\",\"rotationYRadians\":0},\"size\":[0.4,0.12,0.4]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"garage-ceiling-light-2-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Garage ceiling light 2\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"garage-ceiling-light-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"ceiling-light\",\"placement\":{\"at\":[4.55,4.35],\"dropMeters\":0.122,\"kind\":\"ceiling\",\"roomId\":\"ground-floor:room-1\",\"rotationYRadians\":0},\"size\":[0.4,0.12,0.4]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"carbon_monoxide\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"garage-carbon-monoxide-alarm-entity\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Garage carbon monoxide alarm\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"garage-carbon-monoxide-alarm\",\"kind\":\"device\",\"modelId\":\"carbon-monoxide-alarm\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":1.6,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":10.6,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-wall\"},\"size\":[0.11,0.11,0.035]},{\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-tall-storage\",\"kind\":\"furnishing\",\"modelId\":\"flat-door-wardrobe\",\"placement\":{\"at\":[6.883,3.28],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1,2.2,0.6]},{\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-folding-cabinet\",\"kind\":\"furnishing\",\"modelId\":\"kitchen-base-cabinet\",\"placement\":{\"at\":[8.6,4.102],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.6,0.9,0.63]},{\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-sink-cabinet\",\"kind\":\"furnishing\",\"modelId\":\"kitchen-sink-cabinet\",\"placement\":{\"at\":[9.4,4.102],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[1,1.12,0.63]},{\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-folding-basket\",\"kind\":\"furnishing\",\"modelId\":\"wicker-towel-basket\",\"placement\":{\"at\":[8.6,4.02],\"elevationMeters\":0.902,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.38,0.315,0.31]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"switch\"],\"deviceRole\":\"primary\",\"id\":\"utility-laundry-washing-machine-power\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Washing machine\"},\"required\":true},{\"autoMap\":\"manual\",\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"secondary\",\"id\":\"utility-laundry-washing-machine-status\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Washing machine status\"},\"required\":false}],\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-washing-machine\",\"kind\":\"device\",\"modelId\":\"washing-machine\",\"placement\":{\"at\":[8.4,0.458],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.632,0.865,0.63]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"switch\"],\"deviceRole\":\"primary\",\"id\":\"utility-laundry-tumble-dryer-power\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Tumble dryer\"},\"required\":true},{\"autoMap\":\"manual\",\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"secondary\",\"id\":\"utility-laundry-tumble-dryer-status\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Tumble dryer status\"},\"required\":false}],\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-tumble-dryer\",\"kind\":\"device\",\"modelId\":\"tumble-dryer\",\"placement\":{\"at\":[9.1,0.488],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.6,0.85,0.65]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"water_heater\",\"switch\"],\"deviceRole\":\"primary\",\"id\":\"utility-laundry-water-heater-control\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Water heater\"},\"required\":true},{\"autoMap\":\"manual\",\"compatibleDeviceClasses\":[\"temperature\"],\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"secondary\",\"id\":\"utility-laundry-water-heater-temperature\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Water heater temperature\"},\"required\":false}],\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-water-heater\",\"kind\":\"device\",\"modelId\":\"water-heater\",\"placement\":{\"depthOffsetMeters\":0.209,\"elevationMeters\":0.85,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.9,\"rotationOffsetRadians\":0,\"wallId\":\"ground-service-divider\"},\"size\":[0.572,1.456,0.43]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"utility-laundry-ceiling-light-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Utility room light\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-ceiling-light\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"ceiling-light\",\"placement\":{\"at\":[8.25,2.3],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"stair-hall\",\"rotationYRadians\":0},\"size\":[0.4,0.12,0.4]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"moisture\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"utility-laundry-leak-sensor-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Laundry leak sensor\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-leak-sensor\",\"kind\":\"device\",\"modelId\":\"leak-sensor\",\"placement\":{\"at\":[8.68,0.96],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.2,0.14,0.2]},{\"floorId\":\"ground-floor\",\"id\":\"pantry-north-west-shelving\",\"kind\":\"furnishing\",\"modelId\":\"oak-bookshelf\",\"placement\":{\"at\":[6.734,5.08],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.8,1.9,0.3]},{\"floorId\":\"ground-floor\",\"id\":\"pantry-south-east-shelving\",\"kind\":\"furnishing\",\"modelId\":\"oak-bookshelf\",\"placement\":{\"at\":[9.766,7.78],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":-1.5707963267948966},\"size\":[0.8,1.9,0.3]},{\"floorId\":\"ground-floor\",\"id\":\"pantry-preparation-counter\",\"kind\":\"furnishing\",\"modelId\":\"kitchen-base-cabinet\",\"placement\":{\"at\":[7.2,8.101],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.1,0.9,0.63]},{\"floorId\":\"ground-floor\",\"id\":\"pantry-wall-cabinet\",\"kind\":\"furnishing\",\"modelId\":\"kitchen-wall-cabinet\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.38,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":7.2,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-day-wall\"},\"size\":[1.1,0.8,0.35]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"temperature\"],\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"primary\",\"id\":\"pantry-freezer-entity\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Pantry freezer temperature\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"pantry-freezer\",\"kind\":\"device\",\"modelId\":\"freezer\",\"placement\":{\"at\":[9.576,5.3],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":4.71238898038469},\"size\":[0.65,1.75,0.68]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"pantry-downlight-1-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Pantry downlight 1\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"pantry-downlight-1\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[7.35,6.5],\"dropMeters\":0.04,\"kind\":\"ceiling\",\"roomId\":\"pantry\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"pantry-downlight-2-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Pantry downlight 2\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"pantry-downlight-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[9.15,6.5],\"dropMeters\":0.04,\"kind\":\"ceiling\",\"roomId\":\"pantry\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"motion\",\"occupancy\",\"presence\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"pantry-motion-sensor-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Pantry presence\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"pantry-motion-sensor\",\"kind\":\"device\",\"modelId\":\"motion-sensor\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":2.35,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.75,\"rotationOffsetRadians\":0,\"wallId\":\"ground-utility-pantry-wall\"},\"size\":[0.14,0.135,0.081]},{\"floorId\":\"ground-floor\",\"id\":\"foyer-shoe-bench\",\"kind\":\"furnishing\",\"modelId\":\"entryway-shoe-bench\",\"placement\":{\"at\":[10.274,3.65],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1,0.5,0.38]},{\"floorId\":\"ground-floor\",\"id\":\"foyer-console\",\"kind\":\"furnishing\",\"modelId\":\"hallway-console-table\",\"placement\":{\"depthOffsetMeters\":0.175,\"elevationMeters\":0.001,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":8.7919,\"rotationOffsetRadians\":0,\"wallId\":\"ground-east-wall\"},\"size\":[1.1,0.8,0.35]},{\"floorId\":\"ground-floor\",\"id\":\"foyer-framed-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"depthOffsetMeters\":0,\"elevationMeters\":1.35,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.7423,\"rotationOffsetRadians\":0,\"wallId\":\"ground-service-divider\"},\"size\":[0.7993947603124634,0.5995460702343475,0.03996973801562317]},{\"floorId\":\"ground-floor\",\"id\":\"foyer-potted-plant\",\"kind\":\"furnishing\",\"modelId\":\"potted-plant\",\"placement\":{\"at\":[10.65,0.62],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":-0.39269908169872414},\"size\":[0.615,1.105,0.44]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"foyer-pendant-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Foyer pendant\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"foyer-pendant\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"terracotta-pendant\",\"placement\":{\"at\":[12,2.86],\"dropMeters\":0.82,\"kind\":\"ceiling\",\"roomId\":\"ground-floor:room-2\",\"rotationYRadians\":0},\"size\":[0.66,0.64,0.66]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"camera\"],\"deviceRole\":\"primary\",\"id\":\"foyer-camera-screen-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Entry camera screen\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"foyer-camera-screen\",\"kind\":\"device\",\"modelId\":\"camera-screen\",\"placement\":{\"at\":[13.916,0.78],\"elevationMeters\":1.2,\"kind\":\"absolute\",\"rotationYRadians\":-1.5707963267948966},\"size\":[0.98,0.62,0.061]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"alarm_control_panel\"],\"deviceRole\":\"primary\",\"id\":\"foyer-alarm-keypad-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Villa alarm\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"foyer-alarm-keypad\",\"kind\":\"device\",\"modelId\":\"alarm-keypad\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.3,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":10.65,\"rotationOffsetRadians\":0,\"wallId\":\"ground-north-wall\"},\"size\":[0.18,0.25,0.035]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"lock\"],\"deviceRole\":\"primary\",\"id\":\"foyer-smart-lock-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Front door lock\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"foyer-smart-lock\",\"kind\":\"device\",\"modelId\":\"smart-lock\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":0.96,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":12.98,\"rotationOffsetRadians\":0,\"wallId\":\"ground-north-wall\"},\"size\":[0.07,0.18,0.06]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"cover\"],\"deviceRole\":\"primary\",\"id\":\"guest-bedroom-east-blind-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"East window blind\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"guest-bedroom-east-blind\",\"kind\":\"device\",\"modelId\":\"motorized-blind\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":0.8,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.45,\"rotationOffsetRadians\":0,\"wallId\":\"ground-east-wall\"},\"size\":[2.05,1.45,0.12]},{\"floorId\":\"ground-floor\",\"id\":\"stair-hall-console\",\"kind\":\"furnishing\",\"modelId\":\"hallway-console-table\",\"placement\":{\"at\":[10.257,8],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1.1,0.8,0.35]},{\"floorId\":\"ground-floor\",\"id\":\"stair-hall-console-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"at\":[10.083,8],\"elevationMeters\":1.42,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.8,0.62,0.04]},{\"floorId\":\"ground-floor\",\"id\":\"stair-hall-landing-plant\",\"kind\":\"furnishing\",\"modelId\":\"potted-plant\",\"placement\":{\"at\":[13.6,10.5],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":-0.4487989505128276},\"size\":[0.615,1.105,0.44]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"stair-hall-downlight-1-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Stair hall downlight 1\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"stair-hall-downlight-1\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[10.6,7.55],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"ground-floor:room-2\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"stair-hall-downlight-2-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Stair hall downlight 2\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"stair-hall-downlight-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[13.4,9.25],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"ground-floor:room-2\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"stair-hall-wall-sconce-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Stair hall wall sconce\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"stair-hall-wall-sconce\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"wall-sconce\",\"placement\":{\"at\":[13.917,9.65],\"elevationMeters\":1.72,\"kind\":\"absolute\",\"rotationYRadians\":-1.5707963267948966},\"size\":[0.22,0.32,0.16]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"motion\",\"occupancy\",\"presence\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"stair-hall-motion-sensor-entity\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Stair hall motion\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"stair-hall-motion-sensor\",\"kind\":\"device\",\"modelId\":\"motion-sensor\",\"placement\":{\"at\":[13.4,0.7000000000000001],\"elevationMeters\":3,\"kind\":\"absolute\",\"rotationYRadians\":0.007142735669413403},\"size\":[0.14,0.135,0.081]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-equipped-kitchen\",\"kind\":\"furnishing\",\"modelId\":\"equipped-kitchen\",\"placement\":{\"at\":[0.5,9],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[3.89,2.23,2.54]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-counter-stool-1\",\"kind\":\"furnishing\",\"modelId\":\"counter-stool\",\"placement\":{\"at\":[1.55,12.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.502,0.9621666666666667,0.5229166666666667]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-counter-stool-2\",\"kind\":\"furnishing\",\"modelId\":\"counter-stool\",\"placement\":{\"at\":[2.55,12.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.502,0.9621666666666667,0.5229166666666667]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-counter-stool-3\",\"kind\":\"furnishing\",\"modelId\":\"counter-stool\",\"placement\":{\"at\":[3.55,12.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.502,0.9621666666666667,0.5229166666666667]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-table\",\"kind\":\"furnishing\",\"modelId\":\"rectangular-dining-table\",\"placement\":{\"at\":[10.7,14.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[2.8,0.75,1.1]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-north-west\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[9.6,13.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-north-center\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[10.7,13.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-north-east\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[11.8,13.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-south-west\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[9.6,15.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-south-center\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[10.7,15.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-south-east\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[11.8,15.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-west\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[8.9,14.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-east\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[12.5,14.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-reading-rug\",\"kind\":\"furnishing\",\"modelId\":\"neutral-area-rug\",\"placement\":{\"at\":[3.2,15],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[4.5,0.015,3.6],\"variant\":\"sage\"},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-reading-table\",\"kind\":\"furnishing\",\"modelId\":\"rectangular-coffee-table\",\"placement\":{\"at\":[3.1,15.5],\"elevationMeters\":0.017,\"kind\":\"absolute\",\"rotationYRadians\":4.71238898038469},\"size\":[1.1,0.4,0.6]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-reading-ficus\",\"kind\":\"furnishing\",\"modelId\":\"tall-ficus\",\"placement\":{\"at\":[0.85,16.95],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.901,1.643,0.503]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-sideboard\",\"kind\":\"furnishing\",\"modelId\":\"three-door-sideboard\",\"placement\":{\"at\":[6.85,8.808],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.8,0.82,0.45]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-sideboard-plant\",\"kind\":\"furnishing\",\"modelId\":\"potted-plant\",\"placement\":{\"at\":[7.4,8.81],\"elevationMeters\":0.823,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.3075,0.5525,0.22]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-sideboard-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.3,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":7.1,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-day-wall\"},\"size\":[1.5,1,0.04]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-kitchen-cabinet-lighting-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Kitchen cabinet lighting\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-kitchen-cabinet-lighting\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"kitchen-cabinet-lighting\",\"placement\":{\"at\":[0.5,9],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[3.89,2.23,2.54]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-kitchen-pendant-1-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Kitchen pendant 1\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-kitchen-pendant-1\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"woven-pendant\",\"placement\":{\"at\":[1.55,11.25],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"open-plan-living\",\"rotationYRadians\":0},\"size\":[0.704,0.482077922077922,0.7148051948051948]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-kitchen-pendant-2-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Kitchen pendant 2\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-kitchen-pendant-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"woven-pendant\",\"placement\":{\"at\":[2.55,11.25],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"open-plan-living\",\"rotationYRadians\":0},\"size\":[0.704,0.482077922077922,0.7148051948051948]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-kitchen-pendant-3-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Kitchen pendant 3\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-kitchen-pendant-3\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"woven-pendant\",\"placement\":{\"at\":[3.55,11.25],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"open-plan-living\",\"rotationYRadians\":0},\"size\":[0.704,0.482077922077922,0.7148051948051948]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-dining-pendant-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Dining pendant\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-pendant\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"woven-pendant\",\"placement\":{\"at\":[10.7,14.1],\"dropMeters\":0.15,\"kind\":\"ceiling\",\"roomId\":\"open-plan-living\",\"rotationYRadians\":0},\"size\":[0.847,0.58,0.86]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"climate\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-ac-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Living room AC\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-ac\",\"kind\":\"device\",\"modelId\":\"indoor-ac\",\"placement\":{\"depthOffsetMeters\":0.001,\"elevationMeters\":2.35,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":5.1857,\"rotationOffsetRadians\":0,\"wallId\":\"ground-service-divider\"},\"size\":[0.86,0.28,0.206]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-rug\",\"kind\":\"furnishing\",\"modelId\":\"neutral-area-rug\",\"placement\":{\"at\":[8,5.2],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[3,0.015,2.8]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-bed\",\"kind\":\"furnishing\",\"modelId\":\"double-bed\",\"placement\":{\"at\":[8.841,5.2],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":-1.5707963267948966},\"size\":[1.7,1.1,2.15]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-north-nightstand\",\"kind\":\"furnishing\",\"modelId\":\"oak-nightstand\",\"placement\":{\"at\":[9.716,4],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.45,0.5,0.4]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-south-nightstand\",\"kind\":\"furnishing\",\"modelId\":\"oak-nightstand\",\"placement\":{\"at\":[9.716,6.4],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.45,0.5,0.4]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-bedroom-north-table-lamp-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"North bedside lamp\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-north-table-lamp\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"table-lamp\",\"placement\":{\"at\":[9.716,4],\"elevationMeters\":0.501,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.32,0.52,0.32]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-bedroom-south-table-lamp-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"South bedside lamp\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-south-table-lamp\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"table-lamp\",\"placement\":{\"at\":[9.716,6.4],\"elevationMeters\":0.501,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.32,0.52,0.32]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-bed-bench\",\"kind\":\"furnishing\",\"modelId\":\"upholstered-ottoman\",\"placement\":{\"at\":[7.2,5.2],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.7,0.42,0.55]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-sideboard\",\"kind\":\"furnishing\",\"modelId\":\"three-door-sideboard\",\"placement\":{\"at\":[5.65,7.691],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[1.6,0.82,0.45]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.28,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.65,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-suite-wall\"},\"size\":[1.1,0.72,0.04]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-reading-plant\",\"kind\":\"furnishing\",\"modelId\":\"potted-plant\",\"placement\":{\"at\":[4,0.6000000000000001],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.615,1.105,0.44]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-bedroom-pendant-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Primary bedroom pendant\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-pendant\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"woven-pendant\",\"placement\":{\"at\":[6,4],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"primary-bedroom\",\"rotationYRadians\":0},\"size\":[0.847,0.58,0.86]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"climate\"],\"deviceRole\":\"primary\",\"id\":\"primary-bedroom-ac-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Primary bedroom AC\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-ac\",\"kind\":\"device\",\"modelId\":\"indoor-ac\",\"placement\":{\"depthOffsetMeters\":0.002,\"elevationMeters\":2.28,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":5.2,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-gallery-wall\"},\"size\":[0.86,0.28,0.206]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"cover\"],\"deviceRole\":\"primary\",\"id\":\"primary-bedroom-north-blind-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"North window blind\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-north-blind\",\"kind\":\"device\",\"modelId\":\"motorized-blind\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":0.75,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3,\"rotationOffsetRadians\":0,\"wallId\":\"first-north-wall\"},\"size\":[2.8,1.425,0.12]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"cover\"],\"deviceRole\":\"primary\",\"id\":\"primary-bedroom-west-blind-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"West window blind\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-west-blind\",\"kind\":\"device\",\"modelId\":\"motorized-blind\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":0.75,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":11.7,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-wall\"},\"size\":[2.8,1.425,0.12]},{\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-bathtub\",\"kind\":\"furnishing\",\"modelId\":\"freestanding-bathtub\",\"placement\":{\"at\":[2.553,10],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1.7,0.6,0.78]},{\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-shower\",\"kind\":\"furnishing\",\"modelId\":\"shower-assembly\",\"placement\":{\"at\":[4.821,11.454],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[2.018,1.57,0.908]},{\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-toilet\",\"kind\":\"furnishing\",\"modelId\":\"compact-toilet\",\"placement\":{\"at\":[2.55,8.383],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.39,0.724,0.6]},{\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-vanity\",\"kind\":\"furnishing\",\"modelId\":\"dark-oak-vessel-vanity\",\"placement\":{\"at\":[5.25,8.343],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.8,1.23,0.52]},{\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-towel-basket\",\"kind\":\"furnishing\",\"modelId\":\"wicker-towel-basket\",\"placement\":{\"at\":[3.32,11.48],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":-0.39269908169872414},\"size\":[0.38,0.315,0.31]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-bathroom-ceiling-light-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Primary bathroom ceiling light\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-ceiling-light\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"ceiling-light\",\"placement\":{\"at\":[4.05,10],\"dropMeters\":0.08,\"kind\":\"ceiling\",\"roomId\":\"primary-bathroom\",\"rotationYRadians\":0},\"size\":[0.4,0.12,0.4]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-bathroom-illuminated-mirror-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Primary bathroom mirror light\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-illuminated-mirror\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"illuminated-round-mirror\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.3,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.25,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-suite-wall\"},\"size\":[0.8,0.8,0.045]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"climate\",\"switch\"],\"deviceRole\":\"primary\",\"id\":\"primary-bathroom-heated-towel-rail-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Primary bathroom towel warmer\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-heated-towel-rail\",\"kind\":\"device\",\"modelId\":\"heated-towel-rail\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":0.72,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":0.95,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-bath-divider\"},\"size\":[0.6,1.2,0.12]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"fan\",\"switch\"],\"deviceRole\":\"primary\",\"id\":\"primary-bathroom-extractor-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Primary bathroom extractor\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-extractor\",\"kind\":\"device\",\"modelId\":\"bathroom-extractor-fan\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":2.52,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.45,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-bath-divider\"},\"size\":[0.18,0.18,0.09]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"humidity\"],\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"primary\",\"id\":\"primary-bathroom-humidity-sensor-entity\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Primary bathroom humidity\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-humidity-sensor\",\"kind\":\"device\",\"modelId\":\"humidity-sensor\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.72,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.5,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-suite-wall\"},\"size\":[0.085,0.085,0.03]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"moisture\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"primary-bathroom-leak-sensor-entity\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Primary bathroom leak sensor\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-leak-sensor\",\"kind\":\"device\",\"modelId\":\"leak-sensor\",\"placement\":{\"at\":[5.34,8.78],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.2,0.14,0.2]},{\"floorId\":\"first-floor\",\"id\":\"primary-dressing-south-wardrobe\",\"kind\":\"furnishing\",\"modelId\":\"flat-door-wardrobe\",\"placement\":{\"at\":[8,11.617],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[3.2,2.2,0.6]},{\"floorId\":\"first-floor\",\"id\":\"primary-dressing-north-chest\",\"kind\":\"furnishing\",\"modelId\":\"chest-of-drawers\",\"placement\":{\"at\":[9.05,8.308],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.3,0.9,0.45]},{\"floorId\":\"first-floor\",\"id\":\"primary-dressing-center-rug\",\"kind\":\"furnishing\",\"modelId\":\"neutral-area-rug\",\"placement\":{\"at\":[8.15,9.65],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.4,0.015,1.6]},{\"floorId\":\"first-floor\",\"id\":\"primary-dressing-ottoman\",\"kind\":\"furnishing\",\"modelId\":\"upholstered-ottoman\",\"placement\":{\"at\":[8.55,9.15],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.7,0.42,0.55]},{\"floorId\":\"first-floor\",\"id\":\"primary-dressing-mirror\",\"kind\":\"furnishing\",\"modelId\":\"arched-mirror\",\"placement\":{\"depthOffsetMeters\":0.033,\"elevationMeters\":1.15,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":7.05,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-suite-wall\"},\"size\":[0.54,1.05,0.06]},{\"floorId\":\"first-floor\",\"id\":\"primary-dressing-west-shelf\",\"kind\":\"furnishing\",\"modelId\":\"floating-wall-shelf\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":1.3,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.05,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-bath-divider\"},\"size\":[1,0.22,0.25]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-dressing-downlight-1-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Dressing downlight 1\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-dressing-downlight-1\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[7.15,9.05],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"primary-dressing\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-dressing-downlight-2-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Dressing downlight 2\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-dressing-downlight-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[8.85,10.95],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"primary-dressing\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"motion\",\"occupancy\",\"presence\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"primary-dressing-motion-sensor-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Dressing occupancy\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-dressing-motion-sensor\",\"kind\":\"device\",\"modelId\":\"motion-sensor\",\"placement\":{\"at\":[8,10],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"primary-dressing\",\"rotationYRadians\":0},\"size\":[0.14,0.135,0.081]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-bed\",\"kind\":\"furnishing\",\"modelId\":\"single-bed\",\"placement\":{\"at\":[3.5,13.134],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1,0.95,2.1]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-nightstand\",\"kind\":\"furnishing\",\"modelId\":\"oak-nightstand\",\"placement\":{\"at\":[4.35,12.284],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.45,0.5,0.4]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-bookshelf\",\"kind\":\"furnishing\",\"modelId\":\"oak-bookshelf\",\"placement\":{\"at\":[5.7,12.234],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.8,1.9,0.3]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-desk\",\"kind\":\"furnishing\",\"modelId\":\"oak-desk\",\"placement\":{\"at\":[7.65,12.434],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.4,0.74,0.7]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-desk-chair\",\"kind\":\"furnishing\",\"modelId\":\"ergonomic-office-chair\",\"placement\":{\"at\":[7.5,12.8],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.68,1.04,0.68]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-wardrobe\",\"kind\":\"furnishing\",\"modelId\":\"flat-door-wardrobe\",\"placement\":{\"depthOffsetMeters\":0.3,\"elevationMeters\":0.001,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":14.9168,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-gallery-wall\"},\"size\":[1.6,2.2,0.6]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-rug\",\"kind\":\"furnishing\",\"modelId\":\"neutral-area-rug\",\"placement\":{\"at\":[6,14.65],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[2.5,0.015,1.45]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-bed-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.38,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":1.5,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-bedroom-wall\"},\"size\":[0.8,0.6,0.04]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"bedroom-four-bedside-lamp-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Bedroom four bedside lamp\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"bedroom-four-bedside-lamp\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"table-lamp\",\"placement\":{\"at\":[4.35,12.284],\"elevationMeters\":0.501,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.32,0.52,0.32]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"bedroom-four-pendant-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Bedroom four pendant\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"bedroom-four-pendant\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"children-pendant\",\"placement\":{\"at\":[6.2,14.1],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"bedroom-four\",\"rotationYRadians\":0},\"size\":[0.58,0.479,0.58]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"climate\"],\"deviceRole\":\"primary\",\"id\":\"bedroom-four-ac-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Bedroom four AC\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"bedroom-four-ac\",\"kind\":\"device\",\"modelId\":\"indoor-ac\",\"placement\":{\"depthOffsetMeters\":0.002,\"elevationMeters\":2.3,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":6.8,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-bedroom-wall\"},\"size\":[0.86,0.28,0.206]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"cover\"],\"deviceRole\":\"primary\",\"id\":\"bedroom-four-west-blind-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Bedroom four west blind\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"bedroom-four-west-blind\",\"kind\":\"device\",\"modelId\":\"motorized-blind\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":0.75,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.4,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-wall\"},\"size\":[2.25,1.425,0.12]},{\"floorId\":\"first-floor\",\"id\":\"upper-landing-console\",\"kind\":\"furnishing\",\"modelId\":\"hallway-console-table\",\"placement\":{\"at\":[10.257,4.2],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1.1,0.8,0.35]},{\"floorId\":\"first-floor\",\"id\":\"upper-landing-console-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":1.42,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":4.2,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-gallery-wall\"},\"size\":[0.8,0.62,0.04]},{\"floorId\":\"first-floor\",\"id\":\"upper-landing-north-plant\",\"kind\":\"furnishing\",\"modelId\":\"potted-plant\",\"placement\":{\"at\":[10.47,0.55],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0.4487989505128276},\"size\":[0.615,1.105,0.44]},{\"floorId\":\"first-floor\",\"id\":\"upper-landing-gallery-bench\",\"kind\":\"furnishing\",\"modelId\":\"entryway-shoe-bench\",\"placement\":{\"at\":[13.727,11.7],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1,0.5,0.38]},{\"floorId\":\"first-floor\",\"id\":\"upper-landing-bench-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"at\":[13.917,11.7],\"elevationMeters\":1.25,\"kind\":\"absolute\",\"rotationYRadians\":-1.5707963267948966},\"size\":[0.8,0.62,0.04]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"upper-landing-downlight-1-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Upper landing downlight 1\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"upper-landing-downlight-1\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[12,4.65],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"upper-landing\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"upper-landing-downlight-2-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Upper landing downlight 2\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"upper-landing-downlight-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[12,11.55],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"upper-landing\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"upper-landing-north-sconce-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"North gallery wall sconce\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"upper-landing-north-sconce\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"wall-sconce\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":1.72,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":5.18,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-gallery-wall\"},\"size\":[0.22,0.32,0.16]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"upper-landing-south-sconce-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"South gallery wall sconce\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"upper-landing-south-sconce\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"wall-sconce\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":1.72,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":0.45,\"rotationOffsetRadians\":0,\"wallId\":\"first-east-gallery-wall--split-3\"},\"size\":[0.22,0.32,0.16]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"motion\",\"occupancy\",\"presence\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"upper-landing-motion-sensor-entity\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Upper landing motion\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"upper-landing-motion-sensor\",\"kind\":\"device\",\"modelId\":\"motion-sensor\",\"placement\":{\"at\":[13.45,5.42],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"upper-landing\",\"rotationYRadians\":0},\"size\":[0.14,0.135,0.081]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"low-garden-lantern-primary\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Low garden lantern\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"low-garden-lantern\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"low-garden-lantern\",\"placement\":{\"at\":[10.700000000000001,-0.8],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.24,0.35,0.24],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"low-garden-lantern-primary-copy\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Low garden lantern\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"low-garden-lantern-copy\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"low-garden-lantern\",\"placement\":{\"at\":[13.200000000000001,-0.8],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.24,0.35,0.24],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"low-garden-lantern-2-primary\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Low garden lantern\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"low-garden-lantern-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"low-garden-lantern\",\"placement\":{\"at\":[10.700000000000001,-2.4000000000000004],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.24,0.35,0.24],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"low-garden-lantern-2-primary-copy\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Low garden lantern\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"low-garden-lantern-2-copy\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"low-garden-lantern\",\"placement\":{\"at\":[13.200000000000001,-2.4000000000000004],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.24,0.35,0.24],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"low-garden-lantern-2-primary-copy-copy\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Low garden lantern\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"low-garden-lantern-2-copy-copy\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"low-garden-lantern\",\"placement\":{\"at\":[13.200000000000001,-3.9000000000000004],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.24,0.35,0.24],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"low-garden-lantern-primary-copy-2\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Low garden lantern\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"low-garden-lantern-copy-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"low-garden-lantern\",\"placement\":{\"at\":[10.700000000000001,-3.9000000000000004],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.24,0.35,0.24],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"deciduous-tree\",\"kind\":\"furnishing\",\"modelId\":\"deciduous-tree\",\"placement\":{\"at\":[13.5,28.700000000000003],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[2.4,4.2,2.4],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"deciduous-tree-copy\",\"kind\":\"furnishing\",\"modelId\":\"deciduous-tree\",\"placement\":{\"at\":[15.200000000000001,25.900000000000002],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":4.71238898038469},\"size\":[2.4,4.2,2.4],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"deciduous-tree-copy-copy\",\"kind\":\"furnishing\",\"modelId\":\"deciduous-tree\",\"placement\":{\"at\":[0,-1.7000000000000002],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":4.71238898038469},\"size\":[2.4,4.2,2.4],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-reading-rug-copy\",\"kind\":\"furnishing\",\"modelId\":\"neutral-area-rug\",\"placement\":{\"at\":[10.700000000000001,14],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[4.5,0.015,3.6],\"variant\":\"terracotta\"},{\"floorId\":\"ground-floor\",\"id\":\"sectional-sofa\",\"kind\":\"furnishing\",\"modelId\":\"sectional-sofa\",\"placement\":{\"at\":[4.6000000000000005,15.200000000000001],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":4.71238898038469},\"size\":[2.93,1.227,1.63],\"variant\":\"cozy\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"media_player\"],\"deviceRole\":\"primary\",\"id\":\"television-primary\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Wall television\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"television\",\"kind\":\"device\",\"modelId\":\"wall-television\",\"placement\":{\"depthOffsetMeters\":0.005,\"elevationMeters\":1.08,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.0689,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-wall\"},\"size\":[2.4,1.36,0.07]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"media_player\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-speaker-primary\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Living room speaker\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-speaker\",\"kind\":\"device\",\"modelId\":\"speaker\",\"placement\":{\"depthOffsetMeters\":0.21,\"elevationMeters\":0.55,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.45,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-wall\"},\"size\":[0.26,0.39,0.26]},{\"floorId\":\"ground-floor\",\"id\":\"low-media-console\",\"kind\":\"furnishing\",\"modelId\":\"low-media-console\",\"placement\":{\"depthOffsetMeters\":0.20999999999999996,\"elevationMeters\":0.001,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.0659,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-wall\"},\"size\":[1.6,0.55,0.42],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"outdoor-bbq\",\"kind\":\"furnishing\",\"modelId\":\"outdoor-bbq\",\"placement\":{\"at\":[1.1,18.900000000000002],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1.2,1.1,0.6],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"65f5e5b5-ba59-4c67-9019-2b8ab8cb9fec\",\"kind\":\"furnishing\",\"modelId\":\"neutral-area-rug\",\"placement\":{\"at\":[11.8,2.2],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[2,0.015,3],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"4e982529-1ef5-4f04-8d19-e9f75b64b2a3\",\"kind\":\"furnishing\",\"modelId\":\"book-row\",\"placement\":{\"depthOffsetMeters\":0.09,\"elevationMeters\":0.8442074652777777,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":6.578,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-day-wall\"},\"size\":[0.4,0.28,0.18],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"fan\"],\"deviceRole\":\"primary\",\"id\":\"fef4ac62-8237-49f5-b19c-2acf038007b2\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Ceiling fan\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"2c9cc397-ef42-4327-b280-30715919d7e5\",\"kind\":\"device\",\"modelId\":\"ceiling-fan\",\"placement\":{\"at\":[3.6,15.8],\"dropMeters\":0.403,\"kind\":\"ceiling\",\"roomId\":\"open-plan-living\",\"rotationYRadians\":0},\"size\":[1.2,0.4,1.2],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"foyer-coat-rack\",\"kind\":\"furnishing\",\"modelId\":\"wall-coat-rack\",\"placement\":{\"depthOffsetMeters\":0,\"elevationMeters\":1.25,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":0.9774,\"rotationOffsetRadians\":0,\"wallId\":\"ground-service-divider\"},\"size\":[0.8,0.32,0.22],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"641f95a6-0ca9-4958-b0e6-f0ac0c3f08af\",\"kind\":\"furnishing\",\"modelId\":\"utility-shelving\",\"placement\":{\"depthOffsetMeters\":0.225,\"elevationMeters\":0.001,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":7.1459,\"rotationOffsetRadians\":0,\"wallId\":\"ground-north-wall\"},\"size\":[0.9,1.8,0.45],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"bde809ef-5910-40e3-b102-116a726c025f\",\"kind\":\"furnishing\",\"modelId\":\"toolbox\",\"placement\":{\"depthOffsetMeters\":0.12,\"elevationMeters\":1.7850711805555552,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":7.2502,\"rotationOffsetRadians\":0,\"wallId\":\"ground-north-wall\"},\"size\":[0.45,0.3,0.24],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"valve\",\"switch\"],\"deviceRole\":\"primary\",\"id\":\"02848dea-8596-4c2a-9106-99fa3943ccab\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Rotating sprinkler\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"9c927896-91a3-4db7-b905-9458172701a7\",\"kind\":\"device\",\"modelId\":\"rotating-sprinkler\",\"placement\":{\"at\":[8.4,-2.6],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.28,0.164,0.28],\"variant\":\"default\"},{\"floorId\":\"first-floor\",\"id\":\"ae250fd9-b5de-48dd-9a71-e8a9c7d818d5\",\"kind\":\"furnishing\",\"modelId\":\"neutral-area-rug\",\"placement\":{\"at\":[4.2,3.8000000000000003],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":6.283001142274436},\"size\":[2.4710575181141143,0.018532931385855857,3.7065862771711715],\"variant\":\"kilim\"},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-reading-chair\",\"kind\":\"furnishing\",\"modelId\":\"sage-tub-armchair\",\"placement\":{\"at\":[2.9000000000000004,0.6000000000000001],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0.3325130789452819},\"size\":[0.78,0.86,0.8],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"camera\"],\"deviceRole\":\"primary\",\"id\":\"8547d43a-5958-4eac-a9ca-de5c8b12b891\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Indoor security camera\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"ef74193a-a255-4cdd-9186-801f7882ae7d\",\"kind\":\"device\",\"modelId\":\"indoor-security-camera\",\"placement\":{\"depthOffsetMeters\":0.05000000000000001,\"elevationMeters\":1.4475060763888883,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":0.8981,\"rotationOffsetRadians\":0,\"wallId\":\"first-north-wall\"},\"size\":[0.1,0.16,0.1],\"variant\":\"default\"},{\"id\":\"living-west-ac\",\"kind\":\"device\",\"modelId\":\"indoor-ac\",\"floorId\":\"ground-floor\",\"size\":[0.86,0.28,0.206],\"placement\":{\"kind\":\"wall\",\"wallId\":\"ground-west-wall\",\"face\":\"right\",\"offsetFromWallStartPlanUnits\":5.3177,\"elevationMeters\":1.8898,\"depthOffsetMeters\":0.004,\"rotationOffsetRadians\":0},\"entitySlots\":[{\"id\":\"living-west-ac-entity\",\"autoMap\":\"manual\",\"compatibleDomains\":[\"climate\"],\"deviceRole\":\"primary\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"West living room AC\"},\"required\":true}]},{\"id\":\"dining-pedestal-fan\",\"kind\":\"device\",\"modelId\":\"pedestal-fan\",\"floorId\":\"ground-floor\",\"size\":[0.45,1.35,0.4],\"placement\":{\"kind\":\"absolute\",\"at\":[13.5207,17.5304],\"elevationMeters\":0.001,\"rotationYRadians\":-2.235508463075441},\"entitySlots\":[{\"id\":\"dining-pedestal-fan-entity\",\"autoMap\":\"manual\",\"compatibleDomains\":[\"fan\"],\"deviceRole\":\"primary\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Dining pedestal fan\"},\"required\":true}]},{\"id\":\"living-west-floor-lamp\",\"kind\":\"device\",\"modelId\":\"floor-lamp\",\"floorId\":\"ground-floor\",\"size\":[0.652,1.796,0.652],\"placement\":{\"kind\":\"absolute\",\"at\":[0.5129,17.5525],\"elevationMeters\":0.001,\"rotationYRadians\":0},\"entitySlots\":[{\"id\":\"living-west-floor-lamp-entity\",\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Living room floor lamp\"},\"required\":true}]}]"), vp = Ce(JSON.stringify({
+}, yp = /*#__PURE__*/ JSON.parse("[{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"villa-garden-dining-pergola-light-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Pergola string lights\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-pergola\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"pergola-string-lights\",\"placement\":{\"at\":[10,19.8],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[5,2.7,3],\"variant\":\"string-lights\"},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-table\",\"kind\":\"furnishing\",\"modelId\":\"rectangular-dining-table\",\"placement\":{\"at\":[10,19.8],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[2.4,0.75,0.9]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-chair-north-0\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[9.3,19.200000000000003],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-chair-south-0\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[9.3,20.400000000000002],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-chair-north-1\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[10,19.200000000000003],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-chair-south-1\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[10,20.400000000000002],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-chair-north-2\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[10.700000000000001,19.200000000000003],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-dining-chair-south-2\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[10.700000000000001,20.400000000000002],\"elevationMeters\":-0.043,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-lounger-0-1\",\"kind\":\"furnishing\",\"modelId\":\"pool-chaise-longue\",\"placement\":{\"at\":[3,23.400000000000002],\"elevationMeters\":-0.049,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.8,0.85,2.1]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-lounger-0-2\",\"kind\":\"furnishing\",\"modelId\":\"pool-chaise-longue\",\"placement\":{\"at\":[3.1,25.5],\"elevationMeters\":-0.049,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.8,0.85,2.1]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-pool-table-0\",\"kind\":\"furnishing\",\"modelId\":\"rectangular-coffee-table\",\"placement\":{\"at\":[2.6,24.400000000000002],\"elevationMeters\":-0.049,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.6,0.4,0.4]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-olive-0\",\"kind\":\"furnishing\",\"modelId\":\"olive-tree\",\"placement\":{\"at\":[0.9,23.5],\"elevationMeters\":-0.049,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[3.8,3.6,3.2]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-olive-2\",\"kind\":\"furnishing\",\"modelId\":\"olive-tree\",\"placement\":{\"at\":[2.5,28],\"elevationMeters\":-0.049,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[3.8,3.6,3.2]},{\"floorId\":\"ground-floor\",\"id\":\"villa-garden-shrub-2\",\"kind\":\"furnishing\",\"modelId\":\"garden-shrub\",\"placement\":{\"at\":[6,-2.5],\"elevationMeters\":-0.049,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.35,0.92,1.15]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"primary\",\"id\":\"garage-compact-car-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Compact car status\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"garage-compact-car\",\"kind\":\"device\",\"modelId\":\"compact-car\",\"placement\":{\"at\":[1.35,4.25],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[1.94,1.5,4]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"primary\",\"id\":\"garage-electric-sedan-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Electric sedan status\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"garage-electric-sedan\",\"kind\":\"device\",\"modelId\":\"electric-sedan\",\"placement\":{\"at\":[4.15,4.5],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[2.08,1.45,4.7]},{\"floorId\":\"ground-floor\",\"id\":\"garage-storage-shelf-west\",\"kind\":\"furnishing\",\"modelId\":\"oak-bookshelf\",\"placement\":{\"at\":[0.72,8.267],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.8,1.9,0.3]},{\"floorId\":\"ground-floor\",\"id\":\"garage-workbench\",\"kind\":\"furnishing\",\"modelId\":\"oak-desk\",\"placement\":{\"at\":[2.05,8.067],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.4,0.74,0.7]},{\"floorId\":\"ground-floor\",\"id\":\"garage-storage-shelf-east\",\"kind\":\"furnishing\",\"modelId\":\"oak-bookshelf\",\"placement\":{\"at\":[3.43,8.267],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.8,1.9,0.3]},{\"floorId\":\"ground-floor\",\"id\":\"garage-workbench-tool-shelf\",\"kind\":\"furnishing\",\"modelId\":\"floating-wall-shelf\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":1.35,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.05,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-day-wall\"},\"size\":[1.4,0.22,0.25]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"garage-ceiling-light-1-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Garage ceiling light 1\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"garage-ceiling-light-1\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"ceiling-light\",\"placement\":{\"at\":[1.55,4.35],\"dropMeters\":0.122,\"kind\":\"ceiling\",\"roomId\":\"ground-floor:room-1\",\"rotationYRadians\":0},\"size\":[0.4,0.12,0.4]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"garage-ceiling-light-2-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Garage ceiling light 2\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"garage-ceiling-light-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"ceiling-light\",\"placement\":{\"at\":[4.55,4.35],\"dropMeters\":0.122,\"kind\":\"ceiling\",\"roomId\":\"ground-floor:room-1\",\"rotationYRadians\":0},\"size\":[0.4,0.12,0.4]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"carbon_monoxide\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"garage-carbon-monoxide-alarm-entity\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Garage carbon monoxide alarm\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"garage-carbon-monoxide-alarm\",\"kind\":\"device\",\"modelId\":\"carbon-monoxide-alarm\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":1.6,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":10.6,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-wall\"},\"size\":[0.11,0.11,0.035]},{\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-tall-storage\",\"kind\":\"furnishing\",\"modelId\":\"flat-door-wardrobe\",\"placement\":{\"at\":[6.883,3.28],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1,2.2,0.6]},{\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-folding-cabinet\",\"kind\":\"furnishing\",\"modelId\":\"kitchen-base-cabinet\",\"placement\":{\"at\":[8.6,4.102],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.6,0.9,0.63]},{\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-sink-cabinet\",\"kind\":\"furnishing\",\"modelId\":\"kitchen-sink-cabinet\",\"placement\":{\"at\":[9.4,4.102],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[1,1.12,0.63]},{\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-folding-basket\",\"kind\":\"furnishing\",\"modelId\":\"wicker-towel-basket\",\"placement\":{\"at\":[8.6,4.02],\"elevationMeters\":0.902,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.38,0.315,0.31]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"switch\"],\"deviceRole\":\"primary\",\"id\":\"utility-laundry-washing-machine-power\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Washing machine\"},\"required\":true},{\"autoMap\":\"manual\",\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"secondary\",\"id\":\"utility-laundry-washing-machine-status\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Washing machine status\"},\"required\":false}],\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-washing-machine\",\"kind\":\"device\",\"modelId\":\"washing-machine\",\"placement\":{\"at\":[8.4,0.458],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.632,0.865,0.63]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"switch\"],\"deviceRole\":\"primary\",\"id\":\"utility-laundry-tumble-dryer-power\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Tumble dryer\"},\"required\":true},{\"autoMap\":\"manual\",\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"secondary\",\"id\":\"utility-laundry-tumble-dryer-status\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Tumble dryer status\"},\"required\":false}],\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-tumble-dryer\",\"kind\":\"device\",\"modelId\":\"tumble-dryer\",\"placement\":{\"at\":[9.1,0.488],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.6,0.85,0.65]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"water_heater\",\"switch\"],\"deviceRole\":\"primary\",\"id\":\"utility-laundry-water-heater-control\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Water heater\"},\"required\":true},{\"autoMap\":\"manual\",\"compatibleDeviceClasses\":[\"temperature\"],\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"secondary\",\"id\":\"utility-laundry-water-heater-temperature\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Water heater temperature\"},\"required\":false}],\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-water-heater\",\"kind\":\"device\",\"modelId\":\"water-heater\",\"placement\":{\"depthOffsetMeters\":0.209,\"elevationMeters\":0.85,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.9,\"rotationOffsetRadians\":0,\"wallId\":\"ground-service-divider\"},\"size\":[0.572,1.456,0.43]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"utility-laundry-ceiling-light-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Utility room light\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-ceiling-light\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"ceiling-light\",\"placement\":{\"at\":[8.25,2.3],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"stair-hall\",\"rotationYRadians\":0},\"size\":[0.4,0.12,0.4]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"moisture\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"utility-laundry-leak-sensor-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Laundry leak sensor\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"utility-laundry-leak-sensor\",\"kind\":\"device\",\"modelId\":\"leak-sensor\",\"placement\":{\"at\":[8.68,0.96],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.2,0.14,0.2]},{\"floorId\":\"ground-floor\",\"id\":\"pantry-north-west-shelving\",\"kind\":\"furnishing\",\"modelId\":\"oak-bookshelf\",\"placement\":{\"at\":[6.734,5.08],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.8,1.9,0.3]},{\"floorId\":\"ground-floor\",\"id\":\"pantry-south-east-shelving\",\"kind\":\"furnishing\",\"modelId\":\"oak-bookshelf\",\"placement\":{\"at\":[9.766,7.78],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":-1.5707963267948966},\"size\":[0.8,1.9,0.3]},{\"floorId\":\"ground-floor\",\"id\":\"pantry-preparation-counter\",\"kind\":\"furnishing\",\"modelId\":\"kitchen-base-cabinet\",\"placement\":{\"at\":[7.2,8.101],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.1,0.9,0.63]},{\"floorId\":\"ground-floor\",\"id\":\"pantry-wall-cabinet\",\"kind\":\"furnishing\",\"modelId\":\"kitchen-wall-cabinet\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.38,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":7.2,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-day-wall\"},\"size\":[1.1,0.8,0.35]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"temperature\"],\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"primary\",\"id\":\"pantry-freezer-entity\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Pantry freezer temperature\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"pantry-freezer\",\"kind\":\"device\",\"modelId\":\"freezer\",\"placement\":{\"at\":[9.576,5.3],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":4.71238898038469},\"size\":[0.65,1.75,0.68]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"pantry-downlight-1-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Pantry downlight 1\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"pantry-downlight-1\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[7.35,6.5],\"dropMeters\":0.04,\"kind\":\"ceiling\",\"roomId\":\"pantry\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"pantry-downlight-2-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Pantry downlight 2\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"pantry-downlight-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[9.15,6.5],\"dropMeters\":0.04,\"kind\":\"ceiling\",\"roomId\":\"pantry\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"motion\",\"occupancy\",\"presence\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"pantry-motion-sensor-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Pantry presence\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"pantry-motion-sensor\",\"kind\":\"device\",\"modelId\":\"motion-sensor\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":2.35,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.75,\"rotationOffsetRadians\":0,\"wallId\":\"ground-utility-pantry-wall\"},\"size\":[0.14,0.135,0.081]},{\"floorId\":\"ground-floor\",\"id\":\"foyer-shoe-bench\",\"kind\":\"furnishing\",\"modelId\":\"entryway-shoe-bench\",\"placement\":{\"at\":[10.274,3.65],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1,0.5,0.38]},{\"floorId\":\"ground-floor\",\"id\":\"foyer-console\",\"kind\":\"furnishing\",\"modelId\":\"hallway-console-table\",\"placement\":{\"depthOffsetMeters\":0.175,\"elevationMeters\":0.001,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":8.7919,\"rotationOffsetRadians\":0,\"wallId\":\"ground-east-wall\"},\"size\":[1.1,0.8,0.35]},{\"floorId\":\"ground-floor\",\"id\":\"foyer-framed-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"depthOffsetMeters\":0,\"elevationMeters\":1.35,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.7423,\"rotationOffsetRadians\":0,\"wallId\":\"ground-service-divider\"},\"size\":[0.7993947603124634,0.5995460702343475,0.03996973801562317]},{\"floorId\":\"ground-floor\",\"id\":\"foyer-potted-plant\",\"kind\":\"furnishing\",\"modelId\":\"potted-plant\",\"placement\":{\"at\":[10.65,0.62],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":-0.39269908169872414},\"size\":[0.615,1.105,0.44]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"foyer-pendant-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Foyer pendant\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"foyer-pendant\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"terracotta-pendant\",\"placement\":{\"at\":[12,2.86],\"dropMeters\":0.82,\"kind\":\"ceiling\",\"roomId\":\"ground-floor:room-2\",\"rotationYRadians\":0},\"size\":[0.66,0.64,0.66]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"camera\"],\"deviceRole\":\"primary\",\"id\":\"foyer-camera-screen-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Entry camera screen\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"foyer-camera-screen\",\"kind\":\"device\",\"modelId\":\"camera-screen\",\"placement\":{\"at\":[13.916,0.78],\"elevationMeters\":1.2,\"kind\":\"absolute\",\"rotationYRadians\":-1.5707963267948966},\"size\":[0.98,0.62,0.061]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"alarm_control_panel\"],\"deviceRole\":\"primary\",\"id\":\"foyer-alarm-keypad-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Villa alarm\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"foyer-alarm-keypad\",\"kind\":\"device\",\"modelId\":\"alarm-keypad\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.3,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":10.65,\"rotationOffsetRadians\":0,\"wallId\":\"ground-north-wall\"},\"size\":[0.18,0.25,0.035]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"lock\"],\"deviceRole\":\"primary\",\"id\":\"foyer-smart-lock-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Front door lock\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"foyer-smart-lock\",\"kind\":\"device\",\"modelId\":\"smart-lock\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":0.96,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":12.98,\"rotationOffsetRadians\":0,\"wallId\":\"ground-north-wall\"},\"size\":[0.07,0.18,0.06]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"cover\"],\"deviceRole\":\"primary\",\"id\":\"guest-bedroom-east-blind-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"East window blind\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"guest-bedroom-east-blind\",\"kind\":\"device\",\"modelId\":\"motorized-blind\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":0.8,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.45,\"rotationOffsetRadians\":0,\"wallId\":\"ground-east-wall\"},\"size\":[2.05,1.45,0.12]},{\"floorId\":\"ground-floor\",\"id\":\"stair-hall-console\",\"kind\":\"furnishing\",\"modelId\":\"hallway-console-table\",\"placement\":{\"at\":[10.257,8],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1.1,0.8,0.35]},{\"floorId\":\"ground-floor\",\"id\":\"stair-hall-console-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"at\":[10.083,8],\"elevationMeters\":1.42,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.8,0.62,0.04]},{\"floorId\":\"ground-floor\",\"id\":\"stair-hall-landing-plant\",\"kind\":\"furnishing\",\"modelId\":\"potted-plant\",\"placement\":{\"at\":[13.6,10.5],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":-0.4487989505128276},\"size\":[0.615,1.105,0.44]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"stair-hall-downlight-1-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Stair hall downlight 1\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"stair-hall-downlight-1\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[10.6,7.55],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"ground-floor:room-2\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"stair-hall-downlight-2-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Stair hall downlight 2\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"stair-hall-downlight-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[13.4,9.25],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"ground-floor:room-2\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"stair-hall-wall-sconce-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Stair hall wall sconce\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"stair-hall-wall-sconce\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"wall-sconce\",\"placement\":{\"at\":[13.917,9.65],\"elevationMeters\":1.72,\"kind\":\"absolute\",\"rotationYRadians\":-1.5707963267948966},\"size\":[0.22,0.32,0.16]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"motion\",\"occupancy\",\"presence\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"stair-hall-motion-sensor-entity\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Stair hall motion\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"stair-hall-motion-sensor\",\"kind\":\"device\",\"modelId\":\"motion-sensor\",\"placement\":{\"at\":[13.4,0.7000000000000001],\"elevationMeters\":3,\"kind\":\"absolute\",\"rotationYRadians\":0.007142735669413403},\"size\":[0.14,0.135,0.081]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-equipped-kitchen\",\"kind\":\"furnishing\",\"modelId\":\"equipped-kitchen\",\"placement\":{\"at\":[0.5,9],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[3.89,2.23,2.54]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-counter-stool-1\",\"kind\":\"furnishing\",\"modelId\":\"counter-stool\",\"placement\":{\"at\":[1.55,12.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.502,0.9621666666666667,0.5229166666666667]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-counter-stool-2\",\"kind\":\"furnishing\",\"modelId\":\"counter-stool\",\"placement\":{\"at\":[2.55,12.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.502,0.9621666666666667,0.5229166666666667]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-counter-stool-3\",\"kind\":\"furnishing\",\"modelId\":\"counter-stool\",\"placement\":{\"at\":[3.55,12.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.502,0.9621666666666667,0.5229166666666667]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-table\",\"kind\":\"furnishing\",\"modelId\":\"rectangular-dining-table\",\"placement\":{\"at\":[10.7,14.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[2.8,0.75,1.1]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-north-west\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[9.6,13.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-north-center\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[10.7,13.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-north-east\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[11.8,13.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-south-west\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[9.6,15.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-south-center\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[10.7,15.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-south-east\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[11.8,15.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-west\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[8.9,14.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-chair-east\",\"kind\":\"furnishing\",\"modelId\":\"oak-dining-chair\",\"placement\":{\"at\":[12.5,14.1],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.49,0.82,0.5]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-reading-rug\",\"kind\":\"furnishing\",\"modelId\":\"neutral-area-rug\",\"placement\":{\"at\":[3.2,15],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[4.5,0.015,3.6],\"variant\":\"sage\"},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-reading-table\",\"kind\":\"furnishing\",\"modelId\":\"rectangular-coffee-table\",\"placement\":{\"at\":[3.1,15.5],\"elevationMeters\":0.017,\"kind\":\"absolute\",\"rotationYRadians\":4.71238898038469},\"size\":[1.1,0.4,0.6]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-reading-ficus\",\"kind\":\"furnishing\",\"modelId\":\"tall-ficus\",\"placement\":{\"at\":[0.85,16.95],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.901,1.643,0.503]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-sideboard\",\"kind\":\"furnishing\",\"modelId\":\"three-door-sideboard\",\"placement\":{\"at\":[6.85,8.808],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.8,0.82,0.45]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-sideboard-plant\",\"kind\":\"furnishing\",\"modelId\":\"potted-plant\",\"placement\":{\"at\":[7.4,8.81],\"elevationMeters\":0.823,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.3075,0.5525,0.22]},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-sideboard-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.3,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":7.1,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-day-wall\"},\"size\":[1.5,1,0.04]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-kitchen-cabinet-lighting-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Kitchen cabinet lighting\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-kitchen-cabinet-lighting\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"kitchen-cabinet-lighting\",\"placement\":{\"at\":[0.5,9],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[3.89,2.23,2.54]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-kitchen-pendant-1-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Kitchen pendant 1\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-kitchen-pendant-1\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"woven-pendant\",\"placement\":{\"at\":[1.55,11.25],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"open-plan-living\",\"rotationYRadians\":0},\"size\":[0.704,0.482077922077922,0.7148051948051948]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-kitchen-pendant-2-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Kitchen pendant 2\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-kitchen-pendant-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"woven-pendant\",\"placement\":{\"at\":[2.55,11.25],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"open-plan-living\",\"rotationYRadians\":0},\"size\":[0.704,0.482077922077922,0.7148051948051948]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-kitchen-pendant-3-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Kitchen pendant 3\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-kitchen-pendant-3\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"woven-pendant\",\"placement\":{\"at\":[3.55,11.25],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"open-plan-living\",\"rotationYRadians\":0},\"size\":[0.704,0.482077922077922,0.7148051948051948]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-dining-pendant-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Dining pendant\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-dining-pendant\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"woven-pendant\",\"placement\":{\"at\":[10.7,14.1],\"dropMeters\":0.15,\"kind\":\"ceiling\",\"roomId\":\"open-plan-living\",\"rotationYRadians\":0},\"size\":[0.847,0.58,0.86]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"climate\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-ac-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Living room AC\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-ac\",\"kind\":\"device\",\"modelId\":\"indoor-ac\",\"placement\":{\"depthOffsetMeters\":0.001,\"elevationMeters\":2.35,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":5.1857,\"rotationOffsetRadians\":0,\"wallId\":\"ground-service-divider\"},\"size\":[0.86,0.28,0.206]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-rug\",\"kind\":\"furnishing\",\"modelId\":\"neutral-area-rug\",\"placement\":{\"at\":[8,5.2],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[3,0.015,2.8]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-bed\",\"kind\":\"furnishing\",\"modelId\":\"double-bed\",\"placement\":{\"at\":[8.841,5.2],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":-1.5707963267948966},\"size\":[1.7,1.1,2.15]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-north-nightstand\",\"kind\":\"furnishing\",\"modelId\":\"oak-nightstand\",\"placement\":{\"at\":[9.716,4],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.45,0.5,0.4]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-south-nightstand\",\"kind\":\"furnishing\",\"modelId\":\"oak-nightstand\",\"placement\":{\"at\":[9.716,6.4],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.45,0.5,0.4]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-bedroom-north-table-lamp-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"North bedside lamp\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-north-table-lamp\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"table-lamp\",\"placement\":{\"at\":[9.716,4],\"elevationMeters\":0.501,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.32,0.52,0.32]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-bedroom-south-table-lamp-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"South bedside lamp\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-south-table-lamp\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"table-lamp\",\"placement\":{\"at\":[9.716,6.4],\"elevationMeters\":0.501,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.32,0.52,0.32]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-bed-bench\",\"kind\":\"furnishing\",\"modelId\":\"upholstered-ottoman\",\"placement\":{\"at\":[7.2,5.2],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[0.7,0.42,0.55]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-sideboard\",\"kind\":\"furnishing\",\"modelId\":\"three-door-sideboard\",\"placement\":{\"at\":[5.65,7.691],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[1.6,0.82,0.45]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.28,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.65,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-suite-wall\"},\"size\":[1.1,0.72,0.04]},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-reading-plant\",\"kind\":\"furnishing\",\"modelId\":\"potted-plant\",\"placement\":{\"at\":[4,0.6000000000000001],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.615,1.105,0.44]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-bedroom-pendant-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Primary bedroom pendant\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-pendant\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"woven-pendant\",\"placement\":{\"at\":[6,4],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"primary-bedroom\",\"rotationYRadians\":0},\"size\":[0.847,0.58,0.86]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"climate\"],\"deviceRole\":\"primary\",\"id\":\"primary-bedroom-ac-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Primary bedroom AC\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-ac\",\"kind\":\"device\",\"modelId\":\"indoor-ac\",\"placement\":{\"depthOffsetMeters\":0.002,\"elevationMeters\":2.28,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":5.2,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-gallery-wall\"},\"size\":[0.86,0.28,0.206]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"cover\"],\"deviceRole\":\"primary\",\"id\":\"primary-bedroom-north-blind-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"North window blind\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-north-blind\",\"kind\":\"device\",\"modelId\":\"motorized-blind\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":0.75,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3,\"rotationOffsetRadians\":0,\"wallId\":\"first-north-wall\"},\"size\":[2.8,1.425,0.12]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"cover\"],\"deviceRole\":\"primary\",\"id\":\"primary-bedroom-west-blind-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"West window blind\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-west-blind\",\"kind\":\"device\",\"modelId\":\"motorized-blind\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":0.75,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":11.7,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-wall\"},\"size\":[2.8,1.425,0.12]},{\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-bathtub\",\"kind\":\"furnishing\",\"modelId\":\"freestanding-bathtub\",\"placement\":{\"at\":[2.553,10],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1.7,0.6,0.78]},{\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-shower\",\"kind\":\"furnishing\",\"modelId\":\"shower-assembly\",\"placement\":{\"at\":[4.821,11.454],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[2.018,1.57,0.908]},{\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-toilet\",\"kind\":\"furnishing\",\"modelId\":\"compact-toilet\",\"placement\":{\"at\":[2.55,8.383],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.39,0.724,0.6]},{\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-vanity\",\"kind\":\"furnishing\",\"modelId\":\"dark-oak-vessel-vanity\",\"placement\":{\"at\":[5.25,8.343],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.8,1.23,0.52]},{\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-towel-basket\",\"kind\":\"furnishing\",\"modelId\":\"wicker-towel-basket\",\"placement\":{\"at\":[3.32,11.48],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":-0.39269908169872414},\"size\":[0.38,0.315,0.31]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-bathroom-ceiling-light-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Primary bathroom ceiling light\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-ceiling-light\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"ceiling-light\",\"placement\":{\"at\":[4.05,10],\"dropMeters\":0.08,\"kind\":\"ceiling\",\"roomId\":\"primary-bathroom\",\"rotationYRadians\":0},\"size\":[0.4,0.12,0.4]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-bathroom-illuminated-mirror-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Primary bathroom mirror light\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-illuminated-mirror\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"illuminated-round-mirror\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.3,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.25,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-suite-wall\"},\"size\":[0.8,0.8,0.045]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"climate\",\"switch\"],\"deviceRole\":\"primary\",\"id\":\"primary-bathroom-heated-towel-rail-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Primary bathroom towel warmer\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-heated-towel-rail\",\"kind\":\"device\",\"modelId\":\"heated-towel-rail\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":0.72,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":0.95,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-bath-divider\"},\"size\":[0.6,1.2,0.12]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"fan\",\"switch\"],\"deviceRole\":\"primary\",\"id\":\"primary-bathroom-extractor-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Primary bathroom extractor\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-extractor\",\"kind\":\"device\",\"modelId\":\"bathroom-extractor-fan\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":2.52,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.45,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-bath-divider\"},\"size\":[0.18,0.18,0.09]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"humidity\"],\"compatibleDomains\":[\"sensor\"],\"deviceRole\":\"primary\",\"id\":\"primary-bathroom-humidity-sensor-entity\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Primary bathroom humidity\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-humidity-sensor\",\"kind\":\"device\",\"modelId\":\"humidity-sensor\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.72,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.5,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-suite-wall\"},\"size\":[0.085,0.085,0.03]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"moisture\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"primary-bathroom-leak-sensor-entity\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Primary bathroom leak sensor\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-bathroom-leak-sensor\",\"kind\":\"device\",\"modelId\":\"leak-sensor\",\"placement\":{\"at\":[5.34,8.78],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.2,0.14,0.2]},{\"floorId\":\"first-floor\",\"id\":\"primary-dressing-south-wardrobe\",\"kind\":\"furnishing\",\"modelId\":\"flat-door-wardrobe\",\"placement\":{\"at\":[8,11.617],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[3.2,2.2,0.6]},{\"floorId\":\"first-floor\",\"id\":\"primary-dressing-north-chest\",\"kind\":\"furnishing\",\"modelId\":\"chest-of-drawers\",\"placement\":{\"at\":[9.05,8.308],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.3,0.9,0.45]},{\"floorId\":\"first-floor\",\"id\":\"primary-dressing-center-rug\",\"kind\":\"furnishing\",\"modelId\":\"neutral-area-rug\",\"placement\":{\"at\":[8.15,9.65],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.4,0.015,1.6]},{\"floorId\":\"first-floor\",\"id\":\"primary-dressing-ottoman\",\"kind\":\"furnishing\",\"modelId\":\"upholstered-ottoman\",\"placement\":{\"at\":[8.55,9.15],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.7,0.42,0.55]},{\"floorId\":\"first-floor\",\"id\":\"primary-dressing-mirror\",\"kind\":\"furnishing\",\"modelId\":\"arched-mirror\",\"placement\":{\"depthOffsetMeters\":0.033,\"elevationMeters\":1.15,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":7.05,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-suite-wall\"},\"size\":[0.54,1.05,0.06]},{\"floorId\":\"first-floor\",\"id\":\"primary-dressing-west-shelf\",\"kind\":\"furnishing\",\"modelId\":\"floating-wall-shelf\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":1.3,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.05,\"rotationOffsetRadians\":0,\"wallId\":\"first-primary-bath-divider\"},\"size\":[1,0.22,0.25]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-dressing-downlight-1-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Dressing downlight 1\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-dressing-downlight-1\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[7.15,9.05],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"primary-dressing\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"primary-dressing-downlight-2-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Dressing downlight 2\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-dressing-downlight-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[8.85,10.95],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"primary-dressing\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"motion\",\"occupancy\",\"presence\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"primary-dressing-motion-sensor-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Dressing occupancy\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"primary-dressing-motion-sensor\",\"kind\":\"device\",\"modelId\":\"motion-sensor\",\"placement\":{\"at\":[8,10],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"primary-dressing\",\"rotationYRadians\":0},\"size\":[0.14,0.135,0.081]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-bed\",\"kind\":\"furnishing\",\"modelId\":\"single-bed\",\"placement\":{\"at\":[3.5,13.134],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1,0.95,2.1]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-nightstand\",\"kind\":\"furnishing\",\"modelId\":\"oak-nightstand\",\"placement\":{\"at\":[4.35,12.284],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.45,0.5,0.4]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-bookshelf\",\"kind\":\"furnishing\",\"modelId\":\"oak-bookshelf\",\"placement\":{\"at\":[5.7,12.234],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.8,1.9,0.3]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-desk\",\"kind\":\"furnishing\",\"modelId\":\"oak-desk\",\"placement\":{\"at\":[7.65,12.434],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[1.4,0.74,0.7]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-desk-chair\",\"kind\":\"furnishing\",\"modelId\":\"ergonomic-office-chair\",\"placement\":{\"at\":[7.5,12.8],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":3.141592653589793},\"size\":[0.68,1.04,0.68]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-wardrobe\",\"kind\":\"furnishing\",\"modelId\":\"flat-door-wardrobe\",\"placement\":{\"depthOffsetMeters\":0.3,\"elevationMeters\":0.001,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":14.9168,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-gallery-wall\"},\"size\":[1.6,2.2,0.6]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-rug\",\"kind\":\"furnishing\",\"modelId\":\"neutral-area-rug\",\"placement\":{\"at\":[6,14.65],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[2.5,0.015,1.45]},{\"floorId\":\"first-floor\",\"id\":\"bedroom-four-bed-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"depthOffsetMeters\":0.004,\"elevationMeters\":1.38,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":1.5,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-bedroom-wall\"},\"size\":[0.8,0.6,0.04]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"bedroom-four-bedside-lamp-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Bedroom four bedside lamp\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"bedroom-four-bedside-lamp\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"table-lamp\",\"placement\":{\"at\":[4.35,12.284],\"elevationMeters\":0.501,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.32,0.52,0.32]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"bedroom-four-pendant-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Bedroom four pendant\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"bedroom-four-pendant\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"children-pendant\",\"placement\":{\"at\":[6.2,14.1],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"bedroom-four\",\"rotationYRadians\":0},\"size\":[0.58,0.479,0.58]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDomains\":[\"climate\"],\"deviceRole\":\"primary\",\"id\":\"bedroom-four-ac-entity\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Bedroom four AC\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"bedroom-four-ac\",\"kind\":\"device\",\"modelId\":\"indoor-ac\",\"placement\":{\"depthOffsetMeters\":0.002,\"elevationMeters\":2.3,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":6.8,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-bedroom-wall\"},\"size\":[0.86,0.28,0.206]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"cover\"],\"deviceRole\":\"primary\",\"id\":\"bedroom-four-west-blind-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Bedroom four west blind\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"bedroom-four-west-blind\",\"kind\":\"device\",\"modelId\":\"motorized-blind\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":0.75,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.4,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-wall\"},\"size\":[2.25,1.425,0.12]},{\"floorId\":\"first-floor\",\"id\":\"upper-landing-console\",\"kind\":\"furnishing\",\"modelId\":\"hallway-console-table\",\"placement\":{\"at\":[10.257,4.2],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1.1,0.8,0.35]},{\"floorId\":\"first-floor\",\"id\":\"upper-landing-console-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":1.42,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":4.2,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-gallery-wall\"},\"size\":[0.8,0.62,0.04]},{\"floorId\":\"first-floor\",\"id\":\"upper-landing-north-plant\",\"kind\":\"furnishing\",\"modelId\":\"potted-plant\",\"placement\":{\"at\":[10.47,0.55],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0.4487989505128276},\"size\":[0.615,1.105,0.44]},{\"floorId\":\"first-floor\",\"id\":\"upper-landing-gallery-bench\",\"kind\":\"furnishing\",\"modelId\":\"entryway-shoe-bench\",\"placement\":{\"at\":[13.727,11.7],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1,0.5,0.38]},{\"floorId\":\"first-floor\",\"id\":\"upper-landing-bench-art\",\"kind\":\"furnishing\",\"modelId\":\"framed-wall-art\",\"placement\":{\"at\":[13.917,11.7],\"elevationMeters\":1.25,\"kind\":\"absolute\",\"rotationYRadians\":-1.5707963267948966},\"size\":[0.8,0.62,0.04]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"upper-landing-downlight-1-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Upper landing downlight 1\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"upper-landing-downlight-1\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[12,4.65],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"upper-landing\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"upper-landing-downlight-2-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"Upper landing downlight 2\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"upper-landing-downlight-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"recessed-downlight\",\"placement\":{\"at\":[12,11.55],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"upper-landing\",\"rotationYRadians\":0},\"size\":[0.1,0.04,0.1]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"upper-landing-north-sconce-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"North gallery wall sconce\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"upper-landing-north-sconce\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"wall-sconce\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":1.72,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":5.18,\"rotationOffsetRadians\":0,\"wallId\":\"first-west-gallery-wall\"},\"size\":[0.22,0.32,0.16]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"upper-landing-south-sconce-entity\",\"presentation\":{\"dashboardRole\":\"secondary\",\"label\":\"South gallery wall sconce\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"upper-landing-south-sconce\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"wall-sconce\",\"placement\":{\"depthOffsetMeters\":0.003,\"elevationMeters\":1.72,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":0.45,\"rotationOffsetRadians\":0,\"wallId\":\"first-east-gallery-wall--split-3\"},\"size\":[0.22,0.32,0.16]},{\"entitySlots\":[{\"autoMap\":\"unique-compatible\",\"compatibleDeviceClasses\":[\"motion\",\"occupancy\",\"presence\"],\"compatibleDomains\":[\"binary_sensor\"],\"deviceRole\":\"primary\",\"id\":\"upper-landing-motion-sensor-entity\",\"presentation\":{\"dashboardRole\":\"diagnostic\",\"label\":\"Upper landing motion\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"upper-landing-motion-sensor\",\"kind\":\"device\",\"modelId\":\"motion-sensor\",\"placement\":{\"at\":[13.45,5.42],\"dropMeters\":0,\"kind\":\"ceiling\",\"roomId\":\"upper-landing\",\"rotationYRadians\":0},\"size\":[0.14,0.135,0.081]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"low-garden-lantern-primary\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Low garden lantern\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"low-garden-lantern\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"low-garden-lantern\",\"placement\":{\"at\":[10.700000000000001,-0.8],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.24,0.35,0.24],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"low-garden-lantern-primary-copy\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Low garden lantern\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"low-garden-lantern-copy\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"low-garden-lantern\",\"placement\":{\"at\":[13.200000000000001,-0.8],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.24,0.35,0.24],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"low-garden-lantern-2-primary\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Low garden lantern\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"low-garden-lantern-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"low-garden-lantern\",\"placement\":{\"at\":[10.700000000000001,-2.4000000000000004],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.24,0.35,0.24],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"low-garden-lantern-2-primary-copy\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Low garden lantern\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"low-garden-lantern-2-copy\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"low-garden-lantern\",\"placement\":{\"at\":[13.200000000000001,-2.4000000000000004],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.24,0.35,0.24],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"low-garden-lantern-2-primary-copy-copy\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Low garden lantern\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"low-garden-lantern-2-copy-copy\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"low-garden-lantern\",\"placement\":{\"at\":[13.200000000000001,-3.9000000000000004],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.24,0.35,0.24],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"id\":\"low-garden-lantern-primary-copy-2\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Low garden lantern\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"low-garden-lantern-copy-2\",\"kind\":\"device\",\"lightState\":\"night-only\",\"modelId\":\"low-garden-lantern\",\"placement\":{\"at\":[10.700000000000001,-3.9000000000000004],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.24,0.35,0.24],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"deciduous-tree\",\"kind\":\"furnishing\",\"modelId\":\"deciduous-tree\",\"placement\":{\"at\":[13.5,28.700000000000003],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[2.4,4.2,2.4],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"deciduous-tree-copy\",\"kind\":\"furnishing\",\"modelId\":\"deciduous-tree\",\"placement\":{\"at\":[15.200000000000001,25.900000000000002],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":4.71238898038469},\"size\":[2.4,4.2,2.4],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"deciduous-tree-copy-copy\",\"kind\":\"furnishing\",\"modelId\":\"deciduous-tree\",\"placement\":{\"at\":[0,-1.7000000000000002],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":4.71238898038469},\"size\":[2.4,4.2,2.4],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-reading-rug-copy\",\"kind\":\"furnishing\",\"modelId\":\"neutral-area-rug\",\"placement\":{\"at\":[10.700000000000001,14],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[4.5,0.015,3.6],\"variant\":\"terracotta\"},{\"floorId\":\"ground-floor\",\"id\":\"sectional-sofa\",\"kind\":\"furnishing\",\"modelId\":\"sectional-sofa\",\"placement\":{\"at\":[4.6000000000000005,15.200000000000001],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":4.71238898038469},\"size\":[2.93,1.227,1.63],\"variant\":\"cozy\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"media_player\"],\"deviceRole\":\"primary\",\"id\":\"television-primary\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Wall television\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"television\",\"kind\":\"device\",\"modelId\":\"wall-television\",\"placement\":{\"depthOffsetMeters\":0.005,\"elevationMeters\":1.08,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.0689,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-wall\"},\"size\":[2.4,1.36,0.07]},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"media_player\"],\"deviceRole\":\"primary\",\"id\":\"open-plan-living-speaker-primary\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Living room speaker\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"open-plan-living-speaker\",\"kind\":\"device\",\"modelId\":\"speaker\",\"placement\":{\"depthOffsetMeters\":0.21,\"elevationMeters\":0.55,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":2.45,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-wall\"},\"size\":[0.26,0.39,0.26]},{\"floorId\":\"ground-floor\",\"id\":\"low-media-console\",\"kind\":\"furnishing\",\"modelId\":\"low-media-console\",\"placement\":{\"depthOffsetMeters\":0.20999999999999996,\"elevationMeters\":0.001,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":3.0659,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-wall\"},\"size\":[1.6,0.55,0.42],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"outdoor-bbq\",\"kind\":\"furnishing\",\"modelId\":\"outdoor-bbq\",\"placement\":{\"at\":[1.1,18.900000000000002],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":1.5707963267948966},\"size\":[1.2,1.1,0.6],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"65f5e5b5-ba59-4c67-9019-2b8ab8cb9fec\",\"kind\":\"furnishing\",\"modelId\":\"neutral-area-rug\",\"placement\":{\"at\":[11.8,2.2],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[2,0.015,3],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"4e982529-1ef5-4f04-8d19-e9f75b64b2a3\",\"kind\":\"furnishing\",\"modelId\":\"book-row\",\"placement\":{\"depthOffsetMeters\":0.09,\"elevationMeters\":0.8442074652777777,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":6.578,\"rotationOffsetRadians\":0,\"wallId\":\"ground-west-day-wall\"},\"size\":[0.4,0.28,0.18],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"fan\"],\"deviceRole\":\"primary\",\"id\":\"fef4ac62-8237-49f5-b19c-2acf038007b2\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Ceiling fan\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"2c9cc397-ef42-4327-b280-30715919d7e5\",\"kind\":\"device\",\"modelId\":\"ceiling-fan\",\"placement\":{\"at\":[3.6,15.8],\"dropMeters\":0.403,\"kind\":\"ceiling\",\"roomId\":\"open-plan-living\",\"rotationYRadians\":0},\"size\":[1.2,0.4,1.2],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"foyer-coat-rack\",\"kind\":\"furnishing\",\"modelId\":\"wall-coat-rack\",\"placement\":{\"depthOffsetMeters\":0,\"elevationMeters\":1.25,\"face\":\"left\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":0.9774,\"rotationOffsetRadians\":0,\"wallId\":\"ground-service-divider\"},\"size\":[0.8,0.32,0.22],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"641f95a6-0ca9-4958-b0e6-f0ac0c3f08af\",\"kind\":\"furnishing\",\"modelId\":\"utility-shelving\",\"placement\":{\"depthOffsetMeters\":0.225,\"elevationMeters\":0.001,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":7.1459,\"rotationOffsetRadians\":0,\"wallId\":\"ground-north-wall\"},\"size\":[0.9,1.8,0.45],\"variant\":\"default\"},{\"floorId\":\"ground-floor\",\"id\":\"bde809ef-5910-40e3-b102-116a726c025f\",\"kind\":\"furnishing\",\"modelId\":\"toolbox\",\"placement\":{\"depthOffsetMeters\":0.12,\"elevationMeters\":1.7850711805555552,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":7.2502,\"rotationOffsetRadians\":0,\"wallId\":\"ground-north-wall\"},\"size\":[0.45,0.3,0.24],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"valve\",\"switch\"],\"deviceRole\":\"primary\",\"id\":\"02848dea-8596-4c2a-9106-99fa3943ccab\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Rotating sprinkler\"},\"required\":true}],\"floorId\":\"ground-floor\",\"id\":\"9c927896-91a3-4db7-b905-9458172701a7\",\"kind\":\"device\",\"modelId\":\"rotating-sprinkler\",\"placement\":{\"at\":[8.4,-2.6],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0},\"size\":[0.28,0.164,0.28],\"variant\":\"default\"},{\"floorId\":\"first-floor\",\"id\":\"ae250fd9-b5de-48dd-9a71-e8a9c7d818d5\",\"kind\":\"furnishing\",\"modelId\":\"neutral-area-rug\",\"placement\":{\"at\":[4.2,3.8000000000000003],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":6.283001142274436},\"size\":[2.4710575181141143,0.018532931385855857,3.7065862771711715],\"variant\":\"kilim\"},{\"floorId\":\"first-floor\",\"id\":\"primary-bedroom-reading-chair\",\"kind\":\"furnishing\",\"modelId\":\"sage-tub-armchair\",\"placement\":{\"at\":[2.9000000000000004,0.6000000000000001],\"elevationMeters\":0.001,\"kind\":\"absolute\",\"rotationYRadians\":0.3325130789452819},\"size\":[0.78,0.86,0.8],\"variant\":\"default\"},{\"entitySlots\":[{\"autoMap\":\"manual\",\"compatibleDomains\":[\"camera\"],\"deviceRole\":\"primary\",\"id\":\"8547d43a-5958-4eac-a9ca-de5c8b12b891\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Indoor security camera\"},\"required\":true}],\"floorId\":\"first-floor\",\"id\":\"ef74193a-a255-4cdd-9186-801f7882ae7d\",\"kind\":\"device\",\"modelId\":\"indoor-security-camera\",\"placement\":{\"depthOffsetMeters\":0.05000000000000001,\"elevationMeters\":1.4475060763888883,\"face\":\"right\",\"kind\":\"wall\",\"offsetFromWallStartPlanUnits\":0.8981,\"rotationOffsetRadians\":0,\"wallId\":\"first-north-wall\"},\"size\":[0.1,0.16,0.1],\"variant\":\"default\"},{\"id\":\"living-west-ac\",\"kind\":\"device\",\"modelId\":\"indoor-ac\",\"floorId\":\"ground-floor\",\"size\":[0.86,0.28,0.206],\"placement\":{\"kind\":\"wall\",\"wallId\":\"ground-west-wall\",\"face\":\"right\",\"offsetFromWallStartPlanUnits\":5.3177,\"elevationMeters\":1.8898,\"depthOffsetMeters\":0.004,\"rotationOffsetRadians\":0},\"entitySlots\":[{\"id\":\"living-west-ac-entity\",\"autoMap\":\"manual\",\"compatibleDomains\":[\"climate\"],\"deviceRole\":\"primary\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"West living room AC\"},\"required\":true}]},{\"id\":\"dining-pedestal-fan\",\"kind\":\"device\",\"modelId\":\"pedestal-fan\",\"floorId\":\"ground-floor\",\"size\":[0.45,1.35,0.4],\"placement\":{\"kind\":\"absolute\",\"at\":[13.5207,17.5304],\"elevationMeters\":0.001,\"rotationYRadians\":-2.235508463075441},\"entitySlots\":[{\"id\":\"dining-pedestal-fan-entity\",\"autoMap\":\"manual\",\"compatibleDomains\":[\"fan\"],\"deviceRole\":\"primary\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Dining pedestal fan\"},\"required\":true}]},{\"id\":\"living-west-floor-lamp\",\"kind\":\"device\",\"modelId\":\"floor-lamp\",\"floorId\":\"ground-floor\",\"size\":[0.652,1.796,0.652],\"placement\":{\"kind\":\"absolute\",\"at\":[0.5129,17.5525],\"elevationMeters\":0.001,\"rotationYRadians\":0},\"entitySlots\":[{\"id\":\"living-west-floor-lamp-entity\",\"autoMap\":\"manual\",\"compatibleDomains\":[\"light\"],\"deviceRole\":\"primary\",\"presentation\":{\"dashboardRole\":\"primary\",\"label\":\"Living room floor lamp\"},\"required\":true}]}]"), bp = Ce(JSON.stringify({
 	assumptions: [
 		{
 			basis: "user",
@@ -39360,12 +39413,12 @@ var up = L({
 			order: 6
 		}
 	],
-	...gp,
-	sceneItems: _p
+	...vp,
+	sceneItems: yp
 }));
-if (!vp.valid) throw Error(vp.issues.map((e) => e.message).join("\n"));
-var yp = vp.project, bp = "#eee9de", xp = "#f5f2eb", Sp = "#eee8dc", Cp = "#d3c9bc", wp = "#b77b43", Tp = "#d09a62", Ep = "#b78332", Dp = "#292b2a", Op = "#665c50";
-function $({ size: e, position: t, color: n, outline: r = Op, receiveShadow: i = !1 }) {
+if (!bp.valid) throw Error(bp.issues.map((e) => e.message).join("\n"));
+var xp = bp.project, Sp = "#eee9de", Cp = "#f5f2eb", wp = "#eee8dc", Tp = "#d3c9bc", Ep = "#b77b43", Dp = "#d09a62", Op = "#b78332", kp = "#292b2a", Ap = "#665c50";
+function $({ size: e, position: t, color: n, outline: r = Ap, receiveShadow: i = !1 }) {
 	return /* @__PURE__ */ (0, H.jsxs)("mesh", {
 		position: t,
 		castShadow: !0,
@@ -39381,7 +39434,7 @@ function $({ size: e, position: t, color: n, outline: r = Op, receiveShadow: i =
 		]
 	});
 }
-function kp({ width: e, height: t, position: n }) {
+function jp({ width: e, height: t, position: n }) {
 	return /* @__PURE__ */ (0, H.jsxs)("mesh", {
 		position: n,
 		receiveShadow: !0,
@@ -39389,12 +39442,12 @@ function kp({ width: e, height: t, position: n }) {
 			e,
 			t,
 			.018
-		] }), /* @__PURE__ */ (0, H.jsx)(l, { color: xp })]
+		] }), /* @__PURE__ */ (0, H.jsx)(l, { color: Cp })]
 	});
 }
 //#endregion
 //#region home/src/extensions/kitchen/brass-cabinet-handle.tsx
-function Ap({ position: e, vertical: t = !1 }) {
+function Mp({ position: e, vertical: t = !1 }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		position: e,
 		children: [/* @__PURE__ */ (0, H.jsx)($, {
@@ -39412,7 +39465,7 @@ function Ap({ position: e, vertical: t = !1 }) {
 				0,
 				0
 			],
-			color: Ep,
+			color: Op,
 			outline: "#6f4d20"
 		}), [-1, 1].map((e) => /* @__PURE__ */ (0, H.jsxs)("mesh", {
 			castShadow: !0,
@@ -39429,13 +39482,13 @@ function Ap({ position: e, vertical: t = !1 }) {
 				.018,
 				.018,
 				.045
-			] }), /* @__PURE__ */ (0, H.jsx)(l, { color: Ep })]
+			] }), /* @__PURE__ */ (0, H.jsx)(l, { color: Op })]
 		}, e))]
 	});
 }
 //#endregion
 //#region home/src/extensions/kitchen/cabinet-joint.tsx
-function jp({ from: e, to: t, color: n, thickness: r = .006 }) {
+function Np({ from: e, to: t, color: n, thickness: r = .006 }) {
 	let i = t[0] - e[0], a = t[1] - e[1], o = t[2] - e[2], s = Math.hypot(i, a, o), c = Math.hypot(i, o), u = -Math.atan2(o, i), d = Math.atan2(a, c);
 	return /* @__PURE__ */ (0, H.jsxs)("mesh", {
 		position: [
@@ -39457,17 +39510,17 @@ function jp({ from: e, to: t, color: n, thickness: r = .006 }) {
 }
 //#endregion
 //#region home/src/extensions/kitchen/stone-vein.tsx
-function Mp({ points: e, width: t }) {
-	return e.slice(1).map((n, r) => /* @__PURE__ */ (0, H.jsx)(jp, {
+function Pp({ points: e, width: t }) {
+	return e.slice(1).map((n, r) => /* @__PURE__ */ (0, H.jsx)(Np, {
 		from: e[r],
 		to: n,
-		color: Cp,
+		color: Tp,
 		thickness: t
 	}, `${n[0]}-${n[2]}`));
 }
 //#endregion
 //#region home/src/extensions/kitchen/kitchen-cabinetry.tsx
-var Np = .55, Pp = .66, Fp = 1.9000000000000001, Ip = 2.23, Lp = 1.5550000000000002, Rp = Ip, zp = Rp / 1.65, Bp = [
+var Fp = .55, Ip = .66, Lp = 1.9000000000000001, Rp = 2.23, zp = 1.5550000000000002, Bp = Rp, Vp = Bp / 1.65, Hp = [
 	{
 		center: 1.09,
 		width: .58,
@@ -39493,7 +39546,7 @@ var Np = .55, Pp = .66, Fp = 1.9000000000000001, Ip = 2.23, Lp = 1.5550000000000
 		width: .35,
 		kind: "door"
 	}
-], Vp = [
+], Up = [
 	{
 		center: 1.115,
 		width: .67,
@@ -39539,7 +39592,7 @@ var Np = .55, Pp = .66, Fp = 1.9000000000000001, Ip = 2.23, Lp = 1.5550000000000
 		kind: "solid"
 	}
 ];
-function Hp() {
+function Wp() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "colonne-garde-manger",
 		position: [
@@ -39551,50 +39604,50 @@ function Hp() {
 			/* @__PURE__ */ (0, H.jsx)($, {
 				size: [
 					.72,
-					Rp,
+					Bp,
 					.54
 				],
 				position: [
 					0,
-					Rp / 2,
+					Bp / 2,
 					0
 				],
-				color: bp
+				color: Sp
 			}),
-			/* @__PURE__ */ (0, H.jsx)(kp, {
+			/* @__PURE__ */ (0, H.jsx)(jp, {
 				width: .68,
 				height: 2.16,
 				position: [
 					0,
-					Rp / 2,
+					Bp / 2,
 					.28
 				]
 			}),
-			/* @__PURE__ */ (0, H.jsx)(jp, {
+			/* @__PURE__ */ (0, H.jsx)(Np, {
 				from: [
 					-.34,
-					1.04 * zp,
+					1.04 * Vp,
 					.291
 				],
 				to: [
 					.34,
-					1.04 * zp,
+					1.04 * Vp,
 					.291
 				],
 				color: "#a69e93"
 			}),
-			/* @__PURE__ */ (0, H.jsx)(Ap, {
+			/* @__PURE__ */ (0, H.jsx)(Mp, {
 				position: [
 					.25,
-					1.32 * zp,
+					1.32 * Vp,
 					.335
 				],
 				vertical: !0
 			}),
-			/* @__PURE__ */ (0, H.jsx)(Ap, {
+			/* @__PURE__ */ (0, H.jsx)(Mp, {
 				position: [
 					.25,
-					.68 * zp,
+					.68 * Vp,
 					.335
 				],
 				vertical: !0
@@ -39602,7 +39655,7 @@ function Hp() {
 		]
 	});
 }
-function Up({ width: e, position: t }) {
+function Gp({ width: e, position: t }) {
 	let n = .64, r = .028;
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		position: t,
@@ -39648,7 +39701,7 @@ function Up({ width: e, position: t }) {
 					0,
 					.018
 				],
-				color: xp,
+				color: Cp,
 				outline: "#a49c90"
 			}, `vertical-${t}`)),
 			[-1, 1].map((t) => /* @__PURE__ */ (0, H.jsx)($, {
@@ -39662,7 +39715,7 @@ function Up({ width: e, position: t }) {
 					t * (n / 2 - r / 2),
 					.018
 				],
-				color: xp,
+				color: Cp,
 				outline: "#a49c90"
 			}, `edge-${t}`)),
 			/* @__PURE__ */ (0, H.jsx)($, {
@@ -39676,7 +39729,7 @@ function Up({ width: e, position: t }) {
 					0,
 					.02
 				],
-				color: xp,
+				color: Cp,
 				outline: "#a49c90"
 			}),
 			[-1, 1].map((t) => /* @__PURE__ */ (0, H.jsx)($, {
@@ -39690,13 +39743,13 @@ function Up({ width: e, position: t }) {
 					n / 6 * t,
 					.02
 				],
-				color: xp,
+				color: Cp,
 				outline: "#a49c90"
 			}, `row-${t}`))
 		]
 	});
 }
-function Wp({ center: e, width: t }) {
+function Kp({ center: e, width: t }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		position: [
 			e,
@@ -39704,7 +39757,7 @@ function Wp({ center: e, width: t }) {
 			.31
 		],
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(kp, {
+			/* @__PURE__ */ (0, H.jsx)(jp, {
 				width: t,
 				height: .78,
 				position: [
@@ -39713,7 +39766,7 @@ function Wp({ center: e, width: t }) {
 					.291
 				]
 			}),
-			/* @__PURE__ */ (0, H.jsx)(jp, {
+			/* @__PURE__ */ (0, H.jsx)(Np, {
 				from: [
 					-t / 2,
 					.63,
@@ -39726,7 +39779,7 @@ function Wp({ center: e, width: t }) {
 				],
 				color: "#aaa298"
 			}),
-			/* @__PURE__ */ (0, H.jsx)(Ap, { position: [
+			/* @__PURE__ */ (0, H.jsx)(Mp, { position: [
 				0,
 				.7,
 				.335
@@ -39734,21 +39787,21 @@ function Wp({ center: e, width: t }) {
 		]
 	});
 }
-function Gp({ cabinet: e }) {
+function qp({ cabinet: e }) {
 	return e.kind === "microwave" ? null : e.kind === "glass" ? /* @__PURE__ */ (0, H.jsxs)("group", {
 		position: [
 			e.center,
-			Np,
+			Fp,
 			.25
 		],
-		children: [/* @__PURE__ */ (0, H.jsx)(Up, {
+		children: [/* @__PURE__ */ (0, H.jsx)(Gp, {
 			width: e.width,
 			position: [
 				0,
 				1.35,
 				.235
 			]
-		}), /* @__PURE__ */ (0, H.jsx)(Ap, {
+		}), /* @__PURE__ */ (0, H.jsx)(Mp, {
 			position: [
 				e.handleSide * (e.width / 2 - .055),
 				1.13,
@@ -39759,10 +39812,10 @@ function Gp({ cabinet: e }) {
 	}) : /* @__PURE__ */ (0, H.jsxs)("group", {
 		position: [
 			e.center,
-			Np,
+			Fp,
 			.25
 		],
-		children: [/* @__PURE__ */ (0, H.jsx)(kp, {
+		children: [/* @__PURE__ */ (0, H.jsx)(jp, {
 			width: e.width,
 			height: .64,
 			position: [
@@ -39770,7 +39823,7 @@ function Gp({ cabinet: e }) {
 				1.35,
 				.211
 			]
-		}), /* @__PURE__ */ (0, H.jsx)(Ap, {
+		}), /* @__PURE__ */ (0, H.jsx)(Mp, {
 			position: [
 				(e.center < 2.8 ? 1 : -1) * (e.width / 2 - .055),
 				1.13,
@@ -39780,11 +39833,11 @@ function Gp({ cabinet: e }) {
 		})]
 	});
 }
-function Kp() {
+function Jp() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "custom-kitchen-cabinetry",
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(Hp, {}),
+			/* @__PURE__ */ (0, H.jsx)(Wp, {}),
 			/* @__PURE__ */ (0, H.jsx)($, {
 				size: [
 					2.93,
@@ -39796,9 +39849,9 @@ function Kp() {
 					.415,
 					.31
 				],
-				color: bp
+				color: Sp
 			}),
-			Bp.filter((e) => e.kind === "door").map((e) => /* @__PURE__ */ (0, H.jsx)(Wp, {
+			Hp.filter((e) => e.kind === "door").map((e) => /* @__PURE__ */ (0, H.jsx)(Kp, {
 				center: e.center,
 				width: e.width
 			}, e.center)),
@@ -39807,7 +39860,7 @@ function Kp() {
 				2.04,
 				2.7,
 				3.36
-			].map((e) => /* @__PURE__ */ (0, H.jsx)(jp, {
+			].map((e) => /* @__PURE__ */ (0, H.jsx)(Np, {
 				from: [
 					e,
 					.035,
@@ -39823,17 +39876,17 @@ function Kp() {
 			/* @__PURE__ */ (0, H.jsx)($, {
 				size: [
 					3.04,
-					Pp,
+					Ip,
 					.4
 				],
 				position: [
 					2.3,
-					Fp,
+					Lp,
 					.25
 				],
-				color: bp
+				color: Sp
 			}),
-			Vp.map((e) => /* @__PURE__ */ (0, H.jsx)(Gp, { cabinet: e }, e.center)),
+			Up.map((e) => /* @__PURE__ */ (0, H.jsx)(qp, { cabinet: e }, e.center)),
 			[
 				1.45,
 				1.83,
@@ -39842,7 +39895,7 @@ function Kp() {
 				3.07,
 				3.33,
 				3.59
-			].map((e) => /* @__PURE__ */ (0, H.jsx)(jp, {
+			].map((e) => /* @__PURE__ */ (0, H.jsx)(Np, {
 				from: [
 					e,
 					1.58,
@@ -39866,7 +39919,7 @@ function Kp() {
 					.875,
 					.33
 				],
-				color: Sp,
+				color: wp,
 				outline: "#81776b",
 				receiveShadow: !0
 			}),
@@ -39881,10 +39934,10 @@ function Kp() {
 					1.005,
 					.035
 				],
-				color: Sp,
+				color: wp,
 				outline: "#94897d"
 			}),
-			/* @__PURE__ */ (0, H.jsx)(Mp, {
+			/* @__PURE__ */ (0, H.jsx)(Pp, {
 				points: [
 					[
 						1.43,
@@ -39914,7 +39967,7 @@ function Kp() {
 				],
 				width: .007
 			}),
-			/* @__PURE__ */ (0, H.jsx)(Mp, {
+			/* @__PURE__ */ (0, H.jsx)(Pp, {
 				points: [
 					[
 						2.86,
@@ -39949,7 +40002,7 @@ function Kp() {
 }
 //#endregion
 //#region home/src/extensions/kitchen/oven-and-hob.tsx
-function qp() {
+function Yp() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "four-et-plaque-induction-custom",
 		children: [
@@ -39964,7 +40017,7 @@ function qp() {
 					.37,
 					.612
 				],
-				color: Dp,
+				color: kp,
 				outline: "#171817"
 			}),
 			/* @__PURE__ */ (0, H.jsx)($, {
@@ -40045,7 +40098,7 @@ function qp() {
 }
 //#endregion
 //#region home/src/extensions/kitchen/integrated-microwave.tsx
-function Jp() {
+function Xp() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "micro-ondes-integre-custom",
 		children: [
@@ -40060,7 +40113,7 @@ function Jp() {
 					1.8,
 					.47
 				],
-				color: Dp,
+				color: kp,
 				outline: "#171817"
 			}),
 			/* @__PURE__ */ (0, H.jsx)($, {
@@ -40094,7 +40147,7 @@ function Jp() {
 }
 //#endregion
 //#region home/src/extensions/kitchen/kitchen-sink.tsx
-function Yp() {
+function Zp() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "evier-et-robinet-custom",
 		children: [
@@ -40138,7 +40191,7 @@ function Yp() {
 					.026,
 					.28,
 					12
-				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: Ep })]
+				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: Op })]
 			}),
 			/* @__PURE__ */ (0, H.jsxs)("mesh", {
 				position: [
@@ -40153,7 +40206,7 @@ function Yp() {
 					8,
 					18,
 					Math.PI
-				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: Ep })]
+				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: Op })]
 			}),
 			/* @__PURE__ */ (0, H.jsxs)("mesh", {
 				position: [
@@ -40167,14 +40220,14 @@ function Yp() {
 					.018,
 					.14,
 					10
-				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: Ep })]
+				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: Op })]
 			})
 		]
 	});
 }
 //#endregion
 //#region home/src/extensions/kitchen/kitchen-peninsula.tsx
-function Xp() {
+function Qp() {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "retour-et-barre-du-u-custom",
 		children: [
@@ -40189,7 +40242,7 @@ function Xp() {
 					.425,
 					1.15
 				],
-				color: bp,
+				color: Sp,
 				outline: "#71685d"
 			}),
 			/* @__PURE__ */ (0, H.jsxs)("mesh", {
@@ -40203,13 +40256,13 @@ function Xp() {
 					.018,
 					.72,
 					1.64
-				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: xp })]
+				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: Cp })]
 			}),
 			[
 				.74,
 				1.16,
 				1.58
-			].map((e) => /* @__PURE__ */ (0, H.jsx)(jp, {
+			].map((e) => /* @__PURE__ */ (0, H.jsx)(Np, {
 				from: [
 					3.286,
 					.07,
@@ -40222,7 +40275,7 @@ function Xp() {
 				],
 				color: "#aaa298"
 			}, e)),
-			/* @__PURE__ */ (0, H.jsx)(jp, {
+			/* @__PURE__ */ (0, H.jsx)(Np, {
 				from: [
 					3.286,
 					.63,
@@ -40251,7 +40304,7 @@ function Xp() {
 					Math.PI / 2,
 					0
 				],
-				children: /* @__PURE__ */ (0, H.jsx)(Ap, { position: [
+				children: /* @__PURE__ */ (0, H.jsx)(Mp, { position: [
 					0,
 					0,
 					0
@@ -40268,7 +40321,7 @@ function Xp() {
 					.425,
 					2.16
 				],
-				color: wp,
+				color: Ep,
 				outline: "#664326"
 			}),
 			/* @__PURE__ */ (0, H.jsxs)("mesh", {
@@ -40282,13 +40335,13 @@ function Xp() {
 					2.34,
 					.72,
 					.018
-				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: Tp })]
+				] }), /* @__PURE__ */ (0, H.jsx)(l, { color: Dp })]
 			}),
 			[
 				1.79,
 				2.59,
 				3.39
-			].map((e) => /* @__PURE__ */ (0, H.jsx)(jp, {
+			].map((e) => /* @__PURE__ */ (0, H.jsx)(Np, {
 				from: [
 					e,
 					.07,
@@ -40312,7 +40365,7 @@ function Xp() {
 					.89,
 					1.2
 				],
-				color: Sp,
+				color: wp,
 				outline: "#81776b",
 				receiveShadow: !0
 			}),
@@ -40327,11 +40380,11 @@ function Xp() {
 					.89,
 					2.1
 				],
-				color: Sp,
+				color: wp,
 				outline: "#81776b",
 				receiveShadow: !0
 			}),
-			/* @__PURE__ */ (0, H.jsx)(Mp, {
+			/* @__PURE__ */ (0, H.jsx)(Pp, {
 				points: [
 					[
 						3.2,
@@ -40366,7 +40419,7 @@ function Xp() {
 				],
 				width: .007
 			}),
-			/* @__PURE__ */ (0, H.jsx)(Mp, {
+			/* @__PURE__ */ (0, H.jsx)(Pp, {
 				points: [
 					[
 						1.35,
@@ -40411,7 +40464,7 @@ function Xp() {
 }
 //#endregion
 //#region home/src/extensions/kitchen/model.tsx
-function Zp({ size: e }) {
+function $p({ size: e }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "equipped-kitchen-model",
 		scale: [
@@ -40420,17 +40473,17 @@ function Zp({ size: e }) {
 			e[2] / 2.54
 		],
 		children: [
-			/* @__PURE__ */ (0, H.jsx)(Kp, {}),
-			/* @__PURE__ */ (0, H.jsx)(qp, {}),
 			/* @__PURE__ */ (0, H.jsx)(Jp, {}),
 			/* @__PURE__ */ (0, H.jsx)(Yp, {}),
-			/* @__PURE__ */ (0, H.jsx)(Xp, {})
+			/* @__PURE__ */ (0, H.jsx)(Xp, {}),
+			/* @__PURE__ */ (0, H.jsx)(Zp, {}),
+			/* @__PURE__ */ (0, H.jsx)(Qp, {})
 		]
 	});
 }
-var Qp = L({
+var em = L({
 	defaultRoomType: "kitchen",
-	component: Zp,
+	component: $p,
 	label: "Equipped kitchen",
 	category: "Kitchen",
 	defaultSize: [
@@ -40460,22 +40513,22 @@ var Qp = L({
 		visibleMeshes: 180,
 		triangles: 34e3
 	}
-}), $p = "#fff2c8", em = "#f2b75c", tm = 1.35 + .66 / 2 - .022;
-function nm({ state: e }) {
+}), tm = "#fff2c8", nm = "#f2b75c", rm = 1.35 + .66 / 2 - .022;
+function im({ state: e }) {
 	let t = xe(e);
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "eclairage-cuisine-custom",
 		children: [
-			Vp.filter((e) => e.kind === "glass").map((e) => /* @__PURE__ */ (0, H.jsxs)("group", {
+			Up.filter((e) => e.kind === "glass").map((e) => /* @__PURE__ */ (0, H.jsxs)("group", {
 				position: [
 					e.center,
-					Np,
+					Fp,
 					0
 				],
 				children: [/* @__PURE__ */ (0, H.jsxs)("mesh", {
 					position: [
 						0,
-						tm,
+						rm,
 						.45
 					],
 					rotation: [
@@ -40500,8 +40553,8 @@ function nm({ state: e }) {
 						0
 					],
 					children: [/* @__PURE__ */ (0, H.jsx)("circleGeometry", { args: [.016, 20] }), /* @__PURE__ */ (0, H.jsx)(l, {
-						color: t > 0 ? $p : "#b9b1a0",
-						emissive: em,
+						color: t > 0 ? tm : "#b9b1a0",
+						emissive: nm,
 						emissiveIntensity: t * .15
 					})]
 				})]
@@ -40514,7 +40567,7 @@ function nm({ state: e }) {
 				],
 				position: [
 					2.27,
-					Lp,
+					zp,
 					.38
 				],
 				color: "#d9d4ca",
@@ -40524,7 +40577,7 @@ function nm({ state: e }) {
 				name: "kitchen-light-strip-emitter",
 				position: [
 					2.27,
-					Lp - .017,
+					zp - .017,
 					.38
 				],
 				children: [/* @__PURE__ */ (0, H.jsx)("boxGeometry", { args: [
@@ -40532,8 +40585,8 @@ function nm({ state: e }) {
 					.008,
 					.038
 				] }), /* @__PURE__ */ (0, H.jsx)(l, {
-					color: t > 0 ? $p : "#b9b1a0",
-					emissive: em,
+					color: t > 0 ? tm : "#b9b1a0",
+					emissive: nm,
 					emissiveIntensity: t * .27
 				})]
 			})
@@ -40542,15 +40595,15 @@ function nm({ state: e }) {
 }
 //#endregion
 //#region home/src/extensions/kitchen/lighting-model.tsx
-function rm({ state: e, visualState: t }) {
+function am({ state: e, visualState: t }) {
 	return /* @__PURE__ */ (0, H.jsx)("group", {
 		name: `device-state-${t}`,
-		children: /* @__PURE__ */ (0, H.jsx)(nm, { state: e })
+		children: /* @__PURE__ */ (0, H.jsx)(im, { state: e })
 	});
 }
-var im = F({
+var om = F({
 	defaultRoomType: "kitchen",
-	component: rm,
+	component: am,
 	label: "Kitchen cabinet lighting",
 	category: "Lighting",
 	defaultSize: [
@@ -40593,18 +40646,18 @@ var im = F({
 		visibleMeshes: 11,
 		triangles: 2e3
 	}
-}), am = ve({
+}), sm = ve({
 	furnishingModels: {
-		...hp,
-		"equipped-kitchen": Qp
+		..._p,
+		"equipped-kitchen": em
 	},
-	deviceModels: { "kitchen-cabinet-lighting": im },
+	deviceModels: { "kitchen-cabinet-lighting": om },
 	roomFurnishings: {},
 	openingModels: {}
-}), om = Re(yp, am), sm = Pe(Ba, om.extensions.deviceModels), cm = {
-	furnishingModels: Object.assign(Object.create(null), hp, om.extensions.furnishingModels),
-	deviceModels: sm
-}, lm = (e) => Re(e, om.extensions), um = (e) => ({
+}), cm = Re(xp, sm), lm = Pe(qa, cm.extensions.deviceModels), um = {
+	furnishingModels: Object.assign(Object.create(null), _p, cm.extensions.furnishingModels),
+	deviceModels: lm
+}, dm = (e) => Re(e, cm.extensions), fm = (e) => ({
 	rooms: Object.fromEntries(e.floors.flatMap((e) => e.rooms).map((e) => [e.id, {
 		room: e,
 		displayName: e.name,
@@ -40623,8 +40676,8 @@ var im = F({
 	}])),
 	openings: {},
 	issues: []
-}), dm = (e, t) => {
-	let n = f(et(e), cm), r = We(e, cm), i = E(t, "Home");
+}), pm = (e, t) => {
+	let n = f(et(e), um), r = We(e, um), i = E(t, "Home");
 	return {
 		...x(n, i),
 		resetToSeed: (e) => re(n, e, E(t, e.draft.home.name), 0),
@@ -40674,27 +40727,27 @@ var im = F({
 		}
 	};
 };
-async function fm(e, t, n, r) {
+async function mm(e, t, n, r) {
 	if (!t) return e;
 	let a = i(t);
 	if (e.bindings[a]) return e;
 	let o = n.getItem(Le(a, e.homeId)) ?? n.getItem(p(a, e.homeId));
 	if (o === null) return e;
-	let s = lm(e.published), c = JSON.parse(o), l = v(c, s);
+	let s = dm(e.published), c = JSON.parse(o), l = v(c, s);
 	if (!l.valid || !l.profile) throw Error(`Saved connections need recovery: ${l.issues[0]?.message ?? "Invalid profile"}`);
-	let u = ue(Xe(e.bindings, a, c, s, s), lm(e.draft));
+	let u = ue(Xe(e.bindings, a, c, s, s), dm(e.draft));
 	return r({
 		...e,
 		bindings: u
 	}, e.revision);
 }
-async function pm(e, t) {
-	let n = f(et(window.indexedDB), cm);
-	return fm(e, t, window.localStorage, (e, t) => n.replace(e, t));
+async function hm(e, t) {
+	let n = f(et(window.indexedDB), um);
+	return mm(e, t, window.localStorage, (e, t) => n.replace(e, t));
 }
 //#endregion
 //#region apps/web/src/editor-connect/profile-transfer.ts
-function mm(e, t, n, r) {
+function gm(e, t, n, r) {
 	let a = i(t), o = JSON.parse(n), s = v(o, r);
 	if (!s.valid || !s.profile) throw Error(s.issues[0]?.message ?? "Invalid profile.");
 	let c = {
@@ -40712,7 +40765,7 @@ function mm(e, t, n, r) {
 	if (l.length) throw Error(l[0].message);
 	return c;
 }
-function hm(e, t, n) {
+function _m(e, t, n) {
 	let r = _n(t, n);
 	if (r.record.homeId !== e.homeId) throw Error("This backup belongs to another home.");
 	let i = r.record.draft, a = Ne(i, {
@@ -40733,13 +40786,13 @@ function hm(e, t, n) {
 		}
 	};
 }
-function gm(e, t) {
+function vm(e, t) {
 	let n = URL.createObjectURL(new Blob([e], { type: "application/json" })), r = document.createElement("a");
 	r.href = n, r.download = t, r.click(), URL.revokeObjectURL(n);
 }
 //#endregion
 //#region apps/web/src/editor-chrome/EditorIcon.tsx
-var _m = {
+var ym = {
 	check: /* @__PURE__ */ (0, H.jsx)("path", { d: "m5 12 4 4L19 6" }),
 	roof: /* @__PURE__ */ (0, H.jsx)("path", { d: "m2 12 10-8 10 8M5 10v10h14V10M2 12h20" }),
 	spawn: /* @__PURE__ */ (0, H.jsxs)(H.Fragment, { children: [/* @__PURE__ */ (0, H.jsx)("path", { d: "M18 9c0 5-6 11-6 11S6 14 6 9a6 6 0 1 1 12 0Z" }), /* @__PURE__ */ (0, H.jsx)("circle", {
@@ -40911,7 +40964,7 @@ var _m = {
 	chevronLeft: /* @__PURE__ */ (0, H.jsx)("path", { d: "m15 5-7 7 7 7" }),
 	chevron: /* @__PURE__ */ (0, H.jsx)("path", { d: "m9 5 7 7-7 7" })
 };
-function vm({ name: e }) {
+function bm({ name: e }) {
 	return e === "construct" || e === "furnish" || e === "connect" ? /* @__PURE__ */ (0, H.jsx)(S, {
 		name: e,
 		className: "editor-icon"
@@ -40925,15 +40978,15 @@ function vm({ name: e }) {
 		strokeLinejoin: "round",
 		"aria-hidden": "true",
 		focusable: "false",
-		children: _m[e]
+		children: ym[e]
 	});
 }
 //#endregion
 //#region apps/web/src/editor-reference-plan/reference-storage.ts
-var ym = "cabane-reference-plans-v1";
-async function bm(e, t) {
+var xm = "cabane-reference-plans-v1";
+async function Sm(e, t) {
 	let n = await new Promise((e, t) => {
-		let n = indexedDB.open(ym, 1);
+		let n = indexedDB.open(xm, 1);
 		n.onupgradeneeded = () => {
 			n.result.createObjectStore("homes"), n.result.createObjectStore("assets");
 		}, n.onsuccess = () => e(n.result), n.onerror = () => t(n.error ?? /* @__PURE__ */ Error("IndexedDB request failed."));
@@ -40954,19 +41007,19 @@ async function bm(e, t) {
 		}
 	});
 }
-var xm = (e) => bm("readonly", (t, n) => {
+var Cm = (e) => Sm("readonly", (t, n) => {
 	let r = t.objectStore("homes").get(e);
 	r.onsuccess = () => n(r.result ?? {
 		plans: {},
 		preferences: {}
 	});
-}), Sm = (e, t, n) => bm("readwrite", (r) => {
+}), wm = (e, t, n) => Sm("readwrite", (r) => {
 	for (let [t, i] of n) r.objectStore("assets").put(i, [e, t]);
 	r.objectStore("homes").put(t, e);
-}), Cm = (e, t) => bm("readonly", (n, r) => {
+}), Tm = (e, t) => Sm("readonly", (n, r) => {
 	let i = n.objectStore("assets").get([e, t]);
 	i.onsuccess = () => r(i.result);
-}), wm = (e, t) => bm("readwrite", (n) => {
+}), Em = (e, t) => Sm("readwrite", (n) => {
 	let r = new Set(t), i = n.objectStore("assets").openKeyCursor();
 	i.onsuccess = () => {
 		let t = i.result;
@@ -40974,16 +41027,16 @@ var xm = (e) => bm("readonly", (t, n) => {
 		let a = t.key;
 		a[0] === e && !r.has(a[1]) && n.objectStore("assets").delete(t.key), t.continue();
 	};
-}), Tm = (e) => bm("readwrite", (t) => {
+}), Dm = (e) => Sm("readwrite", (t) => {
 	t.objectStore("homes").delete(e);
 	let n = t.objectStore("assets").openKeyCursor();
 	n.onsuccess = () => {
 		let r = n.result;
 		r && (r.key[0] === e && t.objectStore("assets").delete(r.key), r.continue());
 	};
-}), Em = /* @__PURE__ */ new Map();
-function Dm(e) {
-	if (Em.has(e)) return Em.get(e);
+}), Om = /* @__PURE__ */ new Map();
+function km(e) {
+	if (Om.has(e)) return Om.get(e);
 	try {
 		let t = n(window.localStorage, e);
 		return {
@@ -40997,7 +41050,7 @@ function Dm(e) {
 		};
 	}
 }
-function Om(e, t) {
+function Am(e, t) {
 	let r = !1;
 	try {
 		let { record: i } = n(window.localStorage, e);
@@ -41006,31 +41059,31 @@ function Om(e, t) {
 			buildTutorial: t
 		});
 	} catch {}
-	return Em.set(e, {
+	return Om.set(e, {
 		state: t,
 		durable: r
 	}), r;
 }
-function km(e) {
-	let t = Dm(e);
-	return t.state ? t.durable : Om(e, w());
+function jm(e) {
+	let t = km(e);
+	return t.state ? t.durable : Am(e, w());
 }
-function Am(e) {
-	Em.delete(e);
+function Mm(e) {
+	Om.delete(e);
 }
 //#endregion
 //#region apps/web/src/walk-tools.ts
-var jm = [{
+var Nm = [{
 	id: "cabane.laser",
 	label: "Laser",
 	defaultShortcut: !0,
 	shortcutKey: "G",
 	Icon: Be,
-	Scene: (0, I.lazy)(() => import("./LaserWalkTool-DGOTPKbO.js").then((e) => ({ default: e.LaserWalkTool })))
+	Scene: (0, I.lazy)(() => import("./LaserWalkTool-oFaCiEj7.js").then((e) => ({ default: e.LaserWalkTool })))
 }];
 //#endregion
 //#region apps/web/src/editor-connect/useConnectSignIn.ts
-function Mm(e, t) {
+function Pm(e, t) {
 	let n = ie(), [r, i] = (0, I.useState)(null), a = (0, I.useRef)(!1);
 	return (0, I.useEffect)(() => {
 		!r || e.origin !== r || e.status === "unconfigured" || [
@@ -41051,11 +41104,11 @@ function Mm(e, t) {
 }
 //#endregion
 //#region apps/web/src/editor-connect/connect-navigation.ts
-var Nm = "cabane:editor-return:v1";
-function Pm(e, t) {
+var Fm = "cabane:editor-return:v1";
+function Im(e, t) {
 	return he(e).find((n) => ce(e, n.id).some((e) => e.relationships.some((e) => e.id === t)));
 }
-function Fm(e, t) {
+function Lm(e, t) {
 	try {
 		if (!e) return null;
 		let n = JSON.parse(e);
@@ -41092,28 +41145,28 @@ function Fm(e, t) {
 		return null;
 	}
 }
-function Im(e) {
+function Rm(e) {
 	try {
-		return typeof window > "u" ? null : Fm(window.sessionStorage.getItem(Nm), e);
+		return typeof window > "u" ? null : Lm(window.sessionStorage.getItem(Fm), e);
 	} catch {
 		return null;
 	}
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/door-frame-dimensions.ts
-var Lm = .07, Rm = .025, zm = .003, Bm = .003;
-function Vm(e, t, n, r, i, a = r / 2) {
-	let o = Math.min(Lm / 2 + zm, e / 4), s = (e - 2 * o - (t === 2 ? Bm : 0)) / t, c = t === 2 ? e / 2 - o - Bm / 2 : e - o - Lm / 2 - .001, l = Math.sqrt(Math.max(0, c ** 2 - r ** 2));
+var zm = .07, Bm = .025, Vm = .003, Hm = .003;
+function Um(e, t, n, r, i, a = r / 2) {
+	let o = Math.min(zm / 2 + Vm, e / 4), s = (e - 2 * o - (t === 2 ? Hm : 0)) / t, c = t === 2 ? e / 2 - o - Hm / 2 : e - o - zm / 2 - .001, l = Math.sqrt(Math.max(0, c ** 2 - r ** 2));
 	return {
 		inset: o,
 		leafWidth: Math.max(.08, Math.min(s, l)),
-		pivotZ: i * (n + Rm) / 2,
+		pivotZ: i * (n + Bm) / 2,
 		leafZ: -i * a
 	};
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/roll-up-door-frame.tsx
-function Hm({ width: e, color: t, height: n, depth: r, jambWidth: i, headerHeight: a }) {
+function Wm({ width: e, color: t, height: n, depth: r, jambWidth: i, headerHeight: a }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "roll-up-door-frame",
 		children: [[i / 2, e - i / 2].map((e) => /* @__PURE__ */ (0, H.jsxs)("mesh", {
@@ -41147,7 +41200,7 @@ function Hm({ width: e, color: t, height: n, depth: r, jambWidth: i, headerHeigh
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/roll-up-door-slats.tsx
-function Um(e, t, n) {
+function Gm(e, t, n) {
 	let r = t / (e.children.length - 1);
 	e.children.forEach((e, i) => {
 		if (e.name === "roll-up-door-handle") {
@@ -41158,10 +41211,10 @@ function Um(e, t, n) {
 		e.position.y = a + o / 2, e.scale.y = o / r, e.visible = o > 1e-6;
 	});
 }
-function Wm({ width: e, clearHeight: n, travel: r, finish: i, color: a, side: o, reducedMotion: s }) {
+function Km({ width: e, clearHeight: n, travel: r, finish: i, color: a, side: o, reducedMotion: s }) {
 	let c = (0, I.useRef)(null), u = (0, I.useRef)(r), d = we((e) => e.invalidate), f = Math.max(1, Math.ceil(n / .16)), p = n / f;
 	return (0, I.useLayoutEffect)(() => {
-		s && (u.current = r), u.current = Math.min(n, u.current), c.current && Um(c.current, n, u.current), d();
+		s && (u.current = r), u.current = Math.min(n, u.current), c.current && Gm(c.current, n, u.current), d();
 	}, [
 		n,
 		r,
@@ -41171,7 +41224,7 @@ function Wm({ width: e, clearHeight: n, travel: r, finish: i, color: a, side: o,
 	]), t((e, t) => {
 		if (!c.current || u.current === r) return;
 		let i = r - u.current;
-		u.current = s || Math.abs(i) < 1e-4 ? r : u.current + i * (1 - Math.exp(-5 * Math.min(t, .1))), Um(c.current, n, u.current), u.current !== r && d();
+		u.current = s || Math.abs(i) < 1e-4 ? r : u.current + i * (1 - Math.exp(-5 * Math.min(t, .1))), Gm(c.current, n, u.current), u.current !== r && d();
 	}), /* @__PURE__ */ (0, H.jsxs)("group", {
 		ref: c,
 		name: "roll-up-door-slats",
@@ -41201,7 +41254,7 @@ function Wm({ width: e, clearHeight: n, travel: r, finish: i, color: a, side: o,
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/roll-up-door-model.tsx
-function Gm({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
+function qm({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
 	let a = ze(e, t, n.coordinates), o = a.widthMeters, s = t.openingHeightMeters, c = Ve(o, s, r);
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "opening-roll-up-door",
@@ -41215,7 +41268,7 @@ function Gm({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
 			a.rotationY,
 			0
 		],
-		children: [/* @__PURE__ */ (0, H.jsx)(Hm, {
+		children: [/* @__PURE__ */ (0, H.jsx)(Wm, {
 			...Oe({ color: t.color }),
 			width: o,
 			height: s,
@@ -41227,7 +41280,7 @@ function Gm({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
 				0,
 				0
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(Wm, {
+			children: /* @__PURE__ */ (0, H.jsx)(Km, {
 				reducedMotion: i,
 				width: c.clearWidth,
 				...c,
@@ -41240,7 +41293,7 @@ function Gm({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/animation/animated-opening-leaf.tsx
-function Km({ operation: e, open: n, reducedMotion: r, direction: i, travel: a, children: o }) {
+function Jm({ operation: e, open: n, reducedMotion: r, direction: i, travel: a, children: o }) {
 	let s = (0, I.useRef)(null), { invalidate: c } = we();
 	return (0, I.useEffect)(() => {
 		c();
@@ -41263,24 +41316,24 @@ function Km({ operation: e, open: n, reducedMotion: r, direction: i, travel: a, 
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/door-frame.tsx
-function qm({ wall: e, width: t, height: n, color: r = "#d8d2c6" }) {
+function Ym({ wall: e, width: t, height: n, color: r = "#d8d2c6" }) {
 	return /* @__PURE__ */ (0, H.jsx)(H.Fragment, { children: [
 		[
 			0,
 			n / 2,
-			Lm,
+			zm,
 			n + .08
 		],
 		[
 			t,
 			n / 2,
-			Lm,
+			zm,
 			n + .08
 		],
 		[
 			t / 2,
 			n + .031,
-			t + Lm,
+			t + zm,
 			.078
 		]
 	].map(([t, n, i, a], o) => /* @__PURE__ */ (0, H.jsxs)("mesh", {
@@ -41295,7 +41348,7 @@ function qm({ wall: e, width: t, height: n, color: r = "#d8d2c6" }) {
 			/* @__PURE__ */ (0, H.jsx)("boxGeometry", { args: [
 				i,
 				a,
-				e.thicknessMeters + Rm
+				e.thicknessMeters + Bm
 			] }),
 			/* @__PURE__ */ (0, H.jsx)(l, { color: r }),
 			/* @__PURE__ */ (0, H.jsx)(k, {
@@ -41308,7 +41361,7 @@ function qm({ wall: e, width: t, height: n, color: r = "#d8d2c6" }) {
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/white-lever-door-handles.tsx
-function Jm({ width: e, side: t }) {
+function Xm({ width: e, side: t }) {
 	let n = Math.min(.027, e * .15), r = Math.min(.095, e * .5), i = Math.min(.035, e * .18);
 	return /* @__PURE__ */ (0, H.jsx)("group", {
 		name: "opening-white-lever-handles",
@@ -41384,7 +41437,7 @@ function Jm({ width: e, side: t }) {
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/panel-door-handles.tsx
-function Ym({ width: e, side: t = 1 }) {
+function Zm({ width: e, side: t = 1 }) {
 	let n = Math.min(.035, e * .15), r = Math.min(.16, e * .5), i = Math.min(.055, e * .18);
 	return /* @__PURE__ */ (0, H.jsx)("group", {
 		name: "opening-door-handles",
@@ -41466,7 +41519,7 @@ function Ym({ width: e, side: t = 1 }) {
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/concealed-door-leaf.tsx
-function Xm({ width: e, height: t, finish: n, color: r, handleSide: i }) {
+function Qm({ width: e, height: t, finish: n, color: r, handleSide: i }) {
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "concealed-door-leaf",
 		children: [/* @__PURE__ */ (0, H.jsx)(P, {
@@ -41479,7 +41532,7 @@ function Xm({ width: e, height: t, finish: n, color: r, handleSide: i }) {
 			smoothness: 2,
 			castShadow: !0,
 			children: /* @__PURE__ */ (0, H.jsx)(l, { color: r ?? (n === "white" ? "#f1f0eb" : "#b89a73") })
-		}), /* @__PURE__ */ (0, H.jsx)(Ym, {
+		}), /* @__PURE__ */ (0, H.jsx)(Zm, {
 			width: e,
 			side: i
 		})]
@@ -41487,7 +41540,7 @@ function Xm({ width: e, height: t, finish: n, color: r, handleSide: i }) {
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/flush-door-leaf.tsx
-function Zm({ width: e, height: t, finish: n, color: r, handleSide: i = 1, knob: a = !1 }) {
+function $m({ width: e, height: t, finish: n, color: r, handleSide: i = 1, knob: a = !1 }) {
 	let o = Math.min(.36, e * .65);
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "flush-door-leaf",
@@ -41572,7 +41625,7 @@ function Zm({ width: e, height: t, finish: n, color: r, handleSide: i = 1, knob:
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/opening-frame-box.tsx
-function Qm({ size: e, position: t, color: n = "#e7e2d8" }) {
+function eh({ size: e, position: t, color: n = "#e7e2d8" }) {
 	return /* @__PURE__ */ (0, H.jsxs)(P, {
 		args: e,
 		position: t,
@@ -41588,7 +41641,7 @@ function Qm({ size: e, position: t, color: n = "#e7e2d8" }) {
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/windows/framed-glass-panel.tsx
-function $m({ width: e, height: t, columns: n, rows: r, privacy: i = !1, frameDepth: a = .065, frameColor: o = "#e7e2d8" }) {
+function th({ width: e, height: t, columns: n, rows: r, privacy: i = !1, frameDepth: a = .065, frameColor: o = "#e7e2d8" }) {
 	let s = Math.min(.055, e * .14, t * .14), c = Math.max(.02, e - s * 2), u = Math.max(.02, t - s * 2), d = i && r === 2 ? [-u * .18] : Array.from({ length: Math.max(0, r - 1) }, (e, t) => -u / 2 + u * ((t + 1) / r));
 	return /* @__PURE__ */ (0, H.jsxs)("group", { children: [
 		/* @__PURE__ */ (0, H.jsxs)("mesh", {
@@ -41604,7 +41657,7 @@ function $m({ width: e, height: t, columns: n, rows: r, privacy: i = !1, frameDe
 				depthWrite: !1
 			})]
 		}),
-		[-1, 1].map((n) => /* @__PURE__ */ (0, H.jsx)(Qm, {
+		[-1, 1].map((n) => /* @__PURE__ */ (0, H.jsx)(eh, {
 			size: [
 				s,
 				t,
@@ -41617,7 +41670,7 @@ function $m({ width: e, height: t, columns: n, rows: r, privacy: i = !1, frameDe
 			],
 			color: o
 		}, `vertical-${n}`)),
-		[-1, 1].map((n) => /* @__PURE__ */ (0, H.jsx)(Qm, {
+		[-1, 1].map((n) => /* @__PURE__ */ (0, H.jsx)(eh, {
 			size: [
 				e,
 				s,
@@ -41630,7 +41683,7 @@ function $m({ width: e, height: t, columns: n, rows: r, privacy: i = !1, frameDe
 			],
 			color: o
 		}, `horizontal-${n}`)),
-		Array.from({ length: Math.max(0, n - 1) }, (e, t) => /* @__PURE__ */ (0, H.jsx)(Qm, {
+		Array.from({ length: Math.max(0, n - 1) }, (e, t) => /* @__PURE__ */ (0, H.jsx)(eh, {
 			size: [
 				.026,
 				u,
@@ -41643,7 +41696,7 @@ function $m({ width: e, height: t, columns: n, rows: r, privacy: i = !1, frameDe
 			],
 			color: o
 		}, `column-${t}`)),
-		d.map((e, t) => /* @__PURE__ */ (0, H.jsx)(Qm, {
+		d.map((e, t) => /* @__PURE__ */ (0, H.jsx)(eh, {
 			size: [
 				c,
 				i ? .022 : .026,
@@ -41660,14 +41713,14 @@ function $m({ width: e, height: t, columns: n, rows: r, privacy: i = !1, frameDe
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/steel-glazing/arched-steel-glass-panel.tsx
-function eh({ width: e, height: t, privacy: n = !1, frameColor: r = "#292e2d" }) {
+function nh({ width: e, height: t, privacy: n = !1, frameColor: r = "#292e2d" }) {
 	let i = (0, I.useMemo)(() => {
 		let n = e * .4, r = Math.min(.022, e * .055), i = -t / 2 + .055, a = t / 2 - .065 - n, o = new h();
 		return o.moveTo(-n, i), o.lineTo(-n, a), o.absarc(0, a, n, Math.PI, 0, !0), o.lineTo(n, i), o.lineTo(n - r, i), o.lineTo(n - r, a), o.absarc(0, a, n - r, 0, Math.PI, !1), o.lineTo(-n + r, i), o.closePath(), o;
 	}, [e, t]);
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "arched-steel-glass-panel",
-		children: [/* @__PURE__ */ (0, H.jsx)($m, {
+		children: [/* @__PURE__ */ (0, H.jsx)(th, {
 			width: e,
 			height: t,
 			columns: 1,
@@ -41693,7 +41746,7 @@ function eh({ width: e, height: t, privacy: n = !1, frameColor: r = "#292e2d" })
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/glass-door-handle.tsx
-function th({ width: e, side: t }) {
+function rh({ width: e, side: t }) {
 	return /* @__PURE__ */ (0, H.jsx)("group", {
 		name: "opening-glass-door-handle",
 		position: [
@@ -41725,8 +41778,8 @@ function th({ width: e, side: t }) {
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/plank-door-leaf.tsx
-var nh = .065;
-function rh({ width: e, height: t, handleSide: n, finish: r, color: i, railHangers: a = !0, depthScale: o = 1 }) {
+var ih = .065;
+function ah({ width: e, height: t, handleSide: n, finish: r, color: i, railHangers: a = !0, depthScale: o = 1 }) {
 	let s = r === "white", c = i ?? (s ? "#e6e3dc" : "#85583b"), u = i ?? (s ? "#f1f0eb" : "#9c6b49"), d = s ? "#bdbbb5" : "#68432e", f = Math.max(.02, e - Math.min(.12, e * .3)), p = Math.min(.1, e * .22), m = Math.min(.075, e * .22), h = Math.max(.2, t - .16), g = Math.max(4, Math.round(e / .096)), _ = f / g, v = Math.hypot(f, h), y = Math.atan2(h, f);
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		scale: [
@@ -41739,7 +41792,7 @@ function rh({ width: e, height: t, handleSide: n, finish: r, color: i, railHange
 				args: [
 					e,
 					t,
-					nh
+					ih
 				],
 				radius: .018,
 				smoothness: 3,
@@ -41777,7 +41830,7 @@ function rh({ width: e, height: t, handleSide: n, finish: r, color: i, railHange
 					] }), /* @__PURE__ */ (0, H.jsx)(l, { color: d })]
 				})] }, t);
 			}),
-			[-1, 1].map((n) => /* @__PURE__ */ (0, H.jsx)(Qm, {
+			[-1, 1].map((n) => /* @__PURE__ */ (0, H.jsx)(eh, {
 				size: [
 					e - Math.min(.04, e * .12),
 					.1,
@@ -41790,7 +41843,7 @@ function rh({ width: e, height: t, handleSide: n, finish: r, color: i, railHange
 				],
 				color: d
 			}, `plank-horizontal-${n}`)),
-			[-1, 1].map((n) => /* @__PURE__ */ (0, H.jsx)(Qm, {
+			[-1, 1].map((n) => /* @__PURE__ */ (0, H.jsx)(eh, {
 				size: [
 					p,
 					t - .1,
@@ -41835,7 +41888,7 @@ function rh({ width: e, height: t, handleSide: n, finish: r, color: i, railHange
 					0,
 					.135
 				],
-				children: [[-1, 1].map((t) => /* @__PURE__ */ (0, H.jsx)(Qm, {
+				children: [[-1, 1].map((t) => /* @__PURE__ */ (0, H.jsx)(eh, {
 					size: [
 						Math.min(.07, e * .35),
 						.08,
@@ -41847,7 +41900,7 @@ function rh({ width: e, height: t, handleSide: n, finish: r, color: i, railHange
 						.014
 					],
 					color: "#747a79"
-				}, t)), /* @__PURE__ */ (0, H.jsx)(Qm, {
+				}, t)), /* @__PURE__ */ (0, H.jsx)(eh, {
 					size: [
 						Math.min(.045, e * .25),
 						.34,
@@ -41889,7 +41942,7 @@ function rh({ width: e, height: t, handleSide: n, finish: r, color: i, railHange
 							screenspace: !1
 						})
 					]
-				}), /* @__PURE__ */ (0, H.jsx)(Qm, {
+				}), /* @__PURE__ */ (0, H.jsx)(eh, {
 					size: [
 						.075,
 						.34,
@@ -41908,41 +41961,41 @@ function rh({ width: e, height: t, handleSide: n, finish: r, color: i, railHange
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/door-leaf.tsx
-function ih({ opening: e, width: t, height: n, handleSide: r, plankDepthScale: i = 1 }) {
+function oh({ opening: e, width: t, height: n, handleSide: r, plankDepthScale: i = 1 }) {
 	let a = e.finish === "white", o = e.color ?? (a ? "#d8d2c6" : "#9c6b49");
-	return e.variant === "concealed" ? /* @__PURE__ */ (0, H.jsx)(Xm, {
+	return e.variant === "concealed" ? /* @__PURE__ */ (0, H.jsx)(Qm, {
 		width: t,
 		height: n,
 		finish: e.finish,
 		...Oe({ color: e.color }),
 		handleSide: r
-	}) : e.variant === "flush" || e.variant === "flush-knob" ? /* @__PURE__ */ (0, H.jsx)(Zm, {
+	}) : e.variant === "flush" || e.variant === "flush-knob" ? /* @__PURE__ */ (0, H.jsx)($m, {
 		width: t,
 		height: n,
 		finish: e.finish,
 		...Oe({ color: e.color }),
 		handleSide: r,
 		knob: e.variant === "flush-knob"
-	}) : e.variant === "steel-arched" ? /* @__PURE__ */ (0, H.jsxs)("group", { children: [/* @__PURE__ */ (0, H.jsx)(eh, {
+	}) : e.variant === "steel-arched" ? /* @__PURE__ */ (0, H.jsxs)("group", { children: [/* @__PURE__ */ (0, H.jsx)(nh, {
 		width: t,
 		height: n,
 		...Oe({ frameColor: e.color })
-	}), /* @__PURE__ */ (0, H.jsx)(th, {
+	}), /* @__PURE__ */ (0, H.jsx)(rh, {
 		width: t,
 		side: r
-	})] }) : e.variant === "french" || e.variant === "full-glass" ? /* @__PURE__ */ (0, H.jsxs)("group", { children: [/* @__PURE__ */ (0, H.jsx)($m, {
+	})] }) : e.variant === "french" || e.variant === "full-glass" ? /* @__PURE__ */ (0, H.jsxs)("group", { children: [/* @__PURE__ */ (0, H.jsx)(th, {
 		width: t,
 		height: n,
 		columns: e.variant === "french" ? 2 : 1,
 		rows: e.variant === "french" ? 5 : 1,
 		frameColor: o
-	}), e.variant === "french" ? /* @__PURE__ */ (0, H.jsx)(Ym, {
+	}), e.variant === "french" ? /* @__PURE__ */ (0, H.jsx)(Zm, {
 		width: t,
 		side: r
-	}) : /* @__PURE__ */ (0, H.jsx)(th, {
+	}) : /* @__PURE__ */ (0, H.jsx)(rh, {
 		width: t,
 		side: r
-	})] }) : e.variant === "plank" ? /* @__PURE__ */ (0, H.jsx)(rh, {
+	})] }) : e.variant === "plank" ? /* @__PURE__ */ (0, H.jsx)(ah, {
 		width: t,
 		height: n,
 		handleSide: r,
@@ -41964,34 +42017,34 @@ function ih({ opening: e, width: t, height: n, handleSide: r, plankDepthScale: i
 			thickness: a ? .008 : .01,
 			screenspace: !1
 		})]
-	}), e.variant === "panel-white-lever" ? /* @__PURE__ */ (0, H.jsx)(Jm, {
+	}), e.variant === "panel-white-lever" ? /* @__PURE__ */ (0, H.jsx)(Xm, {
 		width: t,
 		side: r
-	}) : /* @__PURE__ */ (0, H.jsx)(Ym, {
+	}) : /* @__PURE__ */ (0, H.jsx)(Zm, {
 		width: t,
 		side: r
 	})] });
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/plank-door-rail.tsx
-var ah = .055, oh = .004, sh = .04;
-function ch({ openingWidth: e, leafWidth: t, orientation: n }) {
+var sh = .055, ch = .004, lh = .04;
+function uh({ openingWidth: e, leafWidth: t, orientation: n }) {
 	let r = Infinity, i = -Infinity;
 	for (let a of n.leaves) {
 		let n = a.startRatio * e, o = n + t, s = a.slideSign, c = n + s * t, l = o + s * t;
 		r = Math.min(r, n, c), i = Math.max(i, o, l);
 	}
 	return {
-		startX: r - sh,
-		endX: i + sh
+		startX: r - lh,
+		endX: i + lh
 	};
 }
-function lh({ width: e, height: t, wallThickness: n, leafWidth: r, orientation: i }) {
-	let { startX: a, endX: o } = ch({
+function dh({ width: e, height: t, wallThickness: n, leafWidth: r, orientation: i }) {
+	let { startX: a, endX: o } = uh({
 		openingWidth: e,
 		leafWidth: r,
 		orientation: i
-	}), s = o - a, c = (a + o) / 2, l = n / 2 + oh + ah / 2;
+	}), s = o - a, c = (a + o) / 2, l = n / 2 + ch + sh / 2;
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: "opening-plank-rail",
 		position: [
@@ -42006,11 +42059,11 @@ function lh({ width: e, height: t, wallThickness: n, leafWidth: r, orientation: 
 				0,
 				0
 			],
-			children: /* @__PURE__ */ (0, H.jsx)(Qm, {
+			children: /* @__PURE__ */ (0, H.jsx)(eh, {
 				size: [
 					s,
 					.065,
-					ah
+					sh
 				],
 				position: [
 					0,
@@ -42019,11 +42072,11 @@ function lh({ width: e, height: t, wallThickness: n, leafWidth: r, orientation: 
 				],
 				color: "#242525"
 			})
-		}), [a, o].map((e) => /* @__PURE__ */ (0, H.jsx)(Qm, {
+		}), [a, o].map((e) => /* @__PURE__ */ (0, H.jsx)(eh, {
 			size: [
 				.075,
 				.13,
-				ah
+				sh
 			],
 			position: [
 				e,
@@ -42036,16 +42089,16 @@ function lh({ width: e, height: t, wallThickness: n, leafWidth: r, orientation: 
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/doors/door-model.tsx
-var uh = .004;
-function dh({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
-	if (t.operation === "roll-up") return /* @__PURE__ */ (0, H.jsx)(Gm, {
+var fh = .004;
+function ph({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
+	if (t.operation === "roll-up") return /* @__PURE__ */ (0, H.jsx)(qm, {
 		wall: e,
 		opening: t,
 		floor: n,
 		position: r,
 		reducedMotion: i
 	});
-	let o = ze(e, t, n.coordinates), s = a(t), c = t.leafCount === 2, l = t.variant === "concealed", u = t.frontSide === void 0 ? s.sideSign : t.frontSide === "left" ? -1 : 1, d = t.variant === "flush" || t.variant === "flush-knob", f = c ? 0 : d || l ? .006 : .018, p = d && t.variant !== "flush-knob" && !c ? Math.max(0, Math.min(t.frontOverlayMeters ?? .03, t.offsetFromWallStartPlanUnits * n.coordinates.metersPerPlanUnit, (Fe(e) - t.offsetFromWallStartPlanUnits - t.widthPlanUnits) * n.coordinates.metersPerPlanUnit)) : 0, m = t.operation === "hinged" && !d && !l && t.variant !== "full-glass" && t.variant !== "steel-arched", h = m && t.variant === "plank" ? Math.min(1, o.widthMeters / t.leafCount / .4) : 1, g = m ? Vm(o.widthMeters, t.leafCount, e.thicknessMeters, t.variant === "panel" || t.variant === "panel-white-lever" ? .05 : t.variant === "plank" ? .151 * h : .065, s.sideSign, t.variant === "plank" ? .1185 * h : void 0) : null, _ = g?.leafWidth ?? Math.max(.08, o.widthMeters / t.leafCount - f + 2 * p), v = p > 0 ? p - f / 2 : 0, y = Math.max(.08, t.openingHeightMeters - (d || l ? .026 : .03)), b = t.operation === "sliding" && t.variant === "plank", ee = e.thicknessMeters / 2 + uh + nh / 2;
+	let o = ze(e, t, n.coordinates), s = a(t), c = t.leafCount === 2, l = t.variant === "concealed", u = t.frontSide === void 0 ? s.sideSign : t.frontSide === "left" ? -1 : 1, d = t.variant === "flush" || t.variant === "flush-knob", f = c ? 0 : d || l ? .006 : .018, p = d && t.variant !== "flush-knob" && !c ? Math.max(0, Math.min(t.frontOverlayMeters ?? .03, t.offsetFromWallStartPlanUnits * n.coordinates.metersPerPlanUnit, (Fe(e) - t.offsetFromWallStartPlanUnits - t.widthPlanUnits) * n.coordinates.metersPerPlanUnit)) : 0, m = t.operation === "hinged" && !d && !l && t.variant !== "full-glass" && t.variant !== "steel-arched", h = m && t.variant === "plank" ? Math.min(1, o.widthMeters / t.leafCount / .4) : 1, g = m ? Um(o.widthMeters, t.leafCount, e.thicknessMeters, t.variant === "panel" || t.variant === "panel-white-lever" ? .05 : t.variant === "plank" ? .151 * h : .065, s.sideSign, t.variant === "plank" ? .1185 * h : void 0) : null, _ = g?.leafWidth ?? Math.max(.08, o.widthMeters / t.leafCount - f + 2 * p), v = p > 0 ? p - f / 2 : 0, y = Math.max(.08, t.openingHeightMeters - (d || l ? .026 : .03)), b = t.operation === "sliding" && t.variant === "plank", ee = e.thicknessMeters / 2 + fh + ih / 2;
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: `opening-model-${t.variant}`,
 		position: [
@@ -42059,13 +42112,13 @@ function dh({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
 			0
 		],
 		children: [
-			t.variant !== "full-glass" && t.variant !== "steel-arched" && !d && !l && /* @__PURE__ */ (0, H.jsx)(qm, {
+			t.variant !== "full-glass" && t.variant !== "steel-arched" && !d && !l && /* @__PURE__ */ (0, H.jsx)(Ym, {
 				...Oe({ color: t.color }),
 				wall: e,
 				width: o.widthMeters,
 				height: t.openingHeightMeters
 			}),
-			t.operation === "sliding" && t.variant === "plank" && /* @__PURE__ */ (0, H.jsx)(lh, {
+			t.operation === "sliding" && t.variant === "plank" && /* @__PURE__ */ (0, H.jsx)(dh, {
 				width: o.widthMeters,
 				height: t.openingHeightMeters,
 				wallThickness: e.thicknessMeters,
@@ -42081,7 +42134,7 @@ function dh({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
 						t.openingHeightMeters / 2,
 						b ? ee * s.sideSign : l ? (e.thicknessMeters / 2 - .025) * u : d ? (e.thicknessMeters / 2 + (t.frontOverlayMeters === 0 ? -.01 : .012)) * s.sideSign : g?.pivotZ ?? (c ? 0 : a % 2 == 0 ? -.016 : .016) * s.sideSign
 					],
-					children: /* @__PURE__ */ (0, H.jsx)(Km, {
+					children: /* @__PURE__ */ (0, H.jsx)(Jm, {
 						operation: t.operation,
 						open: r > 0,
 						reducedMotion: i,
@@ -42098,7 +42151,7 @@ function dh({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
 								1,
 								s.sideSign
 							],
-							children: /* @__PURE__ */ (0, H.jsx)(ih, {
+							children: /* @__PURE__ */ (0, H.jsx)(oh, {
 								opening: t,
 								width: _,
 								height: y,
@@ -42114,14 +42167,14 @@ function dh({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/passages/arched-passage-spandrel.ts
-var fh = (e, t) => {
+var mh = (e, t) => {
 	let n = e.openingHeightMeters - e.archRiseMeters, r = new h();
 	return r.moveTo(0, n), r.quadraticCurveTo(t * .22, e.openingHeightMeters, t / 2, e.openingHeightMeters), r.quadraticCurveTo(t * .78, e.openingHeightMeters, t, n), r.lineTo(t, e.openingHeightMeters), r.lineTo(0, e.openingHeightMeters), r.closePath(), r;
 };
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/passages/passage-model.tsx
-function ph({ wall: e, opening: t, floor: n }) {
-	let r = ze(e, t, n.coordinates), { openingHeightMeters: i, variant: a } = t, o = t.variant === "arched" ? t.archRiseMeters : 0, s = (0, I.useMemo)(() => a === "arched" ? fh({
+function hh({ wall: e, opening: t, floor: n }) {
+	let r = ze(e, t, n.coordinates), { openingHeightMeters: i, variant: a } = t, o = t.variant === "arched" ? t.archRiseMeters : 0, s = (0, I.useMemo)(() => a === "arched" ? mh({
 		openingHeightMeters: i,
 		archRiseMeters: o
 	}, r.widthMeters) : null, [
@@ -42158,7 +42211,7 @@ function ph({ wall: e, opening: t, floor: n }) {
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/windows/window-handle.tsx
-function mh({ handleSide: e, faceSide: t, width: n, glazing: r }) {
+function gh({ handleSide: e, faceSide: t, width: n, glazing: r }) {
 	return r === "clear" ? /* @__PURE__ */ (0, H.jsx)("group", {
 		name: "opening-window-handle-clear",
 		position: [
@@ -42171,7 +42224,7 @@ function mh({ handleSide: e, faceSide: t, width: n, glazing: r }) {
 			1,
 			t
 		],
-		children: /* @__PURE__ */ (0, H.jsx)(Qm, {
+		children: /* @__PURE__ */ (0, H.jsx)(eh, {
 			size: [
 				.045,
 				.2,
@@ -42232,7 +42285,7 @@ function mh({ handleSide: e, faceSide: t, width: n, glazing: r }) {
 }
 //#endregion
 //#region packages/catalog/src/architecture/presets/openings/windows/window-model.tsx
-function hh({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
+function _h({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
 	let o = ze(e, t, n.coordinates), s = a(t), c = o.widthMeters / t.panelCount, l = t.variant === "muntined" ? t.muntins.columns : 1, u = t.variant === "muntined" ? t.muntins.rows : 1;
 	return /* @__PURE__ */ (0, H.jsxs)("group", {
 		name: `opening-model-${t.variant}`,
@@ -42254,7 +42307,7 @@ function hh({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
 					0,
 					0
 				],
-				children: /* @__PURE__ */ (0, H.jsx)(Km, {
+				children: /* @__PURE__ */ (0, H.jsx)(Jm, {
 					operation: t.operation,
 					open: r > 0,
 					reducedMotion: i,
@@ -42266,12 +42319,12 @@ function hh({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
 							0,
 							0
 						],
-						children: [t.variant === "steel-arched" ? /* @__PURE__ */ (0, H.jsx)(eh, {
+						children: [t.variant === "steel-arched" ? /* @__PURE__ */ (0, H.jsx)(nh, {
 							width: Math.max(.08, c),
 							height: t.openingHeightMeters,
 							privacy: t.glazing === "privacy",
 							...Oe({ frameColor: t.color })
-						}) : /* @__PURE__ */ (0, H.jsx)($m, {
+						}) : /* @__PURE__ */ (0, H.jsx)(th, {
 							width: Math.max(.08, c),
 							height: t.openingHeightMeters,
 							columns: l,
@@ -42279,7 +42332,7 @@ function hh({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
 							privacy: t.glazing === "privacy",
 							...Oe({ frameColor: t.color }),
 							frameDepth: t.glazing === "privacy" ? .105 : .09
-						}), t.operation === "casement" && /* @__PURE__ */ (0, H.jsx)(mh, {
+						}), t.operation === "casement" && /* @__PURE__ */ (0, H.jsx)(gh, {
 							width: c,
 							glazing: t.glazing,
 							handleSide: e.extentSign,
@@ -42288,7 +42341,7 @@ function hh({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
 					})
 				})
 			}, n);
-		}), t.variant !== "steel-arched" && /* @__PURE__ */ (0, H.jsx)(Qm, {
+		}), t.variant !== "steel-arched" && /* @__PURE__ */ (0, H.jsx)(eh, {
 			size: [
 				o.widthMeters + .08,
 				.055,
@@ -42305,11 +42358,11 @@ function hh({ wall: e, opening: t, floor: n, position: r, reducedMotion: i }) {
 }
 //#endregion
 //#region packages/catalog/src/architecture/registry.ts
-var gh = Ke({
-	door: dh,
-	window: hh,
-	passage: ph
-}), _h = [
+var vh = Ke({
+	door: ph,
+	window: _h,
+	passage: hh
+}), yh = [
 	{
 		id: "panel-wood",
 		label: "Panel wood",
@@ -42405,8 +42458,8 @@ var gh = Ke({
 			heightMeters: 2.3
 		}
 	}
-], vh = () => void 0, yh = {};
-function bh({ entry: e }) {
+], bh = () => void 0, xh = {};
+function Sh({ entry: e }) {
 	if (e.kind === "procedural") {
 		let t = e.definition.component;
 		return /* @__PURE__ */ (0, H.jsx)(t, {});
@@ -42416,10 +42469,10 @@ function bh({ entry: e }) {
 		return /* @__PURE__ */ (0, H.jsx)(t, {
 			variant: ge(e.definition).id,
 			size: e.definition.defaultSize,
-			entityStatesBySlotId: yh,
+			entityStatesBySlotId: xh,
 			reducedMotion: !0,
 			walkMode: !1,
-			onInteract: vh
+			onInteract: bh
 		});
 	}
 	let t = e.definition.component;
@@ -42428,7 +42481,7 @@ function bh({ entry: e }) {
 		visualState: "disconnected",
 		reducedMotion: !0,
 		walkMode: !1,
-		onInteract: vh,
+		onInteract: bh,
 		slot: {
 			id: `preview-${e.key}`,
 			model: e.modelId,
@@ -42443,37 +42496,37 @@ function bh({ entry: e }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/furnish/catalog/thumbnailCache.ts
-var xh = "cabane-model-previews-aaea77c3eef736dc5d25", Sh = /* @__PURE__ */ new Map(), Ch = 400;
-function wh(e, t) {
-	Sh.delete(e), Sh.set(e, t), Sh.size > Ch && Sh.delete(Sh.keys().next().value);
+var Ch = "cabane-model-previews-6d1d7a89c2c00a7d2d39", wh = /* @__PURE__ */ new Map(), Th = 400;
+function Eh(e, t) {
+	wh.delete(e), wh.set(e, t), wh.size > Th && wh.delete(wh.keys().next().value);
 }
-async function Th() {
-	return await caches.open(xh);
+async function Dh() {
+	return await caches.open(Ch);
 }
-async function Eh(e) {
-	let t = Sh.get(e);
+async function Oh(e) {
+	let t = wh.get(e);
 	if (t) return t;
 	try {
-		let t = await (await (await Th()).match(e))?.blob();
-		return t && wh(e, t), t;
+		let t = await (await (await Dh()).match(e))?.blob();
+		return t && Eh(e, t), t;
 	} catch {
 		return;
 	}
 }
-function Dh(e, t) {
+function kh(e, t) {
 	t.toBlob((t) => {
-		t && (wh(e, t), (async () => {
+		t && (Eh(e, t), (async () => {
 			try {
-				let n = await Th();
+				let n = await Dh();
 				await n.put(e, new Response(t));
 				let r = await n.keys();
-				for (let e of r.slice(0, Math.max(0, r.length - Ch))) await n.delete(e);
-				for (let e of await caches.keys()) e.startsWith("cabane-model-previews-") && e !== xh && await caches.delete(e);
+				for (let e of r.slice(0, Math.max(0, r.length - Th))) await n.delete(e);
+				for (let e of await caches.keys()) e.startsWith("cabane-model-previews-") && e !== Ch && await caches.delete(e);
 			} catch {}
 		})());
 	}, "image/png");
 }
-async function Oh(e, t, n, r, i) {
+async function Ah(e, t, n, r, i) {
 	let a = URL.createObjectURL(e);
 	try {
 		let e = new Image();
@@ -42488,7 +42541,7 @@ async function Oh(e, t, n, r, i) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/furnish/catalog/ModelThumbnailRenderer.tsx
-var kh = (0, I.createContext)(() => () => void 0), Ah = class extends I.Component {
+var jh = (0, I.createContext)(() => () => void 0), Mh = class extends I.Component {
 	state = { failed: !1 };
 	static getDerivedStateFromError() {
 		return { failed: !0 };
@@ -42500,14 +42553,14 @@ var kh = (0, I.createContext)(() => () => void 0), Ah = class extends I.Componen
 		return this.state.failed ? null : this.props.children;
 	}
 };
-function jh({ onError: e }) {
+function Nh({ onError: e }) {
 	let t = we((e) => e.gl);
 	return (0, I.useEffect)(() => {
 		let n = t.domElement;
 		return n.addEventListener("webglcontextlost", e), () => n.removeEventListener("webglcontextlost", e);
 	}, [t, e]), null;
 }
-function Mh({ request: e, aspect: n, done: r }) {
+function Ph({ request: e, aspect: n, done: r }) {
 	let { invalidate: i, size: a } = we(), o = (0, I.useRef)(new ne(-1, 1, 1, -1, .01, 100)), s = (0, I.useRef)(!1), { min: c, max: u } = e.entry.definition.bounds, d = Math.max(...u.map((e, t) => e - c[t]), .01), f = c.map((e, t) => (e + u[t]) / 2), p = u.map((e, t) => (e - c[t]) / d);
 	return (0, I.useLayoutEffect)(() => {
 		let { min: t, max: n } = e.entry.definition.bounds, r = Math.max(...n.map((e, n) => e - t[n]), .01), c = n.map((e, n) => (e - t[n]) / r), l = o.current;
@@ -42539,7 +42592,7 @@ function Mh({ request: e, aspect: n, done: r }) {
 					n.width = Math.max(1, Math.round(r.width * i)), n.height = Math.max(1, Math.round(r.height * i));
 					let a = n.getContext("2d");
 					if (!a) throw Error("Preview canvas unavailable");
-					a.drawImage(t.domElement, 0, 0, n.width, n.height), e.cacheKey && Dh(e.cacheKey.replace(/[^/]+$/, `${n.width}:${n.height}`), n);
+					a.drawImage(t.domElement, 0, 0, n.width, n.height), e.cacheKey && kh(e.cacheKey.replace(/[^/]+$/, `${n.width}:${n.height}`), n);
 				}
 				r(!1);
 			} catch {
@@ -42568,7 +42621,7 @@ function Mh({ request: e, aspect: n, done: r }) {
 					-f[1],
 					-f[2]
 				],
-				children: /* @__PURE__ */ (0, H.jsx)(bh, { entry: e.entry })
+				children: /* @__PURE__ */ (0, H.jsx)(Sh, { entry: e.entry })
 			})
 		}),
 		[
@@ -42602,7 +42655,7 @@ function Mh({ request: e, aspect: n, done: r }) {
 		}, e))
 	] });
 }
-function Nh({ children: e, scrollRoot: t, enabled: n }) {
+function Fh({ children: e, scrollRoot: t, enabled: n }) {
 	let r = (0, I.useRef)(/* @__PURE__ */ new Map()), i = (0, I.useRef)(null), a = (0, I.useRef)(!0), [o, s] = (0, I.useState)(null), [c, l] = (0, I.useState)(0), [u, d] = (0, I.useState)(!1), f = (0, I.useCallback)(() => {
 		if (!a.current || i.current) return;
 		let e = r.current.values().next().value;
@@ -42632,9 +42685,9 @@ function Nh({ children: e, scrollRoot: t, enabled: n }) {
 			s = u;
 			let d = ++o, p = new URL(`/__cabane_preview__/${encodeURIComponent(e.entry.key)}/${e.transparent ? "clear" : "opaque"}/${u}`, location.origin).href, m = () => !a && i && o === d && e.canvas.isConnected;
 			(async () => {
-				let t = await Eh(p);
+				let t = await Oh(p);
 				if (m()) {
-					if (t && await Oh(t, e.canvas, c, l, m)) {
+					if (t && await Ah(t, e.canvas, c, l, m)) {
 						e.report(!1);
 						return;
 					}
@@ -42661,7 +42714,7 @@ function Nh({ children: e, scrollRoot: t, enabled: n }) {
 		n,
 		u
 	]), g = o?.canvas.getBoundingClientRect(), _ = g && g.height > 0 ? g.width / g.height : 1.2;
-	return /* @__PURE__ */ (0, H.jsxs)(kh.Provider, {
+	return /* @__PURE__ */ (0, H.jsxs)(jh.Provider, {
 		value: h,
 		children: [e, n && !u && c > 0 && /* @__PURE__ */ (0, H.jsx)("div", {
 			"aria-hidden": "true",
@@ -42670,7 +42723,7 @@ function Nh({ children: e, scrollRoot: t, enabled: n }) {
 				width: 160 * _,
 				height: 160
 			},
-			children: /* @__PURE__ */ (0, H.jsx)(Ah, {
+			children: /* @__PURE__ */ (0, H.jsx)(Mh, {
 				onError: m,
 				children: /* @__PURE__ */ (0, H.jsxs)(me, {
 					events: Ge,
@@ -42683,9 +42736,9 @@ function Nh({ children: e, scrollRoot: t, enabled: n }) {
 						powerPreference: "low-power"
 					},
 					fallback: /* @__PURE__ */ (0, H.jsx)("span", { children: "Preview unavailable" }),
-					children: [/* @__PURE__ */ (0, H.jsx)(jh, { onError: m }), o && /* @__PURE__ */ (0, H.jsx)(Ah, {
+					children: [/* @__PURE__ */ (0, H.jsx)(Nh, { onError: m }), o && /* @__PURE__ */ (0, H.jsx)(Mh, {
 						onError: () => p(o, !0),
-						children: /* @__PURE__ */ (0, H.jsx)(Mh, {
+						children: /* @__PURE__ */ (0, H.jsx)(Ph, {
 							request: o,
 							aspect: _,
 							done: (e) => p(o, e)
@@ -42696,8 +42749,8 @@ function Nh({ children: e, scrollRoot: t, enabled: n }) {
 		})]
 	});
 }
-function Ph({ entry: e, showAdd: t = !0, fallback: n, transparent: r = !1 }) {
-	let i = (0, I.useRef)(null), a = (0, I.useContext)(kh), [o, s] = (0, I.useState)(!1);
+function Ih({ entry: e, showAdd: t = !0, fallback: n, transparent: r = !1 }) {
+	let i = (0, I.useRef)(null), a = (0, I.useContext)(jh), [o, s] = (0, I.useState)(!1);
 	return (0, I.useEffect)(() => {
 		if (i.current) return s(!1), a({
 			canvas: i.current,
@@ -42730,15 +42783,15 @@ function Ph({ entry: e, showAdd: t = !0, fallback: n, transparent: r = !1 }) {
 }
 //#endregion
 //#region apps/web/src/editor-action-bar/ShortcutDeviceIcon.tsx
-function Fh({ children: e }) {
+function Lh({ children: e }) {
 	let t = (0, I.useRef)(null);
-	return /* @__PURE__ */ (0, H.jsx)(Nh, {
+	return /* @__PURE__ */ (0, H.jsx)(Fh, {
 		scrollRoot: t,
 		enabled: !0,
 		children: e
 	});
 }
-function Ih({ modelId: e, models: t }) {
+function Rh({ modelId: e, models: t }) {
 	let n = t[e], r = (0, I.useMemo)(() => n ? {
 		key: `device:${e}`,
 		kind: "device",
@@ -42747,13 +42800,13 @@ function Ih({ modelId: e, models: t }) {
 	} : null, [n, e]);
 	return /* @__PURE__ */ (0, H.jsx)("span", {
 		className: "scene-action-device-preview",
-		children: r ? /* @__PURE__ */ (0, H.jsx)(Ph, {
+		children: r ? /* @__PURE__ */ (0, H.jsx)(Ih, {
 			entry: r,
 			showAdd: !1,
 			transparent: !0,
-			fallback: /* @__PURE__ */ (0, H.jsx)(vm, { name: "devices" })
-		}) : /* @__PURE__ */ (0, H.jsx)(vm, { name: "devices" })
+			fallback: /* @__PURE__ */ (0, H.jsx)(bm, { name: "devices" })
+		}) : /* @__PURE__ */ (0, H.jsx)(bm, { name: "devices" })
 	});
 }
 //#endregion
-export { pm as A, et as B, vm as C, lm as D, hm as E, _n as F, fn as I, dn as L, om as M, yp as N, dm as O, yn as P, hn as R, Sm as S, mm as T, Om as _, _h as a, Cm as b, dh as c, Im as d, Mm as f, Dm as g, Am as h, Nh as i, cm as j, um as k, Nm as l, km as m, Fh as n, gh as o, jm as p, Ph as r, hh as s, Ih as t, Pm as u, wm as v, gm as w, xm as x, Tm as y, mn as z };
+export { hm as A, et as B, bm as C, dm as D, _m as E, _n as F, fn as I, dn as L, cm as M, xp as N, pm as O, yn as P, hn as R, wm as S, gm as T, Am as _, yh as a, Tm as b, ph as c, Rm as d, Pm as f, km as g, Mm as h, Fh as i, um as j, fm as k, Fm as l, jm as m, Lh as n, vh as o, Nm as p, Ih as r, _h as s, Rh as t, Im as u, Em as v, vm as w, Cm as x, Dm as y, mn as z };
