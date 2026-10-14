@@ -109,7 +109,7 @@ Use the implemented producer and complete the release checks:
    HA host fixture (run `npm ci` and `npm run browser:install` there first).
    The test imports the synthetic outdoor-platform workspace through the panel's
    normal HA import screen and checks both persisted draft and published records,
-   including edge IDs, finishes and overrides. It makes no household requests.
+   including edge IDs, finishes, overrides and wall edge colors. It makes no household requests.
    An optional second argument selects another bundle directory; the v0.2.1
    bundle reproduces issue #3 with `Property “outdoorPlatforms” is not part of
    the HomeProject schema.` Version 0.3.0 includes the compatible frontend;

@@ -70,28 +70,32 @@
               "from": [0, 0],
               "to": [4, 0],
               "classification": "exterior",
-              "thicknessMeters": 0.2
+              "thicknessMeters": 0.2,
+              "edgeColor": "#725544"
             },
             {
               "id": "wall-1",
               "from": [4, 0],
               "to": [4, 4],
               "classification": "exterior",
-              "thicknessMeters": 0.2
+              "thicknessMeters": 0.2,
+              "edgeColor": "#725544"
             },
             {
               "id": "wall-2",
               "from": [4, 4],
               "to": [0, 4],
               "classification": "exterior",
-              "thicknessMeters": 0.2
+              "thicknessMeters": 0.2,
+              "edgeColor": "#725544"
             },
             {
               "id": "wall-3",
               "from": [0, 4],
               "to": [0, 0],
               "classification": "exterior",
-              "thicknessMeters": 0.2
+              "thicknessMeters": 0.2,
+              "edgeColor": "#725544"
             }
           ],
           "wallJunctions": [
@@ -230,28 +234,32 @@
               "from": [0, 0],
               "to": [4, 0],
               "classification": "exterior",
-              "thicknessMeters": 0.2
+              "thicknessMeters": 0.2,
+              "edgeColor": "#725544"
             },
             {
               "id": "wall-1",
               "from": [4, 0],
               "to": [4, 4],
               "classification": "exterior",
-              "thicknessMeters": 0.2
+              "thicknessMeters": 0.2,
+              "edgeColor": "#725544"
             },
             {
               "id": "wall-2",
               "from": [4, 4],
               "to": [0, 4],
               "classification": "exterior",
-              "thicknessMeters": 0.2
+              "thicknessMeters": 0.2,
+              "edgeColor": "#725544"
             },
             {
               "id": "wall-3",
               "from": [0, 4],
               "to": [0, 0],
               "classification": "exterior",
-              "thicknessMeters": 0.2
+              "thicknessMeters": 0.2,
+              "edgeColor": "#725544"
             }
           ],
           "wallJunctions": [
