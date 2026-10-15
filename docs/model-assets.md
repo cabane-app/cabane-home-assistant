@@ -21,6 +21,11 @@ immutable file. Retries may create a new upload; equal hashes deduplicate. Inval
 hashes, offsets, blocks, sessions and cross-user upload attempts return
 `invalid_asset`. Disk errors return `asset_storage_error`.
 
+Downloads verify each file's SHA-256 once per process and again when its file
+metadata changes. Verification streams the file in bounded blocks; subsequent
+download requests seek to the requested offset and read at most 256 KiB. The
+verification cache stores metadata only, not GLB contents.
+
 Workspace documents retain their existing 5 MiB limit and expected-version
 contract. `customModels[].asset` references in both draft and published slices
 must have consistent sizes, total at most 100 MiB of distinct files, and resolve

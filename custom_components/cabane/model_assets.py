@@ -74,21 +74,26 @@ class ModelAssetStore:
             raise AssetError("Invalid GLB storage entry.")
         return path
 
-    def _read(self, sha):
+    def _verify(self, sha):
+        """Hash a new or changed file once, without retaining its contents."""
         path = self._path(sha)
         if not path.exists():
             raise AssetError(
                 "Missing GLB asset. Retry the upload before saving the home."
             )
         stat = path.stat()
-        stamp = (stat.st_mtime_ns, stat.st_size, stat.st_ino)
+        stamp = (stat.st_mtime_ns, stat.st_ctime_ns, stat.st_size, stat.st_ino)
         if stat.st_size > MAX_FILE_BYTES:
             raise AssetError("GLB storage is damaged.")
-        data = path.read_bytes()
-        if self._verified.get(sha) != stamp and hashlib.sha256(data).hexdigest() != sha:
-            raise AssetError("GLB integrity check failed.")
-        self._verified[sha] = stamp
-        return data
+        if self._verified.get(sha) != stamp:
+            digest = hashlib.sha256()
+            with path.open("rb") as stream:
+                while block := stream.read(CHUNK_BYTES):
+                    digest.update(block)
+            if digest.hexdigest() != sha:
+                raise AssetError("GLB integrity check failed.")
+            self._verified[sha] = stamp
+        return path, stat.st_size
 
     async def has(self, hashes):
         if not isinstance(hashes, list) or len(hashes) > 1024:
@@ -102,7 +107,7 @@ class ModelAssetStore:
                     if not path.exists():
                         result.append(sha)
                     else:
-                        self._read(sha)
+                        self._verify(sha)
                 return {"missing": result}
 
             return await asyncio.to_thread(missing)
@@ -184,7 +189,7 @@ class ModelAssetStore:
                     raise AssetError("Only GLB 2.0 files are accepted.")
                 target = self._path(entry["sha"])
                 if target.exists():
-                    self._read(entry["sha"])
+                    self._verify(entry["sha"])
                     entry["path"].unlink()
                 else:
                     os.replace(entry["path"], target)
@@ -197,15 +202,23 @@ class ModelAssetStore:
         if type(offset) is not int or offset < 0:
             raise AssetError("Invalid download offset.")
         async with self.lock:
-            data = await asyncio.to_thread(self._read, sha)
-            if offset >= len(data):
-                raise AssetError("Invalid download offset.")
+
+            def read_chunk():
+                path, size = self._verify(sha)
+                if offset >= size:
+                    raise AssetError("Invalid download offset.")
+                with path.open("rb") as stream:
+                    stream.seek(offset)
+                    block = stream.read(CHUNK_BYTES)
+                if len(block) != min(CHUNK_BYTES, size - offset):
+                    raise AssetError("GLB storage is damaged.")
+                return block, size
+
+            block, size = await asyncio.to_thread(read_chunk)
             return {
                 "offset": offset,
-                "byte_length": len(data),
-                "data": base64.b64encode(data[offset : offset + CHUNK_BYTES]).decode(
-                    "ascii"
-                ),
+                "byte_length": size,
+                "data": base64.b64encode(block).decode("ascii"),
             }
 
     async def verify_locked(self, references):
@@ -213,7 +226,8 @@ class ModelAssetStore:
 
         def verify():
             for sha, size in references.items():
-                if len(self._read(sha)) != size:
+                _, actual_size = self._verify(sha)
+                if actual_size != size:
                     raise AssetError("GLB size does not match the home document.")
             ledger_path = self.directory / "orphans.json"
             try:

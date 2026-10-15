@@ -7,11 +7,13 @@ from pathlib import Path
 import struct
 import tempfile
 import unittest
+from unittest.mock import MagicMock, patch
 
 from custom_components.cabane.model_assets import (
     AssetError,
     ModelAssetStore,
     CHUNK_BYTES,
+    MAX_FILE_BYTES,
     ORPHAN_DELAY,
 )
 from custom_components.cabane.storage import WorkspaceStore, ConflictError
@@ -63,6 +65,95 @@ class ModelAssetTests(unittest.IsolatedAsyncioTestCase):
         self.assets = ModelAssetStore(self.directory, lambda: self.now)
         self.backend = MemoryStore()
         self.store = WorkspaceStore(self.backend, self.assets)
+
+    async def test_download_reads_one_verification_pass_then_only_requested_ranges(self):
+        data = bytearray(glb(MAX_FILE_BYTES))
+        for index, offset in enumerate(range(CHUNK_BYTES, len(data), CHUNK_BYTES)):
+            data[offset : offset + 4] = struct.pack("<I", index + 1)
+        data = bytes(data)
+        sha = await upload(self.assets, data)
+        # A fresh process has not verified the file yet.
+        assets = ModelAssetStore(self.directory)
+        path = self.directory / f"{sha}.glb"
+        original_open = Path.open
+        bytes_read = 0
+
+        def counted_open(opened_path, *args, **kwargs):
+            stream = original_open(opened_path, *args, **kwargs)
+            if opened_path != path:
+                return stream
+            reader = MagicMock(wraps=stream)
+            reader.__enter__.return_value = reader
+            reader.__exit__.side_effect = stream.__exit__
+
+            def read(*read_args, **read_kwargs):
+                nonlocal bytes_read
+                block = stream.read(*read_args, **read_kwargs)
+                bytes_read += len(block)
+                return block
+
+            reader.read.side_effect = read
+            return reader
+
+        with patch.object(Path, "open", counted_open):
+            for offset in range(0, len(data), CHUNK_BYTES):
+                result = await assets.get(sha, offset)
+                self.assertEqual(result["offset"], offset)
+                self.assertEqual(result["byte_length"], len(data))
+                self.assertEqual(
+                    base64.b64decode(result["data"]), data[offset : offset + CHUNK_BYTES]
+                )
+            self.assertLessEqual(bytes_read, len(data) * 2)
+            bytes_read = 0
+            for offset in range(0, len(data), CHUNK_BYTES):
+                await assets.get(sha, offset)
+            self.assertEqual(bytes_read, len(data))
+            bytes_read = 0
+            # Unaligned, repeated and tail requests must remain bounded too.
+            for offset in (CHUNK_BYTES + 3, 0, len(data) - 7, 0):
+                result = await assets.get(sha, offset)
+                self.assertEqual(
+                    base64.b64decode(result["data"]), data[offset : offset + CHUNK_BYTES]
+                )
+            self.assertEqual(bytes_read, CHUNK_BYTES * 3 + 7)
+
+    async def test_download_rechecks_integrity_after_file_changes_or_replacement(self):
+        data = glb()
+        sha = await upload(self.assets, data)
+        path = self.directory / f"{sha}.glb"
+        corrupt = data[:-1] + b"\xff"
+        for replace in (False, True):
+            with self.subTest(replace=replace):
+                path.write_bytes(data)
+                assets = ModelAssetStore(self.directory)
+                await assets.get(sha, 0)
+                previous = path.stat()
+                target = self.directory / "replacement.glb" if replace else path
+                target.write_bytes(corrupt)
+                # Preserve size and mtime: ctime/inode must invalidate verification.
+                os.utime(target, ns=(previous.st_atime_ns, previous.st_mtime_ns))
+                if replace:
+                    os.replace(target, path)
+                with self.assertRaisesRegex(AssetError, "integrity"):
+                    await assets.get(sha, CHUNK_BYTES)
+                with self.assertRaisesRegex(AssetError, "integrity"):
+                    await assets.has([sha])
+                with self.assertRaisesRegex(AssetError, "integrity"):
+                    await self.store.put("home-1", with_asset(data), None)
+
+    async def test_download_rejects_invalid_offsets_missing_files_and_symlinks(self):
+        data = glb(64)
+        sha = await upload(self.assets, data)
+        for offset in (-1, True, len(data), len(data) + 1):
+            with self.subTest(offset=offset):
+                with self.assertRaisesRegex(AssetError, "offset"):
+                    await self.assets.get(sha, offset)
+        missing = "a" * 64
+        with self.assertRaisesRegex(AssetError, "Missing GLB"):
+            await self.assets.get(missing, 0)
+        (self.directory / f"{missing}.glb").symlink_to(self.directory / f"{sha}.glb")
+        with self.assertRaisesRegex(AssetError, "storage entry"):
+            await self.assets.get(missing, 0)
 
     async def test_block_round_trip_deduplication_and_document_only_movements(self):
         data = glb()

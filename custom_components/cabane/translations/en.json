@@ -4,7 +4,7 @@
     "step": {
       "user": {
         "title": "Set up Cabane",
-        "description": "Add Cabane to the sidebar and enable shared workspace storage. The native panel uses your Home Assistant session; no additional sign-in is required. Install a complete integration release containing the native frontend assets."
+        "description": "Open **Cabane** from the sidebar to draw your floor plan, view your home in 3D, and connect devices. Cabane uses your existing Home Assistant sign-in.\n\n**Save and sync**\nA workspace includes your home, drafts, and device mappings. To save it on this Home Assistant instance and sync across browsers, enable Home Assistant storage and choose **Save** in Cabane.\n\n**Shared access**\nEvery signed-in user on this instance can view, edit, and delete workspaces saved to Home Assistant.\n\n**Already using cabane.my?**\nYour homes do not appear here automatically. Import them from Home Assistant storage or a workspace backup."
       }
     },
     "abort": {

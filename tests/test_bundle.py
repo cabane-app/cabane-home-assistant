@@ -97,6 +97,7 @@ class BundleTests(unittest.TestCase):
             names = package.namelist()
             self.assertIn("__init__.py", names)
             self.assertIn("manifest.json", names)
+            self.assertEqual(package.read("brand/icon.png"), (integration / "brand/icon.png").read_bytes())
             self.assertIn("frontend/assets/font.woff2", names)
             self.assertFalse(any("__pycache__" in name or name.startswith("custom_components/") for name in names))
             install = Path(self.temp.name) / "install"

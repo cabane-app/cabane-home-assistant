@@ -22,7 +22,8 @@ def build_release(integration: Path, frontend: Path, output: Path) -> None:
             continue
         if path.is_symlink():
             raise ValueError("integration contains a symlink")
-        if path.is_file() and path.suffix in (".py", ".json"):
+        is_brand_image = relative.parts[0] == "brand" and path.suffix == ".png"
+        if path.is_file() and (path.suffix in (".py", ".json") or is_brand_image):
             payload[relative.as_posix()] = path.read_bytes()
     for required in ("__init__.py", "manifest.json", "panel.py", "config_flow.py", "strings.json", "translations/en.json"):
         if required not in payload:
