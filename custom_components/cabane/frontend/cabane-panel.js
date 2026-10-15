@@ -1,8 +1,8 @@
 import { r as e } from "./assets/rolldown-runtime-B0aSnxlc.js";
-import { A as t, B as n, Dt as r, Ei as i, Et as a, F as o, Gn as s, Hn as c, I as l, Jn as u, Jt as d, L as f, M as p, Mi as m, Ot as h, Qn as g, R as _, Rt as v, Tt as y, Ut as b, Xn as x, Xt as S, Zn as C, cr as w, h as T, in as E, j as D, ji as O, k, ki as A, kt as j, lr as M, or as N, qn as ee, qt as P, s as te, sr as ne, v as F, wt as re, yn as ie, zn as ae } from "./assets/LaserIcon-Den3PeOf.js";
-import { A as I, B as L, C as R, D as oe, E as se, F as ce, H as le, I as z, N as ue, O as de, P as fe, R as B, d as pe, f as me, h as he, j as ge, l as _e, m as ve, n as ye, o as be, p as xe, t as Se, w as Ce, y as we, z as Te } from "./assets/ShortcutDeviceIcon-TuFJJtYi.js";
+import { A as t, Ai as n, B as r, Dt as i, Et as a, F as o, Fi as s, Gn as c, Hn as l, I as u, Ii as d, Jn as f, Jt as p, L as m, M as h, Ni as g, Ot as _, Qn as v, R as y, Rt as b, Tt as x, Ut as S, Xn as C, Xt as w, Zn as T, cr as E, h as D, in as O, j as k, k as A, kt as j, lr as M, or as N, qn as ee, qt as P, s as te, sr as ne, v as F, wt as re, yn as ie, zn as ae } from "./assets/LaserIcon-DRDYMTYZ.js";
+import { A as I, B as L, C as R, D as oe, E as se, F as ce, H as le, I as z, N as ue, O as de, P as fe, R as B, d as pe, f as me, h as he, j as ge, l as _e, m as ve, n as ye, o as be, p as xe, t as Se, w as Ce, y as we, z as Te } from "./assets/ShortcutDeviceIcon-BStKqIN7.js";
 //#region node_modules/react-router/dist/development/chunk-BV7QT456.mjs
-var V = /* @__PURE__ */ e(m(), 1), Ee = (e) => {
+var V = /* @__PURE__ */ e(d(), 1), Ee = (e) => {
 	throw TypeError(e);
 }, De = (e, t, n) => t.has(e) || Ee("Cannot " + n), H = (e, t, n) => (De(e, t, "read from private field"), n ? n.call(e) : t.get(e)), U = (e, t, n) => t.has(e) ? Ee("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(e) : t.set(e, n), Oe = (e, t, n, r) => (De(e, t, "write to private field"), r ? r.call(e, n) : t.set(e, n), n), ke = /^(?:[a-z][a-z0-9+.-]*:|[\\/]{2})/i, Ae = /^[\\/]{2}/;
 function je(e, t) {
@@ -3760,7 +3760,7 @@ function Oa(e, { relative: t } = {}) {
 }
 //#endregion
 //#region apps/web/src/ApplicationErrorBoundary.tsx
-var Q = O();
+var Q = s();
 function ka() {
 	return /* @__PURE__ */ (0, Q.jsxs)("main", {
 		className: "direction-project-loading is-error application-error",
@@ -3793,7 +3793,7 @@ var ja = class extends V.Component {
 	render() {
 		return this.state.hasError ? /* @__PURE__ */ (0, Q.jsx)(ka, {}) : this.props.children;
 	}
-}, Ma = /* @__PURE__ */ e(A(), 1), Na = class extends Error {
+}, Ma = /* @__PURE__ */ e(g(), 1), Na = class extends Error {
 	constructor() {
 		super("This workspace changed on Home Assistant."), this.name = "HaWorkspaceConflictError";
 	}
@@ -3839,7 +3839,7 @@ function Ia(e) {
 //#endregion
 //#region apps/web/src/workspaces/WorkspaceDialog.tsx
 function La({ title: e, busy: t, error: n, onCancel: r, children: i }) {
-	let a = w(), o = (0, V.useRef)(null);
+	let a = E(), o = (0, V.useRef)(null);
 	return (0, V.useEffect)(() => {
 		let e = a.root.activeElement;
 		return o.current?.showModal?.(), () => e?.focus();
@@ -3885,7 +3885,7 @@ function Va(e) {
 	let t = async () => {
 		try {
 			let t = await e({ type: "cabane/assets/capabilities" });
-			if (t.version !== 1 || t.chunk_bytes !== u.chunkBytes) throw new Ra();
+			if (t.version !== 1 || t.chunk_bytes !== f.chunkBytes) throw new Ra();
 		} catch (e) {
 			throw e instanceof Ra || e && typeof e == "object" && "code" in e && e.code === "unknown_command" ? new Ra() : e;
 		}
@@ -3909,8 +3909,8 @@ function Va(e) {
 					sha256: t.sha256,
 					byte_length: t.byteLength
 				});
-				for (let r = 0; r < t.byteLength; r += u.chunkBytes) {
-					let i = t.bytes.subarray(r, r + u.chunkBytes);
+				for (let r = 0; r < t.byteLength; r += f.chunkBytes) {
+					let i = t.bytes.subarray(r, r + f.chunkBytes);
 					if ((await e({
 						type: "cabane/assets/upload",
 						upload_id: n,
@@ -3933,7 +3933,7 @@ function Va(e) {
 				try {
 					n = await r(t.sha256);
 				} catch {}
-				if (n && n.byteLength === t.byteLength && await x(n) === t.sha256) continue;
+				if (n && n.byteLength === t.byteLength && await C(n) === t.sha256) continue;
 				let a = new Uint8Array(t.byteLength);
 				for (let n = 0; n < t.byteLength;) {
 					let r = await e({
@@ -3941,16 +3941,16 @@ function Va(e) {
 						sha256: t.sha256,
 						offset: n
 					}), i = Ba(r.data);
-					if (r.byte_length !== t.byteLength || r.offset !== n || !i.length || i.length > u.chunkBytes || n + i.length > a.length) throw Error("The GLB download is incomplete. Retry synchronization.");
+					if (r.byte_length !== t.byteLength || r.offset !== n || !i.length || i.length > f.chunkBytes || n + i.length > a.length) throw Error("The GLB download is incomplete. Retry synchronization.");
 					a.set(i, n), n += i.length;
 				}
-				if (await x(a) !== t.sha256) throw Error("GLB integrity check failed. The previous home is unchanged.");
+				if (await C(a) !== t.sha256) throw Error("GLB integrity check failed. The previous home is unchanged.");
 				i.push({
 					...t,
 					bytes: a
 				});
 			}
-			await c(i);
+			await l(i);
 		}
 	};
 }
@@ -4099,10 +4099,10 @@ function Ua(e) {
 }
 //#endregion
 //#region apps/web/src/workspaces/workspace-sync-state.ts
-var Wa = (e, t) => `${e}\u0000${t}`, Ga = (e, t, n) => ee(e, "readonly", s, (e, r, i) => r(e.objectStore(s).get(Wa(t, n)), (e) => i(e ?? null))), Ka = (e, t) => ee(e, "readwrite", s, (e, n, r) => n(e.objectStore(s).put(t, Wa(t.origin, t.homeId)), () => r())), qa = (e, t, n) => ee(e, "readwrite", s, (e, r, i) => r(e.objectStore(s).delete(Wa(t, n)), () => i()));
+var Wa = (e, t) => `${e}\u0000${t}`, Ga = (e, t, n) => ee(e, "readonly", c, (e, r, i) => r(e.objectStore(c).get(Wa(t, n)), (e) => i(e ?? null))), Ka = (e, t) => ee(e, "readwrite", c, (e, n, r) => n(e.objectStore(c).put(t, Wa(t.origin, t.homeId)), () => r())), qa = (e, t, n) => ee(e, "readwrite", c, (e, r, i) => r(e.objectStore(c).delete(Wa(t, n)), () => i()));
 async function Ja(e, t) {
-	let n = E(JSON.parse(fe(e, t)));
-	return g(new TextEncoder().encode(n));
+	let n = O(JSON.parse(fe(e, t)));
+	return v(new TextEncoder().encode(n));
 }
 //#endregion
 //#region apps/web/src/workspaces/workspace-remote-transfer.ts
@@ -4116,7 +4116,7 @@ function Ya(e, t, n, r, i) {
 	if (!a || typeof a != "object" || !("format" in a) || a.format !== "cabane-workspace") throw Error("The HA workspace copy is not a private Cabane backup.");
 	let o = ce(t, ge);
 	if (r && o.record.homeId !== r) throw Error("The HA workspace copy belongs to a different workspace.");
-	if (i && h(o.homeAssistantUrl) !== h(i)) throw Error("This saved workspace belongs to a different Home Assistant. Open it from its original server.");
+	if (i && _(o.homeAssistantUrl) !== _(i)) throw Error("This saved workspace belongs to a different Home Assistant. Open it from its original server.");
 	let s = {
 		id: o.record.homeId,
 		name: o.name,
@@ -4129,9 +4129,9 @@ function Ya(e, t, n, r, i) {
 //#endregion
 //#region apps/web/src/workspaces/useWorkspaceSyncCoordinator.ts
 function Xa(e, t) {
-	let r = n(), i = (0, V.useMemo)(() => Ha(r.sendStorageMessage, ae(window.indexedDB)), [r.sendStorageMessage]);
+	let n = r(), i = (0, V.useMemo)(() => Ha(n.sendStorageMessage, ae(window.indexedDB)), [n.sendStorageMessage]);
 	return {
-		runtime: r,
+		runtime: n,
 		client: i,
 		coordinator: (0, V.useMemo)(() => Ua({
 			repository: e,
@@ -4143,19 +4143,19 @@ function Xa(e, t) {
 			},
 			fingerprint: (e) => Ja(e.metadata, e.record),
 			serialize: (e) => fe(e.metadata, e.record),
-			restore: (n, i, a) => Ya(e, n, i, a, t ?? r.origin ?? void 0)
+			restore: (r, i, a) => Ya(e, r, i, a, t ?? n.origin ?? void 0)
 		}), [
 			i,
 			e,
 			t,
-			r.origin
+			n.origin
 		])
 	};
 }
 //#endregion
 //#region apps/web/src/workspaces/WorkspaceHaLibrary.tsx
 function Za({ repository: e, onRestored: t, onBusyChange: n }) {
-	let r = _(), { runtime: i, client: a, coordinator: o } = Xa(e), [s, c] = (0, V.useState)([]), [l, u] = (0, V.useState)(null), [d, f] = (0, V.useState)(!1);
+	let r = y(), { runtime: i, client: a, coordinator: o } = Xa(e), [s, c] = (0, V.useState)([]), [l, u] = (0, V.useState)(null), [d, f] = (0, V.useState)(!1);
 	(0, V.useEffect)(() => {
 		n?.(d);
 	}, [d, n]);
@@ -4228,7 +4228,7 @@ function Za({ repository: e, onRestored: t, onBusyChange: n }) {
 	});
 }
 function Qa({ repository: e, onRestored: t, initialOrigin: n, onBusyChange: r }) {
-	let i = _(), [a, o] = (0, V.useState)(() => window.sessionStorage.getItem("cabane:ha-library-origin") ?? n ?? ""), s = i?.origin ?? h(a);
+	let i = y(), [a, o] = (0, V.useState)(() => window.sessionStorage.getItem("cabane:ha-library-origin") ?? n ?? ""), s = i?.origin ?? _(a);
 	return (0, V.useEffect)(() => {
 		s && !i && window.sessionStorage.setItem("cabane:ha-library-origin", s);
 	}, [s, i]), /* @__PURE__ */ (0, Q.jsxs)("section", {
@@ -4244,7 +4244,7 @@ function Qa({ repository: e, onRestored: t, initialOrigin: n, onBusyChange: r })
 				onChange: (e) => o(e.target.value),
 				placeholder: "Enter HTTPS address"
 			})] }),
-			s && /* @__PURE__ */ (0, Q.jsx)(l, {
+			s && /* @__PURE__ */ (0, Q.jsx)(u, {
 				homeAssistantUrl: s,
 				children: /* @__PURE__ */ (0, Q.jsx)(Za, {
 					repository: e,
@@ -4330,7 +4330,7 @@ function $a({ session: e, repository: t, onRestored: n, onBuild: r, onExplore: i
 //#endregion
 //#region apps/web/src/workspaces/workspace-open-link.ts
 var eo = (e) => /^[A-Za-z0-9_-]{1,200}$/.test(e), to = (e) => {
-	let t = h(e);
+	let t = _(e);
 	return t && (e === t || e === `${t}/`) ? t : null;
 };
 function no(e) {
@@ -4511,7 +4511,7 @@ function po({ repository: e, onOpened: t }) {
 					to: "/workspaces",
 					children: [/* @__PURE__ */ (0, Q.jsx)(R, { name: "back" }), "Workspaces"]
 				})
-			}), r ? /* @__PURE__ */ (0, Q.jsx)(l, {
+			}), r ? /* @__PURE__ */ (0, Q.jsx)(u, {
 				homeAssistantUrl: r.origin,
 				children: /* @__PURE__ */ (0, Q.jsx)(fo, {
 					repository: e,
@@ -4629,7 +4629,7 @@ function Co(e) {
 				try {
 					let o = await e.readOnboarding(), s = await e.startOnboarding(i, { ...a === void 0 ? {} : { replaceDeletedId: a } });
 					if (!s.record) throw Error(s.error ?? "Open Workspaces to recover this home.");
-					let c = k();
+					let c = A();
 					try {
 						c = t(window.localStorage, s.metadata.id).record;
 					} catch {}
@@ -4645,7 +4645,7 @@ function Co(e) {
 						}
 					}, d = !1;
 					try {
-						d = D(window.localStorage, s.metadata.id, u);
+						d = k(window.localStorage, s.metadata.id, u);
 					} catch {}
 					if (d || f("Setup progress could not be saved. Your new home is safe in Workspaces."), i === "build" && o?.destinations.build !== s.metadata.id && ve(s.metadata.id), await h(), i === "build") {
 						r.pathname !== "/build" && await n("/build");
@@ -4937,7 +4937,7 @@ function Oo({ mode: e, busy: t, error: n, onImport: r, onExport: i, onCancel: a,
 //#endregion
 //#region apps/web/src/workspaces/WorkspaceLibrary.tsx
 function ko(e) {
-	let t = _(), n = ne("cabane-icon.png"), r = X(), i = Kr(), [a, o] = (0, V.useState)(() => new URLSearchParams(r.search).get("import") === "home-assistant" ? { action: "import" } : null), [s, c] = (0, V.useState)(!1), [l, u] = (0, V.useState)(null), d = (e) => {
+	let t = y(), n = ne("cabane-icon.png"), r = X(), i = Kr(), [a, o] = (0, V.useState)(() => new URLSearchParams(r.search).get("import") === "home-assistant" ? { action: "import" } : null), [s, c] = (0, V.useState)(!1), [l, u] = (0, V.useState)(null), d = (e) => {
 		u(null), o(e);
 	}, f = async (e) => {
 		c(!0), u(null);
@@ -5067,7 +5067,7 @@ function ko(e) {
 //#endregion
 //#region apps/web/src/workspaces/workspace-weather-source.ts
 function Ao(e, t, n) {
-	let r = b(t), i = e.bindings[r] ?? {
+	let r = S(t), i = e.bindings[r] ?? {
 		draft: P(e.homeId),
 		published: P(e.homeId),
 		manualRoomIds: [],
@@ -5124,7 +5124,7 @@ function Mo(e, t, n) {
 			onError: n
 		};
 	});
-	let a = (0, V.useMemo)(() => v(le(window.indexedDB), ge), []);
+	let a = (0, V.useMemo)(() => b(le(window.indexedDB), ge), []);
 	return (0, V.useMemo)(() => {
 		let e = Promise.resolve();
 		return {
@@ -5156,7 +5156,7 @@ function Mo(e, t, n) {
 //#endregion
 //#region apps/web/src/workspaces/WorkspaceDestinations.tsx
 function No({ id: e, origin: t, intent: n, ready: r, panelReady: i }) {
-	let a = _(), [o, s] = (0, V.useState)(n === "device" ? n : null), [c, l] = (0, V.useState)("");
+	let a = y(), [o, s] = (0, V.useState)(n === "device" ? n : null), [c, l] = (0, V.useState)("");
 	(0, V.useEffect)(() => {
 		n === "device" && s(n);
 	}, [n]);
@@ -5396,7 +5396,7 @@ function Bo() {
 	return e ? /* @__PURE__ */ (0, Q.jsx)(Vo, { ...e }) : null;
 }
 function Vo({ id: e, origin: t, repository: n }) {
-	let r = X(), i = _(), a = !!(i && i.origin === t), o = Xa(n, t), s = (0, V.useContext)(Lo), c = s?.coordinator ?? o.coordinator, { runtime: l, client: u } = o, [d, f] = (0, V.useState)("checking"), p = (0, V.useRef)(0), [m, h] = (0, V.useState)(!1), [g, v] = (0, V.useState)(!1), [y, b] = (0, V.useState)(!1), [x, S] = (0, V.useState)(!1), [C, w] = (0, V.useState)(!1), [T, E] = (0, V.useState)({ kind: "off" }), [D, O] = (0, V.useState)(!1), [k, A] = (0, V.useState)(null), [j, M] = (0, V.useState)(null), N = (0, V.useCallback)(async () => {
+	let r = X(), i = y(), a = !!(i && i.origin === t), o = Xa(n, t), s = (0, V.useContext)(Lo), c = s?.coordinator ?? o.coordinator, { runtime: l, client: u } = o, [d, f] = (0, V.useState)("checking"), p = (0, V.useRef)(0), [m, h] = (0, V.useState)(!1), [g, _] = (0, V.useState)(!1), [v, b] = (0, V.useState)(!1), [x, S] = (0, V.useState)(!1), [C, w] = (0, V.useState)(!1), [T, E] = (0, V.useState)({ kind: "off" }), [D, O] = (0, V.useState)(!1), [k, A] = (0, V.useState)(null), [j, M] = (0, V.useState)(null), N = (0, V.useCallback)(async () => {
 		if (!t) return;
 		let n = await Ga(window.indexedDB, t, e);
 		w(n?.enabled ?? !1);
@@ -5414,10 +5414,10 @@ function Vo({ id: e, origin: t, repository: n }) {
 			f(a ? "ready" : n.status === "rejected" ? "error" : n.value?.cabane?.component_name === "custom" && n.value.cabane.config?._panel_custom?.name === "cabane-panel" ? "ready" : "missing");
 			try {
 				if (t.status === "rejected") throw t.reason;
-				await N(), e === p.current && v(!0);
+				await N(), e === p.current && _(!0);
 			} catch (t) {
 				if (e !== p.current) return;
-				v(!1), t instanceof Pa || A(t instanceof Error ? t.message : "Could not reach Home Assistant. Try again.");
+				_(!1), t instanceof Pa || A(t instanceof Error ? t.message : "Could not reach Home Assistant. Try again.");
 			} finally {
 				e === p.current && (h(!0), b(!1));
 			}
@@ -5437,7 +5437,7 @@ function Vo({ id: e, origin: t, repository: n }) {
 		}), () => {
 			n = !1;
 		};
-	}, [t, e]), (0, V.useEffect)(() => (h(!1), v(!1), E({ kind: "off" }), A(null), M(null), t && l.status === "connected" && P(), () => {
+	}, [t, e]), (0, V.useEffect)(() => (h(!1), _(!1), E({ kind: "off" }), A(null), M(null), t && l.status === "connected" && P(), () => {
 		p.current += 1;
 	}), [
 		t,
@@ -5483,7 +5483,7 @@ function Vo({ id: e, origin: t, repository: n }) {
 		if (n === "remote") return await re(), c.resolveConflict(e, t, n);
 		let r = await u.get(e);
 		return r?.document && await F(r.document, `${e}-before-replace.cabane`), c.resolveConflict(e, t, n, r?.version);
-	}, "Copy updated.", n === "remote"), I = no(r.search), L = C ? l.status !== "connected" || T.kind === "disconnected" || T.kind === "unavailable" ? "Sync interrupted" : T.kind === "conflict" ? "Sync needs attention" : T.kind === "synced" ? "Synced with HA" : T.kind === "pending" ? "Changes pending" : "Checking sync…" : x ? "Saved to HA · sync off" : y ? "Checking storage…" : "Local only", oe = d !== "ready" || !g ? 1 : !C || T.kind !== "synced" ? 2 : 3;
+	}, "Copy updated.", n === "remote"), I = no(r.search), L = C ? l.status !== "connected" || T.kind === "disconnected" || T.kind === "unavailable" ? "Sync interrupted" : T.kind === "conflict" ? "Sync needs attention" : T.kind === "synced" ? "Synced with HA" : T.kind === "pending" ? "Changes pending" : "Checking sync…" : x ? "Saved to HA · sync off" : v ? "Checking storage…" : "Local only", oe = d !== "ready" || !g ? 1 : !C || T.kind !== "synced" ? 2 : 3;
 	return /* @__PURE__ */ (0, Q.jsxs)("section", {
 		className: "ha-section ha-setup",
 		id: "workspace-storage",
@@ -5513,13 +5513,13 @@ function Vo({ id: e, origin: t, repository: n }) {
 					children: [/* @__PURE__ */ (0, Q.jsx)(R, { name: oe > t + 1 ? "check" : t === 0 ? "import" : t === 1 ? "refresh" : "grid" }), e]
 				}, e))
 			}),
-			l.status === "connected" ? y || !m ? /* @__PURE__ */ (0, Q.jsx)("p", {
+			l.status === "connected" ? v || !m ? /* @__PURE__ */ (0, Q.jsx)("p", {
 				role: "status",
 				children: "Checking the Cabane integration…"
 			}) : /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [
 				(d !== "ready" || !g) && /* @__PURE__ */ (0, Q.jsx)(Io, {
 					origin: t,
-					checking: y,
+					checking: v,
 					panelError: d === "error" || !!k,
 					onCheck: () => void P()
 				}),
@@ -5641,8 +5641,8 @@ function Vo({ id: e, origin: t, repository: n }) {
 }
 //#endregion
 //#region apps/web/src/workspaces/HomeAssistantPage.tsx
-function Ho({ record: e, lifecycle: t, origin: r, onChangeOrigin: i, onRecordChange: a, isDemo: s, onCreatePersonal: c }) {
-	let l = X(), u = no(l.search) === "dashboard", d = _(), f = ne("cabane-icon.png"), p = n(), m = zo(), [h, g] = (0, V.useState)(r ?? ""), [v, y] = (0, V.useState)(!r), [b, x] = (0, V.useState)(!1), [S, C] = (0, V.useState)(null), [w, T] = (0, V.useState)(null), [E, D] = (0, V.useState)(null), O = [
+function Ho({ record: e, lifecycle: t, origin: n, onChangeOrigin: i, onRecordChange: a, isDemo: s, onCreatePersonal: c }) {
+	let l = X(), u = no(l.search) === "dashboard", d = y(), f = ne("cabane-icon.png"), p = r(), m = zo(), [h, g] = (0, V.useState)(n ?? ""), [_, v] = (0, V.useState)(!n), [b, x] = (0, V.useState)(!1), [S, C] = (0, V.useState)(null), [w, T] = (0, V.useState)(null), [E, D] = (0, V.useState)(null), O = [
 		"authenticating",
 		"connecting",
 		"reconnecting"
@@ -5672,7 +5672,7 @@ function Ho({ record: e, lifecycle: t, origin: r, onChangeOrigin: i, onRecordCha
 			mode: "connect",
 			panel: "home-assistant",
 			destination: no(l.search)
-		})), y(!1);
+		})), v(!1);
 	}), M = u && k ? "details" : "div", N = u ? "details" : "div", ee = async (e) => {
 		if (!(b || O)) {
 			x(!0), C(null);
@@ -5685,12 +5685,12 @@ function Ho({ record: e, lifecycle: t, origin: r, onChangeOrigin: i, onRecordCha
 			}
 		}
 	}, P = async () => (await m?.repository.read(e.homeId))?.record ?? e, te = async () => {
-		let t = await P(), n = fe({
+		let t = await P(), r = fe({
 			name: t.draft.home.name,
-			homeAssistantUrl: r,
+			homeAssistantUrl: n,
 			hasPublished: t.publishedAt !== 0
-		}, t), i = await ae(window.indexedDB).verify(B(n));
-		Te(z(n, i), `${e.homeId}-backup.cabane`, "application/zip"), D("Backup downloaded.");
+		}, t), i = await ae(window.indexedDB).verify(B(r));
+		Te(z(r, i), `${e.homeId}-backup.cabane`, "application/zip"), D("Backup downloaded.");
 	}, F = async (e) => {
 		let n = await P(), r = se(n, (await L(e)).json, ge);
 		if (!window.confirm("Replace this home's draft with the backup? Your current draft will be downloaded first. The published home stays unchanged until you save in the editor.")) return;
@@ -5736,7 +5736,7 @@ function Ho({ record: e, lifecycle: t, origin: r, onChangeOrigin: i, onRecordCha
 					children: [u && k && /* @__PURE__ */ (0, Q.jsxs)("summary", { children: [
 						/* @__PURE__ */ (0, Q.jsx)(R, { name: "check" }),
 						"Connected to ",
-						r ? new URL(r).host : "Home Assistant"
+						n ? new URL(n).host : "Home Assistant"
 					] }), /* @__PURE__ */ (0, Q.jsxs)("section", {
 						className: "ha-section",
 						"aria-labelledby": "ha-connection-title",
@@ -5749,7 +5749,7 @@ function Ho({ record: e, lifecycle: t, origin: r, onChangeOrigin: i, onRecordCha
 								}), /* @__PURE__ */ (0, Q.jsxs)("span", {
 									role: "status",
 									className: `ha-status${k ? " is-connected" : ""}`,
-									children: [/* @__PURE__ */ (0, Q.jsx)("i", {}), k ? "Connected" : O ? "Connecting…" : r ? "Disconnected" : "Not connected"]
+									children: [/* @__PURE__ */ (0, Q.jsx)("i", {}), k ? "Connected" : O ? "Connecting…" : n ? "Disconnected" : "Not connected"]
 								})]
 							}),
 							d ? /* @__PURE__ */ (0, Q.jsxs)("div", {
@@ -5760,29 +5760,29 @@ function Ho({ record: e, lifecycle: t, origin: r, onChangeOrigin: i, onRecordCha
 										className: "ha-address",
 										children: d.origin
 									}),
-									r && r !== d.origin && /* @__PURE__ */ (0, Q.jsxs)("p", {
+									n && n !== d.origin && /* @__PURE__ */ (0, Q.jsxs)("p", {
 										role: "alert",
 										children: [
 											"This workspace uses a different Home Assistant: ",
-											r,
+											n,
 											". Select this instance explicitly; its mappings remain separate."
 										]
 									}),
 									/* @__PURE__ */ (0, Q.jsxs)("div", {
 										className: "ha-actions",
 										children: [
-											r !== d.origin && /* @__PURE__ */ (0, Q.jsx)("button", {
+											n !== d.origin && /* @__PURE__ */ (0, Q.jsx)("button", {
 												className: "ha-primary",
 												disabled: b,
 												onClick: () => void A(() => i(d.origin)),
 												children: "Use this Home Assistant"
 											}),
-											r === d.origin && ["error", "disconnected"].includes(p.status) && /* @__PURE__ */ (0, Q.jsx)("button", {
+											n === d.origin && ["error", "disconnected"].includes(p.status) && /* @__PURE__ */ (0, Q.jsx)("button", {
 												disabled: b,
 												onClick: p.retry,
 												children: "Retry connection"
 											}),
-											r && /* @__PURE__ */ (0, Q.jsx)("button", {
+											n && /* @__PURE__ */ (0, Q.jsx)("button", {
 												disabled: b,
 												onClick: () => void A(async () => {
 													await i(null), await p.disconnect();
@@ -5796,7 +5796,7 @@ function Ho({ record: e, lifecycle: t, origin: r, onChangeOrigin: i, onRecordCha
 										children: "Disconnecting this workspace keeps you signed in to Home Assistant."
 									})
 								]
-							}) : v ? /* @__PURE__ */ (0, Q.jsxs)("form", {
+							}) : _ ? /* @__PURE__ */ (0, Q.jsxs)("form", {
 								noValidate: !0,
 								onSubmit: (e) => {
 									if (e.preventDefault(), b || O) return;
@@ -5832,11 +5832,11 @@ function Ho({ record: e, lifecycle: t, origin: r, onChangeOrigin: i, onRecordCha
 												disabled: b || O,
 												children: [b ? "Preparing sign-in…" : O ? "Connecting…" : "Connect", /* @__PURE__ */ (0, Q.jsx)(R, { name: "external" })]
 											}),
-											r && /* @__PURE__ */ (0, Q.jsx)("button", {
+											n && /* @__PURE__ */ (0, Q.jsx)("button", {
 												type: "button",
 												disabled: b,
 												onClick: () => {
-													y(!1), g(r), C(null);
+													v(!1), g(n), C(null);
 												},
 												children: "Cancel"
 											})
@@ -5852,25 +5852,25 @@ function Ho({ record: e, lifecycle: t, origin: r, onChangeOrigin: i, onRecordCha
 								className: "ha-connection-row",
 								children: [/* @__PURE__ */ (0, Q.jsx)("p", {
 									className: "ha-address",
-									children: r
+									children: n
 								}), /* @__PURE__ */ (0, Q.jsxs)("div", {
 									className: "ha-actions",
 									children: [/* @__PURE__ */ (0, Q.jsx)("button", {
 										disabled: b || O,
 										onClick: () => {
-											y(!0), C(null);
+											v(!0), C(null);
 										},
 										children: "Change URL"
 									}), k ? /* @__PURE__ */ (0, Q.jsx)("button", {
 										disabled: b,
 										onClick: () => void A(async () => {
-											await p.disconnect(), await i(null), g(""), y(!0);
+											await p.disconnect(), await i(null), g(""), v(!0);
 										}),
 										children: "Disconnect"
 									}) : /* @__PURE__ */ (0, Q.jsx)("button", {
 										className: "ha-primary",
 										disabled: b || O,
-										onClick: () => void ee(r),
+										onClick: () => void ee(n),
 										children: b ? "Preparing sign-in…" : O ? "Connecting…" : "Reconnect"
 									})]
 								})]
@@ -5959,7 +5959,7 @@ function Ho({ record: e, lifecycle: t, origin: r, onChangeOrigin: i, onRecordCha
 }
 //#endregion
 //#region apps/web/src/RoutedHomeEditor.tsx
-var Uo = (0, V.lazy)(() => import("./assets/HomeEditor-BsXkNArE.js").then((e) => ({ default: e.HomeEditor })));
+var Uo = (0, V.lazy)(() => import("./assets/HomeEditor-kfnE-Loy.js").then((e) => ({ default: e.HomeEditor })));
 function Wo({ onClose: e, ...t }) {
 	let n = X(), r = Kr(), i = (0, V.useMemo)(() => ({
 		...n.state?.editorRequest,
@@ -6134,16 +6134,16 @@ function Yo({ workspaceId: e, demoWorkspaceId: t }) {
 }
 //#endregion
 //#region apps/web/src/ConnectedProduct.tsx
-function Xo({ record: e, lifecycle: t, homeAssistantUrl: n, onHomeAssistantUrlChange: r, recoveryMessage: a, recoveryRaw: o, initialRequest: s, onboarding: c, demoWorkspaceId: l }) {
+function Xo({ record: e, lifecycle: t, homeAssistantUrl: r, onHomeAssistantUrlChange: i, recoveryMessage: a, recoveryRaw: o, initialRequest: s, onboarding: c, demoWorkspaceId: l }) {
 	let [u, d] = (0, V.useState)(e), f = (0, V.useMemo)(() => u.publishedAt === 0 ? null : oe(u.published), [u.published, u.publishedAt]), p = (0, V.useMemo)(() => ie(u.published, ge).deviceModels, [u.published]), [m, h] = (0, V.useState)({
 		message: a,
 		raw: o
-	}), [g, v] = (0, V.useState)(null), y = Mo(u, d, v), [x, S] = (0, V.useState)(!1), C = Kr(), w = X(), E = _(), [D] = (0, V.useState)(() => s ?? (E ? null : pe(e.homeId))), O = (0, V.useEffectEvent)(() => {
-		if (D) {
+	}), [g, _] = (0, V.useState)(null), v = Mo(u, d, _), [b, x] = (0, V.useState)(!1), C = Kr(), w = X(), T = y(), [E] = (0, V.useState)(() => s ?? (T ? null : pe(e.homeId))), O = (0, V.useEffectEvent)(() => {
+		if (E) {
 			let e = new URLSearchParams(w.search);
-			D.destination && e.set("action", D.destination), C(`${lo(D, u.homeId)}${e.size ? `?${e}` : ""}`, {
+			E.destination && e.set("action", E.destination), C(`${lo(E, u.homeId)}${e.size ? `?${e}` : ""}`, {
 				replace: !0,
-				state: { editorRequest: D }
+				state: { editorRequest: E }
 			}), window.sessionStorage.removeItem(_e);
 		}
 	});
@@ -6151,51 +6151,51 @@ function Xo({ record: e, lifecycle: t, homeAssistantUrl: n, onHomeAssistantUrlCh
 		O();
 	}, []);
 	let k = async (e) => {
-		await y.flush();
+		await v.flush();
 		let t = (e.mode === "construct" || e.mode === "furnish") && !e.panel && qo() && !Jo() ? oo(u.homeId, e.mode) : lo(e, u.homeId);
 		C(t, { state: { editorRequest: e } });
-	}, A = n ? b(n) : null, j = (0, V.useMemo)(() => ({
+	}, A = r ? S(r) : null, j = (0, V.useMemo)(() => ({
 		profile: (A ? u.bindings[A]?.published : void 0) ?? P(u.homeId),
-		saveWeatherSource: A ? (e) => y.saveWeatherSource(A, e) : void 0,
+		saveWeatherSource: A ? (e) => v.saveWeatherSource(A, e) : void 0,
 		loaded: !0,
 		hasStoredProfile: !!(A && u.bindings[A]),
 		save: () => void 0
 	}), [
 		A,
 		u,
-		y
+		v
 	]), M = /* @__PURE__ */ (0, Q.jsx)(Wo, {
 		initialRecord: u,
 		lifecycle: t,
 		recoveryMessage: m.message,
 		recoveryRaw: m.raw,
-		homeAssistantUrl: n,
+		homeAssistantUrl: r,
 		onPrepareOrigin: async (e, t) => {
-			let n = await r(t, e) ?? e;
+			let n = await i(t, e) ?? e;
 			return d(n), n;
 		},
 		onClose: (e, t) => {
 			h({
 				message: void 0,
 				raw: void 0
-			}), d(e), S(t === "applied"), window.sessionStorage.removeItem(_e);
+			}), d(e), x(t === "applied"), window.sessionStorage.removeItem(_e);
 		}
 	}), N = u.publishedAt === 0 ? /* @__PURE__ */ (0, Q.jsx)(ki, {
 		to: lo({ mode: "construct" }, u.homeId),
 		replace: !0
-	}) : /* @__PURE__ */ (0, Q.jsx)(i, {
-		storage: y.storage,
+	}) : /* @__PURE__ */ (0, Q.jsx)(n, {
+		storage: v.storage,
 		children: /* @__PURE__ */ (0, Q.jsx)(ye, { children: /* @__PURE__ */ (0, Q.jsx)(te, {
 			manifest: f,
 			architectureModels: be,
 			onboarding: c,
 			walkTools: xe,
 			deviceModels: p,
-			homeAssistantUrl: n,
+			homeAssistantUrl: r,
 			onHomeAssistantUrlChange: (e) => {
-				v(null), Promise.resolve().then(() => r(e, u)).then((e) => {
+				_(null), Promise.resolve().then(() => i(e, u)).then((e) => {
 					e && d(e);
-				}).catch((e) => v(e instanceof Error ? e.message : "Connection settings could not be saved."));
+				}).catch((e) => _(e instanceof Error ? e.message : "Connection settings could not be saved."));
 			},
 			onHomeAssistantSettings: () => void C(`${$(u.homeId)}/home-assistant`),
 			onWorkspaces: () => void C("/workspaces"),
@@ -6204,7 +6204,7 @@ function Xo({ record: e, lifecycle: t, homeAssistantUrl: n, onHomeAssistantUrlCh
 				models: p
 			}),
 			bindingManager: j,
-			constructionApplied: x,
+			constructionApplied: b,
 			onEditHome: (e = "construct") => {
 				k({ mode: e });
 			},
@@ -6223,17 +6223,17 @@ function Xo({ record: e, lifecycle: t, homeAssistantUrl: n, onHomeAssistantUrlCh
 			},
 			onExportBrowserData: () => Ce(fe({
 				name: u.draft.home.name,
-				homeAssistantUrl: n,
+				homeAssistantUrl: r,
 				hasPublished: u.publishedAt !== 0
 			}, u), `${u.homeId}-private-workspace.json`)
 		}) })
 	});
-	return /* @__PURE__ */ (0, Q.jsxs)(T, { children: [g && /* @__PURE__ */ (0, Q.jsxs)("div", {
+	return /* @__PURE__ */ (0, Q.jsxs)(D, { children: [g && /* @__PURE__ */ (0, Q.jsxs)("div", {
 		className: "workspace-connection-error",
 		role: "alert",
 		children: [g, /* @__PURE__ */ (0, Q.jsx)("button", {
 			type: "button",
-			onClick: () => v(null),
+			onClick: () => _(null),
 			children: "Dismiss"
 		})]
 	}), /* @__PURE__ */ (0, Q.jsxs)(Mi, { children: [
@@ -6254,9 +6254,9 @@ function Xo({ record: e, lifecycle: t, homeAssistantUrl: n, onHomeAssistantUrlCh
 			element: /* @__PURE__ */ (0, Q.jsx)(Ho, {
 				record: u,
 				lifecycle: t,
-				origin: n,
+				origin: r,
 				onChangeOrigin: async (e) => {
-					let t = await r(e, u);
+					let t = await i(e, u);
 					t && d(t);
 				},
 				onRecordChange: d,
@@ -6299,7 +6299,7 @@ function Zo({ record: e, id: t }) {
 	return (0, V.useEffect)(() => {
 		let t = !0;
 		r(!1);
-		let n = C([e.draft, e.published]);
+		let n = T([e.draft, e.published]);
 		return n.length && ae(window.indexedDB).verify(n).catch(() => {
 			t && r(!0);
 		}), () => {
@@ -6331,7 +6331,7 @@ function Zo({ record: e, id: t }) {
 //#endregion
 //#region apps/web/src/workspaces/WorkspaceHost.tsx
 function Qo({ id: e, repository: t, onboarding: n, demoWorkspaceId: r }) {
-	let i = X(), a = Kr(), o = (0, V.useCallback)((t) => yo(e, t), [e]), s = n.state?.demoWorkspaceId === e, [c] = (0, V.useState)(() => de(window.indexedDB, e)), [u, d] = (0, V.useState)(null), [f, p] = (0, V.useState)(null);
+	let i = X(), a = Kr(), o = (0, V.useCallback)((t) => yo(e, t), [e]), s = n.state?.demoWorkspaceId === e, [c] = (0, V.useState)(() => de(window.indexedDB, e)), [l, d] = (0, V.useState)(null), [f, p] = (0, V.useState)(null);
 	return (0, V.useEffect)(() => {
 		let n = !0;
 		return t.read(e).then(async (t) => {
@@ -6365,7 +6365,7 @@ function Qo({ id: e, repository: t, onboarding: n, demoWorkspaceId: r }) {
 	]), (0, V.useEffect)(() => {
 		let n = !0, r = () => {
 			t.read(e).then((e) => {
-				n && (e ? u && e.metadata.homeAssistantUrl !== u.metadata.homeAssistantUrl && p("This workspace's connection changed in another tab. Reopen it from Workspaces.") : p("This workspace was deleted in another tab."));
+				n && (e ? l && e.metadata.homeAssistantUrl !== l.metadata.homeAssistantUrl && p("This workspace's connection changed in another tab. Reopen it from Workspaces.") : p("This workspace was deleted in another tab."));
 			}).catch(() => {
 				n && p("Could not verify this workspace. Reopen it from Workspaces.");
 			});
@@ -6376,7 +6376,7 @@ function Qo({ id: e, repository: t, onboarding: n, demoWorkspaceId: r }) {
 	}, [
 		e,
 		t,
-		u
+		l
 	]), f ? /* @__PURE__ */ (0, Q.jsxs)("main", {
 		className: "direction-project-loading is-error",
 		children: [
@@ -6391,18 +6391,18 @@ function Qo({ id: e, repository: t, onboarding: n, demoWorkspaceId: r }) {
 				children: "Workspaces"
 			})
 		]
-	}) : u ? /* @__PURE__ */ (0, Q.jsx)(F.Provider, {
+	}) : l ? /* @__PURE__ */ (0, Q.jsx)(F.Provider, {
 		value: o,
-		children: /* @__PURE__ */ (0, Q.jsx)(l, {
+		children: /* @__PURE__ */ (0, Q.jsx)(u, {
 			hostSession: s ? null : void 0,
-			homeAssistantUrl: s ? null : u.metadata.homeAssistantUrl,
+			homeAssistantUrl: s ? null : l.metadata.homeAssistantUrl,
 			children: /* @__PURE__ */ (0, Q.jsxs)(Ro, {
 				id: e,
-				origin: u.metadata.homeAssistantUrl,
+				origin: l.metadata.homeAssistantUrl,
 				repository: t,
 				hidden: s,
 				children: [/* @__PURE__ */ (0, Q.jsx)(Zo, {
-					record: u.record,
+					record: l.record,
 					id: e
 				}), /* @__PURE__ */ (0, Q.jsx)(Xo, {
 					demoWorkspaceId: r,
@@ -6418,13 +6418,13 @@ function Qo({ id: e, repository: t, onboarding: n, demoWorkspaceId: r }) {
 						openWelcome: () => void a("/welcome"),
 						links: xo
 					},
-					record: u.record,
+					record: l.record,
 					lifecycle: c,
-					recoveryMessage: u.recoveryMessage,
-					recoveryRaw: u.recoveryRaw,
-					homeAssistantUrl: u.metadata.homeAssistantUrl,
+					recoveryMessage: l.recoveryMessage,
+					recoveryRaw: l.recoveryRaw,
+					homeAssistantUrl: l.metadata.homeAssistantUrl,
 					onHomeAssistantUrlChange: async (n, r) => {
-						let i = await t.setConnection(e, (r ?? u.record).revision, n);
+						let i = await t.setConnection(e, (r ?? l.record).revision, n);
 						if (!i.record) throw Error("Could not save the connection.");
 						return d((e) => e && {
 							...e,
@@ -6467,22 +6467,22 @@ function $o({ onboarding: e }) {
 //#region apps/web/src/workspaces/migrate-single-home-storage.ts
 var es = "cabane:ha-url:v1", ts = "cabane:ha-auth:v1";
 function ns(e) {
-	return h(e.getItem(es));
+	return _(e.getItem(es));
 }
 async function rs(e, t, n) {
 	if (await e.migrationDone()) return;
-	let i = await e.read(t);
-	if (i?.error) return;
+	let r = await e.read(t);
+	if (r?.error) return;
 	let a = ns(n);
-	i?.record && a && !i.metadata.homeAssistantUrl && (i = await e.setConnection(t, i.record.revision, a)), i?.record && a && await I(i.record, a);
+	r?.record && a && !r.metadata.homeAssistantUrl && (r = await e.setConnection(t, r.record.revision, a)), r?.record && a && await I(r.record, a);
 	let o = n.getItem(ts);
 	if (o) {
-		let e = JSON.parse(o), t = h(e.hassUrl);
+		let e = JSON.parse(o), t = _(e.hassUrl);
 		if (!t || !e.clientId) throw Error("The saved Home Assistant sign-in needs recovery.");
-		let i = y(t, e.clientId);
-		if (n.getItem(i) === null && n.setItem(i, o), !r(n, t, e.clientId)) throw Error("Could not preserve the saved Home Assistant sign-in.");
+		let r = x(t, e.clientId);
+		if (n.getItem(r) === null && n.setItem(r, o), !i(n, t, e.clientId)) throw Error("Could not preserve the saved Home Assistant sign-in.");
 	}
-	n.removeItem(ts), n.removeItem(es), i?.record && a && (n.removeItem(S(a, t)), n.removeItem(d(a, t))), await e.finishMigration();
+	n.removeItem(ts), n.removeItem(es), r?.record && a && (n.removeItem(w(a, t)), n.removeItem(p(a, t))), await e.finishMigration();
 }
 //#endregion
 //#region apps/web/src/workspaces/initialize-workspaces.ts
@@ -6514,35 +6514,35 @@ async function is(e, t, { skipLegacyMigration: n = !1 } = {}) {
 //#endregion
 //#region apps/web/src/workspaces/WorkspaceApplication.tsx
 function as() {
-	let e = X(), t = _(), n = Kr(), [r, i] = (0, V.useState)(null);
+	let e = X(), t = y(), n = Kr(), [r, i] = (0, V.useState)(null);
 	(0, V.useEffect)(() => {
 		e.pathname !== "/" && i(null);
 	}, [e.pathname]);
-	let [a, o] = (0, V.useState)(null), s = Co(a), [c, l] = (0, V.useState)(null), [u, d] = (0, V.useState)(null), [f, m] = (0, V.useState)(), [h] = (0, V.useState)(() => !!t), [g] = (0, V.useState)(() => t ? null : pe());
+	let [a, o] = (0, V.useState)(null), s = Co(a), [c, l] = (0, V.useState)(null), [u, d] = (0, V.useState)(null), [f, p] = (0, V.useState)(), [m] = (0, V.useState)(() => !!t), [g] = (0, V.useState)(() => t ? null : pe());
 	(0, V.useEffect)(() => {
 		let e = !0;
-		return is(window.indexedDB, window.localStorage, { skipLegacyMigration: h }).then(async (t) => {
+		return is(window.indexedDB, window.localStorage, { skipLegacyMigration: m }).then(async (t) => {
 			let n = await t.repository.list();
-			e && (o(t.repository), l(n), m(t.migrationError));
+			e && (o(t.repository), l(n), p(t.migrationError));
 		}).catch((t) => {
 			e && d(t instanceof Error ? t.message : "Browser storage is unavailable.");
 		}), () => {
 			e = !1;
 		};
-	}, [h]);
-	let v = (0, V.useCallback)(async () => {
+	}, [m]);
+	let _ = (0, V.useCallback)(async () => {
 		a && l(await a.list());
 	}, [a]);
 	(0, V.useEffect)(() => {
 		if (e.pathname !== "/" && e.pathname !== "/workspaces") return;
 		let t = () => {
-			v().catch((e) => d(String(e)));
+			_().catch((e) => d(String(e)));
 		};
 		return t(), window.addEventListener("focus", t), () => window.removeEventListener("focus", t);
-	}, [v, e.pathname]);
-	let y = (0, V.useCallback)(async (e) => {
-		await v(), await n($(e), { replace: !0 });
-	}, [v, n]);
+	}, [_, e.pathname]);
+	let v = (0, V.useCallback)(async (e) => {
+		await _(), await n($(e), { replace: !0 });
+	}, [_, n]);
 	if (u) return /* @__PURE__ */ (0, Q.jsxs)("main", {
 		className: "direction-project-loading is-error",
 		children: [
@@ -6560,7 +6560,7 @@ function as() {
 	});
 	if (e.pathname.startsWith("/open/")) return /* @__PURE__ */ (0, Q.jsx)(po, {
 		repository: a,
-		onOpened: y
+		onOpened: v
 	});
 	let b = !t && e.pathname !== "/workspaces" && new URLSearchParams(e.search).has("auth_callback"), x = b ? g : null;
 	if (b) {
@@ -6593,7 +6593,7 @@ function as() {
 			session: t,
 			repository: a,
 			onRestored: async (e) => {
-				i($(e)), await v(), await s.dismiss("welcome");
+				i($(e)), await _(), await s.dismiss("welcome");
 			},
 			onBuild: async () => {
 				i("/build");
@@ -6664,11 +6664,11 @@ function as() {
 		let t = c.find((t) => t.metadata.id === e);
 		if (!t) throw Error("Workspace no longer exists. Refresh the library.");
 		return t;
-	}, D = (e) => {
+	}, E = (e) => {
 		let t = T(e);
 		if (!t.record) throw Error(t.error ?? "This home needs recovery.");
 		return t.record;
-	}, O = async (e) => {
+	}, D = async (e) => {
 		await n($(e));
 	};
 	return /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [f && /* @__PURE__ */ (0, Q.jsxs)("p", {
@@ -6681,33 +6681,33 @@ function as() {
 			await n(`${$(e)}/home-assistant${t ? `?action=${t}` : ""}`);
 		},
 		entries: c,
-		onOpen: O,
-		onRecover: O,
+		onOpen: D,
+		onRecover: D,
 		onCreate: async (e) => {
 			let t = await a.createBlank(e);
-			ve(t.metadata.id), await v(), await O(t.metadata.id);
+			ve(t.metadata.id), await _(), await D(t.metadata.id);
 		},
 		onRename: async (e, t) => {
-			await a.rename(e, D(e).revision, t), await v();
+			await a.rename(e, E(e).revision, t), await _();
 		},
 		onDuplicate: async (e, t) => {
-			await a.duplicate(e, D(e).revision, t), await v();
+			await a.duplicate(e, E(e).revision, t), await _();
 		},
 		onDelete: async (e) => {
 			let t = T(e), n = await a.readRaw(e);
 			if (t.record && (await a.read(e))?.record?.revision !== t.record.revision) throw Error("This workspace changed. Refresh before deleting it.");
 			await a.delete(e, n), await we(e), bo(e), he(e);
 			try {
-				window.localStorage.removeItem(p(e));
+				window.localStorage.removeItem(h(e));
 			} catch {}
-			await v();
+			await _();
 		},
 		onImport: async (e) => {
 			let t = ce(e, ge), n = await a.create(t.record, t);
-			await v(), await O(n.metadata.id);
+			await _(), await D(n.metadata.id);
 		},
 		onExport: async (e, t) => {
-			let n = T(e), r = D(e), i = t ? fe(n.metadata, r) : E(r.draft), a = await ae(window.indexedDB).verify(B(i));
+			let n = T(e), r = E(e), i = t ? fe(n.metadata, r) : O(r.draft), a = await ae(window.indexedDB).verify(B(i));
 			Te(z(i, a), `${e}-${t ? "backup" : "project"}.cabane`, "application/zip");
 		},
 		onExportRaw: async (e) => {
@@ -6718,7 +6718,7 @@ function as() {
 		remoteImport: /* @__PURE__ */ (0, Q.jsx)(Qa, {
 			repository: a,
 			onRestored: async (e) => {
-				await v(), await O(e);
+				await _(), await D(e);
 			},
 			initialOrigin: c.find((e) => e.metadata.homeAssistantUrl)?.metadata.homeAssistantUrl ?? null
 		})
@@ -6831,7 +6831,7 @@ customElements.get("cabane-panel") || customElements.define("cabane-panel", cs({
 			assetBaseUrl: ls
 		}, s = (e) => i.render(/* @__PURE__ */ (0, Q.jsx)(V.StrictMode, { children: /* @__PURE__ */ (0, Q.jsx)(ja, { children: /* @__PURE__ */ (0, Q.jsx)(N, {
 			environment: o,
-			children: /* @__PURE__ */ (0, Q.jsx)(f, {
+			children: /* @__PURE__ */ (0, Q.jsx)(m, {
 				session: e,
 				children: /* @__PURE__ */ (0, Q.jsx)(Ti, { router: a })
 			})
