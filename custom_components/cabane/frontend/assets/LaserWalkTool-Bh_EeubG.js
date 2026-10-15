@@ -1,5 +1,5 @@
 import { r as e } from "./rolldown-runtime-B0aSnxlc.js";
-import { $n as t, An as n, Br as r, Cr as i, Di as a, Dr as o, Ei as s, En as c, Fr as l, Gr as u, Hr as d, Ir as f, Lr as p, Mr as m, Nr as h, Qn as g, Qr as _, Si as v, Tr as y, Vr as b, Xn as ee, Xr as x, Yr as S, Zr as C, er as w, ir as T, jr as te, n as E, rr as D, t as ne, vr as re, yr as O, yt as ie, zr as k } from "./LaserIcon-DzceArqg.js";
+import { Ar as t, Br as n, Cr as r, Di as i, Fn as a, Gr as o, Hr as s, Ir as c, Kr as l, Lr as u, Mi as d, Mr as f, Or as p, Rr as m, St as h, Vr as g, Wr as _, Xr as v, ar as y, cr as b, ei as x, ir as S, ji as ee, jn as C, lr as te, n as w, ni as T, qr as E, ri as ne, rr as re, t as D, ti as O, tr as k, wr as ie } from "./LaserIcon-Den3PeOf.js";
 //#region packages/engine/src/walk-tools/raycast-walk-scene.ts
 function A(e, t) {
 	let n = e.intersectObjects(t.children, !0).find((e) => {
@@ -17,12 +17,12 @@ function A(e, t) {
 }
 //#endregion
 //#region packages/walk-laser/src/portals/portal-contract.ts
-var j = /* @__PURE__ */ e(a(), 1), M = .58, N = 1.1, P = 1.18, ae = .72, F = (e) => e === "blue" ? "gold" : "blue", I = {
+var j = /* @__PURE__ */ e(d(), 1), M = .58, N = 1.1, P = 1.18, ae = .72, F = (e) => e === "blue" ? "gold" : "blue", I = {
 	blue: "#42cfff",
 	gold: "#efa632"
-}, L = s();
+}, L = ee();
 function R({ veil: e, iris: t }) {
-	return /* @__PURE__ */ (0, L.jsx)(n, {
+	return /* @__PURE__ */ (0, L.jsx)(a, {
 		fullscreen: !0,
 		calculatePosition: (e, t, n) => [n.width / 2, n.height / 2],
 		zIndexRange: [20, 0],
@@ -40,52 +40,52 @@ function R({ veil: e, iris: t }) {
 }
 //#endregion
 //#region packages/walk-laser/src/portals/usePortalAppearance.ts
-function z(e, n, r = !1, i) {
-	let a = (0, j.useRef)(null), o = (0, j.useRef)(null), s = (0, j.useRef)(0), c = (0, j.useRef)(!1);
+function z(e, t, n = !1, r) {
+	let i = (0, j.useRef)(null), a = (0, j.useRef)(null), o = (0, j.useRef)(0), s = (0, j.useRef)(!1);
 	return (0, j.useLayoutEffect)(() => {
-		s.current = 0, c.current = !1, a.current?.scale.setScalar(r || n ? 1 : 0), o.current && (o.current.visible = !1);
+		o.current = 0, s.current = !1, i.current?.scale.setScalar(n || t ? 1 : 0), a.current && (a.current.visible = !1);
 	}, [
 		e,
-		n,
-		r
-	]), t((e, t) => {
-		if (s.current += t, r) {
-			let e = n ? .12 : .4, t = Math.min(1, s.current / e), r = n ? 1 : (1 - t ** 3) * (1 + .12 * Math.sin(t * Math.PI));
-			a.current?.scale.setScalar(Math.max(0, r)), o.current && (o.current.visible = !n && t < 1, o.current.scale.setScalar(1.3 - t * .5), o.current.material.opacity = .65 * (1 - t)), t === 1 && !c.current && (c.current = !0, i?.());
+		t,
+		n
+	]), S((e, c) => {
+		if (o.current += c, n) {
+			let e = t ? .12 : .4, n = Math.min(1, o.current / e), c = t ? 1 : (1 - n ** 3) * (1 + .12 * Math.sin(n * Math.PI));
+			i.current?.scale.setScalar(Math.max(0, c)), a.current && (a.current.visible = !t && n < 1, a.current.scale.setScalar(1.3 - n * .5), a.current.material.opacity = .65 * (1 - n)), n === 1 && !s.current && (s.current = !0, r?.());
 			return;
 		}
-		let l = Math.min(1, s.current / .55) - 1, u = 1 + 2.4 * l ** 3 + 1.4 * l ** 2;
-		a.current?.scale.setScalar(n ? 1 : Math.max(0, u)), o.current && (o.current.visible = !n && s.current < .8, o.current.scale.setScalar(.7 + Math.min(1, s.current / .8) * .75), o.current.material.opacity = .7 * Math.max(0, 1 - s.current / .8) ** 2);
+		let l = Math.min(1, o.current / .55) - 1, u = 1 + 2.4 * l ** 3 + 1.4 * l ** 2;
+		i.current?.scale.setScalar(t ? 1 : Math.max(0, u)), a.current && (a.current.visible = !t && o.current < .8, a.current.scale.setScalar(.7 + Math.min(1, o.current / .8) * .75), a.current.material.opacity = .7 * Math.max(0, 1 - o.current / .8) ** 2);
 	}), {
-		opening: a,
-		ripple: o
+		opening: i,
+		ripple: a
 	};
 }
 //#endregion
 //#region packages/walk-laser/src/portals/portal-view-camera.ts
 function B() {
-	let e = new f(), t = new m(), n = new m(), r = new m(), i = new m().makeRotationY(Math.PI), a = new x(1, 1, 1), o = new x(), s = new x(), c = new y(), l = new m(), d = new u(new x(), N * 1.15), h = new p(), g = new C(), _ = new C();
+	let e = new g(), n = new u(), r = new u(), i = new u(), a = new u().makeRotationY(Math.PI), o = new O(1, 1, 1), c = new O(), l = new O(), d = new t(), f = new u(), p = new v(new O(), N * 1.15), m = new s(), h = new T(), _ = new T();
 	return {
 		camera: e,
-		update(u, f, p) {
-			if (!u.isPerspectiveCamera || (u.updateWorldMatrix(!0, !1), o.setFromMatrixPosition(u.matrixWorld), s.subVectors(o, f.center).dot(f.normal) <= .01) || (l.multiplyMatrices(u.projectionMatrix, u.matrixWorldInverse), c.setFromProjectionMatrix(l), d.center.copy(f.center), !c.intersectsSphere(d))) return !1;
-			t.compose(f.center, f.rotation, a), n.compose(p.center, p.rotation, a), r.copy(n).multiply(i).multiply(t.invert()).multiply(u.matrixWorld), r.decompose(e.position, e.quaternion, a), a.set(1, 1, 1), e.near = u.near, e.far = u.far, e.layers.mask = u.layers.mask, e.updateMatrixWorld(!0), e.projectionMatrix.copy(u.projectionMatrix), h.setFromNormalAndCoplanarPoint(p.normal, p.center).applyMatrix4(e.matrixWorldInverse), g.set(h.normal.x, h.normal.y, h.normal.z, h.constant);
-			let m = e.projectionMatrix.elements;
-			_.set((Math.sign(g.x) + m[8]) / m[0], (Math.sign(g.y) + m[9]) / m[5], -1, (1 + m[10]) / m[14]);
-			let v = g.dot(_);
-			return v <= 1e-6 ? !1 : (g.multiplyScalar(2 / v), m[2] = g.x, m[6] = g.y, m[10] = g.z + 1, m[14] = g.w, e.projectionMatrixInverse.copy(e.projectionMatrix).invert(), !0);
+		update(t, s, u) {
+			if (!t.isPerspectiveCamera || (t.updateWorldMatrix(!0, !1), c.setFromMatrixPosition(t.matrixWorld), l.subVectors(c, s.center).dot(s.normal) <= .01) || (f.multiplyMatrices(t.projectionMatrix, t.matrixWorldInverse), d.setFromProjectionMatrix(f), p.center.copy(s.center), !d.intersectsSphere(p))) return !1;
+			n.compose(s.center, s.rotation, o), r.compose(u.center, u.rotation, o), i.copy(r).multiply(a).multiply(n.invert()).multiply(t.matrixWorld), i.decompose(e.position, e.quaternion, o), o.set(1, 1, 1), e.near = t.near, e.far = t.far, e.layers.mask = t.layers.mask, e.updateMatrixWorld(!0), e.projectionMatrix.copy(t.projectionMatrix), m.setFromNormalAndCoplanarPoint(u.normal, u.center).applyMatrix4(e.matrixWorldInverse), h.set(m.normal.x, m.normal.y, m.normal.z, m.constant);
+			let g = e.projectionMatrix.elements;
+			_.set((Math.sign(h.x) + g[8]) / g[0], (Math.sign(h.y) + g[9]) / g[5], -1, (1 + g[10]) / g[14]);
+			let v = h.dot(_);
+			return v <= 1e-6 ? !1 : (h.multiplyScalar(2 / v), g[2] = h.x, g[6] = h.y, g[10] = h.z + 1, g[14] = h.w, e.projectionMatrixInverse.copy(e.projectionMatrix).invert(), !0);
 		}
 	};
 }
 //#endregion
 //#region packages/walk-laser/src/portals/portal-view-renderer.ts
 function oe() {
-	let e = new _(1, 1, {
-		type: o,
+	let e = new ne(1, 1, {
+		type: f,
 		depthBuffer: !0
 	});
 	e.texture.name = "portal-destination-view";
-	let t = new S(), n = new C(), r = new C(), i = [];
+	let t = new x(), n = new T(), r = new T(), i = [];
 	return {
 		target: e,
 		render(a, o, s, c) {
@@ -111,13 +111,13 @@ function oe() {
 }
 //#endregion
 //#region packages/walk-laser/src/portals/usePortalView.ts
-function se(e, n) {
-	let r = (0, j.useRef)(null), i = (0, j.useMemo)(B, []), a = (0, j.useMemo)(oe, []);
-	return (0, j.useEffect)(() => () => a.dispose(), [a]), t(({ camera: t, scene: o, gl: s }) => {
-		r.current && (r.current.visible = !1, i.update(t, e, n) && (a.render(s, o, i.camera, n), r.current.visible = !0));
+function se(e, t) {
+	let n = (0, j.useRef)(null), r = (0, j.useMemo)(B, []), i = (0, j.useMemo)(oe, []);
+	return (0, j.useEffect)(() => () => i.dispose(), [i]), S(({ camera: a, scene: o, gl: s }) => {
+		n.current && (n.current.visible = !1, r.update(a, e, t) && (i.render(s, o, r.camera, t), n.current.visible = !0));
 	}, .5), {
-		surface: r,
-		texture: a.target.texture
+		surface: n,
+		texture: i.target.texture
 	};
 }
 //#endregion
@@ -144,12 +144,12 @@ function ce({ entry: e, exit: t }) {
 //#endregion
 //#region packages/walk-laser/src/portals/PortalSurface.tsx
 var V = () => void 0;
-function le({ anchor: e, color: n, exit: r, reducedMotion: i, closing: a = !1, onClosed: o }) {
-	let s = !!r, l = (0, j.useRef)(null), { opening: u, ripple: d } = z(e, i, a, o), f = I[n];
-	return t((e, t) => {
-		l.current && !i && (l.current.rotation.z += t * (n === "blue" ? .3 : -.3));
+function le({ anchor: e, color: t, exit: n, reducedMotion: r, closing: i = !1, onClosed: a }) {
+	let o = !!n, s = (0, j.useRef)(null), { opening: c, ripple: l } = z(e, r, i, a), u = I[t];
+	return S((e, n) => {
+		s.current && !r && (s.current.rotation.z += n * (t === "blue" ? .3 : -.3));
 	}), /* @__PURE__ */ (0, L.jsx)("group", {
-		name: a ? `gun-portal-closing-${n}` : `gun-portal-${n}`,
+		name: i ? `gun-portal-closing-${t}` : `gun-portal-${t}`,
 		position: e.center.toArray(),
 		quaternion: e.rotation.toArray(),
 		userData: {
@@ -157,7 +157,7 @@ function le({ anchor: e, color: n, exit: r, reducedMotion: i, closing: a = !1, o
 			portalAnchor: e
 		},
 		children: /* @__PURE__ */ (0, L.jsx)("group", {
-			ref: u,
+			ref: c,
 			name: "portal-opening",
 			children: /* @__PURE__ */ (0, L.jsxs)("group", {
 				scale: [
@@ -168,16 +168,16 @@ function le({ anchor: e, color: n, exit: r, reducedMotion: i, closing: a = !1, o
 				children: [
 					/* @__PURE__ */ (0, L.jsxs)("mesh", {
 						raycast: V,
-						children: [/* @__PURE__ */ (0, L.jsx)("circleGeometry", { args: [1, 64] }), /* @__PURE__ */ (0, L.jsx)(c, {
-							color: n === "blue" ? "#102d49" : "#443024",
-							emissive: f,
-							emissiveIntensity: s ? .12 : .025,
+						children: [/* @__PURE__ */ (0, L.jsx)("circleGeometry", { args: [1, 64] }), /* @__PURE__ */ (0, L.jsx)(C, {
+							color: t === "blue" ? "#102d49" : "#443024",
+							emissive: u,
+							emissiveIntensity: o ? .12 : .025,
 							side: 2
 						})]
 					}),
-					r && /* @__PURE__ */ (0, L.jsx)(ce, {
+					n && /* @__PURE__ */ (0, L.jsx)(ce, {
 						entry: e,
-						exit: r
+						exit: n
 					}),
 					/* @__PURE__ */ (0, L.jsxs)("mesh", {
 						raycast: V,
@@ -191,10 +191,10 @@ function le({ anchor: e, color: n, exit: r, reducedMotion: i, closing: a = !1, o
 							.045,
 							8,
 							64
-						] }), /* @__PURE__ */ (0, L.jsx)(c, {
-							color: f,
-							emissive: f,
-							emissiveIntensity: s ? 1.5 : .45,
+						] }), /* @__PURE__ */ (0, L.jsx)(C, {
+							color: u,
+							emissive: u,
+							emissiveIntensity: o ? 1.5 : .45,
 							toneMapped: !1
 						})]
 					}),
@@ -210,15 +210,15 @@ function le({ anchor: e, color: n, exit: r, reducedMotion: i, closing: a = !1, o
 							.012,
 							6,
 							64
-						] }), /* @__PURE__ */ (0, L.jsx)(c, {
+						] }), /* @__PURE__ */ (0, L.jsx)(C, {
 							color: "#fff0d5",
-							emissive: f,
+							emissive: u,
 							emissiveIntensity: 1,
 							toneMapped: !1
 						})]
 					}),
 					/* @__PURE__ */ (0, L.jsxs)("mesh", {
-						ref: d,
+						ref: l,
 						name: "portal-arrival-ripple",
 						position: [
 							0,
@@ -232,9 +232,9 @@ function le({ anchor: e, color: n, exit: r, reducedMotion: i, closing: a = !1, o
 							.025,
 							6,
 							64
-						] }), /* @__PURE__ */ (0, L.jsx)(c, {
-							color: f,
-							emissive: f,
+						] }), /* @__PURE__ */ (0, L.jsx)(C, {
+							color: u,
+							emissive: u,
 							emissiveIntensity: 2,
 							transparent: !0,
 							opacity: 0,
@@ -243,13 +243,13 @@ function le({ anchor: e, color: n, exit: r, reducedMotion: i, closing: a = !1, o
 						})]
 					}),
 					/* @__PURE__ */ (0, L.jsx)("group", {
-						ref: l,
+						ref: s,
 						position: [
 							0,
 							0,
 							.022
 						],
-						visible: !s,
+						visible: !o,
 						children: [
 							.36,
 							.61,
@@ -267,12 +267,12 @@ function le({ anchor: e, color: n, exit: r, reducedMotion: i, closing: a = !1, o
 								6,
 								32,
 								Math.PI * 1.15
-							] }), /* @__PURE__ */ (0, L.jsx)(c, {
-								color: f,
-								emissive: f,
+							] }), /* @__PURE__ */ (0, L.jsx)(C, {
+								color: u,
+								emissive: u,
 								emissiveIntensity: .7,
 								transparent: !0,
-								opacity: s ? .55 : .16,
+								opacity: o ? .55 : .16,
 								depthWrite: !1,
 								toneMapped: !1
 							})]
@@ -294,35 +294,35 @@ function ue(e) {
 		(Array.isArray(n.material) ? n.material : [n.material]).every((e) => !e.visible || e.transparent && e.opacity === 0) || t.push(n);
 	}), (e) => {
 		let n = [];
-		for (let r of t) h.prototype.raycast.call(r, e, n);
+		for (let r of t) m.prototype.raycast.call(r, e, n);
 		return n.sort((e, t) => e.distance - t.distance), { hit: n[0] ?? null };
 	};
 }
 //#endregion
 //#region packages/walk-laser/src/portals/portal-placement.ts
-var de = (e) => e.face?.normal.clone().applyMatrix3(new te().getNormalMatrix(e.object.matrixWorld)).normalize();
-function fe(e, t, n, i = A) {
-	let a = de(e);
-	if (!a || Math.abs(a.y) > .05 && a.y < .98) return null;
+var de = (e) => e.face?.normal.clone().applyMatrix3(new c().getNormalMatrix(e.object.matrixWorld)).normalize();
+function fe(e, t, n, r = A) {
+	let i = de(e);
+	if (!i || Math.abs(i.y) > .05 && i.y < .98) return null;
 	for (let t = e.object; t; t = t.parent) if (t.userData.walkDeviceInteraction || t.userData.walkCollider) return null;
-	let o = a.y > .98;
-	a.set(a.x, +!!o, a.z).normalize();
-	let s = e.point.clone().addScaledVector(a, o ? 0 : ae);
-	o || (s.y -= P);
+	let a = i.y > .98;
+	i.set(i.x, +!!a, i.z).normalize();
+	let s = e.point.clone().addScaledVector(i, a ? 0 : ae);
+	a || (s.y -= P);
 	let c = n.resolveLanding(s);
-	if (!c || o && Math.abs(c.elevation - e.point.y) > .12) return null;
+	if (!c || a && Math.abs(c.elevation - e.point.y) > .12) return null;
 	let l = e.point.clone();
-	o || (l.y = c.elevation + P);
-	let u = new k().setFromUnitVectors(new x(0, 0, 1), a), d = new r();
+	a || (l.y = c.elevation + P);
+	let u = new _().setFromUnitVectors(new O(0, 0, 1), i), d = new o();
 	for (let e = -1; e < 24; e++) {
-		let n = e * Math.PI / 12, r = (e < 0 ? new x() : new x(Math.cos(n) * (M + .04), Math.sin(n) * (N + .04), 0)).applyQuaternion(u).add(l);
-		d.set(r.clone().addScaledVector(a, .08), a.clone().negate()), d.far = .16;
-		let o = i(d, t).hit;
-		if (!o || Math.abs(o.point.clone().sub(r).dot(a)) > .025 || (de(o)?.dot(a) ?? 0) < .98) return null;
+		let n = e * Math.PI / 12, a = (e < 0 ? new O() : new O(Math.cos(n) * (M + .04), Math.sin(n) * (N + .04), 0)).applyQuaternion(u).add(l);
+		d.set(a.clone().addScaledVector(i, .08), i.clone().negate()), d.far = .16;
+		let o = r(d, t).hit;
+		if (!o || Math.abs(o.point.clone().sub(a).dot(i)) > .025 || (de(o)?.dot(i) ?? 0) < .98) return null;
 	}
 	return {
-		center: l.addScaledVector(a, .018),
-		normal: a,
+		center: l.addScaledVector(i, .018),
+		normal: i,
 		rotation: u,
 		landing: c
 	};
@@ -333,17 +333,17 @@ function pe(e, t) {
 //#endregion
 //#region packages/walk-laser/src/portals/portal-restoration.ts
 function me(e, t, n) {
-	let i = {}, a = new r();
+	let r = {}, i = new o();
 	t.updateMatrixWorld(!0);
-	let o = ue(t);
-	for (let r of ["blue", "gold"]) {
-		let s = e[r];
+	let a = ue(t);
+	for (let o of ["blue", "gold"]) {
+		let s = e[o];
 		if (!s) continue;
-		a.set(s.center.clone().addScaledVector(s.normal, .1), s.normal.clone().negate()), a.far = .2;
-		let c = o(a).hit, l = c && fe(c, t, n, o);
-		l && l.center.distanceTo(s.center) < .025 && l.normal.dot(s.normal) > .999 && l.landing.floorId === s.landing.floorId && Math.abs(l.landing.elevation - s.landing.elevation) < .025 && Math.hypot(l.landing.x - s.landing.x, l.landing.z - s.landing.z) < .025 && (i[r] = s);
+		i.set(s.center.clone().addScaledVector(s.normal, .1), s.normal.clone().negate()), i.far = .2;
+		let c = a(i).hit, l = c && fe(c, t, n, a);
+		l && l.center.distanceTo(s.center) < .025 && l.normal.dot(s.normal) > .999 && l.landing.floorId === s.landing.floorId && Math.abs(l.landing.elevation - s.landing.elevation) < .025 && Math.hypot(l.landing.x - s.landing.x, l.landing.z - s.landing.z) < .025 && (r[o] = s);
 	}
-	return i;
+	return r;
 }
 //#endregion
 //#region packages/walk-laser/src/portals/portal-pair.ts
@@ -370,7 +370,7 @@ function he(e = {}, t = "blue") {
 //#region packages/walk-laser/src/portals/portal-traversal.ts
 function ge(e, t) {
 	let n = t.clone();
-	return n.y -= ie - (e.normal.y > .98 ? 0 : P), n.sub(e.center).applyQuaternion(e.rotation.clone().invert());
+	return n.y -= h - (e.normal.y > .98 ? 0 : P), n.sub(e.center).applyQuaternion(e.rotation.clone().invert());
 }
 function _e(e) {
 	return (e.x / (M - .22)) ** 2 + (e.y / (N - .22)) ** 2 < 1;
@@ -440,37 +440,37 @@ function ye() {
 }
 //#endregion
 //#region packages/walk-laser/src/portals/usePortalTransition.ts
-function be(e, n, r, i) {
-	let { camera: a } = w(), o = (0, j.useMemo)(ye, []), s = (0, j.useRef)(null), c = (0, j.useRef)(null), l = (0, j.useRef)(null), u = (0, j.useCallback)(() => {
-		if (l.current === null) return;
-		let e = a;
-		e.fov = l.current, e.updateProjectionMatrix(), l.current = null;
-	}, [a]);
+function be(e, t, n, r) {
+	let { camera: i } = y(), a = (0, j.useMemo)(ye, []), o = (0, j.useRef)(null), s = (0, j.useRef)(null), c = (0, j.useRef)(null), l = (0, j.useCallback)(() => {
+		if (c.current === null) return;
+		let e = i;
+		e.fov = c.current, e.updateProjectionMatrix(), c.current = null;
+	}, [i]);
 	(0, j.useEffect)(() => () => {
-		o.cancel(), u();
-	}, [o, u]);
-	let d = (0, j.useCallback)((e) => o.start(e, n), [o, n]);
-	return t((t, n) => {
-		e || o.cancel();
-		let d = o.advance(n, (e) => {
-			let t = r.teleport(e.landing, e.facing);
-			return t || i(), t;
+		a.cancel(), l();
+	}, [a, l]);
+	let u = (0, j.useCallback)((e) => a.start(e, t), [a, t]);
+	return S((t, u) => {
+		e || a.cancel();
+		let d = a.advance(u, (e) => {
+			let t = n.teleport(e.landing, e.facing);
+			return t || r(), t;
 		});
-		if (s.current && (s.current.style.opacity = String(d.opacity), s.current.style.visibility = d.opacity > 0 ? "visible" : "hidden", s.current.style.setProperty("--portal-color", I[d.color])), c.current && (c.current.style.display = d.reduced ? "none" : "block", c.current.style.transform = `translate(-50%, -50%) scale(${d.ringScale})`), d.fovOffset > 0 && a.isPerspectiveCamera) {
-			let e = a;
-			l.current ??= e.fov, e.fov = l.current + d.fovOffset, e.updateProjectionMatrix();
-		} else u();
+		if (o.current && (o.current.style.opacity = String(d.opacity), o.current.style.visibility = d.opacity > 0 ? "visible" : "hidden", o.current.style.setProperty("--portal-color", I[d.color])), s.current && (s.current.style.display = d.reduced ? "none" : "block", s.current.style.transform = `translate(-50%, -50%) scale(${d.ringScale})`), d.fovOffset > 0 && i.isPerspectiveCamera) {
+			let e = i;
+			c.current ??= e.fov, e.fov = c.current + d.fovOffset, e.updateProjectionMatrix();
+		} else l();
 	}), {
-		transition: o,
-		travel: d,
-		veil: s,
-		iris: c
+		transition: a,
+		travel: u,
+		veil: o,
+		iris: s
 	};
 }
 //#endregion
 //#region packages/walk-laser/src/portals/usePortalInput.ts
 function xe(e, t) {
-	let n = D();
+	let n = b();
 	(0, j.useEffect)(() => {
 		let r = (r) => {
 			!e || !n.root.pointerLockElement || r.button !== 2 || (r.preventDefault(), t());
@@ -498,9 +498,9 @@ function we(e) {
 		n,
 		r
 	].every((e) => typeof e == "number" && Number.isFinite(e) && Math.abs(e) < 1e6) || typeof i != "string" || !i) return;
-	let a = new x().fromArray(e.normal), o = new k().fromArray(e.rotation);
-	if (!(Math.abs(a.length() - 1) > .001 || Math.abs(o.length() - 1) > .001 || Math.abs(a.y) > .001 && a.y < .999 || new x(0, 0, 1).applyQuaternion(o).dot(a) < .999)) return {
-		center: new x().fromArray(e.center),
+	let a = new O().fromArray(e.normal), o = new _().fromArray(e.rotation);
+	if (!(Math.abs(a.length() - 1) > .001 || Math.abs(o.length() - 1) > .001 || Math.abs(a.y) > .001 && a.y < .999 || new O(0, 0, 1).applyQuaternion(o).dot(a) < .999)) return {
+		center: new O().fromArray(e.center),
 		normal: a,
 		rotation: o,
 		landing: {
@@ -541,21 +541,21 @@ function Ee({ pair: e, next: t }) {
 //#endregion
 //#region packages/walk-laser/src/portals/usePortalState.ts
 function De() {
-	let e = v(), [t, n] = (0, j.useState)(() => Te(e?.read(Se))), r = (0, j.useRef)(t), i = (0, j.useRef)(!1);
+	let e = i(), [t, n] = (0, j.useState)(() => Te(e?.read(Se))), r = (0, j.useRef)(t), a = (0, j.useRef)(!1);
 	return {
 		state: t,
 		current: r,
-		pending: i,
+		pending: a,
 		commit: (0, j.useCallback)(async (t) => {
-			if (i.current) return !1;
-			let a = r.current;
-			i.current = !0, r.current = t, n(t);
+			if (a.current) return !1;
+			let i = r.current;
+			a.current = !0, r.current = t, n(t);
 			try {
 				return await e?.write(Se, Ee(t)), !0;
 			} catch {
-				return r.current = a, n(a), !1;
+				return r.current = i, n(i), !1;
 			} finally {
-				i.current = !1;
+				a.current = !1;
 			}
 		}, [e])
 	};
@@ -567,10 +567,10 @@ function Oe(e, t, n = 30) {
 	for (let n of ["blue", "gold"]) {
 		let a = t[n];
 		if (!a || e.direction.dot(a.normal) >= -.001) continue;
-		let o = e.intersectPlane(new p().setFromNormalAndCoplanarPoint(a.normal, a.center), new x());
+		let o = e.intersectPlane(new s().setFromNormalAndCoplanarPoint(a.normal, a.center), new O());
 		if (!o) continue;
-		let s = o.distanceTo(e.origin), c = o.clone().sub(a.center).applyQuaternion(a.rotation.clone().invert());
-		s > r || (c.x / .58) ** 2 + (c.y / 1.1) ** 2 > 1 || (r = s, i = {
+		let c = o.distanceTo(e.origin), l = o.clone().sub(a.center).applyQuaternion(a.rotation.clone().invert());
+		c > r || (l.x / .58) ** 2 + (l.y / 1.1) ** 2 > 1 || (r = c, i = {
 			color: n,
 			point: o,
 			normal: a.normal
@@ -580,100 +580,100 @@ function Oe(e, t, n = 30) {
 }
 //#endregion
 //#region packages/walk-laser/src/portals/useGunPortals.ts
-function ke(e, n, i, a) {
-	let { camera: o, scene: s } = w(), { state: c, current: l, pending: u, commit: d } = De(), [f, p] = (0, j.useState)({}), m = (0, j.useRef)(!1), h = (0, j.useMemo)(() => new r(), []), g = (0, j.useMemo)(ve, []), _ = be(e, a, n, g.reset), v = (0, j.useCallback)((t, n) => {
+function ke(e, t, n, r) {
+	let { camera: i, scene: a } = y(), { state: s, current: c, pending: l, commit: u } = De(), [d, f] = (0, j.useState)({}), p = (0, j.useRef)(!1), m = (0, j.useMemo)(() => new o(), []), h = (0, j.useMemo)(ve, []), g = be(e, r, t, h.reset), _ = (0, j.useCallback)((t, n) => {
 		let r = Oe(t, {
-			...f,
-			...l.current.pair
+			...d,
+			...c.current.pair
 		}, n);
 		if (!r) return null;
-		if (!e || f[r.color] || u.current || _.transition.busy) return r;
-		let { pair: i, next: a } = l.current, o = { ...i };
-		return delete o[r.color], g.reset(), p((e) => ({
+		if (!e || d[r.color] || l.current || g.transition.busy) return r;
+		let { pair: i, next: a } = c.current, o = { ...i };
+		return delete o[r.color], h.reset(), f((e) => ({
 			...e,
 			[r.color]: i[r.color]
-		})), d({
+		})), u({
 			pair: o,
 			next: a
 		}).then((e) => {
-			e || p((e) => {
+			e || f((e) => {
 				let t = { ...e };
 				return delete t[r.color], t;
 			});
 		}), r;
 	}, [
 		e,
+		c,
 		l,
 		u,
-		d,
-		g,
-		_.transition,
-		f
-	]), y = (0, j.useCallback)((e) => {
-		p((t) => {
+		h,
+		g.transition,
+		d
+	]), v = (0, j.useCallback)((e) => {
+		f((t) => {
 			let n = { ...t };
 			return delete n[e], n;
 		});
 	}, []), b = (0, j.useCallback)(() => {
-		if (!e || u.current || _.transition.busy) return;
-		s.updateMatrixWorld(!0), h.setFromCamera(new S(), o), h.far = 30;
-		let t = A(h, s).hit, r = v(h.ray, t?.distance ?? 30);
-		if (r) {
-			i(r.point, r.normal, I[r.color], l.current.next);
+		if (!e || l.current || g.transition.busy) return;
+		a.updateMatrixWorld(!0), m.setFromCamera(new x(), i), m.far = 30;
+		let r = A(m, a).hit, o = _(m.ray, r?.distance ?? 30);
+		if (o) {
+			n(o.point, o.normal, I[o.color], c.current.next);
 			return;
 		}
-		if (Object.keys(f).length) return;
-		let a = t && fe(t, s, n);
-		if (!a) return;
-		let c = he(l.current.pair, l.current.next), p = c.nextColor, m = c.place(a);
-		m && (g.reset(), d({
-			pair: m,
-			next: c.nextColor
-		}), i(a.center, a.normal, I[p], c.nextColor));
+		if (Object.keys(d).length) return;
+		let s = r && fe(r, a, t);
+		if (!s) return;
+		let f = he(c.current.pair, c.current.next), p = f.nextColor, v = f.place(s);
+		v && (h.reset(), u({
+			pair: v,
+			next: f.nextColor
+		}), n(s.center, s.normal, I[p], f.nextColor));
 	}, [
 		e,
-		o,
-		s,
+		i,
+		a,
+		m,
+		t,
 		h,
 		n,
-		g,
-		i,
-		_.transition,
+		g.transition,
+		c,
 		l,
 		u,
-		d,
-		v,
-		f
+		_,
+		d
 	]);
-	return xe(e, b), t(() => {
+	return xe(e, b), S(() => {
 		if (!e) {
-			g.reset();
+			h.reset();
 			return;
 		}
-		if (!m.current) {
-			m.current = !0;
-			let e = me(l.current.pair, s, n);
-			if (Object.keys(e).length !== Object.keys(l.current.pair).length) {
-				d({
-					...l.current,
+		if (!p.current) {
+			p.current = !0;
+			let e = me(c.current.pair, a, t);
+			if (Object.keys(e).length !== Object.keys(c.current.pair).length) {
+				u({
+					...c.current,
 					pair: e
 				});
 				return;
 			}
 		}
-		_.transition.busy || u.current || g.step(l.current.pair, o.position, {
-			yaw: o.rotation.y,
-			pitch: o.rotation.x
-		}, _.travel);
+		g.transition.busy || l.current || h.step(c.current.pair, i.position, {
+			yaw: i.rotation.y,
+			pitch: i.rotation.x
+		}, g.travel);
 	}), {
-		pair: c.pair,
-		next: c.next,
-		closing: f,
-		closed: y,
-		remove: v,
+		pair: s.pair,
+		next: s.next,
+		closing: d,
+		closed: v,
+		remove: _,
 		place: b,
-		veil: _.veil,
-		iris: _.iris
+		veil: g.veil,
+		iris: g.iris
 	};
 }
 //#endregion
@@ -717,7 +717,7 @@ function Ne() {
 	}
 }
 function Pe({ coarsePointer: e }) {
-	let t = D(), [n, r] = (0, j.useState)(Ne), i = (0, j.useCallback)(() => {
+	let t = b(), [n, r] = (0, j.useState)(Ne), i = (0, j.useCallback)(() => {
 		Me = !0, r(!0);
 		try {
 			window.localStorage.setItem(je, "dismissed");
@@ -742,7 +742,7 @@ function Pe({ coarsePointer: e }) {
 		children: [
 			/* @__PURE__ */ (0, L.jsxs)("div", {
 				className: "walk-laser-tutorial__heading",
-				children: [/* @__PURE__ */ (0, L.jsx)(ne, {}), /* @__PURE__ */ (0, L.jsxs)("div", { children: [/* @__PURE__ */ (0, L.jsx)("h2", { children: "Pew pew!" }), /* @__PURE__ */ (0, L.jsx)("p", { children: "Your home, a little more playful." })] })]
+				children: [/* @__PURE__ */ (0, L.jsx)(D, {}), /* @__PURE__ */ (0, L.jsxs)("div", { children: [/* @__PURE__ */ (0, L.jsx)("h2", { children: "Pew pew!" }), /* @__PURE__ */ (0, L.jsx)("p", { children: "Your home, a little more playful." })] })]
 			}),
 			/* @__PURE__ */ (0, L.jsxs)("p", { children: [
 				/* @__PURE__ */ (0, L.jsx)("strong", { children: "Toggle devices." }),
@@ -900,7 +900,7 @@ function U({ kind: e }) {
 		recess: "#231c2b",
 		glint: "#f2ffff"
 	}[e], n = e === "energy" || e === "hot" || e === "glint";
-	return /* @__PURE__ */ (0, L.jsx)(c, {
+	return /* @__PURE__ */ (0, L.jsx)(C, {
 		color: t,
 		emissive: n ? t : "#000000",
 		emissiveIntensity: n ? .65 : 0,
@@ -1001,21 +1001,21 @@ function Re({ side: e }) {
 }
 //#endregion
 //#region packages/walk-laser/src/laser-gun/blaster-contours.ts
-var W = new d();
+var W = new E();
 W.moveTo(-.205, .045), W.bezierCurveTo(-.225, .13, -.165, .16, -.105, .145), W.lineTo(.29, .12), W.quadraticCurveTo(.335, .1, .3, .015), W.quadraticCurveTo(.285, -.04, .21, -.053), W.lineTo(.045, -.065), W.quadraticCurveTo(-.02, -.085, -.105, -.065), W.quadraticCurveTo(-.215, -.065, -.205, .045), W.closePath();
-var G = new d();
+var G = new E();
 G.moveTo(-.205, .075), G.bezierCurveTo(-.213, .135, -.174, .163, -.105, .157), G.quadraticCurveTo(-.075, .155, -.039, .121), G.lineTo(.228, .116), G.quadraticCurveTo(.258, .12, .27, .147), G.lineTo(.318, .145), G.quadraticCurveTo(.335, .138, .32, .097), G.lineTo(.288, .018), G.quadraticCurveTo(.275, -.015, .235, -.014), G.lineTo(.139, -.022), G.quadraticCurveTo(.111, -.023, .09, .003), G.lineTo(.047, .047), G.lineTo(-.025, .044), G.bezierCurveTo(-.054, .094, -.098, .118, -.143, .093), G.quadraticCurveTo(-.184, .068, -.205, .075), G.closePath();
-var K = new d();
+var K = new E();
 K.moveTo(-.155, -.037), K.quadraticCurveTo(-.1, -.029, -.055, -.073), K.quadraticCurveTo(-.068, -.124, -.094, -.185), K.lineTo(-.127, -.293), K.quadraticCurveTo(-.124, -.322, -.158, -.325), K.lineTo(-.269, -.292), K.quadraticCurveTo(-.28, -.284, -.264, -.257), K.lineTo(-.188, -.087), K.quadraticCurveTo(-.19, -.048, -.155, -.037), K.closePath();
-var q = new d();
+var q = new E();
 q.moveTo(-.157, -.07), q.quadraticCurveTo(-.104, -.075, -.087, -.1), q.quadraticCurveTo(-.096, -.172, -.152, -.282), q.quadraticCurveTo(-.184, -.292, -.245, -.265), q.lineTo(-.179, -.112), q.quadraticCurveTo(-.17, -.073, -.157, -.07), q.closePath();
-var J = new d();
+var J = new E();
 J.moveTo(-.27, -.261), J.quadraticCurveTo(-.218, -.29, -.139, -.284), J.quadraticCurveTo(-.12, -.287, -.116, -.318), J.quadraticCurveTo(-.106, -.357, -.15, -.361), J.quadraticCurveTo(-.235, -.351, -.299, -.318), J.quadraticCurveTo(-.31, -.3, -.287, -.277), J.closePath();
-var Y = new d();
+var Y = new E();
 Y.moveTo(-.085, -.055), Y.lineTo(.11, -.053), Y.bezierCurveTo(.166, -.09, .145, -.182, .076, -.186), Y.lineTo(-.082, -.17), Y.quadraticCurveTo(-.12, -.125, -.085, -.055), Y.closePath();
-var X = new l();
+var X = new n();
 X.moveTo(-.065, -.08), X.quadraticCurveTo(-.085, -.115, -.065, -.146), X.lineTo(.064, -.158), X.bezierCurveTo(.112, -.159, .14, -.116, .1, -.08), X.closePath(), Y.holes.push(X);
-var Z = new d();
+var Z = new E();
 Z.moveTo(-.017, -.058), Z.lineTo(.014, -.06), Z.quadraticCurveTo(-.004, -.115, .025, -.145), Z.quadraticCurveTo(-.013, -.152, -.032, -.111), Z.quadraticCurveTo(-.042, -.077, -.017, -.058), Z.closePath();
 var ze = {
 	receiver: W,
@@ -1028,9 +1028,9 @@ var ze = {
 };
 //#endregion
 //#region packages/walk-laser/src/laser-gun/SculptedBlasterPart.tsx
-function Q({ contour: e, depth: t, bevel: n, finish: r, x: a = 0 }) {
-	let o = (0, j.useMemo)(() => {
-		let r = new i(ze[e], {
+function Q({ contour: e, depth: t, bevel: n, finish: r, x: i = 0 }) {
+	let a = (0, j.useMemo)(() => {
+		let r = new p(ze[e], {
 			depth: t,
 			steps: 1,
 			curveSegments: 16,
@@ -1040,18 +1040,18 @@ function Q({ contour: e, depth: t, bevel: n, finish: r, x: a = 0 }) {
 			bevelSegments: 6
 		});
 		r.translate(0, 0, -t / 2), r.deleteAttribute("normal"), r.deleteAttribute("uv");
-		let a = ee(r, 1e-5);
-		return a.computeVertexNormals(), r.dispose(), a;
+		let i = k(r, 1e-5);
+		return i.computeVertexNormals(), r.dispose(), i;
 	}, [
 		e,
 		t,
 		n
 	]);
-	return (0, j.useEffect)(() => () => o.dispose(), [o]), /* @__PURE__ */ (0, L.jsx)("mesh", {
+	return (0, j.useEffect)(() => () => a.dispose(), [a]), /* @__PURE__ */ (0, L.jsx)("mesh", {
 		name: `blaster-${e}`,
-		geometry: o,
+		geometry: a,
 		position: [
-			a,
+			i,
 			0,
 			0
 		],
@@ -1106,7 +1106,7 @@ function Be() {
 						0,
 						0
 					],
-					children: [/* @__PURE__ */ (0, L.jsx)(E, {
+					children: [/* @__PURE__ */ (0, L.jsx)(w, {
 						args: [
 							.01,
 							.06,
@@ -1114,7 +1114,7 @@ function Be() {
 						],
 						radius: .004,
 						children: /* @__PURE__ */ (0, L.jsx)(U, { kind: "trim" })
-					}), /* @__PURE__ */ (0, L.jsx)(E, {
+					}), /* @__PURE__ */ (0, L.jsx)(w, {
 						args: [
 							.013,
 							.045,
@@ -1130,7 +1130,7 @@ function Be() {
 					})]
 				}, t))
 			] }, e)),
-			/* @__PURE__ */ (0, L.jsx)(E, {
+			/* @__PURE__ */ (0, L.jsx)(w, {
 				args: [
 					.155,
 					.14,
@@ -1144,7 +1144,7 @@ function Be() {
 				],
 				children: /* @__PURE__ */ (0, L.jsx)(U, { kind: "trim" })
 			}),
-			/* @__PURE__ */ (0, L.jsx)(E, {
+			/* @__PURE__ */ (0, L.jsx)(w, {
 				args: [
 					.102,
 					.091,
@@ -1158,7 +1158,7 @@ function Be() {
 				],
 				children: /* @__PURE__ */ (0, L.jsx)(U, { kind: "chassis" })
 			}),
-			/* @__PURE__ */ (0, L.jsx)(E, {
+			/* @__PURE__ */ (0, L.jsx)(w, {
 				args: [
 					.039,
 					.038,
@@ -1172,7 +1172,7 @@ function Be() {
 				],
 				children: /* @__PURE__ */ (0, L.jsx)(U, { kind: "energy" })
 			}),
-			/* @__PURE__ */ (0, L.jsx)(E, {
+			/* @__PURE__ */ (0, L.jsx)(w, {
 				args: [
 					.17,
 					.052,
@@ -1197,16 +1197,16 @@ function Be() {
 //#endregion
 //#region packages/walk-laser/src/laser-gun/MuzzleFlash.tsx
 function Ve({ shotId: e }) {
-	let n = (0, j.useRef)(null), r = (0, j.useRef)(Infinity);
+	let t = (0, j.useRef)(null), n = (0, j.useRef)(Infinity);
 	return (0, j.useEffect)(() => {
-		e > 0 && (r.current = 0);
-	}, [e]), t((e, t) => {
-		if (r.current += t, !n.current) return;
-		let i = Math.max(0, 1 - r.current / .045);
-		n.current.visible = i > 0, n.current.scale.setScalar(.7 + (1 - i) * .7);
-		for (let e of n.current.children) e.isMesh && (e.material.opacity = i * (e.userData.glowOpacity ?? 1));
+		e > 0 && (n.current = 0);
+	}, [e]), S((e, r) => {
+		if (n.current += r, !t.current) return;
+		let i = Math.max(0, 1 - n.current / .045);
+		t.current.visible = i > 0, t.current.scale.setScalar(.7 + (1 - i) * .7);
+		for (let e of t.current.children) e.isMesh && (e.material.opacity = i * (e.userData.glowOpacity ?? 1));
 	}), /* @__PURE__ */ (0, L.jsxs)("group", {
-		ref: n,
+		ref: t,
 		visible: !1,
 		name: "laser-muzzle-flash",
 		children: [
@@ -1221,7 +1221,7 @@ function Ve({ shotId: e }) {
 					.03,
 					.09
 				],
-				children: [/* @__PURE__ */ (0, L.jsx)("octahedronGeometry", { args: [1, 0] }), /* @__PURE__ */ (0, L.jsx)(c, {
+				children: [/* @__PURE__ */ (0, L.jsx)("octahedronGeometry", { args: [1, 0] }), /* @__PURE__ */ (0, L.jsx)(C, {
 					color: "#eeffff",
 					emissive: "#acffff",
 					emissiveIntensity: 4,
@@ -1242,7 +1242,7 @@ function Ve({ shotId: e }) {
 					1,
 					8,
 					6
-				] }), /* @__PURE__ */ (0, L.jsx)(c, {
+				] }), /* @__PURE__ */ (0, L.jsx)(C, {
 					color: "#45e4ff",
 					emissive: "#45e4ff",
 					emissiveIntensity: 2,
@@ -1270,7 +1270,7 @@ function Ve({ shotId: e }) {
 						.008,
 						.09,
 						4
-					] }), /* @__PURE__ */ (0, L.jsx)(c, {
+					] }), /* @__PURE__ */ (0, L.jsx)(C, {
 						color: "#fff2cd",
 						emissive: "#ffe1a0",
 						emissiveIntensity: 2,
@@ -1300,7 +1300,7 @@ function He() {
 		[.065, .047],
 		[.056, .038],
 		[.055, -.042]
-	].map(([e, t]) => new S(e, t)), []);
+	].map(([e, t]) => new x(e, t)), []);
 	return /* @__PURE__ */ (0, L.jsxs)("group", {
 		name: "blaster-muzzle",
 		position: [
@@ -1388,7 +1388,7 @@ function Ue({ muzzleRef: e, shotId: t }) {
 					40
 				] }), /* @__PURE__ */ (0, L.jsx)(U, { kind: "chassis" })]
 			}),
-			/* @__PURE__ */ (0, L.jsx)(E, {
+			/* @__PURE__ */ (0, L.jsx)(w, {
 				args: [
 					.112,
 					.055,
@@ -1402,7 +1402,7 @@ function Ue({ muzzleRef: e, shotId: t }) {
 				],
 				children: /* @__PURE__ */ (0, L.jsx)(U, { kind: "chassis" })
 			}),
-			/* @__PURE__ */ (0, L.jsx)(E, {
+			/* @__PURE__ */ (0, L.jsx)(w, {
 				args: [
 					.076,
 					.027,
@@ -1416,7 +1416,7 @@ function Ue({ muzzleRef: e, shotId: t }) {
 				],
 				children: /* @__PURE__ */ (0, L.jsx)(U, { kind: "energy" })
 			}),
-			[-1, 1].map((e) => /* @__PURE__ */ (0, L.jsx)(E, {
+			[-1, 1].map((e) => /* @__PURE__ */ (0, L.jsx)(w, {
 				args: [
 					.019,
 					.025,
@@ -1430,7 +1430,7 @@ function Ue({ muzzleRef: e, shotId: t }) {
 				],
 				children: /* @__PURE__ */ (0, L.jsx)(U, { kind: "trim" })
 			}, e)),
-			/* @__PURE__ */ (0, L.jsx)(E, {
+			/* @__PURE__ */ (0, L.jsx)(w, {
 				args: [
 					.176,
 					.065,
@@ -1449,7 +1449,7 @@ function Ue({ muzzleRef: e, shotId: t }) {
 				],
 				children: /* @__PURE__ */ (0, L.jsx)(U, { kind: "armor" })
 			}),
-			/* @__PURE__ */ (0, L.jsx)(E, {
+			/* @__PURE__ */ (0, L.jsx)(w, {
 				args: [
 					.157,
 					.045,
@@ -1470,7 +1470,7 @@ function Ue({ muzzleRef: e, shotId: t }) {
 			}),
 			/* @__PURE__ */ (0, L.jsx)(He, {}),
 			/* @__PURE__ */ (0, L.jsx)("group", {
-				...T({ ref: e }),
+				...te({ ref: e }),
 				position: [
 					0,
 					.075,
@@ -1517,7 +1517,7 @@ function We() {
 				1,
 				2,
 				3
-			].map((e) => /* @__PURE__ */ (0, L.jsx)(E, {
+			].map((e) => /* @__PURE__ */ (0, L.jsx)(w, {
 				args: [
 					.13,
 					.007,
@@ -1542,7 +1542,7 @@ function We() {
 				bevel: .017,
 				finish: "armor"
 			}),
-			/* @__PURE__ */ (0, L.jsx)(E, {
+			/* @__PURE__ */ (0, L.jsx)(w, {
 				args: [
 					.138,
 					.012,
@@ -1594,7 +1594,7 @@ function Ge() {
 							16
 						] }), /* @__PURE__ */ (0, L.jsx)(U, { kind: "grip" })]
 					}),
-					/* @__PURE__ */ (0, L.jsx)(E, {
+					/* @__PURE__ */ (0, L.jsx)(w, {
 						args: [
 							.145,
 							.065,
@@ -1608,7 +1608,7 @@ function Ge() {
 						],
 						children: /* @__PURE__ */ (0, L.jsx)(U, { kind: "armor" })
 					}),
-					/* @__PURE__ */ (0, L.jsx)(E, {
+					/* @__PURE__ */ (0, L.jsx)(w, {
 						args: [
 							.151,
 							.015,
@@ -1622,7 +1622,7 @@ function Ge() {
 						],
 						children: /* @__PURE__ */ (0, L.jsx)(U, { kind: "trim" })
 					}),
-					/* @__PURE__ */ (0, L.jsx)(E, {
+					/* @__PURE__ */ (0, L.jsx)(w, {
 						args: [
 							.062,
 							.024,
@@ -1660,7 +1660,7 @@ function Ge() {
 					16
 				] }), /* @__PURE__ */ (0, L.jsx)(U, { kind: "grip" })]
 			}),
-			/* @__PURE__ */ (0, L.jsx)(E, {
+			/* @__PURE__ */ (0, L.jsx)(w, {
 				args: [
 					.086,
 					.107,
@@ -1694,7 +1694,7 @@ function Ge() {
 					0,
 					0
 				],
-				children: [/* @__PURE__ */ (0, L.jsx)(E, {
+				children: [/* @__PURE__ */ (0, L.jsx)(w, {
 					args: [
 						.137,
 						.032,
@@ -1702,7 +1702,7 @@ function Ge() {
 					],
 					radius: .015,
 					children: /* @__PURE__ */ (0, L.jsx)(U, { kind: "grip" })
-				}), /* @__PURE__ */ (0, L.jsx)(E, {
+				}), /* @__PURE__ */ (0, L.jsx)(w, {
 					args: [
 						.037,
 						.025,
@@ -1717,7 +1717,7 @@ function Ge() {
 					children: /* @__PURE__ */ (0, L.jsx)(U, { kind: "armor" })
 				})]
 			}, e)),
-			/* @__PURE__ */ (0, L.jsx)(E, {
+			/* @__PURE__ */ (0, L.jsx)(w, {
 				args: [
 					.038,
 					.037,
@@ -1799,7 +1799,7 @@ function qe(e, t, n) {
 			...r.color === void 0 ? {} : { color: r.color }
 		}), n) return;
 		e.current?.updateWorldMatrix(!0, !1);
-		let l = e.current?.getWorldPosition(new x()) ?? t.position.clone(), u = {
+		let l = e.current?.getWorldPosition(new O()) ?? t.position.clone(), u = {
 			...r,
 			start: l,
 			id: a,
@@ -1821,26 +1821,26 @@ function qe(e, t, n) {
 }
 //#endregion
 //#region packages/walk-laser/src/ElectricArc.tsx
-function Je({ start: e, end: n, duration: r, color: i }) {
+function Je({ start: e, end: t, duration: n, color: i }) {
 	let a = (0, j.useRef)(null), o = (0, j.useRef)(0), s = (0, j.useMemo)(() => {
-		let e = new O();
-		return e.setAttribute("position", new re(/* @__PURE__ */ new Float32Array(576), 3)), e.setAttribute("normal", new re(/* @__PURE__ */ new Float32Array(576), 3)), e;
+		let e = new ie();
+		return e.setAttribute("position", new r(/* @__PURE__ */ new Float32Array(576), 3)), e.setAttribute("normal", new r(/* @__PURE__ */ new Float32Array(576), 3)), e;
 	}, []);
 	(0, j.useEffect)(() => () => s.dispose(), [s]);
-	let l = (0, j.useMemo)(() => ({
-		direction: new x(),
-		side: new x(),
-		up: new x(),
-		view: new x(),
-		a: new x(),
-		b: new x()
+	let c = (0, j.useMemo)(() => ({
+		direction: new O(),
+		side: new O(),
+		up: new O(),
+		view: new O(),
+		a: new O(),
+		b: new O()
 	}), []);
-	return t(({ camera: t }, i) => {
-		if (o.current += i, !a.current || (a.current.visible = o.current < r, !a.current.visible)) return;
-		let { direction: c, side: u, up: d, view: f, a: p, b: m } = l;
-		c.subVectors(n, e).normalize(), f.subVectors(t.position, e).normalize(), u.crossVectors(c, f), u.lengthSq() < .001 && u.set(1, 0, 0).applyQuaternion(t.quaternion), u.normalize(), d.crossVectors(c, u).normalize();
-		let h = s.attributes.position, g = Math.floor(o.current * 30), _ = (e) => Math.sin(e * 127.1 + g * 39.7) * Math.cos(e * 71.3 + g * 11.9), v = (t, r) => r.copy(e).lerp(n, t / 24).addScaledVector(u, _(t) * .095 * Math.sin(Math.PI * t / 24)).addScaledVector(d, _(t + 30) * .065 * Math.sin(Math.PI * t / 24)), y = .009 + .005 * (1 - o.current / r);
-		for (let e = 0; e < 32; e++) e < 24 ? (v(e, p), v(e + 1, m)) : (v(3 + (e - 24) * 2, p), m.copy(p).addScaledVector(u, _(e + 80) * .24).addScaledVector(d, _(e + 90) * .2).addScaledVector(c, .13)), [
+	return S(({ camera: r }, i) => {
+		if (o.current += i, !a.current || (a.current.visible = o.current < n, !a.current.visible)) return;
+		let { direction: l, side: u, up: d, view: f, a: p, b: m } = c;
+		l.subVectors(t, e).normalize(), f.subVectors(r.position, e).normalize(), u.crossVectors(l, f), u.lengthSq() < .001 && u.set(1, 0, 0).applyQuaternion(r.quaternion), u.normalize(), d.crossVectors(l, u).normalize();
+		let h = s.attributes.position, g = Math.floor(o.current * 30), _ = (e) => Math.sin(e * 127.1 + g * 39.7) * Math.cos(e * 71.3 + g * 11.9), v = (n, r) => r.copy(e).lerp(t, n / 24).addScaledVector(u, _(n) * .095 * Math.sin(Math.PI * n / 24)).addScaledVector(d, _(n + 30) * .065 * Math.sin(Math.PI * n / 24)), y = .009 + .005 * (1 - o.current / n);
+		for (let e = 0; e < 32; e++) e < 24 ? (v(e, p), v(e + 1, m)) : (v(3 + (e - 24) * 2, p), m.copy(p).addScaledVector(u, _(e + 80) * .24).addScaledVector(d, _(e + 90) * .2).addScaledVector(l, .13)), [
 			[p, -1],
 			[p, 1],
 			[m, -1],
@@ -1858,7 +1858,7 @@ function Je({ start: e, end: n, duration: r, color: i }) {
 		geometry: s,
 		frustumCulled: !1,
 		raycast: () => void 0,
-		children: /* @__PURE__ */ (0, L.jsx)(c, {
+		children: /* @__PURE__ */ (0, L.jsx)(C, {
 			color: i ?? "#9beaff",
 			emissive: i ?? "#219bff",
 			emissiveIntensity: 5,
@@ -1873,18 +1873,18 @@ function Je({ start: e, end: n, duration: r, color: i }) {
 }
 //#endregion
 //#region packages/walk-laser/src/ElectricScorch.tsx
-function Ye({ delay: e, lifetime: n }) {
-	let r = (0, j.useRef)(null), i = (0, j.useRef)(0);
-	return t((t, a) => {
-		if (i.current += a, !r.current) return;
-		let o = i.current - e;
-		r.current.visible = o >= 0 && o < n;
-		for (let e of r.current.children) {
-			let t = e.material;
-			t.opacity = e.userData.char ? .62 * Math.min(1, (n - o) / 1.5) : Math.max(0, 1 - o / 1.5) * (.7 + .3 * Math.sin(o * 32));
+function Ye({ delay: e, lifetime: t }) {
+	let n = (0, j.useRef)(null), r = (0, j.useRef)(0);
+	return S((i, a) => {
+		if (r.current += a, !n.current) return;
+		let o = r.current - e;
+		n.current.visible = o >= 0 && o < t;
+		for (let e of n.current.children) {
+			let n = e.material;
+			n.opacity = e.userData.char ? .62 * Math.min(1, (t - o) / 1.5) : Math.max(0, 1 - o / 1.5) * (.7 + .3 * Math.sin(o * 32));
 		}
 	}), /* @__PURE__ */ (0, L.jsxs)("group", {
-		ref: r,
+		ref: n,
 		name: "electric-scorch",
 		visible: !1,
 		children: [/* @__PURE__ */ (0, L.jsxs)("mesh", {
@@ -1895,7 +1895,7 @@ function Ye({ delay: e, lifetime: n }) {
 				1
 			],
 			raycast: () => void 0,
-			children: [/* @__PURE__ */ (0, L.jsx)("circleGeometry", { args: [.115, 11] }), /* @__PURE__ */ (0, L.jsx)(c, {
+			children: [/* @__PURE__ */ (0, L.jsx)("circleGeometry", { args: [.115, 11] }), /* @__PURE__ */ (0, L.jsx)(C, {
 				color: "#272b43",
 				transparent: !0,
 				opacity: .62,
@@ -1917,7 +1917,7 @@ function Ye({ delay: e, lifetime: n }) {
 					n
 				],
 				raycast: () => void 0,
-				children: [/* @__PURE__ */ (0, L.jsx)("planeGeometry", { args: [.05 + t % 3 * .016, .005] }), /* @__PURE__ */ (0, L.jsx)(c, {
+				children: [/* @__PURE__ */ (0, L.jsx)("planeGeometry", { args: [.05 + t % 3 * .016, .005] }), /* @__PURE__ */ (0, L.jsx)(C, {
 					color: "#b6eeff",
 					emissive: "#188fff",
 					emissiveIntensity: 4,
@@ -1948,25 +1948,25 @@ function Qe(e, t) {
 //#region packages/walk-laser/src/LaserShot.tsx
 var $ = () => void 0;
 function $e({ shot: e }) {
-	let n = (0, j.useRef)(null), r = (0, j.useRef)(null), i = (0, j.useRef)(null), a = (0, j.useRef)(0), o = (0, j.useMemo)(() => {
+	let t = (0, j.useRef)(null), n = (0, j.useRef)(null), r = (0, j.useRef)(null), i = (0, j.useRef)(0), a = (0, j.useMemo)(() => {
 		let t = e.end.clone().sub(e.start), n = t.length();
 		return t.normalize(), {
 			distance: n,
 			direction: t,
-			rotation: new k().setFromUnitVectors(new x(0, 0, 1), t)
+			rotation: new _().setFromUnitVectors(new O(0, 0, 1), t)
 		};
 	}, [e]);
-	t((t, s) => {
-		a.current += s;
-		let c = Qe(o.distance, a.current);
-		if (n.current && (n.current.visible = c.traveling, n.current.position.copy(e.start).addScaledVector(o.direction, (c.head + c.tail) / 2), n.current.scale.set(1, 1, Math.max(.001, c.head - c.tail))), r.current) {
-			r.current.visible = e.hit && c.impact;
+	S((o, s) => {
+		i.current += s;
+		let c = Qe(a.distance, i.current);
+		if (t.current && (t.current.visible = c.traveling, t.current.position.copy(e.start).addScaledVector(a.direction, (c.head + c.tail) / 2), t.current.scale.set(1, 1, Math.max(.001, c.head - c.tail))), n.current) {
+			n.current.visible = e.hit && c.impact;
 			let t = .5 + c.impactProgress * 2;
-			r.current.scale.setScalar(t), i.current && i.current.scale.setScalar(1 + c.impactProgress);
-			for (let e of r.current.children) e.isMesh && (e.material.opacity = (e.userData.glowOpacity ?? 1) * (1 - c.impactProgress) ** 2);
+			n.current.scale.setScalar(t), r.current && r.current.scale.setScalar(1 + c.impactProgress);
+			for (let e of n.current.children) e.isMesh && (e.material.opacity = (e.userData.glowOpacity ?? 1) * (1 - c.impactProgress) ** 2);
 		}
 	});
-	let s = new k().setFromUnitVectors(new x(0, 0, 1), e.normal ?? o.direction.clone().negate()), l = e.end.clone().addScaledVector(e.normal ?? o.direction.clone().negate(), .004);
+	let o = new _().setFromUnitVectors(new O(0, 0, 1), e.normal ?? a.direction.clone().negate()), s = e.end.clone().addScaledVector(e.normal ?? a.direction.clone().negate(), .004);
 	return /* @__PURE__ */ (0, L.jsxs)("group", {
 		userData: { walkToolVisual: !0 },
 		children: [
@@ -1977,8 +1977,8 @@ function $e({ shot: e }) {
 				color: e.color
 			}),
 			e.hit && e.scorch !== !1 && /* @__PURE__ */ (0, L.jsx)("group", {
-				position: l.toArray(),
-				quaternion: s.toArray(),
+				position: s.toArray(),
+				quaternion: o.toArray(),
 				children: /* @__PURE__ */ (0, L.jsx)(Ye, {
 					delay: 0,
 					lifetime: 3.2
@@ -1986,8 +1986,8 @@ function $e({ shot: e }) {
 			}),
 			/* @__PURE__ */ (0, L.jsxs)("group", {
 				name: "laser-pulse",
-				ref: n,
-				quaternion: o.rotation.toArray(),
+				ref: t,
+				quaternion: a.rotation.toArray(),
 				visible: !1,
 				children: [/* @__PURE__ */ (0, L.jsxs)("mesh", {
 					raycast: $,
@@ -2000,7 +2000,7 @@ function $e({ shot: e }) {
 						1,
 						8,
 						6
-					] }), /* @__PURE__ */ (0, L.jsx)(c, {
+					] }), /* @__PURE__ */ (0, L.jsx)(C, {
 						color: "#f5ffff",
 						emissive: e.color ?? "#caffff",
 						emissiveIntensity: 4,
@@ -2020,7 +2020,7 @@ function $e({ shot: e }) {
 						1,
 						8,
 						6
-					] }), /* @__PURE__ */ (0, L.jsx)(c, {
+					] }), /* @__PURE__ */ (0, L.jsx)(C, {
 						color: e.color ?? "#41dfff",
 						emissive: e.color ?? "#41dfff",
 						emissiveIntensity: 2,
@@ -2034,14 +2034,14 @@ function $e({ shot: e }) {
 			}),
 			/* @__PURE__ */ (0, L.jsxs)("group", {
 				name: "laser-impact",
-				ref: r,
-				position: l.toArray(),
-				quaternion: s.toArray(),
+				ref: n,
+				position: s.toArray(),
+				quaternion: o.toArray(),
 				visible: !1,
 				children: [
 					/* @__PURE__ */ (0, L.jsxs)("mesh", {
 						raycast: $,
-						children: [/* @__PURE__ */ (0, L.jsx)("icosahedronGeometry", { args: [.045, 1] }), /* @__PURE__ */ (0, L.jsx)(c, {
+						children: [/* @__PURE__ */ (0, L.jsx)("icosahedronGeometry", { args: [.045, 1] }), /* @__PURE__ */ (0, L.jsx)(C, {
 							color: e.color ?? "#d5f6ff",
 							emissive: e.color ?? "#168fff",
 							emissiveIntensity: 3,
@@ -2052,14 +2052,14 @@ function $e({ shot: e }) {
 						})]
 					}),
 					/* @__PURE__ */ (0, L.jsxs)("mesh", {
-						ref: i,
+						ref: r,
 						raycast: $,
 						children: [/* @__PURE__ */ (0, L.jsx)("torusGeometry", { args: [
 							.052,
 							.006,
 							5,
 							20
-						] }), /* @__PURE__ */ (0, L.jsx)(c, {
+						] }), /* @__PURE__ */ (0, L.jsx)(C, {
 							color: e.color ?? "#6dcaff",
 							emissive: e.color ?? "#6dcaff",
 							emissiveIntensity: 2,
@@ -2076,7 +2076,7 @@ function $e({ shot: e }) {
 							.09,
 							8,
 							6
-						] }), /* @__PURE__ */ (0, L.jsx)(c, {
+						] }), /* @__PURE__ */ (0, L.jsx)(C, {
 							color: e.color ?? "#47eaff",
 							emissive: e.color ?? "#47eaff",
 							emissiveIntensity: 2,
@@ -2105,7 +2105,7 @@ function $e({ shot: e }) {
 								.009,
 								.06,
 								4
-							] }), /* @__PURE__ */ (0, L.jsx)(c, {
+							] }), /* @__PURE__ */ (0, L.jsx)(C, {
 								color: e.color ?? "#d5f6ff",
 								emissive: e.color ?? "#218fff",
 								emissiveIntensity: 2,
@@ -2124,15 +2124,15 @@ function $e({ shot: e }) {
 //#endregion
 //#region packages/walk-laser/src/LaserShotWarmup.tsx
 function et() {
-	let { gl: e, camera: t, scene: n } = w(), r = (0, j.useMemo)(() => new b(), []), i = (0, j.useMemo)(() => ({
+	let { gl: e, camera: t, scene: n } = y(), r = (0, j.useMemo)(() => new l(), []), i = (0, j.useMemo)(() => ({
 		id: 0,
-		start: new x(),
-		end: new x(0, 0, -1),
+		start: new O(),
+		end: new O(0, 0, -1),
 		hit: !0
 	}), []);
 	return (0, j.useEffect)(() => {
 		e.compileAsync(r, t, n);
-		let i = new _(1, 1), a = e.getRenderTarget();
+		let i = new ne(1, 1), a = e.getRenderTarget();
 		try {
 			e.setRenderTarget(i), e.compileAsync(r, t, n);
 		} finally {
@@ -2143,7 +2143,7 @@ function et() {
 		t,
 		n,
 		r
-	]), g(/* @__PURE__ */ (0, L.jsx)($e, { shot: i }), r);
+	]), re(/* @__PURE__ */ (0, L.jsx)($e, { shot: i }), r);
 }
 //#endregion
 //#region packages/walk-laser/src/shot-gate.ts
@@ -2331,62 +2331,62 @@ function ot({ shotId: e, shotColor: t, anchor: n, reducedMotion: r }) {
 //#endregion
 //#region packages/walk-laser/src/comic-pew/useMuzzleAnchor.ts
 function st(e) {
-	let n = (0, j.useRef)(null), r = (0, j.useMemo)(() => new x(), []);
-	return t(({ camera: t, size: i }) => {
-		if (!n.current || !e.current) return;
-		e.current.updateWorldMatrix(!0, !1), e.current.getWorldPosition(r).project(t);
-		let a = Math.min(250, Math.max(148, i.width * .23)) * .7, o = Math.max(a / 2 + 12, Math.min(i.width - a / 2 - 12, (r.x + 1) * i.width / 2)), s = Math.max(a * .6 + 16, (1 - r.y) * i.height / 2 - 14);
-		n.current.style.transform = `translate3d(${o}px, ${s}px, 0)`, n.current.style.width = `${a}px`;
-	}, 1), n;
+	let t = (0, j.useRef)(null), n = (0, j.useMemo)(() => new O(), []);
+	return S(({ camera: r, size: i }) => {
+		if (!t.current || !e.current) return;
+		e.current.updateWorldMatrix(!0, !1), e.current.getWorldPosition(n).project(r);
+		let a = Math.min(250, Math.max(148, i.width * .23)) * .7, o = Math.max(a / 2 + 12, Math.min(i.width - a / 2 - 12, (n.x + 1) * i.width / 2)), s = Math.max(a * .6 + 16, (1 - n.y) * i.height / 2 - 14);
+		t.current.style.transform = `translate3d(${o}px, ${s}px, 0)`, t.current.style.width = `${a}px`;
+	}, 1), t;
 }
 //#endregion
 //#region packages/walk-laser/src/LaserWalkTool.tsx
-function ct({ enabled: e, pointerLocked: i, coarsePointer: a, reducedMotion: o, navigation: s, canActivateTarget: c, activateTarget: l }) {
-	let { camera: u, scene: d, gl: f } = w(), p = D(), m = (0, j.useRef)(null), h = (0, j.useRef)(null), _ = (0, j.useRef)(null), v = (0, j.useMemo)(() => new b(), []);
+function ct({ enabled: e, pointerLocked: t, coarsePointer: n, reducedMotion: r, navigation: i, canActivateTarget: s, activateTarget: u }) {
+	let { camera: d, scene: f, gl: p } = y(), m = b(), h = (0, j.useRef)(null), g = (0, j.useRef)(null), _ = (0, j.useRef)(null), v = (0, j.useMemo)(() => new l(), []);
 	(0, j.useEffect)(() => {
-		f.compileAsync(v, u);
+		p.compileAsync(v, d);
 	}, [
-		f,
+		p,
 		v,
-		u
+		d
 	]);
-	let { shots: y, triggerId: ee, triggerColor: C, recoil: T, emitShot: E } = qe(h, u, o), ne = st(h), re = y.at(-1), [O, ie] = (0, j.useState)("blue"), [k, M] = (0, j.useState)(null), N = (0, j.useRef)(null), P = (0, j.useRef)({
-		previous: u.position.clone(),
+	let { shots: ee, triggerId: C, triggerColor: te, recoil: w, emitShot: T } = qe(g, d, r), E = st(g), ne = ee.at(-1), [D, k] = (0, j.useState)("blue"), [ie, M] = (0, j.useState)(null), N = (0, j.useRef)(null), P = (0, j.useRef)({
+		previous: d.position.clone(),
 		speed: 0,
 		phase: 0,
 		time: 0
-	}), ae = (0, j.useMemo)(() => tt(), []), F = (0, j.useMemo)(() => new r(), []), I = (0, j.useMemo)(() => new S(), []), R = e && (a || i), z = (0, j.useRef)(R);
-	z.current = R, t((e, t) => {
-		let n = P.current, r = Math.hypot(u.position.x - n.previous.x, u.position.z - n.previous.z), i = R && t > 0 && r < .5 ? r / t : 0;
-		n.previous.copy(u.position), n.speed += (Math.min(i, 5) - n.speed) * (1 - Math.exp(-10 * t)), n.time += t, n.phase += t * (7 + n.speed * 2.5);
-		let a = o ? 0 : Math.min(n.speed / 2, 1.6), s = o ? 0 : Math.sin(n.time * 1.6) * .0015 + Math.sin(n.phase) * .004 * a, l = o ? 0 : Math.cos(n.time * 2) * .0015 + Math.cos(n.phase * 2) * .003 * a;
-		if (m.current) {
-			T.current *= Math.exp(-18 * t);
-			let e = u, n = 1.2 * Math.tan(e.fov * Math.PI / 360), r = n * e.aspect;
-			m.current.scale.setScalar(Math.min(.58, r * .56)), m.current.position.set(r * .29 + s, -n * .19 + l - a * .004, -.6 + (o ? 0 : T.current)), m.current.position.applyQuaternion(u.quaternion).add(u.position), m.current.quaternion.copy(u.quaternion), o || (m.current.rotateX(T.current * .9), m.current.rotateZ(s * 2));
+	}), ae = (0, j.useMemo)(() => tt(), []), F = (0, j.useMemo)(() => new o(), []), I = (0, j.useMemo)(() => new x(), []), R = e && (n || t), z = (0, j.useRef)(R);
+	z.current = R, S((e, t) => {
+		let n = P.current, i = Math.hypot(d.position.x - n.previous.x, d.position.z - n.previous.z), a = R && t > 0 && i < .5 ? i / t : 0;
+		n.previous.copy(d.position), n.speed += (Math.min(a, 5) - n.speed) * (1 - Math.exp(-10 * t)), n.time += t, n.phase += t * (7 + n.speed * 2.5);
+		let o = r ? 0 : Math.min(n.speed / 2, 1.6), c = r ? 0 : Math.sin(n.time * 1.6) * .0015 + Math.sin(n.phase) * .004 * o, l = r ? 0 : Math.cos(n.time * 2) * .0015 + Math.cos(n.phase * 2) * .003 * o;
+		if (h.current) {
+			w.current *= Math.exp(-18 * t);
+			let e = d, n = 1.2 * Math.tan(e.fov * Math.PI / 360), i = n * e.aspect;
+			h.current.scale.setScalar(Math.min(.58, i * .56)), h.current.position.set(i * .29 + c, -n * .19 + l - o * .004, -.6 + (r ? 0 : w.current)), h.current.position.applyQuaternion(d.quaternion).add(d.position), h.current.quaternion.copy(d.quaternion), r || (h.current.rotateX(w.current * .9), h.current.rotateZ(c * 2));
 		}
 		if (!R) {
 			N.current !== null && (N.current = null, M(null));
 			return;
 		}
-		F.setFromCamera(I, u);
-		let { target: f } = A(F, d), p = f && c(f) ? f.label : null;
+		F.setFromCamera(I, d);
+		let { target: u } = A(F, f), p = u && s(u) ? u.label : null;
 		p !== N.current && (N.current = p, M(p));
-	}), t(({ gl: t }) => {
+	}), S(({ gl: t }) => {
 		if (!e) return;
 		let n = t.autoClear;
 		try {
-			t.autoClear = !1, t.clearDepth(), t.render(v, u);
+			t.autoClear = !1, t.clearDepth(), t.render(v, d);
 		} finally {
 			t.autoClear = n;
 		}
 	}, 2);
 	let B = (0, j.useCallback)(() => {
 		z.current && ae(performance.now(), async () => {
-			d.updateMatrixWorld(!0), F.setFromCamera(I, u);
-			let { hit: e, target: t } = A(F, d), n = _.current?.remove(F.ray, e?.distance ?? 30);
+			f.updateMatrixWorld(!0), F.setFromCamera(I, d);
+			let { hit: e, target: t } = A(F, f), n = _.current?.remove(F.ray, e?.distance ?? 30);
 			if (n) {
-				E({
+				T({
 					end: n.point,
 					normal: n.normal,
 					hit: !0,
@@ -2394,56 +2394,56 @@ function ct({ enabled: e, pointerLocked: i, coarsePointer: a, reducedMotion: o, 
 				});
 				return;
 			}
-			let r = e?.point.clone() ?? F.ray.at(30, new x()), i = e?.face?.normal.clone().applyMatrix3(new te().getNormalMatrix(e.object.matrixWorld)).normalize();
-			i && i.dot(F.ray.direction) > 0 && i.negate(), E({
+			let r = e?.point.clone() ?? F.ray.at(30, new O()), i = e?.face?.normal.clone().applyMatrix3(new c().getNormalMatrix(e.object.matrixWorld)).normalize();
+			i && i.dot(F.ray.direction) > 0 && i.negate(), T({
 				end: r,
 				hit: !!e,
 				...i === void 0 ? {} : { normal: i }
-			}), t && await l(t);
+			}), t && await u(t);
 		});
 	}, [
-		l,
 		u,
+		d,
 		I,
 		ae,
 		F,
-		E,
-		d
+		T,
+		f
 	]);
 	(0, j.useEffect)(() => {
 		let e = (e) => {
-			!z.current || a || e.button !== 0 || !p.root.pointerLockElement || (e.preventDefault(), B());
+			!z.current || n || e.button !== 0 || !m.root.pointerLockElement || (e.preventDefault(), B());
 		}, t = (e) => {
 			!z.current || e.code !== "KeyF" || e.repeat || e.ctrlKey || e.metaKey || e.altKey || e.target instanceof HTMLElement && e.target.closest("input, textarea, select, [contenteditable=true]") || (e.preventDefault(), B());
 		};
-		return p.events.addEventListener("pointerdown", e), p.events.addEventListener("keydown", t), () => {
-			p.events.removeEventListener("pointerdown", e), p.events.removeEventListener("keydown", t);
+		return m.events.addEventListener("pointerdown", e), m.events.addEventListener("keydown", t), () => {
+			m.events.removeEventListener("pointerdown", e), m.events.removeEventListener("keydown", t);
 		};
 	}, [
-		a,
-		p.events,
-		p.root,
+		n,
+		m.events,
+		m.root,
 		B
 	]);
 	let oe = (0, j.useCallback)((e, t, n, r) => {
-		ie(r), E({
+		k(r), T({
 			end: e,
 			normal: t,
 			color: n,
 			hit: !0,
 			scorch: !1
 		});
-	}, [E]);
+	}, [T]);
 	return /* @__PURE__ */ (0, L.jsxs)(L.Fragment, { children: [
 		/* @__PURE__ */ (0, L.jsx)(Ae, {
 			active: R,
-			navigation: s,
-			reducedMotion: o,
+			navigation: i,
+			reducedMotion: r,
 			onPlaced: oe,
-			onNextColor: ie,
+			onNextColor: k,
 			controls: _
 		}),
-		g(/* @__PURE__ */ (0, L.jsxs)(L.Fragment, { children: [
+		re(/* @__PURE__ */ (0, L.jsxs)(L.Fragment, { children: [
 			/* @__PURE__ */ (0, L.jsx)("ambientLight", { intensity: 1.1 }),
 			/* @__PURE__ */ (0, L.jsx)("directionalLight", {
 				position: [
@@ -2454,16 +2454,16 @@ function ct({ enabled: e, pointerLocked: i, coarsePointer: a, reducedMotion: o, 
 				intensity: 2.2
 			}),
 			/* @__PURE__ */ (0, L.jsx)("group", {
-				ref: m,
+				ref: h,
 				children: /* @__PURE__ */ (0, L.jsx)(Ke, {
-					muzzleRef: h,
-					shotId: re?.id ?? 0
+					muzzleRef: g,
+					shotId: ne?.id ?? 0
 				})
 			})
 		] }), v),
-		!o && /* @__PURE__ */ (0, L.jsx)(et, {}),
-		y.map((e) => /* @__PURE__ */ (0, L.jsx)($e, { shot: e }, e.id)),
-		/* @__PURE__ */ (0, L.jsx)(n, {
+		!r && /* @__PURE__ */ (0, L.jsx)(et, {}),
+		ee.map((e) => /* @__PURE__ */ (0, L.jsx)($e, { shot: e }, e.id)),
+		/* @__PURE__ */ (0, L.jsx)(a, {
 			onOcclude: () => void 0,
 			fullscreen: !0,
 			calculatePosition: (e, t, n) => [n.width / 2, n.height / 2],
@@ -2473,22 +2473,22 @@ function ct({ enabled: e, pointerLocked: i, coarsePointer: a, reducedMotion: o, 
 				className: "walk-laser",
 				"data-ready": R,
 				children: [
-					/* @__PURE__ */ (0, L.jsx)(Pe, { coarsePointer: a }),
+					/* @__PURE__ */ (0, L.jsx)(Pe, { coarsePointer: n }),
 					/* @__PURE__ */ (0, L.jsx)(ot, {
-						shotId: ee,
-						shotColor: C,
-						anchor: ne,
-						reducedMotion: o
+						shotId: C,
+						shotColor: te,
+						anchor: E,
+						reducedMotion: r
 					}),
 					/* @__PURE__ */ (0, L.jsx)(Ie, {
-						target: !!k,
-						desktop: !a,
+						target: !!ie,
+						desktop: !n,
 						ready: R,
-						nextPortal: O
+						nextPortal: D
 					}),
-					a && /* @__PURE__ */ (0, L.jsx)(Fe, {
+					n && /* @__PURE__ */ (0, L.jsx)(Fe, {
 						ready: R,
-						nextPortal: O,
+						nextPortal: D,
 						zap: B,
 						portal: () => _.current?.place()
 					})
