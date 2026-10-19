@@ -1,7 +1,7 @@
 {
   "domain": "cabane",
   "name": "Cabane",
-  "version": "0.3.13",
+  "version": "0.3.14",
   "integration_type": "service",
   "dependencies": [
     "frontend",

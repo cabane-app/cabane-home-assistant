@@ -154,4 +154,9 @@ packaging, and acceptance checks. Automated tests use Home Assistant API doubles
 live installation and iOS Companion checks are separate release steps. Plain HTTP
 is supported only for paired loopback development origins.
 
-[MIT license](LICENSE).
+The bundled frontend is built from [cabane-app/cabane](https://github.com/cabane-app/cabane).
+HACS downloads this integration repository's complete `cabane.zip` release.
+
+Integration code: [MIT license](LICENSE). Bundled Cabane frontend:
+[PolyForm Noncommercial 1.0.0](https://github.com/cabane-app/cabane/blob/main/LICENSE),
+with its own third-party notices included in `frontend/`.

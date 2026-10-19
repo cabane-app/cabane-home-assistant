@@ -13,7 +13,8 @@ iOS Companion checks below are still required before publishing a release.
 
 ## Producer contract
 
-The frontend repository provides **`npm run build:panel`**, outputting `apps/web/dist-panel/` with:
+The frontend repository, [cabane-app/cabane](https://github.com/cabane-app/cabane),
+provides **`npm run build:panel`**, outputting `apps/web/dist-panel/` with:
 
 ```text
 dist-panel/
@@ -90,7 +91,7 @@ Use the implemented producer and complete the release checks:
 2. In this integration repository, run:
 
    ```sh
-   python3 scripts/vendor_frontend.py /path/to/smart-home-3d/apps/web/dist-panel
+   python3 scripts/vendor_frontend.py /path/to/cabane/apps/web/dist-panel
    python3 -m unittest discover -s tests -v
    python3 scripts/package_release.py --version v0.2.0
    ```
@@ -102,7 +103,7 @@ Use the implemented producer and complete the release checks:
    Verify workspace schema compatibility against the **vendored** bundle as well:
 
    ```sh
-   node scripts/verify_workspace_import.mjs /path/to/smart-home-3d
+   node scripts/verify_workspace_import.mjs /path/to/cabane
    ```
 
    The producer checkout supplies its installed, pinned Playwright and synthetic
@@ -118,12 +119,20 @@ Use the implemented producer and complete the release checks:
 3. Test the resulting `dist/cabane.zip` on a disposable HA instance. The archive
    has integration files at its root, including `frontend/` and translations;
    it must be extracted into `custom_components/cabane/`, not `/config`.
-4. Tag that integration commit with its manifest version. The tag workflow runs
-   tests, verifies the native bundle, checks tag/version agreement, and creates
-   a **draft** GitHub release containing `cabane.zip`. Publish only after the
-   acceptance checks. HACS is configured with `zip_release`, `filename` and
+4. Tag that integration commit with its manifest version. The tag workflow
+   verifies the native bundle, checks tag/version agreement, and packages
+   `cabane.zip`. If reviewed notes exist at `docs/releases/<tag>.md`, it publishes
+   the release; otherwise, it creates a **draft**. Complete the release checks
+   before pushing a tag with reviewed notes. HACS is configured with `zip_release`, `filename` and
    `hide_default_branch` so users receive the full archive rather than a partial
    source checkout. Do not publish GitHub's source archive as the install asset.
+
+Automatic compatibility releases run from `cabane-app/cabane` using its scoped
+`CABANE_INTEGRATION_DEPLOY_KEY` secret. The corresponding write-enabled deploy
+key belongs to this integration repository. UI and catalog updates can be
+released explicitly without changing the workspace contract revision.
+Keep the integration's MIT license and the frontend's own license and notices
+in their respective archive locations.
 
 For a local packaging check without vendoring, use
 `python3 scripts/package_release.py --frontend /path/to/dist-panel --output /tmp/cabane.zip`.

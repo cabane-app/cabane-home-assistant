@@ -1,10 +1,10 @@
 import { r as e } from "./rolldown-runtime-B0aSnxlc.js";
-import { $ as t, $n as n, $r as r, At as i, B as a, Br as o, C as s, Ci as c, Cn as l, D as u, Di as d, Dn as f, E as p, Ei as m, En as h, Fi as g, Fn as _, Ft as v, G as y, Gr as b, Gt as x, H as S, Hn as C, Hr as w, Ii as T, In as E, J as D, Jn as O, Jr as k, K as A, Kt as j, Ln as M, Mi as N, Mn as P, Mt as F, N as I, Nn as L, Nr as R, Nt as z, Oi as B, On as V, P as ee, Pi as H, Pn as te, Pt as ne, Q as re, Qr as ie, Qt as ae, R as oe, Rn as U, S as se, Sn as W, Sr as ce, T as le, Ti as ue, Tn as de, U as fe, Ut as pe, V as me, Vr as G, W as he, Wt as ge, X as _e, Y as ve, Yn as ye, Yr as K, Yt as be, Z as xe, Zn as Se, Zr as Ce, Zt as we, _ as Te, _i as q, _n as Ee, _r as De, a as Oe, ai as J, an as ke, ar as Ae, at as je, b as Me, bi as Ne, bn as Y, br as Pe, bt as Fe, c as Ie, ci as Le, cn as Re, cr as ze, ct as Be, d as Ve, di as He, dn as Ue, dr as We, dt as Ge, en as Ke, et as qe, f as Je, fn as Ye, fr as Xe, ft as Ze, g as Qe, gi as $e, gn as et, gr as tt, h as nt, hn as rt, hr as it, ht as at, i as ot, ii as st, in as ct, ir as lt, it as ut, jn as dt, jr as ft, jt as pt, ki as mt, kn as ht, l as gt, li as _t, lr as vt, lt as yt, m as bt, mn as xt, mr as St, mt as Ct, nn as wt, nr as Tt, nt as Et, o as Dt, on as Ot, ot as kt, p as At, pr as jt, pt as Mt, q as Nt, qt as Pt, r as Ft, rt as It, sn as Lt, sr as Rt, st as zt, tt as Bt, u as Vt, ui as Ht, un as Ut, ur as Wt, ut as Gt, vi as Kt, vn as qt, vr as Jt, w as Yt, wi as Xt, wr as Zt, x as Qt, xi as $t, xn as en, xr as tn, y as nn, yi as rn, yn as an, yr as on, yt as sn, z as cn, zn as ln, zt as un } from "./LaserIcon-DRDYMTYZ.js";
-import { C as X, E as dn, L as fn, M as pn, S as mn, T as hn, V as gn, _ as _n, a as vn, b as yn, c as bn, f as xn, g as Sn, i as Cn, j as wn, k as Tn, l as En, n as Dn, o as On, p as kn, r as An, s as jn, t as Mn, u as Nn, v as Pn, x as Fn, z as In } from "./ShortcutDeviceIcon-BStKqIN7.js";
+import { $ as t, $n as n, Ar as r, At as i, B as a, Br as o, C as s, Ci as c, Cn as l, Cr as u, D as d, Di as f, Dn as p, E as m, Ei as h, En as g, Fi as _, Fn as v, Ft as y, G as b, Gt as x, H as S, Hn as C, In as w, J as T, Jn as E, Jr as D, K as O, Kt as k, Ln as A, Mn as j, Mr as M, Mt as N, N as P, Ni as F, Nn as I, Nt as L, Oi as ee, On as R, P as te, Pi as z, Pn as B, Pt as V, Q as ne, Qr as H, Qt as re, R as ie, Rn as ae, S as oe, Si as se, Sn as ce, T as U, Ti as W, Tn as le, U as ue, Ut as de, V as fe, Vr as pe, W as G, Wr as me, Wt as he, X as ge, Xr as _e, Y as ve, Yn as ye, Yt as be, Z as xe, Zn as Se, Zr as Ce, Zt as we, _ as Te, _i as K, _n as Ee, _r as De, a as Oe, an as ke, ar as q, at as Ae, b as je, bi as Me, bn as Ne, br as Pe, bt as Fe, c as Ie, ci as Le, cn as Re, cr as ze, ct as Be, d as Ve, dn as He, dr as Ue, dt as We, en as Ge, et as Ke, f as qe, fn as Je, fr as Ye, ft as Xe, g as Ze, gi as J, gn as Qe, gr as $e, h as et, hi as tt, hn as nt, hr as rt, ht as it, i as at, ii as Y, in as ot, ir as st, it as ct, ji as lt, jn as ut, jt as dt, kn as ft, l as pt, li as mt, lr as ht, lt as gt, m as _t, mn as vt, mr as yt, mt as bt, nn as xt, nr as St, nt as Ct, o as wt, on as Tt, ot as Et, p as Dt, pr as Ot, pt as kt, q as At, qr as jt, qt as Mt, r as Nt, ri as Pt, rt as Ft, si as It, sn as Lt, sr as Rt, st as zt, tt as Bt, u as Vt, ui as Ht, un as Ut, ur as Wt, ut as Gt, vi as Kt, vn as qt, vr as Jt, w as Yt, wi as Xt, x as Zt, xn as Qt, xr as $t, y as en, yi as tn, yn as nn, yr as rn, yt as an, z as on, zn as sn, zr as cn, zt as ln } from "./LaserIcon-DwnO5L13.js";
+import { E as X, L as un, M as dn, S as fn, T as pn, V as mn, _ as hn, a as gn, b as _n, c as vn, f as yn, g as bn, i as xn, j as Sn, k as Cn, l as wn, n as Tn, o as En, p as Dn, r as On, s as kn, t as An, u as jn, v as Mn, w as Nn, x as Pn, z as Fn } from "./ShortcutDeviceIcon-DaDAJaAp.js";
 //#region node_modules/@react-three/drei/core/OrbitControls.js
-var Z = /* @__PURE__ */ e(T()), Ln = /* @__PURE__ */ Z.forwardRef(({ makeDefault: e, camera: t, regress: n, domElement: r, enableDamping: i = !0, keyEvents: a = !1, onChange: o, onStart: s, onEnd: c, ...l }, u) => {
-	let d = Ae((e) => e.invalidate), f = Ae((e) => e.camera), p = Ae((e) => e.gl), m = Ae((e) => e.events), h = Ae((e) => e.setEvents), g = Ae((e) => e.set), _ = Ae((e) => e.get), v = Ae((e) => e.performance), y = t || f, b = r || m.connected || p.domElement, x = Z.useMemo(() => new te(y), [y]);
-	return lt(() => {
+var Z = /* @__PURE__ */ e(_()), In = /* @__PURE__ */ Z.forwardRef(({ makeDefault: e, camera: t, regress: n, domElement: r, enableDamping: i = !0, keyEvents: a = !1, onChange: o, onStart: s, onEnd: c, ...l }, u) => {
+	let d = q((e) => e.invalidate), f = q((e) => e.camera), p = q((e) => e.gl), m = q((e) => e.events), h = q((e) => e.setEvents), g = q((e) => e.set), _ = q((e) => e.get), v = q((e) => e.performance), y = t || f, b = r || m.connected || p.domElement, x = Z.useMemo(() => new B(y), [y]);
+	return st(() => {
 		x.enabled && x.update();
 	}, -1), Z.useEffect(() => (a && x.connect(a === !0 ? b : a), x.connect(b), () => void x.dispose()), [
 		a,
@@ -35,32 +35,32 @@ var Z = /* @__PURE__ */ e(T()), Ln = /* @__PURE__ */ Z.forwardRef(({ makeDefault
 			let e = _().controls;
 			return g({ controls: x }), () => g({ controls: e });
 		}
-	}, [e, x]), /*#__PURE__*/ Z.createElement("primitive", E({
+	}, [e, x]), /*#__PURE__*/ Z.createElement("primitive", w({
 		ref: u,
 		object: x,
 		enableDamping: i
 	}, l));
-}), Rn = /*#__PURE__*/ function(e) {
+}), Ln = /*#__PURE__*/ function(e) {
 	return e[e.NONE = 0] = "NONE", e[e.START = 1] = "START", e[e.ACTIVE = 2] = "ACTIVE", e;
-}(Rn || {}), zn = (e) => e && e.isOrthographicCamera, Bn = (e) => e && e.isBox3, Vn = (e) => 1 - Math.exp(-5 * e) + .007 * e, Hn = /*#__PURE__*/ Z.createContext(null);
-function Un({ children: e, maxDuration: t = 1, margin: n = 1.2, observe: r, fit: i, clip: a, interpolateFunc: s = Vn, onFit: c }) {
-	let l = Z.useRef(null), { camera: u, size: d, invalidate: f } = Ae(), p = Ae((e) => e.controls), m = Z.useRef(c);
-	m.current = c;
-	let h = Z.useRef({
-		camPos: new J(),
-		camRot: new k(),
+}(Ln || {}), Rn = (e) => e && e.isOrthographicCamera, zn = (e) => e && e.isBox3, Bn = (e) => 1 - Math.exp(-5 * e) + .007 * e, Vn = /*#__PURE__*/ Z.createContext(null);
+function Hn({ children: e, maxDuration: t = 1, margin: n = 1.2, observe: r, fit: i, clip: a, interpolateFunc: o = Bn, onFit: s }) {
+	let c = Z.useRef(null), { camera: l, size: u, invalidate: d } = q(), f = q((e) => e.controls), p = Z.useRef(s);
+	p.current = s;
+	let m = Z.useRef({
+		camPos: new Y(),
+		camRot: new jt(),
 		camZoom: 1
-	}), g = Z.useRef({
+	}), h = Z.useRef({
 		camPos: void 0,
 		camRot: void 0,
 		camZoom: void 0,
 		camUp: void 0,
 		target: void 0
-	}), _ = Z.useRef(Rn.NONE), v = Z.useRef(0), [y] = Z.useState(() => new tn()), b = Z.useMemo(() => {
+	}), g = Z.useRef(Ln.NONE), _ = Z.useRef(0), [v] = Z.useState(() => new Pe()), y = Z.useMemo(() => {
 		function e() {
-			let e = y.getSize(new J()), t = y.getCenter(new J()), r = Math.max(e.x, e.y, e.z), i = zn(u) ? r * 4 : r / (2 * Math.atan(Math.PI * u.fov / 360)), a = zn(u) ? r * 4 : i / u.aspect, o = n * Math.max(i, a);
+			let e = v.getSize(new Y()), t = v.getCenter(new Y()), r = Math.max(e.x, e.y, e.z), i = Rn(l) ? r * 4 : r / (2 * Math.atan(Math.PI * l.fov / 360)), a = Rn(l) ? r * 4 : i / l.aspect, o = n * Math.max(i, a);
 			return {
-				box: y,
+				box: v,
 				size: e,
 				center: t,
 				distance: o
@@ -69,114 +69,114 @@ function Un({ children: e, maxDuration: t = 1, margin: n = 1.2, observe: r, fit:
 		return {
 			getSize: e,
 			refresh(e) {
-				if (Bn(e)) y.copy(e);
+				if (zn(e)) v.copy(e);
 				else {
-					let t = e || l.current;
+					let t = e || c.current;
 					if (!t) return this;
-					t.updateWorldMatrix(!0, !0), y.setFromObject(t);
+					t.updateWorldMatrix(!0, !0), v.setFromObject(t);
 				}
-				if (y.isEmpty()) {
-					let e = u.position.length() || 10;
-					y.setFromCenterAndSize(new J(), new J(e, e, e));
+				if (v.isEmpty()) {
+					let e = l.position.length() || 10;
+					v.setFromCenterAndSize(new Y(), new Y(e, e, e));
 				}
-				return h.current.camPos.copy(u.position), h.current.camRot.copy(u.quaternion), zn(u) && (h.current.camZoom = u.zoom), g.current.camPos = void 0, g.current.camRot = void 0, g.current.camZoom = void 0, g.current.camUp = void 0, g.current.target = void 0, this;
+				return m.current.camPos.copy(l.position), m.current.camRot.copy(l.quaternion), Rn(l) && (m.current.camZoom = l.zoom), h.current.camPos = void 0, h.current.camRot = void 0, h.current.camZoom = void 0, h.current.camUp = void 0, h.current.target = void 0, this;
 			},
 			reset() {
-				let { center: t, distance: n } = e(), r = u.position.clone().sub(t).normalize();
-				g.current.camPos = t.clone().addScaledVector(r, n), g.current.target = t.clone();
-				let i = new o().lookAt(g.current.camPos, g.current.target, u.up);
-				return g.current.camRot = new k().setFromRotationMatrix(i), _.current = Rn.START, v.current = 0, this;
+				let { center: t, distance: n } = e(), r = l.position.clone().sub(t).normalize();
+				h.current.camPos = t.clone().addScaledVector(r, n), h.current.target = t.clone();
+				let i = new cn().lookAt(h.current.camPos, h.current.target, l.up);
+				return h.current.camRot = new jt().setFromRotationMatrix(i), g.current = Ln.START, _.current = 0, this;
 			},
 			moveTo(e) {
-				return g.current.camPos = Array.isArray(e) ? new J(...e) : e.clone(), _.current = Rn.START, v.current = 0, this;
+				return h.current.camPos = Array.isArray(e) ? new Y(...e) : e.clone(), g.current = Ln.START, _.current = 0, this;
 			},
 			lookAt({ target: e, up: t }) {
-				g.current.target = Array.isArray(e) ? new J(...e) : e.clone(), t ? g.current.camUp = Array.isArray(t) ? new J(...t) : t.clone() : g.current.camUp = u.up.clone();
-				let n = new o().lookAt(g.current.camPos || u.position, g.current.target, g.current.camUp);
-				return g.current.camRot = new k().setFromRotationMatrix(n), _.current = Rn.START, v.current = 0, this;
+				h.current.target = Array.isArray(e) ? new Y(...e) : e.clone(), t ? h.current.camUp = Array.isArray(t) ? new Y(...t) : t.clone() : h.current.camUp = l.up.clone();
+				let n = new cn().lookAt(h.current.camPos || l.position, h.current.target, h.current.camUp);
+				return h.current.camRot = new jt().setFromRotationMatrix(n), g.current = Ln.START, _.current = 0, this;
 			},
 			to({ position: e, target: t }) {
 				return this.moveTo(e).lookAt({ target: t });
 			},
 			fit() {
-				if (!zn(u)) return this.reset();
+				if (!Rn(l)) return this.reset();
 				let e = 0, t = 0, r = [
-					new J(y.min.x, y.min.y, y.min.z),
-					new J(y.min.x, y.max.y, y.min.z),
-					new J(y.min.x, y.min.y, y.max.z),
-					new J(y.min.x, y.max.y, y.max.z),
-					new J(y.max.x, y.max.y, y.max.z),
-					new J(y.max.x, y.max.y, y.min.z),
-					new J(y.max.x, y.min.y, y.max.z),
-					new J(y.max.x, y.min.y, y.min.z)
-				], i = g.current.camPos || u.position, a = g.current.target || p?.target, s = g.current.camUp || u.up, c = a ? new o().lookAt(i, a, s).setPosition(i).invert() : u.matrixWorldInverse;
-				for (let n of r) n.applyMatrix4(c), e = Math.max(e, Math.abs(n.y)), t = Math.max(t, Math.abs(n.x));
+					new Y(v.min.x, v.min.y, v.min.z),
+					new Y(v.min.x, v.max.y, v.min.z),
+					new Y(v.min.x, v.min.y, v.max.z),
+					new Y(v.min.x, v.max.y, v.max.z),
+					new Y(v.max.x, v.max.y, v.max.z),
+					new Y(v.max.x, v.max.y, v.min.z),
+					new Y(v.max.x, v.min.y, v.max.z),
+					new Y(v.max.x, v.min.y, v.min.z)
+				], i = h.current.camPos || l.position, a = h.current.target || f?.target, o = h.current.camUp || l.up, s = a ? new cn().lookAt(i, a, o).setPosition(i).invert() : l.matrixWorldInverse;
+				for (let n of r) n.applyMatrix4(s), e = Math.max(e, Math.abs(n.y)), t = Math.max(t, Math.abs(n.x));
 				e *= 2, t *= 2;
-				let l = (u.top - u.bottom) / e, d = (u.right - u.left) / t;
-				return g.current.camZoom = Math.min(l, d) / n, _.current = Rn.START, v.current = 0, m.current && m.current(this.getSize()), this;
+				let c = (l.top - l.bottom) / e, u = (l.right - l.left) / t;
+				return h.current.camZoom = Math.min(c, u) / n, g.current = Ln.START, _.current = 0, p.current && p.current(this.getSize()), this;
 			},
 			clip() {
 				let { distance: t } = e();
-				return u.near = t / 100, u.far = t * 100, u.updateProjectionMatrix(), p && (p.maxDistance = t * 10, p.update()), f(), this;
+				return l.near = t / 100, l.far = t * 100, l.updateProjectionMatrix(), f && (f.maxDistance = t * 10, f.update()), d(), this;
 			}
 		};
 	}, [
-		y,
-		u,
-		p,
+		v,
+		l,
+		f,
 		n,
-		f
+		d
 	]);
 	Z.useLayoutEffect(() => {
-		if (p) {
+		if (f) {
 			let e = () => {
-				if (p && g.current.target && _.current !== Rn.NONE) {
-					let e = new J().setFromMatrixColumn(u.matrix, 2), t = h.current.camPos.distanceTo(p.target), n = (g.current.camPos || h.current.camPos).distanceTo(g.current.target), r = (1 - v.current) * t + v.current * n;
-					p.target.copy(u.position).addScaledVector(e, -r), p.update();
+				if (f && h.current.target && g.current !== Ln.NONE) {
+					let e = new Y().setFromMatrixColumn(l.matrix, 2), t = m.current.camPos.distanceTo(f.target), n = (h.current.camPos || m.current.camPos).distanceTo(h.current.target), r = (1 - _.current) * t + _.current * n;
+					f.target.copy(l.position).addScaledVector(e, -r), f.update();
 				}
-				_.current = Rn.NONE;
+				g.current = Ln.NONE;
 			};
-			return p.addEventListener("start", e), () => p.removeEventListener("start", e);
+			return f.addEventListener("start", e), () => f.removeEventListener("start", e);
 		}
-	}, [p]);
-	let x = Z.useRef(0);
+	}, [f]);
+	let b = Z.useRef(0);
 	return Z.useLayoutEffect(() => {
-		(r || x.current++ === 0) && (b.refresh(), i && b.reset().fit(), a && b.clip());
+		(r || b.current++ === 0) && (y.refresh(), i && y.reset().fit(), a && y.clip());
 	}, [
-		d,
+		u,
 		a,
 		i,
 		r,
-		u,
-		p
-	]), lt((e, n) => {
-		if (_.current === Rn.START) _.current = Rn.ACTIVE, f();
-		else if (_.current === Rn.ACTIVE) {
-			if (v.current += n / t, v.current >= 1) g.current.camPos && u.position.copy(g.current.camPos), g.current.camRot && u.quaternion.copy(g.current.camRot), g.current.camUp && u.up.copy(g.current.camUp), g.current.camZoom && zn(u) && (u.zoom = g.current.camZoom), u.updateMatrixWorld(), u.updateProjectionMatrix(), p && g.current.target && (p.target.copy(g.current.target), p.update()), _.current = Rn.NONE;
+		l,
+		f
+	]), st((e, n) => {
+		if (g.current === Ln.START) g.current = Ln.ACTIVE, d();
+		else if (g.current === Ln.ACTIVE) {
+			if (_.current += n / t, _.current >= 1) h.current.camPos && l.position.copy(h.current.camPos), h.current.camRot && l.quaternion.copy(h.current.camRot), h.current.camUp && l.up.copy(h.current.camUp), h.current.camZoom && Rn(l) && (l.zoom = h.current.camZoom), l.updateMatrixWorld(), l.updateProjectionMatrix(), f && h.current.target && (f.target.copy(h.current.target), f.update()), g.current = Ln.NONE;
 			else {
-				let e = s(v.current);
-				g.current.camPos && u.position.lerpVectors(h.current.camPos, g.current.camPos, e), g.current.camRot && u.quaternion.slerpQuaternions(h.current.camRot, g.current.camRot, e), g.current.camUp && u.up.set(0, 1, 0).applyQuaternion(u.quaternion), g.current.camZoom && zn(u) && (u.zoom = (1 - e) * h.current.camZoom + e * g.current.camZoom), u.updateMatrixWorld(), u.updateProjectionMatrix();
+				let e = o(_.current);
+				h.current.camPos && l.position.lerpVectors(m.current.camPos, h.current.camPos, e), h.current.camRot && l.quaternion.slerpQuaternions(m.current.camRot, h.current.camRot, e), h.current.camUp && l.up.set(0, 1, 0).applyQuaternion(l.quaternion), h.current.camZoom && Rn(l) && (l.zoom = (1 - e) * m.current.camZoom + e * h.current.camZoom), l.updateMatrixWorld(), l.updateProjectionMatrix();
 			}
-			f();
+			d();
 		}
-	}), /*#__PURE__*/ Z.createElement("group", { ref: l }, /*#__PURE__*/ Z.createElement(Hn.Provider, { value: b }, e));
+	}), /*#__PURE__*/ Z.createElement("group", { ref: c }, /*#__PURE__*/ Z.createElement(Vn.Provider, { value: y }, e));
 }
 //#endregion
 //#region packages/engine/src/imported-models/normalization.ts
-function Wn(e, t, r = [
+function Un(e, t, r = [
 	0,
 	0,
 	0
 ], i = 1) {
 	if (!Number.isFinite(i) || i <= 0 || r.some((e) => !Number.isFinite(e))) throw Error("Orientation and scale must be finite; scale must be positive.");
-	let a = new R();
+	let a = new M();
 	a.rotation.set(...r), a.scale.setScalar(i), a.add(n(e));
-	let o = new tn().setFromObject(a, !0), s = o.getCenter(new J()), c = [
+	let o = new Pe().setFromObject(a, !0), s = o.getCenter(new Y()), c = [
 		-s.x,
 		t === "floor" ? -o.min.y : t === "ceiling" ? -o.max.y : -s.y,
 		t === "wall" ? -o.min.z : -s.z
 	];
-	o.translate(new J(...c));
+	o.translate(new Y(...c));
 	for (let e of [
 		"x",
 		"y",
@@ -186,7 +186,7 @@ function Wn(e, t, r = [
 		rotation: r,
 		scale: i,
 		offset: c,
-		size: o.getSize(new J()).toArray(),
+		size: o.getSize(new Y()).toArray(),
 		bounds: {
 			min: o.min.toArray(),
 			max: o.max.toArray()
@@ -195,17 +195,17 @@ function Wn(e, t, r = [
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/WallFinishPreview.tsx
-var Q = g(), Gn = (0, Z.createContext)({
+var Q = z(), Wn = (0, Z.createContext)({
 	palette: {
-		interior: f.interior,
-		exterior: f.exterior
+		interior: p.interior,
+		exterior: p.exterior
 	},
 	highlight: null,
 	setHighlight: (e) => {}
 });
-function Kn({ palette: e, children: t }) {
+function Gn({ palette: e, children: t }) {
 	let [n, r] = (0, Z.useState)(null);
-	return /* @__PURE__ */ (0, Q.jsx)(Gn, {
+	return /* @__PURE__ */ (0, Q.jsx)(Wn, {
 		value: {
 			palette: e,
 			highlight: n,
@@ -214,7 +214,7 @@ function Kn({ palette: e, children: t }) {
 		children: t
 	});
 }
-var qn = () => (0, Z.useContext)(Gn);
+var Kn = () => (0, Z.useContext)(Wn);
 //#endregion
 //#region apps/web/src/editor-chrome/EditorButton.tsx
 function $({ variant: e = "secondary", className: t = "", type: n = "button", ...r }) {
@@ -227,7 +227,7 @@ function $({ variant: e = "secondary", className: t = "", type: n = "button", ..
 }
 //#endregion
 //#region apps/web/src/editor-floors/FloorManagementDialog.tsx
-function Jn({ action: e, name: t, itemCount: n, stairCount: r, height: i, onSave: a, onCancel: o, onRemove: s, removeDisabledReason: c }) {
+function qn({ action: e, name: t, itemCount: n, stairCount: r, height: i, onSave: a, onCancel: o, onRemove: s, removeDisabledReason: c }) {
 	let l = ze(), u = (0, Z.useRef)(null), d = (0, Z.useId)(), f = (0, Z.useId)(), p = (0, Z.useId)(), [m, h] = (0, Z.useState)(t), [g, _] = (0, Z.useState)(String(i)), v = e === "rename" && (!m.trim() || !Number.isFinite(Number(g)) || Number(g) <= 0);
 	return (0, Z.useEffect)(() => {
 		let e = l.root.activeElement;
@@ -316,30 +316,30 @@ function Jn({ action: e, name: t, itemCount: n, stairCount: r, height: i, onSave
 }
 //#endregion
 //#region apps/web/src/editor-floors/ConstructFloorControls.tsx
-function Yn({ floors: e, selectedId: t, disabled: n, onSelect: r, onAdd: i, onAddBelow: a, onSettings: o }) {
-	let [s, c] = (0, Z.useState)(!1), l = (0, Z.useRef)(null), u = (0, Z.useRef)(null), d = (0, Z.useRef)(null), f = (0, Z.useId)(), p = s && !n, m = (e = !1) => {
-		c(!1), e && u.current?.focus();
+function Jn({ floors: e, selectedId: t, disabled: n, onSelect: r, onAdd: i, onAddBelow: a, onSettings: o }) {
+	let s = ze(), [c, l] = (0, Z.useState)(!1), u = (0, Z.useRef)(null), d = (0, Z.useRef)(null), f = (0, Z.useRef)(null), p = (0, Z.useId)(), m = c && !n, h = (e = !1) => {
+		l(!1), e && d.current?.focus();
 	};
 	return (0, Z.useEffect)(() => {
-		if (!p) return;
-		d.current?.querySelector("[aria-checked=\"true\"]")?.focus();
+		if (!m) return;
+		f.current?.querySelector("[aria-checked=\"true\"]")?.focus();
 		let e = (e) => {
-			l.current?.contains(e.target) || c(!1);
+			u.current?.contains(e.target) || l(!1);
 		};
-		return document.addEventListener("pointerdown", e), () => document.removeEventListener("pointerdown", e);
-	}, [p]), (0, Z.useEffect)(() => {
-		c(!1);
+		return s.events.addEventListener("pointerdown", e), () => s.events.removeEventListener("pointerdown", e);
+	}, [s, m]), (0, Z.useEffect)(() => {
+		l(!1);
 	}, [t, n]), /* @__PURE__ */ (0, Q.jsxs)("div", {
-		ref: l,
+		ref: u,
 		className: "construct-floor-controls",
 		role: "group",
 		"aria-label": "Floor controls",
 		onBlur: (e) => {
-			e.currentTarget.contains(e.relatedTarget) || m();
+			e.currentTarget.contains(e.relatedTarget) || h();
 		},
 		children: [
 			/* @__PURE__ */ (0, Q.jsxs)("button", {
-				ref: u,
+				ref: d,
 				type: "button",
 				className: "construct-floor-controls__trigger",
 				"aria-label": "Current floor",
@@ -347,12 +347,12 @@ function Yn({ floors: e, selectedId: t, disabled: n, onSelect: r, onAdd: i, onAd
 				title: e.find((e) => e.id === t)?.name,
 				"data-floor-id": t,
 				"aria-haspopup": "menu",
-				"aria-expanded": p,
-				"aria-controls": p ? f : void 0,
+				"aria-expanded": m,
+				"aria-controls": m ? p : void 0,
 				disabled: n,
-				onClick: () => c(!p),
+				onClick: () => l(!m),
 				onKeyDown: (e) => {
-					(e.key === "ArrowDown" || e.key === "ArrowUp") && (e.preventDefault(), c(!0));
+					(e.key === "ArrowDown" || e.key === "ArrowUp") && (e.preventDefault(), l(!0));
 				},
 				children: [/* @__PURE__ */ (0, Q.jsx)("span", { children: e.find((e) => e.id === t)?.name }), /* @__PURE__ */ (0, Q.jsx)(X, { name: "chevron" })]
 			}),
@@ -361,22 +361,22 @@ function Yn({ floors: e, selectedId: t, disabled: n, onSelect: r, onAdd: i, onAd
 				title: "Floor settings",
 				disabled: n,
 				onClick: () => {
-					m(), o();
+					h(), o();
 				},
 				children: /* @__PURE__ */ (0, Q.jsx)(X, { name: "settings" })
 			}),
-			p && /* @__PURE__ */ (0, Q.jsxs)("div", {
-				ref: d,
-				id: f,
+			m && /* @__PURE__ */ (0, Q.jsxs)("div", {
+				ref: f,
+				id: p,
 				className: "construct-floor-controls__menu",
 				role: "menu",
 				"aria-label": "Floors",
 				onKeyDown: (e) => {
 					if (e.key === "Escape") {
-						e.preventDefault(), e.stopPropagation(), m(!0);
+						e.preventDefault(), e.stopPropagation(), h(!0);
 						return;
 					}
-					let t = Array.from(d.current?.querySelectorAll("button") ?? []), n = t.indexOf(document.activeElement), r = e.key === "ArrowDown" ? (n + 1) % t.length : e.key === "ArrowUp" ? (n + t.length - 1) % t.length : e.key === "Home" ? 0 : e.key === "End" ? t.length - 1 : null;
+					let t = Array.from(f.current?.querySelectorAll("button") ?? []), n = t.indexOf(s.root.activeElement), r = e.key === "ArrowDown" ? (n + 1) % t.length : e.key === "ArrowUp" ? (n + t.length - 1) % t.length : e.key === "Home" ? 0 : e.key === "End" ? t.length - 1 : null;
 					r !== null && (e.preventDefault(), e.stopPropagation(), t[r]?.focus());
 				},
 				children: [
@@ -386,7 +386,7 @@ function Yn({ floors: e, selectedId: t, disabled: n, onSelect: r, onAdd: i, onAd
 						"aria-checked": e.id === t,
 						tabIndex: -1,
 						onClick: () => {
-							m(!0), r(e.id);
+							h(!0), r(e.id);
 						},
 						children: [/* @__PURE__ */ (0, Q.jsx)("span", { children: e.name }), e.id === t && /* @__PURE__ */ (0, Q.jsx)(X, { name: "check" })]
 					}, e.id)),
@@ -396,7 +396,7 @@ function Yn({ floors: e, selectedId: t, disabled: n, onSelect: r, onAdd: i, onAd
 						role: "menuitem",
 						tabIndex: -1,
 						onClick: () => {
-							m(!0), i();
+							h(!0), i();
 						},
 						children: [/* @__PURE__ */ (0, Q.jsx)(X, { name: "plus" }), /* @__PURE__ */ (0, Q.jsx)("span", { children: "Add floor above" })]
 					}),
@@ -405,7 +405,7 @@ function Yn({ floors: e, selectedId: t, disabled: n, onSelect: r, onAdd: i, onAd
 						role: "menuitem",
 						tabIndex: -1,
 						onClick: () => {
-							m(!0), a();
+							h(!0), a();
 						},
 						children: [/* @__PURE__ */ (0, Q.jsx)(X, { name: "plus" }), /* @__PURE__ */ (0, Q.jsx)("span", { children: "Add floor below" })]
 					})
@@ -416,7 +416,7 @@ function Yn({ floors: e, selectedId: t, disabled: n, onSelect: r, onAdd: i, onAd
 }
 //#endregion
 //#region apps/web/src/editor-floors/StairWarnings.tsx
-function Xn({ issues: e, compact: t = !1 }) {
+function Yn({ issues: e, compact: t = !1 }) {
 	let n = [...new Set(e.filter((e) => e.severity === "warning").map((e) => e.message))];
 	if (!n.length) return null;
 	let r = /* @__PURE__ */ (0, Q.jsx)("ul", { children: n.map((e) => /* @__PURE__ */ (0, Q.jsx)("li", { children: e }, e)) });
@@ -436,14 +436,14 @@ function Xn({ issues: e, compact: t = !1 }) {
 }
 //#endregion
 //#region apps/web/src/editor-floors/stair-preview-entries.tsx
-var Zn = {
+var Xn = {
 	origin: [0, 0],
 	metersPerPlanUnit: 1,
 	scaleBasis: "inferred"
-}, Qn = {
+}, Zn = {
 	id: "lower",
 	name: "Preview",
-	coordinates: Zn,
+	coordinates: Xn,
 	floorToFloorHeightMeters: 3,
 	defaultWallHeightMeters: 3,
 	defaultCeilingHeightMeters: 3,
@@ -452,25 +452,25 @@ var Zn = {
 	walls: [],
 	openings: [],
 	wallJunctions: []
-}, $n = {
-	coordinates: Zn,
-	floors: [Qn, {
-		...Qn,
+}, Qn = {
+	coordinates: Xn,
+	floors: [Zn, {
+		...Zn,
 		id: "upper"
 	}],
 	stairs: [],
 	sceneItems: []
-}, er = {
+}, $n = {
 	id: "preview",
 	lowerFloorId: "lower",
 	upperFloorId: "upper",
 	at: [0, 0],
 	rotationYRadians: Math.PI
-}, tr = [
+}, er = [
 	{
 		label: "Straight",
 		stair: {
-			...er,
+			...$n,
 			shape: "straight",
 			widthMeters: 1,
 			runMeters: 4.5
@@ -479,7 +479,7 @@ var Zn = {
 	{
 		label: "L-shaped",
 		stair: {
-			...er,
+			...$n,
 			shape: "l-shaped",
 			widthMeters: 1,
 			lowerRunMeters: 2.25,
@@ -490,7 +490,7 @@ var Zn = {
 	{
 		label: "U-shaped",
 		stair: {
-			...er,
+			...$n,
 			shape: "u-shaped",
 			widthMeters: 1,
 			lowerRunMeters: 2.25,
@@ -501,7 +501,7 @@ var Zn = {
 	{
 		label: "Spiral",
 		stair: {
-			...er,
+			...$n,
 			shape: "spiral",
 			diameterMeters: 2,
 			totalTurnDegrees: 360,
@@ -509,7 +509,7 @@ var Zn = {
 		}
 	}
 ].map(({ label: e, stair: t }) => {
-	let n = et($n, t), r = [...n.footprintWorld, ...n.upperLanding], i = {
+	let n = Qe(Qn, t), r = [...n.footprintWorld, ...n.upperLanding], i = {
 		key: `stair-preview-v1:${t.shape}`,
 		kind: "procedural",
 		definition: {
@@ -527,17 +527,17 @@ var Zn = {
 			},
 			component: () => t.shape === "spiral" ? /* @__PURE__ */ (0, Q.jsx)(Yt, {
 				flight: n,
-				coordinates: Zn,
+				coordinates: Xn,
 				showUpperGuard: !1
 			}) : t.shape === "u-shaped" ? /* @__PURE__ */ (0, Q.jsx)(s, {
 				flight: n,
-				coordinates: Zn,
+				coordinates: Xn,
 				showUpperGuard: !1
-			}) : t.shape === "l-shaped" ? /* @__PURE__ */ (0, Q.jsx)(le, {
+			}) : t.shape === "l-shaped" ? /* @__PURE__ */ (0, Q.jsx)(U, {
 				flight: n,
-				coordinates: Zn,
+				coordinates: Xn,
 				showUpperGuard: !1
-			}) : /* @__PURE__ */ (0, Q.jsx)(p, {
+			}) : /* @__PURE__ */ (0, Q.jsx)(m, {
 				flight: n,
 				showUpperGuard: !1
 			})
@@ -551,14 +551,14 @@ var Zn = {
 });
 //#endregion
 //#region apps/web/src/editor-floors/StairPlacementPanel.tsx
-function nr({ shape: e, issues: t = [], onChange: n, onCancel: r }) {
+function tr({ shape: e, issues: t = [], onChange: n, onCancel: r }) {
 	let i = (0, Z.useRef)(null);
 	return /* @__PURE__ */ (0, Q.jsxs)("section", {
 		className: "construction-inspector__selection",
 		"aria-label": "Staircase",
 		children: [
 			/* @__PURE__ */ (0, Q.jsx)("header", { children: /* @__PURE__ */ (0, Q.jsx)("h3", { children: "Staircase" }) }),
-			/* @__PURE__ */ (0, Q.jsx)(Cn, {
+			/* @__PURE__ */ (0, Q.jsx)(xn, {
 				scrollRoot: i,
 				enabled: !0,
 				children: /* @__PURE__ */ (0, Q.jsx)("div", {
@@ -566,12 +566,12 @@ function nr({ shape: e, issues: t = [], onChange: n, onCancel: r }) {
 					ref: i,
 					role: "group",
 					"aria-label": "Stair shape",
-					children: tr.map(({ shape: t, label: r, entry: i }) => /* @__PURE__ */ (0, Q.jsxs)("button", {
+					children: er.map(({ shape: t, label: r, entry: i }) => /* @__PURE__ */ (0, Q.jsxs)("button", {
 						type: "button",
 						"aria-label": r,
 						"aria-pressed": e === t,
 						onClick: () => n(t),
-						children: [/* @__PURE__ */ (0, Q.jsx)(An, {
+						children: [/* @__PURE__ */ (0, Q.jsx)(On, {
 							entry: i,
 							showAdd: !1,
 							fallback: /* @__PURE__ */ (0, Q.jsx)("span", { children: "Preview unavailable" })
@@ -584,7 +584,7 @@ function nr({ shape: e, issues: t = [], onChange: n, onCancel: r }) {
 				role: "status",
 				children: e === "spiral" ? "Click the center, then the outer edge to set diameter and rotation. Escape cancels." : e === "l-shaped" || e === "u-shaped" ? "Click the bottom, landing center, then the upper endpoint. Escape cancels." : "Drag from bottom to top, or click each endpoint. Escape cancels."
 			}),
-			/* @__PURE__ */ (0, Q.jsx)(Xn, {
+			/* @__PURE__ */ (0, Q.jsx)(Yn, {
 				issues: t,
 				compact: !0
 			}),
@@ -597,483 +597,14 @@ function nr({ shape: e, issues: t = [], onChange: n, onCancel: r }) {
 	});
 }
 //#endregion
-//#region apps/web/src/editor-floors/StairShapeSelect.tsx
-function rr({ value: e, onChange: t }) {
-	return /* @__PURE__ */ (0, Q.jsxs)("label", {
-		className: "construction-inspector__single-control",
-		children: ["Shape", /* @__PURE__ */ (0, Q.jsxs)("select", {
-			"aria-label": "Stair shape",
-			value: e,
-			onChange: (e) => t(e.target.value),
-			children: [
-				/* @__PURE__ */ (0, Q.jsx)("option", {
-					value: "straight",
-					children: "Straight"
-				}),
-				/* @__PURE__ */ (0, Q.jsx)("option", {
-					value: "l-shaped",
-					children: "L-shaped"
-				}),
-				/* @__PURE__ */ (0, Q.jsx)("option", {
-					value: "u-shaped",
-					children: "U-shaped"
-				}),
-				/* @__PURE__ */ (0, Q.jsx)("option", {
-					value: "spiral",
-					children: "Spiral"
-				})
-			]
-		})]
-	});
-}
-//#endregion
-//#region apps/web/src/editor-floors/stair-placement-geometry.ts
-var ir = (e) => Number(e.toFixed(2));
-function ar(e, t, n, r) {
-	let i = r.x - n.x, a = r.z - n.z, o = Math.hypot(i, a);
-	if (!Number.isFinite(o) || o < .1) return null;
-	let s = Xt(n, t);
-	return e.shape === "spiral" ? {
-		...e,
-		at: s,
-		diameterMeters: ir(2 * o),
-		rotationYRadians: -Math.atan2(a, i)
-	} : e.shape === "l-shaped" || e.shape === "u-shaped" ? o - e.widthMeters / 2 >= .1 ? {
-		...e,
-		at: s,
-		lowerRunMeters: ir(o - e.widthMeters / 2),
-		rotationYRadians: Math.atan2(i, a)
-	} : null : {
-		...e,
-		at: s,
-		runMeters: ir(o),
-		rotationYRadians: Math.atan2(i, a)
-	};
-}
-function or(e, t, n, r, i) {
-	let a = ar(e, t, n, r);
-	if (!a || a.shape !== "l-shaped" && a.shape !== "u-shaped") return null;
-	let o = (i.x - r.x) * Math.cos(a.rotationYRadians) - (i.z - r.z) * Math.sin(a.rotationYRadians), s = (i.x - r.x) * Math.sin(a.rotationYRadians) + (i.z - r.z) * Math.cos(a.rotationYRadians), c = a.shape === "u-shaped" ? -s - e.widthMeters / 2 : Math.abs(o) - e.widthMeters / 2;
-	return c >= .1 ? {
-		...a,
-		upperRunMeters: ir(c),
-		turn: o >= 0 ? "right" : "left"
-	} : null;
-}
-function sr(e, t, n, r, i, a) {
-	let o = {
-		x: Math.sin(e.rotationYRadians),
-		z: Math.cos(e.rotationYRadians)
-	};
-	if (a === "body") return {
-		...e,
-		at: Xt({
-			x: n.x + i.x - r.x,
-			z: n.z + i.z - r.z
-		}, t)
-	};
-	if (e.shape === "spiral") {
-		let t = Math.hypot(i.x - n.x, i.z - n.z);
-		return t <= .1 ? null : a === "rotation" ? {
-			...e,
-			rotationYRadians: -Math.atan2(i.z - n.z, i.x - n.x)
-		} : {
-			...e,
-			diameterMeters: ir(t * 2)
-		};
-	}
-	if (e.shape === "l-shaped" || e.shape === "u-shaped") {
-		let r = {
-			x: n.x + o.x * (e.lowerRunMeters + e.widthMeters / 2),
-			z: n.z + o.z * (e.lowerRunMeters + e.widthMeters / 2)
-		};
-		if (a === "bottom") return ar(e, t, i, r);
-		if (a === "corner") return ar(e, t, n, i);
-		if (a === "top") return or(e, t, n, r, i);
-	} else {
-		let r = {
-			x: n.x + o.x * e.runMeters,
-			z: n.z + o.z * e.runMeters
-		};
-		if (a === "bottom") return ar(e, t, i, r);
-		if (a === "top") return ar(e, t, n, i);
-	}
-	let s = (i.x - n.x) * o.z - (i.z - n.z) * o.x, c = ir(Math.abs(s) * 2);
-	return c >= .1 ? {
-		...e,
-		widthMeters: c
-	} : null;
-}
-function cr(e, t, n) {
-	if ((t.shape ?? "straight") === n) return t;
-	let r = et(e, t)?.startWorld ?? q(t.at, e.coordinates), i = {
-		id: t.id,
-		railings: t.railings,
-		lowerFloorId: t.lowerFloorId,
-		upperFloorId: t.upperFloorId,
-		at: Xt({
-			x: r[0],
-			z: r[1]
-		}, e.coordinates),
-		rotationYRadians: t.rotationYRadians
-	}, a = e.floors.find((e) => e.id === t.lowerFloorId).floorToFloorHeightMeters;
-	return vt(n === "spiral" ? {
-		...i,
-		shape: n,
-		at: Xt({
-			x: r[0] - .55 * Math.cos(i.rotationYRadians),
-			z: r[1] + .55 * Math.sin(i.rotationYRadians)
-		}, e.coordinates),
-		diameterMeters: 2,
-		totalTurnDegrees: 360,
-		direction: "clockwise"
-	} : n === "l-shaped" || n === "u-shaped" ? {
-		...i,
-		shape: n,
-		widthMeters: 1,
-		lowerRunMeters: ir(a * .75),
-		upperRunMeters: ir(a * .75),
-		turn: "right"
-	} : {
-		...i,
-		shape: n,
-		widthMeters: 1,
-		runMeters: ir(a * 1.5)
-	});
-}
-function lr(e) {
-	let t = (e, t) => [
-		e,
-		.25,
-		t
-	], n = e.path[0], r = e.path[e.path.length - 1];
-	if (e.spec.shape === "spiral") {
-		let [n, r] = e.originWorld, i = e.spec.diameterMeters / 2;
-		return [{
-			handle: "diameter",
-			at: t(n - e.side[0] * i, r - e.side[1] * i)
-		}, {
-			handle: "rotation",
-			at: t(n + e.side[0] * i, r + e.side[1] * i)
-		}];
-	}
-	let i = e.spec.shape === "l-shaped" || e.spec.shape === "u-shaped" ? e.spec.lowerRunMeters : e.runMeters;
-	return [
-		{
-			handle: "bottom",
-			at: t(n.x, n.z)
-		},
-		{
-			handle: "top",
-			at: t(r.x, r.z)
-		},
-		...[-1, 1].map((r) => ({
-			handle: r === -1 ? "left" : "right",
-			at: t(n.x + e.forward[0] * i / 2 + e.side[0] * r * e.widthMeters / 2, n.z + e.forward[1] * i / 2 + e.side[1] * r * e.widthMeters / 2)
-		})),
-		...e.spec.shape === "l-shaped" || e.spec.shape === "u-shaped" ? [{
-			handle: "corner",
-			at: t(e.path[2].x, e.path[2].z)
-		}] : []
-	];
-}
-//#endregion
-//#region apps/web/src/editor-floors/stair-candidate-validation.ts
-function ur(e, t) {
-	return {
-		...e,
-		stairs: [...e.stairs.filter((e) => e.id !== t.id), t]
-	};
-}
-function dr(e, t, n) {
-	let r = ur(e, t);
-	return rt(r, n).filter((e) => e.path === `stairs[${r.stairs.length - 1}]`);
-}
-function fr(e, t) {
-	return et(e, t) !== null;
-}
-//#endregion
-//#region apps/web/src/editor-chrome/EditorActionButton.tsx
-var pr = H();
-function mr({ icon: e, label: t, shortcut: n, keyShortcuts: r, showLabel: i = !1, pressed: a, disabled: o, disabledReason: s, warning: c, onClick: l, tooltip: u = !0, expanded: d, controls: f }) {
-	let p = ze(), m = (0, Z.useId)(), [h, g] = (0, Z.useState)(null), _ = (e) => {
-		if (o || !u) return;
-		let t = e.currentTarget.getBoundingClientRect(), n = p.root === document ? null : p.portalContainer.getBoundingClientRect(), r = n?.width ?? window.innerWidth, i = Math.min(112, r / 2);
-		g({
-			left: Math.max(i, Math.min(r - i, t.left + t.width / 2 - (n?.left ?? 0))),
-			top: t.bottom + 9 - (n?.top ?? 0)
-		});
-	};
-	return (0, Z.useEffect)(() => {
-		if (!h) return;
-		let e = () => g(null), t = (t) => {
-			t.key === "Escape" && e();
-		};
-		return window.addEventListener("resize", e), window.addEventListener("scroll", e, !0), p.events.addEventListener("keydown", t), () => {
-			window.removeEventListener("resize", e), window.removeEventListener("scroll", e, !0), p.events.removeEventListener("keydown", t);
-		};
-	}, [h, p]), /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [/* @__PURE__ */ (0, Q.jsxs)("button", {
-		type: "button",
-		className: "editor-action-button",
-		"aria-label": t,
-		title: o ? s : void 0,
-		"aria-description": o ? s : c,
-		"aria-pressed": a,
-		"aria-expanded": d,
-		"aria-controls": f,
-		"aria-keyshortcuts": r,
-		disabled: o,
-		"aria-describedby": h && !o ? m : void 0,
-		onClick: l,
-		onFocus: _,
-		onBlur: () => g(null),
-		onMouseEnter: _,
-		onMouseLeave: (e) => {
-			p.root.activeElement !== e.currentTarget && g(null);
-		},
-		children: [
-			/* @__PURE__ */ (0, Q.jsx)(X, { name: e }),
-			i && /* @__PURE__ */ (0, Q.jsx)("span", { children: t }),
-			c && /* @__PURE__ */ (0, Q.jsx)("span", {
-				className: "editor-action-button__warning",
-				children: /* @__PURE__ */ (0, Q.jsx)(X, { name: "warning" })
-			})
-		]
-	}), h && !o && (0, pr.createPortal)(/* @__PURE__ */ (0, Q.jsxs)("div", {
-		role: "tooltip",
-		id: m,
-		className: "editor-action-tooltip",
-		style: h,
-		children: [c ?? t, n && /* @__PURE__ */ (0, Q.jsx)("kbd", { children: n })]
-	}), p.portalContainer)] });
-}
-//#endregion
-//#region apps/web/src/editor-chrome/SelectionDetailsPanel.tsx
-function hr({ children: e, title: t, subtitle: n, label: r, mode: i = "furnish", onClose: a }) {
-	let o = ze(), s = (0, Z.useRef)(null);
-	return (0, Z.useEffect)(() => {
-		let e = o.root.activeElement instanceof HTMLElement ? o.root.activeElement : null;
-		return s.current?.focus(), () => {
-			e?.isConnected && e.focus();
-		};
-	}, [o]), /* @__PURE__ */ (0, Q.jsx)("aside", {
-		ref: s,
-		className: "selection-details",
-		"data-mode": i,
-		"aria-label": r,
-		tabIndex: -1,
-		onKeyDown: (e) => {
-			e.key === "Escape" && e.target.tagName !== "INPUT" && (e.preventDefault(), e.stopPropagation(), a());
-		},
-		children: /* @__PURE__ */ (0, Q.jsx)("div", {
-			className: "furnishing-editor-inspector",
-			children: /* @__PURE__ */ (0, Q.jsxs)("section", { children: [/* @__PURE__ */ (0, Q.jsxs)("header", { children: [/* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("small", { children: n }), /* @__PURE__ */ (0, Q.jsx)("strong", { children: t })] }), /* @__PURE__ */ (0, Q.jsx)(mr, {
-				icon: "close",
-				label: "Close details",
-				onClick: a
-			})] }), e] })
-		})
-	});
-}
-//#endregion
-//#region apps/web/src/editor-floors/StairNumberField.tsx
-function gr({ label: e, value: t, onCommit: n, minimum: r, maximum: i }) {
-	let [a, o] = (0, Z.useState)(String(Number(t.toFixed(2)))), [s, c] = (0, Z.useState)(null), l = (0, Z.useId)();
-	(0, Z.useEffect)(() => {
-		o(String(Number(t.toFixed(2)))), c(null);
-	}, [t]);
-	let u = (e) => {
-		if (e === String(Number(t.toFixed(2)))) {
-			c(null);
-			return;
-		}
-		let a = e.trim() ? Number(e) : NaN, o = Number.isFinite(a) ? r !== void 0 && a <= r ? `Enter a value greater than ${r}.` : i !== void 0 && a > i ? `Enter a value of ${i} or less.` : null : "Enter a finite number.";
-		c(o), !o && a !== t && n(a);
-	};
-	return /* @__PURE__ */ (0, Q.jsxs)("label", {
-		className: "construction-inspector__single-control stair-number-field",
-		children: [
-			e,
-			/* @__PURE__ */ (0, Q.jsx)("input", {
-				"aria-label": e,
-				type: "number",
-				step: "any",
-				value: a,
-				"aria-invalid": s ? !0 : void 0,
-				"aria-describedby": s ? l : void 0,
-				onChange: (e) => o(e.target.value),
-				onBlur: (e) => u(e.currentTarget.value),
-				onKeyDown: (e) => {
-					e.key === "Enter" && e.currentTarget.blur(), e.key === "Escape" && (e.stopPropagation(), e.currentTarget.value = String(Number(t.toFixed(2))), o(e.currentTarget.value), c(null), e.currentTarget.blur());
-				}
-			}),
-			s && /* @__PURE__ */ (0, Q.jsx)("span", {
-				id: l,
-				className: "stair-number-field__error",
-				role: "alert",
-				children: s
-			})
-		]
-	});
-}
-//#endregion
-//#region apps/web/src/editor-floors/StairDetails.tsx
-function _r({ project: e, stair: t, registries: n, liveIssues: r, onSave: i, onCancel: a }) {
-	let [o, s] = (0, Z.useState)(t);
-	(0, Z.useEffect)(() => s(t), [t]);
-	let c = (0, Z.useMemo)(() => dr(e, o, n), [
-		e,
-		o,
-		n
-	]), l = r ?? c, u = (t) => {
-		s(t), fr(e, t) && i(t);
-	}, d = (e, t, n, r, i) => /* @__PURE__ */ (0, Q.jsx)(gr, {
-		label: e,
-		value: t,
-		minimum: r,
-		maximum: i,
-		onCommit: n
-	}, e);
-	return /* @__PURE__ */ (0, Q.jsxs)(hr, {
-		mode: "construct",
-		title: "Stairs",
-		subtitle: `To ${e.floors.find((e) => e.id === o.upperFloorId)?.name}`,
-		label: "Stair properties",
-		onClose: a,
-		children: [
-			/* @__PURE__ */ (0, Q.jsx)(rr, {
-				value: o.shape ?? "straight",
-				onChange: (t) => u(cr(e, o, t))
-			}),
-			o.shape === "spiral" ? /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [
-				d("Diameter (m)", o.diameterMeters, (e) => u({
-					...o,
-					diameterMeters: e
-				}), .2),
-				d("Total turn (degrees)", o.totalTurnDegrees, (e) => u({
-					...o,
-					totalTurnDegrees: e
-				}), 0, 360),
-				/* @__PURE__ */ (0, Q.jsxs)("label", {
-					className: "construction-inspector__single-control stair-direction-control",
-					children: ["Direction", /* @__PURE__ */ (0, Q.jsxs)("select", {
-						"aria-label": "Spiral direction",
-						value: o.direction,
-						onChange: (e) => u({
-							...o,
-							direction: e.target.value
-						}),
-						children: [/* @__PURE__ */ (0, Q.jsx)("option", {
-							value: "clockwise",
-							children: "Clockwise"
-						}), /* @__PURE__ */ (0, Q.jsx)("option", {
-							value: "counterclockwise",
-							children: "Counterclockwise"
-						})]
-					})]
-				})
-			] }) : /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [d("Width (m)", o.widthMeters, (e) => u({
-				...o,
-				widthMeters: e
-			}), 0), o.shape === "l-shaped" || o.shape === "u-shaped" ? /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [
-				d("Lower flight length (m)", o.lowerRunMeters, (e) => u({
-					...o,
-					lowerRunMeters: e
-				}), 0),
-				d("Upper flight length (m)", o.upperRunMeters, (e) => u({
-					...o,
-					upperRunMeters: e
-				}), 0),
-				/* @__PURE__ */ (0, Q.jsxs)("label", {
-					className: "construction-inspector__single-control",
-					children: ["Turn", /* @__PURE__ */ (0, Q.jsxs)("select", {
-						"aria-label": "Stair turn",
-						value: o.turn,
-						onChange: (e) => u({
-							...o,
-							turn: e.target.value
-						}),
-						children: [/* @__PURE__ */ (0, Q.jsx)("option", {
-							value: "right",
-							children: "Right"
-						}), /* @__PURE__ */ (0, Q.jsx)("option", {
-							value: "left",
-							children: "Left"
-						})]
-					})]
-				})
-			] }) : d("Length (m)", o.runMeters, (e) => u({
-				...o,
-				runMeters: e
-			}), 0)] }),
-			/* @__PURE__ */ (0, Q.jsxs)("label", {
-				className: "construction-inspector__single-control",
-				children: [
-					"Railings",
-					/* @__PURE__ */ (0, Q.jsxs)("select", {
-						"aria-label": "Stair railings",
-						value: o.railings ?? "both",
-						onChange: (e) => u(vt({
-							...o,
-							...e.target.value === void 0 ? {} : { railings: e.target.value }
-						})),
-						children: [
-							/* @__PURE__ */ (0, Q.jsx)("option", {
-								value: "both",
-								children: "Both sides"
-							}),
-							/* @__PURE__ */ (0, Q.jsx)("option", {
-								value: "left",
-								children: "Left side"
-							}),
-							/* @__PURE__ */ (0, Q.jsx)("option", {
-								value: "right",
-								children: "Right side"
-							}),
-							/* @__PURE__ */ (0, Q.jsx)("option", {
-								value: "none",
-								children: "None"
-							})
-						]
-					}),
-					/* @__PURE__ */ (0, Q.jsx)("span", { children: "Left and right when walking upstairs." })
-				]
-			}),
-			/* @__PURE__ */ (0, Q.jsxs)("details", {
-				className: "selection-details-advanced",
-				children: [
-					/* @__PURE__ */ (0, Q.jsx)("summary", { children: "Advanced" }),
-					d("Rotation (degrees)", o.rotationYRadians * 180 / Math.PI, (e) => u({
-						...o,
-						rotationYRadians: e * Math.PI / 180
-					})),
-					d(o.shape === "spiral" ? "Center X (plan units)" : "Start X (plan units)", o.at[0], (e) => u({
-						...o,
-						at: [e, o.at[1]]
-					})),
-					d(o.shape === "spiral" ? "Center Y (plan units)" : "Start Y (plan units)", o.at[1], (e) => u({
-						...o,
-						at: [o.at[0], e]
-					}))
-				]
-			}),
-			/* @__PURE__ */ (0, Q.jsx)(Xn, { issues: l }),
-			l.filter((e) => e.severity !== "warning").map((e, t) => /* @__PURE__ */ (0, Q.jsx)("p", {
-				role: "alert",
-				children: e.message
-			}, `${e.code}:${t}`))
-		]
-	});
-}
-//#endregion
 //#region apps/web/src/editor-onboarding/build-tutorial-progress.ts
-function vr(e, t, n) {
+function nr(e, t, n) {
 	let r = n[0] - t[0], i = n[1] - t[1], a = Math.hypot(r, i);
 	if (a < 1e-8) return !1;
 	let o = ((e[0] - t[0]) * r + (e[1] - t[1]) * i) / a;
 	return o >= -1e-5 && o <= a + 1e-5 && Math.abs((e[0] - t[0]) * i - (e[1] - t[1]) * r) / a < 1e-5;
 }
-function yr(e, t, n) {
+function rr(e, t, n) {
 	return e.openings.some((r) => {
 		if (r.kind !== n) return !1;
 		let i = e.walls.find((e) => e.id === r.wallId);
@@ -1081,10 +612,10 @@ function yr(e, t, n) {
 		let a = Math.hypot(i.to[0] - i.from[0], i.to[1] - i.from[1]);
 		if (!a) return !1;
 		let o = r.offsetFromWallStartPlanUnits + r.widthPlanUnits / 2, s = [i.from[0] + (i.to[0] - i.from[0]) * o / a, i.from[1] + (i.to[1] - i.from[1]) * o / a];
-		return t.polygon.some((e, n) => vr(s, e, t.polygon[(n + 1) % t.polygon.length]));
+		return t.polygon.some((e, n) => nr(s, e, t.polygon[(n + 1) % t.polygon.length]));
 	});
 }
-function br(e, t, n, r = !1) {
+function ir(e, t, n, r = !1) {
 	if (e.status !== "active") return e;
 	let i = t.floors.flatMap((e) => e.rooms.map((t) => ({
 		floor: e,
@@ -1092,13 +623,13 @@ function br(e, t, n, r = !1) {
 	}))), a = i.find(({ floor: t, room: n }) => t.id === e.target?.floorId && n.id === e.target.roomId) ?? i[0], o = {
 		reference: r || e.step !== "reference" || t.floors.some((e) => e.walls.length > 0),
 		walls: !!a,
-		door: !!(a && yr(a.floor, a.room, "door")),
-		window: !!(a && yr(a.floor, a.room, "window")),
+		door: !!(a && rr(a.floor, a.room, "door")),
+		window: !!(a && rr(a.floor, a.room, "window")),
 		name: !!a?.room.name.trim(),
 		arrange: e.readyToConnect,
 		connect: n === "connect"
-	}, s = I.find((t) => !o[t] && !e.skipped.includes(t));
-	return vt({
+	}, s = P.find((t) => !o[t] && !e.skipped.includes(t));
+	return ht({
 		...e,
 		target: a ? {
 			floorId: a.floor.id,
@@ -1110,9 +641,9 @@ function br(e, t, n, r = !1) {
 }
 //#endregion
 //#region apps/web/src/editor-onboarding/useBuildTutorial.ts
-function xr(e, t, n = !1) {
-	let r = e.home.id, [i, a] = (0, Z.useState)(() => Sn(r)), o = i.state ? br(i.state, e, t, n) : void 0, s = (0, Z.useCallback)((e) => {
-		let t = _n(r, e);
+function ar(e, t, n = !1) {
+	let r = e.home.id, [i, a] = (0, Z.useState)(() => bn(r)), o = i.state ? ir(i.state, e, t, n) : void 0, s = (0, Z.useCallback)((e) => {
+		let t = hn(r, e);
 		a({
 			state: e,
 			durable: t
@@ -1140,20 +671,20 @@ function xr(e, t, n = !1) {
 			...o,
 			readyToConnect: !0
 		}),
-		restart: () => s(ee())
+		restart: () => s(te())
 	};
 }
 //#endregion
 //#region apps/web/src/editor-workspace/EditorCompletionDialogs.tsx
-function Sr({ activeFloorId: e, mode: t, editingLocked: n, publishOpen: r, previewOpen: i, deviceModels: a, unsettled: o, walkButton: s, setPublishOpen: c, runtime: l, editedManifest: u, closeWalk: d, publishErrors: f, publishWarnings: p, publishIssues: m, publishMessage: h, publishing: g, publishProject: _ }) {
+function or({ activeFloorId: e, mode: t, editingLocked: n, publishOpen: r, previewOpen: i, deviceModels: a, unsettled: o, walkButton: s, setPublishOpen: c, runtime: l, editedManifest: u, closeWalk: d, publishErrors: f, publishWarnings: p, publishIssues: m, publishMessage: h, publishing: g, publishProject: _ }) {
 	return /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [i && t !== "connect" && /* @__PURE__ */ (0, Q.jsxs)("section", {
 		className: "direction-preview-dialog",
 		role: "dialog",
 		"aria-modal": "true",
 		"aria-label": "Explore draft",
-		children: [/* @__PURE__ */ (0, Q.jsx)(nt, {
+		children: [/* @__PURE__ */ (0, Q.jsx)(et, {
 			initialFloorId: e,
-			children: /* @__PURE__ */ (0, Q.jsx)(cn, {
+			children: /* @__PURE__ */ (0, Q.jsx)(on, {
 				value: {
 					...l,
 					status: "unconfigured",
@@ -1175,10 +706,10 @@ function Sr({ activeFloorId: e, mode: t, editingLocked: n, publishOpen: r, previ
 				},
 				children: /* @__PURE__ */ (0, Q.jsx)(Ie, {
 					manifest: u,
-					architectureModels: On,
+					architectureModels: En,
 					deviceModels: a,
 					bindingManager: {
-						profile: Pt(u.home.id),
+						profile: Mt(u.home.id),
 						loaded: !0,
 						hasStoredProfile: !1,
 						save: () => void 0
@@ -1246,26 +777,102 @@ function Sr({ activeFloorId: e, mode: t, editingLocked: n, publishOpen: r, previ
 	})] });
 }
 //#endregion
+//#region apps/web/src/editor-chrome/EditorActionButton.tsx
+var sr = F();
+function cr({ icon: e, label: t, shortcut: n, keyShortcuts: r, showLabel: i = !1, pressed: a, disabled: o, disabledReason: s, warning: c, onClick: l, tooltip: u = !0, expanded: d, controls: f }) {
+	let p = ze(), m = (0, Z.useId)(), [h, g] = (0, Z.useState)(null), _ = (e) => {
+		if (o || !u) return;
+		let t = e.currentTarget.getBoundingClientRect(), n = p.root === document ? null : p.portalContainer.getBoundingClientRect(), r = n?.width ?? window.innerWidth, i = Math.min(112, r / 2);
+		g({
+			left: Math.max(i, Math.min(r - i, t.left + t.width / 2 - (n?.left ?? 0))),
+			top: t.bottom + 9 - (n?.top ?? 0)
+		});
+	};
+	return (0, Z.useEffect)(() => {
+		if (!h) return;
+		let e = () => g(null), t = (t) => {
+			t.key === "Escape" && e();
+		};
+		return window.addEventListener("resize", e), window.addEventListener("scroll", e, !0), p.events.addEventListener("keydown", t), () => {
+			window.removeEventListener("resize", e), window.removeEventListener("scroll", e, !0), p.events.removeEventListener("keydown", t);
+		};
+	}, [h, p]), /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [/* @__PURE__ */ (0, Q.jsxs)("button", {
+		type: "button",
+		className: "editor-action-button",
+		"aria-label": t,
+		title: o ? s : void 0,
+		"aria-description": o ? s : c,
+		"aria-pressed": a,
+		"aria-expanded": d,
+		"aria-controls": f,
+		"aria-keyshortcuts": r,
+		disabled: o,
+		"aria-describedby": h && !o ? m : void 0,
+		onClick: l,
+		onFocus: _,
+		onBlur: () => g(null),
+		onMouseEnter: _,
+		onMouseLeave: (e) => {
+			p.root.activeElement !== e.currentTarget && g(null);
+		},
+		children: [
+			/* @__PURE__ */ (0, Q.jsx)(X, { name: e }),
+			i && /* @__PURE__ */ (0, Q.jsx)("span", { children: t }),
+			c && /* @__PURE__ */ (0, Q.jsx)("span", {
+				className: "editor-action-button__warning",
+				children: /* @__PURE__ */ (0, Q.jsx)(X, { name: "warning" })
+			})
+		]
+	}), h && !o && (0, sr.createPortal)(/* @__PURE__ */ (0, Q.jsxs)("div", {
+		role: "tooltip",
+		id: m,
+		className: "editor-action-tooltip",
+		style: h,
+		children: [c ?? t, n && /* @__PURE__ */ (0, Q.jsx)("kbd", { children: n })]
+	}), p.portalContainer)] });
+}
+//#endregion
+//#region apps/web/src/editor-chrome/SelectionDetailsPanel.tsx
+function lr({ children: e, title: t, subtitle: n, label: r, mode: i = "furnish", onClose: a }) {
+	return /* @__PURE__ */ (0, Q.jsxs)("aside", {
+		id: "editor-properties",
+		className: "selection-details",
+		"data-mode": i,
+		"aria-label": r,
+		children: [/* @__PURE__ */ (0, Q.jsxs)("header", {
+			className: "selection-details__header",
+			children: [/* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("h2", { children: t }), /* @__PURE__ */ (0, Q.jsx)("p", { children: n })] }), /* @__PURE__ */ (0, Q.jsx)(cr, {
+				icon: "chevron",
+				label: "Collapse properties",
+				onClick: a
+			})]
+		}), /* @__PURE__ */ (0, Q.jsx)("div", {
+			className: "selection-details__body furnishing-editor-inspector",
+			children: /* @__PURE__ */ (0, Q.jsx)("section", { children: e })
+		})]
+	});
+}
+//#endregion
 //#region apps/web/src/editor-preview/construct/OpeningOrientationControls.tsx
-function Cr({ opening: e, onChange: t, disabled: n, showLabel: r = !1 }) {
+function ur({ opening: e, onChange: t, disabled: n, showLabel: r = !1 }) {
 	if (e.kind === "passage" || e.kind === "niche") return null;
-	let i = V(e);
+	let i = R(e);
 	return /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [
-		i.canSwapHinge && /* @__PURE__ */ (0, Q.jsx)(mr, {
+		i.canSwapHinge && /* @__PURE__ */ (0, Q.jsx)(cr, {
 			icon: "swapHinge",
 			label: "Swap hinge side",
 			showLabel: r,
 			disabled: n,
 			onClick: () => t("hinge")
 		}),
-		i.canReverseSlide && /* @__PURE__ */ (0, Q.jsx)(mr, {
+		i.canReverseSlide && /* @__PURE__ */ (0, Q.jsx)(cr, {
 			icon: "reverseSlide",
 			label: "Reverse slide direction",
 			showLabel: r,
 			disabled: n,
 			onClick: () => t("slide")
 		}),
-		i.canSwitchSide && /* @__PURE__ */ (0, Q.jsx)(mr, {
+		i.canSwitchSide && /* @__PURE__ */ (0, Q.jsx)(cr, {
 			icon: "switchSide",
 			label: e.operation === "sliding" ? "Switch wall side" : "Reverse opening direction",
 			showLabel: r,
@@ -1276,7 +883,7 @@ function Cr({ opening: e, onChange: t, disabled: n, showLabel: r = !1 }) {
 }
 //#endregion
 //#region apps/web/src/editor-chrome/CommittedNumberInput.tsx
-function wr({ label: e, value: t, min: n, max: r, step: i = .1, onCommit: a, commitOnChange: o = !1 }) {
+function dr({ label: e, value: t, min: n, max: r, step: i = .1, onCommit: a, commitOnChange: o = !1 }) {
 	let [s, c] = (0, Z.useState)(String(t)), l = (0, Z.useRef)(!1);
 	return (0, Z.useEffect)(() => c(String(t)), [t]), /* @__PURE__ */ (0, Q.jsx)("input", {
 		"aria-label": e,
@@ -1310,7 +917,7 @@ function wr({ label: e, value: t, min: n, max: r, step: i = .1, onCommit: a, com
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/CommittedTextInput.tsx
-function Tr({ label: e, value: t, placeholder: n, onCommit: r }) {
+function fr({ label: e, value: t, placeholder: n, onCommit: r }) {
 	let [i, a] = (0, Z.useState)(t), o = (0, Z.useRef)(!1);
 	return (0, Z.useEffect)(() => a(t), [t]), /* @__PURE__ */ (0, Q.jsx)("input", {
 		"aria-label": e,
@@ -1334,12 +941,12 @@ function Tr({ label: e, value: t, placeholder: n, onCommit: r }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/NicheProperties.tsx
-function Er({ niche: e, editor: t }) {
-	let n = Ge(t.draft, e.wallId);
+function pr({ niche: e, editor: t }) {
+	let n = We(t.draft, e.wallId);
 	return /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [
 		/* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [
-			/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Size · m" }),
-			/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Width", /* @__PURE__ */ (0, Q.jsx)(wr, {
+			/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Dimensions · m" }),
+			/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Width", /* @__PURE__ */ (0, Q.jsx)(dr, {
 				label: "Niche width",
 				value: e.widthPlanUnits * t.draft.coordinates.metersPerPlanUnit,
 				min: .05,
@@ -1347,7 +954,7 @@ function Er({ niche: e, editor: t }) {
 				commitOnChange: !0,
 				onCommit: (e) => t.updateSelectedOpening({ widthPlanUnits: e / t.draft.coordinates.metersPerPlanUnit })
 			})] }),
-			/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Height", /* @__PURE__ */ (0, Q.jsx)(wr, {
+			/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Height", /* @__PURE__ */ (0, Q.jsx)(dr, {
 				label: "Niche height",
 				value: e.openingHeightMeters,
 				min: .05,
@@ -1355,7 +962,7 @@ function Er({ niche: e, editor: t }) {
 				commitOnChange: !0,
 				onCommit: (e) => t.updateSelectedOpening({ openingHeightMeters: e })
 			})] }),
-			/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Depth", /* @__PURE__ */ (0, Q.jsx)(wr, {
+			/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Depth", /* @__PURE__ */ (0, Q.jsx)(dr, {
 				label: "Niche depth",
 				value: e.depthMeters,
 				min: .01,
@@ -1368,33 +975,36 @@ function Er({ niche: e, editor: t }) {
 				})
 			})] })
 		] }),
-		/* @__PURE__ */ (0, Q.jsxs)("label", {
-			className: "construction-inspector__single-control",
-			children: ["Height from floor", /* @__PURE__ */ (0, Q.jsx)(wr, {
-				label: "Niche height from floor",
-				value: e.sillHeightMeters,
-				min: .012,
-				step: .01,
-				commitOnChange: !0,
-				onCommit: (e) => t.updateSelectedOpening({ sillHeightMeters: e })
-			})]
-		}),
-		/* @__PURE__ */ (0, Q.jsx)($, {
-			variant: "text",
-			onClick: () => t.dispatch({
-				type: "reorient-opening",
-				openingId: e.id,
-				change: "side"
+		/* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [
+			/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Placement" }),
+			/* @__PURE__ */ (0, Q.jsxs)("label", {
+				className: "construction-inspector__single-control",
+				children: ["Height from floor", /* @__PURE__ */ (0, Q.jsx)(dr, {
+					label: "Niche height from floor",
+					value: e.sillHeightMeters,
+					min: .012,
+					step: .01,
+					commitOnChange: !0,
+					onCommit: (e) => t.updateSelectedOpening({ sillHeightMeters: e })
+				})]
 			}),
-			children: "Switch wall face"
-		}),
+			/* @__PURE__ */ (0, Q.jsx)($, {
+				variant: "text",
+				onClick: () => t.dispatch({
+					type: "reorient-opening",
+					openingId: e.id,
+					change: "side"
+				}),
+				children: "Switch wall face"
+			})
+		] }),
 		/* @__PURE__ */ (0, Q.jsxs)("details", {
 			className: "selection-details-advanced",
 			children: [
 				/* @__PURE__ */ (0, Q.jsx)("summary", { children: "Shelves" }),
 				/* @__PURE__ */ (0, Q.jsxs)("label", {
 					className: "construction-inspector__single-control",
-					children: ["Heights · m", /* @__PURE__ */ (0, Q.jsx)(Tr, {
+					children: ["Heights · m", /* @__PURE__ */ (0, Q.jsx)(fr, {
 						label: "Niche shelf heights",
 						value: (e.shelfHeightsMeters ?? []).join(", "),
 						onCommit: (n) => {
@@ -1408,7 +1018,7 @@ function Er({ niche: e, editor: t }) {
 				}),
 				/* @__PURE__ */ (0, Q.jsxs)("label", {
 					className: "construction-inspector__single-control",
-					children: ["Thickness · m", /* @__PURE__ */ (0, Q.jsx)(wr, {
+					children: ["Thickness · m", /* @__PURE__ */ (0, Q.jsx)(dr, {
 						label: "Niche shelf thickness",
 						value: e.shelfThicknessMeters ?? .025,
 						min: .005,
@@ -1429,19 +1039,19 @@ function Er({ niche: e, editor: t }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/OpeningColorControls.tsx
-function Dr(e) {
+function mr(e) {
 	if (e.variant === "steel-arched") return "#292e2d";
 	if (e.kind === "window") return "#e7e2d8";
 	let t = e.finish === "white";
 	return e.operation === "roll-up" ? t ? "#dddcd6" : "#ad8559" : e.variant === "plank" ? t ? "#e6e3dc" : "#85583b" : e.variant === "french" || e.variant === "full-glass" ? t ? "#d8d2c6" : "#9c6b49" : e.variant === "flush" || e.variant === "flush-knob" ? t ? "#e9e8e2" : "#b89a73" : t ? "#f1f0eb" : "#b89a73";
 }
-function Or({ opening: e, onChange: t }) {
+function hr({ opening: e, onChange: t }) {
 	return /* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [
 		/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Finish color" }),
 		/* @__PURE__ */ (0, Q.jsxs)("label", { children: [/* @__PURE__ */ (0, Q.jsx)("span", { children: "Color" }), /* @__PURE__ */ (0, Q.jsx)("input", {
 			type: "color",
 			"aria-label": `${e.kind === "door" ? "Door" : "Window"} color`,
-			value: e.color ?? Dr(e),
+			value: e.color ?? mr(e),
 			onInput: (n) => t({
 				...e,
 				color: n.currentTarget.value
@@ -1460,11 +1070,11 @@ function Or({ opening: e, onChange: t }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/openings/opening-preview-entry.tsx
-function kr(e, t) {
+function gr(e, t) {
 	let n = e.floors.find((e) => e.openings.some((e) => e.id === t)), r = n?.openings.find((e) => e.id === t), i = n?.walls.find((e) => e.id === r?.wallId);
-	return !n || !r || !i || r.kind === "passage" ? null : Ar(r, n, i, r.visualModel ? e.extensions.openingModels[r.visualModel] : void 0);
+	return !n || !r || !i || r.kind === "passage" ? null : _r(r, n, i, r.visualModel ? e.extensions.openingModels[r.visualModel] : void 0);
 }
-function Ar(e, t, n, r) {
+function _r(e, t, n, r) {
 	let i = e.widthPlanUnits * t.coordinates.metersPerPlanUnit, a = {
 		...e,
 		offsetFromWallStartPlanUnits: 0,
@@ -1514,10 +1124,10 @@ function Ar(e, t, n, r) {
 				return r ? /* @__PURE__ */ (0, Q.jsx)(r, {
 					...e,
 					opening: a
-				}) : a.kind === "door" ? /* @__PURE__ */ (0, Q.jsx)(bn, {
+				}) : a.kind === "door" ? /* @__PURE__ */ (0, Q.jsx)(vn, {
 					...e,
 					opening: a
-				}) : /* @__PURE__ */ (0, Q.jsx)(jn, {
+				}) : /* @__PURE__ */ (0, Q.jsx)(kn, {
 					...e,
 					opening: a
 				});
@@ -1527,7 +1137,7 @@ function Ar(e, t, n, r) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/DoorPresetPalette.tsx
-var jr = {
+var vr = {
 	id: "door-preview",
 	name: "Door preview",
 	floorToFloorHeightMeters: 3,
@@ -1543,26 +1153,26 @@ var jr = {
 	rooms: [],
 	openings: [],
 	wallJunctions: []
-}, Mr = vn.map((e) => ({
+}, yr = gn.map((e) => ({
 	preset: e,
-	entry: Ar(kt(e.configuration, 1, {
+	entry: _r(Et(e.configuration, 1, {
 		id: e.id,
 		wallId: "preview-wall",
 		offsetFromWallStartPlanUnits: 0
-	}), jr, {
+	}), vr, {
 		id: "preview-wall",
 		from: [0, 0],
 		to: [e.configuration.widthMeters, 0],
 		classification: "interior",
 		thicknessMeters: .16
 	})
-})), Nr = (e, t) => e.operation === t.operation && e.variant === t.variant && (e.openingSide ?? "right") === (t.openingSide ?? "right") && (e.hingeSide ?? "start") === (t.hingeSide ?? "start") && (e.slideDirection ?? "start") === (t.slideDirection ?? "start") && e.finish === t.finish && e.leafCount === t.leafCount && Math.abs(e.widthMeters - t.widthMeters) < 1e-6 && Math.abs(e.heightMeters - t.heightMeters) < 1e-6;
-function Pr({ value: e, onChange: t }) {
-	let n = (0, Z.useRef)(null), r = Mr.find(({ preset: t }) => Nr(e, t.configuration))?.preset.id;
+})), br = (e, t) => e.operation === t.operation && e.variant === t.variant && (e.openingSide ?? "right") === (t.openingSide ?? "right") && (e.hingeSide ?? "start") === (t.hingeSide ?? "start") && (e.slideDirection ?? "start") === (t.slideDirection ?? "start") && e.finish === t.finish && e.leafCount === t.leafCount && Math.abs(e.widthMeters - t.widthMeters) < 1e-6 && Math.abs(e.heightMeters - t.heightMeters) < 1e-6;
+function xr({ value: e, onChange: t }) {
+	let n = (0, Z.useRef)(null), r = yr.find(({ preset: t }) => br(e, t.configuration))?.preset.id;
 	return /* @__PURE__ */ (0, Q.jsxs)("section", {
 		className: "door-preset-palette",
 		"aria-label": "Door type",
-		children: [/* @__PURE__ */ (0, Q.jsx)(Cn, {
+		children: [/* @__PURE__ */ (0, Q.jsx)(xn, {
 			scrollRoot: n,
 			enabled: !0,
 			children: /* @__PURE__ */ (0, Q.jsx)("div", {
@@ -1570,12 +1180,12 @@ function Pr({ value: e, onChange: t }) {
 				ref: n,
 				role: "group",
 				"aria-label": "Door presets",
-				children: Mr.map(({ preset: e, entry: n }) => /* @__PURE__ */ (0, Q.jsxs)("button", {
+				children: yr.map(({ preset: e, entry: n }) => /* @__PURE__ */ (0, Q.jsxs)("button", {
 					type: "button",
 					"aria-label": e.label,
 					"aria-pressed": r === e.id,
 					onClick: () => t({ ...e.configuration }),
-					children: [/* @__PURE__ */ (0, Q.jsx)(An, {
+					children: [/* @__PURE__ */ (0, Q.jsx)(On, {
 						entry: n,
 						showAdd: !1,
 						fallback: /* @__PURE__ */ (0, Q.jsx)("span", { children: "Preview unavailable" })
@@ -1590,10 +1200,10 @@ function Pr({ value: e, onChange: t }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/DoorDesignFields.tsx
-function Fr({ value: e, onChange: t, showSize: n = !0 }) {
+function Sr({ value: e, onChange: t, showSize: n = !0 }) {
 	return /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [n && /* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [
 		/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Size" }),
-		/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Width", /* @__PURE__ */ (0, Q.jsx)(wr, {
+		/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Width", /* @__PURE__ */ (0, Q.jsx)(dr, {
 			label: "Door width",
 			min: .3,
 			value: e.widthMeters,
@@ -1602,7 +1212,7 @@ function Fr({ value: e, onChange: t, showSize: n = !0 }) {
 				widthMeters: n
 			})
 		})] }),
-		/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Height", /* @__PURE__ */ (0, Q.jsx)(wr, {
+		/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Height", /* @__PURE__ */ (0, Q.jsx)(dr, {
 			label: "Door height",
 			min: .3,
 			value: e.heightMeters,
@@ -1626,16 +1236,16 @@ function Fr({ value: e, onChange: t, showSize: n = !0 }) {
 						widthMeters: e.widthMeters,
 						heightMeters: e.heightMeters
 					};
-					n.target.value === "roll-up" ? t(vt({
+					n.target.value === "roll-up" ? t(ht({
 						...r,
 						operation: "roll-up",
 						variant: "slatted"
-					})) : n.target.value === "sliding" ? t(vt({
+					})) : n.target.value === "sliding" ? t(ht({
 						...r,
 						operation: "sliding",
 						variant: e.operation === "roll-up" ? "panel" : e.variant,
 						leafCount: e.leafCount ?? 1
-					})) : t(vt({
+					})) : t(ht({
 						...r,
 						operation: "hinged",
 						variant: e.operation === "roll-up" ? "panel" : e.variant,
@@ -1741,10 +1351,10 @@ function Fr({ value: e, onChange: t, showSize: n = !0 }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/OpeningProperties.tsx
-function Ir({ opening: e, editor: t, advanced: n }) {
-	let r = /* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [
+function Cr({ opening: e, editor: t, advanced: n, orientationControls: r }) {
+	let i = /* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [
 		/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Wall position" }),
-		/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Offset", /* @__PURE__ */ (0, Q.jsx)(wr, {
+		/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Offset", /* @__PURE__ */ (0, Q.jsx)(dr, {
 			label: "Opening wall offset",
 			min: 0,
 			value: e.offsetPlanUnits,
@@ -1758,20 +1368,16 @@ function Ir({ opening: e, editor: t, advanced: n }) {
 		})] })
 	] });
 	return /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [
-		e.kind !== "passage" && /* @__PURE__ */ (0, Q.jsx)(Or, {
-			opening: e,
-			onChange: t.replaceSelectedOpening
-		}),
 		/* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [
-			/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Size" }),
-			/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Width", /* @__PURE__ */ (0, Q.jsx)(wr, {
+			/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Dimensions" }),
+			/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Width", /* @__PURE__ */ (0, Q.jsx)(dr, {
 				label: "Opening width",
 				commitOnChange: !0,
 				min: .3,
 				value: e.widthPlanUnits * t.previewFloor.coordinates.metersPerPlanUnit,
 				onCommit: (e) => t.updateSelectedOpening({ widthPlanUnits: e / t.previewFloor.coordinates.metersPerPlanUnit })
 			})] }),
-			/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Height", /* @__PURE__ */ (0, Q.jsx)(wr, {
+			/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Height", /* @__PURE__ */ (0, Q.jsx)(dr, {
 				label: "Opening height",
 				commitOnChange: !0,
 				min: .3,
@@ -1779,9 +1385,14 @@ function Ir({ opening: e, editor: t, advanced: n }) {
 				onCommit: (e) => t.updateSelectedOpening({ openingHeightMeters: e })
 			})] })
 		] }),
+		r,
+		e.kind !== "passage" && /* @__PURE__ */ (0, Q.jsx)(hr, {
+			opening: e,
+			onChange: t.replaceSelectedOpening
+		}),
 		e.kind === "window" && /* @__PURE__ */ (0, Q.jsxs)("label", {
 			className: "construction-inspector__single-control",
-			children: ["Height from floor", /* @__PURE__ */ (0, Q.jsx)(wr, {
+			children: ["Height from floor", /* @__PURE__ */ (0, Q.jsx)(dr, {
 				label: "Window height from floor",
 				min: 0,
 				value: e.sillHeightMeters,
@@ -1789,11 +1400,11 @@ function Ir({ opening: e, editor: t, advanced: n }) {
 			})]
 		}),
 		e.kind === "door" && (() => {
-			let n = t.previewFloor.coordinates.metersPerPlanUnit, r = je({
+			let n = t.previewFloor.coordinates.metersPerPlanUnit, r = Ae({
 				...e,
 				offsetFromWallStartPlanUnits: e.offsetPlanUnits
 			}, n), i = (r) => {
-				let { offsetFromWallStartPlanUnits: i, ...a } = kt(r, n, {
+				let { offsetFromWallStartPlanUnits: i, ...a } = Et(r, n, {
 					id: e.id,
 					wallId: e.wallId,
 					offsetFromWallStartPlanUnits: e.offsetPlanUnits
@@ -1803,10 +1414,10 @@ function Ir({ opening: e, editor: t, advanced: n }) {
 					offsetPlanUnits: i
 				});
 			};
-			return /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [/* @__PURE__ */ (0, Q.jsx)(Pr, {
+			return /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [/* @__PURE__ */ (0, Q.jsx)(xr, {
 				value: r,
 				onChange: i
-			}), /* @__PURE__ */ (0, Q.jsx)(Fr, {
+			}), /* @__PURE__ */ (0, Q.jsx)(Sr, {
 				value: r,
 				onChange: i,
 				showSize: !1
@@ -1836,7 +1447,7 @@ function Ir({ opening: e, editor: t, advanced: n }) {
 					value: e.variant,
 					onChange: (n) => {
 						let r = n.target.value;
-						t.replaceSelectedOpening(vt({
+						t.replaceSelectedOpening(ht({
 							...e,
 							variant: r,
 							muntins: r === "muntined" ? e.muntins ?? {
@@ -1890,7 +1501,7 @@ function Ir({ opening: e, editor: t, advanced: n }) {
 						children: "Two"
 					})]
 				})] }),
-				e.variant === "muntined" && /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Columns", /* @__PURE__ */ (0, Q.jsx)(wr, {
+				e.variant === "muntined" && /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Columns", /* @__PURE__ */ (0, Q.jsx)(dr, {
 					label: "Muntin columns",
 					min: 1,
 					step: 1,
@@ -1902,7 +1513,7 @@ function Ir({ opening: e, editor: t, advanced: n }) {
 							rows: e.muntins?.rows ?? 2
 						}
 					})
-				})] }), /* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Rows", /* @__PURE__ */ (0, Q.jsx)(wr, {
+				})] }), /* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Rows", /* @__PURE__ */ (0, Q.jsx)(dr, {
 					label: "Muntin rows",
 					min: 1,
 					step: 1,
@@ -1946,7 +1557,7 @@ function Ir({ opening: e, editor: t, advanced: n }) {
 						children: "Arched"
 					})]
 				})] }),
-				e.variant === "arched" && /* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Arch rise", /* @__PURE__ */ (0, Q.jsx)(wr, {
+				e.variant === "arched" && /* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Arch rise", /* @__PURE__ */ (0, Q.jsx)(dr, {
 					label: "Passage arch rise",
 					min: .05,
 					step: .01,
@@ -1964,13 +1575,13 @@ function Ir({ opening: e, editor: t, advanced: n }) {
 		}),
 		n === void 0 ? /* @__PURE__ */ (0, Q.jsxs)("details", {
 			className: "opening-properties__advanced",
-			children: [/* @__PURE__ */ (0, Q.jsx)("summary", { children: "Advanced" }), r]
-		}) : n && r
+			children: [/* @__PURE__ */ (0, Q.jsx)("summary", { children: "Advanced" }), i]
+		}) : n && i
 	] });
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/opening-plan-symbol.ts
-function Lr(e, t, n) {
+function wr(e, t, n) {
 	let r = [], i = (e, t, n, i) => {
 		r.push({
 			from: e,
@@ -1988,7 +1599,7 @@ function Lr(e, t, n) {
 		for (let e of [-.035, .035]) i([0, e], [t, e], "#7d8581", .025);
 		return r;
 	}
-	let a = V(e), o = e.kind === "window" ? "#789a98" : "#94765e";
+	let a = R(e), o = e.kind === "window" ? "#789a98" : "#94765e";
 	if (e.kind === "window") {
 		for (let e of [-1, 1]) i([0, e * n * .23], [t, e * n * .23], o);
 		if (e.operation === "fixed") return r;
@@ -2010,80 +1621,695 @@ function Lr(e, t, n) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/OpeningDetails.tsx
-function Rr({ opening: e, editor: t, disabled: n, onClose: r }) {
-	let i = e.widthPlanUnits * t.draft.coordinates.metersPerPlanUnit, a = t.draft.walls.find((t) => t.id === e.wallId)?.thicknessMeters ?? t.draft.interiorWallThicknessMeters, o = Lr(e, i, a), s = o.flatMap((e) => [e.from, e.to]), c = Math.min(0, ...s.map((e) => e[0])) - .2, l = Math.max(i, ...s.map((e) => e[0])) + .2, u = Math.max(.3, ...s.map((e) => Math.abs(e[1]))) + .12, d = e.kind !== "niche" && e.kind !== "passage" && V(e).canSwitchSide, f = e.kind === "door" ? "Door" : e.kind === "window" ? "Window" : e.kind === "niche" ? "Niche" : "Passage";
-	return /* @__PURE__ */ (0, Q.jsx)(hr, {
+function Tr({ opening: e, editor: t, disabled: n, onClose: r }) {
+	let i = e.widthPlanUnits * t.draft.coordinates.metersPerPlanUnit, a = t.draft.walls.find((t) => t.id === e.wallId)?.thicknessMeters ?? t.draft.interiorWallThicknessMeters, o = wr(e, i, a), s = o.flatMap((e) => [e.from, e.to]), c = Math.min(0, ...s.map((e) => e[0])) - .2, l = Math.max(i, ...s.map((e) => e[0])) + .2, u = Math.max(.3, ...s.map((e) => Math.abs(e[1]))) + .12, d = e.kind !== "niche" && e.kind !== "passage" && R(e).canSwitchSide, f = e.kind === "door" ? "Door" : e.kind === "window" ? "Window" : e.kind === "niche" ? "Niche" : "Passage", p = d ? /* @__PURE__ */ (0, Q.jsxs)("fieldset", {
+		className: "opening-direction",
+		children: [
+			/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Opening direction" }),
+			/* @__PURE__ */ (0, Q.jsxs)("svg", {
+				className: "opening-direction__diagram",
+				viewBox: `${c} ${-u} ${l - c} ${u * 2}`,
+				role: "img",
+				"aria-label": `${f} opening direction in plan view`,
+				children: [/* @__PURE__ */ (0, Q.jsx)("path", {
+					d: `M${c} 0H0M${i} 0H${l}`,
+					stroke: "#596057",
+					strokeWidth: a
+				}), o.map((e, t) => /* @__PURE__ */ (0, Q.jsx)("line", {
+					x1: e.from[0],
+					y1: e.from[1],
+					x2: e.to[0],
+					y2: e.to[1],
+					stroke: e.color,
+					strokeWidth: e.width ?? .025
+				}, t))]
+			}),
+			/* @__PURE__ */ (0, Q.jsx)(ur, {
+				opening: e,
+				showLabel: !0,
+				disabled: n,
+				onChange: (n) => t.dispatch({
+					type: "reorient-opening",
+					openingId: e.id,
+					change: n
+				})
+			})
+		]
+	}) : null;
+	return /* @__PURE__ */ (0, Q.jsx)(lr, {
 		mode: "construct",
-		title: `${f} properties`,
-		subtitle: "Selected opening",
+		title: f,
+		subtitle: t.previewFloor.name,
 		label: `${f} properties`,
 		onClose: r,
-		children: /* @__PURE__ */ (0, Q.jsxs)("div", {
+		children: /* @__PURE__ */ (0, Q.jsx)("div", {
 			inert: n,
-			children: [d && /* @__PURE__ */ (0, Q.jsxs)("fieldset", {
-				className: "opening-direction",
-				children: [
-					/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Opening direction" }),
-					/* @__PURE__ */ (0, Q.jsxs)("svg", {
-						className: "opening-direction__diagram",
-						viewBox: `${c} ${-u} ${l - c} ${u * 2}`,
-						role: "img",
-						"aria-label": `${f} opening direction in plan view`,
-						children: [/* @__PURE__ */ (0, Q.jsx)("path", {
-							d: `M${c} 0H0M${i} 0H${l}`,
-							stroke: "#596057",
-							strokeWidth: a
-						}), o.map((e, t) => /* @__PURE__ */ (0, Q.jsx)("line", {
-							x1: e.from[0],
-							y1: e.from[1],
-							x2: e.to[0],
-							y2: e.to[1],
-							stroke: e.color,
-							strokeWidth: e.width ?? .025
-						}, t))]
-					}),
-					/* @__PURE__ */ (0, Q.jsx)(Cr, {
-						opening: e,
-						showLabel: !0,
-						disabled: n,
-						onChange: (n) => t.dispatch({
-							type: "reorient-opening",
-							openingId: e.id,
-							change: n
-						})
-					})
-				]
-			}), e.kind === "niche" ? /* @__PURE__ */ (0, Q.jsx)(Er, {
+			children: e.kind === "niche" ? /* @__PURE__ */ (0, Q.jsx)(pr, {
 				niche: e,
 				editor: t
-			}) : /* @__PURE__ */ (0, Q.jsx)(Ir, {
+			}) : /* @__PURE__ */ (0, Q.jsx)(Cr, {
 				opening: e,
-				editor: t
-			})]
+				editor: t,
+				orientationControls: p
+			})
 		})
 	});
 }
 //#endregion
+//#region apps/web/src/editor-preview/construct/DebouncedColorInput.tsx
+function Er({ label: e, value: t, disabled: n = !1, onCommit: r }) {
+	let [i, a] = (0, Z.useState)(t), o = (0, Z.useRef)(null), s = (0, Z.useRef)(t), c = (0, Z.useRef)(r);
+	return (0, Z.useEffect)(() => {
+		a(t), s.current = t;
+	}, [t]), (0, Z.useEffect)(() => {
+		c.current = r;
+	}, [r]), (0, Z.useEffect)(() => () => {
+		o.current && clearTimeout(o.current);
+	}, []), /* @__PURE__ */ (0, Q.jsx)("input", {
+		"aria-label": e,
+		type: "color",
+		value: i,
+		disabled: n,
+		onInput: (e) => {
+			let t = e.currentTarget.value;
+			s.current = t, a(t), o.current && clearTimeout(o.current), o.current = setTimeout(() => {
+				o.current = null, c.current(s.current);
+			}, 160);
+		},
+		onBlur: () => {
+			o.current && clearTimeout(o.current), o.current = null, s.current !== t && c.current(s.current);
+		}
+	});
+}
+//#endregion
+//#region apps/web/src/editor-preview/construct/FloorFinishPalette.tsx
+var Dr = (e) => e.kind === "solid" ? "solid" : e.preset;
+function Or({ preset: e, color: t }) {
+	let n = (0, Z.useRef)(null);
+	return (0, Z.useEffect)(() => {
+		let r;
+		try {
+			r = n.current?.getContext("2d");
+		} catch {
+			r = null;
+		}
+		r && Ue(r, e.id, "plan", t);
+	}, [e, t]), /* @__PURE__ */ (0, Q.jsx)("canvas", {
+		ref: n,
+		width: 64,
+		height: 64,
+		"aria-hidden": "true"
+	});
+}
+function kr({ value: e, onChange: t }) {
+	let n = Dr(e), r = e.kind === "solid" ? e.color : "#d3cec5";
+	return /* @__PURE__ */ (0, Q.jsxs)("section", {
+		className: "floor-finish-palette",
+		"aria-label": "Floor finish",
+		children: [
+			/* @__PURE__ */ (0, Q.jsxs)("div", {
+				className: "floor-finish-palette__grid",
+				children: [/* @__PURE__ */ (0, Q.jsxs)("button", {
+					type: "button",
+					"aria-label": "Solid color",
+					"aria-pressed": n === "solid",
+					onClick: () => t({
+						kind: "solid",
+						color: r
+					}),
+					children: [/* @__PURE__ */ (0, Q.jsx)("span", {
+						style: { background: r },
+						"aria-hidden": "true"
+					}), /* @__PURE__ */ (0, Q.jsx)("small", { children: "Solid" })]
+				}), Wt.map((r) => /* @__PURE__ */ (0, Q.jsxs)("button", {
+					type: "button",
+					"aria-label": r.label,
+					"aria-pressed": n === r.id,
+					onClick: () => t({
+						kind: "preset",
+						preset: r.id
+					}),
+					children: [/* @__PURE__ */ (0, Q.jsx)(Or, {
+						preset: r,
+						color: e.kind === "preset" && e.preset === r.id ? e.color : void 0
+					}), /* @__PURE__ */ (0, Q.jsx)("small", { children: r.label })]
+				}, r.id))]
+			}),
+			e.kind === "preset" && Wt.find((t) => t.id === e.preset)?.configurableColor && /* @__PURE__ */ (0, Q.jsxs)("label", { children: [
+				"Tile color",
+				/* @__PURE__ */ (0, Q.jsx)("input", {
+					type: "color",
+					"aria-label": "Tile color",
+					value: e.color ?? Wt.find((t) => t.id === e.preset).representativeColor,
+					onChange: (n) => t({
+						...e,
+						color: n.target.value
+					})
+				}),
+				/* @__PURE__ */ (0, Q.jsx)("button", {
+					type: "button",
+					onClick: () => t({
+						kind: "preset",
+						preset: e.preset
+					}),
+					children: "Reset color"
+				})
+			] }),
+			n === "solid" && /* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Solid color", /* @__PURE__ */ (0, Q.jsx)("input", {
+				type: "color",
+				"aria-label": "Solid floor color",
+				value: r,
+				onChange: (e) => t({
+					kind: "solid",
+					color: e.target.value
+				})
+			})] })
+		]
+	});
+}
+//#endregion
+//#region apps/web/src/editor-preview/construct/WallColorField.tsx
+function Ar({ label: e, inputLabel: t = `${e} color`, value: n, overridden: r, onCommit: i, onReset: a, floorId: o, wallId: s, sides: c }) {
+	let { setHighlight: l } = Kn();
+	return /* @__PURE__ */ (0, Q.jsxs)("div", {
+		onPointerEnter: () => l({
+			floorId: o,
+			wallId: s,
+			sides: c
+		}),
+		onPointerLeave: (e) => {
+			e.currentTarget.contains(e.currentTarget.ownerDocument.activeElement) || l(null);
+		},
+		onFocus: () => l({
+			floorId: o,
+			wallId: s,
+			sides: c
+		}),
+		onBlur: (e) => {
+			e.currentTarget.contains(e.relatedTarget) || l(null);
+		},
+		children: [/* @__PURE__ */ (0, Q.jsxs)("label", { children: [e, /* @__PURE__ */ (0, Q.jsx)(Er, {
+			label: t,
+			value: n,
+			onCommit: i
+		})] }), r && /* @__PURE__ */ (0, Q.jsx)($, {
+			type: "button",
+			variant: "text",
+			"aria-label": `Reset ${e.toLowerCase()} color`,
+			onClick: a,
+			children: "Reset"
+		})]
+	});
+}
+//#endregion
+//#region apps/web/src/editor-preview/construct/wall-finish-sides.ts
+function jr(e, t) {
+	let n = t.walls.find((t) => t.id === e.id), r = e.to[0] - e.from[0], i = e.to[1] - e.from[1], a = Math.hypot(r, i) || 1, o = [-i / a, r / a], s = e.thicknessMeters ?? n?.thicknessMeters ?? .2, c = (s / 2 + .03) / t.coordinates.metersPerPlanUnit, l = n ? g(n, t) : null, u = l && l[0] * o[0] + l[1] * o[1] < 0 ? "right" : "left", d = (n) => {
+		let a = n === "left" ? 1 : -1, s = t.rooms.filter((t) => [
+			.2,
+			.5,
+			.8
+		].some((n) => {
+			let s = [e.from[0] + r * n + o[0] * c * a, e.from[1] + i * n + o[1] * c * a];
+			return K(s, t.polygon);
+		})).map((e) => e.name).filter(Boolean);
+		return s.length === 1 ? `${s[0]} side` : n === "left" ? "Side A" : "Side B";
+	};
+	return {
+		exteriorSide: u,
+		interiorSide: u === "left" ? "right" : "left",
+		roomLabel: (e) => d("left") === d("right") ? e === "left" ? "Side A" : "Side B" : d(e),
+		normal: o,
+		thickness: s
+	};
+}
+function Mr(e, t) {
+	let n = { ...e };
+	return delete n[t], Object.keys(n).length ? n : void 0;
+}
+//#endregion
+//#region apps/web/src/editor-preview/construct/WallFinishFields.tsx
+function Nr({ editor: e, wall: t, isExterior: n }) {
+	let { palette: r, setHighlight: i } = Kn(), [a, o] = (0, Z.useState)(!1);
+	(0, Z.useEffect)(() => () => i(null), [i]);
+	let { exteriorSide: s, interiorSide: c, roomLabel: l } = jr(t, e.previewFloor), u = t.faceColors?.left ?? r.interior, d = t.faceColors?.right ?? r.interior, f = a || u !== d, p = e.updateSelectedWallMetadata, m = {
+		floorId: e.previewFloor.id,
+		wallId: t.id
+	}, h = (e, n, i) => /* @__PURE__ */ (0, Q.jsx)(Ar, {
+		...m,
+		label: n,
+		...i ? { inputLabel: i } : {},
+		sides: [e],
+		value: t.faceColors?.[e] ?? r.interior,
+		overridden: t.faceColors?.[e] !== void 0,
+		onCommit: (n) => p({ faceColors: {
+			...t.faceColors,
+			[e]: n
+		} }),
+		onReset: () => p({ faceColors: Mr(t.faceColors, e) })
+	}, e), g = t.edgeColor !== void 0;
+	return /* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [
+		/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Finish" }),
+		n ? /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [/* @__PURE__ */ (0, Q.jsx)(Ar, {
+			...m,
+			label: "Exterior",
+			inputLabel: "Wall exterior color",
+			sides: [s],
+			value: t.faceColors?.[s] ?? t.exteriorColor ?? r.exterior,
+			overridden: t.exteriorColor !== void 0 || t.faceColors?.[s] !== void 0,
+			onCommit: (n) => {
+				e.setExteriorWallColor(n), p({
+					exteriorColor: n,
+					faceColors: Mr(t.faceColors, s)
+				});
+			},
+			onReset: () => p({
+				exteriorColor: void 0,
+				faceColors: Mr(t.faceColors, s)
+			})
+		}), h(c, "Interior", "Wall interior color")] }) : /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [
+			!f && /* @__PURE__ */ (0, Q.jsx)(Ar, {
+				...m,
+				label: "Wall",
+				inputLabel: "Wall color",
+				sides: ["left", "right"],
+				value: u,
+				overridden: t.faceColors !== void 0,
+				onCommit: (e) => p({ faceColors: {
+					left: e,
+					right: e
+				} }),
+				onReset: () => p({ faceColors: void 0 })
+			}),
+			/* @__PURE__ */ (0, Q.jsxs)("label", {
+				className: "construction-inspector__check",
+				children: [/* @__PURE__ */ (0, Q.jsx)("input", {
+					type: "checkbox",
+					checked: f,
+					onChange: (e) => {
+						o(e.target.checked), e.target.checked || p({ faceColors: {
+							left: u,
+							right: u
+						} });
+					}
+				}), "Different colors on each side"]
+			}),
+			f && /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [h("left", l("left")), h("right", l("right"))] })
+		] }),
+		/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Edge color", /* @__PURE__ */ (0, Q.jsxs)("select", {
+			"aria-label": "Wall edge color mode",
+			value: g ? "custom" : "auto",
+			onChange: (i) => e.updateSelectedWallMetadata({ edgeColor: i.target.value === "auto" ? void 0 : t.faceColors?.left && t.faceColors.left === t.faceColors.right ? t.faceColors.left : n ? t.exteriorColor ?? r.interior : r.interior }),
+			children: [/* @__PURE__ */ (0, Q.jsx)("option", {
+				value: "auto",
+				children: "Auto"
+			}), /* @__PURE__ */ (0, Q.jsx)("option", {
+				value: "custom",
+				children: "Custom"
+			})]
+		})] }),
+		g && /* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Color", /* @__PURE__ */ (0, Q.jsx)(Er, {
+			label: "Wall edge color",
+			value: t.edgeColor,
+			onCommit: (t) => e.updateSelectedWallMetadata({ edgeColor: t })
+		})] })
+	] });
+}
+function Pr(e) {
+	return /* @__PURE__ */ (0, Q.jsx)(Nr, { ...e }, `${e.editor.previewFloor.id}:${e.wall.id}`);
+}
+//#endregion
+//#region apps/web/src/editor-preview/construct/PlatformEdgePalette.tsx
+var Fr = vt.map((e) => ({
+	preset: e,
+	entry: {
+		kind: "procedural",
+		key: `platform-edge-v1:${e.id}`,
+		definition: {
+			bounds: {
+				min: [
+					-1,
+					-.16,
+					-.3
+				],
+				max: [
+					1,
+					1,
+					.3
+				]
+			},
+			component: () => /* @__PURE__ */ (0, Q.jsxs)("group", { children: [/* @__PURE__ */ (0, Q.jsxs)("mesh", {
+				position: [
+					0,
+					-.08,
+					0
+				],
+				children: [/* @__PURE__ */ (0, Q.jsx)("boxGeometry", { args: [
+					2,
+					.16,
+					.6
+				] }), /* @__PURE__ */ (0, Q.jsx)(ut, { color: "#d4c6ae" })]
+			}), /* @__PURE__ */ (0, Q.jsx)(oe, {
+				from: [-1, 0],
+				to: [1, 0],
+				configuration: e.configuration
+			})] })
+		}
+	}
+}));
+function Ir({ value: e, onChange: t }) {
+	let n = (0, Z.useRef)(null);
+	return /* @__PURE__ */ (0, Q.jsx)("section", {
+		className: "door-preset-palette",
+		"aria-label": "Platform edge style",
+		children: /* @__PURE__ */ (0, Q.jsx)(xn, {
+			scrollRoot: n,
+			enabled: !0,
+			children: /* @__PURE__ */ (0, Q.jsx)("div", {
+				className: "floor-finish-palette__grid door-preset-palette__grid",
+				ref: n,
+				role: "group",
+				"aria-label": "Platform edge presets",
+				children: Fr.map(({ preset: n, entry: r }) => /* @__PURE__ */ (0, Q.jsxs)("button", {
+					type: "button",
+					"aria-label": n.name,
+					"aria-pressed": e.kind === n.id,
+					onClick: () => t({ ...n.configuration }),
+					children: [/* @__PURE__ */ (0, Q.jsx)(On, {
+						entry: r,
+						showAdd: !1,
+						fallback: /* @__PURE__ */ (0, Q.jsx)("span", { children: "Preview unavailable" })
+					}), /* @__PURE__ */ (0, Q.jsx)("small", { children: n.name })]
+				}, n.id))
+			})
+		})
+	});
+}
+//#endregion
+//#region apps/web/src/editor-preview/construct/PlatformEdgeFields.tsx
+function Lr({ value: e, onChange: t }) {
+	return /* @__PURE__ */ (0, Q.jsxs)("div", {
+		className: "platform-edge-fields",
+		children: [/* @__PURE__ */ (0, Q.jsx)(Ir, {
+			value: e,
+			onChange: t
+		}), e.kind !== "open" && /* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Barrier height (m)", /* @__PURE__ */ (0, Q.jsx)(dr, {
+			label: "Platform barrier height",
+			value: e.heightMeters,
+			step: .1,
+			min: .01,
+			onCommit: (n) => {
+				n > 0 && t({
+					...e,
+					heightMeters: n
+				});
+			}
+		})] })]
+	});
+}
+//#endregion
+//#region apps/web/src/editor-preview/construct/PlatformProperties.tsx
+function Rr({ platform: e, editor: t }) {
+	let n = e.edges.find((e) => e.id === t.selectedPlatformEdgeId), r = Math.abs(tn(e.polygon)) * t.draft.coordinates.metersPerPlanUnit ** 2, i = (n) => {
+		if (n.length < 3) return;
+		let [r, i, a, ...o] = n;
+		t.updatePlatform(e.id, { polygon: [
+			r,
+			i,
+			a,
+			...o
+		] });
+	};
+	return /* @__PURE__ */ (0, Q.jsxs)("div", {
+		className: "construction-inspector__selection",
+		children: [
+			/* @__PURE__ */ (0, Q.jsxs)("p", {
+				className: "editor-property-fact",
+				children: ["Area ", /* @__PURE__ */ (0, Q.jsxs)("strong", { children: [r.toFixed(1), " m²"] })]
+			}),
+			/* @__PURE__ */ (0, Q.jsx)("p", {
+				className: "construction-inspector__tool-hint",
+				children: "Drag the platform to move it, or a corner to reshape it. Select an edge to change its style."
+			}),
+			/* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [
+				/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Edges" }),
+				/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Apply to", /* @__PURE__ */ (0, Q.jsxs)("select", {
+					"aria-label": "Platform edge",
+					value: n?.id ?? "",
+					onChange: (n) => n.target.value ? t.selectPlatformEdge(e.id, n.target.value) : t.selectPlatform(e.id),
+					children: [/* @__PURE__ */ (0, Q.jsx)("option", {
+						value: "",
+						children: "Default style"
+					}), e.edges.map((e, t) => /* @__PURE__ */ (0, Q.jsxs)("option", {
+						value: e.id,
+						children: ["Edge ", t + 1]
+					}, e.id))]
+				})] }),
+				/* @__PURE__ */ (0, Q.jsx)(Lr, {
+					value: n?.configuration ?? e.defaultEdge,
+					onChange: (r) => {
+						n ? t.updatePlatform(e.id, { edges: e.edges.map((e) => e.id === n.id ? {
+							...e,
+							configuration: r
+						} : e) }) : t.updatePlatform(e.id, { defaultEdge: r });
+					}
+				})
+			] }),
+			n?.configuration && /* @__PURE__ */ (0, Q.jsx)($, {
+				variant: "secondary",
+				type: "button",
+				onClick: () => t.updatePlatform(e.id, { edges: e.edges.map((e) => e.id === n?.id ? { id: e.id } : e) }),
+				children: "Use default edge style"
+			}),
+			n && /* @__PURE__ */ (0, Q.jsx)($, {
+				variant: "secondary",
+				type: "button",
+				onClick: () => {
+					if (!n) return;
+					let t = e.edges.indexOf(n), r = e.polygon[t], a = e.polygon[(t + 1) % e.polygon.length];
+					i([
+						...e.polygon.slice(0, t + 1),
+						[(r[0] + a[0]) / 2, (r[1] + a[1]) / 2],
+						...e.polygon.slice(t + 1)
+					]);
+				},
+				children: "Add corner on edge"
+			}),
+			/* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Floor finish" }), /* @__PURE__ */ (0, Q.jsx)(kr, {
+				value: e.finish,
+				onChange: (n) => t.updatePlatform(e.id, { finish: n })
+			})] }),
+			/* @__PURE__ */ (0, Q.jsxs)("fieldset", {
+				className: "platform-corners",
+				children: [/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Corners · plan units" }), e.polygon.map((n, r) => /* @__PURE__ */ (0, Q.jsxs)("div", {
+					className: "platform-corner-row",
+					children: [
+						/* @__PURE__ */ (0, Q.jsx)("span", {
+							className: "platform-corner-number",
+							"aria-label": `Corner ${r + 1}`,
+							children: r + 1
+						}),
+						[0, 1].map((i) => /* @__PURE__ */ (0, Q.jsxs)("label", { children: [i === 0 ? "X" : "Y", /* @__PURE__ */ (0, Q.jsx)(dr, {
+							label: `Platform corner ${r + 1} ${i === 0 ? "X" : "Y"}`,
+							value: n[i],
+							step: .1,
+							onCommit: (n) => t.updatePlatform(e.id, { polygon: Le(e.polygon, (e, t) => t === r ? i === 0 ? [n, e[1]] : [e[0], n] : e) })
+						})] }, i)),
+						e.polygon.length > 3 && /* @__PURE__ */ (0, Q.jsx)($, {
+							variant: "text",
+							type: "button",
+							className: "platform-corner-remove",
+							"aria-label": `Remove corner ${r + 1}`,
+							title: `Remove corner ${r + 1}`,
+							onClick: () => i(e.polygon.filter((e, t) => t !== r)),
+							children: /* @__PURE__ */ (0, Q.jsx)(X, { name: "delete" })
+						})
+					]
+				}, r))]
+			}),
+			/* @__PURE__ */ (0, Q.jsx)($, {
+				variant: "text",
+				type: "button",
+				onClick: t.deleteSelected,
+				children: "Delete platform"
+			})
+		]
+	});
+}
+//#endregion
+//#region apps/web/src/editor-preview/construct/PoolProperties.tsx
+function zr({ pool: e, editor: t }) {
+	let n = t.draft.coordinates.metersPerPlanUnit, r = e.polygon.reduce((t, r, i) => {
+		let a = e.polygon[(i + 1) % e.polygon.length];
+		return t + Math.hypot(r[0] - a[0], r[1] - a[1]) * n;
+	}, 0);
+	return /* @__PURE__ */ (0, Q.jsxs)("div", {
+		className: "construction-inspector__selection",
+		children: [
+			/* @__PURE__ */ (0, Q.jsx)("header", { children: /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("small", { children: "Selected pool" }), /* @__PURE__ */ (0, Q.jsx)("strong", { children: "Pool outline" })] }) }),
+			/* @__PURE__ */ (0, Q.jsxs)("dl", {
+				className: "construction-inspector__wall-facts construction-inspector__pool-facts",
+				children: [/* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Area" }), /* @__PURE__ */ (0, Q.jsxs)("dd", { children: [(Math.abs(tn(e.polygon)) * n ** 2).toFixed(1), " m²"] })] }), /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Perimeter" }), /* @__PURE__ */ (0, Q.jsxs)("dd", { children: [r.toFixed(2), " m"] })] })]
+			}),
+			/* @__PURE__ */ (0, Q.jsx)("p", { children: "Drag the pool to move it, or drag a corner to reshape it." }),
+			/* @__PURE__ */ (0, Q.jsxs)("details", {
+				className: "selection-details-advanced",
+				children: [/* @__PURE__ */ (0, Q.jsx)("summary", { children: "Outline coordinates" }), e.polygon.map((n, r) => /* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [/* @__PURE__ */ (0, Q.jsxs)("legend", { children: [
+					"Corner ",
+					r + 1,
+					" · plan units"
+				] }), [0, 1].map((i) => /* @__PURE__ */ (0, Q.jsxs)("label", { children: [i === 0 ? "X" : "Y", /* @__PURE__ */ (0, Q.jsx)(dr, {
+					label: `Pool corner ${r + 1} ${i === 0 ? "X" : "Y"}`,
+					step: .1,
+					value: Number(n[i].toPrecision(15)),
+					onCommit: (n) => t.updatePool(e.id, Le(e.polygon, (e, t) => t === r ? i === 0 ? [n, e[1]] : [e[0], n] : e))
+				})] }, i))] }, r))]
+			}),
+			/* @__PURE__ */ (0, Q.jsx)($, {
+				variant: "text",
+				type: "button",
+				onClick: t.deleteSelected,
+				children: "Delete pool"
+			})
+		]
+	});
+}
+//#endregion
+//#region apps/web/src/editor-preview/construct/HedgeStyleGrid.tsx
+var Br = Ht.map((e) => ({
+	style: e,
+	entry: {
+		key: `hedge:${e.id}:v2`,
+		kind: "procedural",
+		definition: {
+			bounds: {
+				min: [
+					-1.65,
+					0,
+					-e.widthMeters * .65
+				],
+				max: [
+					1.65,
+					e.heightMeters * 1.1,
+					e.widthMeters * .65
+				]
+			},
+			component: () => /* @__PURE__ */ (0, Q.jsx)(Zt, {
+				style: e.id,
+				length: 3,
+				height: e.heightMeters,
+				width: e.widthMeters
+			})
+		}
+	}
+}));
+function Vr({ value: e, onChoose: t }) {
+	let n = (0, Z.useRef)(null);
+	return /* @__PURE__ */ (0, Q.jsx)(xn, {
+		scrollRoot: n,
+		enabled: !0,
+		children: /* @__PURE__ */ (0, Q.jsx)("div", {
+			className: "catalog-grid hedge-style-grid",
+			ref: n,
+			role: "group",
+			"aria-label": "Boundary styles",
+			children: Br.map(({ style: n, entry: r }) => /* @__PURE__ */ (0, Q.jsxs)("button", {
+				type: "button",
+				className: "catalog-card",
+				"aria-label": n.label,
+				"aria-pressed": e === n.id,
+				onClick: () => t(n),
+				children: [
+					/* @__PURE__ */ (0, Q.jsx)(On, {
+						entry: r,
+						showAdd: !1
+					}),
+					/* @__PURE__ */ (0, Q.jsx)("strong", { children: n.label }),
+					/* @__PURE__ */ (0, Q.jsx)("small", { children: n.description })
+				]
+			}, n.id))
+		})
+	});
+}
+//#endregion
+//#region apps/web/src/editor-preview/construct/HedgeProperties.tsx
+function Hr({ editor: e, editingSelection: t = !0 }) {
+	let n = t && e.selection?.kind === "hedge" ? e.draft.hedges?.find((t) => e.selection?.kind === "hedge" && t.id === e.selection.id) : void 0;
+	if (e.tool !== "hedge" && !n) return null;
+	let r = n ?? e.hedgeSettings, i = (t) => {
+		n ? e.dispatch({
+			type: "update-hedge",
+			id: n.id,
+			changes: t
+		}) : e.setHedgeSettings({
+			...r,
+			...t
+		});
+	};
+	return /* @__PURE__ */ (0, Q.jsxs)("div", {
+		className: "construction-inspector__selection",
+		children: [
+			/* @__PURE__ */ (0, Q.jsx)("header", { children: /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("small", { children: n ? "Selected boundary" : "Boundary tool" }), /* @__PURE__ */ (0, Q.jsx)("strong", { children: "Boundary" })] }) }),
+			!n && /* @__PURE__ */ (0, Q.jsx)("p", {
+				className: "construction-inspector__tool-hint",
+				children: "Drag to draw a boundary. Continue from its endpoint for a connected row. Escape finishes drawing."
+			}),
+			/* @__PURE__ */ (0, Q.jsx)("p", {
+				className: "construction-inspector__tool-hint",
+				children: "All styles block walking across the full width, including open rails. Leave gaps for entrances."
+			}),
+			/* @__PURE__ */ (0, Q.jsx)(Vr, {
+				value: r.style,
+				onChoose: (e) => i(n ? { style: e.id } : {
+					style: e.id,
+					heightMeters: e.heightMeters,
+					widthMeters: e.widthMeters
+				})
+			}),
+			/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Height (m)", /* @__PURE__ */ (0, Q.jsx)(dr, {
+				label: "Boundary height",
+				value: r.heightMeters,
+				min: .2,
+				step: .1,
+				onCommit: (e) => i({ heightMeters: Math.min(5, Math.max(.2, e)) })
+			})] }),
+			/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Width (m)", /* @__PURE__ */ (0, Q.jsx)(dr, {
+				label: "Boundary width",
+				value: r.widthMeters,
+				min: .2,
+				step: .1,
+				onCommit: (e) => i({ widthMeters: Math.min(3, Math.max(.2, e)) })
+			})] }),
+			n && /* @__PURE__ */ (0, Q.jsx)($, {
+				variant: "text",
+				type: "button",
+				onClick: e.deleteSelected,
+				children: "Delete boundary"
+			})
+		]
+	});
+}
+//#endregion
 //#region apps/web/src/editor-preview/construct/drag-geometry.ts
-var zr = (e) => Number(e.toFixed(6));
-function Br(e, t, n, r, i = e.coordinates) {
+var Ur = (e) => Number(e.toFixed(6));
+function Wr(e, t, n, r, i = e.coordinates) {
 	let a = e.walls.find((e) => e.id === t.wallId);
 	if (!a) return null;
 	let o = Gt(e).find((e) => e.id === t.openingId);
-	return Zr({
+	return ti({
 		offsetPlanUnits: t.originalOffsetPlanUnits,
 		widthPlanUnits: t.originalWidthPlanUnits,
 		edge: t.edge,
-		cursorOffsetPlanUnits: Jr(n, a),
+		cursorOffsetPlanUnits: Qr(n, a),
 		wallLengthPlanUnits: Math.hypot(a.to[0] - a.from[0], a.to[1] - a.from[1]),
 		anchorOpposite: r,
 		minimumWidthPlanUnits: (o?.kind === "niche" ? .05 : .3) / i.metersPerPlanUnit
 	});
 }
-var Vr = (e, t) => [zr(e.x / t.metersPerPlanUnit + t.origin[0]), zr(e.z / t.metersPerPlanUnit + t.origin[1])], Hr = (e, t) => [zr((e[0] - t.origin[0]) * t.metersPerPlanUnit), zr((e[1] - t.origin[1]) * t.metersPerPlanUnit)], Ur = (e, t = !1, n = .1, r = [0, 0]) => t || !Number.isFinite(n) || n <= 0 ? e : [zr(r[0] + Math.round((e[0] - r[0]) / n) * n), zr(r[1] + Math.round((e[1] - r[1]) / n) * n)], Wr = ({ point: e, coordinates: t, absolute: n = !1, snapStepMeters: r = .1 }) => Ur(Vr(e, t), n, r / t.metersPerPlanUnit, t.origin), Gr = ({ point: e, coordinates: t, walls: n, pixelsPerMeter: r, pointerType: i, snapRadiusPixels: a, angleOrigin: o, angleReferenceRadians: s, movingEndpoint: c, onSnap: l, absolute: u = !1 }) => {
-	let d = Vr(e, t);
+var Gr = (e, t) => [Ur(e.x / t.metersPerPlanUnit + t.origin[0]), Ur(e.z / t.metersPerPlanUnit + t.origin[1])], Kr = (e, t) => [Ur((e[0] - t.origin[0]) * t.metersPerPlanUnit), Ur((e[1] - t.origin[1]) * t.metersPerPlanUnit)], qr = (e, t = !1, n = .1, r = [0, 0]) => t || !Number.isFinite(n) || n <= 0 ? e : [Ur(r[0] + Math.round((e[0] - r[0]) / n) * n), Ur(r[1] + Math.round((e[1] - r[1]) / n) * n)], Jr = ({ point: e, coordinates: t, absolute: n = !1, snapStepMeters: r = .1 }) => qr(Gr(e, t), n, r / t.metersPerPlanUnit, t.origin), Yr = ({ point: e, coordinates: t, walls: n, pixelsPerMeter: r, pointerType: i, snapRadiusPixels: a, angleOrigin: o, angleReferenceRadians: s, movingEndpoint: c, onSnap: l, absolute: u = !1 }) => {
+	let d = Gr(e, t);
 	if (u) return l?.(null), d;
-	let f = xe(vt({
+	let f = xe(ht({
 		candidate: d,
 		walls: n,
 		pixelsPerMeter: r,
@@ -2095,15 +2321,15 @@ var Vr = (e, t) => [zr(e.x / t.metersPerPlanUnit + t.origin[0]), zr(e.z / t.mete
 		coordinates: t
 	}));
 	return l?.(f), f.point;
-}, Kr = (e, t, n) => {
-	let [r, i] = Hr(e, n), [a, o] = Hr(t, n), s = -Math.atan2(o - i, a - r);
+}, Xr = (e, t, n) => {
+	let [r, i] = Kr(e, n), [a, o] = Kr(t, n), s = -Math.atan2(o - i, a - r);
 	return {
 		center: [(r + a) / 2, (i + o) / 2],
 		length: Math.hypot(a - r, o - i),
 		rotationYRadians: Object.is(s, -0) ? 0 : s
 	};
-}, qr = (e, t, n = .42) => {
-	let r = e.to[0] - e.from[0], i = e.to[1] - e.from[1], a = Math.hypot(r, i), o = a * t.metersPerPlanUnit, s = a === 0 ? 0 : (Math.atan2(i, r) * 180 / Math.PI + 360) % 360, [c, l] = Hr(e.from, t), [u, d] = Hr(e.to, t), f = a === 0 ? 0 : -i / a, p = a === 0 ? 1 : r / a;
+}, Zr = (e, t, n = .42) => {
+	let r = e.to[0] - e.from[0], i = e.to[1] - e.from[1], a = Math.hypot(r, i), o = a * t.metersPerPlanUnit, s = a === 0 ? 0 : (Math.atan2(i, r) * 180 / Math.PI + 360) % 360, [c, l] = Kr(e.from, t), [u, d] = Kr(e.to, t), f = a === 0 ? 0 : -i / a, p = a === 0 ? 1 : r / a;
 	return {
 		planLength: a,
 		lengthMeters: o,
@@ -2112,43 +2338,240 @@ var Vr = (e, t) => [zr(e.x / t.metersPerPlanUnit + t.origin[0]), zr(e.z / t.mete
 		guideCenter: [(c + u) / 2 + f * n, (l + d) / 2 + p * n],
 		rotationYRadians: -Math.atan2(d - l, u - c)
 	};
-}, Jr = (e, t) => {
+}, Qr = (e, t) => {
 	let n = t.to[0] - t.from[0], r = t.to[1] - t.from[1], i = Math.hypot(n, r);
 	return i === 0 ? 0 : Math.max(0, Math.min(i, ((e[0] - t.from[0]) * n + (e[1] - t.from[1]) * r) / i));
-}, Yr = ({ point: e, walls: t, widthPlanUnits: n, metersPerPlanUnit: r, maxDistanceMeters: i = .75 }) => t.map((t) => {
-	let i = Math.hypot(t.to[0] - t.from[0], t.to[1] - t.from[1]), a = Jr(e, t), o = i === 0 ? 0 : a / i, s = [t.from[0] + (t.to[0] - t.from[0]) * o, t.from[1] + (t.to[1] - t.from[1]) * o];
+}, $r = ({ point: e, walls: t, widthPlanUnits: n, metersPerPlanUnit: r, maxDistanceMeters: i = .75 }) => t.map((t) => {
+	let i = Math.hypot(t.to[0] - t.from[0], t.to[1] - t.from[1]), a = Qr(e, t), o = i === 0 ? 0 : a / i, s = [t.from[0] + (t.to[0] - t.from[0]) * o, t.from[1] + (t.to[1] - t.from[1]) * o];
 	return {
 		wallId: t.id,
 		wallLengthPlanUnits: i,
 		offsetPlanUnits: Math.max(0, Math.min(Math.max(0, i - n), a - n / 2)),
 		distanceMeters: Math.hypot(e[0] - s[0], e[1] - s[1]) * r
 	};
-}).filter(({ distanceMeters: e, wallLengthPlanUnits: t }) => e <= i && t >= n).sort((e, t) => e.distanceMeters - t.distanceMeters)[0] ?? null, Xr = ({ draft: e, wallId: t, offsetPlanUnits: n, widthPlanUnits: r, sillHeightMeters: i = 0, excludeOpeningId: a, kind: o }) => zt({
+}).filter(({ distanceMeters: e, wallLengthPlanUnits: t }) => e <= i && t >= n).sort((e, t) => e.distanceMeters - t.distanceMeters)[0] ?? null, ei = ({ draft: e, wallId: t, offsetPlanUnits: n, widthPlanUnits: r, sillHeightMeters: i = 0, excludeOpeningId: a, kind: o }) => zt({
 	draft: e,
 	wallId: t,
 	widthPlanUnits: r,
 	sillHeightMeters: i,
 	...a === void 0 ? {} : { excludeOpeningId: a },
 	...o === void 0 ? {} : { kind: o }
-}).some(({ min: e, max: t }) => n >= e && n <= t), Zr = ({ offsetPlanUnits: e, widthPlanUnits: t, edge: n, cursorOffsetPlanUnits: r, wallLengthPlanUnits: i, anchorOpposite: a, minimumWidthPlanUnits: o = .3 }) => {
+}).some(({ min: e, max: t }) => n >= e && n <= t), ti = ({ offsetPlanUnits: e, widthPlanUnits: t, edge: n, cursorOffsetPlanUnits: r, wallLengthPlanUnits: i, anchorOpposite: a, minimumWidthPlanUnits: o = .3 }) => {
 	if (a) {
 		let a = n === "start" ? e + t : e, s = n === "start" ? Math.min(a - o, Math.max(0, r)) : Math.max(a + o, Math.min(i, r));
 		return n === "start" ? {
-			offsetPlanUnits: zr(s),
-			widthPlanUnits: zr(a - s)
+			offsetPlanUnits: Ur(s),
+			widthPlanUnits: Ur(a - s)
 		} : {
-			offsetPlanUnits: zr(a),
-			widthPlanUnits: zr(s - a)
+			offsetPlanUnits: Ur(a),
+			widthPlanUnits: Ur(s - a)
 		};
 	}
 	let s = e + t / 2, c = n === "start" ? s - r : r - s, l = Math.min(s, i - s), u = Math.max(o / 2, Math.min(l, c));
 	return {
-		offsetPlanUnits: zr(s - u),
-		widthPlanUnits: zr(u * 2)
+		offsetPlanUnits: Ur(s - u),
+		widthPlanUnits: Ur(u * 2)
 	};
-}, Qr = () => void 0;
-function $r({ color: e = "#fff7f1", ...t }) {
-	return /* @__PURE__ */ (0, Q.jsx)(dt, {
+};
+//#endregion
+//#region apps/web/src/editor-preview/construct/ConstructionSelectionProperties.tsx
+function ni({ editor: e, onClose: t }) {
+	let n = e.selection?.kind === "wall" ? e.selection.id : null, r = e.selection?.kind === "pool" ? e.selection.id : null, i = e.selection?.kind === "room" ? e.selection.id : null, a = e.selection?.kind === "floor-zone" ? e.selection.id : null, o = n ? e.draft.walls.find((e) => e.id === n) : void 0, s = r ? e.draft.pools?.find((e) => e.id === r) : void 0, c = i ? e.previewFloor.rooms.find((e) => e.id === i) : void 0, l = c ? e.draft.rooms.find((e) => e.id === c.id) : void 0, u = a ? [...e.draft.groundZones ?? [], ...e.draft.rooms.flatMap((e) => e.floorZones ?? [])].find((e) => e.id === a) : void 0, d = c ? e.draft.rooms.filter((e) => K(e.anchor, c.polygon)) : [], f = (0, Z.useMemo)(() => c ? le(c, e.previewFloor) : 0, [c, e.previewFloor]), p = l?.ceilingHeightMeters ?? e.draft.defaultCeilingHeightMeters, m = o ? e.previewFloor.walls.find((e) => e.id === o.id) : void 0, h = o && (m?.classification === "exterior" || e.wallRuns.some((e) => e.sourceWallId === o.id && e.classification === "exterior")), g = o ? Zr(o, e.previewFloor.coordinates) : void 0, _ = o?.heightMeters ?? e.draft.defaultWallHeightMeters, v = o?.thicknessMeters ?? m?.thicknessMeters ?? e.draft.exteriorWallThicknessMeters, y = e.selection?.kind === "outdoor-platform" ? e.selection.id : void 0, b = e.tool === "select" && y ? e.draft.outdoorPlatforms?.find((e) => e.id === y) : void 0, x = e.selection?.kind === "multiple", S = (0, Z.useMemo)(() => {
+		let t = {
+			"outdoor-platform": 0,
+			hedge: 0,
+			wall: 0,
+			opening: 0,
+			room: 0,
+			pool: 0,
+			"floor-zone": 0
+		}, n = /* @__PURE__ */ new Set();
+		for (let r of e.deletionTargets ?? []) {
+			let e = `${r.kind}:${r.id}`;
+			n.has(e) || t[r.kind]++, n.add(e);
+		}
+		return t;
+	}, [e.deletionTargets]), C = Object.values(S).reduce((e, t) => e + t, 0), w = e.selection?.kind, T = {
+		wall: "Wall",
+		room: c?.name || "Unnamed room",
+		hedge: "Boundary",
+		pool: "Pool",
+		"floor-zone": "Floor area",
+		"outdoor-platform": "Platform",
+		multiple: `${C} elements selected`,
+		opening: "Opening"
+	}, E = w ? T[w] : "Properties";
+	return /* @__PURE__ */ (0, Q.jsx)(lr, {
+		title: E,
+		subtitle: e.previewFloor.name,
+		label: "Construction properties",
+		mode: "construct",
+		onClose: t,
+		children: /* @__PURE__ */ (0, Q.jsxs)("section", {
+			className: "construction-inspector construction-selection-properties",
+			children: [
+				w === "hedge" && /* @__PURE__ */ (0, Q.jsx)(Hr, { editor: e }),
+				b && /* @__PURE__ */ (0, Q.jsx)(Rr, {
+					platform: b,
+					editor: e
+				}),
+				x && /* @__PURE__ */ (0, Q.jsxs)("div", {
+					className: "construction-inspector__selection construction-inspector__bulk-selection",
+					children: [
+						/* @__PURE__ */ (0, Q.jsx)("p", { children: "Whole source walls and their attached openings are included. Shift-drag again to replace this selection." }),
+						/* @__PURE__ */ (0, Q.jsxs)("dl", {
+							className: "construction-inspector__bulk-facts",
+							"aria-label": "Elements selected for deletion",
+							children: [
+								S.room > 0 && /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Rooms" }), /* @__PURE__ */ (0, Q.jsx)("dd", { children: S.room })] }),
+								S.wall > 0 && /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Walls" }), /* @__PURE__ */ (0, Q.jsx)("dd", { children: S.wall })] }),
+								S.opening > 0 && /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Openings" }), /* @__PURE__ */ (0, Q.jsx)("dd", { children: S.opening })] }),
+								S.hedge > 0 && /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Boundaries" }), /* @__PURE__ */ (0, Q.jsx)("dd", { children: S.hedge })] }),
+								S.pool > 0 && /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Pools" }), /* @__PURE__ */ (0, Q.jsx)("dd", { children: S.pool })] }),
+								S["floor-zone"] > 0 && /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Floor areas" }), /* @__PURE__ */ (0, Q.jsx)("dd", { children: S["floor-zone"] })] })
+							]
+						}),
+						/* @__PURE__ */ (0, Q.jsx)($, {
+							variant: "text",
+							type: "button",
+							onClick: e.deleteSelected,
+							children: "Delete selection"
+						})
+					]
+				}),
+				s && /* @__PURE__ */ (0, Q.jsx)(zr, {
+					pool: s,
+					editor: e
+				}),
+				u && /* @__PURE__ */ (0, Q.jsxs)("div", {
+					className: "construction-inspector__selection",
+					children: [/* @__PURE__ */ (0, Q.jsx)(kr, {
+						value: u.finish,
+						onChange: (t) => e.updateFloorZone(u.id, { finish: t })
+					}), /* @__PURE__ */ (0, Q.jsx)($, {
+						variant: "text",
+						type: "button",
+						onClick: e.deleteSelected,
+						children: "Delete floor area"
+					})]
+				}),
+				o && /* @__PURE__ */ (0, Q.jsxs)("div", {
+					className: "construction-inspector__selection",
+					children: [
+						/* @__PURE__ */ (0, Q.jsxs)("dl", {
+							className: "construction-inspector__wall-facts",
+							children: [
+								/* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Length" }), /* @__PURE__ */ (0, Q.jsx)("dd", { children: g?.label })] }),
+								/* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Direction" }), /* @__PURE__ */ (0, Q.jsxs)("dd", { children: [g?.directionDegrees.toFixed(1), "°"] })] }),
+								/* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Type" }), /* @__PURE__ */ (0, Q.jsx)("dd", { children: m?.classification ?? "Pending" })] })
+							]
+						}),
+						/* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [
+							/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Dimensions · m" }),
+							/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Thickness", /* @__PURE__ */ (0, Q.jsx)(dr, {
+								label: "Wall thickness",
+								min: .04,
+								step: .01,
+								value: v,
+								onCommit: (t) => e.updateSelectedWallMetadata({ thicknessMeters: t })
+							})] }),
+							/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Height", /* @__PURE__ */ (0, Q.jsx)(dr, {
+								label: "Wall height",
+								min: .3,
+								step: .05,
+								value: _,
+								onCommit: (t) => e.updateSelectedWallMetadata({ heightMeters: t })
+							})] })
+						] }),
+						/* @__PURE__ */ (0, Q.jsx)(Pr, {
+							editor: e,
+							wall: o,
+							isExterior: !!h
+						}),
+						/* @__PURE__ */ (0, Q.jsx)($, {
+							variant: "text",
+							type: "button",
+							onClick: e.deleteSelected,
+							children: "Delete wall"
+						})
+					]
+				}),
+				c && /* @__PURE__ */ (0, Q.jsxs)("div", {
+					className: "construction-inspector__selection",
+					children: [
+						/* @__PURE__ */ (0, Q.jsxs)("p", {
+							className: "editor-property-fact",
+							children: [
+								"Interior area",
+								" ",
+								/* @__PURE__ */ (0, Q.jsx)("span", {
+									title: "Interior floor area",
+									"aria-label": `Interior floor area: ${f.toFixed(1)} square meters`,
+									children: /* @__PURE__ */ (0, Q.jsxs)("strong", { children: [f.toFixed(1), " m²"] })
+								})
+							]
+						}),
+						d.length > 1 && /* @__PURE__ */ (0, Q.jsxs)("div", {
+							className: "construction-inspector__merge",
+							role: "alert",
+							children: [
+								/* @__PURE__ */ (0, Q.jsx)("strong", { children: "Choose the room to keep" }),
+								/* @__PURE__ */ (0, Q.jsx)("p", { children: "This wall change joined existing rooms. Keep one identity before continuing." }),
+								/* @__PURE__ */ (0, Q.jsx)("div", { children: d.map((t) => /* @__PURE__ */ (0, Q.jsxs)($, {
+									variant: "secondary",
+									type: "button",
+									onClick: () => e.resolveRoomMerge(t.id),
+									children: ["Keep ", t.name || t.id]
+								}, t.id)) })
+							]
+						}),
+						/* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [
+							/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Room" }),
+							/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Name", /* @__PURE__ */ (0, Q.jsx)(fr, {
+								label: "Room name",
+								value: l?.name ?? c.name,
+								placeholder: "e.g. Living room",
+								onCommit: (t) => e.updateSelectedRoom({ name: t })
+							})] }),
+							/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Accent", /* @__PURE__ */ (0, Q.jsx)(Er, {
+								label: "Room accent color",
+								value: l?.accent ?? c.accent,
+								onCommit: (t) => e.updateSelectedRoom({ accent: t })
+							})] })
+						] }),
+						/* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Floor finish" }), /* @__PURE__ */ (0, Q.jsx)(kr, {
+							value: Ye(c),
+							onChange: (t) => e.paintRoomFloor(c.id, t, !1)
+						})] }),
+						/* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Ceiling" }), /* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Ceiling", /* @__PURE__ */ (0, Q.jsx)(dr, {
+							label: "Room ceiling height",
+							min: .3,
+							step: .05,
+							value: p,
+							onCommit: (t) => e.updateSelectedRoom({ ceilingHeightMeters: t })
+						})] })] }),
+						e.deletionTargets?.some((e) => e.kind === "room" && e.id === c.id) === !1 && /* @__PURE__ */ (0, Q.jsx)("p", {
+							role: "status",
+							children: "All enclosing walls are shared. Edit the walls to remove this room."
+						}),
+						/* @__PURE__ */ (0, Q.jsx)($, {
+							variant: "text",
+							type: "button",
+							disabled: e.deletionTargets?.some((e) => e.kind === "room" && e.id === c.id) === !1,
+							onClick: e.deleteSelected,
+							children: "Delete room"
+						})
+					]
+				})
+			]
+		})
+	});
+}
+//#endregion
+//#region apps/web/src/editor-preview/construct/PlanDrawing.tsx
+var ri = () => void 0;
+function ii({ color: e = "#fff7f1", ...t }) {
+	return /* @__PURE__ */ (0, Q.jsx)(ut, {
 		...t,
 		color: "#000000",
 		emissive: e,
@@ -2156,8 +2579,8 @@ function $r({ color: e = "#fff7f1", ...t }) {
 		toneMapped: !1
 	});
 }
-function ei({ color: e, opacity: t = 1, overlay: n = !1 }) {
-	return /* @__PURE__ */ (0, Q.jsx)(dt, {
+function ai({ color: e, opacity: t = 1, overlay: n = !1 }) {
+	return /* @__PURE__ */ (0, Q.jsx)(ut, {
 		color: "#000000",
 		emissive: e,
 		emissiveIntensity: 1,
@@ -2169,7 +2592,7 @@ function ei({ color: e, opacity: t = 1, overlay: n = !1 }) {
 		depthWrite: !n && t === 1
 	});
 }
-var ti = (0, Z.memo)(function({ from: e, to: t, color: n, width: r = .025, elevation: i = .045, overlay: a = !1 }) {
+var oi = (0, Z.memo)(function({ from: e, to: t, color: n, width: r = .025, elevation: i = .045, overlay: a = !1 }) {
 	let o = t[0] - e[0], s = t[1] - e[1];
 	return /* @__PURE__ */ (0, Q.jsxs)("mesh", {
 		position: [
@@ -2182,53 +2605,27 @@ var ti = (0, Z.memo)(function({ from: e, to: t, color: n, width: r = .025, eleva
 			0,
 			-Math.atan2(s, o)
 		],
-		raycast: Qr,
+		raycast: ri,
 		renderOrder: a ? 30 : 0,
-		children: [/* @__PURE__ */ (0, Q.jsx)("planeGeometry", { args: [Math.hypot(o, s), r] }), /* @__PURE__ */ (0, Q.jsx)(ei, {
+		children: [/* @__PURE__ */ (0, Q.jsx)("planeGeometry", { args: [Math.hypot(o, s), r] }), /* @__PURE__ */ (0, Q.jsx)(ai, {
 			color: n,
 			overlay: a
 		})]
 	});
 });
 //#endregion
-//#region apps/web/src/editor-preview/construct/wall-finish-sides.ts
-function ni(e, t) {
-	let n = t.walls.find((t) => t.id === e.id), r = e.to[0] - e.from[0], i = e.to[1] - e.from[1], a = Math.hypot(r, i) || 1, o = [-i / a, r / a], s = e.thicknessMeters ?? n?.thicknessMeters ?? .2, c = (s / 2 + .03) / t.coordinates.metersPerPlanUnit, l = n ? h(n, t) : null, u = l && l[0] * o[0] + l[1] * o[1] < 0 ? "right" : "left", d = (n) => {
-		let a = n === "left" ? 1 : -1, s = t.rooms.filter((t) => [
-			.2,
-			.5,
-			.8
-		].some((n) => {
-			let s = [e.from[0] + r * n + o[0] * c * a, e.from[1] + i * n + o[1] * c * a];
-			return Kt(s, t.polygon);
-		})).map((e) => e.name).filter(Boolean);
-		return s.length === 1 ? `${s[0]} side` : n === "left" ? "Side A" : "Side B";
-	};
-	return {
-		exteriorSide: u,
-		interiorSide: u === "left" ? "right" : "left",
-		roomLabel: (e) => d("left") === d("right") ? e === "left" ? "Side A" : "Side B" : d(e),
-		normal: o,
-		thickness: s
-	};
-}
-function ri(e, t) {
-	let n = { ...e };
-	return delete n[t], Object.keys(n).length ? n : void 0;
-}
-//#endregion
 //#region apps/web/src/editor-preview/construct/WallFinishHighlight.tsx
-function ii({ floor: e, selection: t }) {
-	let { highlight: n } = qn();
+function si({ floor: e, selection: t }) {
+	let { highlight: n } = Kn();
 	if (!n || n.floorId !== e.id || t?.kind !== "wall" || t.id !== n.wallId) return null;
 	let r = e.walls.find((e) => e.id === n.wallId);
 	if (!r) return null;
-	let { normal: i, thickness: a } = ni(r, e), o = Hr(r.from, e.coordinates), s = Hr(r.to, e.coordinates);
+	let { normal: i, thickness: a } = jr(r, e), o = Kr(r.from, e.coordinates), s = Kr(r.to, e.coordinates);
 	return /* @__PURE__ */ (0, Q.jsx)("group", {
 		name: "wall-finish-highlight",
 		children: n.sides.map((e) => {
 			let t = (e === "left" ? 1 : -1) * (a / 2 + .04);
-			return /* @__PURE__ */ (0, Q.jsx)(ti, {
+			return /* @__PURE__ */ (0, Q.jsx)(oi, {
 				from: [o[0] + i[0] * t, o[1] + i[1] * t],
 				to: [s[0] + i[0] * t, s[1] + i[1] * t],
 				color: "#d48a54",
@@ -2239,11 +2636,11 @@ function ii({ floor: e, selection: t }) {
 		})
 	});
 }
-var ai = (e, t) => ({
+var ci = (e, t) => ({
 	dragActive: !1,
 	dragClientFrom: t,
 	pointerId: e
-}), oi = (e, t, n) => !e || e.pointerId !== t ? null : e.dragActive ? {
+}), li = (e, t, n) => !e || e.pointerId !== t ? null : e.dragActive ? {
 	drag: e,
 	started: !1
 } : Math.hypot(n[0] - e.dragClientFrom[0], n[1] - e.dragClientFrom[1]) < 8 ? null : {
@@ -2255,24 +2652,24 @@ var ai = (e, t) => ({
 };
 //#endregion
 //#region apps/web/src/editor-preview/construct/segment-gesture.ts
-function si(e, t, n, r) {
+function ui(e, t, n, r) {
 	return r ? null : {
 		pointerId: e,
 		client: t,
 		point: n
 	};
 }
-function ci(e, t, n) {
+function di(e, t, n) {
 	return e?.pointerId === t && Math.hypot(n[0] - e.client[0], n[1] - e.client[1]) < 8;
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/ConstructionAlignmentGuide.tsx
-function li({ snap: e, coordinates: t }) {
+function fi({ snap: e, coordinates: t }) {
 	return e?.guideFrom ? /* @__PURE__ */ (0, Q.jsx)("group", {
 		name: "construction-alignment-guide",
-		children: /* @__PURE__ */ (0, Q.jsx)(ti, {
-			from: Hr(e.guideFrom, t),
-			to: Hr(e.point, t),
+		children: /* @__PURE__ */ (0, Q.jsx)(oi, {
+			from: Kr(e.guideFrom, t),
+			to: Kr(e.point, t),
 			color: "#cf6648",
 			width: .018,
 			elevation: .8
@@ -2281,7 +2678,7 @@ function li({ snap: e, coordinates: t }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/PlanStrokeBatch.tsx
-function ui(e) {
+function pi(e) {
 	let { from: t, to: n, width: r = .025, elevation: i = .045 } = e, a = n[0] - t[0], o = n[1] - t[1], s = Math.hypot(a, o);
 	if (s === 0) return [];
 	let c = -o / s * r / 2, l = a / s * r / 2, u = [
@@ -2310,7 +2707,7 @@ function ui(e) {
 		...p
 	];
 }
-function di({ strokes: e, name: t }) {
+function mi({ strokes: e, name: t }) {
 	let n = (0, Z.useMemo)(() => {
 		let t = /* @__PURE__ */ new Map();
 		for (let n of e) {
@@ -2319,13 +2716,13 @@ function di({ strokes: e, name: t }) {
 				color: n.color,
 				overlay: !!n.overlay,
 				positions: []
-			}), t.get(e).positions.push(...ui(n));
+			}), t.get(e).positions.push(...pi(n));
 		}
 		return [...t].map(([e, { positions: t, ...n }]) => {
-			let r = new Zt();
-			return r.setAttribute("position", new ft(t, 3)), r.computeVertexNormals(), r.computeBoundingSphere(), {
+			let i = new u();
+			return i.setAttribute("position", new r(t, 3)), i.computeVertexNormals(), i.computeBoundingSphere(), {
 				key: e,
-				geometry: r,
+				geometry: i,
 				...n
 			};
 		});
@@ -2334,9 +2731,9 @@ function di({ strokes: e, name: t }) {
 		name: t,
 		children: n.map((e) => /* @__PURE__ */ (0, Q.jsx)("mesh", {
 			geometry: e.geometry,
-			raycast: Qr,
+			raycast: ri,
 			renderOrder: e.overlay ? 30 : 0,
-			children: /* @__PURE__ */ (0, Q.jsx)(ei, {
+			children: /* @__PURE__ */ (0, Q.jsx)(ai, {
 				color: e.color,
 				overlay: e.overlay
 			})
@@ -2345,11 +2742,11 @@ function di({ strokes: e, name: t }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/ConstructionPlanWallJoints.tsx
-var fi = 1e-7, pi = (e, t) => e[0] * t[1] - e[1] * t[0];
-function mi(e) {
+var hi = 1e-7, gi = (e, t) => e[0] * t[1] - e[1] * t[0];
+function _i(e) {
 	let t = e.coordinates.metersPerPlanUnit, n = e.walls.flatMap((n) => {
-		let r = q(n.from, e.coordinates), i = q(n.to, e.coordinates), a = Math.hypot(i[0] - r[0], i[1] - r[1]);
-		return a < fi ? [] : [{
+		let r = J(n.from, e.coordinates), i = J(n.to, e.coordinates), a = Math.hypot(i[0] - r[0], i[1] - r[1]);
+		return a < hi ? [] : [{
 			from: r,
 			to: i,
 			length: a,
@@ -2358,13 +2755,13 @@ function mi(e) {
 			gaps: e.openings.filter((e) => e.wallId === n.id).map((e) => [e.offsetPlanUnits * t, (e.offsetPlanUnits + e.widthPlanUnits) * t])
 		}];
 	}), r = [];
-	for (let e of n.flatMap((e) => [e.from, e.to])) r.some((t) => Math.hypot(e[0] - t[0], e[1] - t[1]) < fi) || r.push(e);
+	for (let e of n.flatMap((e) => [e.from, e.to])) r.some((t) => Math.hypot(e[0] - t[0], e[1] - t[1]) < hi) || r.push(e);
 	let i = [];
 	for (let e of r) {
 		let t = n.flatMap((t) => {
 			let n = [e[0] - t.from[0], e[1] - t.from[1]], r = n[0] * t.direction[0] + n[1] * t.direction[1];
-			return Math.abs(pi(n, t.direction)) > fi || r < -1e-7 || r > t.length + fi ? [] : [1, -1].flatMap((e) => {
-				let n = r + e * fi;
+			return Math.abs(gi(n, t.direction)) > hi || r < -1e-7 || r > t.length + hi ? [] : [1, -1].flatMap((e) => {
+				let n = r + e * hi;
 				if (n < 0 || n > t.length || t.gaps.some(([e, t]) => n > e && n < t)) return [];
 				let i = [t.direction[0] * e, t.direction[1] * e];
 				return [{
@@ -2376,10 +2773,10 @@ function mi(e) {
 		}).sort((e, t) => e.angle - t.angle);
 		if (!(t.length < 2)) for (let n = 0; n < t.length; n += 1) {
 			let r = t[n], a = t[(n + 1) % t.length];
-			if ((a.angle - r.angle + Math.PI * 2) % (Math.PI * 2) <= Math.PI + fi) continue;
-			let o = [-r.direction[1] * r.halfWidth, r.direction[0] * r.halfWidth], s = [a.direction[1] * a.halfWidth, -a.direction[0] * a.halfWidth], c = pi(r.direction, a.direction), l = [[0, 0], o];
-			if (Math.abs(c) > fi) {
-				let e = pi([s[0] - o[0], s[1] - o[1]], a.direction) / c, t = [o[0] + e * r.direction[0], o[1] + e * r.direction[1]];
+			if ((a.angle - r.angle + Math.PI * 2) % (Math.PI * 2) <= Math.PI + hi) continue;
+			let o = [-r.direction[1] * r.halfWidth, r.direction[0] * r.halfWidth], s = [a.direction[1] * a.halfWidth, -a.direction[0] * a.halfWidth], c = gi(r.direction, a.direction), l = [[0, 0], o];
+			if (Math.abs(c) > hi) {
+				let e = gi([s[0] - o[0], s[1] - o[1]], a.direction) / c, t = [o[0] + e * r.direction[0], o[1] + e * r.direction[1]];
 				Math.hypot(...t) <= 4 * Math.max(r.halfWidth, a.halfWidth) && l.push(t);
 			}
 			l.push(s);
@@ -2392,10 +2789,10 @@ function mi(e) {
 	}
 	return i;
 }
-var hi = (0, Z.memo)(function({ draft: e }) {
+var vi = (0, Z.memo)(function({ draft: e }) {
 	let t = (0, Z.useMemo)(() => {
-		let t = new Zt();
-		return t.setAttribute("position", new ft(mi(e), 3)), t.computeVertexNormals(), t;
+		let t = new u();
+		return t.setAttribute("position", new r(_i(e), 3)), t.computeVertexNormals(), t;
 	}, [
 		e.walls,
 		e.openings,
@@ -2405,14 +2802,14 @@ var hi = (0, Z.memo)(function({ draft: e }) {
 	return (0, Z.useEffect)(() => () => t.dispose(), [t]), /* @__PURE__ */ (0, Q.jsx)("mesh", {
 		name: "plan-wall-joints",
 		geometry: t,
-		raycast: Qr,
-		children: /* @__PURE__ */ (0, Q.jsx)(ei, { color: "#596057" })
+		raycast: ri,
+		children: /* @__PURE__ */ (0, Q.jsx)(ai, { color: "#596057" })
 	});
-}), gi = (0, Z.memo)(function({ draft: e, attachments: t = Gt(e) }) {
+}), yi = (0, Z.memo)(function({ draft: e, attachments: t = Gt(e) }) {
 	let n = (0, Z.useMemo)(() => {
 		let n = [];
 		for (let r of e.walls) {
-			let i = q(r.from, e.coordinates), a = q(r.to, e.coordinates), o = Math.hypot(a[0] - i[0], a[1] - i[1]);
+			let i = J(r.from, e.coordinates), a = J(r.to, e.coordinates), o = Math.hypot(a[0] - i[0], a[1] - i[1]);
 			if (o < 1e-4) continue;
 			let s = t.filter((e) => e.wallId === r.id).sort((e, t) => e.offsetPlanUnits - t.offsetPlanUnits), c = e.coordinates.metersPerPlanUnit, l = [], u = 0;
 			for (let e of s) {
@@ -2430,7 +2827,7 @@ var hi = (0, Z.memo)(function({ draft: e }) {
 			});
 			for (let e of s) {
 				let t = e.widthPlanUnits * c, r = d(e.offsetPlanUnits * c), s = (a[0] - i[0]) / o, l = (a[1] - i[1]) / o, u = (e) => [r[0] + s * e[0] - l * e[1], r[1] + l * e[0] + s * e[1]];
-				for (let r of Lr(e, t, f)) n.push({
+				for (let r of wr(e, t, f)) n.push({
 					...r,
 					from: u(r.from),
 					to: u(r.to)
@@ -2446,7 +2843,7 @@ var hi = (0, Z.memo)(function({ draft: e }) {
 	]);
 	return /* @__PURE__ */ (0, Q.jsxs)("group", {
 		name: "construction-plan-walls",
-		children: [/* @__PURE__ */ (0, Q.jsx)(hi, { draft: e }), /* @__PURE__ */ (0, Q.jsx)(di, {
+		children: [/* @__PURE__ */ (0, Q.jsx)(vi, { draft: e }), /* @__PURE__ */ (0, Q.jsx)(mi, {
 			name: "wall-and-opening-strokes",
 			strokes: n
 		})]
@@ -2454,7 +2851,7 @@ var hi = (0, Z.memo)(function({ draft: e }) {
 });
 //#endregion
 //#region apps/web/src/editor-preview/construct/ConstructionDistanceLabel.tsx
-function _i({ label: e, ariaLabel: t = "Measurement", copyText: n = e, onCopy: r }) {
+function bi({ label: e, ariaLabel: t = "Measurement", copyText: n = e, onCopy: r }) {
 	return r ? /* @__PURE__ */ (0, Q.jsx)("button", {
 		type: "button",
 		className: "construction-measure-label",
@@ -2473,17 +2870,17 @@ function _i({ label: e, ariaLabel: t = "Measurement", copyText: n = e, onCopy: r
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/plan-screen-scale.ts
-var vi = (e, t, n = 82) => {
-	if (!(e instanceof w)) return n;
+var xi = (e, t, n = 82) => {
+	if (!(e instanceof pe)) return n;
 	let r = t * e.zoom / (e.top - e.bottom);
 	return Number.isFinite(r) && r > 0 ? r : n;
-}, yi = (e = "mouse") => e === "touch" ? 36 : e === "pen" ? 28 : 24;
+}, Si = (e = "mouse") => e === "touch" ? 36 : e === "pen" ? 28 : 24;
 //#endregion
 //#region apps/web/src/editor-preview/construct/ConstructionAngleGuide.tsx
-function bi({ angle: e, coordinates: t, planMode: n, labelKind: r = "Wall" }) {
-	let i = n ? $r : dt, a = (0, Z.useRef)(null), o = (0, Z.useRef)(null), s = (0, Z.useMemo)(() => new J(), []), [c, l] = Hr(e.junction, t), u = e.startRadians + e.sweepRadians / 2, d = Math.cos(u) * 56, f = Math.sin(u) * 56;
-	return lt(({ camera: e, size: t }) => {
-		let n = 1 / vi(e, t.height);
+function Ci({ angle: e, coordinates: t, planMode: n, labelKind: r = "Wall" }) {
+	let i = n ? ii : ut, a = (0, Z.useRef)(null), o = (0, Z.useRef)(null), s = (0, Z.useMemo)(() => new Y(), []), [c, l] = Kr(e.junction, t), u = e.startRadians + e.sweepRadians / 2, d = Math.cos(u) * 56, f = Math.sin(u) * 56;
+	return st(({ camera: e, size: t }) => {
+		let n = 1 / xi(e, t.height);
 		a.current?.scale.setScalar(n);
 		let r = o.current;
 		if (!r) return;
@@ -2507,7 +2904,7 @@ function bi({ angle: e, coordinates: t, planMode: n, labelKind: r = "Wall" }) {
 					0,
 					0
 				],
-				raycast: Qr,
+				raycast: ri,
 				renderOrder: 32,
 				children: [/* @__PURE__ */ (0, Q.jsx)("ringGeometry", { args: [
 					31,
@@ -2522,7 +2919,7 @@ function bi({ angle: e, coordinates: t, planMode: n, labelKind: r = "Wall" }) {
 					depthTest: !1,
 					depthWrite: !1
 				})]
-			}), typeof document < "u" && /* @__PURE__ */ (0, Q.jsx)(_, {
+			}), typeof document < "u" && /* @__PURE__ */ (0, Q.jsx)(v, {
 				position: [
 					d,
 					0,
@@ -2534,7 +2931,7 @@ function bi({ angle: e, coordinates: t, planMode: n, labelKind: r = "Wall" }) {
 				children: /* @__PURE__ */ (0, Q.jsx)("div", {
 					ref: o,
 					style: { pointerEvents: "none" },
-					children: /* @__PURE__ */ (0, Q.jsx)(_i, {
+					children: /* @__PURE__ */ (0, Q.jsx)(bi, {
 						label: e.label,
 						ariaLabel: `${r} angle`
 					})
@@ -2545,17 +2942,17 @@ function bi({ angle: e, coordinates: t, planMode: n, labelKind: r = "Wall" }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/ConstructionPointMarker.tsx
-function xi({ name: e, position: t, planMode: n = !1, radiusPixels: r }) {
-	let i = (0, Z.useRef)(null), a = n ? $r : dt;
-	return lt(({ camera: e, size: t }) => {
-		i.current && r !== void 0 && i.current.scale.setScalar(r / (.055 * vi(e, t.height)));
+function wi({ name: e, position: t, planMode: n = !1, radiusPixels: r }) {
+	let i = (0, Z.useRef)(null), a = n ? ii : ut;
+	return st(({ camera: e, size: t }) => {
+		i.current && r !== void 0 && i.current.scale.setScalar(r / (.055 * xi(e, t.height)));
 	}), /* @__PURE__ */ (0, Q.jsxs)("group", {
 		ref: i,
-		...vt({ name: e }),
+		...ht({ name: e }),
 		position: t,
 		children: [/* @__PURE__ */ (0, Q.jsxs)("mesh", {
 			renderOrder: 30,
-			raycast: Qr,
+			raycast: ri,
 			children: [/* @__PURE__ */ (0, Q.jsx)("cylinderGeometry", { args: [
 				.055,
 				.055,
@@ -2573,7 +2970,7 @@ function xi({ name: e, position: t, planMode: n = !1, radiusPixels: r }) {
 				0
 			],
 			renderOrder: 31,
-			raycast: Qr,
+			raycast: ri,
 			children: [/* @__PURE__ */ (0, Q.jsx)("cylinderGeometry", { args: [
 				.028,
 				.028,
@@ -2589,37 +2986,37 @@ function xi({ name: e, position: t, planMode: n = !1, radiusPixels: r }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/measure-geometry.ts
-var Si = 2, Ci = 1e-6, wi = () => ({
+var Ti = 2, Ei = 1e-6, Di = () => ({
 	start: null,
 	preview: null,
 	end: null
-}), Ti = (e) => [e[0], e[1]], Ei = (e) => e.end ? "complete" : e.start ? "drawing" : "idle", Di = (e, t) => {
+}), Oi = (e) => [e[0], e[1]], ki = (e) => e.end ? "complete" : e.start ? "drawing" : "idle", Ai = (e, t) => {
 	switch (t.type) {
 		case "place": return !e.start || e.end ? {
-			start: Ti(t.point),
+			start: Oi(t.point),
 			preview: null,
 			end: null
 		} : {
 			start: e.start,
 			preview: null,
-			end: Ti(t.point)
+			end: Oi(t.point)
 		};
 		case "preview": return !e.start || e.end ? e : {
 			...e,
-			preview: Ti(t.point)
+			preview: Oi(t.point)
 		};
 		case "cancel":
-		case "reset": return wi();
+		case "reset": return Di();
 	}
-}, Oi = (e) => {
+}, ji = (e) => {
 	if (!e.start) return null;
 	let t = e.end ?? e.preview;
 	return t ? [e.start, t] : null;
-}, ki = (e) => {
-	let t = Number(e.toFixed(Si));
-	return (Object.is(t, -0) ? 0 : t).toFixed(Si);
-}, Ai = (e, t, n) => {
-	let r = [t[0] - e[0], t[1] - e[1]], i = Math.hypot(...r), a = i * n.metersPerPlanUnit, o = Hr(e, n), s = Hr(t, n), c = `${ki(i)} plan units · ${ki(a)} m`;
+}, Mi = (e) => {
+	let t = Number(e.toFixed(Ti));
+	return (Object.is(t, -0) ? 0 : t).toFixed(Ti);
+}, Ni = (e, t, n) => {
+	let r = [t[0] - e[0], t[1] - e[1]], i = Math.hypot(...r), a = i * n.metersPerPlanUnit, o = Kr(e, n), s = Kr(t, n), c = `${Mi(i)} plan units · ${Mi(a)} m`;
 	return {
 		from: e,
 		to: t,
@@ -2633,36 +3030,36 @@ var Si = 2, Ci = 1e-6, wi = () => ({
 			to: s,
 			center: [(o[0] + s[0]) / 2, (o[1] + s[1]) / 2],
 			lengthMeters: a,
-			rotationYRadians: a <= Ci ? 0 : -Math.atan2(s[1] - o[1], s[0] - o[0])
+			rotationYRadians: a <= Ei ? 0 : -Math.atan2(s[1] - o[1], s[0] - o[0])
 		}
 	};
-}, ji = (e, t) => {
-	let n = Oi(e);
-	return n ? Ai(n[0], n[1], t) : null;
-}, Mi = (e) => !!(e && e.world.lengthMeters > Ci);
+}, Pi = (e, t) => {
+	let n = ji(e);
+	return n ? Ni(n[0], n[1], t) : null;
+}, Fi = (e) => !!(e && e.world.lengthMeters > Ei);
 //#endregion
 //#region apps/web/src/editor-preview/construct/ConstructionWallGuide.tsx
-function Ni({ name: e = "construction-wall-guide", wallId: t, from: n, to: r, coordinates: i, planMode: a, showMarkers: o = !1, wallThicknessMeters: s = .12, labelKind: c = "Wall", labelAvoidPoint: l }) {
-	let u = (0, Z.useMemo)(() => Ai(n, r, i), [
+function Ii({ name: e = "construction-wall-guide", wallId: t, from: n, to: r, coordinates: i, planMode: a, showMarkers: o = !1, wallThicknessMeters: s = .12, labelKind: c = "Wall", labelAvoidPoint: l }) {
+	let u = (0, Z.useMemo)(() => Ni(n, r, i), [
 		n,
 		r,
 		i
-	]), d = Mi(u), f = `${ki(u.distanceMeters)} m`, p = (0, Z.useRef)(null), m = (0, Z.useMemo)(() => [
-		new J(),
-		new J(),
-		new J()
+	]), d = Fi(u), f = `${Mi(u.distanceMeters)} m`, p = (0, Z.useRef)(null), m = (0, Z.useMemo)(() => [
+		new Y(),
+		new Y(),
+		new Y()
 	], []);
-	return lt(({ camera: e, size: t }) => {
+	return st(({ camera: e, size: t }) => {
 		let n = p.current;
 		if (!n) return;
 		let r = m[0].set(u.world.from[0], .25, u.world.from[1]).project(e), a = m[1].set(u.world.to[0], .25, u.world.to[1]).project(e), o = (a.x - r.x) * t.width, c = (r.y - a.y) * t.height, d = Math.hypot(o, c);
 		if (d <= 1e-6) return;
 		let f = o < 0 ? -1 : 1, h = c / d * f, g = -o / d * f;
 		if (l) {
-			let [n, o] = Hr(l, i), s = m[2].set(n, .25, o).project(e);
+			let [n, o] = Kr(l, i), s = m[2].set(n, .25, o).project(e);
 			h * (s.x - (r.x + a.x) / 2) * t.width - g * (s.y - (r.y + a.y) / 2) * t.height > 0 && (h = -h, g = -g);
 		}
-		let _ = n.offsetWidth / 2, v = n.offsetHeight / 2, y = Math.abs(h) * _ + Math.abs(g) * v + 12 + s * vi(e, t.height) / 2, b = ((r.x + a.x) / 4 + .5) * t.width, x = (.5 - (r.y + a.y) / 4) * t.height, S = (e, t, n) => Math.max(t + 8, Math.min(n - t - 8, e)), C = S(b + h * y, _, t.width) - b, w = S(x + g * y, v, t.height) - x;
+		let _ = n.offsetWidth / 2, v = n.offsetHeight / 2, y = Math.abs(h) * _ + Math.abs(g) * v + 12 + s * xi(e, t.height) / 2, b = ((r.x + a.x) / 4 + .5) * t.width, x = (.5 - (r.y + a.y) / 4) * t.height, S = (e, t, n) => Math.max(t + 8, Math.min(n - t - 8, e)), C = S(b + h * y, _, t.width) - b, w = S(x + g * y, v, t.height) - x;
 		n.style.transform = `translate(${C}px, ${w}px)`;
 	}), /* @__PURE__ */ (0, Q.jsxs)("group", {
 		name: e,
@@ -2674,7 +3071,7 @@ function Ni({ name: e = "construction-wall-guide", wallId: t, from: n, to: r, co
 			lengthMeters: u.distanceMeters,
 			labelVisible: d
 		},
-		children: [o && /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [/* @__PURE__ */ (0, Q.jsx)(xi, {
+		children: [o && /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [/* @__PURE__ */ (0, Q.jsx)(wi, {
 			name: "construction-wall-start-marker",
 			planMode: a,
 			position: [
@@ -2683,7 +3080,7 @@ function Ni({ name: e = "construction-wall-guide", wallId: t, from: n, to: r, co
 				u.world.from[1]
 			],
 			radiusPixels: 4
-		}), d && /* @__PURE__ */ (0, Q.jsx)(xi, {
+		}), d && /* @__PURE__ */ (0, Q.jsx)(wi, {
 			name: "construction-wall-tip-marker",
 			planMode: a,
 			position: [
@@ -2692,7 +3089,7 @@ function Ni({ name: e = "construction-wall-guide", wallId: t, from: n, to: r, co
 				u.world.to[1]
 			],
 			radiusPixels: 7
-		})] }), d && typeof document < "u" && /* @__PURE__ */ (0, Q.jsx)(_, {
+		})] }), d && typeof document < "u" && /* @__PURE__ */ (0, Q.jsx)(v, {
 			position: [
 				u.world.center[0],
 				.25,
@@ -2707,7 +3104,7 @@ function Ni({ name: e = "construction-wall-guide", wallId: t, from: n, to: r, co
 					transform: "translateY(-28px)",
 					pointerEvents: "none"
 				},
-				children: /* @__PURE__ */ (0, Q.jsx)(_i, {
+				children: /* @__PURE__ */ (0, Q.jsx)(bi, {
 					label: f,
 					ariaLabel: `${c} length`
 				})
@@ -2717,40 +3114,40 @@ function Ni({ name: e = "construction-wall-guide", wallId: t, from: n, to: r, co
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/wall-connection-measurements.ts
-var Pi = Math.PI * 2, Fi = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]), Ii = (e, t, n) => {
+var Li = Math.PI * 2, Ri = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]), zi = (e, t, n) => {
 	let r = e.to[0] - e.from[0], i = e.to[1] - e.from[1], a = Math.hypot(r, i);
 	if (a <= n) return !1;
 	let o = t[0] - e.from[0], s = t[1] - e.from[1], c = (o * r + s * i) / a;
 	return c >= -n && c <= a + n && Math.abs(o * i - s * r) / a <= n;
 };
-function Li({ walls: e, primary: t, junctions: n, coordinates: r }) {
+function Bi({ walls: e, primary: t, junctions: n, coordinates: r }) {
 	let i = 1e-6 / r.metersPerPlanUnit, a = [{
 		...t,
 		key: "primary",
 		primary: !0
 	}], o = [];
-	if (t.id === void 0 && Fi(t.from, t.to) <= i) return {
+	if (t.id === void 0 && Ri(t.from, t.to) <= i) return {
 		lengths: a,
 		angles: o
 	};
-	let s = n.filter((e, t) => n.findIndex((t) => Fi(e, t) <= i) === t);
-	for (let n of e) n.id !== t.id && s.some((e) => Ii(n, e, i)) && a.push({
+	let s = n.filter((e, t) => n.findIndex((t) => Ri(e, t) <= i) === t);
+	for (let n of e) n.id !== t.id && s.some((e) => zi(n, e, i)) && a.push({
 		...n,
 		key: `wall:${n.id}`,
 		primary: !1
 	});
 	s.forEach((e, n) => {
 		let r = [];
-		for (let t of a) if (Ii(t, e, i)) for (let n of [t.from, t.to]) {
-			if (Fi(e, n) <= i) continue;
-			let a = (Math.atan2(n[1] - e[1], n[0] - e[0]) + Pi) % Pi, o = r.find((e) => Math.abs(Math.atan2(Math.sin(a - e.heading), Math.cos(a - e.heading))) < 1e-8);
+		for (let t of a) if (zi(t, e, i)) for (let n of [t.from, t.to]) {
+			if (Ri(e, n) <= i) continue;
+			let a = (Math.atan2(n[1] - e[1], n[0] - e[0]) + Li) % Li, o = r.find((e) => Math.abs(Math.atan2(Math.sin(a - e.heading), Math.cos(a - e.heading))) < 1e-8);
 			o ? o.keys.push(t.key) : r.push({
 				heading: a,
 				keys: [t.key]
 			});
 		}
 		r.sort((e, t) => e.heading - t.heading), !(r.length < 2) && r.forEach((i, a) => {
-			let s = r[(a + 1) % r.length], c = (s.heading - i.heading + Pi) % Pi;
+			let s = r[(a + 1) % r.length], c = (s.heading - i.heading + Li) % Li;
 			if (c > Math.PI + 1e-8 || r.length === 2 && a === 1 && Math.abs(c - Math.PI) < 1e-8) return;
 			let l = [.../* @__PURE__ */ new Set([...i.keys, ...s.keys])];
 			if (t.id === void 0 && !l.includes("primary")) return;
@@ -2779,8 +3176,8 @@ function Li({ walls: e, primary: t, junctions: n, coordinates: r }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/ConstructionWallMeasurements.tsx
-function Ri({ walls: e, primary: t, junctions: n, coordinates: r, planMode: i, defaultThicknessMeters: a, labelKind: o = "Wall" }) {
-	let s = (0, Z.useMemo)(() => Li({
+function Vi({ walls: e, primary: t, junctions: n, coordinates: r, planMode: i, defaultThicknessMeters: a, labelKind: o = "Wall" }) {
+	let s = (0, Z.useMemo)(() => Bi({
 		walls: e,
 		primary: t,
 		junctions: n,
@@ -2793,7 +3190,7 @@ function Ri({ walls: e, primary: t, junctions: n, coordinates: r, planMode: i, d
 	]);
 	return /* @__PURE__ */ (0, Q.jsxs)("group", {
 		name: "construction-wall-measurements",
-		children: [s.lengths.map((e) => /* @__PURE__ */ (0, Q.jsx)(Ni, {
+		children: [s.lengths.map((e) => /* @__PURE__ */ (0, Q.jsx)(Ii, {
 			name: e.primary ? "construction-wall-guide" : `construction-wall-guide-${e.id}`,
 			labelKind: o,
 			wallId: e.id,
@@ -2804,7 +3201,7 @@ function Ri({ walls: e, primary: t, junctions: n, coordinates: r, planMode: i, d
 			showMarkers: e.primary && t.id === void 0,
 			labelAvoidPoint: e.avoidPoint,
 			wallThicknessMeters: e.thicknessMeters ?? a
-		}, e.key)), s.angles.map((e) => /* @__PURE__ */ (0, Q.jsx)(bi, {
+		}, e.key)), s.angles.map((e) => /* @__PURE__ */ (0, Q.jsx)(Ci, {
 			labelKind: o,
 			angle: e,
 			coordinates: r,
@@ -2814,18 +3211,18 @@ function Ri({ walls: e, primary: t, junctions: n, coordinates: r, planMode: i, d
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/construction-pointer-events.ts
-var zi = new b(new J(0, 1, 0), 0), Bi = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= 1e-7, Vi = (e) => {
+var Hi = new me(new Y(0, 1, 0), 0), Ui = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= 1e-7, Wi = (e) => {
 	e.stopPropagation();
-}, Hi = (e) => {
+}, Gi = (e) => {
 	e.stopPropagation(), e.target?.setPointerCapture?.(e.pointerId);
-}, Ui = (e) => {
+}, Ki = (e) => {
 	e.stopPropagation();
 	let t = e.target;
 	t?.hasPointerCapture?.(e.pointerId) !== !1 && t?.releasePointerCapture?.(e.pointerId);
 };
 //#endregion
 //#region apps/web/src/editor-preview/construct/ConstructionOpeningTargets.tsx
-function Wi({ draft: e, attachments: t = Gt(e), draggingOpening: n, resizingOpening: r, previewPoint: i, coordinates: a, highlightedSelection: o, directlySelected: s, planMode: c, tool: l, onSelectOpening: u, setDraggingOpening: d, capturedSelectDrag: f, clientPointForEvent: p, onDraggingChange: m, openingPlacementFromEvent: h, finishOpeningDrag: g, cancelOpeningDrag: _, ToonMaterial: v, setResizingOpening: y, resizedOpeningForEvent: b, finishOpeningResize: x, cancelOpeningResize: S }) {
+function qi({ draft: e, attachments: t = Gt(e), draggingOpening: n, resizingOpening: r, previewPoint: i, coordinates: a, highlightedSelection: o, directlySelected: s, planMode: c, tool: l, onSelectOpening: u, setDraggingOpening: d, capturedSelectDrag: f, clientPointForEvent: p, onDraggingChange: m, openingPlacementFromEvent: h, finishOpeningDrag: g, cancelOpeningDrag: _, ToonMaterial: v, setResizingOpening: y, resizedOpeningForEvent: b, finishOpeningResize: x, cancelOpeningResize: S }) {
 	return /* @__PURE__ */ (0, Q.jsx)(Q.Fragment, { children: t.map((C) => {
 		let w = n?.openingId === C.id ? n : null, T = r?.openingId === C.id ? r : null, E = w?.wallId ?? C.wallId, D = e.walls.find((e) => e.id === E);
 		if (!D) return null;
@@ -2833,30 +3230,30 @@ function Wi({ draft: e, attachments: t = Gt(e), draggingOpening: n, resizingOpen
 			...D,
 			from: i(D.from),
 			to: i(D.to)
-		}, k = !Bi(O.from, D.from) || !Bi(O.to, D.to), [A, j] = Hr(O.from, a), [M, N] = Hr(O.to, a), P = Math.hypot(O.to[0] - O.from[0], O.to[1] - O.from[1]);
+		}, k = !Ui(O.from, D.from) || !Ui(O.to, D.to), [A, j] = Kr(O.from, a), [M, N] = Kr(O.to, a), P = Math.hypot(O.to[0] - O.from[0], O.to[1] - O.from[1]);
 		if (P <= 0) return null;
-		let F = T?.offsetPlanUnits ?? w?.offsetPlanUnits ?? C.offsetPlanUnits, I = T?.widthPlanUnits ?? C.widthPlanUnits, L = (F + I / 2) / P, R = F + I / 2, z = .08 / a.metersPerPlanUnit, B = t.filter((e) => e.id !== C.id && e.wallId === E), V = F < 0 || F + I > P || B.some((e) => F < e.offsetPlanUnits + e.widthPlanUnits + z && F + I + z > e.offsetPlanUnits), ee = A + (M - A) * L, H = j + (N - j) * L, te = -Math.atan2(N - j, M - A), ne = Et(o, "opening", C.id), re = s?.kind === "opening" && s.id === C.id;
+		let F = T?.offsetPlanUnits ?? w?.offsetPlanUnits ?? C.offsetPlanUnits, I = T?.widthPlanUnits ?? C.widthPlanUnits, L = (F + I / 2) / P, ee = F + I / 2, R = .08 / a.metersPerPlanUnit, te = t.filter((e) => e.id !== C.id && e.wallId === E), z = F < 0 || F + I > P || te.some((e) => F < e.offsetPlanUnits + e.widthPlanUnits + R && F + I + R > e.offsetPlanUnits), B = A + (M - A) * L, V = j + (N - j) * L, ne = -Math.atan2(N - j, M - A), H = Ct(o, "opening", C.id), re = s?.kind === "opening" && s.id === C.id;
 		return /* @__PURE__ */ (0, Q.jsxs)("group", {
 			position: [
-				ee,
+				B,
 				c ? .5 : C.sillHeightMeters + C.openingHeightMeters / 2,
-				H
+				V
 			],
 			rotation: [
 				0,
-				te,
+				ne,
 				0
 			],
 			children: [
 				/* @__PURE__ */ (0, Q.jsxs)("mesh", {
 					name: `construction-opening-target-${C.id}`,
 					userData: {
-						validPlacement: !V,
+						validPlacement: !z,
 						wallId: E
 					},
-					renderOrder: ne ? 24 : 19,
+					renderOrder: H ? 24 : 19,
 					onPointerDown: (e) => {
-						l !== "select" || e.nativeEvent?.shiftKey || (Hi(e), u(C.id), d({
+						l !== "select" || e.nativeEvent?.shiftKey || (Gi(e), u(C.id), d({
 							...f(e),
 							openingId: C.id,
 							wallId: O.id,
@@ -2865,8 +3262,8 @@ function Wi({ draft: e, attachments: t = Gt(e), draggingOpening: n, resizingOpen
 					},
 					onPointerMove: (e) => {
 						if (n?.openingId !== C.id) return;
-						Vi(e);
-						let t = oi(n, e.pointerId, p(e));
+						Wi(e);
+						let t = li(n, e.pointerId, p(e));
 						if (!t) return;
 						t.started && m?.(!0);
 						let r = h(e, C.widthPlanUnits);
@@ -2880,13 +3277,13 @@ function Wi({ draft: e, attachments: t = Gt(e), draggingOpening: n, resizingOpen
 					children: [/* @__PURE__ */ (0, Q.jsx)("boxGeometry", { args: [
 						I * a.metersPerPlanUnit,
 						c ? .08 : C.openingHeightMeters,
-						c ? Math.max(O.thicknessMeters ?? e.interiorWallThicknessMeters, .28) + .12 : ne ? .1 : .24
+						c ? Math.max(O.thicknessMeters ?? e.interiorWallThicknessMeters, .28) + .12 : H ? .1 : .24
 					] }), /* @__PURE__ */ (0, Q.jsx)(v, {
-						visible: ne || k || E !== C.wallId,
-						color: V ? "#c45345" : ne || k || E !== C.wallId ? "#ff754d" : "#ffffff",
+						visible: H || k || E !== C.wallId,
+						color: z ? "#c45345" : H || k || E !== C.wallId ? "#ff754d" : "#ffffff",
 						transparent: !0,
-						opacity: ne ? .18 : k || E !== C.wallId ? .12 : .001,
-						wireframe: !c && (ne || k || E !== C.wallId),
+						opacity: H ? .18 : k || E !== C.wallId ? .12 : .001,
+						wireframe: !c && (H || k || E !== C.wallId),
 						depthTest: !1,
 						depthWrite: !1
 					})]
@@ -2898,15 +3295,15 @@ function Wi({ draft: e, attachments: t = Gt(e), draggingOpening: n, resizingOpen
 						c ? -.08 : -C.sillHeightMeters - C.openingHeightMeters / 2 + .07,
 						0
 					],
-					children: [B.map((e) => /* @__PURE__ */ (0, Q.jsxs)("mesh", {
+					children: [te.map((e) => /* @__PURE__ */ (0, Q.jsxs)("mesh", {
 						position: [
-							(e.offsetPlanUnits + e.widthPlanUnits / 2 - R) * a.metersPerPlanUnit,
+							(e.offsetPlanUnits + e.widthPlanUnits / 2 - ee) * a.metersPerPlanUnit,
 							0,
 							0
 						],
 						renderOrder: 23,
 						children: [/* @__PURE__ */ (0, Q.jsx)("boxGeometry", { args: [
-							(e.widthPlanUnits + z * 2) * a.metersPerPlanUnit,
+							(e.widthPlanUnits + R * 2) * a.metersPerPlanUnit,
 							.018,
 							.18
 						] }), /* @__PURE__ */ (0, Q.jsx)(v, {
@@ -2915,15 +3312,15 @@ function Wi({ draft: e, attachments: t = Gt(e), draggingOpening: n, resizingOpen
 							opacity: .52,
 							depthTest: !1
 						})]
-					}, e.id)), [z / 2, P - z / 2].map((e) => /* @__PURE__ */ (0, Q.jsxs)("mesh", {
+					}, e.id)), [R / 2, P - R / 2].map((e) => /* @__PURE__ */ (0, Q.jsxs)("mesh", {
 						position: [
-							(e - R) * a.metersPerPlanUnit,
+							(e - ee) * a.metersPerPlanUnit,
 							0,
 							0
 						],
 						renderOrder: 23,
 						children: [/* @__PURE__ */ (0, Q.jsx)("boxGeometry", { args: [
-							z * a.metersPerPlanUnit,
+							R * a.metersPerPlanUnit,
 							.02,
 							.24
 						] }), /* @__PURE__ */ (0, Q.jsx)(v, {
@@ -2943,7 +3340,7 @@ function Wi({ draft: e, attachments: t = Gt(e), draggingOpening: n, resizingOpen
 					],
 					renderOrder: 26,
 					onPointerDown: (t) => {
-						t.nativeEvent?.shiftKey || (Hi(t), y({
+						t.nativeEvent?.shiftKey || (Gi(t), y({
 							...f(t),
 							openingId: C.id,
 							wallId: O.id,
@@ -2956,8 +3353,8 @@ function Wi({ draft: e, attachments: t = Gt(e), draggingOpening: n, resizingOpen
 					},
 					onPointerMove: (t) => {
 						if (r?.openingId !== C.id || r.edge !== e) return;
-						Vi(t);
-						let n = oi(r, t.pointerId, p(t));
+						Wi(t);
+						let n = li(r, t.pointerId, p(t));
 						if (!n) return;
 						n.started && m?.(!0);
 						let i = b(t, n.drag);
@@ -2979,18 +3376,18 @@ function Wi({ draft: e, attachments: t = Gt(e), draggingOpening: n, resizingOpen
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/ConstructionWallTargets.tsx
-function Gi({ draft: e, highlightedSelection: t, directlySelected: n, draggingEndpoint: r, draggingWall: i, previewPoint: a, coordinates: o, openingTool: s, placeOpeningFromEvent: c, tool: l, onSelectWall: u, setOpeningPreview: d, placementPreviewFromEvent: f, ToonMaterial: p, planMode: m, translationPointForEvent: h, setDraggingWall: g, capturedSelectDrag: _, clientPointForEvent: v, onDraggingChange: y, wallDeltaForEvent: b, finishWallDrag: x, cancelWallDrag: S, setDraggingEndpoint: C, pointForEvent: w, finishEndpointDrag: T, cancelEndpointDrag: E }) {
+function Ji({ draft: e, highlightedSelection: t, directlySelected: n, draggingEndpoint: r, draggingWall: i, previewPoint: a, coordinates: o, openingTool: s, placeOpeningFromEvent: c, tool: l, onSelectWall: u, setOpeningPreview: d, placementPreviewFromEvent: f, ToonMaterial: p, planMode: m, translationPointForEvent: h, setDraggingWall: g, capturedSelectDrag: _, clientPointForEvent: v, onDraggingChange: y, wallDeltaForEvent: b, finishWallDrag: x, cancelWallDrag: S, setDraggingEndpoint: C, pointForEvent: w, finishEndpointDrag: T, cancelEndpointDrag: E }) {
 	return /* @__PURE__ */ (0, Q.jsx)(Q.Fragment, { children: e.walls.map((e) => {
-		let D = It(t).filter((t) => t.kind === "wall" && t.id === e.id), O = D.some((e) => e.kind === "wall" && !e.span), k = n?.kind === "wall" && n.id === e.id, A = r !== null && (Bi(e.from, r.origin) || Bi(e.to, r.origin)) || i !== null && (Bi(e.from, i.from) || Bi(e.to, i.from) || Bi(e.from, i.to) || Bi(e.to, i.to)), j = r || i ? {
+		let D = Ft(t).filter((t) => t.kind === "wall" && t.id === e.id), O = D.some((e) => e.kind === "wall" && !e.span), k = n?.kind === "wall" && n.id === e.id, A = r !== null && (Ui(e.from, r.origin) || Ui(e.to, r.origin)) || i !== null && (Ui(e.from, i.from) || Ui(e.to, i.from) || Ui(e.from, i.to) || Ui(e.to, i.to)), j = r || i ? {
 			...e,
 			from: a(e.from),
 			to: a(e.to)
-		} : e, M = Kr(j.from, j.to, o), N = qr(j, o);
+		} : e, M = Xr(j.from, j.to, o), N = Zr(j, o);
 		return /* @__PURE__ */ (0, Q.jsxs)("group", { children: [
 			D.map((t, n) => {
 				if (t.kind !== "wall" || !t.span) return null;
-				let r = (t) => Hr([e.from[0] + (e.to[0] - e.from[0]) * t, e.from[1] + (e.to[1] - e.from[1]) * t], o);
-				return /* @__PURE__ */ (0, Q.jsx)(ti, {
+				let r = (t) => Kr([e.from[0] + (e.to[0] - e.from[0]) * t, e.from[1] + (e.to[1] - e.from[1]) * t], o);
+				return /* @__PURE__ */ (0, Q.jsx)(oi, {
 					from: r(t.span[0]),
 					to: r(t.span[1]),
 					color: "#ff754d",
@@ -3012,10 +3409,10 @@ function Gi({ draft: e, highlightedSelection: t, directlySelected: n, draggingEn
 				],
 				onPointerDown: (t) => {
 					if (s) return c(t);
-					l !== "select" || t.nativeEvent?.shiftKey || (Vi(t), u(e.id));
+					l !== "select" || t.nativeEvent?.shiftKey || (Wi(t), u(e.id));
 				},
 				onPointerMove: (e) => {
-					s && (Vi(e), d(f(e, s)));
+					s && (Wi(e), d(f(e, s)));
 				},
 				children: [/* @__PURE__ */ (0, Q.jsx)("boxGeometry", { args: [
 					M.length,
@@ -3084,7 +3481,7 @@ function Gi({ draft: e, highlightedSelection: t, directlySelected: n, draggingEn
 				onPointerDown: (t) => {
 					if (t.nativeEvent?.shiftKey) return;
 					let n = h(t);
-					n && (Hi(t), g({
+					n && (Gi(t), g({
 						..._(t),
 						wallId: e.id,
 						from: e.from,
@@ -3095,8 +3492,8 @@ function Gi({ draft: e, highlightedSelection: t, directlySelected: n, draggingEn
 				},
 				onPointerMove: (t) => {
 					if (i?.wallId !== e.id) return;
-					Vi(t);
-					let n = oi(i, t.pointerId, v(t));
+					Wi(t);
+					let n = li(i, t.pointerId, v(t));
 					if (!n) return;
 					n.started && y?.(!0);
 					let r = b(t, n.drag.grab);
@@ -3113,7 +3510,7 @@ function Gi({ draft: e, highlightedSelection: t, directlySelected: n, draggingEn
 				})]
 			}),
 			k && l === "select" && ["from", "to"].map((t) => {
-				let [n, i] = Hr(j[t], o);
+				let [n, i] = Kr(j[t], o);
 				return /* @__PURE__ */ (0, Q.jsxs)("mesh", {
 					name: `construction-wall-endpoint-${e.id}-${t}`,
 					position: [
@@ -3123,7 +3520,7 @@ function Gi({ draft: e, highlightedSelection: t, directlySelected: n, draggingEn
 					],
 					renderOrder: 20,
 					onPointerDown: (n) => {
-						n.nativeEvent?.shiftKey || (Hi(n), C({
+						n.nativeEvent?.shiftKey || (Gi(n), C({
 							..._(n),
 							wallId: e.id,
 							endpoint: t,
@@ -3134,8 +3531,8 @@ function Gi({ draft: e, highlightedSelection: t, directlySelected: n, draggingEn
 					},
 					onPointerMove: (n) => {
 						if (r?.wallId !== e.id || r.endpoint !== t) return;
-						Vi(n);
-						let i = oi(r, n.pointerId, v(n));
+						Wi(n);
+						let i = li(r, n.pointerId, v(n));
 						if (!i) return;
 						i.started && y?.(!0);
 						let a = w(n);
@@ -3161,7 +3558,7 @@ function Gi({ draft: e, highlightedSelection: t, directlySelected: n, draggingEn
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/wall-attachment-preview.ts
-function Ki(e, t, n) {
+function Yi(e, t, n) {
 	return e.map((e) => t?.openingId === e.id ? {
 		...e,
 		wallId: t.wallId,
@@ -3174,14 +3571,14 @@ function Ki(e, t, n) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/opening-placement-preview.ts
-function qi(e, t, n) {
+function Xi(e, t, n) {
 	return {
 		widthPlanUnits: (e === "door" ? t.widthMeters : e === "window" ? 1.2 : e === "niche" ? .6 : .9) / n,
 		openingHeightMeters: e === "door" ? t.heightMeters : e === "window" ? 1.2 : e === "niche" ? 1 : 2.04,
 		sillHeightMeters: e === "window" ? .9 : e === "niche" ? .1 : 0
 	};
 }
-function Ji(e, t, n, r, i) {
+function Zi(e, t, n, r, i) {
 	if (!r) return null;
 	let a = e.walls.find((e) => e.id === r.wallId);
 	if (!a) return null;
@@ -3189,7 +3586,7 @@ function Ji(e, t, n, r, i) {
 	return {
 		...r,
 		side: o,
-		valid: (t !== "niche" || Ge(e, a.id) >= .01) && i.openingHeightMeters + i.sillHeightMeters <= (a.heightMeters ?? e.defaultWallHeightMeters) - (t === "niche" ? .002 : 0) && Xr({
+		valid: (t !== "niche" || We(e, a.id) >= .01) && i.openingHeightMeters + i.sillHeightMeters <= (a.heightMeters ?? e.defaultWallHeightMeters) - (t === "niche" ? .002 : 0) && ei({
 			draft: e,
 			wallId: a.id,
 			offsetPlanUnits: r.offsetPlanUnits,
@@ -3201,79 +3598,79 @@ function Ji(e, t, n, r, i) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/selection-geometry.ts
-var Yi = 1e-7, Xi = (e, t) => ({
+var Qi = 1e-7, $i = (e, t) => ({
 	minX: Math.min(e[0], t[0]),
 	maxX: Math.max(e[0], t[0]),
 	minY: Math.min(e[1], t[1]),
 	maxY: Math.max(e[1], t[1])
-}), Zi = (e) => [
+}), ea = (e) => [
 	[e.minX, e.minY],
 	[e.maxX, e.minY],
 	[e.maxX, e.maxY],
 	[e.minX, e.maxY]
-], Qi = (e, t) => e[0] >= t.minX - Yi && e[0] <= t.maxX + Yi && e[1] >= t.minY - Yi && e[1] <= t.maxY + Yi, $i = (e, t, n) => {
-	if (Qi(e, n) || Qi(t, n)) return !0;
-	let r = Zi(n);
-	return r.some((n, i) => $t(e, t, n, r[(i + 1) % r.length]));
-}, ea = (e, t) => e.some((e) => Qi(e, t)) || Zi(t).some((t) => Kt(t, e)) ? !0 : e.some((n, r) => $i(n, e[(r + 1) % e.length], t)), ta = (e, t) => {
+], ta = (e, t) => e[0] >= t.minX - Qi && e[0] <= t.maxX + Qi && e[1] >= t.minY - Qi && e[1] <= t.maxY + Qi, na = (e, t, n) => {
+	if (ta(e, n) || ta(t, n)) return !0;
+	let r = ea(n);
+	return r.some((n, i) => Me(e, t, n, r[(i + 1) % r.length]));
+}, ra = (e, t) => e.some((e) => ta(e, t)) || ea(t).some((t) => K(t, e)) ? !0 : e.some((n, r) => na(n, e[(r + 1) % e.length], t)), ia = (e, t) => {
 	let n = t.walls.find((t) => t.id === e.wallId);
 	if (!n) return null;
 	let r = n.to[0] - n.from[0], i = n.to[1] - n.from[1], a = Math.hypot(r, i);
-	if (a <= Yi) return null;
+	if (a <= Qi) return null;
 	let o = [r / a, i / a], s = (e) => [n.from[0] + o[0] * e, n.from[1] + o[1] * e];
 	return [s(e.offsetPlanUnits), s(e.offsetPlanUnits + e.widthPlanUnits)];
-}, na = ({ from: e, to: t, draft: n, rooms: r }) => {
-	let i = Xi(e, t), a = r.filter((e) => Qi(rn(e.polygon), i)).map((e) => ({
+}, aa = ({ from: e, to: t, draft: n, rooms: r }) => {
+	let i = $i(e, t), a = r.filter((e) => ta(Kt(e.polygon), i)).map((e) => ({
 		kind: "room",
 		id: e.id
-	})), o = n.walls.filter((e) => $i(e.from, e.to, i)).map((e) => ({
+	})), o = n.walls.filter((e) => na(e.from, e.to, i)).map((e) => ({
 		kind: "wall",
 		id: e.id
 	})), s = Gt(n).filter((e) => {
-		let t = ta(e, n);
-		return t ? $i(t[0], t[1], i) : !1;
+		let t = ia(e, n);
+		return t ? na(t[0], t[1], i) : !1;
 	}).map((e) => ({
 		kind: "opening",
 		id: e.id
-	})), c = (n.pools ?? []).filter((e) => ea(e.polygon, i)).map((e) => ({
+	})), c = (n.pools ?? []).filter((e) => ra(e.polygon, i)).map((e) => ({
 		kind: "pool",
 		id: e.id
-	})), l = [...n.groundZones ?? [], ...n.rooms.flatMap((e) => e.floorZones ?? [])].filter((e) => e.polygon.every((e) => Qi(e, i))).map((e) => ({
+	})), l = [...n.groundZones ?? [], ...n.rooms.flatMap((e) => e.floorZones ?? [])].filter((e) => e.polygon.every((e) => ta(e, i))).map((e) => ({
 		kind: "floor-zone",
 		id: e.id
 	}));
-	return It(Bt([
+	return Ft(Bt([
 		...a,
 		...o,
 		...s,
-		...(n.hedges ?? []).filter((e) => $i(e.from, e.to, i)).map((e) => ({
+		...(n.hedges ?? []).filter((e) => na(e.from, e.to, i)).map((e) => ({
 			kind: "hedge",
 			id: e.id
 		})),
-		...(n.outdoorPlatforms ?? []).filter((e) => ea(e.polygon, i)).map((e) => ({
+		...(n.outdoorPlatforms ?? []).filter((e) => ra(e.polygon, i)).map((e) => ({
 			kind: "outdoor-platform",
 			id: e.id
 		})),
 		...c,
 		...l
 	]));
-}, ra = (e, t, n, r) => {
-	let i = t[0] - e[0], a = t[1] - e[1], o = i * (n[1] - e[1]) - a * (n[0] - e[0]), s = i * (r[1] - e[1]) - a * (r[0] - e[0]), c = Yi * Math.max(1, Math.hypot(i, a));
+}, oa = (e, t, n, r) => {
+	let i = t[0] - e[0], a = t[1] - e[1], o = i * (n[1] - e[1]) - a * (n[0] - e[0]), s = i * (r[1] - e[1]) - a * (r[0] - e[0]), c = Qi * Math.max(1, Math.hypot(i, a));
 	if (Math.abs(o) > c || Math.abs(s) > c) return !1;
 	let l = Math.abs(i) >= Math.abs(a), u = [l ? e[0] : e[1], l ? t[0] : t[1]].sort((e, t) => e - t), d = [l ? n[0] : n[1], l ? r[0] : r[1]].sort((e, t) => e - t);
-	return Math.min(u[1], d[1]) - Math.max(u[0], d[0]) > Yi;
-}, ia = ({ selection: e, draft: t, previewFloor: n, wallRuns: r }) => {
-	let i = Array.isArray(e) ? e : It(e), a = new Set(i.filter((e) => e.kind === "room").map((e) => e.id)), o = new Set(i.filter((e) => e.kind === "opening").map((e) => e.id)), s = new Set(i.filter((e) => e.kind === "pool").map((e) => e.id)), c = new Set(i.filter((e) => e.kind === "floor-zone").map((e) => e.id)), l = (e) => t.walls.some((t) => t.id === e) ? e : r.find((t) => t.wallId === e)?.sourceWallId, u = [], d = n.rooms, f = d.filter((e) => a.has(e.id)), p = d.filter((e) => !a.has(e.id)), m = new Set(i.filter((e) => e.kind === "wall").map((e) => l(e.id)));
+	return Math.min(u[1], d[1]) - Math.max(u[0], d[0]) > Qi;
+}, sa = ({ selection: e, draft: t, previewFloor: n, wallRuns: r }) => {
+	let i = Array.isArray(e) ? e : Ft(e), a = new Set(i.filter((e) => e.kind === "room").map((e) => e.id)), o = new Set(i.filter((e) => e.kind === "opening").map((e) => e.id)), s = new Set(i.filter((e) => e.kind === "pool").map((e) => e.id)), c = new Set(i.filter((e) => e.kind === "floor-zone").map((e) => e.id)), l = (e) => t.walls.some((t) => t.id === e) ? e : r.find((t) => t.wallId === e)?.sourceWallId, u = [], d = n.rooms, f = d.filter((e) => a.has(e.id)), p = d.filter((e) => !a.has(e.id)), m = new Set(i.filter((e) => e.kind === "wall").map((e) => l(e.id)));
 	for (let e of t.walls) {
 		let n = e.to[0] - e.from[0], r = e.to[1] - e.from[1], i = n * n + r * r;
-		if (i <= Yi * Yi) continue;
+		if (i <= Qi * Qi) continue;
 		let s = (t) => ((t[0] - e.from[0]) * n + (t[1] - e.from[1]) * r) / i, c = (t) => t.flatMap((t) => t.polygon.flatMap((n, r) => {
 			let i = t.polygon[(r + 1) % t.polygon.length];
-			return ra(e.from, e.to, n, i) ? [[Math.max(0, Math.min(s(n), s(i))), Math.min(1, Math.max(s(n), s(i)))]] : [];
+			return oa(e.from, e.to, n, i) ? [[Math.max(0, Math.min(s(n), s(i))), Math.min(1, Math.max(s(n), s(i)))]] : [];
 		})), l = c(f), d = a.size ? c(p) : [];
 		for (let n of Gt(t).filter((t) => t.wallId === e.id)) {
 			let e = n.offsetPlanUnits / Math.sqrt(i), t = e + n.widthPlanUnits / Math.sqrt(i);
-			d.some(([n, r]) => t > n + Yi && e < r - Yi) && d.push([e, t]);
+			d.some(([n, r]) => t > n + Qi && e < r - Qi) && d.push([e, t]);
 		}
 		let h = [.../* @__PURE__ */ new Set([
 			0,
@@ -3283,7 +3680,7 @@ var Yi = 1e-7, Xi = (e, t) => ({
 		])].sort((e, t) => e - t), g = [];
 		for (let t = 1; t < h.length; t++) {
 			let n = h[t - 1], r = h[t], i = (n + r) / 2;
-			r - n < Yi || d.some(([e, t]) => i > e && i < t) || !m.has(e.id) && !l.some(([e, t]) => i > e && i < t) || (g.at(-1)?.[1] === n ? g[g.length - 1][1] = r : g.push([n, r]));
+			r - n < Qi || d.some(([e, t]) => i > e && i < t) || !m.has(e.id) && !l.some(([e, t]) => i > e && i < t) || (g.at(-1)?.[1] === n ? g[g.length - 1][1] = r : g.push([n, r]));
 		}
 		for (let t of g) u.push(t[0] === 0 && t[1] === 1 ? {
 			kind: "wall",
@@ -3295,15 +3692,15 @@ var Yi = 1e-7, Xi = (e, t) => ({
 		});
 		for (let n of Gt(t).filter((t) => t.wallId === e.id)) {
 			let e = n.offsetPlanUnits / Math.sqrt(i), t = e + n.widthPlanUnits / Math.sqrt(i);
-			d.some(([n, r]) => t > n + Yi && e < r - Yi) ? o.delete(n.id) : g.some(([n, r]) => t > n + Yi && e < r - Yi) && o.add(n.id);
+			d.some(([n, r]) => t > n + Qi && e < r - Qi) ? o.delete(n.id) : g.some(([n, r]) => t > n + Qi && e < r - Qi) && o.add(n.id);
 		}
 	}
 	for (let e of f) u.some((n) => {
 		if (n.kind !== "wall") return !1;
 		let r = t.walls.find((e) => e.id === n.id), i = (e) => [r.from[0] + (r.to[0] - r.from[0]) * e, r.from[1] + (r.to[1] - r.from[1]) * e];
-		return e.polygon.some((t, r) => ra(i(n.span?.[0] ?? 0), i(n.span?.[1] ?? 1), t, e.polygon[(r + 1) % e.polygon.length]));
+		return e.polygon.some((t, r) => oa(i(n.span?.[0] ?? 0), i(n.span?.[1] ?? 1), t, e.polygon[(r + 1) % e.polygon.length]));
 	}) || a.delete(e.id);
-	return It(Bt([
+	return Ft(Bt([
 		...i.filter((e) => e.kind === "outdoor-platform" && t.outdoorPlatforms?.some((t) => t.id === e.id)),
 		...i.filter((e) => e.kind === "hedge" && t.hedges?.some((t) => t.id === e.id)),
 		...[...a].map((e) => ({
@@ -3327,62 +3724,62 @@ var Yi = 1e-7, Xi = (e, t) => ({
 };
 //#endregion
 //#region apps/web/src/editor-preview/construct/useConstructionPointerController.ts
-function aa({ doorConfiguration: e = ut, planMode: t = !1, referenceWalls: n = [], draft: i, coordinates: a, rooms: o, selection: s, deletionTargets: c = It(s), previewFloor: l, wallRuns: u = [], tool: d, drawStart: p = null, drawPreview: m = null, drawAngleReferenceRadians: h = null, wallExteriorColor: g = f.exterior, poolPoints: _ = [], floorPaintTarget: v = "room", floorZonePoints: y = [], floorZonePreview: b = null, onCancelFloorZone: x, measurePhase: S = "idle", onSelectWall: C, onSelectOpening: w, onSelectRoom: T, onSelectMany: E, onClearSelection: D, onMoveEndpoint: O, onTranslateWall: k, onMoveOpening: A, onResizeOpening: j, onPlaceOpening: M, onBeginWall: N, onPreviewWall: P, onAddWall: F, onCancelWall: I, onPlaceMeasure: L, onPreviewMeasure: R, onPlaceFloorZonePoint: z, onPreviewFloorZonePoint: B, onDraggingChange: V, onMarqueeChange: ee }) {
-	let H = (0, Z.useMemo)(() => Gt(i), [i]), te = ze(), ne = t ? $r : dt, re = Ae((e) => e.get), ie = (0, Z.useRef)(new J()), [ae, oe] = (0, Z.useState)(null);
-	(0, Z.useEffect)(() => oe(null), [
-		d,
-		p,
-		y.length,
+function ca({ doorConfiguration: e = ct, planMode: t = !1, referenceWalls: n = [], draft: i, coordinates: a, rooms: o, selection: s, deletionTargets: l = Ft(s), previewFloor: d, wallRuns: f = [], tool: m, drawStart: h = null, drawPreview: g = null, drawAngleReferenceRadians: _ = null, wallExteriorColor: v = p.exterior, poolPoints: y = [], floorPaintTarget: b = "room", floorZonePoints: x = [], floorZonePreview: S = null, onCancelFloorZone: C, measurePhase: w = "idle", onSelectWall: T, onSelectOpening: E, onSelectRoom: D, onSelectMany: O, onClearSelection: k, onMoveEndpoint: A, onTranslateWall: j, onMoveOpening: M, onResizeOpening: N, onPlaceOpening: P, onBeginWall: F, onPreviewWall: I, onAddWall: L, onCancelWall: ee, onPlaceMeasure: R, onPreviewMeasure: te, onPlaceFloorZonePoint: z, onPreviewFloorZonePoint: B, onDraggingChange: V, onMarqueeChange: ne }) {
+	let re = (0, Z.useMemo)(() => Gt(i), [i]), ie = ze(), ae = t ? ii : ut, oe = q((e) => e.get), se = (0, Z.useRef)(new Y()), [ce, U] = (0, Z.useState)(null);
+	(0, Z.useEffect)(() => U(null), [
+		m,
+		h,
+		x.length,
 		s
 	]);
-	let [U, se] = (0, Z.useState)(null), [W, ce] = (0, Z.useState)(null), [le, ue] = (0, Z.useState)(null), [de, fe] = (0, Z.useState)(null), [pe, me] = (0, Z.useState)(null), [G, he] = (0, Z.useState)(null), ge = (0, Z.useRef)(null), _e = (0, Z.useCallback)((e) => {
-		ge.current = e, he(e);
-	}, []), ve = (0, Z.useCallback)(() => {
-		let e = ge.current;
-		e?.target.hasPointerCapture?.(e.pointerId) !== !1 && e?.target.releasePointerCapture?.(e.pointerId), _e(null), V?.(!1), ee?.(!1);
+	let [W, le] = (0, Z.useState)(null), [ue, de] = (0, Z.useState)(null), [fe, pe] = (0, Z.useState)(null), [G, me] = (0, Z.useState)(null), [he, ge] = (0, Z.useState)(null), [_e, ve] = (0, Z.useState)(null), ye = (0, Z.useRef)(null), be = (0, Z.useCallback)((e) => {
+		ye.current = e, ve(e);
+	}, []), xe = (0, Z.useCallback)(() => {
+		let e = ye.current;
+		e?.target.hasPointerCapture?.(e.pointerId) !== !1 && e?.target.releasePointerCapture?.(e.pointerId), be(null), V?.(!1), ne?.(!1);
 	}, [
-		_e,
+		be,
 		V,
-		ee
+		ne
 	]);
 	(0, Z.useEffect)(() => {
-		if (!U || d === "select" && s?.kind === "wall" && s.id === U.wallId) return;
-		let { target: e, pointerId: t } = U;
-		e.hasPointerCapture?.(t) !== !1 && e.releasePointerCapture?.(t), se(null), oe(null), U.dragActive && V?.(!1);
+		if (!W || m === "select" && s?.kind === "wall" && s.id === W.wallId) return;
+		let { target: e, pointerId: t } = W;
+		e.hasPointerCapture?.(t) !== !1 && e.releasePointerCapture?.(t), le(null), U(null), W.dragActive && V?.(!1);
 	}, [
-		d,
+		m,
 		s,
-		U,
+		W,
 		V
 	]), (0, Z.useEffect)(() => {
-		d !== "select" && ge.current && ve();
-	}, [ve, d]), (0, Z.useEffect)(() => {
+		m !== "select" && ye.current && xe();
+	}, [xe, m]), (0, Z.useEffect)(() => {
 		if (typeof globalThis.addEventListener != "function") return;
 		let e = (e) => {
-			e.key !== "Escape" || !ge.current || (e.preventDefault(), ve());
+			e.key !== "Escape" || !ye.current || (e.preventDefault(), xe());
 		};
-		return te.events.addEventListener("keydown", e, !0), () => te.events.removeEventListener("keydown", e, !0);
-	}, [ve, te]), (0, Z.useEffect)(() => () => {
-		let e = ge.current;
+		return ie.events.addEventListener("keydown", e, !0), () => ie.events.removeEventListener("keydown", e, !0);
+	}, [xe, ie]), (0, Z.useEffect)(() => () => {
+		let e = ye.current;
 		e?.target.hasPointerCapture?.(e.pointerId) !== !1 && e?.target.releasePointerCapture?.(e.pointerId);
 	}, []);
-	let ye = d === "door" || d === "window" || d === "passage" || d === "niche" ? d : null;
-	(0, Z.useEffect)(() => me(null), [d]);
-	let K = d === "floor" && v === "custom-area", be = d === "wall" || d === "hedge" || d === "pool" || d === "platform" || K, xe = d === "pool" || d === "platform" ? _ : K ? y : [], Se = K ? y.at(-1) ?? null : p, Ce = K ? b : m, we = K ? z : N, Te = K ? B : P, q = K ? z : F, Ee = K ? x : I, De = xe.slice(1).map((e, t) => ({
+	let Se = m === "door" || m === "window" || m === "passage" || m === "niche" ? m : null;
+	(0, Z.useEffect)(() => ge(null), [m]);
+	let Ce = m === "floor" && b === "custom-area", we = m === "wall" || m === "hedge" || m === "pool" || m === "platform" || Ce, Te = m === "pool" || m === "platform" ? y : Ce ? x : [], K = Ce ? x.at(-1) ?? null : h, Ee = Ce ? S : g, De = Ce ? z : F, Oe = Ce ? B : I, ke = Ce ? z : L, Ae = Ce ? C : ee, je = Te.slice(1).map((e, t) => ({
 		id: `construction-draft-${t}`,
-		from: xe[t],
+		from: Te[t],
 		to: e
-	})), Oe = [...i.walls, ...n], ke = [
-		...Oe,
+	})), Me = [...i.walls, ...n], Ne = [
+		...Me,
 		...i.hedges ?? [],
-		...De
-	], je = De.at(-1), Me = je ? Math.atan2(je.to[1] - je.from[1], je.to[0] - je.from[0]) : h ?? void 0, Ne = (0, Z.useMemo)(() => {
+		...je
+	], Pe = je.at(-1), Fe = Pe ? Math.atan2(Pe.to[1] - Pe.from[1], Pe.to[0] - Pe.from[0]) : _ ?? void 0, Ie = (0, Z.useMemo)(() => {
 		let e = [
 			...i.walls.flatMap((e) => [e.from, e.to]),
 			...(i.pools ?? []).flatMap((e) => e.polygon),
 			...(i.outdoorPlatforms ?? []).flatMap((e) => e.polygon),
-			..._,
-			...y
+			...y,
+			...x
 		];
 		return Math.max(20, ...e.flatMap((e) => e.map(Math.abs))) * 4 * a.metersPerPlanUnit;
 	}, [
@@ -3390,164 +3787,164 @@ function aa({ doorConfiguration: e = ut, planMode: t = !1, referenceWalls: n = [
 		i.walls,
 		i.pools,
 		i.outdoorPlatforms,
-		_,
-		y
-	]), Y = (G ? Math.hypot(G.clientTo[0] - G.clientFrom[0], G.clientTo[1] - G.clientFrom[1]) : 0) >= 4, Pe = (0, Z.useMemo)(() => Y && G ? na({
-		from: G.from,
-		to: G.to,
+		y,
+		x
+	]), Le = (_e ? Math.hypot(_e.clientTo[0] - _e.clientFrom[0], _e.clientTo[1] - _e.clientFrom[1]) : 0) >= 4, Re = (0, Z.useMemo)(() => Le && _e ? aa({
+		from: _e.from,
+		to: _e.to,
 		draft: i,
 		rooms: o
 	}) : [], [
 		i,
-		G,
-		Y,
+		_e,
+		Le,
 		o
-	]), Fe = (0, Z.useMemo)(() => Y && l ? ia({
-		selection: Pe,
+	]), Be = (0, Z.useMemo)(() => Le && d ? sa({
+		selection: Re,
 		draft: i,
-		previewFloor: l,
-		wallRuns: u
-	}) : Pe, [
+		previewFloor: d,
+		wallRuns: f
+	}) : Re, [
 		i,
-		Y,
-		Pe,
+		Le,
+		Re,
+		d,
+		f
+	]), Ve = (0, Z.useMemo)(() => Bt(Le ? Be : l), [
 		l,
-		u
-	]), Ie = (0, Z.useMemo)(() => Bt(Y ? Fe : c), [
-		c,
-		Y,
-		Fe
-	]), Le = Y || s?.kind === "multiple" ? null : s, Re = (0, Z.useMemo)(() => o.map((e) => {
+		Le,
+		Be
+	]), He = Le || s?.kind === "multiple" ? null : s, Ue = (0, Z.useMemo)(() => o.map((e) => {
 		let t = e.polygon.map((e) => {
-			let [t, n] = Hr(e, a);
-			return new st(t, n);
-		}), n = r.triangulateShape(t, []).flatMap((e) => e.flatMap((e) => [
+			let [t, n] = Kr(e, a);
+			return new Pt(t, n);
+		}), n = H.triangulateShape(t, []).flatMap((e) => e.flatMap((e) => [
 			t[e].x,
 			.018,
 			t[e].y
-		])), i = new Zt();
-		return i.setAttribute("position", new ft(n, 3)), i.computeVertexNormals(), {
+		])), i = new u();
+		return i.setAttribute("position", new r(n, 3)), i.computeVertexNormals(), {
 			room: e,
 			geometry: i
 		};
 	}), [a, o]);
 	(0, Z.useEffect)(() => () => {
-		Re.forEach(({ geometry: e }) => e.dispose());
-	}, [Re]);
-	let Be = (e) => {
-		let t = e.ray.intersectPlane(zi, ie.current);
+		Ue.forEach(({ geometry: e }) => e.dispose());
+	}, [Ue]);
+	let We = (e) => {
+		let t = e.ray.intersectPlane(Hi, se.current);
 		if (!t) return null;
-		let n = be || U !== null, { camera: r, size: o } = re(), s = n ? vi(r, o.height, i.view.pixelsPerMeter) : i.view.pixelsPerMeter;
-		if (xe.length >= 3 && !e.nativeEvent.altKey) {
-			let [n, r] = Hr(xe[0], a);
-			if (Math.hypot(t.x - n, t.z - r) * s <= yi(e.nativeEvent.pointerType)) return oe(null), xe[0];
+		let n = we || W !== null, { camera: r, size: o } = oe(), s = n ? xi(r, o.height, i.view.pixelsPerMeter) : i.view.pixelsPerMeter;
+		if (Te.length >= 3 && !e.nativeEvent.altKey) {
+			let [n, r] = Kr(Te[0], a);
+			if (Math.hypot(t.x - n, t.z - r) * s <= Si(e.nativeEvent.pointerType)) return U(null), Te[0];
 		}
-		return Gr(vt({
+		return Yr(ht({
 			point: t,
 			coordinates: a,
-			walls: be || U ? ke : Oe,
-			onSnap: oe,
+			walls: we || W ? Ne : Me,
+			onSnap: U,
 			pixelsPerMeter: s,
-			snapRadiusPixels: n ? yi(e.nativeEvent.pointerType) : void 0,
+			snapRadiusPixels: n ? Si(e.nativeEvent.pointerType) : void 0,
 			pointerType: e.nativeEvent.pointerType,
-			angleOrigin: U?.angleOrigin ?? (be ? Se ?? void 0 : void 0),
-			angleReferenceRadians: U ? void 0 : Me,
-			movingEndpoint: U?.origin,
+			angleOrigin: W?.angleOrigin ?? (we ? K ?? void 0 : void 0),
+			angleReferenceRadians: W ? void 0 : Fe,
+			movingEndpoint: W?.origin,
 			absolute: e.nativeEvent.altKey
 		}));
-	}, Ve = (e) => {
-		let t = e.ray.intersectPlane(zi, ie.current);
-		return t ? Xt({
+	}, Ge = (e) => {
+		let t = e.ray.intersectPlane(Hi, se.current);
+		return t ? c({
 			x: t.x,
 			z: t.z
 		}, a) : null;
-	}, He = (e) => [e.nativeEvent.clientX, e.nativeEvent.clientY], Ue = (e) => ({
-		...ai(e.pointerId, He(e)),
+	}, Ke = (e) => [e.nativeEvent.clientX, e.nativeEvent.clientY], qe = (e) => ({
+		...ci(e.pointerId, Ke(e)),
 		target: e.target
-	}), We = (e, t) => {
-		let n = Ve(e);
+	}), Je = (e, t) => {
+		let n = Ge(e);
 		return n ? {
 			...t,
 			to: n,
-			clientTo: He(e)
+			clientTo: Ke(e)
 		} : t;
-	}, Ge = (e) => {
-		let t = ge.current;
+	}, Ye = (e) => {
+		let t = ye.current;
 		if (!t || t.pointerId !== e.pointerId) return;
 		e.stopPropagation();
-		let n = We(e, t);
-		Math.hypot(n.clientTo[0] - n.clientFrom[0], n.clientTo[1] - n.clientFrom[1]) >= 4 && E?.(na({
+		let n = Je(e, t);
+		Math.hypot(n.clientTo[0] - n.clientFrom[0], n.clientTo[1] - n.clientFrom[1]) >= 4 && O?.(aa({
 			from: n.from,
 			to: n.to,
 			draft: i,
 			rooms: o
-		})), ve();
-	}, Ke = (e) => {
-		let t = e.ray.intersectPlane(zi, ie.current);
-		return t ? Wr({
+		})), xe();
+	}, Xe = (e) => {
+		let t = e.ray.intersectPlane(Hi, se.current);
+		return t ? Jr({
 			point: t,
 			coordinates: a,
 			absolute: e.nativeEvent.altKey
 		}) : null;
-	}, qe = (e, t) => {
-		let n = Ke(e);
+	}, Ze = (e, t) => {
+		let n = Xe(e);
 		return n ? [Number((n[0] - t[0]).toFixed(4)), Number((n[1] - t[1]).toFixed(4))] : null;
-	}, Je = (e, t) => {
-		let n = Ke(e);
-		return n ? Yr({
+	}, J = (e, t) => {
+		let n = Xe(e);
+		return n ? $r({
 			point: n,
-			walls: Oe,
+			walls: Me,
 			widthPlanUnits: t,
 			metersPerPlanUnit: a.metersPerPlanUnit
 		}) : null;
-	}, Ye = (t, n) => {
-		let r = qi(n, e, a.metersPerPlanUnit);
-		return Ji(i, n, Ve(t), Je(t, r.widthPlanUnits), r);
-	}, Xe = (e) => {
-		if (!ye) return;
-		Vi(e);
-		let t = Ye(e, ye);
-		me(null), t?.valid && M(ye, t.wallId, t.offsetPlanUnits, t.side);
-	}, Ze = (e, t) => {
-		let n = Ke(e);
-		return n ? Br(i, t, n, e.nativeEvent.altKey, a) : null;
-	}, Qe = (e) => {
-		if (!U) return;
-		let t = U.dragActive ? Be(e) : null;
-		Ui(e), se(null), oe(null), U.dragActive && V?.(!1), t && O(U.wallId, U.endpoint, t);
+	}, Qe = (t, n) => {
+		let r = Xi(n, e, a.metersPerPlanUnit);
+		return Zi(i, n, Ge(t), J(t, r.widthPlanUnits), r);
 	}, $e = (e) => {
-		if (!le) return;
-		let t = le.dragActive ? H.find((e) => e.id === le.openingId) : null, n = t ? Je(e, t.widthPlanUnits) ?? le : null;
-		Ui(e), ue(null), le.dragActive && V?.(!1), n && A(le.openingId, n.wallId, n.offsetPlanUnits);
-	}, et = (e) => {
-		if (!de) return;
-		let t = de.dragActive ? Ze(e, de) ?? de : null;
-		Ui(e), fe(null), de.dragActive && V?.(!1), t && j(t.offsetPlanUnits, t.widthPlanUnits);
+		if (!Se) return;
+		Wi(e);
+		let t = Qe(e, Se);
+		ge(null), t?.valid && P(Se, t.wallId, t.offsetPlanUnits, t.side);
+	}, et = (e, t) => {
+		let n = Xe(e);
+		return n ? Wr(i, t, n, e.nativeEvent.altKey, a) : null;
 	}, tt = (e) => {
 		if (!W) return;
-		let t = W.dragActive ? qe(e, W.grab) : null;
-		Ui(e), ce(null), W.dragActive && V?.(!1), t && (t[0] !== 0 || t[1] !== 0) && k(W.wallId, t);
+		let t = W.dragActive ? We(e) : null;
+		Ki(e), le(null), U(null), W.dragActive && V?.(!1), t && A(W.wallId, W.endpoint, t);
 	}, nt = (e) => {
-		U && (Ui(e), se(null), oe(null), U.dragActive && V?.(!1));
+		if (!fe) return;
+		let t = fe.dragActive ? re.find((e) => e.id === fe.openingId) : null, n = t ? J(e, t.widthPlanUnits) ?? fe : null;
+		Ki(e), pe(null), fe.dragActive && V?.(!1), n && M(fe.openingId, n.wallId, n.offsetPlanUnits);
 	}, rt = (e) => {
-		le && (Ui(e), ue(null), le.dragActive && V?.(!1));
+		if (!G) return;
+		let t = G.dragActive ? et(e, G) ?? G : null;
+		Ki(e), me(null), G.dragActive && V?.(!1), t && N(t.offsetPlanUnits, t.widthPlanUnits);
 	}, it = (e) => {
-		de && (Ui(e), fe(null), de.dragActive && V?.(!1));
+		if (!ue) return;
+		let t = ue.dragActive ? Ze(e, ue.grab) : null;
+		Ki(e), de(null), ue.dragActive && V?.(!1), t && (t[0] !== 0 || t[1] !== 0) && j(ue.wallId, t);
 	}, at = (e) => {
-		W && (Ui(e), ce(null), W.dragActive && V?.(!1));
-	}, ot = (0, Z.useCallback)((e) => {
-		if (U && Bi(e, U.origin)) return U.point;
-		if (W) {
-			if (Bi(e, W.from)) return [W.from[0] + W.delta[0], W.from[1] + W.delta[1]];
-			if (Bi(e, W.to)) return [W.to[0] + W.delta[0], W.to[1] + W.delta[1]];
+		W && (Ki(e), le(null), U(null), W.dragActive && V?.(!1));
+	}, ot = (e) => {
+		fe && (Ki(e), pe(null), fe.dragActive && V?.(!1));
+	}, st = (e) => {
+		G && (Ki(e), me(null), G.dragActive && V?.(!1));
+	}, lt = (e) => {
+		ue && (Ki(e), de(null), ue.dragActive && V?.(!1));
+	}, dt = (0, Z.useCallback)((e) => {
+		if (W && Ui(e, W.origin)) return W.point;
+		if (ue) {
+			if (Ui(e, ue.from)) return [ue.from[0] + ue.delta[0], ue.from[1] + ue.delta[1]];
+			if (Ui(e, ue.to)) return [ue.to[0] + ue.delta[0], ue.to[1] + ue.delta[1]];
 		}
 		return e;
-	}, [U, W]), ct = be && Se && Ce ? Kr(Se, Ce, a) : null, lt = ye && pe ? (() => {
-		let t = i.walls.find((e) => e.id === pe.wallId);
+	}, [W, ue]), ft = we && K && Ee ? Xr(K, Ee, a) : null, pt = Se && he ? (() => {
+		let t = i.walls.find((e) => e.id === he.wallId);
 		if (!t) return null;
-		let { widthPlanUnits: n, openingHeightMeters: r, sillHeightMeters: o } = qi(ye, e, a.metersPerPlanUnit), [s, c] = Hr(t.from, a), [l, u] = Hr(t.to, a), d = Math.hypot(t.to[0] - t.from[0], t.to[1] - t.from[1]), f = (pe.offsetPlanUnits + n / 2) / d;
+		let { widthPlanUnits: n, openingHeightMeters: r, sillHeightMeters: o } = Xi(Se, e, a.metersPerPlanUnit), [s, c] = Kr(t.from, a), [l, u] = Kr(t.to, a), d = Math.hypot(t.to[0] - t.from[0], t.to[1] - t.from[1]), f = (he.offsetPlanUnits + n / 2) / d;
 		return {
-			...pe,
+			...he,
 			widthMeters: n * a.metersPerPlanUnit,
 			openingHeightMeters: r,
 			sillHeightMeters: o,
@@ -3555,53 +3952,53 @@ function aa({ doorConfiguration: e = ut, planMode: t = !1, referenceWalls: n = [
 			z: c + (u - c) * f,
 			rotationY: -Math.atan2(u - c, l - s)
 		};
-	})() : null, pt = (0, Z.useMemo)(() => ({
+	})() : null, mt = (0, Z.useMemo)(() => ({
 		...i,
-		walls: U || W ? i.walls.map((e) => ({
+		walls: W || ue ? i.walls.map((e) => ({
 			...e,
-			from: ot(e.from),
-			to: ot(e.to)
+			from: dt(e.from),
+			to: dt(e.to)
 		})) : i.walls,
-		openings: le || de ? i.openings.map((e) => le?.openingId === e.id ? {
+		openings: fe || G ? i.openings.map((e) => fe?.openingId === e.id ? {
 			...e,
-			wallId: le.wallId,
-			offsetPlanUnits: le.offsetPlanUnits
-		} : de?.openingId === e.id ? {
+			wallId: fe.wallId,
+			offsetPlanUnits: fe.offsetPlanUnits
+		} : G?.openingId === e.id ? {
 			...e,
-			offsetPlanUnits: de.offsetPlanUnits,
-			widthPlanUnits: de.widthPlanUnits
+			offsetPlanUnits: G.offsetPlanUnits,
+			widthPlanUnits: G.widthPlanUnits
 		} : e) : i.openings
 	}), [
 		i,
-		U,
 		W,
-		le,
-		de,
-		ot
-	]), mt = Ki(H, le, de), ht = U ? pt.walls.find((e) => e.id === U.wallId) : null;
+		ue,
+		fe,
+		G,
+		dt
+	]), gt = Yi(re, fe, G), _t = W ? mt.walls.find((e) => e.id === W.wallId) : null;
 	return {
-		snap: ae,
-		drawing: be,
-		segmentStart: Se,
-		segmentPreview: Ce,
-		beginSegment: we,
-		previewSegment: Te,
-		commitSegment: q,
-		cancelDrawing: Ee,
-		drawingWalls: ke,
-		tool: d,
-		rawPlanPointForEvent: Ve,
-		clientPointForEvent: He,
-		changeMarquee: _e,
+		snap: ce,
+		drawing: we,
+		segmentStart: K,
+		segmentPreview: Ee,
+		beginSegment: De,
+		previewSegment: Oe,
+		commitSegment: ke,
+		cancelDrawing: Ae,
+		drawingWalls: Ne,
+		tool: m,
+		rawPlanPointForEvent: Ge,
+		clientPointForEvent: Ke,
+		changeMarquee: be,
 		onDraggingChange: V,
-		onMarqueeChange: ee,
-		activeMarquee: ge,
-		updateMarqueeForEvent: We,
-		finishMarquee: Ge,
-		releaseMarquee: ve,
-		floorSpan: Ne,
-		marqueeWorldRectangle: Y && G ? (() => {
-			let e = Xi(G.from, G.to), [t, n] = Hr([e.minX, e.minY], a), [r, i] = Hr([e.maxX, e.maxY], a);
+		onMarqueeChange: ne,
+		activeMarquee: ye,
+		updateMarqueeForEvent: Je,
+		finishMarquee: Ye,
+		releaseMarquee: xe,
+		floorSpan: Ie,
+		marqueeWorldRectangle: Le && _e ? (() => {
+			let e = $i(_e.from, _e.to), [t, n] = Kr([e.minX, e.minY], a), [r, i] = Kr([e.maxX, e.maxY], a);
 			return {
 				minX: t,
 				maxX: r,
@@ -3612,80 +4009,80 @@ function aa({ doorConfiguration: e = ut, planMode: t = !1, referenceWalls: n = [
 				depth: Math.max(.001, i - n)
 			};
 		})() : null,
-		marqueeActive: Y,
+		marqueeActive: Le,
 		draft: i,
-		highlightedSelection: Ie,
+		highlightedSelection: Ve,
 		coordinates: a,
 		planMode: t,
-		displayedDraft: pt,
-		attachments: H,
-		displayedAttachments: mt,
-		roomTargets: Re,
-		onSelectRoom: T,
-		ToonMaterial: ne,
-		directlySelected: Le,
-		draggingEndpoint: U,
-		draggingWall: W,
-		previewPoint: ot,
-		openingTool: ye,
-		placeOpeningFromEvent: Xe,
-		onSelectWall: C,
-		setOpeningPreview: me,
-		placementPreviewFromEvent: Ye,
-		translationPointForEvent: Ke,
-		setDraggingWall: ce,
-		capturedSelectDrag: Ue,
-		wallDeltaForEvent: qe,
-		finishWallDrag: tt,
-		cancelWallDrag: at,
-		setDraggingEndpoint: se,
-		pointForEvent: Be,
-		finishEndpointDrag: Qe,
-		cancelEndpointDrag: nt,
-		draggingOpening: le,
-		resizingOpening: de,
-		onSelectOpening: w,
-		setDraggingOpening: ue,
-		openingPlacementFromEvent: Je,
-		finishOpeningDrag: $e,
-		cancelOpeningDrag: rt,
-		setResizingOpening: fe,
-		resizedOpeningForEvent: Ze,
-		finishOpeningResize: et,
-		cancelOpeningResize: it,
-		preview: ct,
-		wallExteriorColor: g,
-		drawStart: p,
-		drawPreview: m,
-		resizedWall: ht,
-		placementPreview: lt,
-		onClearSelection: D,
-		onPlaceMeasure: L,
-		drawingFloorZone: K,
-		onPreviewWall: P,
-		onBeginWall: N,
-		measurePhase: S,
-		onPreviewMeasure: R,
+		displayedDraft: mt,
+		attachments: re,
+		displayedAttachments: gt,
+		roomTargets: Ue,
+		onSelectRoom: D,
+		ToonMaterial: ae,
+		directlySelected: He,
+		draggingEndpoint: W,
+		draggingWall: ue,
+		previewPoint: dt,
+		openingTool: Se,
+		placeOpeningFromEvent: $e,
+		onSelectWall: T,
+		setOpeningPreview: ge,
+		placementPreviewFromEvent: Qe,
+		translationPointForEvent: Xe,
+		setDraggingWall: de,
+		capturedSelectDrag: qe,
+		wallDeltaForEvent: Ze,
+		finishWallDrag: it,
+		cancelWallDrag: lt,
+		setDraggingEndpoint: le,
+		pointForEvent: We,
+		finishEndpointDrag: tt,
+		cancelEndpointDrag: at,
+		draggingOpening: fe,
+		resizingOpening: G,
+		onSelectOpening: E,
+		setDraggingOpening: pe,
+		openingPlacementFromEvent: J,
+		finishOpeningDrag: nt,
+		cancelOpeningDrag: ot,
+		setResizingOpening: me,
+		resizedOpeningForEvent: et,
+		finishOpeningResize: rt,
+		cancelOpeningResize: st,
+		preview: ft,
+		wallExteriorColor: v,
+		drawStart: h,
+		drawPreview: g,
+		resizedWall: _t,
+		placementPreview: pt,
+		onClearSelection: k,
+		onPlaceMeasure: R,
+		drawingFloorZone: Ce,
+		onPreviewWall: I,
+		onBeginWall: F,
+		measurePhase: w,
+		onPreviewMeasure: te,
 		onPreviewFloorZonePoint: B,
 		onPlaceFloorZonePoint: z,
-		onAddWall: F,
-		onCancelWall: I
+		onAddWall: L,
+		onCancelWall: ee
 	};
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/ConstructionInteractionLayer.tsx
-function oa(e) {
-	let { snap: t, drawing: n, segmentStart: r, segmentPreview: i, beginSegment: a, previewSegment: o, commitSegment: s, cancelDrawing: c, drawingWalls: l, tool: u, rawPlanPointForEvent: d, clientPointForEvent: f, changeMarquee: p, onDraggingChange: m, onMarqueeChange: h, activeMarquee: g, updateMarqueeForEvent: _, finishMarquee: v, releaseMarquee: y, floorSpan: b, marqueeWorldRectangle: x, marqueeActive: S, draft: C, highlightedSelection: w, coordinates: T, planMode: E, displayedDraft: D, attachments: O, displayedAttachments: k, roomTargets: A, onSelectRoom: j, ToonMaterial: M, directlySelected: N, draggingEndpoint: P, draggingWall: F, previewPoint: I, openingTool: L, placeOpeningFromEvent: R, onSelectWall: z, setOpeningPreview: B, placementPreviewFromEvent: V, translationPointForEvent: ee, setDraggingWall: H, capturedSelectDrag: te, wallDeltaForEvent: ne, finishWallDrag: re, cancelWallDrag: ie, setDraggingEndpoint: ae, pointForEvent: oe, finishEndpointDrag: U, cancelEndpointDrag: se, draggingOpening: W, resizingOpening: ce, onSelectOpening: le, setDraggingOpening: ue, openingPlacementFromEvent: de, finishOpeningDrag: fe, cancelOpeningDrag: pe, setResizingOpening: me, resizedOpeningForEvent: G, finishOpeningResize: he, cancelOpeningResize: ge, preview: _e, wallExteriorColor: ve, resizedWall: ye, placementPreview: K, onClearSelection: be, onPlaceMeasure: xe, measurePhase: Se, onPreviewMeasure: Ce } = aa(e), we = (0, Z.useRef)(null);
+function la(e) {
+	let { snap: t, drawing: n, segmentStart: r, segmentPreview: i, beginSegment: a, previewSegment: o, commitSegment: s, cancelDrawing: c, drawingWalls: l, tool: u, rawPlanPointForEvent: d, clientPointForEvent: f, changeMarquee: p, onDraggingChange: m, onMarqueeChange: h, activeMarquee: g, updateMarqueeForEvent: _, finishMarquee: v, releaseMarquee: y, floorSpan: b, marqueeWorldRectangle: x, marqueeActive: S, draft: C, highlightedSelection: w, coordinates: T, planMode: E, displayedDraft: D, attachments: O, displayedAttachments: k, roomTargets: A, onSelectRoom: j, ToonMaterial: M, directlySelected: N, draggingEndpoint: P, draggingWall: F, previewPoint: I, openingTool: L, placeOpeningFromEvent: ee, onSelectWall: R, setOpeningPreview: te, placementPreviewFromEvent: z, translationPointForEvent: B, setDraggingWall: V, capturedSelectDrag: ne, wallDeltaForEvent: H, finishWallDrag: re, cancelWallDrag: ie, setDraggingEndpoint: ae, pointForEvent: oe, finishEndpointDrag: se, cancelEndpointDrag: ce, draggingOpening: U, resizingOpening: W, onSelectOpening: le, setDraggingOpening: ue, openingPlacementFromEvent: de, finishOpeningDrag: fe, cancelOpeningDrag: pe, setResizingOpening: G, resizedOpeningForEvent: me, finishOpeningResize: he, cancelOpeningResize: ge, preview: _e, wallExteriorColor: ve, resizedWall: ye, placementPreview: be, onClearSelection: xe, onPlaceMeasure: Se, measurePhase: Ce, onPreviewMeasure: we } = ca(e), Te = (0, Z.useRef)(null);
 	return (0, Z.useEffect)(() => {
-		we.current = null;
+		Te.current = null;
 	}, [u]), /* @__PURE__ */ (0, Q.jsxs)("group", {
 		name: "construction-edit-layer",
 		children: [
-			e.previewFloor && /* @__PURE__ */ (0, Q.jsx)(ii, {
+			e.previewFloor && /* @__PURE__ */ (0, Q.jsx)(si, {
 				floor: e.previewFloor,
 				selection: e.selection
 			}),
-			/* @__PURE__ */ (0, Q.jsx)(li, {
+			/* @__PURE__ */ (0, Q.jsx)(fi, {
 				snap: t,
 				coordinates: T
 			}),
@@ -3706,7 +4103,7 @@ function oa(e) {
 					if (u !== "select" || e.button !== 0 || !e.nativeEvent?.shiftKey || e.nativeEvent.metaKey || e.nativeEvent.ctrlKey || e.nativeEvent.altKey) return;
 					let t = d(e);
 					if (!t) return;
-					Hi(e);
+					Gi(e);
 					let n = f(e);
 					p({
 						from: t,
@@ -3726,7 +4123,7 @@ function oa(e) {
 					let t = g.current;
 					!t || t.pointerId !== e.pointerId || (e.stopPropagation(), y());
 				},
-				children: [/* @__PURE__ */ (0, Q.jsx)("planeGeometry", { args: [b, b] }), /* @__PURE__ */ (0, Q.jsx)($r, {
+				children: [/* @__PURE__ */ (0, Q.jsx)("planeGeometry", { args: [b, b] }), /* @__PURE__ */ (0, Q.jsx)(ii, {
 					visible: !1,
 					transparent: !0,
 					opacity: 0,
@@ -3750,8 +4147,8 @@ function oa(e) {
 							0
 						],
 						renderOrder: 40,
-						raycast: Qr,
-						children: [/* @__PURE__ */ (0, Q.jsx)("planeGeometry", { args: [x.width, x.depth] }), /* @__PURE__ */ (0, Q.jsx)($r, {
+						raycast: ri,
+						children: [/* @__PURE__ */ (0, Q.jsx)("planeGeometry", { args: [x.width, x.depth] }), /* @__PURE__ */ (0, Q.jsx)(ii, {
 							color: "#ff754d",
 							transparent: !0,
 							opacity: .11,
@@ -3760,28 +4157,28 @@ function oa(e) {
 							side: 2
 						})]
 					}),
-					/* @__PURE__ */ (0, Q.jsx)(ti, {
+					/* @__PURE__ */ (0, Q.jsx)(oi, {
 						from: [x.minX, x.minZ],
 						to: [x.maxX, x.minZ],
 						color: "#cf6648",
 						width: .035,
 						elevation: .78
 					}),
-					/* @__PURE__ */ (0, Q.jsx)(ti, {
+					/* @__PURE__ */ (0, Q.jsx)(oi, {
 						from: [x.maxX, x.minZ],
 						to: [x.maxX, x.maxZ],
 						color: "#cf6648",
 						width: .035,
 						elevation: .78
 					}),
-					/* @__PURE__ */ (0, Q.jsx)(ti, {
+					/* @__PURE__ */ (0, Q.jsx)(oi, {
 						from: [x.maxX, x.maxZ],
 						to: [x.minX, x.maxZ],
 						color: "#cf6648",
 						width: .035,
 						elevation: .78
 					}),
-					/* @__PURE__ */ (0, Q.jsx)(ti, {
+					/* @__PURE__ */ (0, Q.jsx)(oi, {
 						from: [x.minX, x.maxZ],
 						to: [x.minX, x.minZ],
 						color: "#cf6648",
@@ -3790,29 +4187,29 @@ function oa(e) {
 					})
 				]
 			}),
-			S && (C.pools ?? []).filter((e) => Et(w, "pool", e.id)).map((e) => /* @__PURE__ */ (0, Q.jsx)("group", {
+			S && (C.pools ?? []).filter((e) => Ct(w, "pool", e.id)).map((e) => /* @__PURE__ */ (0, Q.jsx)("group", {
 				name: `construction-marquee-pool-${e.id}`,
-				children: e.polygon.map((t, n) => /* @__PURE__ */ (0, Q.jsx)(ti, {
-					from: Hr(t, T),
-					to: Hr(e.polygon[(n + 1) % e.polygon.length], T),
+				children: e.polygon.map((t, n) => /* @__PURE__ */ (0, Q.jsx)(oi, {
+					from: Kr(t, T),
+					to: Kr(e.polygon[(n + 1) % e.polygon.length], T),
 					color: "#ff754d",
 					width: .065,
 					elevation: .79
 				}, n))
 			}, e.id)),
-			E && /* @__PURE__ */ (0, Q.jsx)(gi, {
+			E && /* @__PURE__ */ (0, Q.jsx)(yi, {
 				draft: D,
 				attachments: k
 			}),
 			A.map(({ room: e, geometry: t }) => {
-				let n = Et(w, "room", e.id);
+				let n = Ct(w, "room", e.id);
 				return /* @__PURE__ */ (0, Q.jsx)("mesh", {
 					name: `construction-room-target-${e.id}`,
 					geometry: t,
 					renderOrder: n ? 12 : 1,
 					userData: { roomId: e.id },
 					onPointerDown: (t) => {
-						u !== "select" || t.nativeEvent?.shiftKey || (Vi(t), j(e.id));
+						u !== "select" || t.nativeEvent?.shiftKey || (Wi(t), j(e.id));
 					},
 					children: /* @__PURE__ */ (0, Q.jsx)(M, {
 						color: "#ff754d",
@@ -3825,7 +4222,7 @@ function oa(e) {
 					})
 				}, e.id);
 			}),
-			/* @__PURE__ */ (0, Q.jsx)(Gi, {
+			/* @__PURE__ */ (0, Q.jsx)(Ji, {
 				draft: C,
 				highlightedSelection: w,
 				directlySelected: N,
@@ -3834,31 +4231,31 @@ function oa(e) {
 				previewPoint: I,
 				coordinates: T,
 				openingTool: L,
-				placeOpeningFromEvent: R,
+				placeOpeningFromEvent: ee,
 				tool: u,
-				onSelectWall: z,
-				setOpeningPreview: B,
-				placementPreviewFromEvent: V,
+				onSelectWall: R,
+				setOpeningPreview: te,
+				placementPreviewFromEvent: z,
 				ToonMaterial: M,
 				planMode: E,
-				translationPointForEvent: ee,
-				setDraggingWall: H,
-				capturedSelectDrag: te,
+				translationPointForEvent: B,
+				setDraggingWall: V,
+				capturedSelectDrag: ne,
 				clientPointForEvent: f,
 				onDraggingChange: m,
-				wallDeltaForEvent: ne,
+				wallDeltaForEvent: H,
 				finishWallDrag: re,
 				cancelWallDrag: ie,
 				setDraggingEndpoint: ae,
 				pointForEvent: oe,
-				finishEndpointDrag: U,
-				cancelEndpointDrag: se
+				finishEndpointDrag: se,
+				cancelEndpointDrag: ce
 			}),
-			/* @__PURE__ */ (0, Q.jsx)(Wi, {
+			/* @__PURE__ */ (0, Q.jsx)(qi, {
 				attachments: O,
 				draft: C,
-				draggingOpening: W,
-				resizingOpening: ce,
+				draggingOpening: U,
+				resizingOpening: W,
 				previewPoint: I,
 				coordinates: T,
 				highlightedSelection: w,
@@ -3867,21 +4264,21 @@ function oa(e) {
 				tool: u,
 				onSelectOpening: le,
 				setDraggingOpening: ue,
-				capturedSelectDrag: te,
+				capturedSelectDrag: ne,
 				clientPointForEvent: f,
 				onDraggingChange: m,
 				openingPlacementFromEvent: de,
 				finishOpeningDrag: fe,
 				cancelOpeningDrag: pe,
 				ToonMaterial: M,
-				setResizingOpening: me,
-				resizedOpeningForEvent: G,
+				setResizingOpening: G,
+				resizedOpeningForEvent: me,
 				finishOpeningResize: he,
 				cancelOpeningResize: ge
 			}),
 			_e && _e.length > .001 && /* @__PURE__ */ (0, Q.jsxs)("mesh", {
 				name: `construction-${u}-preview`,
-				raycast: Qr,
+				raycast: ri,
 				position: [
 					_e.center[0],
 					.12,
@@ -3904,7 +4301,7 @@ function oa(e) {
 					depthTest: !1
 				})]
 			}),
-			n && r && i && /* @__PURE__ */ (0, Q.jsx)(Ri, {
+			n && r && i && /* @__PURE__ */ (0, Q.jsx)(Vi, {
 				walls: l,
 				primary: {
 					from: r,
@@ -3916,7 +4313,7 @@ function oa(e) {
 				defaultThicknessMeters: u === "wall" ? C.interiorWallThicknessMeters : .055,
 				labelKind: u === "hedge" ? "Boundary" : u === "wall" ? "Wall" : u === "platform" ? "Platform edge" : u === "pool" ? "Pool edge" : "Floor edge"
 			}),
-			ye && P && u === "select" && /* @__PURE__ */ (0, Q.jsx)(Ri, {
+			ye && P && u === "select" && /* @__PURE__ */ (0, Q.jsx)(Vi, {
 				walls: D.walls,
 				primary: ye,
 				junctions: [P.point],
@@ -3924,31 +4321,31 @@ function oa(e) {
 				planMode: E,
 				defaultThicknessMeters: C.interiorWallThicknessMeters
 			}),
-			K && /* @__PURE__ */ (0, Q.jsxs)("group", {
+			be && /* @__PURE__ */ (0, Q.jsxs)("group", {
 				name: `construction-opening-placement-preview-${L}`,
 				position: [
-					K.x,
-					K.sillHeightMeters + K.openingHeightMeters / 2,
-					K.z
+					be.x,
+					be.sillHeightMeters + be.openingHeightMeters / 2,
+					be.z
 				],
 				rotation: [
 					0,
-					K.rotationY,
+					be.rotationY,
 					0
 				],
 				userData: {
-					validPlacement: K.valid,
-					wallId: K.wallId,
-					offsetPlanUnits: K.offsetPlanUnits
+					validPlacement: be.valid,
+					wallId: be.wallId,
+					offsetPlanUnits: be.offsetPlanUnits
 				},
 				children: [/* @__PURE__ */ (0, Q.jsxs)("mesh", {
 					renderOrder: 28,
 					children: [/* @__PURE__ */ (0, Q.jsx)("boxGeometry", { args: [
-						K.widthMeters,
-						K.openingHeightMeters,
+						be.widthMeters,
+						be.openingHeightMeters,
 						.15
 					] }), /* @__PURE__ */ (0, Q.jsx)(M, {
-						color: K.valid ? "#ff754d" : "#c45345",
+						color: be.valid ? "#ff754d" : "#c45345",
 						transparent: !0,
 						opacity: .34,
 						wireframe: !0,
@@ -3958,16 +4355,16 @@ function oa(e) {
 				}), /* @__PURE__ */ (0, Q.jsxs)("mesh", {
 					position: [
 						0,
-						-K.openingHeightMeters / 2 - K.sillHeightMeters + .055,
+						-be.openingHeightMeters / 2 - be.sillHeightMeters + .055,
 						0
 					],
 					renderOrder: 27,
 					children: [/* @__PURE__ */ (0, Q.jsx)("boxGeometry", { args: [
-						K.widthMeters,
+						be.widthMeters,
 						.025,
 						.28
 					] }), /* @__PURE__ */ (0, Q.jsx)(M, {
-						color: K.valid ? "#ff754d" : "#c45345",
+						color: be.valid ? "#ff754d" : "#c45345",
 						transparent: !0,
 						opacity: .72,
 						depthTest: !1
@@ -3988,50 +4385,50 @@ function oa(e) {
 				],
 				onPointerDown: (e) => {
 					if (u === "select") {
-						e.button === 0 && !e.metaKey && !e.ctrlKey && !e.shiftKey && (Vi(e), be?.());
+						e.button === 0 && !e.metaKey && !e.ctrlKey && !e.shiftKey && (Wi(e), xe?.());
 						return;
 					}
-					if (L) return R(e);
+					if (L) return ee(e);
 					if (u === "measure") {
-						Vi(e);
+						Wi(e);
 						let t = oe(e);
-						t && xe?.(t);
+						t && Se?.(t);
 						return;
 					}
 					if (!n || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey) return;
-					Hi(e);
+					Gi(e);
 					let t = oe(e);
-					t && (m?.(!0), we.current = si(e.pointerId, f(e), t, !!r), r ? o?.(t) : a?.(t));
+					t && (m?.(!0), Te.current = ui(e.pointerId, f(e), t, !!r), r ? o?.(t) : a?.(t));
 				},
 				onPointerMove: (e) => {
 					if (L) {
-						B(V(e, L));
+						te(z(e, L));
 						return;
 					}
-					if (u === "measure" && Se === "drawing") {
-						Vi(e);
+					if (u === "measure" && Ce === "drawing") {
+						Wi(e);
 						let t = oe(e);
-						t && Ce?.(t);
+						t && we?.(t);
 						return;
 					}
 					if (!n || !r) return;
-					Vi(e);
+					Wi(e);
 					let t = oe(e);
 					t && o?.(t);
 				},
 				onPointerUp: (e) => {
 					if (!n || !r) return;
-					let t = we.current;
-					we.current = null;
-					let i = f(e), a = ci(t, e.pointerId, i), c = a ? null : oe(e);
-					Ui(e), a ? o?.(t.point) : c && s?.(c), m?.(!1);
+					let t = Te.current;
+					Te.current = null;
+					let i = f(e), a = di(t, e.pointerId, i), c = a ? null : oe(e);
+					Ki(e), a ? o?.(t.point) : c && s?.(c), m?.(!1);
 				},
 				onPointerCancel: (e) => {
 					if (L) {
-						Vi(e), B(null);
+						Wi(e), te(null);
 						return;
 					}
-					n && (we.current = null, Ui(e), c?.(), m?.(!1));
+					n && (Te.current = null, Ki(e), c?.(), m?.(!1));
 				},
 				children: [/* @__PURE__ */ (0, Q.jsx)("planeGeometry", { args: [b, b] }), /* @__PURE__ */ (0, Q.jsx)(M, {
 					visible: !1,
@@ -4045,39 +4442,39 @@ function oa(e) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/ConstructionOutlineHandle.tsx
-var sa = function(e, t) {
-	this.updateWorldMatrix(!0, !1), G.prototype.raycast.call(this, e, t);
+var ua = function(e, t) {
+	this.updateWorldMatrix(!0, !1), o.prototype.raycast.call(this, e, t);
 };
-function ca({ at: e, name: t, handlers: n }) {
-	let r = (0, Z.useRef)(null), { camera: i, size: a } = Ae(), o = () => {
-		r.current && (r.current.scale.setScalar(1 / vi(i, a.height)), r.current.updateWorldMatrix(!0, !0));
+function da({ at: e, name: t, handlers: n }) {
+	let r = (0, Z.useRef)(null), { camera: i, size: a } = q(), o = () => {
+		r.current && (r.current.scale.setScalar(1 / xi(i, a.height)), r.current.updateWorldMatrix(!0, !0));
 	};
-	return (0, Z.useLayoutEffect)(o), lt(o), /* @__PURE__ */ (0, Q.jsxs)("group", {
+	return (0, Z.useLayoutEffect)(o), st(o), /* @__PURE__ */ (0, Q.jsxs)("group", {
 		ref: r,
 		position: e,
 		children: [/* @__PURE__ */ (0, Q.jsxs)("mesh", {
 			name: t,
 			userData: { constructionEditHandle: !0 },
-			raycast: sa,
+			raycast: ua,
 			...n,
 			children: [/* @__PURE__ */ (0, Q.jsx)("sphereGeometry", { args: [
 				22,
 				12,
 				8
-			] }), /* @__PURE__ */ (0, Q.jsx)($r, {
+			] }), /* @__PURE__ */ (0, Q.jsx)(ii, {
 				visible: !1,
 				transparent: !0,
 				opacity: 0,
 				depthWrite: !1
 			})]
 		}), /* @__PURE__ */ (0, Q.jsxs)("mesh", {
-			raycast: Qr,
+			raycast: ri,
 			renderOrder: 32,
 			children: [/* @__PURE__ */ (0, Q.jsx)("sphereGeometry", { args: [
 				6,
 				12,
 				8
-			] }), /* @__PURE__ */ (0, Q.jsx)($r, {
+			] }), /* @__PURE__ */ (0, Q.jsx)(ii, {
 				color: "#fff7f1",
 				depthTest: !1
 			})]
@@ -4086,13 +4483,13 @@ function ca({ at: e, name: t, handlers: n }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/ConstructionOutlineMeasurements.tsx
-function la({ polygon: e, corner: t, coordinates: n, labelKind: r }) {
+function fa({ polygon: e, corner: t, coordinates: n, labelKind: r }) {
 	let i = e.map((t, n) => ({
 		id: `outline-edge-${n}`,
 		from: t,
 		to: e[(n + 1) % e.length]
 	})), a = i[t ?? 0];
-	return /* @__PURE__ */ (0, Q.jsx)(Ri, {
+	return /* @__PURE__ */ (0, Q.jsx)(Vi, {
 		walls: i,
 		primary: a,
 		junctions: t === null ? e : [e[t]],
@@ -4104,9 +4501,9 @@ function la({ polygon: e, corner: t, coordinates: n, labelKind: r }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/useConstructionOutlineDrag.ts
-var ua = new b(new J(0, 1, 0), 0);
-function da({ draft: e, selection: t, selectionKind: n, tool: r, onSelect: i, onUpdate: a, onDraggingChange: o }) {
-	let s = Ae((e) => e.get), c = (0, Z.useRef)(new J()), [l, u] = (0, Z.useState)(null), [d, f] = (0, Z.useState)(null), p = (0, Z.useRef)(null), m = (e) => {
+var pa = new me(new Y(0, 1, 0), 0);
+function ma({ draft: e, selection: t, selectionKind: n, tool: r, onSelect: i, onUpdate: a, onDraggingChange: o }) {
+	let s = q((e) => e.get), c = (0, Z.useRef)(new Y()), [l, u] = (0, Z.useState)(null), [d, f] = (0, Z.useState)(null), p = (0, Z.useRef)(null), m = (e) => {
 		p.current = e, f(e);
 	}, h = () => {
 		let e = p.current;
@@ -4123,9 +4520,9 @@ function da({ draft: e, selection: t, selectionKind: n, tool: r, onSelect: i, on
 		e && e.target.hasPointerCapture?.(e.pointerId) !== !1 && e.target.releasePointerCapture?.(e.pointerId);
 	}, []);
 	let _ = (t, r, i) => {
-		let a = t.ray.intersectPlane(ua, c.current);
+		let a = t.ray.intersectPlane(pa, c.current);
 		if (!a) return null;
-		if (!r) return Wr({
+		if (!r) return Jr({
 			point: a,
 			coordinates: e.coordinates,
 			absolute: t.nativeEvent.altKey
@@ -4135,7 +4532,7 @@ function da({ draft: e, selection: t, selectionKind: n, tool: r, onSelect: i, on
 			from: e,
 			to: i.original[(t + 1) % i.original.length]
 		})) : [];
-		return Gr(vt({
+		return Yr(ht({
 			point: a,
 			coordinates: e.coordinates,
 			walls: [
@@ -4145,8 +4542,8 @@ function da({ draft: e, selection: t, selectionKind: n, tool: r, onSelect: i, on
 			],
 			onSnap: u,
 			movingEndpoint: i?.corner == null ? void 0 : i.original[i.corner],
-			pixelsPerMeter: vi(o, l.height),
-			snapRadiusPixels: yi(t.nativeEvent.pointerType),
+			pixelsPerMeter: xi(o, l.height),
+			snapRadiusPixels: Si(t.nativeEvent.pointerType),
 			angleOrigin: i?.corner == null ? void 0 : i.original[(i.corner + i.original.length - 1) % i.original.length],
 			pointerType: t.nativeEvent.pointerType,
 			absolute: t.nativeEvent.altKey
@@ -4166,7 +4563,7 @@ function da({ draft: e, selection: t, selectionKind: n, tool: r, onSelect: i, on
 				a.stopPropagation();
 				let s = a.target;
 				s.setPointerCapture?.(a.pointerId), i(e), m({
-					...ai(a.pointerId, [a.nativeEvent.clientX, a.nativeEvent.clientY]),
+					...ci(a.pointerId, [a.nativeEvent.clientX, a.nativeEvent.clientY]),
 					id: e,
 					corner: n,
 					original: t,
@@ -4179,7 +4576,7 @@ function da({ draft: e, selection: t, selectionKind: n, tool: r, onSelect: i, on
 				let t = p.current;
 				if (!t || t.pointerId !== e.pointerId) return;
 				e.stopPropagation();
-				let n = oi(t, e.pointerId, [e.nativeEvent.clientX, e.nativeEvent.clientY]);
+				let n = li(t, e.pointerId, [e.nativeEvent.clientX, e.nativeEvent.clientY]);
 				n && (n.started && o?.(!0), m({
 					...n.drag,
 					polygon: v(e, n.drag)
@@ -4197,14 +4594,14 @@ function da({ draft: e, selection: t, selectionKind: n, tool: r, onSelect: i, on
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/ConstructionPoolLayer.tsx
-function fa({ polygon: e, draft: t, name: n, color: r, handlers: i }) {
+function ha({ polygon: e, draft: t, name: n, color: r, handlers: i }) {
 	let a = (0, Z.useMemo)(() => {
-		if (!Le(e)) return null;
-		let n = new Ce();
+		if (!It(e)) return null;
+		let n = new _e();
 		return e.forEach((e, r) => {
-			let [i, a] = q(e, t.coordinates);
+			let [i, a] = J(e, t.coordinates);
 			r === 0 ? n.moveTo(i, -a) : n.lineTo(i, -a);
-		}), n.closePath(), new ie(n);
+		}), n.closePath(), new Ce(n);
 	}, [e, t.coordinates]);
 	return (0, Z.useEffect)(() => () => a?.dispose(), [a]), a ? /* @__PURE__ */ (0, Q.jsx)("mesh", {
 		name: n,
@@ -4220,12 +4617,12 @@ function fa({ polygon: e, draft: t, name: n, color: r, handlers: i }) {
 			0
 		],
 		...i,
-		...i ? {} : { raycast: Qr },
-		children: /* @__PURE__ */ (0, Q.jsx)(ei, { color: r })
+		...i ? {} : { raycast: ri },
+		children: /* @__PURE__ */ (0, Q.jsx)(ai, { color: r })
 	}) : null;
 }
-function pa({ draft: e, selection: t, tool: n, points: r = [], preview: i = null, deletionTargets: a, onSelect: o, onUpdate: s, onDraggingChange: c }) {
-	let { snap: l, drag: u, handlers: d } = da({
+function ga({ draft: e, selection: t, tool: n, points: r = [], preview: i = null, deletionTargets: a, onSelect: o, onUpdate: s, onDraggingChange: c }) {
+	let { snap: l, drag: u, handlers: d } = ma({
 		draft: e,
 		selection: t,
 		selectionKind: "pool",
@@ -4237,16 +4634,16 @@ function pa({ draft: e, selection: t, tool: n, points: r = [], preview: i = null
 	return /* @__PURE__ */ (0, Q.jsxs)("group", {
 		name: "construction-pools",
 		children: [
-			/* @__PURE__ */ (0, Q.jsx)(li, {
+			/* @__PURE__ */ (0, Q.jsx)(fi, {
 				snap: l,
 				coordinates: e.coordinates
 			}),
 			(e.pools ?? []).map((r) => {
-				let i = u?.id === r.id ? u.polygon : r.polygon, o = a ? a.some((e) => e.kind === "pool" && e.id === r.id) : Et(t, "pool", r.id), s = t?.kind === "pool" && t.id === r.id, c = Le(i);
+				let i = u?.id === r.id ? u.polygon : r.polygon, o = a ? a.some((e) => e.kind === "pool" && e.id === r.id) : Ct(t, "pool", r.id), s = t?.kind === "pool" && t.id === r.id, c = It(i);
 				return /* @__PURE__ */ (0, Q.jsxs)("group", {
 					name: `plan-pool-${r.id}`,
 					children: [
-						/* @__PURE__ */ (0, Q.jsx)(fa, {
+						/* @__PURE__ */ (0, Q.jsx)(ha, {
 							name: `construction-pool-${r.id}`,
 							polygon: i,
 							draft: e,
@@ -4254,10 +4651,10 @@ function pa({ draft: e, selection: t, tool: n, points: r = [], preview: i = null
 							handlers: n === "select" ? d(r.id, i) : void 0
 						}),
 						i.map((t, a) => {
-							let s = i[(a + 1) % i.length], l = Kr(t, s, e.coordinates);
-							return /* @__PURE__ */ (0, Q.jsxs)("group", { children: [/* @__PURE__ */ (0, Q.jsx)(ti, {
-								from: q(t, e.coordinates),
-								to: q(s, e.coordinates),
+							let s = i[(a + 1) % i.length], l = Xr(t, s, e.coordinates);
+							return /* @__PURE__ */ (0, Q.jsxs)("group", { children: [/* @__PURE__ */ (0, Q.jsx)(oi, {
+								from: J(t, e.coordinates),
+								to: J(s, e.coordinates),
 								color: c ? o ? "#ff754d" : "#689ba1" : "#c53f32",
 								width: o ? .065 : .035,
 								elevation: .06
@@ -4278,7 +4675,7 @@ function pa({ draft: e, selection: t, tool: n, points: r = [], preview: i = null
 									l.length,
 									.02,
 									.18
-								] }), /* @__PURE__ */ (0, Q.jsx)($r, {
+								] }), /* @__PURE__ */ (0, Q.jsx)(ii, {
 									visible: !1,
 									transparent: !0,
 									opacity: 0,
@@ -4288,8 +4685,8 @@ function pa({ draft: e, selection: t, tool: n, points: r = [], preview: i = null
 							})] }, a);
 						}),
 						s && n === "select" && i.map((t, n) => {
-							let [i, a] = q(t, e.coordinates);
-							return /* @__PURE__ */ (0, Q.jsx)(ca, {
+							let [i, a] = J(t, e.coordinates);
+							return /* @__PURE__ */ (0, Q.jsx)(da, {
 								name: `construction-pool-corner-${r.id}-${n}`,
 								at: [
 									i,
@@ -4302,7 +4699,7 @@ function pa({ draft: e, selection: t, tool: n, points: r = [], preview: i = null
 					]
 				}, r.id);
 			}),
-			u?.dragActive && /* @__PURE__ */ (0, Q.jsx)(la, {
+			u?.dragActive && /* @__PURE__ */ (0, Q.jsx)(fa, {
 				polygon: u.polygon,
 				corner: u.corner,
 				coordinates: e.coordinates,
@@ -4311,22 +4708,22 @@ function pa({ draft: e, selection: t, tool: n, points: r = [], preview: i = null
 			n === "pool" && /* @__PURE__ */ (0, Q.jsxs)("group", {
 				name: "construction-pool-draft",
 				children: [
-					/* @__PURE__ */ (0, Q.jsx)(fa, {
+					/* @__PURE__ */ (0, Q.jsx)(ha, {
 						polygon: f,
 						draft: e,
 						name: "construction-pool-draft-fill",
 						color: "#d5e4df"
 					}),
-					r.slice(1).map((t, n) => /* @__PURE__ */ (0, Q.jsx)(ti, {
-						from: q(r[n], e.coordinates),
-						to: q(t, e.coordinates),
+					r.slice(1).map((t, n) => /* @__PURE__ */ (0, Q.jsx)(oi, {
+						from: J(r[n], e.coordinates),
+						to: J(t, e.coordinates),
 						color: "#689ba1",
 						width: .055,
 						elevation: .08
 					}, n)),
 					r.map((t, n) => {
-						let [r, i] = q(t, e.coordinates);
-						return /* @__PURE__ */ (0, Q.jsx)(xi, {
+						let [r, i] = J(t, e.coordinates);
+						return /* @__PURE__ */ (0, Q.jsx)(wi, {
 							name: `construction-pool-point-${n}`,
 							position: [
 								r,
@@ -4344,10 +4741,10 @@ function pa({ draft: e, selection: t, tool: n, points: r = [], preview: i = null
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/ConstructionFloorLayer.tsx
-function ma({ at: e, name: t, handlers: n }) {
+function _a({ at: e, name: t, handlers: n }) {
 	let r = (0, Z.useRef)(null);
-	return lt(({ camera: e, size: t }) => {
-		r.current?.scale.setScalar(1 / vi(e, t.height));
+	return st(({ camera: e, size: t }) => {
+		r.current?.scale.setScalar(1 / xi(e, t.height));
 	}), /* @__PURE__ */ (0, Q.jsxs)("group", {
 		ref: r,
 		position: e,
@@ -4358,28 +4755,28 @@ function ma({ at: e, name: t, handlers: n }) {
 				22,
 				12,
 				8
-			] }), /* @__PURE__ */ (0, Q.jsx)($r, {
+			] }), /* @__PURE__ */ (0, Q.jsx)(ii, {
 				visible: !1,
 				transparent: !0,
 				opacity: 0,
 				depthWrite: !1
 			})]
 		}), /* @__PURE__ */ (0, Q.jsxs)("mesh", {
-			raycast: Qr,
+			raycast: ri,
 			renderOrder: 42,
 			children: [/* @__PURE__ */ (0, Q.jsx)("sphereGeometry", { args: [
 				6,
 				12,
 				8
-			] }), /* @__PURE__ */ (0, Q.jsx)($r, {
+			] }), /* @__PURE__ */ (0, Q.jsx)(ii, {
 				color: "#fff7f1",
 				depthTest: !1
 			})]
 		})]
 	});
 }
-function ha({ floor: e, polygon: t, name: n, elevation: r, selected: i, handlers: a }) {
-	let o = (0, Z.useMemo)(() => on(t) ? St(t, e.coordinates, 1) : null, [e.coordinates, t]);
+function va({ floor: e, polygon: t, name: n, elevation: r, selected: i, handlers: a }) {
+	let o = (0, Z.useMemo)(() => Jt(t) ? Ot(t, e.coordinates, 1) : null, [e.coordinates, t]);
 	return (0, Z.useEffect)(() => () => o?.dispose(), [o]), o ? /* @__PURE__ */ (0, Q.jsx)("mesh", {
 		name: n,
 		geometry: o,
@@ -4395,11 +4792,11 @@ function ha({ floor: e, polygon: t, name: n, elevation: r, selected: i, handlers
 		],
 		renderOrder: i ? 41 : 40,
 		...a,
-		...a ? {} : { raycast: Qr },
-		children: /* @__PURE__ */ (0, Q.jsx)($r, {
+		...a ? {} : { raycast: ri },
+		children: /* @__PURE__ */ (0, Q.jsx)(ii, {
 			color: "#ff754d",
 			transparent: !0,
-			...vt({ visible: i }),
+			...ht({ visible: i }),
 			opacity: i ? .12 : 0,
 			depthTest: !1,
 			depthWrite: !1,
@@ -4407,8 +4804,8 @@ function ha({ floor: e, polygon: t, name: n, elevation: r, selected: i, handlers
 		})
 	}) : null;
 }
-function ga({ draft: e, floor: t, selection: n, deletionTargets: r, tool: i, paintTarget: a, drawingPoints: o, drawingPreview: s, drawingRoomId: c, onPaintRoom: l, onSelectZone: u, onUpdateZone: d, onDraggingChange: f }) {
-	let { snap: p, drag: m, handlers: h } = da({
+function ya({ draft: e, floor: t, selection: n, deletionTargets: r, tool: i, paintTarget: a, drawingPoints: o, drawingPreview: s, drawingRoomId: c, onPaintRoom: l, onSelectZone: u, onUpdateZone: d, onDraggingChange: f }) {
+	let { snap: p, drag: m, handlers: h } = ma({
 		draft: e,
 		selection: n,
 		selectionKind: "floor-zone",
@@ -4416,21 +4813,21 @@ function ga({ draft: e, floor: t, selection: n, deletionTargets: r, tool: i, pai
 		onSelect: u,
 		onUpdate: d,
 		...f === void 0 ? {} : { onDraggingChange: f }
-	}), g = t.rooms.find((e) => e.id === c), _ = !s || !g ? !s || Jt(s, t) : it(s, g.polygon), v = s && o.length ? [...o, s] : o, y = [...t.groundZones ?? [], ...t.rooms.flatMap((e) => e.floorZones ?? [])];
+	}), g = t.rooms.find((e) => e.id === c), _ = !s || !g ? !s || De(s, t) : yt(s, g.polygon), v = s && o.length ? [...o, s] : o, y = [...t.groundZones ?? [], ...t.rooms.flatMap((e) => e.floorZones ?? [])];
 	return /* @__PURE__ */ (0, Q.jsxs)("group", {
 		name: "construction-floors",
 		children: [
-			/* @__PURE__ */ (0, Q.jsx)(li, {
+			/* @__PURE__ */ (0, Q.jsx)(fi, {
 				snap: p,
 				coordinates: e.coordinates
 			}),
-			m?.dragActive && /* @__PURE__ */ (0, Q.jsx)(la, {
+			m?.dragActive && /* @__PURE__ */ (0, Q.jsx)(fa, {
 				polygon: m.polygon,
 				corner: m.corner,
 				coordinates: e.coordinates,
 				labelKind: "Floor edge"
 			}),
-			i === "floor" && a === "room" && t.rooms.map((e) => /* @__PURE__ */ (0, Q.jsx)(ha, {
+			i === "floor" && a === "room" && t.rooms.map((e) => /* @__PURE__ */ (0, Q.jsx)(va, {
 				floor: t,
 				polygon: e.polygon,
 				name: `construction-floor-room-${e.id}`,
@@ -4440,11 +4837,11 @@ function ga({ draft: e, floor: t, selection: n, deletionTargets: r, tool: i, pai
 				} }
 			}, e.id)),
 			[...y].reverse().map((a, o) => {
-				let s = m?.id === a.id ? m.polygon : a.polygon, c = r ? r.some((e) => e.kind === "floor-zone" && e.id === a.id) : Et(n, "floor-zone", a.id), l = n?.kind === "floor-zone" && n.id === a.id, u = on(s);
+				let s = m?.id === a.id ? m.polygon : a.polygon, c = r ? r.some((e) => e.kind === "floor-zone" && e.id === a.id) : Ct(n, "floor-zone", a.id), l = n?.kind === "floor-zone" && n.id === a.id, u = Jt(s);
 				return /* @__PURE__ */ (0, Q.jsxs)("group", {
 					name: `plan-floor-zone-${a.id}`,
 					children: [
-						/* @__PURE__ */ (0, Q.jsx)(ha, {
+						/* @__PURE__ */ (0, Q.jsx)(va, {
 							floor: t,
 							polygon: s,
 							name: `floor-zone-hit-${a.id}`,
@@ -4452,19 +4849,19 @@ function ga({ draft: e, floor: t, selection: n, deletionTargets: r, tool: i, pai
 							selected: c,
 							handlers: i === "select" ? h(a.id, s) : void 0
 						}),
-						/* @__PURE__ */ (0, Q.jsx)(di, {
+						/* @__PURE__ */ (0, Q.jsx)(mi, {
 							name: "floor-zone-outline",
 							strokes: s.map((t, n) => ({
-								from: q(t, e.coordinates),
-								to: q(s[(n + 1) % s.length], e.coordinates),
+								from: J(t, e.coordinates),
+								to: J(s[(n + 1) % s.length], e.coordinates),
 								color: u ? c ? "#ff754d" : "#8d8b80" : "#c53f32",
 								width: c ? .055 : .018,
 								elevation: .14
 							}))
 						}),
 						l && i === "select" && s.map((t, n) => {
-							let [r, i] = q(t, e.coordinates);
-							return /* @__PURE__ */ (0, Q.jsx)(ma, {
+							let [r, i] = J(t, e.coordinates);
+							return /* @__PURE__ */ (0, Q.jsx)(_a, {
 								name: `floor-zone-corner-${a.id}-${n}`,
 								at: [
 									r,
@@ -4479,15 +4876,15 @@ function ga({ draft: e, floor: t, selection: n, deletionTargets: r, tool: i, pai
 			}),
 			i === "floor" && a === "custom-area" && /* @__PURE__ */ (0, Q.jsxs)("group", {
 				name: "construction-floor-draft",
-				children: [v.slice(1).map((t, n) => /* @__PURE__ */ (0, Q.jsx)(ti, {
-					from: q(v[n], e.coordinates),
-					to: q(t, e.coordinates),
+				children: [v.slice(1).map((t, n) => /* @__PURE__ */ (0, Q.jsx)(oi, {
+					from: J(v[n], e.coordinates),
+					to: J(t, e.coordinates),
 					color: _ ? "#ff754d" : "#c53f32",
 					width: .055,
 					elevation: .18
 				}, n)), o.map((t, n) => {
-					let [r, i] = q(t, e.coordinates);
-					return /* @__PURE__ */ (0, Q.jsx)(xi, {
+					let [r, i] = J(t, e.coordinates);
+					return /* @__PURE__ */ (0, Q.jsx)(wi, {
 						name: `construction-floor-point-${n}`,
 						position: [
 							r,
@@ -4504,14 +4901,14 @@ function ga({ draft: e, floor: t, selection: n, deletionTargets: r, tool: i, pai
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/useFloorZoneDrawing.ts
-var _a = {
+var ba = {
 	roomId: null,
 	points: [],
 	future: [],
 	preview: null,
 	error: null
-}, va = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= 1e-7, ya = (e, t, n) => {
-	if (t.type === "cancel") return { state: _a };
+}, xa = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= 1e-7, Sa = (e, t, n) => {
+	if (t.type === "cancel") return { state: ba };
 	if (t.type === "preview") return { state: {
 		...e,
 		preview: t.point
@@ -4537,14 +4934,14 @@ var _a = {
 	let r = t.point, i = n.rooms;
 	if (!r.every(Number.isFinite)) return { state: e };
 	if (!e.points.length) {
-		let t = i.find((e) => it(r, e.polygon));
+		let t = i.find((e) => yt(r, e.polygon));
 		return t ? { state: {
 			roomId: t.id,
 			points: [r],
 			future: [],
 			preview: r,
 			error: null
-		} } : Jt(r, n) ? { state: {
+		} } : De(r, n) ? { state: {
 			roomId: null,
 			points: [r],
 			future: [],
@@ -4555,18 +4952,18 @@ var _a = {
 			error: "Start inside a room or outside the building."
 		} };
 	}
-	if (va(r, e.points.at(-1))) return { state: e };
+	if (xa(r, e.points.at(-1))) return { state: e };
 	let a = i.find((t) => t.id === e.roomId);
-	if (e.points.length >= 3 && va(r, e.points[0])) {
+	if (e.points.length >= 3 && xa(r, e.points[0])) {
 		let t = e.points;
-		return on(t) ? a && !tt(t, a.polygon) ? { state: {
+		return Jt(t) ? a && !rt(t, a.polygon) ? { state: {
 			...e,
 			error: `Keep the complete area inside ${a.name}.`
-		} } : !a && !De(t, n) ? { state: {
+		} } : !a && !$e(t, n) ? { state: {
 			...e,
 			error: "Keep the complete outdoor area outside the building."
 		} } : {
-			state: _a,
+			state: ba,
 			completed: {
 				roomId: a?.id ?? null,
 				polygon: t
@@ -4576,13 +4973,13 @@ var _a = {
 			error: "The area crosses itself or has no area."
 		} };
 	}
-	return a && !it(r, a.polygon) ? { state: {
+	return a && !yt(r, a.polygon) ? { state: {
 		...e,
 		error: `Keep every corner inside ${a.name}.`
-	} } : !a && !Jt(r, n) ? { state: {
+	} } : !a && !De(r, n) ? { state: {
 		...e,
 		error: "Keep every outdoor corner outside the building."
-	} } : e.points.some((e) => va(e, r)) ? { state: {
+	} } : e.points.some((e) => xa(e, r)) ? { state: {
 		...e,
 		error: "Return to the first corner to close the area."
 	} } : { state: {
@@ -4593,11 +4990,11 @@ var _a = {
 		error: null
 	} };
 };
-function ba(e, t) {
-	let [n, r] = (0, Z.useState)(_a), i = (0, Z.useRef)(n), a = (0, Z.useRef)(t);
+function Ca(e, t) {
+	let [n, r] = (0, Z.useState)(ba), i = (0, Z.useRef)(n), a = (0, Z.useRef)(t);
 	a.current = t;
 	let o = (0, Z.useCallback)((t) => {
-		let n = ya(i.current, t, e);
+		let n = Sa(i.current, t, e);
 		i.current = n.state, r(n.state), n.completed && a.current(n.completed.roomId, n.completed.polygon);
 	}, [e]);
 	return {
@@ -4615,92 +5012,6 @@ function ba(e, t) {
 		redo: (0, Z.useCallback)(() => o({ type: "redo" }), [o]),
 		cancel: (0, Z.useCallback)(() => o({ type: "cancel" }), [o])
 	};
-}
-//#endregion
-//#region apps/web/src/editor-preview/construct/FloorFinishPalette.tsx
-var xa = (e) => e.kind === "solid" ? "solid" : e.preset;
-function Sa({ preset: e, color: t }) {
-	let n = (0, Z.useRef)(null);
-	return (0, Z.useEffect)(() => {
-		let r;
-		try {
-			r = n.current?.getContext("2d");
-		} catch {
-			r = null;
-		}
-		r && Xe(r, e.id, "plan", t);
-	}, [e, t]), /* @__PURE__ */ (0, Q.jsx)("canvas", {
-		ref: n,
-		width: 64,
-		height: 64,
-		"aria-hidden": "true"
-	});
-}
-function Ca({ value: e, onChange: t }) {
-	let n = xa(e), r = e.kind === "solid" ? e.color : "#d3cec5";
-	return /* @__PURE__ */ (0, Q.jsxs)("section", {
-		className: "floor-finish-palette",
-		"aria-label": "Floor finish",
-		children: [
-			/* @__PURE__ */ (0, Q.jsxs)("div", {
-				className: "floor-finish-palette__grid",
-				children: [/* @__PURE__ */ (0, Q.jsxs)("button", {
-					type: "button",
-					"aria-label": "Solid color",
-					"aria-pressed": n === "solid",
-					onClick: () => t({
-						kind: "solid",
-						color: r
-					}),
-					children: [/* @__PURE__ */ (0, Q.jsx)("span", {
-						style: { background: r },
-						"aria-hidden": "true"
-					}), /* @__PURE__ */ (0, Q.jsx)("small", { children: "Solid" })]
-				}), Wt.map((r) => /* @__PURE__ */ (0, Q.jsxs)("button", {
-					type: "button",
-					"aria-label": r.label,
-					"aria-pressed": n === r.id,
-					onClick: () => t({
-						kind: "preset",
-						preset: r.id
-					}),
-					children: [/* @__PURE__ */ (0, Q.jsx)(Sa, {
-						preset: r,
-						color: e.kind === "preset" && e.preset === r.id ? e.color : void 0
-					}), /* @__PURE__ */ (0, Q.jsx)("small", { children: r.label })]
-				}, r.id))]
-			}),
-			e.kind === "preset" && Wt.find((t) => t.id === e.preset)?.configurableColor && /* @__PURE__ */ (0, Q.jsxs)("label", { children: [
-				"Tile color",
-				/* @__PURE__ */ (0, Q.jsx)("input", {
-					type: "color",
-					"aria-label": "Tile color",
-					value: e.color ?? Wt.find((t) => t.id === e.preset).representativeColor,
-					onChange: (n) => t({
-						...e,
-						color: n.target.value
-					})
-				}),
-				/* @__PURE__ */ (0, Q.jsx)("button", {
-					type: "button",
-					onClick: () => t({
-						kind: "preset",
-						preset: e.preset
-					}),
-					children: "Reset color"
-				})
-			] }),
-			n === "solid" && /* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Solid color", /* @__PURE__ */ (0, Q.jsx)("input", {
-				type: "color",
-				"aria-label": "Solid floor color",
-				value: r,
-				onChange: (e) => t({
-					kind: "solid",
-					color: e.target.value
-				})
-			})] })
-		]
-	});
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/FloorPaintConfirmation.tsx
@@ -4748,207 +5059,8 @@ function wa({ roomName: e, onKeepZones: t, onReplaceEverything: n, onCancel: r }
 	});
 }
 //#endregion
-//#region apps/web/src/editor-preview/construct/PlatformEdgePalette.tsx
-var Ta = xt.map((e) => ({
-	preset: e,
-	entry: {
-		kind: "procedural",
-		key: `platform-edge-v1:${e.id}`,
-		definition: {
-			bounds: {
-				min: [
-					-1,
-					-.16,
-					-.3
-				],
-				max: [
-					1,
-					1,
-					.3
-				]
-			},
-			component: () => /* @__PURE__ */ (0, Q.jsxs)("group", { children: [/* @__PURE__ */ (0, Q.jsxs)("mesh", {
-				position: [
-					0,
-					-.08,
-					0
-				],
-				children: [/* @__PURE__ */ (0, Q.jsx)("boxGeometry", { args: [
-					2,
-					.16,
-					.6
-				] }), /* @__PURE__ */ (0, Q.jsx)(dt, { color: "#d4c6ae" })]
-			}), /* @__PURE__ */ (0, Q.jsx)(se, {
-				from: [-1, 0],
-				to: [1, 0],
-				configuration: e.configuration
-			})] })
-		}
-	}
-}));
-function Ea({ value: e, onChange: t }) {
-	let n = (0, Z.useRef)(null);
-	return /* @__PURE__ */ (0, Q.jsx)("section", {
-		className: "door-preset-palette",
-		"aria-label": "Platform edge style",
-		children: /* @__PURE__ */ (0, Q.jsx)(Cn, {
-			scrollRoot: n,
-			enabled: !0,
-			children: /* @__PURE__ */ (0, Q.jsx)("div", {
-				className: "floor-finish-palette__grid door-preset-palette__grid",
-				ref: n,
-				role: "group",
-				"aria-label": "Platform edge presets",
-				children: Ta.map(({ preset: n, entry: r }) => /* @__PURE__ */ (0, Q.jsxs)("button", {
-					type: "button",
-					"aria-label": n.name,
-					"aria-pressed": e.kind === n.id,
-					onClick: () => t({ ...n.configuration }),
-					children: [/* @__PURE__ */ (0, Q.jsx)(An, {
-						entry: r,
-						showAdd: !1,
-						fallback: /* @__PURE__ */ (0, Q.jsx)("span", { children: "Preview unavailable" })
-					}), /* @__PURE__ */ (0, Q.jsx)("small", { children: n.name })]
-				}, n.id))
-			})
-		})
-	});
-}
-//#endregion
-//#region apps/web/src/editor-preview/construct/PlatformEdgeFields.tsx
-function Da({ value: e, onChange: t }) {
-	return /* @__PURE__ */ (0, Q.jsxs)("div", {
-		className: "platform-edge-fields",
-		children: [/* @__PURE__ */ (0, Q.jsx)(Ea, {
-			value: e,
-			onChange: t
-		}), e.kind !== "open" && /* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Barrier height (m)", /* @__PURE__ */ (0, Q.jsx)(wr, {
-			label: "Platform barrier height",
-			value: e.heightMeters,
-			step: .1,
-			min: .01,
-			onCommit: (n) => {
-				n > 0 && t({
-					...e,
-					heightMeters: n
-				});
-			}
-		})] })]
-	});
-}
-//#endregion
-//#region apps/web/src/editor-preview/construct/PlatformProperties.tsx
-function Oa({ platform: e, editor: t }) {
-	let n = e.edges.find((e) => e.id === t.selectedPlatformEdgeId), r = Math.abs(Ne(e.polygon)) * t.draft.coordinates.metersPerPlanUnit ** 2, i = (n) => {
-		if (n.length < 3) return;
-		let [r, i, a, ...o] = n;
-		t.updatePlatform(e.id, { polygon: [
-			r,
-			i,
-			a,
-			...o
-		] });
-	};
-	return /* @__PURE__ */ (0, Q.jsxs)("div", {
-		className: "construction-inspector__selection",
-		children: [
-			/* @__PURE__ */ (0, Q.jsx)("header", { children: /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("small", { children: "Selected outdoor platform" }), /* @__PURE__ */ (0, Q.jsxs)("strong", { children: [
-				"Outdoor platform · ",
-				r.toFixed(1),
-				" m²"
-			] })] }) }),
-			/* @__PURE__ */ (0, Q.jsx)("p", {
-				className: "construction-inspector__tool-hint",
-				children: "Drag the platform to move it, or a corner to reshape it. Select an edge to change its style."
-			}),
-			/* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [
-				/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Edges" }),
-				/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Apply to", /* @__PURE__ */ (0, Q.jsxs)("select", {
-					"aria-label": "Platform edge",
-					value: n?.id ?? "",
-					onChange: (n) => n.target.value ? t.selectPlatformEdge(e.id, n.target.value) : t.selectPlatform(e.id),
-					children: [/* @__PURE__ */ (0, Q.jsx)("option", {
-						value: "",
-						children: "Default style"
-					}), e.edges.map((e, t) => /* @__PURE__ */ (0, Q.jsxs)("option", {
-						value: e.id,
-						children: ["Edge ", t + 1]
-					}, e.id))]
-				})] }),
-				/* @__PURE__ */ (0, Q.jsx)(Da, {
-					value: n?.configuration ?? e.defaultEdge,
-					onChange: (r) => {
-						n ? t.updatePlatform(e.id, { edges: e.edges.map((e) => e.id === n.id ? {
-							...e,
-							configuration: r
-						} : e) }) : t.updatePlatform(e.id, { defaultEdge: r });
-					}
-				})
-			] }),
-			n?.configuration && /* @__PURE__ */ (0, Q.jsx)($, {
-				variant: "secondary",
-				type: "button",
-				onClick: () => t.updatePlatform(e.id, { edges: e.edges.map((e) => e.id === n?.id ? { id: e.id } : e) }),
-				children: "Use default edge style"
-			}),
-			n && /* @__PURE__ */ (0, Q.jsx)($, {
-				variant: "secondary",
-				type: "button",
-				onClick: () => {
-					if (!n) return;
-					let t = e.edges.indexOf(n), r = e.polygon[t], a = e.polygon[(t + 1) % e.polygon.length];
-					i([
-						...e.polygon.slice(0, t + 1),
-						[(r[0] + a[0]) / 2, (r[1] + a[1]) / 2],
-						...e.polygon.slice(t + 1)
-					]);
-				},
-				children: "Add corner on edge"
-			}),
-			/* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Floor finish" }), /* @__PURE__ */ (0, Q.jsx)(Ca, {
-				value: e.finish,
-				onChange: (n) => t.updatePlatform(e.id, { finish: n })
-			})] }),
-			/* @__PURE__ */ (0, Q.jsxs)("fieldset", {
-				className: "platform-corners",
-				children: [/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Corners · plan units" }), e.polygon.map((n, r) => /* @__PURE__ */ (0, Q.jsxs)("div", {
-					className: "platform-corner-row",
-					children: [
-						/* @__PURE__ */ (0, Q.jsx)("span", {
-							className: "platform-corner-number",
-							"aria-label": `Corner ${r + 1}`,
-							children: r + 1
-						}),
-						[0, 1].map((i) => /* @__PURE__ */ (0, Q.jsxs)("label", { children: [i === 0 ? "X" : "Y", /* @__PURE__ */ (0, Q.jsx)(wr, {
-							label: `Platform corner ${r + 1} ${i === 0 ? "X" : "Y"}`,
-							value: n[i],
-							step: .1,
-							onCommit: (n) => t.updatePlatform(e.id, { polygon: _t(e.polygon, (e, t) => t === r ? i === 0 ? [n, e[1]] : [e[0], n] : e) })
-						})] }, i)),
-						e.polygon.length > 3 && /* @__PURE__ */ (0, Q.jsx)($, {
-							variant: "text",
-							type: "button",
-							className: "platform-corner-remove",
-							"aria-label": `Remove corner ${r + 1}`,
-							title: `Remove corner ${r + 1}`,
-							onClick: () => i(e.polygon.filter((e, t) => t !== r)),
-							children: /* @__PURE__ */ (0, Q.jsx)(X, { name: "delete" })
-						})
-					]
-				}, r))]
-			}),
-			/* @__PURE__ */ (0, Q.jsx)($, {
-				variant: "text",
-				type: "button",
-				onClick: t.deleteSelected,
-				children: "Delete platform"
-			})
-		]
-	});
-}
-//#endregion
 //#region apps/web/src/editor-preview/construct/FloorToolProperties.tsx
-var ka = [
+var Ta = [
 	{
 		id: "room",
 		label: "Whole room",
@@ -4964,12 +5076,12 @@ var ka = [
 		label: "Outdoor platform",
 		description: "Add a balcony or terrace on this floor."
 	}
-], Aa = {
+], Ea = {
 	room: "Choose a finish, then click a room.",
 	"custom-area": "Click corners, then return to the first point to close the area. Start inside a room for an inset, or outside for a ground patch.",
 	"outdoor-platform": "Click corners, then return to the first point to close the platform. House walls and doorways stay clear."
 };
-function ja({ editor: e, painting: t }) {
+function Da({ editor: e, painting: t }) {
 	let n = e.tool === "platform", r = n ? "outdoor-platform" : t.target, i = e.platformSettings, a = n ? e.poolDrawing.error : t.drawingError, o = (n) => {
 		n === "outdoor-platform" && e.setPlatformSettings({
 			...i,
@@ -4984,7 +5096,7 @@ function ja({ editor: e, painting: t }) {
 				className: "floor-tool-targets",
 				role: "group",
 				"aria-label": "Paint target",
-				children: ka.map((e) => /* @__PURE__ */ (0, Q.jsxs)("button", {
+				children: Ta.map((e) => /* @__PURE__ */ (0, Q.jsxs)("button", {
 					type: "button",
 					"aria-label": e.label,
 					"aria-pressed": r === e.id,
@@ -4994,16 +5106,16 @@ function ja({ editor: e, painting: t }) {
 			}),
 			/* @__PURE__ */ (0, Q.jsx)("p", {
 				className: "construction-inspector__tool-hint",
-				children: Aa[r]
+				children: Ea[r]
 			}),
-			/* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Floor finish" }), /* @__PURE__ */ (0, Q.jsx)(Ca, {
+			/* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Floor finish" }), /* @__PURE__ */ (0, Q.jsx)(kr, {
 				value: n ? i.finish : t.finish,
 				onChange: (r) => n ? e.setPlatformSettings({
 					...i,
 					finish: r
 				}) : t.onFinishChange(r)
 			})] }),
-			n && /* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Exposed edges" }), /* @__PURE__ */ (0, Q.jsx)(Da, {
+			n && /* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Exposed edges" }), /* @__PURE__ */ (0, Q.jsx)(Lr, {
 				value: i.defaultEdge,
 				onChange: (t) => e.setPlatformSettings({
 					...i,
@@ -5029,123 +5141,8 @@ function ja({ editor: e, painting: t }) {
 	});
 }
 //#endregion
-//#region apps/web/src/editor-preview/construct/HedgeStyleGrid.tsx
-var Ma = He.map((e) => ({
-	style: e,
-	entry: {
-		key: `hedge:${e.id}:v2`,
-		kind: "procedural",
-		definition: {
-			bounds: {
-				min: [
-					-1.65,
-					0,
-					-e.widthMeters * .65
-				],
-				max: [
-					1.65,
-					e.heightMeters * 1.1,
-					e.widthMeters * .65
-				]
-			},
-			component: () => /* @__PURE__ */ (0, Q.jsx)(Qt, {
-				style: e.id,
-				length: 3,
-				height: e.heightMeters,
-				width: e.widthMeters
-			})
-		}
-	}
-}));
-function Na({ value: e, onChoose: t }) {
-	let n = (0, Z.useRef)(null);
-	return /* @__PURE__ */ (0, Q.jsx)(Cn, {
-		scrollRoot: n,
-		enabled: !0,
-		children: /* @__PURE__ */ (0, Q.jsx)("div", {
-			className: "catalog-grid hedge-style-grid",
-			ref: n,
-			role: "group",
-			"aria-label": "Boundary styles",
-			children: Ma.map(({ style: n, entry: r }) => /* @__PURE__ */ (0, Q.jsxs)("button", {
-				type: "button",
-				className: "catalog-card",
-				"aria-label": n.label,
-				"aria-pressed": e === n.id,
-				onClick: () => t(n),
-				children: [
-					/* @__PURE__ */ (0, Q.jsx)(An, {
-						entry: r,
-						showAdd: !1
-					}),
-					/* @__PURE__ */ (0, Q.jsx)("strong", { children: n.label }),
-					/* @__PURE__ */ (0, Q.jsx)("small", { children: n.description })
-				]
-			}, n.id))
-		})
-	});
-}
-//#endregion
-//#region apps/web/src/editor-preview/construct/HedgeProperties.tsx
-function Pa({ editor: e }) {
-	let t = e.selection?.kind === "hedge" ? e.draft.hedges?.find((t) => e.selection?.kind === "hedge" && t.id === e.selection.id) : void 0;
-	if (e.tool !== "hedge" && !t) return null;
-	let n = t ?? e.hedgeSettings, r = (r) => {
-		t ? e.dispatch({
-			type: "update-hedge",
-			id: t.id,
-			changes: r
-		}) : e.setHedgeSettings({
-			...n,
-			...r
-		});
-	};
-	return /* @__PURE__ */ (0, Q.jsxs)("div", {
-		className: "construction-inspector__selection",
-		children: [
-			/* @__PURE__ */ (0, Q.jsx)("header", { children: /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("small", { children: t ? "Selected boundary" : "Boundary tool" }), /* @__PURE__ */ (0, Q.jsx)("strong", { children: "Boundary" })] }) }),
-			/* @__PURE__ */ (0, Q.jsx)("p", {
-				className: "construction-inspector__tool-hint",
-				children: "Drag to draw a boundary. Continue from its endpoint for a connected row. Escape finishes drawing."
-			}),
-			/* @__PURE__ */ (0, Q.jsx)("p", {
-				className: "construction-inspector__tool-hint",
-				children: "All styles block walking across the full width, including open rails. Leave gaps for entrances."
-			}),
-			/* @__PURE__ */ (0, Q.jsx)(Na, {
-				value: n.style,
-				onChoose: (e) => r(t ? { style: e.id } : {
-					style: e.id,
-					heightMeters: e.heightMeters,
-					widthMeters: e.widthMeters
-				})
-			}),
-			/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Height (m)", /* @__PURE__ */ (0, Q.jsx)(wr, {
-				label: "Boundary height",
-				value: n.heightMeters,
-				min: .2,
-				step: .1,
-				onCommit: (e) => r({ heightMeters: Math.min(5, Math.max(.2, e)) })
-			})] }),
-			/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Width (m)", /* @__PURE__ */ (0, Q.jsx)(wr, {
-				label: "Boundary width",
-				value: n.widthMeters,
-				min: .2,
-				step: .1,
-				onCommit: (e) => r({ widthMeters: Math.min(3, Math.max(.2, e)) })
-			})] }),
-			t && /* @__PURE__ */ (0, Q.jsx)($, {
-				variant: "text",
-				type: "button",
-				onClick: e.deleteSelected,
-				children: "Delete boundary"
-			})
-		]
-	});
-}
-//#endregion
 //#region apps/web/src/editor-chrome/SidebarSectionSummary.tsx
-function Fa({ icon: e, title: t, description: n }) {
+function Oa({ icon: e, title: t, description: n }) {
 	return /* @__PURE__ */ (0, Q.jsxs)("summary", {
 		className: "sidebar-section-summary",
 		children: [
@@ -5162,34 +5159,8 @@ function Fa({ icon: e, title: t, description: n }) {
 	});
 }
 //#endregion
-//#region apps/web/src/editor-preview/construct/DebouncedColorInput.tsx
-function Ia({ label: e, value: t, disabled: n = !1, onCommit: r }) {
-	let [i, a] = (0, Z.useState)(t), o = (0, Z.useRef)(null), s = (0, Z.useRef)(t), c = (0, Z.useRef)(r);
-	return (0, Z.useEffect)(() => {
-		a(t), s.current = t;
-	}, [t]), (0, Z.useEffect)(() => {
-		c.current = r;
-	}, [r]), (0, Z.useEffect)(() => () => {
-		o.current && clearTimeout(o.current);
-	}, []), /* @__PURE__ */ (0, Q.jsx)("input", {
-		"aria-label": e,
-		type: "color",
-		value: i,
-		disabled: n,
-		onInput: (e) => {
-			let t = e.currentTarget.value;
-			s.current = t, a(t), o.current && clearTimeout(o.current), o.current = setTimeout(() => {
-				o.current = null, c.current(s.current);
-			}, 160);
-		},
-		onBlur: () => {
-			o.current && clearTimeout(o.current), o.current = null, s.current !== t && c.current(s.current);
-		}
-	});
-}
-//#endregion
 //#region apps/web/src/editor-preview/construct/RoofSettingsEditor.tsx
-function La({ value: e = m, onChange: t }) {
+function ka({ value: e = W, onChange: t }) {
 	return /* @__PURE__ */ (0, Q.jsxs)("section", {
 		className: "construction-inspector__floor-settings sidebar-section-content",
 		"aria-label": "Roof settings",
@@ -5218,7 +5189,7 @@ function La({ value: e = m, onChange: t }) {
 						})
 					]
 				})] }),
-				/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Roof color", /* @__PURE__ */ (0, Q.jsx)(Ia, {
+				/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Roof color", /* @__PURE__ */ (0, Q.jsx)(Er, {
 					label: "Roof color",
 					value: e.color,
 					onCommit: (n) => t({
@@ -5226,7 +5197,7 @@ function La({ value: e = m, onChange: t }) {
 						color: n
 					})
 				})] }),
-				/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Trim color", /* @__PURE__ */ (0, Q.jsx)(Ia, {
+				/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Trim color", /* @__PURE__ */ (0, Q.jsx)(Er, {
 					label: "Roof trim color",
 					value: e.edgeColor,
 					onCommit: (n) => t({
@@ -5243,7 +5214,7 @@ function La({ value: e = m, onChange: t }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/FloorSettingsEditor.tsx
-function Ra({ editor: e }) {
+function Aa({ editor: e }) {
 	let [t, n] = (0, Z.useState)(e.draft.coordinates.origin[0]), [r, i] = (0, Z.useState)(e.draft.coordinates.origin[1]), [a, o] = (0, Z.useState)(e.draft.coordinates.metersPerPlanUnit), [s, c] = (0, Z.useState)(e.draft.coordinates.scaleBasis), [l, u] = (0, Z.useState)(e.draft.defaultWallHeightMeters), [d, f] = (0, Z.useState)(e.draft.defaultCeilingHeightMeters), [p, m] = (0, Z.useState)(!1);
 	(0, Z.useEffect)(() => {
 		n(e.draft.coordinates.origin[0]), i(e.draft.coordinates.origin[1]), o(e.draft.coordinates.metersPerPlanUnit), c(e.draft.coordinates.scaleBasis), u(e.draft.defaultWallHeightMeters), f(e.draft.defaultCeilingHeightMeters), m(!1);
@@ -5267,7 +5238,7 @@ function Ra({ editor: e }) {
 		children: [
 			/* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [
 				/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Plan coordinates" }),
-				/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Scale (m/unit)", /* @__PURE__ */ (0, Q.jsx)(wr, {
+				/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Scale (m/unit)", /* @__PURE__ */ (0, Q.jsx)(dr, {
 					label: "Meters per plan unit",
 					min: .001,
 					step: .01,
@@ -5288,13 +5259,13 @@ function Ra({ editor: e }) {
 						children: "Estimated"
 					})]
 				})] }),
-				/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Origin X", /* @__PURE__ */ (0, Q.jsx)(wr, {
+				/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Origin X", /* @__PURE__ */ (0, Q.jsx)(dr, {
 					label: "Floor origin X",
 					step: .1,
 					value: t,
 					onCommit: v(n)
 				})] }),
-				/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Origin Y", /* @__PURE__ */ (0, Q.jsx)(wr, {
+				/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Origin Y", /* @__PURE__ */ (0, Q.jsx)(dr, {
 					label: "Floor origin Y",
 					step: .1,
 					value: r,
@@ -5303,14 +5274,14 @@ function Ra({ editor: e }) {
 			] }),
 			/* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [
 				/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Default heights" }),
-				/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Wall (m)", /* @__PURE__ */ (0, Q.jsx)(wr, {
+				/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Wall (m)", /* @__PURE__ */ (0, Q.jsx)(dr, {
 					label: "Default wall height",
 					min: .3,
 					step: .05,
 					value: l,
 					onCommit: v(u)
 				})] }),
-				/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Ceiling (m)", /* @__PURE__ */ (0, Q.jsx)(wr, {
+				/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Ceiling (m)", /* @__PURE__ */ (0, Q.jsx)(dr, {
 					label: "Default ceiling height",
 					min: .3,
 					step: .05,
@@ -5353,7 +5324,7 @@ function Ra({ editor: e }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/ConstructionBuildingSettings.tsx
-function za({ inert: e, planImportControls: t, onRoofChange: n, roof: r, northControls: i, walkStartControls: a, tutorialControls: o, editor: s }) {
+function ja({ inert: e, planImportControls: t, onRoofChange: n, roof: r, northControls: i, walkStartControls: a, tutorialControls: o, editor: s }) {
 	return /* @__PURE__ */ (0, Q.jsxs)("div", {
 		className: "construction-inspector__context",
 		inert: e,
@@ -5361,11 +5332,11 @@ function za({ inert: e, planImportControls: t, onRoofChange: n, roof: r, northCo
 			t,
 			n && /* @__PURE__ */ (0, Q.jsxs)("details", {
 				className: "construction-inspector__floor-disclosure",
-				children: [/* @__PURE__ */ (0, Q.jsx)(Fa, {
+				children: [/* @__PURE__ */ (0, Q.jsx)(Oa, {
 					icon: "roof",
 					title: "Roof",
 					description: "Set roof direction and colors."
-				}), /* @__PURE__ */ (0, Q.jsx)(La, {
+				}), /* @__PURE__ */ (0, Q.jsx)(ka, {
 					value: r,
 					onChange: n
 				})]
@@ -5374,195 +5345,19 @@ function za({ inert: e, planImportControls: t, onRoofChange: n, roof: r, northCo
 			a,
 			/* @__PURE__ */ (0, Q.jsxs)("details", {
 				className: "construction-inspector__floor-disclosure",
-				children: [/* @__PURE__ */ (0, Q.jsx)(Fa, {
+				children: [/* @__PURE__ */ (0, Q.jsx)(Oa, {
 					icon: "measure",
 					title: "Scale & heights",
 					description: "Set plan scale and wall and ceiling heights."
-				}), /* @__PURE__ */ (0, Q.jsx)(Ra, { editor: s })]
+				}), /* @__PURE__ */ (0, Q.jsx)(Aa, { editor: s })]
 			}),
 			o
 		]
 	});
 }
 //#endregion
-//#region apps/web/src/editor-preview/construct/PoolProperties.tsx
-function Ba({ pool: e, editor: t }) {
-	let n = t.draft.coordinates.metersPerPlanUnit, r = e.polygon.reduce((t, r, i) => {
-		let a = e.polygon[(i + 1) % e.polygon.length];
-		return t + Math.hypot(r[0] - a[0], r[1] - a[1]) * n;
-	}, 0);
-	return /* @__PURE__ */ (0, Q.jsxs)("div", {
-		className: "construction-inspector__selection",
-		children: [
-			/* @__PURE__ */ (0, Q.jsx)("header", { children: /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("small", { children: "Selected pool" }), /* @__PURE__ */ (0, Q.jsx)("strong", { children: "Pool outline" })] }) }),
-			/* @__PURE__ */ (0, Q.jsxs)("dl", {
-				className: "construction-inspector__wall-facts construction-inspector__pool-facts",
-				children: [/* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Area" }), /* @__PURE__ */ (0, Q.jsxs)("dd", { children: [(Math.abs(Ne(e.polygon)) * n ** 2).toFixed(1), " m²"] })] }), /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Perimeter" }), /* @__PURE__ */ (0, Q.jsxs)("dd", { children: [r.toFixed(2), " m"] })] })]
-			}),
-			/* @__PURE__ */ (0, Q.jsx)("p", { children: "Drag the pool to move it, or drag a corner to reshape it." }),
-			e.polygon.map((n, r) => /* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [/* @__PURE__ */ (0, Q.jsxs)("legend", { children: [
-				"Corner ",
-				r + 1,
-				" · plan units"
-			] }), [0, 1].map((i) => /* @__PURE__ */ (0, Q.jsxs)("label", { children: [i === 0 ? "X" : "Y", /* @__PURE__ */ (0, Q.jsx)(wr, {
-				label: `Pool corner ${r + 1} ${i === 0 ? "X" : "Y"}`,
-				step: .1,
-				value: Number(n[i].toPrecision(15)),
-				onCommit: (n) => t.updatePool(e.id, _t(e.polygon, (e, t) => t === r ? i === 0 ? [n, e[1]] : [e[0], n] : e))
-			})] }, i))] }, r)),
-			/* @__PURE__ */ (0, Q.jsx)($, {
-				variant: "text",
-				type: "button",
-				onClick: t.deleteSelected,
-				children: "Delete pool"
-			})
-		]
-	});
-}
-//#endregion
-//#region apps/web/src/editor-preview/construct/WallColorField.tsx
-function Va({ label: e, inputLabel: t = `${e} color`, value: n, overridden: r, onCommit: i, onReset: a, floorId: o, wallId: s, sides: c }) {
-	let { setHighlight: l } = qn();
-	return /* @__PURE__ */ (0, Q.jsxs)("div", {
-		onPointerEnter: () => l({
-			floorId: o,
-			wallId: s,
-			sides: c
-		}),
-		onPointerLeave: (e) => {
-			e.currentTarget.contains(e.currentTarget.ownerDocument.activeElement) || l(null);
-		},
-		onFocus: () => l({
-			floorId: o,
-			wallId: s,
-			sides: c
-		}),
-		onBlur: (e) => {
-			e.currentTarget.contains(e.relatedTarget) || l(null);
-		},
-		children: [/* @__PURE__ */ (0, Q.jsxs)("label", { children: [e, /* @__PURE__ */ (0, Q.jsx)(Ia, {
-			label: t,
-			value: n,
-			onCommit: i
-		})] }), r && /* @__PURE__ */ (0, Q.jsx)($, {
-			type: "button",
-			variant: "text",
-			"aria-label": `Reset ${e.toLowerCase()} color`,
-			onClick: a,
-			children: "Reset"
-		})]
-	});
-}
-//#endregion
-//#region apps/web/src/editor-preview/construct/WallFinishFields.tsx
-function Ha({ editor: e, wall: t, isExterior: n }) {
-	let { palette: r, setHighlight: i } = qn(), [a, o] = (0, Z.useState)(!1);
-	(0, Z.useEffect)(() => () => i(null), [i]);
-	let { exteriorSide: s, interiorSide: c, roomLabel: l } = ni(t, e.previewFloor), u = t.faceColors?.left ?? r.interior, d = t.faceColors?.right ?? r.interior, f = a || u !== d, p = e.updateSelectedWallMetadata, m = {
-		floorId: e.previewFloor.id,
-		wallId: t.id
-	}, h = (e, n, i) => /* @__PURE__ */ (0, Q.jsx)(Va, {
-		...m,
-		label: n,
-		...i ? { inputLabel: i } : {},
-		sides: [e],
-		value: t.faceColors?.[e] ?? r.interior,
-		overridden: t.faceColors?.[e] !== void 0,
-		onCommit: (n) => p({ faceColors: {
-			...t.faceColors,
-			[e]: n
-		} }),
-		onReset: () => p({ faceColors: ri(t.faceColors, e) })
-	}, e), g = t.edgeColor !== void 0;
-	return /* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [
-		/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Finish" }),
-		n ? /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [/* @__PURE__ */ (0, Q.jsx)(Va, {
-			...m,
-			label: "Exterior",
-			inputLabel: "Wall exterior color",
-			sides: [s],
-			value: t.faceColors?.[s] ?? t.exteriorColor ?? r.exterior,
-			overridden: t.exteriorColor !== void 0 || t.faceColors?.[s] !== void 0,
-			onCommit: (n) => {
-				e.setExteriorWallColor(n), p({
-					exteriorColor: n,
-					faceColors: ri(t.faceColors, s)
-				});
-			},
-			onReset: () => p({
-				exteriorColor: void 0,
-				faceColors: ri(t.faceColors, s)
-			})
-		}), h(c, "Interior", "Wall interior color")] }) : /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [
-			!f && /* @__PURE__ */ (0, Q.jsx)(Va, {
-				...m,
-				label: "Wall",
-				inputLabel: "Wall color",
-				sides: ["left", "right"],
-				value: u,
-				overridden: t.faceColors !== void 0,
-				onCommit: (e) => p({ faceColors: {
-					left: e,
-					right: e
-				} }),
-				onReset: () => p({ faceColors: void 0 })
-			}),
-			/* @__PURE__ */ (0, Q.jsxs)("label", {
-				className: "construction-inspector__check",
-				children: [/* @__PURE__ */ (0, Q.jsx)("input", {
-					type: "checkbox",
-					checked: f,
-					onChange: (e) => {
-						o(e.target.checked), e.target.checked || p({ faceColors: {
-							left: u,
-							right: u
-						} });
-					}
-				}), "Different colors on each side"]
-			}),
-			f && /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [h("left", l("left")), h("right", l("right"))] })
-		] }),
-		/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Edge color", /* @__PURE__ */ (0, Q.jsxs)("select", {
-			"aria-label": "Wall edge color mode",
-			value: g ? "custom" : "auto",
-			onChange: (i) => e.updateSelectedWallMetadata({ edgeColor: i.target.value === "auto" ? void 0 : t.faceColors?.left && t.faceColors.left === t.faceColors.right ? t.faceColors.left : n ? t.exteriorColor ?? r.interior : r.interior }),
-			children: [/* @__PURE__ */ (0, Q.jsx)("option", {
-				value: "auto",
-				children: "Auto"
-			}), /* @__PURE__ */ (0, Q.jsx)("option", {
-				value: "custom",
-				children: "Custom"
-			})]
-		})] }),
-		g && /* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Color", /* @__PURE__ */ (0, Q.jsx)(Ia, {
-			label: "Wall edge color",
-			value: t.edgeColor,
-			onCommit: (t) => e.updateSelectedWallMetadata({ edgeColor: t })
-		})] })
-	] });
-}
-function Ua(e) {
-	return /* @__PURE__ */ (0, Q.jsx)(Ha, { ...e }, `${e.editor.previewFloor.id}:${e.wall.id}`);
-}
-//#endregion
 //#region apps/web/src/editor-preview/construct/ConstructionInspector.tsx
-function Wa({ inert: e, referencePlanControls: t, planImportControls: n, tutorialControls: r, walkStartControls: i, northControls: a, roof: o, onRoofChange: s, editor: c, floorPainting: l }) {
-	let u = c.selection?.kind === "wall" ? c.selection.id : null, d = c.selection?.kind === "pool" ? c.selection.id : null, f = c.selection?.kind === "room" ? c.selection.id : null, p = c.selection?.kind === "floor-zone" ? c.selection.id : null, m = u ? c.draft.walls.find((e) => e.id === u) : void 0, h = d ? c.draft.pools?.find((e) => e.id === d) : void 0, g = f ? c.previewFloor.rooms.find((e) => e.id === f) : void 0, _ = g ? c.draft.rooms.find((e) => e.id === g.id) : void 0, v = p ? [...c.draft.groundZones ?? [], ...c.draft.rooms.flatMap((e) => e.floorZones ?? [])].find((e) => e.id === p) : void 0, y = g ? c.draft.rooms.filter((e) => Kt(e.anchor, g.polygon)) : [], b = (0, Z.useMemo)(() => g ? de(g, c.previewFloor) : 0, [g, c.previewFloor]), x = _?.ceilingHeightMeters ?? c.draft.defaultCeilingHeightMeters, S = m ? c.previewFloor.walls.find((e) => e.id === m.id) : void 0, C = m && (S?.classification === "exterior" || c.wallRuns.some((e) => e.sourceWallId === m.id && e.classification === "exterior")), w = m ? qr(m, c.previewFloor.coordinates) : void 0, T = m?.heightMeters ?? c.draft.defaultWallHeightMeters, E = m?.thicknessMeters ?? S?.thicknessMeters ?? c.draft.exteriorWallThicknessMeters, D = c.selection?.kind === "outdoor-platform" ? c.selection.id : void 0, O = c.tool === "select" && D ? c.draft.outdoorPlatforms?.find((e) => e.id === D) : void 0, k = c.selection?.kind === "multiple", A = (0, Z.useMemo)(() => {
-		let e = {
-			"outdoor-platform": 0,
-			hedge: 0,
-			wall: 0,
-			opening: 0,
-			room: 0,
-			pool: 0,
-			"floor-zone": 0
-		}, t = /* @__PURE__ */ new Set();
-		for (let n of c.deletionTargets ?? []) {
-			let r = `${n.kind}:${n.id}`;
-			t.has(r) || e[n.kind]++, t.add(r);
-		}
-		return e;
-	}, [c.deletionTargets]), j = Object.values(A).reduce((e, t) => e + t, 0);
+function Ma({ inert: e, referencePlanControls: t, planImportControls: n, tutorialControls: r, walkStartControls: i, northControls: a, roof: o, onRoofChange: s, editor: c, floorPainting: l }) {
 	return /* @__PURE__ */ (0, Q.jsxs)("section", {
 		className: "construction-inspector",
 		"aria-label": "Construction inspector",
@@ -5571,28 +5366,32 @@ function Wa({ inert: e, referencePlanControls: t, planImportControls: n, tutoria
 				className: "construction-inspector__context",
 				inert: e,
 				children: [
-					/* @__PURE__ */ (0, Q.jsx)(Pa, { editor: c }),
-					(c.tool === "floor" || c.tool === "platform") && l && /* @__PURE__ */ (0, Q.jsx)(ja, {
+					c.tool === "select" && /* @__PURE__ */ (0, Q.jsx)("p", {
+						className: "construction-inspector__tool-hint",
+						role: "status",
+						children: "Hold Shift and drag to select several objects. Delete or Backspace removes the selection."
+					}),
+					c.tool === "hedge" && /* @__PURE__ */ (0, Q.jsx)(Hr, {
+						editor: c,
+						editingSelection: !1
+					}),
+					(c.tool === "floor" || c.tool === "platform") && l && /* @__PURE__ */ (0, Q.jsx)(Da, {
 						editor: c,
 						painting: l
-					}),
-					O && /* @__PURE__ */ (0, Q.jsx)(Oa, {
-						platform: O,
-						editor: c
 					}),
 					c.tool === "wall" && /* @__PURE__ */ (0, Q.jsxs)("div", {
 						className: "construction-inspector__selection",
 						children: [
-							/* @__PURE__ */ (0, Q.jsx)("header", { children: /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("small", { children: "Wall tool" }), /* @__PURE__ */ (0, Q.jsx)("strong", { children: "Draw walls" })] }) }),
+							/* @__PURE__ */ (0, Q.jsx)("header", { children: /* @__PURE__ */ (0, Q.jsx)("div", { children: /* @__PURE__ */ (0, Q.jsx)("strong", { children: "Draw walls" }) }) }),
 							/* @__PURE__ */ (0, Q.jsx)("p", {
 								className: "construction-inspector__tool-hint",
 								children: "Click and drag a wall segment. Continue from its endpoint to draw a connected wall."
 							}),
-							/* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Finish" }), /* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Exterior", /* @__PURE__ */ (0, Q.jsx)(Ia, {
+							/* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Finish" }), /* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Exterior", /* @__PURE__ */ (0, Q.jsx)(Er, {
 								label: "New wall exterior color",
 								value: c.exteriorWallColor,
 								onCommit: (e) => {
-									c.setExteriorWallColor(e), m && c.updateSelectedWallMetadata({ exteriorColor: e });
+									c.setExteriorWallColor(e), c.selection?.kind === "wall" && c.updateSelectedWallMetadata({ exteriorColor: e });
 								}
 							})] })] })
 						]
@@ -5600,16 +5399,16 @@ function Wa({ inert: e, referencePlanControls: t, planImportControls: n, tutoria
 					c.tool === "door" && /* @__PURE__ */ (0, Q.jsxs)("div", {
 						className: "construction-inspector__selection",
 						children: [
-							/* @__PURE__ */ (0, Q.jsx)("header", { children: /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("small", { children: "Door tool" }), /* @__PURE__ */ (0, Q.jsx)("strong", { children: "Place a door" })] }) }),
+							/* @__PURE__ */ (0, Q.jsx)("header", { children: /* @__PURE__ */ (0, Q.jsx)("div", { children: /* @__PURE__ */ (0, Q.jsx)("strong", { children: "Place a door" }) }) }),
 							/* @__PURE__ */ (0, Q.jsx)("p", {
 								className: "construction-inspector__tool-hint",
 								children: "Choose a door type, then click a wall."
 							}),
-							/* @__PURE__ */ (0, Q.jsx)(Pr, {
+							/* @__PURE__ */ (0, Q.jsx)(xr, {
 								value: c.doorConfiguration,
 								onChange: c.setDoorConfiguration
 							}),
-							/* @__PURE__ */ (0, Q.jsx)(Fr, {
+							/* @__PURE__ */ (0, Q.jsx)(Sr, {
 								value: c.doorConfiguration,
 								onChange: c.setDoorConfiguration
 							}),
@@ -5623,10 +5422,10 @@ function Wa({ inert: e, referencePlanControls: t, planImportControls: n, tutoria
 						className: "construction-inspector__selection",
 						role: "status",
 						children: [
-							/* @__PURE__ */ (0, Q.jsx)("header", { children: /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("small", { children: "Niche tool" }), /* @__PURE__ */ (0, Q.jsx)("strong", { children: "Place a niche" })] }) }),
+							/* @__PURE__ */ (0, Q.jsx)("header", { children: /* @__PURE__ */ (0, Q.jsx)("div", { children: /* @__PURE__ */ (0, Q.jsx)("strong", { children: "Place a niche" }) }) }),
 							/* @__PURE__ */ (0, Q.jsx)("p", {
 								className: "construction-inspector__tool-hint",
-								children: "Click a wall face to place a recess. Drag it along the wall and use its handles to change the width. Open Details to adjust height, depth and height from floor."
+								children: "Click a wall face to place a recess. Drag it along the wall and use its handles to change the width. Properties controls its height, depth and height from floor."
 							}),
 							c.openingError && /* @__PURE__ */ (0, Q.jsx)("p", {
 								role: "alert",
@@ -5638,7 +5437,7 @@ function Wa({ inert: e, referencePlanControls: t, planImportControls: n, tutoria
 						className: "construction-inspector__selection",
 						role: "status",
 						children: [
-							/* @__PURE__ */ (0, Q.jsx)("header", { children: /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("small", { children: "Outdoor pool" }), /* @__PURE__ */ (0, Q.jsx)("strong", { children: "Close the outline" })] }) }),
+							/* @__PURE__ */ (0, Q.jsx)("header", { children: /* @__PURE__ */ (0, Q.jsx)("div", { children: /* @__PURE__ */ (0, Q.jsx)("strong", { children: "Close the outline" }) }) }),
 							/* @__PURE__ */ (0, Q.jsx)("p", {
 								className: "construction-inspector__tool-hint",
 								children: "Click to add corners, then return to the first corner to close the pool. Undo removes the last corner. Escape cancels."
@@ -5654,181 +5453,11 @@ function Wa({ inert: e, referencePlanControls: t, planImportControls: n, tutoria
 								children: "Cancel pool"
 							})
 						]
-					}),
-					c.tool === "select" && !c.selection && /* @__PURE__ */ (0, Q.jsxs)("div", {
-						className: "construction-inspector__selection construction-inspector__selection-hint",
-						role: "status",
-						children: [/* @__PURE__ */ (0, Q.jsx)("header", { children: /* @__PURE__ */ (0, Q.jsx)("h3", { children: "Edit the plan" }) }), /* @__PURE__ */ (0, Q.jsx)("p", {
-							className: "construction-inspector__tool-hint",
-							children: "Select an element to see its properties. Hold Shift and drag to select several; Delete or Backspace removes them."
-						})]
-					}),
-					k && /* @__PURE__ */ (0, Q.jsxs)("div", {
-						className: "construction-inspector__selection construction-inspector__bulk-selection",
-						children: [
-							/* @__PURE__ */ (0, Q.jsx)("header", { children: /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("small", { children: "Multiple selection" }), /* @__PURE__ */ (0, Q.jsxs)("strong", { children: [j, " elements selected"] })] }) }),
-							/* @__PURE__ */ (0, Q.jsx)("p", { children: "Whole source walls and their attached openings are included. Shift-drag again to replace this selection." }),
-							/* @__PURE__ */ (0, Q.jsxs)("dl", {
-								className: "construction-inspector__bulk-facts",
-								"aria-label": "Elements selected for deletion",
-								children: [
-									A.room > 0 && /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Rooms" }), /* @__PURE__ */ (0, Q.jsx)("dd", { children: A.room })] }),
-									A.wall > 0 && /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Walls" }), /* @__PURE__ */ (0, Q.jsx)("dd", { children: A.wall })] }),
-									A.opening > 0 && /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Openings" }), /* @__PURE__ */ (0, Q.jsx)("dd", { children: A.opening })] }),
-									A.hedge > 0 && /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Boundaries" }), /* @__PURE__ */ (0, Q.jsx)("dd", { children: A.hedge })] }),
-									A.pool > 0 && /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Pools" }), /* @__PURE__ */ (0, Q.jsx)("dd", { children: A.pool })] }),
-									A["floor-zone"] > 0 && /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Floor areas" }), /* @__PURE__ */ (0, Q.jsx)("dd", { children: A["floor-zone"] })] })
-								]
-							}),
-							/* @__PURE__ */ (0, Q.jsx)($, {
-								variant: "text",
-								type: "button",
-								onClick: c.deleteSelected,
-								children: "Delete selection"
-							})
-						]
-					}),
-					h && /* @__PURE__ */ (0, Q.jsx)(Ba, {
-						pool: h,
-						editor: c
-					}),
-					v && /* @__PURE__ */ (0, Q.jsxs)("div", {
-						className: "construction-inspector__selection",
-						children: [
-							/* @__PURE__ */ (0, Q.jsx)("header", { children: /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("small", { children: "Selected floor area" }), /* @__PURE__ */ (0, Q.jsx)("strong", { children: "Floor finish" })] }) }),
-							/* @__PURE__ */ (0, Q.jsx)(Ca, {
-								value: v.finish,
-								onChange: (e) => c.updateFloorZone(v.id, { finish: e })
-							}),
-							/* @__PURE__ */ (0, Q.jsx)($, {
-								variant: "text",
-								type: "button",
-								onClick: c.deleteSelected,
-								children: "Delete floor area"
-							})
-						]
-					}),
-					m && /* @__PURE__ */ (0, Q.jsxs)("div", {
-						className: "construction-inspector__selection",
-						children: [
-							/* @__PURE__ */ (0, Q.jsx)("header", { children: /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("small", { children: "Selected wall" }), /* @__PURE__ */ (0, Q.jsx)("strong", { children: "Wall properties" })] }) }),
-							/* @__PURE__ */ (0, Q.jsxs)("dl", {
-								className: "construction-inspector__wall-facts",
-								children: [
-									/* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Length" }), /* @__PURE__ */ (0, Q.jsx)("dd", { children: w?.label })] }),
-									/* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Direction" }), /* @__PURE__ */ (0, Q.jsxs)("dd", { children: [w?.directionDegrees.toFixed(1), "°"] })] }),
-									/* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Type" }), /* @__PURE__ */ (0, Q.jsx)("dd", { children: S?.classification ?? "Pending" })] })
-								]
-							}),
-							/* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [
-								/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Dimensions · m" }),
-								/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Thickness", /* @__PURE__ */ (0, Q.jsx)(wr, {
-									label: "Wall thickness",
-									min: .04,
-									step: .01,
-									value: E,
-									onCommit: (e) => c.updateSelectedWallMetadata({ thicknessMeters: e })
-								})] }),
-								/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Height", /* @__PURE__ */ (0, Q.jsx)(wr, {
-									label: "Wall height",
-									min: .3,
-									step: .05,
-									value: T,
-									onCommit: (e) => c.updateSelectedWallMetadata({ heightMeters: e })
-								})] })
-							] }),
-							/* @__PURE__ */ (0, Q.jsx)(Ua, {
-								editor: c,
-								wall: m,
-								isExterior: !!C
-							}),
-							/* @__PURE__ */ (0, Q.jsx)($, {
-								variant: "text",
-								type: "button",
-								onClick: c.deleteSelected,
-								children: "Delete wall"
-							})
-						]
-					}),
-					g && /* @__PURE__ */ (0, Q.jsxs)("div", {
-						className: "construction-inspector__selection",
-						children: [
-							/* @__PURE__ */ (0, Q.jsxs)("header", { children: [/* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("small", { children: "Selected room" }), /* @__PURE__ */ (0, Q.jsx)("strong", { children: g.name || "Unnamed room" })] }), /* @__PURE__ */ (0, Q.jsxs)("span", {
-								title: "Interior floor area",
-								"aria-label": `Interior floor area: ${b.toFixed(1)} square meters`,
-								children: [b.toFixed(1), " m²"]
-							})] }),
-							y.length > 1 && /* @__PURE__ */ (0, Q.jsxs)("div", {
-								className: "construction-inspector__merge",
-								role: "alert",
-								children: [
-									/* @__PURE__ */ (0, Q.jsx)("strong", { children: "Choose the room to keep" }),
-									/* @__PURE__ */ (0, Q.jsx)("p", { children: "This wall change joined existing rooms. Keep one identity before continuing." }),
-									/* @__PURE__ */ (0, Q.jsx)("div", { children: y.map((e) => /* @__PURE__ */ (0, Q.jsxs)($, {
-										variant: "secondary",
-										type: "button",
-										onClick: () => c.resolveRoomMerge(e.id),
-										children: ["Keep ", e.name || e.id]
-									}, e.id)) })
-								]
-							}),
-							/* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [
-								/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Room" }),
-								/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Name", /* @__PURE__ */ (0, Q.jsx)(Tr, {
-									label: "Room name",
-									value: _?.name ?? g.name,
-									placeholder: "e.g. Living room",
-									onCommit: (e) => c.updateSelectedRoom({ name: e })
-								})] }),
-								/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Accent", /* @__PURE__ */ (0, Q.jsx)(Ia, {
-									label: "Room accent color",
-									value: _?.accent ?? g.accent,
-									onCommit: (e) => c.updateSelectedRoom({ accent: e })
-								})] })
-							] }),
-							/* @__PURE__ */ (0, Q.jsxs)("fieldset", {
-								className: "construction-inspector__room-surfaces",
-								children: [
-									/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Surfaces" }),
-									/* @__PURE__ */ (0, Q.jsxs)("div", {
-										className: "construction-inspector__surface-summary",
-										children: [/* @__PURE__ */ (0, Q.jsx)("span", { children: "Floor" }), /* @__PURE__ */ (0, Q.jsx)("strong", { children: (() => {
-											let e = jt(g);
-											return e.kind === "solid" ? "Solid color" : We(e.preset).label;
-										})() })]
-									}),
-									/* @__PURE__ */ (0, Q.jsx)($, {
-										variant: "secondary",
-										type: "button",
-										onClick: () => l ? l.onTargetChange("room") : c.setFloorPaintTarget("room"),
-										children: "Paint floor"
-									}),
-									/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Ceiling", /* @__PURE__ */ (0, Q.jsx)(wr, {
-										label: "Room ceiling height",
-										min: .3,
-										step: .05,
-										value: x,
-										onCommit: (e) => c.updateSelectedRoom({ ceilingHeightMeters: e })
-									})] })
-								]
-							}),
-							c.deletionTargets?.some((e) => e.kind === "room" && e.id === g.id) === !1 && /* @__PURE__ */ (0, Q.jsx)("p", {
-								role: "status",
-								children: "All enclosing walls are shared. Edit the walls to remove this room."
-							}),
-							/* @__PURE__ */ (0, Q.jsx)($, {
-								variant: "text",
-								type: "button",
-								disabled: c.deletionTargets?.some((e) => e.kind === "room" && e.id === g.id) === !1,
-								onClick: c.deleteSelected,
-								children: "Delete room"
-							})
-						]
 					})
 				]
 			}),
 			t,
-			/* @__PURE__ */ (0, Q.jsx)(za, {
+			/* @__PURE__ */ (0, Q.jsx)(ja, {
 				planImportControls: n,
 				roof: o,
 				northControls: a,
@@ -5843,9 +5472,9 @@ function Wa({ inert: e, referencePlanControls: t, planImportControls: n, tutoria
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/ConstructionMeasureOverlay.tsx
-function Ga({ planMode: e = !1, measurement: t, preview: n = !1, showLabel: r = !0, onCopy: i }) {
-	let a = e ? $r : dt;
-	return !t || !Mi(t) ? null : /* @__PURE__ */ (0, Q.jsxs)("group", {
+function Na({ planMode: e = !1, measurement: t, preview: n = !1, showLabel: r = !0, onCopy: i }) {
+	let a = e ? ii : ut;
+	return !t || !Fi(t) ? null : /* @__PURE__ */ (0, Q.jsxs)("group", {
 		name: "construction-measure-guide",
 		position: [
 			t.world.center[0],
@@ -5867,7 +5496,7 @@ function Ga({ planMode: e = !1, measurement: t, preview: n = !1, showLabel: r = 
 			/* @__PURE__ */ (0, Q.jsxs)("mesh", {
 				name: "construction-measure-guide-line",
 				renderOrder: 29,
-				raycast: Qr,
+				raycast: ri,
 				children: [/* @__PURE__ */ (0, Q.jsx)("boxGeometry", { args: [
 					t.world.lengthMeters,
 					.018,
@@ -5880,7 +5509,7 @@ function Ga({ planMode: e = !1, measurement: t, preview: n = !1, showLabel: r = 
 					depthWrite: !1
 				})]
 			}),
-			[-1, 1].map((n) => /* @__PURE__ */ (0, Q.jsx)(xi, {
+			[-1, 1].map((n) => /* @__PURE__ */ (0, Q.jsx)(wi, {
 				position: [
 					n * t.world.lengthMeters / 2,
 					0,
@@ -5888,7 +5517,7 @@ function Ga({ planMode: e = !1, measurement: t, preview: n = !1, showLabel: r = 
 				],
 				planMode: e
 			}, n)),
-			r && /* @__PURE__ */ (0, Q.jsx)(_, {
+			r && /* @__PURE__ */ (0, Q.jsx)(v, {
 				position: [
 					0,
 					.14,
@@ -5897,7 +5526,7 @@ function Ga({ planMode: e = !1, measurement: t, preview: n = !1, showLabel: r = 
 				center: !0,
 				zIndexRange: [12, 0],
 				pointerEvents: i ? "auto" : "none",
-				children: /* @__PURE__ */ (0, Q.jsx)(_i, {
+				children: /* @__PURE__ */ (0, Q.jsx)(bi, {
 					label: t.label,
 					copyText: t.copyText,
 					onCopy: i
@@ -5908,7 +5537,7 @@ function Ga({ planMode: e = !1, measurement: t, preview: n = !1, showLabel: r = 
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/ConstructionValidationMarker.tsx
-function Ka({ issues: e, number: t, active: n, onActivate: r, onDismiss: i }) {
+function Pa({ issues: e, number: t, active: n, onActivate: r, onDismiss: i }) {
 	let a = ze(), o = (0, Z.useId)(), s = (0, Z.useRef)(null), c = (0, Z.useRef)(null), l = (0, Z.useRef)(void 0), [u, d] = (0, Z.useState)(!1), [f, p] = (0, Z.useState)({
 		left: 0,
 		top: 0,
@@ -5976,7 +5605,7 @@ function Ka({ issues: e, number: t, active: n, onActivate: r, onDismiss: i }) {
 			},
 			children: /* @__PURE__ */ (0, Q.jsx)(X, { name: "close" })
 		})]
-	}), u && (0, pr.createPortal)(/* @__PURE__ */ (0, Q.jsxs)("div", {
+	}), u && (0, sr.createPortal)(/* @__PURE__ */ (0, Q.jsxs)("div", {
 		ref: c,
 		id: o,
 		role: "tooltip",
@@ -5990,47 +5619,47 @@ function Ka({ issues: e, number: t, active: n, onActivate: r, onDismiss: i }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/validation-visuals.ts
-var qa = (e, t) => e.includes(`"${t}"`) || e.includes(`“${t}”`), Ja = (e) => `${e.kind}:${e.id}`, Ya = (e) => `${e.code}:${e.path}:${e.message}`, Xa = (e, t, n) => {
+var Fa = (e, t) => e.includes(`"${t}"`) || e.includes(`“${t}”`), Ia = (e) => `${e.kind}:${e.id}`, La = (e) => `${e.code}:${e.path}:${e.message}`, Ra = (e, t, n) => {
 	let r = e.target ? [e.target] : [], i = (e) => {
-		r.some((t) => Ja(t) === Ja(e)) || r.push(e);
+		r.some((t) => Ia(t) === Ia(e)) || r.push(e);
 	};
 	t.walls.forEach((t) => {
-		qa(e.message, t.id) && i({
+		Fa(e.message, t.id) && i({
 			kind: "wall",
 			id: t.id
 		}), t.niches?.forEach((t) => {
-			qa(e.message, t.id) && i({
+			Fa(e.message, t.id) && i({
 				kind: "niche",
 				id: t.id
 			});
 		});
 	}), t.openings.forEach((t) => {
-		qa(e.message, t.id) && i({
+		Fa(e.message, t.id) && i({
 			kind: "opening",
 			id: t.id
 		});
 	}), t.rooms.forEach((t) => {
-		qa(e.message, t.id) && i({
+		Fa(e.message, t.id) && i({
 			kind: "room",
 			id: t.id
 		}), t.floorZones?.forEach((t) => {
-			qa(e.message, t.id) && i({
+			Fa(e.message, t.id) && i({
 				kind: "floor-zone",
 				id: t.id
 			});
 		});
 	}), t.groundZones?.forEach((t) => {
-		qa(e.message, t.id) && i({
+		Fa(e.message, t.id) && i({
 			kind: "floor-zone",
 			id: t.id
 		});
 	}), t.pools?.forEach((t) => {
-		qa(e.message, t.id) && i({
+		Fa(e.message, t.id) && i({
 			kind: "pool",
 			id: t.id
 		});
 	}), n.forEach((t) => {
-		qa(e.message, t.id) && i({
+		Fa(e.message, t.id) && i({
 			kind: "scene-item",
 			id: t.id
 		});
@@ -6062,27 +5691,27 @@ var qa = (e, t) => e.includes(`"${t}"`) || e.includes(`“${t}”`), Ja = (e) =>
 		}
 	}
 	return r;
-}, Za = (e) => {
+}, za = (e) => {
 	if (e.length === 0) return [0, 0];
 	let t = e.reduce((e, t) => [e[0] + t[0], e[1] + t[1]], [0, 0]);
 	return [t[0] / e.length, t[1] / e.length];
-}, Qa = (e, t, n, r) => {
+}, Ba = (e, t, n, r) => {
 	let i = t[0] - e[0], a = t[1] - e[1], o = r[0] - n[0], s = r[1] - n[1], c = i * s - a * o;
 	if (Math.abs(c) <= 1e-9) return null;
 	let l = n[0] - e[0], u = n[1] - e[1], d = (l * s - u * o) / c, f = (l * a - u * i) / c;
 	return d <= 1e-7 || d >= 1 - 1e-7 || f <= 1e-7 || f >= 1 - 1e-7 ? null : [e[0] + i * d, e[1] + a * d];
-}, $a = (e) => {
+}, Va = (e) => {
 	for (let t = 0; t < e.length; t += 1) {
 		let n = (t + 1) % e.length;
 		for (let r = t + 1; r < e.length; r += 1) {
 			let i = (r + 1) % e.length;
 			if (t === r || n === r || i === t) continue;
-			let a = Qa(e[t], e[n], e[r], e[i]);
+			let a = Ba(e[t], e[n], e[r], e[i]);
 			if (a) return a;
 		}
 	}
 	return null;
-}, eo = (e, t, n) => {
+}, Ha = (e, t, n) => {
 	if (e.kind === "wall") {
 		let n = t.walls.find((t) => t.id === e.id);
 		return n ? [(n.from[0] + n.to[0]) / 2, (n.from[1] + n.to[1]) / 2] : null;
@@ -6098,23 +5727,23 @@ var qa = (e, t) => e.includes(`"${t}"`) || e.includes(`“${t}”`), Ja = (e) =>
 	}
 	if (e.kind === "room") {
 		let n = t.rooms.find((t) => t.id === e.id);
-		return n ? Za(n.polygon) : null;
+		return n ? za(n.polygon) : null;
 	}
 	if (e.kind === "floor-zone") {
 		let n = [...t.groundZones ?? [], ...t.rooms.flatMap((e) => e.floorZones ?? [])].find((t) => t.id === e.id);
-		return n ? Za(n.polygon) : null;
+		return n ? za(n.polygon) : null;
 	}
 	if (e.kind === "outdoor-platform") {
 		let n = t.outdoorPlatforms?.find((t) => t.id === e.id);
-		return n ? Za(n.polygon) : null;
+		return n ? za(n.polygon) : null;
 	}
 	if (e.kind === "pool") {
 		let n = t.pools?.find((t) => t.id === e.id);
-		return n ? Za(n.polygon) : null;
+		return n ? za(n.polygon) : null;
 	}
 	if (e.kind === "ceiling") {
 		let n = t.ceilings?.find((t) => t.id === e.id), r = n && t.rooms.find((e) => n.roomIds.includes(e.id));
-		return r ? Za(r.polygon) : null;
+		return r ? za(r.polygon) : null;
 	}
 	let r = n.find((t) => t.id === e.id);
 	if (!r) return null;
@@ -6126,20 +5755,20 @@ var qa = (e, t) => e.includes(`"${t}"`) || e.includes(`“${t}”`), Ja = (e) =>
 	if (o <= 1e-9) return a.from;
 	let s = i.offsetFromWallStartPlanUnits / o;
 	return [a.from[0] + (a.to[0] - a.from[0]) * s, a.from[1] + (a.to[1] - a.from[1]) * s];
-}, to = (e, t, n) => {
+}, Ua = (e, t, n) => {
 	if (e.code === "room.polygon-invalid" && e.target?.kind === "room") {
 		let n = t.rooms.find((t) => t.id === e.target?.id);
-		if (n) return $a(n.polygon) ?? Za(n.polygon);
+		if (n) return Va(n.polygon) ?? za(n.polygon);
 	}
-	let r = Xa(e, t, n)[0];
-	return r ? eo(r, t, n) : null;
+	let r = Ra(e, t, n)[0];
+	return r ? Ha(r, t, n) : null;
 };
 //#endregion
 //#region apps/web/src/editor-preview/construct/useValidationLabels.ts
-function no(e, t, n) {
+function Wa(e, t, n) {
 	let [r, i] = (0, Z.useState)(() => /* @__PURE__ */ new Set());
 	return (0, Z.useEffect)(() => {
-		let t = new Set(e.map(Ya));
+		let t = new Set(e.map(La));
 		i((e) => {
 			let n = [...e].filter((e) => t.has(e));
 			return n.length === e.size ? e : new Set(n);
@@ -6157,8 +5786,8 @@ function no(e, t, n) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/ConstructionValidationOverlay.tsx
-function ro({ planMode: e = !1, floor: t, sceneItems: n, issues: r, activeIssueKey: i, focusVersion: a = 0, showLabels: o = !0, onActivate: s }) {
-	let c = e ? $r : dt, { hiddenKeys: l, hide: u } = no(r, i, a), d = (0, Z.useMemo)(() => r.filter((e) => e.severity !== "warning" && (!e.floorId || e.floorId === t.id)), [r, t.id]), f = (0, Z.useMemo)(() => d.flatMap((e) => Xa(e, t, n).map((t) => ({
+function Ga({ planMode: e = !1, floor: t, sceneItems: n, issues: r, activeIssueKey: i, focusVersion: a = 0, showLabels: o = !0, onActivate: s }) {
+	let c = e ? ii : ut, { hiddenKeys: l, hide: u } = Wa(r, i, a), d = (0, Z.useMemo)(() => r.filter((e) => e.severity !== "warning" && (!e.floorId || e.floorId === t.id)), [r, t.id]), f = (0, Z.useMemo)(() => d.flatMap((e) => Ra(e, t, n).map((t) => ({
 		issue: e,
 		target: t
 	}))), [
@@ -6171,13 +5800,13 @@ function ro({ planMode: e = !1, floor: t, sceneItems: n, issues: r, activeIssueK
 			issue: e,
 			target: n,
 			edgeIndex: a,
-			transform: Kr(i, r.polygon[(a + 1) % r.polygon.length], t.coordinates)
+			transform: Xr(i, r.polygon[(a + 1) % r.polygon.length], t.coordinates)
 		})) : [];
 	}), [t, f]), m = (0, Z.useMemo)(() => {
 		let e = /* @__PURE__ */ new Map();
 		return d.forEach((r) => {
-			if (l.has(Ya(r))) return;
-			let i = to(r, t, n);
+			if (l.has(La(r))) return;
+			let i = Ua(r, t, n);
 			if (!i) return;
 			let a = `${i[0].toFixed(4)}:${i[1].toFixed(4)}`, o = e.get(a);
 			o ? o.issues.push(r) : e.set(a, {
@@ -6198,7 +5827,7 @@ function ro({ planMode: e = !1, floor: t, sceneItems: n, issues: r, activeIssueK
 				if (r.kind === "wall") {
 					let n = t.walls.find((e) => e.id === r.id);
 					if (!n) return null;
-					let a = Kr(n.from, n.to, t.coordinates), o = n.heightMeters ?? t.defaultWallHeightMeters;
+					let a = Xr(n.from, n.to, t.coordinates), o = n.heightMeters ?? t.defaultWallHeightMeters;
 					return /* @__PURE__ */ (0, Q.jsxs)("mesh", {
 						name: `validation-wall-${r.id}`,
 						position: [
@@ -6224,7 +5853,7 @@ function ro({ planMode: e = !1, floor: t, sceneItems: n, issues: r, activeIssueK
 							depthTest: !1,
 							depthWrite: !1
 						})]
-					}, `${Ya(e)}:${r.kind}:${r.id}`);
+					}, `${La(e)}:${r.kind}:${r.id}`);
 				}
 				if (r.kind === "opening" || r.kind === "niche") {
 					let i = r.kind === "niche" ? t.walls.find((e) => e.niches?.some((e) => e.id === r.id)) : void 0, a = i?.niches?.find((e) => e.id === r.id), o = a ? {
@@ -6232,9 +5861,9 @@ function ro({ planMode: e = !1, floor: t, sceneItems: n, issues: r, activeIssueK
 						openingHeightMeters: a.heightMeters,
 						sillHeightMeters: a.bottomMeters,
 						wallId: i.id
-					} : t.openings.find((e) => e.id === r.id), s = o && t.walls.find((e) => e.id === o.wallId), l = eo(r, t, n);
+					} : t.openings.find((e) => e.id === r.id), s = o && t.walls.find((e) => e.id === o.wallId), l = Ha(r, t, n);
 					if (!o || !s || !l) return null;
-					let [u, d] = Hr(l, t.coordinates), f = -Math.atan2(s.to[1] - s.from[1], s.to[0] - s.from[0]);
+					let [u, d] = Kr(l, t.coordinates), f = -Math.atan2(s.to[1] - s.from[1], s.to[0] - s.from[0]);
 					return /* @__PURE__ */ (0, Q.jsxs)("mesh", {
 						name: `validation-opening-${r.id}`,
 						position: [
@@ -6260,12 +5889,12 @@ function ro({ planMode: e = !1, floor: t, sceneItems: n, issues: r, activeIssueK
 							depthTest: !1,
 							depthWrite: !1
 						})]
-					}, `${Ya(e)}:${r.kind}:${r.id}`);
+					}, `${La(e)}:${r.kind}:${r.id}`);
 				}
 				if (r.kind === "junction") {
-					let i = eo(r, t, n);
+					let i = Ha(r, t, n);
 					if (!i) return null;
-					let [a, o] = Hr(i, t.coordinates);
+					let [a, o] = Kr(i, t.coordinates);
 					return /* @__PURE__ */ (0, Q.jsxs)("mesh", {
 						name: `validation-junction-${r.id}`,
 						position: [
@@ -6291,14 +5920,14 @@ function ro({ planMode: e = !1, floor: t, sceneItems: n, issues: r, activeIssueK
 							depthTest: !1,
 							depthWrite: !1
 						})]
-					}, `${Ya(e)}:${r.kind}:${r.id}`);
+					}, `${La(e)}:${r.kind}:${r.id}`);
 				}
 				if (r.kind === "scene-item") {
-					let i = n.find((e) => e.id === r.id), a = eo(r, t, n);
+					let i = n.find((e) => e.id === r.id), a = Ha(r, t, n);
 					if (!i || !a) return null;
-					let [o, s] = Hr(a, t.coordinates), l = 0, u = i.placement.kind === "ceiling" ? t.defaultCeilingHeightMeters - i.placement.dropMeters : i.placement.elevationMeters;
+					let [o, s] = Kr(a, t.coordinates), l = 0, u = i.placement.kind === "ceiling" ? t.defaultCeilingHeightMeters - i.placement.dropMeters : i.placement.elevationMeters;
 					try {
-						let e = Y(i.placement, t);
+						let e = Ne(i.placement, t);
 						l = e.rotationYRadians, u = e.position[1];
 					} catch {}
 					return /* @__PURE__ */ (0, Q.jsxs)("mesh", {
@@ -6326,7 +5955,7 @@ function ro({ planMode: e = !1, floor: t, sceneItems: n, issues: r, activeIssueK
 							depthTest: !1,
 							depthWrite: !1
 						})]
-					}, `${Ya(e)}:${r.kind}:${r.id}`);
+					}, `${La(e)}:${r.kind}:${r.id}`);
 				}
 				return null;
 			}),
@@ -6355,10 +5984,10 @@ function ro({ planMode: e = !1, floor: t, sceneItems: n, issues: r, activeIssueK
 					depthTest: !1,
 					depthWrite: !1
 				})]
-			}, `${Ya(e)}:${t.id}:${n}`)),
+			}, `${La(e)}:${t.id}:${n}`)),
 			o && m.map(({ point: e, issues: n }, r) => {
-				let [a, o] = Hr(e, t.coordinates), c = n[0], l = n.some((e) => Ya(e) === i);
-				return /* @__PURE__ */ (0, Q.jsx)(_, {
+				let [a, o] = Kr(e, t.coordinates), c = n[0], l = n.some((e) => La(e) === i);
+				return /* @__PURE__ */ (0, Q.jsx)(v, {
 					position: [
 						a,
 						.55,
@@ -6368,12 +5997,12 @@ function ro({ planMode: e = !1, floor: t, sceneItems: n, issues: r, activeIssueK
 					zIndexRange: [90, 70],
 					wrapperClass: "construction-validation-overlay-label",
 					style: { pointerEvents: "none" },
-					children: /* @__PURE__ */ (0, Q.jsx)(Ka, {
+					children: /* @__PURE__ */ (0, Q.jsx)(Pa, {
 						issues: n,
 						number: r + 1,
 						active: l,
 						onActivate: () => s(c),
-						onDismiss: () => u(n.map(Ya))
+						onDismiss: () => u(n.map(La))
 					})
 				}, `${a}:${o}`);
 			})
@@ -6382,7 +6011,7 @@ function ro({ planMode: e = !1, floor: t, sceneItems: n, issues: r, activeIssueK
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/contextual-validation.ts
-var io = {
+var Ka = {
 	walls: "wall",
 	openings: "opening",
 	rooms: "room",
@@ -6391,7 +6020,7 @@ var io = {
 	ceilings: "ceiling",
 	wallJunctions: "junction",
 	sceneItems: "scene-item"
-}, ao = {
+}, qa = {
 	"floor-zone.polygon": "Move a corner until the floor area is simple and has visible area.",
 	"floor-zone.outside-room": "Move or delete the floor area so it stays inside its room.",
 	"ground-zone.inside-footprint": "Move the outdoor area so it stays outside the building.",
@@ -6418,7 +6047,7 @@ var io = {
 	"wall-junction.opening-overlap": "Move or resize the opening away from this corner, or move the corner itself.",
 	"editor.ceiling-support-missing": "Move the item into a room or restore its ceiling support.",
 	"editor.ceiling-support-ambiguous": "Move the item away from the shared room boundary."
-}, oo = (e, t) => e === "sceneItems" ? t.sceneItems ?? [] : t.floor[e] ?? [], so = (e) => {
+}, Ja = (e, t) => e === "sceneItems" ? t.sceneItems ?? [] : t.floor[e] ?? [], Ya = (e) => {
 	let t = "walls|wallJunctions|openings|rooms|ceilings|pools|outdoorPlatforms|sceneItems", n = e.match(RegExp(`(?:^|\\.)(?<collection>${t})(?:\\[(?<bracket>[^\\]]+)\\]|\\.(?<dotted>[^.\\[]+))`));
 	if (n?.groups) return {
 		collection: n.groups.collection,
@@ -6429,7 +6058,7 @@ var io = {
 		collection: r.groups.collection,
 		reference: r.groups.reference
 	} : void 0;
-}, co = (e, t) => {
+}, Xa = (e, t) => {
 	let n = e.match(/(?:^|\.)walls\[(\d+)\]\.niches\[(\d+)\]/);
 	if (n) {
 		let e = t.floor.walls[Number(n[1])]?.niches?.[Number(n[2])];
@@ -6454,30 +6083,30 @@ var io = {
 			id: e.id
 		};
 	}
-	let a = so(e);
+	let a = Ya(e);
 	if (!a) return;
-	let o = oo(a.collection, t), s = /^(?:0|[1-9]\d*)$/.test(a.reference) ? Number(a.reference) : void 0, c = s === void 0 ? o.find((e) => e.id === a.reference) : o[s];
+	let o = Ja(a.collection, t), s = /^(?:0|[1-9]\d*)$/.test(a.reference) ? Number(a.reference) : void 0, c = s === void 0 ? o.find((e) => e.id === a.reference) : o[s];
 	if (c) return {
-		kind: io[a.collection],
+		kind: Ka[a.collection],
 		id: c.id
 	};
-}, lo = {
+}, Za = {
 	fatal: 0,
 	error: 1,
 	warning: 2
-}, uo = {
+}, Qa = {
 	topology: 0,
 	project: 1,
 	dependency: 2,
 	navigation: 3
-}, fo = (e) => [
+}, $a = (e) => [
 	e.code,
 	e.path,
 	e.message,
 	e.target?.kind ?? "",
 	e.target?.id ?? ""
-].join("\0"), po = (e, t, n) => {
-	let r = t === "project" ? e.path.match(/^sceneItems\[(\d+)\]/) : null, i = t === "project" ? e.path.match(/^floors\[(\d+)\]/) : null, a = r && n.project?.sceneItems[Number(r[1])], o = a ? n.project?.floors.find((e) => e.id === a.floorId) : i ? n.project?.floors[Number(i[1])] : void 0, s = e.target ?? co(e.path, {
+].join("\0"), eo = (e, t, n) => {
+	let r = t === "project" ? e.path.match(/^sceneItems\[(\d+)\]/) : null, i = t === "project" ? e.path.match(/^floors\[(\d+)\]/) : null, a = r && n.project?.sceneItems[Number(r[1])], o = a ? n.project?.floors.find((e) => e.id === a.floorId) : i ? n.project?.floors[Number(i[1])] : void 0, s = e.target ?? Xa(e.path, {
 		floor: o ?? n.floor,
 		sceneItems: (r && n.project ? n.project.sceneItems : n.sceneItems) ?? []
 	}), c = o ? { floorId: o.id } : {};
@@ -6490,35 +6119,35 @@ var io = {
 		...c,
 		target: s,
 		suggestion: "Click “Name room” on the plan, or enter a name in the room panel before applying."
-	} : vt({
+	} : ht({
 		...e,
 		source: t,
 		...c,
 		target: s,
-		suggestion: e.suggestion ?? (e.code.startsWith("stair.") && e.severity === "warning" ? "You can keep this layout and save with warnings." : void 0) ?? ao[e.code] ?? "Review the highlighted context and correct this issue before publishing."
+		suggestion: e.suggestion ?? (e.code.startsWith("stair.") && e.severity === "warning" ? "You can keep this layout and save with warnings." : void 0) ?? qa[e.code] ?? "Review the highlighted context and correct this issue before publishing."
 	});
-}, mo = /* @__PURE__ */ new Set([
+}, to = /* @__PURE__ */ new Set([
 	"topology.walls-required",
 	"topology.no-rooms",
 	"topology.incomplete-shell",
 	"topology.room-name",
 	"room.name"
-]), ho = (e) => !e.walls.length && !e.rooms.length && !e.footprint.length && !e.openings.length && !e.ceilings?.length && !e.wallJunctions?.length && !e.pools?.length && !e.outdoorPlatforms?.length && !e.groundZones?.length && !e.hedges?.length, go = (e, t, n) => {
-	let r = e.filter((e) => t !== null && n && ho(n.floor) && !n.hasItems && (e.code === "topology.walls-required" && e.source === "topology" || e.code === "project.floor-empty" && e.path === `floors[${n.floorIndex}].footprint`) ? !1 : t !== "wall" || !mo.has(e.code));
+]), no = (e) => !e.walls.length && !e.rooms.length && !e.footprint.length && !e.openings.length && !e.ceilings?.length && !e.wallJunctions?.length && !e.pools?.length && !e.outdoorPlatforms?.length && !e.groundZones?.length && !e.hedges?.length, ro = (e, t, n) => {
+	let r = e.filter((e) => t !== null && n && no(n.floor) && !n.hasItems && (e.code === "topology.walls-required" && e.source === "topology" || e.code === "project.floor-empty" && e.path === `floors[${n.floorIndex}].footprint`) ? !1 : t !== "wall" || !to.has(e.code));
 	return r.length === e.length ? e : r;
-}, _o = (e) => {
+}, io = (e) => {
 	let t = [
-		...(e.topologyIssues ?? []).map((t) => po(t, "topology", e)),
-		...(e.projectIssues ?? []).map((t) => po(t, "project", e)),
-		...(e.dependencyIssues ?? []).map((t) => po(t, "dependency", e)),
-		...(e.navigationIssues ?? []).map((t) => po(t, "navigation", e))
+		...(e.topologyIssues ?? []).map((t) => eo(t, "topology", e)),
+		...(e.projectIssues ?? []).map((t) => eo(t, "project", e)),
+		...(e.dependencyIssues ?? []).map((t) => eo(t, "dependency", e)),
+		...(e.navigationIssues ?? []).map((t) => eo(t, "navigation", e))
 	], n = /* @__PURE__ */ new Map();
 	for (let e of t) {
-		let t = fo(e), r = n.get(t);
-		(!r || lo[e.severity] < lo[r.severity]) && n.set(t, e);
+		let t = $a(e), r = n.get(t);
+		(!r || Za[e.severity] < Za[r.severity]) && n.set(t, e);
 	}
-	return [...n.values()].sort((e, t) => lo[e.severity] - lo[t.severity] || uo[e.source] - uo[t.source] || e.path.localeCompare(t.path) || e.code.localeCompare(t.code) || e.message.localeCompare(t.message));
-}, vo = (e, t, n) => e.flatMap((e) => {
+	return [...n.values()].sort((e, t) => Za[e.severity] - Za[t.severity] || Qa[e.source] - Qa[t.source] || e.path.localeCompare(t.path) || e.code.localeCompare(t.code) || e.message.localeCompare(t.message));
+}, ao = (e, t, n) => e.flatMap((e) => {
 	let r = e.placement;
 	if (r.kind !== "wall") return [e];
 	let i = t.walls.find((e) => e.id === r.wallId);
@@ -6539,10 +6168,10 @@ var io = {
 	}
 	let a = n.get(r.wallId);
 	if (!a) return [];
-	let o = Y(r, {
+	let o = Ne(r, {
 		...t,
 		walls: [...t.walls.filter((e) => e.id !== r.wallId), a]
-	}), s = Xt({
+	}), s = c({
 		x: o.position[0],
 		z: o.position[2]
 	}, t.coordinates);
@@ -6555,10 +6184,10 @@ var io = {
 			rotationYRadians: o.rotationYRadians
 		}
 	}];
-}), yo = (e, t, n, r) => vo(e.map((e) => {
+}), oo = (e, t, n, r) => ao(e.map((e) => {
 	let t = e.placement;
 	if (t.kind !== "wall") return e;
-	let n = Ze(r, t.wallId, t.offsetFromWallStartPlanUnits);
+	let n = Xe(r, t.wallId, t.offsetFromWallStartPlanUnits);
 	return !n || n.wallId === t.wallId && n.offsetFromWallStartPlanUnits === t.offsetFromWallStartPlanUnits ? e : {
 		...e,
 		placement: {
@@ -6567,13 +6196,13 @@ var io = {
 			offsetFromWallStartPlanUnits: n.offsetFromWallStartPlanUnits
 		}
 	};
-}), t, n), bo = (e, t) => {
+}), t, n), so = (e, t) => {
 	let n = [];
 	return {
 		items: e.map((e, r) => {
 			let i = e.placement;
 			if (i.kind !== "ceiling") return e;
-			let a = t.rooms.filter((e) => Kt(i.at, e.polygon));
+			let a = t.rooms.filter((e) => K(i.at, e.polygon));
 			if (a.length === 0) return n.push({
 				code: "editor.ceiling-support-missing",
 				severity: "error",
@@ -6600,21 +6229,21 @@ var io = {
 };
 //#endregion
 //#region apps/web/src/editor-preview/construct/useWallOpeningPlacement.ts
-function xo(e, t, n, r) {
+function co(e, t, n, r) {
 	return {
 		addOpening: (0, Z.useCallback)((i) => {
 			let a = e.selection;
 			if (a?.kind !== "wall") return;
 			let o = e.walls.find((e) => e.id === a.id);
 			if (!o) return;
-			let { widthPlanUnits: s, sillHeightMeters: c, openingHeightMeters: l } = qi(i, t, e.coordinates.metersPerPlanUnit), u = Math.hypot(o.to[0] - o.from[0], o.to[1] - o.from[1]), d = yt(Math.max(0, (u - s) / 2), zt({
+			let { widthPlanUnits: s, sillHeightMeters: c, openingHeightMeters: l } = Xi(i, t, e.coordinates.metersPerPlanUnit), u = Math.hypot(o.to[0] - o.from[0], o.to[1] - o.from[1]), d = gt(Math.max(0, (u - s) / 2), zt({
 				draft: e,
 				wallId: o.id,
 				widthPlanUnits: s,
 				sillHeightMeters: c,
 				kind: i
 			}));
-			if (d === void 0 || i === "niche" && Ge(e, o.id) < .01 || l + c > (o.heightMeters ?? e.defaultWallHeightMeters) - (i === "niche" ? .002 : 0)) {
+			if (d === void 0 || i === "niche" && We(e, o.id) < .01 || l + c > (o.heightMeters ?? e.defaultWallHeightMeters) - (i === "niche" ? .002 : 0)) {
 				r("This opening does not fit on this wall.");
 				return;
 			}
@@ -6632,14 +6261,14 @@ function xo(e, t, n, r) {
 			r
 		]),
 		placeOpening: (0, Z.useCallback)((i, a, o, s) => {
-			let { widthPlanUnits: c, sillHeightMeters: l, openingHeightMeters: u } = qi(i, t, e.coordinates.metersPerPlanUnit), d = zt({
+			let { widthPlanUnits: c, sillHeightMeters: l, openingHeightMeters: u } = Xi(i, t, e.coordinates.metersPerPlanUnit), d = zt({
 				draft: e,
 				wallId: a,
 				widthPlanUnits: c,
 				sillHeightMeters: l,
 				kind: i
 			}).some((e) => o >= e.min && o <= e.max), f = e.walls.find((e) => e.id === a);
-			if (!d || i === "niche" && Ge(e, a) < .01 || u + l > (f?.heightMeters ?? e.defaultWallHeightMeters) - (i === "niche" ? .002 : 0)) {
+			if (!d || i === "niche" && We(e, a) < .01 || u + l > (f?.heightMeters ?? e.defaultWallHeightMeters) - (i === "niche" ? .002 : 0)) {
 				r("This opening does not fit on this wall.");
 				return;
 			}
@@ -6664,7 +6293,7 @@ function xo(e, t, n, r) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/incomplete-floor-preview.ts
-function So(e, t) {
+function lo(e, t) {
 	return {
 		...t,
 		id: e.floorId,
@@ -6678,7 +6307,7 @@ function So(e, t) {
 		footprintRegions: [],
 		rooms: [],
 		ceilings: [],
-		walls: e.walls.map((t) => vt({
+		walls: e.walls.map((t) => ht({
 			...t,
 			classification: "exterior",
 			thicknessMeters: t.thicknessMeters ?? e.exteriorWallThicknessMeters
@@ -6696,14 +6325,14 @@ function So(e, t) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/opening-orientation-floor.ts
-var Co = (e) => {
+var uo = (e) => {
 	if (e.kind === "passage") return e;
 	let { hingeSide: t, openingSide: n, ...r } = e;
 	if (r.kind === "window") return r;
 	let { slideDirection: i, ...a } = r;
 	return a;
 };
-function wo(e, t, n) {
+function fo(e, t, n) {
 	if (!n.rooms.length && e.outdoorPlatforms !== t.outdoorPlatforms || [
 		"walls",
 		"rooms",
@@ -6715,7 +6344,7 @@ function wo(e, t, n) {
 		"defaultCeilingHeightMeters",
 		"exteriorWallThicknessMeters",
 		"interiorWallThicknessMeters"
-	].some((n) => e[n] !== t[n]) || e.openings.length !== t.openings.length || e.openings.some((e, n) => e !== t.openings[n] && JSON.stringify(Co(e)) !== JSON.stringify(Co(t.openings[n])))) return null;
+	].some((n) => e[n] !== t[n]) || e.openings.length !== t.openings.length || e.openings.some((e, n) => e !== t.openings[n] && JSON.stringify(uo(e)) !== JSON.stringify(uo(t.openings[n])))) return null;
 	let r = new Map(t.openings.filter((t, n) => t !== e.openings[n]).map((e) => [e.id, e])), i = e.pools === t.pools ? n : {
 		...n,
 		pools: t.pools ?? []
@@ -6763,7 +6392,7 @@ function wo(e, t, n) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/construct-controller-reducer.ts
-var To = (e, n = []) => t(vt({
+var po = (e, n = []) => t(ht({
 	...e.floorToFloorHeightMeters === void 0 ? {} : { floorToFloorHeightMeters: e.floorToFloorHeightMeters },
 	...e.belowGround === void 0 ? {} : { belowGround: e.belowGround },
 	floorId: e.floorId,
@@ -6782,7 +6411,7 @@ var To = (e, n = []) => t(vt({
 	defaultCeilingHeightMeters: e.defaultCeilingHeightMeters,
 	exteriorWallThicknessMeters: e.exteriorWallThicknessMeters,
 	interiorWallThicknessMeters: e.interiorWallThicknessMeters
-})), Eo = (e) => `${e.code}:${e.path}:${e.message}`, Do = (e, t) => {
+})), mo = (e) => `${e.code}:${e.path}:${e.message}`, ho = (e, t) => {
 	if (t.type === "replace-floor") return null;
 	if (t.type === "move-wall-endpoint") {
 		let n = e.present.walls.find((e) => e.id === t.wallId);
@@ -6800,7 +6429,7 @@ var To = (e, n = []) => t(vt({
 			...t.patch
 		};
 		if (i.id !== r.id || i.kind !== r.kind) return null;
-		let a = yt(i.offsetPlanUnits, zt({
+		let a = gt(i.offsetPlanUnits, zt({
 			draft: e.present,
 			wallId: i.wallId,
 			widthPlanUnits: i.widthPlanUnits,
@@ -6816,18 +6445,18 @@ var To = (e, n = []) => t(vt({
 		};
 	}
 	return t;
-}, Oo = (e, t) => {
-	if (t.type === "replace-floor") return ve(re(t.floor));
-	let n = Do(e, t);
-	return n ? _e(e, n) : e;
-}, ko = {
+}, go = (e, t) => {
+	if (t.type === "replace-floor") return ve(ne(t.floor));
+	let n = ho(e, t);
+	return n ? ge(e, n) : e;
+}, _o = {
 	points: [],
 	future: [],
 	preview: null,
 	error: null
-}, Ao = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= 1e-7;
-function jo(e, t, n = "outline") {
-	if (t.type === "cancel") return { state: ko };
+}, vo = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= 1e-7;
+function yo(e, t, n = "outline") {
+	if (t.type === "cancel") return { state: _o };
 	if (t.type === "preview") return { state: {
 		...e,
 		preview: t.point
@@ -6845,13 +6474,13 @@ function jo(e, t, n = "outline") {
 		error: null
 	} } : { state: e };
 	let r = t.point;
-	return !r.every(Number.isFinite) || e.points.length && Ao(r, e.points.at(-1)) ? { state: e } : e.points.length >= 3 && Ao(r, e.points[0]) ? Le(e.points) ? {
-		state: ko,
+	return !r.every(Number.isFinite) || e.points.length && vo(r, e.points.at(-1)) ? { state: e } : e.points.length >= 3 && vo(r, e.points[0]) ? It(e.points) ? {
+		state: _o,
 		completed: e.points
 	} : { state: {
 		...e,
 		error: "The outline crosses itself or has no area. Undo a corner and try again."
-	} } : e.points.some((e) => Ao(e, r)) ? { state: {
+	} } : e.points.some((e) => vo(e, r)) ? { state: {
 		...e,
 		error: `Add at least three distinct corners, then return to the first corner to close the ${n}.`
 	} } : { state: {
@@ -6861,13 +6490,13 @@ function jo(e, t, n = "outline") {
 		error: null
 	} };
 }
-function Mo(e, t = "outline") {
-	let [n, r] = (0, Z.useState)(ko), i = (0, Z.useRef)(n), a = (0, Z.useRef)(t);
+function bo(e, t = "outline") {
+	let [n, r] = (0, Z.useState)(_o), i = (0, Z.useRef)(n), a = (0, Z.useRef)(t);
 	a.current = t;
 	let o = (0, Z.useRef)(e);
 	o.current = e;
 	let s = (0, Z.useCallback)((e) => {
-		let t = jo(i.current, e, a.current);
+		let t = yo(i.current, e, a.current);
 		i.current = t.state, r(t.state), t.completed && o.current(t.completed);
 	}, []);
 	return {
@@ -6888,44 +6517,44 @@ function Mo(e, t = "outline") {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/wall-loop-closure.ts
-var No = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= 1e-7, Po = (e, t) => e[0] * t[1] - e[1] * t[0], Fo = (e, t) => {
+var xo = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= 1e-7, So = (e, t) => e[0] * t[1] - e[1] * t[0], Co = (e, t) => {
 	let n = [t.to[0] - t.from[0], t.to[1] - t.from[1]], r = [e[0] - t.from[0], e[1] - t.from[1]], i = n[0] ** 2 + n[1] ** 2;
-	if (i <= 1e-14) return No(e, t.from);
+	if (i <= 1e-14) return xo(e, t.from);
 	let a = 1e-7 * Math.max(1, Math.sqrt(i));
-	if (Math.abs(Po(n, r)) > a) return !1;
+	if (Math.abs(So(n, r)) > a) return !1;
 	let o = r[0] * n[0] + r[1] * n[1];
 	return o >= -a && o <= i + a;
-}, Io = (e, t) => {
-	let n = [e.to[0] - e.from[0], e.to[1] - e.from[1]], r = [t.to[0] - t.from[0], t.to[1] - t.from[1]], i = [t.from[0] - e.from[0], t.from[1] - e.from[1]], a = Po(n, r);
-	if (Math.abs(a) <= 1e-10) return Fo(e.from, t) || Fo(e.to, t) || Fo(t.from, e) || Fo(t.to, e);
-	let o = Po(i, r) / a, s = Po(i, n) / a;
+}, wo = (e, t) => {
+	let n = [e.to[0] - e.from[0], e.to[1] - e.from[1]], r = [t.to[0] - t.from[0], t.to[1] - t.from[1]], i = [t.from[0] - e.from[0], t.from[1] - e.from[1]], a = So(n, r);
+	if (Math.abs(a) <= 1e-10) return Co(e.from, t) || Co(e.to, t) || Co(t.from, e) || Co(t.to, e);
+	let o = So(i, r) / a, s = So(i, n) / a;
 	return o >= -1e-7 && o <= 1 + 1e-7 && s >= -1e-7 && s <= 1 + 1e-7;
-}, Lo = (e, t, n) => {
-	if (No(t, n)) return !1;
-	let r = new Set(e.map((e, t) => Fo(n, e) ? t : -1).filter((e) => e >= 0));
+}, To = (e, t, n) => {
+	if (xo(t, n)) return !1;
+	let r = new Set(e.map((e, t) => Co(n, e) ? t : -1).filter((e) => e >= 0));
 	if (r.size === 0) return !1;
-	let i = e.map((e, n) => Fo(t, e) ? n : -1).filter((e) => e >= 0), a = /* @__PURE__ */ new Set();
+	let i = e.map((e, n) => Co(t, e) ? n : -1).filter((e) => e >= 0), a = /* @__PURE__ */ new Set();
 	for (; i.length > 0;) {
 		let t = i.pop();
 		if (!a.has(t)) {
 			if (r.has(t)) return !0;
 			a.add(t);
-			for (let n = 0; n < e.length; n += 1) !a.has(n) && Io(e[t], e[n]) && i.push(n);
+			for (let n = 0; n < e.length; n += 1) !a.has(n) && wo(e[t], e[n]) && i.push(n);
 		}
 	}
 	return !1;
-}, Ro = (e, t = e, n = f.exterior, r = "select", i = []) => {
-	let a = JSON.stringify(i), o = (0, Z.useCallback)((e) => To(e, JSON.parse(a)), [a]), [s, c] = (0, Z.useReducer)(Oo, e, (e) => ve({
-		...re(e),
+}, Eo = (e, t = e, n = p.exterior, r = "select", i = []) => {
+	let a = JSON.stringify(i), o = (0, Z.useCallback)((e) => po(e, JSON.parse(a)), [a]), [s, c] = (0, Z.useReducer)(go, e, (e) => ve({
+		...ne(e),
 		tool: r
-	})), [l] = (0, Z.useState)(() => new Set(o(re(t)).issues.map(Eo))), [u] = (0, Z.useState)(() => {
-		let t = o(re(e));
+	})), [l] = (0, Z.useState)(() => new Set(o(ne(t)).issues.map(mo))), [u] = (0, Z.useState)(() => {
+		let t = o(ne(e));
 		return {
 			previewFloor: e,
-			topologyIssues: t.issues.filter((e) => !l.has(Eo(e))),
+			topologyIssues: t.issues.filter((e) => !l.has(mo(e))),
 			wallRuns: t.wallRuns
 		};
-	}), [d, p] = (0, Z.useState)(ut), [m, h] = (0, Z.useState)(null), [g, _] = (0, Z.useState)({
+	}), [d, f] = (0, Z.useState)(ct), [m, h] = (0, Z.useState)(null), [g, _] = (0, Z.useState)({
 		style: "clipped",
 		heightMeters: 1.4,
 		widthMeters: .65
@@ -6940,40 +6569,40 @@ var No = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= 1e-7, Po = (e, t) => 
 		}
 	}), [w, T] = (0, Z.useState)(null), [E, D] = (0, Z.useState)(r === "platform" ? "outdoor-platform" : "room"), O = (0, Z.useRef)(s.present.tool);
 	O.current = s.present.tool;
-	let k = Mo((e) => c(O.current === "platform" ? {
+	let k = bo((e) => c(O.current === "platform" ? {
 		type: "add-outdoor-platform",
 		polygon: e,
 		...S
 	} : {
 		type: "add-pool",
 		polygon: e
-	}), s.present.tool === "platform" ? "platform" : "pool"), { cancel: A } = k, [j, M] = (0, Z.useState)(null), [N, P] = (0, Z.useState)(null), F = (0, Z.useRef)(null), I = s.present, L = (0, Z.useRef)(null), R = (0, Z.useRef)(I), z = (0, Z.useRef)(u.previewFloor), B = (0, Z.useRef)({
+	}), s.present.tool === "platform" ? "platform" : "pool"), { cancel: A } = k, [j, M] = (0, Z.useState)(null), [N, P] = (0, Z.useState)(null), F = (0, Z.useRef)(null), I = s.present, L = (0, Z.useRef)(null), ee = (0, Z.useRef)(I), R = (0, Z.useRef)(u.previewFloor), te = (0, Z.useRef)({
 		draft: I,
 		value: u
-	}), V = (0, Z.useMemo)(() => {
-		let e = (e) => (B.current = {
+	}), z = (0, Z.useMemo)(() => {
+		let e = (e) => (te.current = {
 			draft: I,
 			value: e
 		}, e), t = L.current;
 		if (t && (t.draft === null || t.draft === I)) {
-			t.draft = I, z.current = t.floor;
+			t.draft = I, R.current = t.floor;
 			let n = o(I);
 			return e({
 				previewFloor: t.floor,
-				topologyIssues: n.issues.filter((e) => !l.has(Eo(e))),
+				topologyIssues: n.issues.filter((e) => !l.has(mo(e))),
 				wallRuns: n.wallRuns
 			});
 		}
-		if (L.current = null, I === R.current) return e(u);
-		let n = B.current, r = wo(n.draft, I, n.value.previewFloor);
-		if (r) return z.current = r, e({
+		if (L.current = null, I === ee.current) return e(u);
+		let n = te.current, r = fo(n.draft, I, n.value.previewFloor);
+		if (r) return R.current = r, e({
 			...n.value,
 			previewFloor: r
 		});
 		let i = o(I);
-		return i.floor && (z.current = i.floor), e({
-			previewFloor: i.floor ?? (i.faces.length === 0 ? So(I, z.current) : z.current),
-			topologyIssues: i.issues.filter((e) => !l.has(Eo(e))),
+		return i.floor && (R.current = i.floor), e({
+			previewFloor: i.floor ?? (i.faces.length === 0 ? lo(I, R.current) : R.current),
+			topologyIssues: i.issues.filter((e) => !l.has(mo(e))),
 			wallRuns: i.wallRuns
 		});
 	}, [
@@ -6996,22 +6625,22 @@ var No = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= 1e-7, Po = (e, t) => 
 		I.walls,
 		l,
 		o
-	]), ee = (0, Z.useCallback)((e) => {
+	]), B = (0, Z.useCallback)((e) => {
 		A(), F.current = null, y(null), M(null), P(null), e === "platform" && D("outdoor-platform"), c({
 			type: "set-tool",
 			tool: e === "floor" && E === "outdoor-platform" ? "platform" : e
 		});
-	}, [A, E]), H = (0, Z.useCallback)((e) => {
+	}, [A, E]), V = (0, Z.useCallback)((e) => {
 		D(e), A(), F.current = null, y(null), M(null), P(null), c({
 			type: "set-tool",
 			tool: e === "outdoor-platform" ? "platform" : "floor"
 		});
-	}, [A]), te = (0, Z.useCallback)((e) => {
+	}, [A]), H = (0, Z.useCallback)((e) => {
 		h(null), c({
 			type: "select",
 			selection: e
 		});
-	}, []), ne = (0, Z.useCallback)((e) => {
+	}, []), re = (0, Z.useCallback)((e) => {
 		F.current = e, y(e), M(e), P(null);
 	}, []), ie = (0, Z.useCallback)((e) => {
 		let t = F.current;
@@ -7027,7 +6656,7 @@ var No = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= 1e-7, Po = (e, t) => 
 			}), F.current = e, y(e), M(e), P(Math.atan2(e[1] - t[1], e[0] - t[0]));
 			return;
 		}
-		let n = Lo(s.present.walls, t, e);
+		let n = To(s.present.walls, t, e);
 		if (c({
 			type: "add-wall",
 			from: t,
@@ -7048,14 +6677,14 @@ var No = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= 1e-7, Po = (e, t) => 
 		g
 	]), ae = (0, Z.useCallback)(() => {
 		F.current = null, y(null), M(null), P(null);
-	}, []), { addOpening: oe, placeOpening: U } = xo(I, d, c, h), se = (0, Z.useCallback)((e, t) => {
-		let n = V.previewFloor.rooms.find((t) => t.id === e);
+	}, []), { addOpening: oe, placeOpening: se } = co(I, d, c, h), ce = (0, Z.useCallback)((e, t) => {
+		let n = z.previewFloor.rooms.find((t) => t.id === e);
 		if (!n) return;
 		let r = s.present.rooms.find((e) => e.id === n.id);
 		c({
 			type: "update-room-metadata",
 			roomId: n.id,
-			anchor: qe(n.polygon),
+			anchor: Ke(n.polygon),
 			changes: r ? t : {
 				name: n.name,
 				accent: n.accent,
@@ -7064,56 +6693,56 @@ var No = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= 1e-7, Po = (e, t) => 
 				...t
 			}
 		});
-	}, [s.present, V.previewFloor.rooms]), W = (0, Z.useCallback)((e, t, n) => {
-		let r = V.previewFloor.rooms.find((t) => t.id === e);
+	}, [s.present, z.previewFloor.rooms]), U = (0, Z.useCallback)((e, t, n) => {
+		let r = z.previewFloor.rooms.find((t) => t.id === e);
 		r && c({
 			type: "update-room-metadata",
 			roomId: e,
-			anchor: qe(r.polygon),
+			anchor: Ke(r.polygon),
 			changes: {
 				floorFinish: t,
 				...n ? { floorZones: [] } : {}
 			}
 		});
-	}, [V.previewFloor.rooms]), ce = (0, Z.useCallback)((e, t, n) => {
-		let r = V.previewFloor.rooms.find((t) => t.id === e);
+	}, [z.previewFloor.rooms]), W = (0, Z.useCallback)((e, t, n) => {
+		let r = z.previewFloor.rooms.find((t) => t.id === e);
 		r && c({
 			type: "add-floor-zone",
 			room: {
 				id: r.id,
 				name: r.name,
 				accent: r.accent,
-				anchor: qe(r.polygon)
+				anchor: Ke(r.polygon)
 			},
 			polygon: t,
 			finish: n
 		});
-	}, [V.previewFloor.rooms]), le = (0, Z.useCallback)((e) => {
+	}, [z.previewFloor.rooms]), le = (0, Z.useCallback)((e) => {
 		let t = s.present.selection;
 		if (t?.kind !== "room") return;
-		let n = V.previewFloor.rooms.find((e) => e.id === t.id);
+		let n = z.previewFloor.rooms.find((e) => e.id === t.id);
 		if (!n) return;
-		let r = s.present.rooms.filter((e) => Kt(e.anchor, n.polygon)).map((e) => e.id);
+		let r = s.present.rooms.filter((e) => K(e.anchor, n.polygon)).map((e) => e.id);
 		r.length < 2 || !r.includes(e) || c({
 			type: "resolve-room-merge",
 			survivorId: e,
 			mergedRoomIds: r,
-			anchor: qe(n.polygon)
+			anchor: Ke(n.polygon)
 		});
-	}, [s.present, V.previewFloor.rooms]), ue = (0, Z.useMemo)(() => It(I.selection), [I.selection]), de = (0, Z.useMemo)(() => ia({
+	}, [s.present, z.previewFloor.rooms]), ue = (0, Z.useMemo)(() => Ft(I.selection), [I.selection]), de = (0, Z.useMemo)(() => sa({
 		selection: I.selection,
 		draft: I,
-		previewFloor: V.previewFloor,
-		wallRuns: V.wallRuns
+		previewFloor: z.previewFloor,
+		wallRuns: z.wallRuns
 	}), [
 		I,
-		V.previewFloor,
-		V.wallRuns
+		z.previewFloor,
+		z.wallRuns
 	]);
 	return {
 		history: s,
 		doorConfiguration: d,
-		setDoorConfiguration: p,
+		setDoorConfiguration: f,
 		openingError: m,
 		hedgeSettings: g,
 		setHedgeSettings: _,
@@ -7121,13 +6750,13 @@ var No = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= 1e-7, Po = (e, t) => 
 		setPlatformSettings: C,
 		selectedPlatformEdgeId: w,
 		selectPlatform: (e) => {
-			T(null), te({
+			T(null), H({
 				kind: "outdoor-platform",
 				id: e
 			});
 		},
 		selectPlatformEdge: (e, t) => {
-			T(t), te({
+			T(t), H({
 				kind: "outdoor-platform",
 				id: e
 			});
@@ -7138,11 +6767,11 @@ var No = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= 1e-7, Po = (e, t) => 
 			changes: t
 		}),
 		poolDrawing: k,
-		selectPool: (e) => te({
+		selectPool: (e) => H({
 			kind: "pool",
 			id: e
 		}),
-		selectFloorZone: (e) => te({
+		selectFloorZone: (e) => H({
 			kind: "floor-zone",
 			id: e
 		}),
@@ -7151,8 +6780,8 @@ var No = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= 1e-7, Po = (e, t) => 
 			poolId: e,
 			polygon: t
 		}),
-		paintRoomFloor: W,
-		addFloorZone: ce,
+		paintRoomFloor: U,
+		addFloorZone: W,
 		addGroundZone: (e, t) => c({
 			type: "add-ground-zone",
 			polygon: e,
@@ -7163,7 +6792,7 @@ var No = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= 1e-7, Po = (e, t) => 
 			zoneId: e,
 			changes: t
 		}),
-		...V,
+		...z,
 		isSettling: !1,
 		draft: I,
 		selection: I.selection,
@@ -7178,23 +6807,23 @@ var No = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= 1e-7, Po = (e, t) => 
 		canUndo: s.past.length > 0,
 		canRedo: s.future.length > 0,
 		dispatch: c,
-		setTool: ee,
+		setTool: B,
 		floorPaintTarget: E,
-		setFloorPaintTarget: H,
-		selectWall: (e) => te({
+		setFloorPaintTarget: V,
+		selectWall: (e) => H({
 			kind: "wall",
 			id: e
 		}),
-		selectOpening: (e) => te({
+		selectOpening: (e) => H({
 			kind: "opening",
 			id: e
 		}),
-		selectRoom: (e) => te({
+		selectRoom: (e) => H({
 			kind: "room",
 			id: e
 		}),
-		selectMany: (e) => te(Bt(e)),
-		clearSelection: () => te(null),
+		selectMany: (e) => H(Bt(e)),
+		clearSelection: () => H(null),
 		setExteriorWallColor: x,
 		updateWallEndpoint: (e, t, n) => c({
 			type: "move-wall-endpoint",
@@ -7214,9 +6843,9 @@ var No = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= 1e-7, Po = (e, t) => 
 			type: "update-floor-settings",
 			settings: e
 		}),
-		updateRoom: se,
+		updateRoom: ce,
 		updateSelectedRoom: (e) => {
-			s.present.selection?.kind === "room" && se(s.present.selection.id, e);
+			s.present.selection?.kind === "room" && ce(s.present.selection.id, e);
 		},
 		resolveRoomMerge: le,
 		translateWall: (e, t) => c({
@@ -7224,12 +6853,12 @@ var No = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= 1e-7, Po = (e, t) => 
 			wallId: e,
 			delta: t
 		}),
-		beginWall: ne,
+		beginWall: re,
 		previewWall: M,
 		addWall: ie,
 		cancelWall: ae,
 		addOpening: oe,
-		placeOpening: U,
+		placeOpening: se,
 		updateSelectedOpening: (e) => {
 			let t = I.selection, n = t?.kind === "opening" ? Gt(I).find((e) => e.id === t.id) : void 0;
 			if (!n) return;
@@ -7281,7 +6910,7 @@ var No = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= 1e-7, Po = (e, t) => 
 		moveOpening: (e, t, n) => {
 			let r = Gt(s.present).find((t) => t.id === e);
 			if (!r) return;
-			let i = yt(n, zt({
+			let i = gt(n, zt({
 				draft: s.present,
 				wallId: t,
 				widthPlanUnits: r.widthPlanUnits,
@@ -7316,12 +6945,12 @@ var No = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= 1e-7, Po = (e, t) => 
 			});
 		}
 	};
-}, zo = (e) => {
-	let [t, n] = (0, Z.useReducer)(Di, void 0, wi);
+}, Do = (e) => {
+	let [t, n] = (0, Z.useReducer)(Ai, void 0, Di);
 	return {
 		state: t,
-		phase: Ei(t),
-		measurement: (0, Z.useMemo)(() => ji(t, e), [e, t]),
+		phase: ki(t),
+		measurement: (0, Z.useMemo)(() => Pi(t, e), [e, t]),
 		place: (0, Z.useCallback)((e) => n({
 			type: "place",
 			point: e
@@ -7336,13 +6965,13 @@ var No = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= 1e-7, Po = (e, t) => 
 };
 //#endregion
 //#region apps/web/src/editor-preview/furnish/placement/wall-room-inset.ts
-function Bo(e, t) {
+function Oo(e, t) {
 	let n = (e) => {
-		let { position: n } = Y(e, t), r = Xt({
+		let { position: n } = Ne(e, t), r = c({
 			x: n[0],
 			z: n[2]
 		}, t.coordinates);
-		return t.rooms.some((e) => Kt(r, e.polygon));
+		return t.rooms.some((e) => K(r, e.polygon));
 	};
 	if (n(e)) return e;
 	for (let t = .005; t <= .05; t += .005) {
@@ -7356,13 +6985,13 @@ function Bo(e, t) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/furnish/placement/placement-candidate.ts
-var Vo = (e) => ({
+var ko = (e) => ({
 	placement: null,
 	error: e
 });
-function Ho(e, t, n) {
+function Ao(e, t, n) {
 	let r = e.definition, i = (t.elevationMeters ?? 0) > 0, a = r.placementEnvironment === "outdoor", o = t.coordinates.metersPerPlanUnit;
-	if (!n.at.every(Number.isFinite) || !(o > 0)) return Vo("Enter a valid position.");
+	if (!n.at.every(Number.isFinite) || !(o > 0)) return ko("Enter a valid position.");
 	let s = (e, r) => n.raw ? e : t.coordinates.origin[r] + Math.round((e - t.coordinates.origin[r]) * o * 10) / (10 * o), c = [s(n.at[0], 0), s(n.at[1], 1)], l = t.walls.flatMap((e) => {
 		let t = e.to[0] - e.from[0], n = e.to[1] - e.from[1], r = Math.hypot(t, n);
 		if (r <= 0) return [];
@@ -7375,14 +7004,14 @@ function Ho(e, t, n) {
 			face: l < 0 ? "left" : "right"
 		}];
 	}).sort((e, t) => e.distance - t.distance), u = n.wallId ? l.find((e) => e.wall.id === n.wallId) : l[0];
-	if (a && n.kind && n.kind !== "absolute") return Vo("Outdoor items use ground placement.");
+	if (a && n.kind && n.kind !== "absolute") return ko("Outdoor items use ground placement.");
 	let d = a ? "absolute" : n.kind ?? (n.wallId || !n.raw && u && u.distance <= .55 ? "wall" : r.preferredPlacement), f;
 	if (d === "wall") {
-		if (!u || !n.wallId && u.distance > .55) return Vo("Choose a wall to place this item.");
+		if (!u || !n.wallId && u.distance > .55) return ko("Choose a wall to place this item.");
 		let e = Math.max(Math.abs(r.bounds.min[0]), Math.abs(r.bounds.max[0])) / o, i = n.offset ?? Math.max(e, Math.min(u.length - e, u.offset));
-		if (!Number.isFinite(i) || i < e || i + e > u.length) return Vo("This item needs more space along the wall.");
+		if (!Number.isFinite(i) || i < e || i + e > u.length) return ko("This item needs more space along the wall.");
 		let a = u.wall.heightMeters ?? t.defaultWallHeightMeters, s = Math.max(0, -r.bounds.min[1]), c = a - Math.max(0, r.bounds.max[1]), l = n.elevation ?? Math.max(s, Math.min(c, r.defaultSize[1] > 1.5 ? s : 1.25));
-		if (!Number.isFinite(l) || l < s || l > c) return Vo("The item must fit between the floor and wall top.");
+		if (!Number.isFinite(l) || l < s || l > c) return ko("The item must fit between the floor and wall top.");
 		f = {
 			kind: d,
 			wallId: u.wall.id,
@@ -7393,13 +7022,13 @@ function Ho(e, t, n) {
 			rotationOffsetRadians: 0
 		};
 	} else {
-		let e = t.rooms.filter((e) => Kt(c, e.polygon));
+		let e = t.rooms.filter((e) => K(c, e.polygon));
 		if (a) {
-			if (!t.outdoorPlatforms?.some((e) => Kt(c, e.polygon)) && !Pe(c, t)) return Vo("Choose a position outside the building.");
-		} else if (d === "ceiling" && e.length !== 1) return Vo("Choose a position inside one room.");
+			if (!t.outdoorPlatforms?.some((e) => K(c, e.polygon)) && !rn(c, t)) return ko("Choose a position outside the building.");
+		} else if (d === "ceiling" && e.length !== 1) return ko("Choose a position inside one room.");
 		if (d === "ceiling") {
 			let i = t.ceilings?.find((t) => t.roomIds.includes(e[0].id)), a = i?.kind === "flat" ? i.heightMeters : t.defaultCeilingHeightMeters, o = n.drop ?? Math.max(0, r.bounds.max[1]) + .003;
-			if (!Number.isFinite(o) || o < Math.max(0, r.bounds.max[1]) || o > a || a - o + r.bounds.min[1] < 0) return Vo("The item must fit below the ceiling and above the floor.");
+			if (!Number.isFinite(o) || o < Math.max(0, r.bounds.max[1]) || o > a || a - o + r.bounds.min[1] < 0) return ko("The item must fit below the ceiling and above the floor.");
 			f = {
 				kind: d,
 				roomId: e[0].id,
@@ -7408,9 +7037,9 @@ function Ho(e, t, n) {
 				rotationYRadians: 0
 			};
 		} else {
-			if (i && !qt(c, t)) return Vo("Choose a room floor or outdoor platform on this level.");
+			if (i && !qt(c, t)) return ko("Choose a room floor or outdoor platform on this level.");
 			let e = n.elevation ?? Math.max(0, -r.bounds.min[1]) + .001;
-			if (!Number.isFinite(e) || e < Math.max(0, -r.bounds.min[1])) return Vo("The item must stay above the floor.");
+			if (!Number.isFinite(e) || e < Math.max(0, -r.bounds.min[1])) return ko("The item must stay above the floor.");
 			f = {
 				kind: d,
 				at: c,
@@ -7420,12 +7049,12 @@ function Ho(e, t, n) {
 		}
 	}
 	let p = (e) => {
-		let n = Y(e, t), r = [n.position[0] / o + t.coordinates.origin[0], n.position[2] / o + t.coordinates.origin[1]];
-		return t.rooms.filter((e) => Kt(r, e.polygon)).length;
+		let n = Ne(e, t), r = [n.position[0] / o + t.coordinates.origin[0], n.position[2] / o + t.coordinates.origin[1]];
+		return t.rooms.filter((e) => K(r, e.polygon)).length;
 	};
-	if (f.kind === "wall" && (f = Bo(f, t)), a) {
-		if (f.kind !== "absolute" || !t.outdoorPlatforms?.some((e) => Kt(f.at, e.polygon)) && !Pe(f.at, t)) return Vo("Choose a position outside the building.");
-	} else if (p(f) > 1) return Vo("Choose a position belonging to at most one room.");
+	if (f.kind === "wall" && (f = Oo(f, t)), a) {
+		if (f.kind !== "absolute" || !t.outdoorPlatforms?.some((e) => K(f.at, e.polygon)) && !rn(f.at, t)) return ko("Choose a position outside the building.");
+	} else if (p(f) > 1) return ko("Choose a position belonging to at most one room.");
 	return {
 		placement: f,
 		error: null
@@ -7433,55 +7062,56 @@ function Ho(e, t, n) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/furnish/placement/window-placement.ts
-function Uo(e, t, n, r) {
+var jo = (e, t) => e.kind === "window" ? t.includes("window") : t.includes("sliding-glass-door") && e.kind === "door" && e.operation === "sliding" && e.variant === "full-glass";
+function Mo(e, t, n, r) {
 	let i = e.windowFit;
 	if (!i) return [];
-	let a = t.coordinates.metersPerPlanUnit, o = [];
-	for (let s of t.openings) {
-		if (s.kind !== "window") continue;
-		let c = r ?? [
-			s.widthPlanUnits * a / i.openingWidthRatio,
-			s.openingHeightMeters / i.openingHeightRatio,
+	let a = t.coordinates.metersPerPlanUnit, o = i.openingTypes ?? ["window"], s = [];
+	for (let c of t.openings) {
+		if (!jo(c, o)) continue;
+		let l = r ?? [
+			c.widthPlanUnits * a / i.openingWidthRatio,
+			c.openingHeightMeters / i.openingHeightRatio,
 			e.defaultSize[2]
-		], l = c.map((t, n) => t / e.defaultSize[n]), u = {
+		], u = l.map((t, n) => t / e.defaultSize[n]), d = {
 			...e,
-			defaultSize: c,
+			defaultSize: l,
 			bounds: {
-				min: e.bounds.min.map((e, t) => e * l[t]),
-				max: e.bounds.max.map((e, t) => e * l[t])
+				min: e.bounds.min.map((e, t) => e * u[t]),
+				max: e.bounds.max.map((e, t) => e * u[t])
 			}
-		}, d = s.sillHeightMeters + s.openingHeightMeters - c[1] * i.openingHeightRatio;
+		}, f = c.sillHeightMeters + c.openingHeightMeters - l[1] * i.openingHeightRatio;
 		for (let e of ["left", "right"]) {
-			let r = Ho({ definition: u }, t, {
+			let r = Ao({ definition: d }, t, {
 				at: n,
 				kind: "wall",
-				wallId: s.wallId,
+				wallId: c.wallId,
 				face: e,
 				raw: !0,
-				offset: s.offsetFromWallStartPlanUnits + s.widthPlanUnits / 2,
-				elevation: Math.abs(d) < 1e-10 ? 0 : d
+				offset: c.offsetFromWallStartPlanUnits + c.widthPlanUnits / 2,
+				elevation: Math.abs(f) < 1e-10 ? 0 : f
 			});
 			if (r.placement?.kind !== "wall") continue;
-			let l = {
+			let o = {
 				...r.placement,
 				depthOffsetMeters: Math.max(r.placement.depthOffsetMeters, i.depthOffsetMeters)
-			}, f = Y(l, t), p = [f.position[0] / a + t.coordinates.origin[0], f.position[2] / a + t.coordinates.origin[1]], m = t.rooms.find((e) => Kt(p, e.polygon))?.name ?? "Window";
-			o.push({
-				openingId: s.id,
+			}, u = Ne(o, t), p = [u.position[0] / a + t.coordinates.origin[0], u.position[2] / a + t.coordinates.origin[1]], m = t.rooms.find((e) => K(p, e.polygon))?.name ?? "Window";
+			s.push({
+				openingId: c.id,
 				roomName: m,
-				placement: l,
-				size: c,
+				placement: o,
+				size: l,
 				distanceMeters: Math.hypot(p[0] - n[0], p[1] - n[1]) * a
 			});
 		}
 	}
-	return o.sort((e, t) => e.distanceMeters - t.distanceMeters);
+	return s.sort((e, t) => e.distanceMeters - t.distanceMeters);
 }
 //#endregion
 //#region apps/web/src/editor-preview/furnish/placement/wall-drag-placement.ts
-var Wo = 1e-7, Go = (e, t) => e[0] * t[0] + e[1] * t[1], Ko = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= Wo, qo = (e, t, n) => {
+var No = 1e-7, Po = (e, t) => e[0] * t[0] + e[1] * t[1], Fo = (e, t) => Math.hypot(e[0] - t[0], e[1] - t[1]) <= No, Io = (e, t, n) => {
 	let r = t.to[0] - t.from[0], i = t.to[1] - t.from[1], a = r * r + i * i;
-	if (a <= Wo * Wo) return null;
+	if (a <= No * No) return null;
 	let o = Math.sqrt(a), s = Math.max(0, Math.min(o, ((e[0] - t.from[0]) * r + (e[1] - t.from[1]) * i) / o)), c = s / o, l = [t.from[0] + r * c, t.from[1] + i * c], u = [r / o, i / o];
 	return {
 		wall: t,
@@ -7492,75 +7122,75 @@ var Wo = 1e-7, Go = (e, t) => e[0] * t[0] + e[1] * t[1], Ko = (e, t) => Math.hyp
 		tangent: u,
 		rightNormal: [-u[1], u[0]]
 	};
-}, Jo = (e, t) => Go([e[0] - t.projected[0], e[1] - t.projected[1]], t.rightNormal) < 0 ? "left" : "right", Yo = (e, t) => t === "right" ? e.rightNormal : [-e.rightNormal[0], -e.rightNormal[1]], Xo = (e, t, n) => {
-	let r = Ko(e.wall.from, t) ? e.wall.to : Ko(e.wall.to, t) ? e.wall.from : null;
+}, Lo = (e, t) => Po([e[0] - t.projected[0], e[1] - t.projected[1]], t.rightNormal) < 0 ? "left" : "right", Ro = (e, t) => t === "right" ? e.rightNormal : [-e.rightNormal[0], -e.rightNormal[1]], zo = (e, t, n) => {
+	let r = Fo(e.wall.from, t) ? e.wall.to : Fo(e.wall.to, t) ? e.wall.from : null;
 	if (!r) return null;
 	let i = r[0] - t[0], a = r[1] - t[1], o = Math.hypot(i, a);
-	return o <= Wo ? null : {
+	return o <= No ? null : {
 		direction: [i / o, a / o],
 		lengthMeters: o * n
 	};
-}, Zo = (e, t) => ({
+}, Bo = (e, t) => ({
 	minX: t.bounds.min[0] * e.size[0] / t.defaultSize[0],
 	maxX: t.bounds.max[0] * e.size[0] / t.defaultSize[0],
 	minZ: t.bounds.min[2] * e.size[2] / t.defaultSize[2],
 	maxZ: t.bounds.max[2] * e.size[2] / t.defaultSize[2]
-}), Qo = (e, t, n, r) => {
-	let i = Y(e, r), a = Zo(t, n), o = Math.cos(i.rotationYRadians), s = Math.sin(i.rotationYRadians);
+}), Vo = (e, t, n, r) => {
+	let i = Ne(e, r), a = Bo(t, n), o = Math.cos(i.rotationYRadians), s = Math.sin(i.rotationYRadians);
 	return [a.minX, a.maxX].flatMap((e) => [a.minZ, a.maxZ].map((t) => [i.position[0] + e * o + t * s, i.position[2] - e * s + t * o]));
-}, $o = (e, t, n, r, i) => {
-	let a = Jo(t, e), o = n.placement.kind === "wall" && n.placement.wallId === e.wall.id && n.placement.face === a, s = Zo(n, r);
-	return Bo({
+}, Ho = (e, t, n, r, i) => {
+	let a = Lo(t, e), o = n.placement.kind === "wall" && n.placement.wallId === e.wall.id && n.placement.face === a, s = Bo(n, r);
+	return Oo({
 		kind: "wall",
 		wallId: e.wall.id,
 		face: a,
 		offsetFromWallStartPlanUnits: Number(e.offsetPlanUnits.toFixed(4)),
-		elevationMeters: Y(n.placement, i).position[1],
+		elevationMeters: Ne(n.placement, i).position[1],
 		depthOffsetMeters: o ? n.placement.kind === "wall" ? n.placement.depthOffsetMeters : Math.max(0, -s.minZ) : Math.max(r.windowFit?.depthOffsetMeters ?? 0, -s.minZ),
 		rotationOffsetRadians: o && n.placement.kind === "wall" ? n.placement.rotationOffsetRadians : 0
 	}, i);
-}, es = (e, t, n, r, i) => {
-	let a = e.map((e) => Go([e[0] - t[0], e[1] - t[1]], n)), o = Math.min(...a), s = e.filter((e, t) => a[t] <= o + 1e-4).map((e) => Go([e[0] - r[0], e[1] - r[1]], i.direction));
-	return Math.min(...s) >= -1e-7 && Math.max(...s) <= i.lengthMeters + Wo;
-}, ts = (e, t) => {
-	let { position: n } = Y(e, t), r = t.coordinates.metersPerPlanUnit, i = [n[0] / r + t.coordinates.origin[0], n[2] / r + t.coordinates.origin[1]];
-	return t.rooms.filter((e) => Kt(i, e.polygon)).length;
-}, ns = ({ rawAt: e, item: t, definition: n, floor: r, primary: i, candidatesByWallId: a, cornerSnapDistanceMeters: o }) => {
-	let s = r.coordinates.metersPerPlanUnit, c = $o(i, e, t, n, r), l = Y(c, r), u = Qo(c, t, n, r);
+}, Uo = (e, t, n, r, i) => {
+	let a = e.map((e) => Po([e[0] - t[0], e[1] - t[1]], n)), o = Math.min(...a), s = e.filter((e, t) => a[t] <= o + 1e-4).map((e) => Po([e[0] - r[0], e[1] - r[1]], i.direction));
+	return Math.min(...s) >= -1e-7 && Math.max(...s) <= i.lengthMeters + No;
+}, Wo = (e, t) => {
+	let { position: n } = Ne(e, t), r = t.coordinates.metersPerPlanUnit, i = [n[0] / r + t.coordinates.origin[0], n[2] / r + t.coordinates.origin[1]];
+	return t.rooms.filter((e) => K(i, e.polygon)).length;
+}, Go = ({ rawAt: e, item: t, definition: n, floor: r, primary: i, candidatesByWallId: a, cornerSnapDistanceMeters: o }) => {
+	let s = r.coordinates.metersPerPlanUnit, c = Ho(i, e, t, n, r), l = Ne(c, r), u = Vo(c, t, n, r);
 	return r.wallJunctions.flatMap((e) => {
 		if (e.wallIds.length !== 2 || !e.wallIds.includes(i.wall.id)) return [];
 		let d = e.wallIds.find((e) => e !== i.wall.id), f = d ? a.get(d) : void 0;
 		if (!f) return [];
-		let p = Xo(i, e.at, s), m = Xo(f, e.at, s);
+		let p = zo(i, e.at, s), m = zo(f, e.at, s);
 		if (!p || !m) return [];
 		let h = p.direction[0] * m.direction[1] - p.direction[1] * m.direction[0];
 		if (Math.abs(h) <= 1e-4) return [];
-		let g = q(e.at, r.coordinates), _ = Yo(f, Go([l.position[0] - g[0], l.position[2] - g[1]], f.rightNormal) < 0 ? "left" : "right"), v = [g[0] + _[0] * f.wall.thicknessMeters / 2, g[1] + _[1] * f.wall.thicknessMeters / 2], y = u.map((e) => Go([e[0] - v[0], e[1] - v[1]], _)), b = Math.min(...y), x = Math.max(...y), S = b > 0 ? b : x < 0 ? -x : 0;
-		if (S > o + Wo) return [];
-		let C = Go(i.tangent, _);
-		if (Math.abs(C) <= Wo) return [];
+		let g = J(e.at, r.coordinates), _ = Ro(f, Po([l.position[0] - g[0], l.position[2] - g[1]], f.rightNormal) < 0 ? "left" : "right"), v = [g[0] + _[0] * f.wall.thicknessMeters / 2, g[1] + _[1] * f.wall.thicknessMeters / 2], y = u.map((e) => Po([e[0] - v[0], e[1] - v[1]], _)), b = Math.min(...y), x = Math.max(...y), S = b > 0 ? b : x < 0 ? -x : 0;
+		if (S > o + No) return [];
+		let C = Po(i.tangent, _);
+		if (Math.abs(C) <= No) return [];
 		let w = -b / C, T = c.offsetFromWallStartPlanUnits + w / s;
-		if (T < -1e-7 || T > i.lengthPlanUnits + Wo) return [];
+		if (T < -1e-7 || T > i.lengthPlanUnits + No) return [];
 		let E = {
 			...c,
 			offsetFromWallStartPlanUnits: Number(T.toFixed(4))
-		}, D = Qo(E, t, n, r), O = D.map((e) => Go([e[0] - v[0], e[1] - v[1]], _)), k = Yo(i, E.face), A = [g[0] + k[0] * i.wall.thicknessMeters / 2, g[1] + k[1] * i.wall.thicknessMeters / 2];
-		return Math.min(...O) < -1e-4 || !es(D, A, k, g, p) || !es(D, v, _, g, m) || ts(E, r) !== 1 ? [] : [{
+		}, D = Vo(E, t, n, r), O = D.map((e) => Po([e[0] - v[0], e[1] - v[1]], _)), k = Ro(i, E.face), A = [g[0] + k[0] * i.wall.thicknessMeters / 2, g[1] + k[1] * i.wall.thicknessMeters / 2];
+		return Math.min(...O) < -1e-4 || !Uo(D, A, k, g, p) || !Uo(D, v, _, g, m) || Wo(E, r) !== 1 ? [] : [{
 			placement: E,
 			gapMeters: S,
 			adjustmentMeters: Math.abs(w),
 			junctionId: e.id
 		}];
 	}).sort((e, t) => e.gapMeters - t.gapMeters || e.adjustmentMeters - t.adjustmentMeters || e.junctionId.localeCompare(t.junctionId))[0] ?? null;
-}, rs = ({ rawAt: e, item: t, definition: n, floor: r, wallSnapDistanceMeters: i = .55, cornerSnapDistanceMeters: a = .2 }) => {
+}, Ko = ({ rawAt: e, item: t, definition: n, floor: r, wallSnapDistanceMeters: i = .55, cornerSnapDistanceMeters: a = .2 }) => {
 	let o = r.walls.flatMap((t) => {
-		let n = qo(e, t, r.coordinates.metersPerPlanUnit);
+		let n = Io(e, t, r.coordinates.metersPerPlanUnit);
 		return n ? [n] : [];
 	}).sort((e, t) => e.distanceMeters - t.distanceMeters || e.wall.id.localeCompare(t.wall.id)), s = o[0];
 	if (!s || s.distanceMeters > i) return null;
 	let c = t.placement.kind === "wall" ? t.placement.wallId : null, l = [c ? o.find((e) => e.wall.id === c && e.distanceMeters <= i) : void 0, s].filter((e, t, n) => e !== void 0 && n.findIndex((t) => t?.wall.id === e.wall.id) === t), u = new Map(o.map((e) => [e.wall.id, e]));
 	for (let i of l) {
-		let o = ns({
+		let o = Go({
 			rawAt: e,
 			item: t,
 			definition: n,
@@ -7571,12 +7201,12 @@ var Wo = 1e-7, Go = (e, t) => e[0] * t[0] + e[1] * t[1], Ko = (e, t) => Math.hyp
 		});
 		if (o) return o.placement;
 	}
-	return $o(s, e, t, n, r);
-}, is = (e) => {
-	let t = new Set(e), n = N();
-	for (; t.has(n);) n = N();
+	return Ho(s, e, t, n, r);
+}, qo = (e) => {
+	let t = new Set(e), n = lt();
+	for (; t.has(n);) n = lt();
 	return n;
-}, as = (e, t) => {
+}, Jo = (e, t) => {
 	let n = e.placement, r = .25 / (t?.coordinates.metersPerPlanUnit ?? 1);
 	if (n.kind === "wall") {
 		let e = t?.walls.find((e) => e.id === n.wallId);
@@ -7599,7 +7229,7 @@ var Wo = 1e-7, Go = (e, t) => e[0] * t[0] + e[1] * t[1], Ko = (e, t) => Math.hyp
 	]) {
 		let r = [n.at[0] + e, n.at[1] + i];
 		if (t) {
-			let e = t.rooms.filter((e) => Kt(r, e.polygon));
+			let e = t.rooms.filter((e) => K(r, e.polygon));
 			if (e.length !== 1 || n.kind === "ceiling" && e[0].id !== n.roomId) continue;
 		}
 		return {
@@ -7611,17 +7241,17 @@ var Wo = 1e-7, Go = (e, t) => e[0] * t[0] + e[1] * t[1], Ko = (e, t) => Math.hyp
 		...n,
 		at: [...n.at]
 	};
-}, os = (e, t, n, r = []) => {
+}, Yo = (e, t, n, r = []) => {
 	let i = /* @__PURE__ */ new Set([
 		...t.map((e) => e.id),
 		...r,
 		...t.flatMap((e) => e.kind === "device" ? e.entitySlots.map((e) => e.id) : [])
-	]), a = is(i);
+	]), a = qo(i);
 	i.add(a);
-	let o = as(e, n);
+	let o = Jo(e, n);
 	if (n && o.kind === "wall") {
-		let { position: t } = Y(o, n), r = [t[0] / n.coordinates.metersPerPlanUnit + n.coordinates.origin[0], t[2] / n.coordinates.metersPerPlanUnit + n.coordinates.origin[1]];
-		n.rooms.filter((e) => Kt(r, e.polygon)).length !== 1 && (o = { ...e.placement });
+		let { position: t } = Ne(o, n), r = [t[0] / n.coordinates.metersPerPlanUnit + n.coordinates.origin[0], t[2] / n.coordinates.metersPerPlanUnit + n.coordinates.origin[1]];
+		n.rooms.filter((e) => K(r, e.polygon)).length !== 1 && (o = { ...e.placement });
 	}
 	let s = {
 		...e,
@@ -7633,7 +7263,7 @@ var Wo = 1e-7, Go = (e, t) => e[0] * t[0] + e[1] * t[1], Ko = (e, t) => Math.hyp
 		...s,
 		kind: "device",
 		entitySlots: e.entitySlots.map((e) => {
-			let t = is(i);
+			let t = qo(i);
 			return i.add(t), {
 				...structuredClone(e),
 				id: t
@@ -7643,17 +7273,17 @@ var Wo = 1e-7, Go = (e, t) => e[0] * t[0] + e[1] * t[1], Ko = (e, t) => Math.hyp
 		...s,
 		kind: "furnishing"
 	};
-}, ss = .01, cs = (e, t = .1) => Math.round(e / t) * t, ls = (e, t, n, r = .1) => {
-	let i = n ? e.x : cs(e.x, r), a = n ? e.z : cs(e.z, r);
+}, Xo = .01, Zo = (e, t = .1) => Math.round(e / t) * t, Qo = (e, t, n, r = .1) => {
+	let i = n ? e.x : Zo(e.x, r), a = n ? e.z : Zo(e.z, r);
 	return [i / t.metersPerPlanUnit + t.origin[0], a / t.metersPerPlanUnit + t.origin[1]];
-}, us = ({ world: e, item: t, definition: n, floor: r, raw: i, wallSnapDistanceMeters: a = .55 }) => {
-	let o = Y(t.placement, r), s = ls(e, r.coordinates, i), c = ls(e, r.coordinates, !0), l = n.placementEnvironment === "outdoor";
+}, $o = ({ world: e, item: t, definition: n, floor: r, raw: i, wallSnapDistanceMeters: a = .55 }) => {
+	let o = Ne(t.placement, r), s = Qo(e, r.coordinates, i), c = Qo(e, r.coordinates, !0), l = n.placementEnvironment === "outdoor";
 	if (!i && !l && n.windowFit) {
-		let e = Uo(n, r, c, t.size)[0];
+		let e = Mo(n, r, c, t.size)[0];
 		if (e && e.distanceMeters <= a) return e.placement;
 	}
 	if (!i && !l) {
-		let e = rs({
+		let e = Ko({
 			rawAt: c,
 			item: t,
 			definition: n,
@@ -7663,7 +7293,7 @@ var Wo = 1e-7, Go = (e, t) => e[0] * t[0] + e[1] * t[1], Ko = (e, t) => Math.hyp
 		if (e) return e;
 	}
 	let u = t.placement.kind === "ceiling" ? t.placement.roomId : null;
-	return t.placement.kind === "ceiling" && r.rooms.some((e) => e.id === u && Kt(s, e.polygon)) ? {
+	return t.placement.kind === "ceiling" && r.rooms.some((e) => e.id === u && K(s, e.polygon)) ? {
 		...t.placement,
 		at: s
 	} : {
@@ -7672,8 +7302,8 @@ var Wo = 1e-7, Go = (e, t) => e[0] * t[0] + e[1] * t[1], Ko = (e, t) => Math.hyp
 		elevationMeters: o.position[1],
 		rotationYRadians: o.rotationYRadians
 	};
-}, ds = (e, t) => Number.isFinite(e) && e > 0 ? Math.max(ss, e) : t, fs = (e, t, n) => {
-	let r = t.map((t, n) => ds(t, e[n]));
+}, es = (e, t) => Number.isFinite(e) && e > 0 ? Math.max(Xo, e) : t, ts = (e, t, n) => {
+	let r = t.map((t, n) => es(t, e[n]));
 	if (n.kind === "fixed") return [...e];
 	if (n.kind === "planar") return [
 		r[0],
@@ -7691,55 +7321,55 @@ var Wo = 1e-7, Go = (e, t) => e[0] * t[0] + e[1] * t[1], Ko = (e, t) => Math.hyp
 	if (n.kind === "custom") return n.normalize(e, r);
 	let i = r.findIndex((t, n) => Math.abs(t / e[n] - 1) > 1e-9), a = i < 0 ? 1 : r[i] / e[i];
 	return e.map((e) => e * a);
-}, ps = (e, t, n = 0) => {
+}, ns = (e, t, n = 0) => {
 	let r = e.size.map((e, n) => e / t.defaultSize[n]), i = t.bounds.min.map((e, t) => e * r[t]), a = t.bounds.max.map((e, t) => e * r[t]);
 	return {
 		center: i.map((e, t) => (e + a[t]) / 2),
 		size: i.map((e, t) => Math.max(.04, a[t] - e + n * 2))
 	};
-}, ms = (e) => ({
+}, rs = (e) => ({
 	items: [...e],
 	selectedId: null,
 	past: [],
 	future: [],
 	transaction: null
-}), hs = (e) => ({
+}), is = (e) => ({
 	items: e.items,
 	selectedId: e.selectedId
-}), gs = (e, t) => ({
+}), as = (e, t) => ({
 	...e,
 	...t,
-	past: e.transaction ? e.past : [...e.past, hs(e)],
+	past: e.transaction ? e.past : [...e.past, is(e)],
 	future: e.transaction ? e.future : []
-}), _s = (e, t, n) => {
+}), os = (e, t, n) => {
 	let r = !1, i = e.items.map((e) => {
 		if (e.id !== t) return e;
 		let i = n(e);
 		return JSON.stringify(i) === JSON.stringify(e) ? e : (r = !0, i);
 	});
-	return r ? gs(e, {
+	return r ? as(e, {
 		items: i,
 		selectedId: t
 	}) : e;
-}, vs = (e, t) => e.kind === "absolute" || e.kind === "ceiling" ? {
+}, ss = (e, t) => e.kind === "absolute" || e.kind === "ceiling" ? {
 	...e,
 	rotationYRadians: t
 } : {
 	...e,
 	rotationOffsetRadians: t
-}, ys = (e, t, n) => n || {
+}, cs = (e, t, n) => n || {
 	kind: "absolute",
 	at: t,
 	elevationMeters: 0,
 	rotationYRadians: 0
-}, bs = (e, t) => {
+}, ls = (e, t) => {
 	switch (t.type) {
-		case "add-item": return gs(e, {
+		case "add-item": return as(e, {
 			items: [...e.items, t.item],
 			selectedId: t.item.id
 		});
 		case "replace-items": return {
-			...ms(t.items),
+			...rs(t.items),
 			selectedId: t.selectedId ?? null
 		};
 		case "select": return e.selectedId === t.id ? e : {
@@ -7748,7 +7378,7 @@ var Wo = 1e-7, Go = (e, t) => e[0] * t[0] + e[1] * t[1], Ko = (e, t) => Math.hyp
 		};
 		case "begin-transaction": return e.transaction ? e : {
 			...e,
-			transaction: hs(e)
+			transaction: is(e)
 		};
 		case "commit-transaction": return e.transaction ? e.transaction.items === e.items && e.transaction.selectedId === e.selectedId ? {
 			...e,
@@ -7764,15 +7394,15 @@ var Wo = 1e-7, Go = (e, t) => e[0] * t[0] + e[1] * t[1], Ko = (e, t) => Math.hyp
 			...e.transaction,
 			transaction: null
 		} : e;
-		case "update-color": return !t.definition.defaultColor || t.color !== null && !/^#[0-9a-f]{6}$/i.test(t.color) ? e : _s(e, t.id, (e) => {
+		case "update-color": return !t.definition.defaultColor || t.color !== null && !/^#[0-9a-f]{6}$/i.test(t.color) ? e : os(e, t.id, (e) => {
 			let n = { ...e };
 			return t.color === null ? delete n.color : n.color = t.color, n;
 		});
-		case "update-variant": return en(t.definition).some((e) => e.id === t.variant) ? _s(e, t.id, (e) => ({
+		case "update-variant": return Qt(t.definition).some((e) => e.id === t.variant) ? os(e, t.id, (e) => ({
 			...e,
 			variant: t.variant
 		})) : e;
-		case "update-light-state": return _s(e, t.id, (e) => e.kind === "device" ? {
+		case "update-light-state": return os(e, t.id, (e) => e.kind === "device" ? {
 			...e,
 			lightState: t.lightState
 		} : e);
@@ -7784,53 +7414,53 @@ var Wo = 1e-7, Go = (e, t) => e[0] * t[0] + e[1] * t[1], Ko = (e, t) => Math.hyp
 					placement: n
 				} : e;
 			});
-			return n.some((t, n) => t !== e.items[n]) ? gs(e, {
+			return n.some((t, n) => t !== e.items[n]) ? as(e, {
 				items: n,
 				selectedId: e.selectedId
 			}) : e;
 		}
-		case "update-placement": return _s(e, t.id, (e) => ({
+		case "update-placement": return os(e, t.id, (e) => ({
 			...e,
 			placement: t.placement
 		}));
-		case "update-size": return _s(e, t.id, (e) => ({
+		case "update-size": return os(e, t.id, (e) => ({
 			...e,
-			size: fs(t.definition.defaultSize, t.size, t.definition.resizePolicy)
+			size: ts(t.definition.defaultSize, t.size, t.definition.resizePolicy)
 		}));
-		case "rotate": return _s(e, t.id, (e) => ({
+		case "rotate": return os(e, t.id, (e) => ({
 			...e,
-			placement: vs(e.placement, t.rotationYRadians)
+			placement: ss(e.placement, t.rotationYRadians)
 		}));
 		case "duplicate": {
 			let n = e.items.find((e) => e.id === t.id);
 			if (!n) return e;
-			let r = os(n, e.items, t.floor, t.reservedSlotIds);
-			return gs(e, {
+			let r = Yo(n, e.items, t.floor, t.reservedSlotIds);
+			return as(e, {
 				items: [...e.items, r],
 				selectedId: r.id
 			});
 		}
 		case "delete-items": {
 			let n = new Set(t.ids), r = e.items.filter((e) => !n.has(e.id));
-			return r.length === e.items.length ? e : gs(e, {
+			return r.length === e.items.length ? e : as(e, {
 				items: r,
 				selectedId: e.selectedId && n.has(e.selectedId) ? null : e.selectedId
 			});
 		}
-		case "delete": return e.items.findIndex((e) => e.id === t.id) < 0 ? e : gs(e, {
+		case "delete": return e.items.findIndex((e) => e.id === t.id) < 0 ? e : as(e, {
 			items: e.items.filter((e) => e.id !== t.id),
 			selectedId: e.selectedId === t.id ? null : e.selectedId
 		});
 		case "add-preset": {
-			let n = is(e.items.flatMap((e) => [e.id, ...e.kind === "device" ? e.entitySlots.map((e) => e.id) : []])), r = {
+			let n = qo(e.items.flatMap((e) => [e.id, ...e.kind === "device" ? e.entitySlots.map((e) => e.id) : []])), r = {
 				id: n,
 				kind: "furnishing",
 				floorId: t.floorId,
 				modelId: t.modelId,
-				placement: ys(t.definition, t.planCenter, t.placement),
+				placement: cs(t.definition, t.planCenter, t.placement),
 				size: [...t.definition.defaultSize]
 			};
-			return gs(e, {
+			return as(e, {
 				items: [...e.items, r],
 				selectedId: n
 			});
@@ -7841,7 +7471,7 @@ var Wo = 1e-7, Go = (e, t) => e[0] * t[0] + e[1] * t[1], Ko = (e, t) => Math.hyp
 				...e,
 				...t,
 				past: e.past.slice(0, -1),
-				future: [hs(e), ...e.future],
+				future: [is(e), ...e.future],
 				transaction: null
 			} : e;
 		}
@@ -7850,14 +7480,14 @@ var Wo = 1e-7, Go = (e, t) => e[0] * t[0] + e[1] * t[1], Ko = (e, t) => Math.hyp
 			return t ? {
 				...e,
 				...t,
-				past: [...e.past, hs(e)],
+				past: [...e.past, is(e)],
 				future: e.future.slice(1),
 				transaction: null
 			} : e;
 		}
 	}
-}, xs = (e) => {
-	let [t, n] = (0, Z.useReducer)(bs, e, ms), [r, i] = (0, Z.useState)([]), a = t.selectedId ? [t.selectedId] : r.filter((e) => t.items.some((t) => t.id === e)), o = (0, Z.useMemo)(() => t.items.find((e) => e.id === t.selectedId) ?? null, [t.items, t.selectedId]);
+}, us = (e) => {
+	let [t, n] = (0, Z.useReducer)(ls, e, rs), [r, i] = (0, Z.useState)([]), a = t.selectedId ? [t.selectedId] : r.filter((e) => t.items.some((t) => t.id === e)), o = (0, Z.useMemo)(() => t.items.find((e) => e.id === t.selectedId) ?? null, [t.items, t.selectedId]);
 	return {
 		...t,
 		selectedIds: a,
@@ -7952,7 +7582,7 @@ var Wo = 1e-7, Go = (e, t) => e[0] * t[0] + e[1] * t[1], Ko = (e, t) => Math.hyp
 			});
 		}, [])
 	};
-}, Ss = (e) => {
+}, ds = (e) => {
 	let [t, n, r] = e.size, i = e.placement.kind === "ceiling" ? {
 		min: [
 			-t / 2,
@@ -8008,43 +7638,43 @@ var Wo = 1e-7, Go = (e, t) => e[0] * t[0] + e[1] * t[1], Ko = (e, t) => Math.hyp
 			triangles: 12
 		}
 	};
-}, Cs = 8, ws = (e) => !!((e.nativeEvent?.metaKey || e.nativeEvent?.ctrlKey) && !e.nativeEvent?.shiftKey && !e.nativeEvent?.altKey), Ts = (e) => !!e.nativeEvent?.shiftKey, Es = (e) => e.nativeEvent.altKey, Ds = (e) => e.target;
-function Os({ items: e, floor: t, furnishingModels: n, deviceModels: r, selectedId: i, selectedIds: a = i ? [i] : [], onSelectMany: o, selectionOnly: s = !1, onSelect: c, onMovePlacement: l, onMovePlacements: u, onDragStart: d, onDragEnd: f, onDragCancel: p, onDraggingChange: m }) {
-	let h = ze(), [g, _] = (0, Z.useState)(null), v = (0, Z.useRef)(null), y = (0, Z.useRef)(null), x = (0, Z.useRef)(new b(new J(0, 1, 0), 0)), S = (0, Z.useRef)(new J()), C = (0, Z.useRef)({
+}, fs = 8, ps = (e) => !!((e.nativeEvent?.metaKey || e.nativeEvent?.ctrlKey) && !e.nativeEvent?.shiftKey && !e.nativeEvent?.altKey), ms = (e) => !!e.nativeEvent?.shiftKey, hs = (e) => e.nativeEvent.altKey, gs = (e) => e.target;
+function _s({ items: e, floor: t, furnishingModels: n, deviceModels: r, selectedId: i, selectedIds: a = i ? [i] : [], onSelectMany: o, selectionOnly: s = !1, onSelect: c, onMovePlacement: l, onMovePlacements: u, onDragStart: d, onDragEnd: f, onDragCancel: p, onDraggingChange: m }) {
+	let h = ze(), [g, _] = (0, Z.useState)(null), v = (0, Z.useRef)(null), y = (0, Z.useRef)(null), b = (0, Z.useRef)(new me(new Y(0, 1, 0), 0)), x = (0, Z.useRef)(new Y()), S = (0, Z.useRef)({
 		onDragEnd: f,
 		onDragCancel: p,
 		onDraggingChange: m
 	});
 	(0, Z.useLayoutEffect)(() => {
-		C.current = {
+		S.current = {
 			onDragEnd: f,
 			onDragCancel: p,
 			onDraggingChange: m
 		};
 	});
-	let w = (0, Z.useMemo)(() => new ce(1, 1, 1), []);
-	(0, Z.useEffect)(() => () => w.dispose(), [w]);
-	let T = (e, t) => (x.current.constant = -t, e.ray.intersectPlane(x.current, S.current)), E = (n) => {
+	let C = (0, Z.useMemo)(() => new $t(1, 1, 1), []);
+	(0, Z.useEffect)(() => () => C.dispose(), [C]);
+	let w = (e, t) => (b.current.constant = -t, e.ray.intersectPlane(b.current, x.current)), T = (n) => {
 		if (v.current) {
 			let r = v.current;
 			v.current = null, _(null), n || o?.(e.filter((e) => {
-				let [n, , i] = Y(e.placement, t).position;
+				let [n, , i] = Ne(e.placement, t).position;
 				return n >= Math.min(r.from.x, r.to.x) && n <= Math.max(r.from.x, r.to.x) && i >= Math.min(r.from.z, r.to.z) && i <= Math.max(r.from.z, r.to.z);
-			}).map((e) => e.id)), C.current.onDraggingChange?.(!1), r.target?.releasePointerCapture?.(r.pointerId);
+			}).map((e) => e.id)), S.current.onDraggingChange?.(!1), r.target?.releasePointerCapture?.(r.pointerId);
 		}
 		if (!y.current) return;
 		let { active: r, id: i, pointerId: a, target: s } = y.current;
-		y.current = null, r && (C.current.onDraggingChange?.(!1), n ? C.current.onDragCancel?.(i) : C.current.onDragEnd?.(i)), s?.releasePointerCapture?.(a);
-	}, D = (e) => {
-		!y.current || e.pointerId !== y.current.pointerId || (e.stopPropagation(), E(!1));
-	}, O = (0, Z.useEffectEvent)(() => E(!0));
+		y.current = null, r && (S.current.onDraggingChange?.(!1), n ? S.current.onDragCancel?.(i) : S.current.onDragEnd?.(i)), s?.releasePointerCapture?.(a);
+	}, E = (e) => {
+		!y.current || e.pointerId !== y.current.pointerId || (e.stopPropagation(), T(!1));
+	}, D = (0, Z.useEffectEvent)(() => T(!0));
 	return (0, Z.useEffect)(() => {
 		if (typeof window > "u") return;
 		let e = (e) => {
-			e.key !== "Escape" || !y.current && !v.current || (e.preventDefault(), e.stopPropagation(), O());
-		}, t = () => O();
+			e.key !== "Escape" || !y.current && !v.current || (e.preventDefault(), e.stopPropagation(), D());
+		}, t = () => D();
 		return h.events.addEventListener("keydown", e, !0), window.addEventListener("blur", t), () => {
-			h.events.removeEventListener("keydown", e, !0), window.removeEventListener("blur", t), O();
+			h.events.removeEventListener("keydown", e, !0), window.removeEventListener("blur", t), D();
 		};
 	}, [h]), /* @__PURE__ */ (0, Q.jsxs)("group", {
 		name: "furnishing-edit-layer",
@@ -8052,7 +7682,7 @@ function Os({ items: e, floor: t, furnishingModels: n, deviceModels: r, selected
 			!s && o && /* @__PURE__ */ (0, Q.jsxs)("mesh", {
 				name: "arrange-marquee-surface",
 				onClick: (e) => {
-					e.stopPropagation(), !ws(e) && !Ts(e) && o([]);
+					e.stopPropagation(), !ps(e) && !ms(e) && o([]);
 				},
 				rotation: [
 					-Math.PI / 2,
@@ -8060,28 +7690,28 @@ function Os({ items: e, floor: t, furnishingModels: n, deviceModels: r, selected
 					0
 				],
 				onPointerDown: (e) => {
-					if (e.button !== 0 || !ws(e)) return;
-					let t = T(e, 0);
+					if (e.button !== 0 || !ps(e)) return;
+					let t = w(e, 0);
 					t && (e.stopPropagation(), v.current = {
 						from: t.clone(),
 						to: t.clone(),
 						pointerId: e.pointerId,
-						target: Ds(e)
-					}, _(v.current), Ds(e)?.setPointerCapture?.(e.pointerId), m?.(!0));
+						target: gs(e)
+					}, _(v.current), gs(e)?.setPointerCapture?.(e.pointerId), m?.(!0));
 				},
 				onPointerMove: (e) => {
 					let t = v.current;
 					if (!t || t.pointerId !== e.pointerId) return;
 					e.stopPropagation();
-					let n = T(e, 0);
+					let n = w(e, 0);
 					n && (t.to = n.clone(), _({ ...t }));
 				},
 				onPointerUp: (e) => {
-					v.current?.pointerId === e.pointerId && (e.stopPropagation(), E(!1));
+					v.current?.pointerId === e.pointerId && (e.stopPropagation(), T(!1));
 				},
-				onPointerCancel: () => E(!0),
-				onLostPointerCapture: () => E(!0),
-				children: [/* @__PURE__ */ (0, Q.jsx)("planeGeometry", { args: [1e4, 1e4] }), /* @__PURE__ */ (0, Q.jsx)($r, {
+				onPointerCancel: () => T(!0),
+				onLostPointerCapture: () => T(!0),
+				children: [/* @__PURE__ */ (0, Q.jsx)("planeGeometry", { args: [1e4, 1e4] }), /* @__PURE__ */ (0, Q.jsx)(ii, {
 					visible: !1,
 					transparent: !0,
 					opacity: 0,
@@ -8091,7 +7721,7 @@ function Os({ items: e, floor: t, furnishingModels: n, deviceModels: r, selected
 			}),
 			g && /* @__PURE__ */ (0, Q.jsxs)("mesh", {
 				name: "arrange-marquee-preview",
-				raycast: Qr,
+				raycast: ri,
 				rotation: [
 					-Math.PI / 2,
 					0,
@@ -8103,7 +7733,7 @@ function Os({ items: e, floor: t, furnishingModels: n, deviceModels: r, selected
 					(g.from.z + g.to.z) / 2
 				],
 				renderOrder: 40,
-				children: [/* @__PURE__ */ (0, Q.jsx)("planeGeometry", { args: [Math.abs(g.to.x - g.from.x), Math.abs(g.to.z - g.from.z)] }), /* @__PURE__ */ (0, Q.jsx)($r, {
+				children: [/* @__PURE__ */ (0, Q.jsx)("planeGeometry", { args: [Math.abs(g.to.x - g.from.x), Math.abs(g.to.z - g.from.z)] }), /* @__PURE__ */ (0, Q.jsx)(ii, {
 					color: "#6b896c",
 					transparent: !0,
 					opacity: .25,
@@ -8113,7 +7743,7 @@ function Os({ items: e, floor: t, furnishingModels: n, deviceModels: r, selected
 				})]
 			}),
 			e.map((i) => {
-				let o = (i.kind === "device" ? r[i.modelId] : n[i.modelId]) ?? Ss(i), f = Y(i.placement, t), p = ps(i, o, .035), h = a.includes(i.id);
+				let o = (i.kind === "device" ? r[i.modelId] : n[i.modelId]) ?? ds(i), f = Ne(i.placement, t), p = ns(i, o, .035), h = a.includes(i.id);
 				return /* @__PURE__ */ (0, Q.jsx)("group", {
 					name: `furnishing-edit-target-${i.id}`,
 					position: f.position,
@@ -8125,17 +7755,17 @@ function Os({ items: e, floor: t, furnishingModels: n, deviceModels: r, selected
 					children: /* @__PURE__ */ (0, Q.jsx)("mesh", {
 						position: p.center,
 						scale: p.size,
-						geometry: w,
+						geometry: C,
 						onClick: (e) => {
-							e.stopPropagation(), !Ts(e) && !ws(e) && !h && c(i.id);
+							e.stopPropagation(), !ms(e) && !ps(e) && !h && c(i.id);
 						},
 						onPointerDown: (t) => {
-							if (t.button !== 0 || Ts(t) || ws(t) || y.current || s) return;
-							t.stopPropagation(), !Ts(t) && !ws(t) && !h && c(i.id);
-							let n = T(t, f.position[1]);
+							if (t.button !== 0 || ms(t) || ps(t) || y.current || s) return;
+							t.stopPropagation(), !ms(t) && !ps(t) && !h && c(i.id);
+							let n = w(t, f.position[1]);
 							n && (y.current = {
 								items: h ? e.filter((e) => a.includes(e.id)) : [i],
-								origin: new J(...f.position),
+								origin: new Y(...f.position),
 								active: !1,
 								id: i.id,
 								elevation: f.position[1],
@@ -8144,23 +7774,23 @@ function Os({ items: e, floor: t, furnishingModels: n, deviceModels: r, selected
 								pointerId: t.pointerId,
 								startClientX: t.nativeEvent.clientX,
 								startClientY: t.nativeEvent.clientY,
-								target: Ds(t)
-							}, Ds(t)?.setPointerCapture?.(t.pointerId));
+								target: gs(t)
+							}, gs(t)?.setPointerCapture?.(t.pointerId));
 						},
 						onPointerMove: (e) => {
 							let a = y.current;
 							if (!a || a.id !== i.id || a.pointerId !== e.pointerId) return;
 							if (e.stopPropagation(), !a.active) {
-								if (Math.hypot(e.nativeEvent.clientX - a.startClientX, e.nativeEvent.clientY - a.startClientY) < Cs) return;
+								if (Math.hypot(e.nativeEvent.clientX - a.startClientX, e.nativeEvent.clientY - a.startClientY) < fs) return;
 								a.active = !0, m?.(!0), d?.(i.id);
 							}
-							let s = T(e, a.elevation);
+							let s = w(e, a.elevation);
 							if (s) {
 								if (a.items.length > 1) {
-									let i = s.x + a.offsetX - a.origin.x, o = s.z + a.offsetZ - a.origin.z, c = Es(e) ? i : Math.round(i * 10) / 10, l = Es(e) ? o : Math.round(o * 10) / 10, d = {};
+									let i = s.x + a.offsetX - a.origin.x, o = s.z + a.offsetZ - a.origin.z, c = hs(e) ? i : Math.round(i * 10) / 10, l = hs(e) ? o : Math.round(o * 10) / 10, d = {};
 									for (let e of a.items) {
-										let i = (e.kind === "device" ? r[e.modelId] : n[e.modelId]) ?? Ss(e), [a, , o] = Y(e.placement, t).position;
-										d[e.id] = us({
+										let i = (e.kind === "device" ? r[e.modelId] : n[e.modelId]) ?? ds(e), [a, , o] = Ne(e.placement, t).position;
+										d[e.id] = $o({
 											world: {
 												x: a + c,
 												z: o + l
@@ -8174,7 +7804,7 @@ function Os({ items: e, floor: t, furnishingModels: n, deviceModels: r, selected
 									u?.(d);
 									return;
 								}
-								l(i.id, us({
+								l(i.id, $o({
 									world: {
 										x: s.x + a.offsetX,
 										z: s.z + a.offsetZ
@@ -8182,15 +7812,15 @@ function Os({ items: e, floor: t, furnishingModels: n, deviceModels: r, selected
 									item: i,
 									definition: o,
 									floor: t,
-									raw: Es(e)
+									raw: hs(e)
 								}));
 							}
 						},
-						onPointerUp: D,
-						onPointerCancel: () => E(!0),
-						onLostPointerCapture: () => E(!0),
+						onPointerUp: E,
+						onPointerCancel: () => T(!0),
+						onLostPointerCapture: () => T(!0),
 						renderOrder: 20,
-						children: /* @__PURE__ */ (0, Q.jsx)(dt, {
+						children: /* @__PURE__ */ (0, Q.jsx)(ut, {
 							color: h ? "#6b896c" : "#ffffff",
 							transparent: !0,
 							visible: h,
@@ -8205,21 +7835,21 @@ function Os({ items: e, floor: t, furnishingModels: n, deviceModels: r, selected
 }
 //#endregion
 //#region apps/web/src/editor-preview/furnish/NumericField.tsx
-var ks = (e) => String(Number(e.toFixed(4))), As = (e) => {
+var vs = (e) => String(Number(e.toFixed(4))), ys = (e) => {
 	let t = e.trim().replace(",", ".");
 	return /^[+-]?(?:\d+(?:\.\d*)?|\.\d+)$/.test(t) ? Number(t) : NaN;
 };
-function js({ label: e, value: t, disabled: n, onChange: r, step: i = .1, min: a, unit: o }) {
-	let s = (0, Z.useId)(), [c, l] = (0, Z.useState)(t), [u, d] = (0, Z.useState)(ks(t)), [f, p] = (0, Z.useState)(""), [m, h] = (0, Z.useState)(!1);
-	c !== t && (l(t), h(!1), d(ks(t)), p(""));
+function bs({ label: e, value: t, disabled: n, onChange: r, step: i = .1, min: a, unit: o }) {
+	let s = (0, Z.useId)(), [c, l] = (0, Z.useState)(t), [u, d] = (0, Z.useState)(vs(t)), [f, p] = (0, Z.useState)(""), [m, h] = (0, Z.useState)(!1);
+	c !== t && (l(t), h(!1), d(vs(t)), p(""));
 	let g = (e) => {
 		if (!Number.isFinite(e) || a !== void 0 && e < a) {
 			p(a === void 0 ? "Enter a valid number." : `Enter a number of at least ${a}${o ? ` ${o}` : ""}.`);
 			return;
 		}
-		p(""), h(!1), d(ks(e)), e !== t && r(e);
+		p(""), h(!1), d(vs(e)), e !== t && r(e);
 	}, _ = (e, n) => {
-		let r = As(u), o = Number(((Number.isFinite(r) ? r : t) + e * i * (n ? 10 : 1)).toFixed(4));
+		let r = ys(u), o = Number(((Number.isFinite(r) ? r : t) + e * i * (n ? 10 : 1)).toFixed(4));
 		g(a === void 0 ? o : Math.max(a, o));
 	};
 	return /* @__PURE__ */ (0, Q.jsxs)("div", {
@@ -8227,7 +7857,10 @@ function js({ label: e, value: t, disabled: n, onChange: r, step: i = .1, min: a
 		children: [
 			/* @__PURE__ */ (0, Q.jsxs)("label", {
 				htmlFor: s,
-				children: [/* @__PURE__ */ (0, Q.jsxs)("span", { children: [e, o ? ` · ${o}` : ""] }), /* @__PURE__ */ (0, Q.jsx)("input", {
+				children: [/* @__PURE__ */ (0, Q.jsxs)("span", { children: [e, o && /* @__PURE__ */ (0, Q.jsxs)("span", {
+					className: "arrange-numeric-field__unit",
+					children: [" · ", o]
+				})] }), /* @__PURE__ */ (0, Q.jsx)("input", {
 					id: s,
 					type: "text",
 					inputMode: "decimal",
@@ -8239,7 +7872,7 @@ function js({ label: e, value: t, disabled: n, onChange: r, step: i = .1, min: a
 						d(e.currentTarget.value), h(!0), p("");
 					},
 					onBlur: () => {
-						m && g(As(u));
+						m && g(ys(u));
 					},
 					onKeyDown: (e) => {
 						[
@@ -8247,7 +7880,7 @@ function js({ label: e, value: t, disabled: n, onChange: r, step: i = .1, min: a
 							"Escape",
 							"ArrowUp",
 							"ArrowDown"
-						].includes(e.key) && (e.preventDefault(), e.stopPropagation(), e.key === "Enter" ? m && g(As(u)) : e.key === "Escape" ? (d(ks(t)), h(!1), p("")) : _(e.key === "ArrowUp" ? 1 : -1, e.shiftKey));
+						].includes(e.key) && (e.preventDefault(), e.stopPropagation(), e.key === "Enter" ? m && g(ys(u)) : e.key === "Escape" ? (d(vs(t)), h(!1), p("")) : _(e.key === "ArrowUp" ? 1 : -1, e.shiftKey));
 					}
 				})]
 			}),
@@ -8274,47 +7907,42 @@ function js({ label: e, value: t, disabled: n, onChange: r, step: i = .1, min: a
 }
 //#endregion
 //#region apps/web/src/editor-preview/furnish/FurnishingProperties.tsx
-var Ms = [
+var xs = [
 	"width",
 	"height",
 	"depth"
-], Ns = (e) => e.kind === "wall" ? e.rotationOffsetRadians : e.rotationYRadians;
-function Ps({ selected: e, definition: t, onPlacementChange: n, onSizeChange: r, onLightStateChange: i, onVariantChange: a, onColorChange: o, onClose: s, floor: c, onWindowFit: l }) {
+], Ss = (e) => e.kind === "wall" ? e.rotationOffsetRadians : e.rotationYRadians;
+function Cs({ selected: e, definition: t, onPlacementChange: n, onSizeChange: r, onLightStateChange: i, onVariantChange: a, onColorChange: o, onClose: s, floor: c, onWindowFit: l }) {
 	let u = (t) => n(e.id, {
 		...e.placement,
 		...t
 	}), d = (n, i) => {
 		let a = [...e.size];
 		a[n] = i, r(e.id, a, t);
-	}, f = c && t.windowFit ? Uo(t, c, c.coordinates.origin) : [];
-	return /* @__PURE__ */ (0, Q.jsxs)(hr, {
+	}, f = c && t.windowFit ? Mo(t, c, c.coordinates.origin) : [];
+	return /* @__PURE__ */ (0, Q.jsxs)(lr, {
 		label: e.kind === "device" ? "Selected device" : "Selected furnishing",
 		title: t.label,
-		subtitle: t.category,
+		subtitle: `${t.category}${c ? ` · ${c.name}` : ""}`,
 		onClose: s,
 		children: [
-			en(t).length > 1 && a && /* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Appearance" }), /* @__PURE__ */ (0, Q.jsxs)("label", { children: [/* @__PURE__ */ (0, Q.jsx)("span", { children: "Variant" }), /* @__PURE__ */ (0, Q.jsx)("select", {
-				value: W(t, e.variant).id,
-				onChange: (n) => a(e.id, n.currentTarget.value, t),
-				children: en(t).map((e) => /* @__PURE__ */ (0, Q.jsx)("option", {
-					value: e.id,
-					children: e.label
-				}, e.id))
-			})] })] }),
-			t.defaultColor && o && /* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [
-				/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Fabric" }),
-				/* @__PURE__ */ (0, Q.jsxs)("label", { children: [/* @__PURE__ */ (0, Q.jsx)("span", { children: "Color" }), /* @__PURE__ */ (0, Q.jsx)("input", {
-					type: "color",
-					value: e.color ?? t.defaultColor,
-					onInput: (n) => o(e.id, n.currentTarget.value, t)
-				})] }),
-				/* @__PURE__ */ (0, Q.jsx)("button", {
-					type: "button",
-					disabled: e.color === void 0,
-					onClick: () => o(e.id, null, t),
-					children: "Reset color"
-				})
-			] }),
+			/* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Dimensions" }), t.resizePolicy.kind === "uniform" ? /* @__PURE__ */ (0, Q.jsx)(bs, {
+				unit: "×",
+				min: Math.max(...t.defaultSize.map((e) => .01 / e)),
+				label: "Scale",
+				value: e.size[0] / t.defaultSize[0],
+				onChange: (n) => r(e.id, t.defaultSize.map((e) => e * n), t)
+			}) : xs.map((n, r) => {
+				let i = t.resizePolicy.kind === "planar" ? n !== "height" : t.resizePolicy.kind === "axes" ? t.resizePolicy.axes.includes(n) : t.resizePolicy.kind === "custom";
+				return /* @__PURE__ */ (0, Q.jsx)(bs, {
+					unit: "m",
+					min: .01,
+					label: n.charAt(0).toUpperCase() + n.slice(1),
+					value: e.size[r],
+					disabled: !i,
+					onChange: (e) => d(r, e)
+				}, n);
+			})] }),
 			t.windowFit && l && /* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Window" }), /* @__PURE__ */ (0, Q.jsxs)("label", { children: [/* @__PURE__ */ (0, Q.jsx)("span", { children: "Fit to window" }), /* @__PURE__ */ (0, Q.jsxs)("select", {
 				value: "",
 				disabled: f.length === 0,
@@ -8335,130 +7963,149 @@ function Ps({ selected: e, definition: t, onPlacementChange: n, onSizeChange: r,
 				}, `${e.openingId}-${t}`))]
 			})] })] }),
 			e.placement.kind === "absolute" && /* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [
-				/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Position" }),
-				/* @__PURE__ */ (0, Q.jsx)(js, {
+				/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Placement" }),
+				/* @__PURE__ */ (0, Q.jsx)(bs, {
 					unit: "plan units",
 					label: "X",
 					value: e.placement.at[0],
 					onChange: (t) => u({ at: [t, e.placement.kind === "absolute" ? e.placement.at[1] : 0] })
 				}),
-				/* @__PURE__ */ (0, Q.jsx)(js, {
+				/* @__PURE__ */ (0, Q.jsx)(bs, {
 					unit: "plan units",
 					label: "Z",
 					value: e.placement.at[1],
 					onChange: (t) => u({ at: [e.placement.kind === "absolute" ? e.placement.at[0] : 0, t] })
 				}),
-				/* @__PURE__ */ (0, Q.jsx)(js, {
+				/* @__PURE__ */ (0, Q.jsx)(bs, {
 					unit: "m",
 					label: "Elevation",
 					value: e.placement.elevationMeters,
 					onChange: (e) => u({ elevationMeters: e })
+				}),
+				/* @__PURE__ */ (0, Q.jsx)(bs, {
+					unit: "°",
+					step: 1,
+					label: "Rotation",
+					value: Ss(e.placement) * 180 / Math.PI,
+					onChange: (t) => {
+						let n = t * Math.PI / 180;
+						u(e.placement.kind === "wall" ? { rotationOffsetRadians: n } : { rotationYRadians: n });
+					}
 				})
 			] }),
 			e.placement.kind === "wall" && /* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [
-				/* @__PURE__ */ (0, Q.jsxs)("legend", { children: [
-					"Wall support · ",
-					e.placement.wallId,
-					" · ",
-					e.placement.face
-				] }),
-				/* @__PURE__ */ (0, Q.jsx)(js, {
+				/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Placement · wall" }),
+				/* @__PURE__ */ (0, Q.jsx)(bs, {
 					unit: "plan units",
 					label: "Offset",
 					value: e.placement.offsetFromWallStartPlanUnits,
 					onChange: (e) => u({ offsetFromWallStartPlanUnits: e })
 				}),
-				/* @__PURE__ */ (0, Q.jsx)(js, {
+				/* @__PURE__ */ (0, Q.jsx)(bs, {
 					unit: "m",
 					label: "Elevation",
 					value: e.placement.elevationMeters,
 					onChange: (e) => u({ elevationMeters: e })
 				}),
-				/* @__PURE__ */ (0, Q.jsx)(js, {
+				/* @__PURE__ */ (0, Q.jsx)(bs, {
 					unit: "m",
 					label: "Depth offset",
 					value: e.placement.depthOffsetMeters,
 					onChange: (e) => u({ depthOffsetMeters: e })
+				}),
+				/* @__PURE__ */ (0, Q.jsx)(bs, {
+					unit: "°",
+					step: 1,
+					label: "Rotation",
+					value: Ss(e.placement) * 180 / Math.PI,
+					onChange: (t) => {
+						let n = t * Math.PI / 180;
+						u(e.placement.kind === "wall" ? { rotationOffsetRadians: n } : { rotationYRadians: n });
+					}
 				})
 			] }),
 			e.placement.kind === "ceiling" && /* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [
-				/* @__PURE__ */ (0, Q.jsxs)("legend", { children: ["Ceiling support · ", e.placement.roomId] }),
-				/* @__PURE__ */ (0, Q.jsx)(js, {
+				/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Placement · ceiling" }),
+				/* @__PURE__ */ (0, Q.jsx)(bs, {
 					unit: "plan units",
 					label: "X",
 					value: e.placement.at[0],
 					onChange: (t) => u({ at: [t, e.placement.kind === "ceiling" ? e.placement.at[1] : 0] })
 				}),
-				/* @__PURE__ */ (0, Q.jsx)(js, {
+				/* @__PURE__ */ (0, Q.jsx)(bs, {
 					unit: "plan units",
 					label: "Z",
 					value: e.placement.at[1],
 					onChange: (t) => u({ at: [e.placement.kind === "ceiling" ? e.placement.at[0] : 0, t] })
 				}),
-				/* @__PURE__ */ (0, Q.jsx)(js, {
+				/* @__PURE__ */ (0, Q.jsx)(bs, {
 					unit: "m",
 					label: "Drop",
 					value: e.placement.dropMeters,
 					onChange: (e) => u({ dropMeters: e })
+				}),
+				/* @__PURE__ */ (0, Q.jsx)(bs, {
+					unit: "°",
+					step: 1,
+					label: "Rotation",
+					value: Ss(e.placement) * 180 / Math.PI,
+					onChange: (t) => {
+						let n = t * Math.PI / 180;
+						u(e.placement.kind === "wall" ? { rotationOffsetRadians: n } : { rotationYRadians: n });
+					}
 				})
 			] }),
-			e.kind === "device" && W(t, e.variant).sceneLight !== !1 && e.entitySlots.some((e) => e.deviceRole === "primary" && e.compatibleDomains.includes("light")) && i && /* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Light" }), /* @__PURE__ */ (0, Q.jsxs)("label", { children: [/* @__PURE__ */ (0, Q.jsx)("span", { children: "State" }), /* @__PURE__ */ (0, Q.jsxs)("select", {
-				value: e.lightState ?? "connected",
-				onChange: (t) => i(e.id, t.currentTarget.value),
-				children: [
-					/* @__PURE__ */ (0, Q.jsx)("option", {
-						value: "always-off",
-						children: "Always off"
-					}),
-					/* @__PURE__ */ (0, Q.jsx)("option", {
-						value: "always-on",
-						children: "Always on"
-					}),
-					/* @__PURE__ */ (0, Q.jsx)("option", {
-						value: "night-only",
-						children: "Night only"
-					}),
-					/* @__PURE__ */ (0, Q.jsx)("option", {
-						value: "connected",
-						children: "Connected"
-					})
-				]
-			})] })] }),
-			/* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Rotation" }), /* @__PURE__ */ (0, Q.jsx)(js, {
-				unit: "°",
-				step: 1,
-				label: "Degrees",
-				value: Ns(e.placement) * 180 / Math.PI,
-				onChange: (t) => {
-					let n = t * Math.PI / 180;
-					u(e.placement.kind === "wall" ? { rotationOffsetRadians: n } : { rotationYRadians: n });
-				}
-			})] }),
-			/* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [/* @__PURE__ */ (0, Q.jsxs)("legend", { children: ["Size · ", t.resizePolicy.kind] }), t.resizePolicy.kind === "uniform" ? /* @__PURE__ */ (0, Q.jsx)(js, {
-				unit: "×",
-				min: Math.max(...t.defaultSize.map((e) => .01 / e)),
-				label: "Scale",
-				value: e.size[0] / t.defaultSize[0],
-				onChange: (n) => r(e.id, t.defaultSize.map((e) => e * n), t)
-			}) : Ms.map((n, r) => {
-				let i = t.resizePolicy.kind === "planar" ? n !== "height" : t.resizePolicy.kind === "axes" ? t.resizePolicy.axes.includes(n) : t.resizePolicy.kind === "custom";
-				return /* @__PURE__ */ (0, Q.jsx)(js, {
-					unit: "m",
-					min: .01,
-					label: n,
-					value: e.size[r],
-					disabled: !i,
-					onChange: (e) => d(r, e)
-				}, n);
-			})] })
+			(Qt(t).length > 1 && !!a || !!t.defaultColor && !!o || e.kind === "device" && !!i && ce(t, e.variant).sceneLight !== !1 && e.entitySlots.some((e) => e.deviceRole === "primary" && e.compatibleDomains.includes("light"))) && /* @__PURE__ */ (0, Q.jsxs)("fieldset", { children: [
+				/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Appearance" }),
+				Qt(t).length > 1 && a && /* @__PURE__ */ (0, Q.jsx)(Q.Fragment, { children: /* @__PURE__ */ (0, Q.jsxs)("label", { children: [/* @__PURE__ */ (0, Q.jsx)("span", { children: "Variant" }), /* @__PURE__ */ (0, Q.jsx)("select", {
+					value: ce(t, e.variant).id,
+					onChange: (n) => a(e.id, n.currentTarget.value, t),
+					children: Qt(t).map((e) => /* @__PURE__ */ (0, Q.jsx)("option", {
+						value: e.id,
+						children: e.label
+					}, e.id))
+				})] }) }),
+				t.defaultColor && o && /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [/* @__PURE__ */ (0, Q.jsxs)("label", { children: [/* @__PURE__ */ (0, Q.jsx)("span", { children: "Color" }), /* @__PURE__ */ (0, Q.jsx)("input", {
+					type: "color",
+					value: e.color ?? t.defaultColor,
+					onInput: (n) => o(e.id, n.currentTarget.value, t)
+				})] }), /* @__PURE__ */ (0, Q.jsx)("button", {
+					type: "button",
+					disabled: e.color === void 0,
+					onClick: () => o(e.id, null, t),
+					children: "Reset color"
+				})] }),
+				e.kind === "device" && ce(t, e.variant).sceneLight !== !1 && e.entitySlots.some((e) => e.deviceRole === "primary" && e.compatibleDomains.includes("light")) && i && /* @__PURE__ */ (0, Q.jsx)(Q.Fragment, { children: /* @__PURE__ */ (0, Q.jsxs)("label", { children: [/* @__PURE__ */ (0, Q.jsx)("span", { children: "State" }), /* @__PURE__ */ (0, Q.jsxs)("select", {
+					value: e.lightState ?? "connected",
+					onChange: (t) => i(e.id, t.currentTarget.value),
+					children: [
+						/* @__PURE__ */ (0, Q.jsx)("option", {
+							value: "always-off",
+							children: "Always off"
+						}),
+						/* @__PURE__ */ (0, Q.jsx)("option", {
+							value: "always-on",
+							children: "Always on"
+						}),
+						/* @__PURE__ */ (0, Q.jsx)("option", {
+							value: "night-only",
+							children: "Night only"
+						}),
+						/* @__PURE__ */ (0, Q.jsx)("option", {
+							value: "connected",
+							children: "Connected"
+						})
+					]
+				})] }) })
+			] })
 		]
 	}, e.id);
 }
 //#endregion
 //#region apps/web/src/editor-preview/furnish/FurnishingInspector.tsx
-function Fs({ items: e, selectedId: t, furnishingModels: n, deviceModels: r, floor: i, onWindowFit: a, onPlacementChange: o, onSizeChange: s, onLightStateChange: c, onVariantChange: l, onColorChange: u, onClose: d }) {
-	let f = e.find((e) => e.id === t), p = f ? (f.kind === "device" ? r : n)[f.modelId] ?? Ss(f) : void 0;
-	return f && p ? /* @__PURE__ */ (0, Q.jsx)(Ps, {
+function ws({ items: e, selectedId: t, furnishingModels: n, deviceModels: r, floor: i, onWindowFit: a, onPlacementChange: o, onSizeChange: s, onLightStateChange: c, onVariantChange: l, onColorChange: u, onClose: d }) {
+	let f = e.find((e) => e.id === t), p = f ? (f.kind === "device" ? r : n)[f.modelId] ?? ds(f) : void 0;
+	return f && p ? /* @__PURE__ */ (0, Q.jsx)(Cs, {
 		selected: f,
 		definition: p,
 		floor: i,
@@ -8473,14 +8120,14 @@ function Fs({ items: e, selectedId: t, furnishingModels: n, deviceModels: r, flo
 }
 //#endregion
 //#region apps/web/src/editor-preview/furnish/ArrangePlanOpenings.tsx
-var Is = (0, Z.memo)(function({ floor: e }) {
+var Ts = (0, Z.memo)(function({ floor: e }) {
 	return /* @__PURE__ */ (0, Q.jsx)("group", {
 		name: "arrange-plan-openings",
 		children: e.openings.map((t) => {
 			if (t.kind !== "door") return null;
 			let n = e.walls.find((e) => e.id === t.wallId);
 			if (!n) return null;
-			let r = $e(n, t, e.coordinates);
+			let r = tt(n, t, e.coordinates);
 			return /* @__PURE__ */ (0, Q.jsx)("group", {
 				name: `arrange-plan-opening-${t.id}`,
 				position: [
@@ -8493,7 +8140,7 @@ var Is = (0, Z.memo)(function({ floor: e }) {
 					r.rotationY,
 					0
 				],
-				children: Lr(t, r.widthMeters, n.thicknessMeters).map((e, t) => /* @__PURE__ */ (0, Q.jsx)(ti, {
+				children: wr(t, r.widthMeters, n.thicknessMeters).map((e, t) => /* @__PURE__ */ (0, Q.jsx)(oi, {
 					...e,
 					overlay: !0
 				}, t))
@@ -8502,94 +8149,468 @@ var Is = (0, Z.memo)(function({ floor: e }) {
 	});
 });
 //#endregion
+//#region apps/web/src/editor-floors/StairShapeSelect.tsx
+function Es({ value: e, onChange: t }) {
+	return /* @__PURE__ */ (0, Q.jsxs)("label", {
+		className: "construction-inspector__single-control",
+		children: ["Shape", /* @__PURE__ */ (0, Q.jsxs)("select", {
+			"aria-label": "Stair shape",
+			value: e,
+			onChange: (e) => t(e.target.value),
+			children: [
+				/* @__PURE__ */ (0, Q.jsx)("option", {
+					value: "straight",
+					children: "Straight"
+				}),
+				/* @__PURE__ */ (0, Q.jsx)("option", {
+					value: "l-shaped",
+					children: "L-shaped"
+				}),
+				/* @__PURE__ */ (0, Q.jsx)("option", {
+					value: "u-shaped",
+					children: "U-shaped"
+				}),
+				/* @__PURE__ */ (0, Q.jsx)("option", {
+					value: "spiral",
+					children: "Spiral"
+				})
+			]
+		})]
+	});
+}
+//#endregion
+//#region apps/web/src/editor-floors/stair-placement-geometry.ts
+var Ds = (e) => Number(e.toFixed(2));
+function Os(e, t, n, r) {
+	let i = r.x - n.x, a = r.z - n.z, o = Math.hypot(i, a);
+	if (!Number.isFinite(o) || o < .1) return null;
+	let s = c(n, t);
+	return e.shape === "spiral" ? {
+		...e,
+		at: s,
+		diameterMeters: Ds(2 * o),
+		rotationYRadians: -Math.atan2(a, i)
+	} : e.shape === "l-shaped" || e.shape === "u-shaped" ? o - e.widthMeters / 2 >= .1 ? {
+		...e,
+		at: s,
+		lowerRunMeters: Ds(o - e.widthMeters / 2),
+		rotationYRadians: Math.atan2(i, a)
+	} : null : {
+		...e,
+		at: s,
+		runMeters: Ds(o),
+		rotationYRadians: Math.atan2(i, a)
+	};
+}
+function ks(e, t, n, r, i) {
+	let a = Os(e, t, n, r);
+	if (!a || a.shape !== "l-shaped" && a.shape !== "u-shaped") return null;
+	let o = (i.x - r.x) * Math.cos(a.rotationYRadians) - (i.z - r.z) * Math.sin(a.rotationYRadians), s = (i.x - r.x) * Math.sin(a.rotationYRadians) + (i.z - r.z) * Math.cos(a.rotationYRadians), c = a.shape === "u-shaped" ? -s - e.widthMeters / 2 : Math.abs(o) - e.widthMeters / 2;
+	return c >= .1 ? {
+		...a,
+		upperRunMeters: Ds(c),
+		turn: o >= 0 ? "right" : "left"
+	} : null;
+}
+function As(e, t, n, r, i, a) {
+	let o = {
+		x: Math.sin(e.rotationYRadians),
+		z: Math.cos(e.rotationYRadians)
+	};
+	if (a === "body") return {
+		...e,
+		at: c({
+			x: n.x + i.x - r.x,
+			z: n.z + i.z - r.z
+		}, t)
+	};
+	if (e.shape === "spiral") {
+		let t = Math.hypot(i.x - n.x, i.z - n.z);
+		return t <= .1 ? null : a === "rotation" ? {
+			...e,
+			rotationYRadians: -Math.atan2(i.z - n.z, i.x - n.x)
+		} : {
+			...e,
+			diameterMeters: Ds(t * 2)
+		};
+	}
+	if (e.shape === "l-shaped" || e.shape === "u-shaped") {
+		let r = {
+			x: n.x + o.x * (e.lowerRunMeters + e.widthMeters / 2),
+			z: n.z + o.z * (e.lowerRunMeters + e.widthMeters / 2)
+		};
+		if (a === "bottom") return Os(e, t, i, r);
+		if (a === "corner") return Os(e, t, n, i);
+		if (a === "top") return ks(e, t, n, r, i);
+	} else {
+		let r = {
+			x: n.x + o.x * e.runMeters,
+			z: n.z + o.z * e.runMeters
+		};
+		if (a === "bottom") return Os(e, t, i, r);
+		if (a === "top") return Os(e, t, n, i);
+	}
+	let s = (i.x - n.x) * o.z - (i.z - n.z) * o.x, l = Ds(Math.abs(s) * 2);
+	return l >= .1 ? {
+		...e,
+		widthMeters: l
+	} : null;
+}
+function js(e, t, n) {
+	if ((t.shape ?? "straight") === n) return t;
+	let r = Qe(e, t)?.startWorld ?? J(t.at, e.coordinates), i = {
+		id: t.id,
+		railings: t.railings,
+		lowerFloorId: t.lowerFloorId,
+		upperFloorId: t.upperFloorId,
+		at: c({
+			x: r[0],
+			z: r[1]
+		}, e.coordinates),
+		rotationYRadians: t.rotationYRadians
+	}, a = e.floors.find((e) => e.id === t.lowerFloorId).floorToFloorHeightMeters;
+	return ht(n === "spiral" ? {
+		...i,
+		shape: n,
+		at: c({
+			x: r[0] - .55 * Math.cos(i.rotationYRadians),
+			z: r[1] + .55 * Math.sin(i.rotationYRadians)
+		}, e.coordinates),
+		diameterMeters: 2,
+		totalTurnDegrees: 360,
+		direction: "clockwise"
+	} : n === "l-shaped" || n === "u-shaped" ? {
+		...i,
+		shape: n,
+		widthMeters: 1,
+		lowerRunMeters: Ds(a * .75),
+		upperRunMeters: Ds(a * .75),
+		turn: "right"
+	} : {
+		...i,
+		shape: n,
+		widthMeters: 1,
+		runMeters: Ds(a * 1.5)
+	});
+}
+function Ms(e) {
+	let t = (e, t) => [
+		e,
+		.25,
+		t
+	], n = e.path[0], r = e.path[e.path.length - 1];
+	if (e.spec.shape === "spiral") {
+		let [n, r] = e.originWorld, i = e.spec.diameterMeters / 2;
+		return [{
+			handle: "diameter",
+			at: t(n - e.side[0] * i, r - e.side[1] * i)
+		}, {
+			handle: "rotation",
+			at: t(n + e.side[0] * i, r + e.side[1] * i)
+		}];
+	}
+	let i = e.spec.shape === "l-shaped" || e.spec.shape === "u-shaped" ? e.spec.lowerRunMeters : e.runMeters;
+	return [
+		{
+			handle: "bottom",
+			at: t(n.x, n.z)
+		},
+		{
+			handle: "top",
+			at: t(r.x, r.z)
+		},
+		...[-1, 1].map((r) => ({
+			handle: r === -1 ? "left" : "right",
+			at: t(n.x + e.forward[0] * i / 2 + e.side[0] * r * e.widthMeters / 2, n.z + e.forward[1] * i / 2 + e.side[1] * r * e.widthMeters / 2)
+		})),
+		...e.spec.shape === "l-shaped" || e.spec.shape === "u-shaped" ? [{
+			handle: "corner",
+			at: t(e.path[2].x, e.path[2].z)
+		}] : []
+	];
+}
+//#endregion
+//#region apps/web/src/editor-floors/stair-candidate-validation.ts
+function Ns(e, t) {
+	return {
+		...e,
+		stairs: [...e.stairs.filter((e) => e.id !== t.id), t]
+	};
+}
+function Ps(e, t, n) {
+	let r = Ns(e, t);
+	return nt(r, n).filter((e) => e.path === `stairs[${r.stairs.length - 1}]`);
+}
+function Fs(e, t) {
+	return Qe(e, t) !== null;
+}
+//#endregion
+//#region apps/web/src/editor-floors/StairNumberField.tsx
+function Is({ label: e, value: t, onCommit: n, minimum: r, maximum: i }) {
+	let [a, o] = (0, Z.useState)(String(Number(t.toFixed(2)))), [s, c] = (0, Z.useState)(null), l = (0, Z.useId)();
+	(0, Z.useEffect)(() => {
+		o(String(Number(t.toFixed(2)))), c(null);
+	}, [t]);
+	let u = (e) => {
+		if (e === String(Number(t.toFixed(2)))) {
+			c(null);
+			return;
+		}
+		let a = e.trim() ? Number(e) : NaN, o = Number.isFinite(a) ? r !== void 0 && a <= r ? `Enter a value greater than ${r}.` : i !== void 0 && a > i ? `Enter a value of ${i} or less.` : null : "Enter a finite number.";
+		c(o), !o && a !== t && n(a);
+	};
+	return /* @__PURE__ */ (0, Q.jsxs)("label", {
+		className: "construction-inspector__single-control stair-number-field",
+		children: [
+			e,
+			/* @__PURE__ */ (0, Q.jsx)("input", {
+				"aria-label": e,
+				type: "number",
+				step: "any",
+				value: a,
+				"aria-invalid": s ? !0 : void 0,
+				"aria-describedby": s ? l : void 0,
+				onChange: (e) => o(e.target.value),
+				onBlur: (e) => u(e.currentTarget.value),
+				onKeyDown: (e) => {
+					e.key === "Enter" && e.currentTarget.blur(), e.key === "Escape" && (e.stopPropagation(), e.currentTarget.value = String(Number(t.toFixed(2))), o(e.currentTarget.value), c(null), e.currentTarget.blur());
+				}
+			}),
+			s && /* @__PURE__ */ (0, Q.jsx)("span", {
+				id: l,
+				className: "stair-number-field__error",
+				role: "alert",
+				children: s
+			})
+		]
+	});
+}
+//#endregion
+//#region apps/web/src/editor-floors/StairDetails.tsx
+function Ls({ project: e, stair: t, registries: n, liveIssues: r, onSave: i, onCancel: a }) {
+	let [o, s] = (0, Z.useState)(t);
+	(0, Z.useEffect)(() => s(t), [t]);
+	let c = (0, Z.useMemo)(() => Ps(e, o, n), [
+		e,
+		o,
+		n
+	]), l = r ?? c, u = (t) => {
+		s(t), Fs(e, t) && i(t);
+	}, d = (e, t, n, r, i) => /* @__PURE__ */ (0, Q.jsx)(Is, {
+		label: e,
+		value: t,
+		minimum: r,
+		maximum: i,
+		onCommit: n
+	}, e);
+	return /* @__PURE__ */ (0, Q.jsxs)(lr, {
+		mode: "construct",
+		title: "Stairs",
+		subtitle: `To ${e.floors.find((e) => e.id === o.upperFloorId)?.name}`,
+		label: "Stair properties",
+		onClose: a,
+		children: [
+			/* @__PURE__ */ (0, Q.jsx)(Es, {
+				value: o.shape ?? "straight",
+				onChange: (t) => u(js(e, o, t))
+			}),
+			o.shape === "spiral" ? /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [
+				d("Diameter (m)", o.diameterMeters, (e) => u({
+					...o,
+					diameterMeters: e
+				}), .2),
+				d("Total turn (degrees)", o.totalTurnDegrees, (e) => u({
+					...o,
+					totalTurnDegrees: e
+				}), 0, 360),
+				/* @__PURE__ */ (0, Q.jsxs)("label", {
+					className: "construction-inspector__single-control stair-direction-control",
+					children: ["Direction", /* @__PURE__ */ (0, Q.jsxs)("select", {
+						"aria-label": "Spiral direction",
+						value: o.direction,
+						onChange: (e) => u({
+							...o,
+							direction: e.target.value
+						}),
+						children: [/* @__PURE__ */ (0, Q.jsx)("option", {
+							value: "clockwise",
+							children: "Clockwise"
+						}), /* @__PURE__ */ (0, Q.jsx)("option", {
+							value: "counterclockwise",
+							children: "Counterclockwise"
+						})]
+					})]
+				})
+			] }) : /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [d("Width (m)", o.widthMeters, (e) => u({
+				...o,
+				widthMeters: e
+			}), 0), o.shape === "l-shaped" || o.shape === "u-shaped" ? /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [
+				d("Lower flight length (m)", o.lowerRunMeters, (e) => u({
+					...o,
+					lowerRunMeters: e
+				}), 0),
+				d("Upper flight length (m)", o.upperRunMeters, (e) => u({
+					...o,
+					upperRunMeters: e
+				}), 0),
+				/* @__PURE__ */ (0, Q.jsxs)("label", {
+					className: "construction-inspector__single-control",
+					children: ["Turn", /* @__PURE__ */ (0, Q.jsxs)("select", {
+						"aria-label": "Stair turn",
+						value: o.turn,
+						onChange: (e) => u({
+							...o,
+							turn: e.target.value
+						}),
+						children: [/* @__PURE__ */ (0, Q.jsx)("option", {
+							value: "right",
+							children: "Right"
+						}), /* @__PURE__ */ (0, Q.jsx)("option", {
+							value: "left",
+							children: "Left"
+						})]
+					})]
+				})
+			] }) : d("Length (m)", o.runMeters, (e) => u({
+				...o,
+				runMeters: e
+			}), 0)] }),
+			/* @__PURE__ */ (0, Q.jsxs)("label", {
+				className: "construction-inspector__single-control",
+				children: [
+					"Railings",
+					/* @__PURE__ */ (0, Q.jsxs)("select", {
+						"aria-label": "Stair railings",
+						value: o.railings ?? "both",
+						onChange: (e) => u(ht({
+							...o,
+							...e.target.value === void 0 ? {} : { railings: e.target.value }
+						})),
+						children: [
+							/* @__PURE__ */ (0, Q.jsx)("option", {
+								value: "both",
+								children: "Both sides"
+							}),
+							/* @__PURE__ */ (0, Q.jsx)("option", {
+								value: "left",
+								children: "Left side"
+							}),
+							/* @__PURE__ */ (0, Q.jsx)("option", {
+								value: "right",
+								children: "Right side"
+							}),
+							/* @__PURE__ */ (0, Q.jsx)("option", {
+								value: "none",
+								children: "None"
+							})
+						]
+					}),
+					/* @__PURE__ */ (0, Q.jsx)("span", { children: "Left and right when walking upstairs." })
+				]
+			}),
+			/* @__PURE__ */ (0, Q.jsxs)("details", {
+				className: "selection-details-advanced",
+				children: [
+					/* @__PURE__ */ (0, Q.jsx)("summary", { children: "Advanced" }),
+					d("Rotation (degrees)", o.rotationYRadians * 180 / Math.PI, (e) => u({
+						...o,
+						rotationYRadians: e * Math.PI / 180
+					})),
+					d(o.shape === "spiral" ? "Center X (plan units)" : "Start X (plan units)", o.at[0], (e) => u({
+						...o,
+						at: [e, o.at[1]]
+					})),
+					d(o.shape === "spiral" ? "Center Y (plan units)" : "Start Y (plan units)", o.at[1], (e) => u({
+						...o,
+						at: [o.at[0], e]
+					}))
+				]
+			}),
+			/* @__PURE__ */ (0, Q.jsx)(Yn, { issues: l }),
+			l.filter((e) => e.severity !== "warning").map((e, t) => /* @__PURE__ */ (0, Q.jsx)("p", {
+				role: "alert",
+				children: e.message
+			}, `${e.code}:${t}`))
+		]
+	});
+}
+//#endregion
 //#region apps/web/src/editor-workspace/EditorSelectionDetails.tsx
-function Ls({ mode: e, editingLocked: t, publishOpen: n, previewOpen: r, constructEditor: i, dragging: a, placementFloor: o, furnishingModels: s, deviceModels: c, marqueeSelecting: l, selectedOpening: u, detailsOpeningId: d, setDetailsOpeningId: f, visualSceneItems: p, furnishingEditor: m, selectedItem: h, detailsItemId: g, setDetailsItemId: _, arrangeAnnouncement: v, pendingRoomPaintId: y, confirmRoomPaint: b, setPendingRoomPaintId: x }) {
+function Rs({ mode: e, editingLocked: t, publishOpen: n, previewOpen: r, constructEditor: i, dragging: a, placementFloor: o, furnishingModels: s, deviceModels: c, selectedOpening: l, visualSceneItems: u, furnishingEditor: d, selectedItem: f, arrangeAnnouncement: p, pendingRoomPaintId: m, confirmRoomPaint: h, setPendingRoomPaintId: g, stairDialog: _, snapshot: v, commit: y, open: b, onCollapse: x, liveStairIssues: S, disabled: C }) {
+	let w = _ && v.project.stairs.find((e) => e.id === _.id);
 	return /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [
-		e === "furnish" && h && g === h.id && /* @__PURE__ */ (0, Q.jsx)("div", {
-			inert: t || n || r,
-			children: /* @__PURE__ */ (0, Q.jsx)(Fs, {
-				items: p,
-				selectedId: m.selectedId,
-				floor: o,
-				onWindowFit: (e, t, n, r) => {
-					m.beginTransaction(), m.updatePlacement(e, t), m.updateSize(e, n, r), m.commitTransaction();
+		b && /* @__PURE__ */ (0, Q.jsxs)("div", {
+			className: "editor-properties-host",
+			inert: t || n || r || a || C,
+			children: [e === "construct" && (w ? /* @__PURE__ */ (0, Q.jsx)(Ls, {
+				project: v.project,
+				stair: w,
+				registries: {
+					furnishingModels: s,
+					deviceModels: c
 				},
+				liveIssues: S,
+				onCancel: x,
+				onSave: (e) => y({
+					...v,
+					project: {
+						...v.project,
+						stairs: v.project.stairs.map((t) => t.id === e.id ? e : t)
+					}
+				})
+			}, w.id) : l ? /* @__PURE__ */ (0, Q.jsx)(Tr, {
+				opening: l,
+				editor: i,
+				disabled: C,
+				onClose: x
+			}, l.id) : i.selection ? /* @__PURE__ */ (0, Q.jsx)(ni, {
+				editor: i,
+				onClose: x
+			}, i.selection.kind === "multiple" ? "multiple" : i.selection.id) : null), e === "furnish" && (d.selectedIds.length > 1 ? /* @__PURE__ */ (0, Q.jsxs)(lr, {
+				title: `${d.selectedIds.length} items`,
+				subtitle: o.name,
+				label: "Selected items",
+				onClose: x,
+				children: [/* @__PURE__ */ (0, Q.jsx)("p", {
+					className: "editor-properties-note",
+					children: "Drag any selected item to move the group."
+				}), /* @__PURE__ */ (0, Q.jsx)($, {
+					variant: "text",
+					onClick: () => d.deleteItems(d.selectedIds),
+					children: "Delete selection"
+				})]
+			}) : f ? /* @__PURE__ */ (0, Q.jsx)(ws, {
+				items: u,
+				selectedId: d.selectedId,
+				floor: o,
 				furnishingModels: s,
 				deviceModels: c,
-				onPlacementChange: m.updatePlacement,
-				onSizeChange: m.updateSize,
-				onLightStateChange: m.updateLightState,
-				onVariantChange: m.updateVariant,
-				onColorChange: m.updateColor,
-				onClose: () => _(null)
-			})
-		}),
-		e === "construct" && !l && u && d === u.id && /* @__PURE__ */ (0, Q.jsx)("div", {
-			inert: t || n || r,
-			children: /* @__PURE__ */ (0, Q.jsx)(Rr, {
-				opening: u,
-				editor: i,
-				disabled: a || t,
-				onClose: () => f(null)
-			}, u.id)
+				onWindowFit: (e, t, n, r) => {
+					d.beginTransaction(), d.updatePlacement(e, t), d.updateSize(e, n, r), d.commitTransaction();
+				},
+				onPlacementChange: d.updatePlacement,
+				onSizeChange: d.updateSize,
+				onLightStateChange: d.updateLightState,
+				onVariantChange: d.updateVariant,
+				onColorChange: d.updateColor,
+				onClose: x
+			}) : null)]
 		}),
 		/* @__PURE__ */ (0, Q.jsx)("div", {
 			className: "arrange-announcement",
 			role: "status",
-			children: v
+			children: p
 		}),
-		y && (() => {
-			let e = i.previewFloor.rooms.find((e) => e.id === y);
+		m && (() => {
+			let e = i.previewFloor.rooms.find((e) => e.id === m);
 			return e ? /* @__PURE__ */ (0, Q.jsx)(wa, {
 				roomName: e.name || "this room",
-				onKeepZones: () => b(!1),
-				onReplaceEverything: () => b(!0),
-				onCancel: () => x(null)
+				onKeepZones: () => h(!1),
+				onReplaceEverything: () => h(!0),
+				onCancel: () => g(null)
 			}) : null;
 		})()
 	] });
-}
-//#endregion
-//#region apps/web/src/editor-workspace/EditorValidationPanel.tsx
-function Rs({ issues: e, onSelect: t }) {
-	if (!e.length) return null;
-	let n = e.filter((e) => e.severity !== "warning").length, r = e.length - n;
-	return /* @__PURE__ */ (0, Q.jsxs)("section", {
-		className: "construction-inspector__validation",
-		"aria-label": "Editor validation",
-		"aria-live": "polite",
-		children: [/* @__PURE__ */ (0, Q.jsxs)("header", { children: [/* @__PURE__ */ (0, Q.jsxs)("strong", { children: [
-			e.length,
-			" ",
-			e.length === 1 ? "issue" : "issues"
-		] }), /* @__PURE__ */ (0, Q.jsxs)("span", { children: [
-			n > 0 && `${n} ${n === 1 ? "error" : "errors"}`,
-			n > 0 && r > 0 && " · ",
-			r > 0 && `${r} ${r === 1 ? "warning" : "warnings"}`
-		] })] }), /* @__PURE__ */ (0, Q.jsx)("ul", { children: e.map((e, n) => {
-			let r = /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [
-				/* @__PURE__ */ (0, Q.jsx)("span", {
-					className: "construction-inspector__validation-marker",
-					children: /* @__PURE__ */ (0, Q.jsx)(X, { name: "warning" })
-				}),
-				/* @__PURE__ */ (0, Q.jsxs)("span", { children: [/* @__PURE__ */ (0, Q.jsx)("strong", { children: e.message }), e.suggestion && /* @__PURE__ */ (0, Q.jsx)("small", { children: e.suggestion })] }),
-				e.target && /* @__PURE__ */ (0, Q.jsx)("span", {
-					className: "construction-inspector__validation-arrow",
-					"aria-hidden": "true",
-					children: "Locate →"
-				})
-			] });
-			return /* @__PURE__ */ (0, Q.jsx)("li", {
-				"data-severity": e.severity,
-				children: e.target ? /* @__PURE__ */ (0, Q.jsx)("button", {
-					type: "button",
-					"aria-label": `Locate ${e.target.kind} ${e.target.id}: ${e.message}`,
-					onClick: () => t(e),
-					children: r
-				}) : /* @__PURE__ */ (0, Q.jsx)("div", { children: r })
-			}, `${e.code}:${e.path}:${n}`);
-		}) })]
-	});
 }
 //#endregion
 //#region apps/web/src/custom-models/ModelImportPreview.tsx
@@ -8598,7 +8619,7 @@ function zs({ root: e, normalization: t, light: n }) {
 	return /* @__PURE__ */ (0, Q.jsx)("div", {
 		className: "model-import-preview",
 		"aria-label": "3D model preview",
-		children: /* @__PURE__ */ (0, Q.jsxs)(Tt, {
+		children: /* @__PURE__ */ (0, Q.jsxs)(St, {
 			frameloop: "demand",
 			camera: {
 				fov: 40,
@@ -8625,7 +8646,7 @@ function zs({ root: e, normalization: t, light: n }) {
 					],
 					intensity: 3
 				}),
-				/* @__PURE__ */ (0, Q.jsx)(Un, {
+				/* @__PURE__ */ (0, Q.jsx)(Hn, {
 					fit: !0,
 					clip: !0,
 					observe: !0,
@@ -8656,7 +8677,7 @@ function zs({ root: e, normalization: t, light: n }) {
 						})]
 					})
 				}),
-				/* @__PURE__ */ (0, Q.jsx)(Ln, {
+				/* @__PURE__ */ (0, Q.jsx)(In, {
 					makeDefault: !0,
 					enablePan: !1
 				})
@@ -8667,7 +8688,7 @@ function zs({ root: e, normalization: t, light: n }) {
 //#endregion
 //#region apps/web/src/custom-models/ModelImportDialog.tsx
 function Bs({ file: e, onImport: t, onCancel: n, missingModelOptions: r }) {
-	let i = ze(), a = (0, Z.useRef)(null), o = (0, Z.useId)(), [s] = (0, Z.useState)(() => `custom:${N()}`), [c, l] = (0, Z.useState)(null), [u, d] = (0, Z.useState)(null), [f, p] = (0, Z.useState)(!1), [m, h] = (0, Z.useState)(e.name.replace(/\.glb$/i, "")), [g, _] = (0, Z.useState)("floor"), [v, y] = (0, Z.useState)("furniture"), [b, x] = (0, Z.useState)([
+	let i = ze(), a = (0, Z.useRef)(null), o = (0, Z.useId)(), [s] = (0, Z.useState)(() => `custom:${lt()}`), [c, l] = (0, Z.useState)(null), [u, d] = (0, Z.useState)(null), [f, p] = (0, Z.useState)(!1), [m, h] = (0, Z.useState)(e.name.replace(/\.glb$/i, "")), [g, _] = (0, Z.useState)("floor"), [v, y] = (0, Z.useState)("furniture"), [b, x] = (0, Z.useState)([
 		0,
 		0,
 		0
@@ -8675,10 +8696,10 @@ function Bs({ file: e, onImport: t, onCancel: n, missingModelOptions: r }) {
 		0,
 		0,
 		0
-	]), [E, D] = (0, Z.useState)("#ffe3b4"), [O, k] = (0, Z.useState)(2), [A, j] = (0, Z.useState)(5), [M, P] = (0, Z.useState)(""), F = r.filter((e) => v === "furniture" ? e.kind === "furnishing" : e.kind === "device");
+	]), [E, D] = (0, Z.useState)("#ffe3b4"), [O, k] = (0, Z.useState)(2), [A, j] = (0, Z.useState)(5), [M, N] = (0, Z.useState)(""), P = r.filter((e) => v === "furniture" ? e.kind === "furnishing" : e.kind === "device");
 	(0, Z.useEffect)(() => {
-		M && !F.some((e) => e.key === M) && P("");
-	}, [M, F]), (0, Z.useEffect)(() => {
+		M && !P.some((e) => e.key === M) && N("");
+	}, [M, P]), (0, Z.useEffect)(() => {
 		let e = i.root.activeElement;
 		return a.current?.showModal?.(), () => {
 			e?.isConnected && e.focus();
@@ -8687,24 +8708,24 @@ function Bs({ file: e, onImport: t, onCancel: n, missingModelOptions: r }) {
 		let t = !0, n;
 		return (async () => {
 			let r = new Uint8Array(await e.arrayBuffer());
-			n = await U(r), t ? l(n) : n.release();
+			n = await ae(r), t ? l(n) : n.release();
 		})().catch((e) => {
 			t && d(e instanceof Error ? e.message : "Could not read this GLB. Choose another file.");
 		}), () => {
 			t = !1, n && n.release();
 		};
 	}, [e]);
-	let I = (0, Z.useMemo)(() => c ? Wn(c.root, g, b, S) : null, [
+	let F = (0, Z.useMemo)(() => c ? Un(c.root, g, b, S) : null, [
 		c,
 		g,
 		b,
 		S
-	]), L = v === "light" ? {
+	]), I = v === "light" ? {
 		position: w,
 		color: E,
 		maxIntensity: O,
 		distance: A
-	} : void 0, R = m.trim() && c && I && S > 0, z = (e, t, n) => e.map((e, r) => r === t ? n : e);
+	} : void 0, L = m.trim() && c && F && S > 0, ee = (e, t, n) => e.map((e, r) => r === t ? n : e);
 	return /* @__PURE__ */ (0, Q.jsx)("dialog", {
 		ref: a,
 		className: "model-import-dialog",
@@ -8714,7 +8735,7 @@ function Bs({ file: e, onImport: t, onCancel: n, missingModelOptions: r }) {
 		},
 		children: /* @__PURE__ */ (0, Q.jsxs)("form", {
 			onSubmit: (e) => {
-				if (e.preventDefault(), !R || !c || !I || f) return;
+				if (e.preventDefault(), !L || !c || !F || f) return;
 				p(!0), d(null);
 				let { bytes: n, ...r } = c.asset;
 				t({
@@ -8723,9 +8744,9 @@ function Bs({ file: e, onImport: t, onCancel: n, missingModelOptions: r }) {
 					placement: g,
 					profile: v,
 					asset: r,
-					normalization: I,
+					normalization: F,
 					complexity: c.complexity,
-					...L ? { light: L } : {}
+					...I ? { light: I } : {}
 				}, c.asset, M || null).catch((e) => d(e instanceof Error ? e.message : "Could not save the model. Try again.")).finally(() => p(!1));
 			},
 			children: [
@@ -8738,10 +8759,10 @@ function Bs({ file: e, onImport: t, onCancel: n, missingModelOptions: r }) {
 					onClick: n,
 					children: /* @__PURE__ */ (0, Q.jsx)(X, { name: "close" })
 				})] }),
-				c && I ? /* @__PURE__ */ (0, Q.jsx)(zs, {
+				c && F ? /* @__PURE__ */ (0, Q.jsx)(zs, {
 					root: c.root,
-					normalization: I,
-					light: L
+					normalization: F,
+					light: I
 				}) : !u && /* @__PURE__ */ (0, Q.jsx)("p", {
 					role: "status",
 					children: "Reading model…"
@@ -8779,10 +8800,10 @@ function Bs({ file: e, onImport: t, onCancel: n, missingModelOptions: r }) {
 							"aria-label": "Profile",
 							value: v,
 							onChange: (e) => {
-								y(e.target.value), I && T([
+								y(e.target.value), F && T([
 									0,
-									(I.bounds.min[1] + I.bounds.max[1]) / 2,
-									I.bounds.max[2]
+									(F.bounds.min[1] + F.bounds.max[1]) / 2,
+									F.bounds.max[2]
 								]);
 							},
 							children: ye.map(([e, t]) => /* @__PURE__ */ (0, Q.jsx)("option", {
@@ -8792,7 +8813,7 @@ function Bs({ file: e, onImport: t, onCancel: n, missingModelOptions: r }) {
 						})] })
 					]
 				}),
-				I && /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [/* @__PURE__ */ (0, Q.jsxs)("fieldset", {
+				F && /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [/* @__PURE__ */ (0, Q.jsxs)("fieldset", {
 					disabled: f,
 					className: "model-import-vectors",
 					children: [/* @__PURE__ */ (0, Q.jsx)("legend", { children: "Dimensions (m) · uniform scale" }), [
@@ -8804,10 +8825,10 @@ function Bs({ file: e, onImport: t, onCancel: n, missingModelOptions: r }) {
 						min: "0.001",
 						step: "any",
 						required: !0,
-						value: Number(I.size[t].toFixed(4)),
+						value: Number(F.size[t].toFixed(4)),
 						onChange: (e) => {
 							let n = Number(e.target.value);
-							n > 0 && Number.isFinite(n) && C(S * n / I.size[t]);
+							n > 0 && Number.isFinite(n) && C(S * n / F.size[t]);
 						}
 					})] }, e))]
 				}), /* @__PURE__ */ (0, Q.jsxs)("fieldset", {
@@ -8823,11 +8844,11 @@ function Bs({ file: e, onImport: t, onCancel: n, missingModelOptions: r }) {
 						value: Number((b[t] * 180 / Math.PI).toFixed(2)),
 						onChange: (e) => {
 							let n = Number(e.target.value);
-							Number.isFinite(n) && x(z(b, t, n * Math.PI / 180));
+							Number.isFinite(n) && x(ee(b, t, n * Math.PI / 180));
 						}
 					})] }, e))]
 				})] }),
-				L && /* @__PURE__ */ (0, Q.jsxs)("fieldset", {
+				I && /* @__PURE__ */ (0, Q.jsxs)("fieldset", {
 					disabled: f,
 					className: "model-import-vectors",
 					children: [
@@ -8842,7 +8863,7 @@ function Bs({ file: e, onImport: t, onCancel: n, missingModelOptions: r }) {
 							value: w[t],
 							onChange: (e) => {
 								let n = Number(e.target.value);
-								Number.isFinite(n) && T(z(w, t, n));
+								Number.isFinite(n) && T(ee(w, t, n));
 							}
 						})] }, e)),
 						/* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Color", /* @__PURE__ */ (0, Q.jsx)("input", {
@@ -8891,17 +8912,17 @@ function Bs({ file: e, onImport: t, onCancel: n, missingModelOptions: r }) {
 						" controls."
 					]
 				}),
-				F.length > 0 && /* @__PURE__ */ (0, Q.jsx)("fieldset", {
+				P.length > 0 && /* @__PURE__ */ (0, Q.jsx)("fieldset", {
 					disabled: f,
 					className: "model-import-fields model-import-replacement",
 					children: /* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Replace missing model (optional)", /* @__PURE__ */ (0, Q.jsxs)("select", {
 						"aria-label": "Replace missing model (optional)",
 						value: M,
-						onChange: (e) => P(e.target.value),
+						onChange: (e) => N(e.target.value),
 						children: [/* @__PURE__ */ (0, Q.jsx)("option", {
 							value: "",
 							children: "Add as a new model"
-						}), F.map((e) => /* @__PURE__ */ (0, Q.jsxs)("option", {
+						}), P.map((e) => /* @__PURE__ */ (0, Q.jsxs)("option", {
 							value: e.key,
 							children: [
 								e.id,
@@ -8925,7 +8946,7 @@ function Bs({ file: e, onImport: t, onCancel: n, missingModelOptions: r }) {
 				}), /* @__PURE__ */ (0, Q.jsx)($, {
 					type: "submit",
 					variant: "primary",
-					disabled: !R || f,
+					disabled: !L || f,
 					children: f ? "Importing…" : "Add to My models"
 				})] })
 			]
@@ -9040,7 +9061,7 @@ function Ws({ onClose: e, onImport: t }) {
 //#endregion
 //#region apps/web/src/custom-models/CustomModelLibrary.tsx
 function Gs({ workspace: e, disabled: t, onBrowse: n }) {
-	let r = (0, Z.useRef)(null), i = (0, Z.useRef)(null), [a, o] = (0, Z.useState)(null), [s, c] = (0, Z.useState)(null), [l, u] = (0, Z.useState)(!1), [d, f] = (0, Z.useState)(null), [p, m] = (0, Z.useState)(!1), h = e.snapshot.project.customModels ?? [], g = an(e.snapshot.project, wn), _ = [...e.snapshot.project.sceneItems.reduce((e, t) => {
+	let r = (0, Z.useRef)(null), i = (0, Z.useRef)(null), [a, o] = (0, Z.useState)(null), [s, c] = (0, Z.useState)(null), [l, u] = (0, Z.useState)(!1), [d, f] = (0, Z.useState)(null), [p, m] = (0, Z.useState)(!1), h = e.snapshot.project.customModels ?? [], g = nn(e.snapshot.project, Sn), _ = [...e.snapshot.project.sceneItems.reduce((e, t) => {
 		let n = t.kind === "device" ? g.deviceModels : g.furnishingModels;
 		if (!Object.hasOwn(n, t.modelId)) {
 			let n = `${t.kind}:${t.modelId}`, r = e.get(n);
@@ -9054,7 +9075,7 @@ function Gs({ workspace: e, disabled: t, onBrowse: n }) {
 		return e;
 	}, /* @__PURE__ */ new Map())].map(([, e]) => e), v = async (t, r, i) => {
 		let a = new Map(e.modelAssetReferences.map((e) => [e.sha256, e.byteLength]));
-		if (a.set(r.sha256, r.byteLength), [...a.values()].reduce((e, t) => e + t, 0) > O.homeBytes) throw Error("This house and its active history exceed 100 MiB of distinct assets. Save and reopen the editor before importing more.");
+		if (a.set(r.sha256, r.byteLength), [...a.values()].reduce((e, t) => e + t, 0) > E.homeBytes) throw Error("This house and its active history exceed 100 MiB of distinct assets. Save and reopen the editor before importing more.");
 		await C([r]);
 		let s = i ? _.find((e) => e.key === i) : void 0, c = s ? e.snapshot.project.sceneItems.map((e) => e.kind === s.kind && e.modelId === s.id ? {
 			...e,
@@ -9073,7 +9094,7 @@ function Gs({ workspace: e, disabled: t, onBrowse: n }) {
 		if (!(!s || p)) {
 			m(!0), f(null);
 			try {
-				let t = await gn(new Uint8Array(await s.arrayBuffer())), r = new Map(h.map((e) => [e.id, e]));
+				let t = await mn(new Uint8Array(await s.arrayBuffer())), r = new Map(h.map((e) => [e.id, e]));
 				for (let e of t.models) {
 					let t = r.get(e.id);
 					if (t && (t.asset.sha256 !== e.asset.sha256 || t.asset.byteLength !== e.asset.byteLength)) throw Error(`Model “${e.id}” already exists with different GLB data.`);
@@ -9081,7 +9102,7 @@ function Gs({ workspace: e, disabled: t, onBrowse: n }) {
 				}
 				let i = [...r.values()], a = new Map(e.modelAssetReferences.map((e) => [e.sha256, e.byteLength]));
 				for (let e of Se([{ customModels: i }])) a.set(e.sha256, e.byteLength);
-				if ([...a.values()].reduce((e, t) => e + t, 0) > O.homeBytes) throw Error("This house and its active history exceed 100 MiB of distinct assets.");
+				if ([...a.values()].reduce((e, t) => e + t, 0) > E.homeBytes) throw Error("This house and its active history exceed 100 MiB of distinct assets.");
 				if (await C(t.assets), e.commit({
 					...e.snapshot,
 					project: {
@@ -9116,7 +9137,7 @@ function Gs({ workspace: e, disabled: t, onBrowse: n }) {
 					/* @__PURE__ */ (0, Q.jsxs)($, {
 						disabled: t || p || !h.length,
 						onClick: () => {
-							!h.length || p || (m(!0), f(null), ln(window.indexedDB).verify(Se([{ customModels: h }])).then((e) => fn(h, e)).then((e) => In(e, "cabane-models.zip", "application/zip")).catch((e) => f(e instanceof Error ? e.message : "Could not export the model pack.")).finally(() => m(!1)));
+							!h.length || p || (m(!0), f(null), sn(window.indexedDB).verify(Se([{ customModels: h }])).then((e) => un(h, e)).then((e) => Fn(e, "cabane-models.zip", "application/zip")).catch((e) => f(e instanceof Error ? e.message : "Could not export the model pack.")).finally(() => m(!1)));
 						},
 						children: [/* @__PURE__ */ (0, Q.jsx)(X, { name: "export" }), "Export model pack (.zip)"]
 					}),
@@ -9134,7 +9155,7 @@ function Gs({ workspace: e, disabled: t, onBrowse: n }) {
 				hidden: !0,
 				onChange: (e) => {
 					let t = e.target.files?.[0];
-					e.target.value = "", f(null), t && t.size > O.fileBytes ? f("GLB files must be at most 10 MiB.") : t && o(t);
+					e.target.value = "", f(null), t && t.size > E.fileBytes ? f("GLB files must be at most 10 MiB.") : t && o(t);
 				}
 			}),
 			/* @__PURE__ */ (0, Q.jsx)("input", {
@@ -9144,7 +9165,7 @@ function Gs({ workspace: e, disabled: t, onBrowse: n }) {
 				hidden: !0,
 				onChange: (e) => {
 					let t = e.target.files?.[0];
-					e.target.value = "", f(null), t && t.size > O.homeBytes + 5242880 ? f("Model packs must be at most 105 MiB.") : t && c(t);
+					e.target.value = "", f(null), t && t.size > E.homeBytes + 5242880 ? f("Model packs must be at most 105 MiB.") : t && c(t);
 				}
 			}),
 			d && /* @__PURE__ */ (0, Q.jsx)("p", {
@@ -9228,7 +9249,7 @@ function Ks({ workspace: e, entry: t, disabled: n, onChoose: r }) {
 					"aria-label": `Add ${l.name}`,
 					disabled: n || t.kind === "device" && t.definition.supportedDomains.length === 0,
 					onClick: r,
-					children: /* @__PURE__ */ (0, Q.jsx)(An, { entry: t })
+					children: /* @__PURE__ */ (0, Q.jsx)(On, { entry: t })
 				}), /* @__PURE__ */ (0, Q.jsxs)("div", {
 					className: "custom-model-preview-actions",
 					children: [/* @__PURE__ */ (0, Q.jsx)($, {
@@ -9237,7 +9258,7 @@ function Ks({ workspace: e, entry: t, disabled: n, onChoose: r }) {
 						title: "Download GLB",
 						disabled: n,
 						onClick: () => {
-							s(null), ln(window.indexedDB).verify([l.asset]).then(([e]) => In(e.bytes, `${l.name.replace(/[^a-z0-9-]/gi, "_")}.glb`, "model/gltf-binary")).catch((e) => s(e instanceof Error ? e.message : "Could not download this model."));
+							s(null), sn(window.indexedDB).verify([l.asset]).then(([e]) => Fn(e.bytes, `${l.name.replace(/[^a-z0-9-]/gi, "_")}.glb`, "model/gltf-binary")).catch((e) => s(e instanceof Error ? e.message : "Could not download this model."));
 						},
 						children: /* @__PURE__ */ (0, Q.jsx)(X, { name: "import" })
 					}), /* @__PURE__ */ (0, Q.jsx)($, {
@@ -9376,7 +9397,7 @@ function Xs({ state: e, mode: t, disabled: n, warning: r, onAction: i, onSkip: a
 		children: [
 			/* @__PURE__ */ (0, Q.jsxs)("div", {
 				className: "build-tutorial__heading",
-				children: [/* @__PURE__ */ (0, Q.jsx)("span", { children: e.step === "reference" ? "Before you start · Optional" : `Getting started · ${I.indexOf(e.step)} of ${I.length - 1}` }), /* @__PURE__ */ (0, Q.jsx)("button", {
+				children: [/* @__PURE__ */ (0, Q.jsx)("span", { children: e.step === "reference" ? "Before you start · Optional" : `Getting started · ${P.indexOf(e.step)} of ${P.length - 1}` }), /* @__PURE__ */ (0, Q.jsx)("button", {
 					type: "button",
 					"aria-label": "Dismiss tutorial",
 					title: "Dismiss tutorial",
@@ -9440,7 +9461,7 @@ function Zs({ reference: e, floorName: t }) {
 				onToggle: (t) => {
 					e.adjusting ? t.currentTarget.open || (t.currentTarget.open = !0) : e.setExpanded(t.currentTarget.open);
 				},
-				children: [/* @__PURE__ */ (0, Q.jsx)(Fa, {
+				children: [/* @__PURE__ */ (0, Q.jsx)(Oa, {
 					icon: "plan",
 					title: "Reference plan",
 					description: "Add a floor plan image to trace."
@@ -9579,7 +9600,7 @@ function Zs({ reference: e, floorName: t }) {
 function Qs({ value: e, onEdit: t, disabled: n }) {
 	return /* @__PURE__ */ (0, Q.jsxs)("details", {
 		className: "construction-inspector__floor-disclosure",
-		children: [/* @__PURE__ */ (0, Q.jsx)(Fa, {
+		children: [/* @__PURE__ */ (0, Q.jsx)(Oa, {
 			icon: "spawn",
 			title: "North",
 			description: "Orient the compass around your plan."
@@ -9604,7 +9625,7 @@ function Qs({ value: e, onEdit: t, disabled: n }) {
 //#endregion
 //#region apps/web/src/editor-connect/ConnectDeviceGrid.tsx
 function $s({ relationship: e, models: t, manifest: n, selected: r = !1 }) {
-	let i = e.kind === "modeled-device" ? t[e.device.model] : void 0, a = e.kind === "modeled-device" ? e.device.model : "", o = e.kind === "entity-slot" ? e.descriptor.openingId : void 0, s = (0, Z.useMemo)(() => o ? kr(n, o) : i ? {
+	let i = e.kind === "modeled-device" ? t[e.device.model] : void 0, a = e.kind === "modeled-device" ? e.device.model : "", o = e.kind === "entity-slot" ? e.descriptor.openingId : void 0, s = (0, Z.useMemo)(() => o ? gr(n, o) : i ? {
 		key: `device:${a}`,
 		kind: "device",
 		modelId: a,
@@ -9614,14 +9635,14 @@ function $s({ relationship: e, models: t, manifest: n, selected: r = !1 }) {
 		a,
 		n,
 		o
-	]), c = e.kind === "modeled-device" ? e.device.entitySlots.find((e) => e.deviceRole === "primary")?.compatibleDomains[0] ?? e.device.entitySlots[0]?.compatibleDomains[0] : e.descriptor.spec.compatibleDomains[0], l = /* @__PURE__ */ (0, Q.jsx)(D, {
+	]), c = e.kind === "modeled-device" ? e.device.entitySlots.find((e) => e.deviceRole === "primary")?.compatibleDomains[0] ?? e.device.entitySlots[0]?.compatibleDomains[0] : e.descriptor.spec.compatibleDomains[0], l = /* @__PURE__ */ (0, Q.jsx)(T, {
 		domain: c ?? "unknown",
 		size: 30
 	});
 	return /* @__PURE__ */ (0, Q.jsx)("span", {
 		className: `connect-device-preview${r ? " is-selected-preview" : ""}`,
 		"aria-hidden": "true",
-		children: s ? /* @__PURE__ */ (0, Q.jsx)(An, {
+		children: s ? /* @__PURE__ */ (0, Q.jsx)(On, {
 			entry: s,
 			showAdd: !1,
 			fallback: l
@@ -9634,7 +9655,7 @@ function $s({ relationship: e, models: t, manifest: n, selected: r = !1 }) {
 function ec({ editor: e, manifest: t, models: n, onOpen: r, onTrigger: i }) {
 	return e.room ? /* @__PURE__ */ (0, Q.jsxs)("div", {
 		className: "connect-device-grid",
-		children: [e.groups.map((a) => /* @__PURE__ */ (0, Q.jsx)(Nt, {
+		children: [e.groups.map((a) => /* @__PURE__ */ (0, Q.jsx)(At, {
 			group: a,
 			children: a.relationships.map((a) => {
 				let o = {
@@ -9651,11 +9672,11 @@ function ec({ editor: e, manifest: t, models: n, onOpen: r, onTrigger: i }) {
 						manifest: t
 					})
 				};
-				return a.kind === "modeled-device" ? /* @__PURE__ */ (0, Q.jsx)(he, {
+				return a.kind === "modeled-device" ? /* @__PURE__ */ (0, Q.jsx)(G, {
 					...o,
 					manifest: t,
 					device: a.device
-				}, a.id) : /* @__PURE__ */ (0, Q.jsx)(y, {
+				}, a.id) : /* @__PURE__ */ (0, Q.jsx)(b, {
 					...o,
 					descriptor: a.descriptor
 				}, a.id);
@@ -9701,7 +9722,7 @@ function nc({ editor: e, manifest: t, runtime: n, deviceModels: r = tc, homeAssi
 				className: "connect-inspector__scroll",
 				ref: s,
 				children: [
-					/* @__PURE__ */ (0, Q.jsx)(Cn, {
+					/* @__PURE__ */ (0, Q.jsx)(xn, {
 						scrollRoot: s,
 						enabled: !d && e.view === "devices",
 						children: d ? /* @__PURE__ */ (0, Q.jsxs)("section", {
@@ -9786,7 +9807,7 @@ function nc({ editor: e, manifest: t, runtime: n, deviceModels: r = tc, homeAssi
 										/* @__PURE__ */ (0, Q.jsx)(X, { name: "chevron" })
 									]
 								})
-							] }) : e.relationship ? /* @__PURE__ */ (0, Q.jsx)(A, {
+							] }) : e.relationship ? /* @__PURE__ */ (0, Q.jsx)(O, {
 								inline: !0,
 								manifest: t,
 								room: m,
@@ -9916,7 +9937,7 @@ function ic(e, t, n) {
 	let r = n.trim().toLocaleLowerCase("en").split(/\s+/).filter(Boolean);
 	return e.filter((e) => {
 		if (t === "my-models" && !e.modelId.startsWith("custom:") || t === "devices" && e.kind !== "device" || t !== "all" && t !== "devices" && t !== "my-models" && e.definition.defaultRoomType !== t) return !1;
-		let n = ue.find((t) => t.id === e.definition.defaultRoomType)?.label ?? "", i = [
+		let n = Xt.find((t) => t.id === e.definition.defaultRoomType)?.label ?? "", i = [
 			e.modelId,
 			e.definition.label,
 			e.definition.category,
@@ -9946,7 +9967,7 @@ var ac = {
 }, oc = [{
 	id: "all",
 	label: "All items"
-}, ...ue], sc = [
+}, ...Xt], sc = [
 	...oc,
 	{
 		id: "devices",
@@ -9958,7 +9979,11 @@ var ac = {
 	}
 ];
 function cc({ furnishingModels: e, deviceModels: t, browsing: n, onBrowse: r, error: i, onChoose: a, enabled: o = !0, customModels: s, renderCustomModel: c }) {
-	let l = (0, Z.useRef)(null), u = (0, Z.useMemo)(() => rc(e, t), [e, t]), d = (0, Z.useMemo)(() => ic(u, n.room, n.query), [u, n]), f = sc.find((e) => e.id === n.room)?.label ?? "All items", p = (e) => {
+	let l = (0, Z.useRef)(null), u = (0, Z.useMemo)(() => rc(e, t), [e, t]), d = n.query.trim() ? "all" : n.room, f = (0, Z.useMemo)(() => ic(u, d, n.query), [
+		u,
+		d,
+		n.query
+	]), p = sc.find((e) => e.id === d)?.label ?? "All items", m = (e) => {
 		r({
 			room: e,
 			query: ""
@@ -9979,19 +10004,19 @@ function cc({ furnishingModels: e, deviceModels: t, browsing: n, onBrowse: r, er
 				children: [oc.map((e) => /* @__PURE__ */ (0, Q.jsxs)("button", {
 					type: "button",
 					"aria-pressed": n.room === e.id,
-					onClick: () => p(e.id),
+					onClick: () => m(e.id),
 					children: [/* @__PURE__ */ (0, Q.jsx)(X, { name: ac[e.id] }), /* @__PURE__ */ (0, Q.jsx)("span", { children: e.label })]
 				}, e.id)), /* @__PURE__ */ (0, Q.jsxs)("div", {
 					className: "catalog-device-filter",
 					children: [/* @__PURE__ */ (0, Q.jsxs)("button", {
 						type: "button",
 						"aria-pressed": n.room === "my-models",
-						onClick: () => p("my-models"),
+						onClick: () => m("my-models"),
 						children: [/* @__PURE__ */ (0, Q.jsx)(X, { name: "cube" }), /* @__PURE__ */ (0, Q.jsx)("span", { children: "My models" })]
 					}), /* @__PURE__ */ (0, Q.jsxs)("button", {
 						type: "button",
 						"aria-pressed": n.room === "devices",
-						onClick: () => p("devices"),
+						onClick: () => m("devices"),
 						children: [/* @__PURE__ */ (0, Q.jsx)(X, { name: "devices" }), /* @__PURE__ */ (0, Q.jsx)("span", { children: "Devices" })]
 					})]
 				})]
@@ -10002,7 +10027,7 @@ function cc({ furnishingModels: e, deviceModels: t, browsing: n, onBrowse: r, er
 						className: "catalog-room-select",
 						children: [/* @__PURE__ */ (0, Q.jsx)("span", { children: "Filter" }), /* @__PURE__ */ (0, Q.jsx)("select", {
 							value: n.room,
-							onChange: (e) => p(e.target.value),
+							onChange: (e) => m(e.target.value),
 							children: sc.map((e) => /* @__PURE__ */ (0, Q.jsx)("option", {
 								value: e.id,
 								children: e.label
@@ -10016,9 +10041,9 @@ function cc({ furnishingModels: e, deviceModels: t, browsing: n, onBrowse: r, er
 							/* @__PURE__ */ (0, Q.jsx)(X, { name: "search" }),
 							/* @__PURE__ */ (0, Q.jsx)("input", {
 								type: "search",
-								"aria-label": `Search ${f.toLowerCase()}`,
+								"aria-label": "Search all items",
 								value: n.query,
-								placeholder: `Search ${f.toLowerCase()}…`,
+								placeholder: "Search all items…",
 								onChange: (e) => r({
 									...n,
 									query: e.target.value
@@ -10035,32 +10060,32 @@ function cc({ furnishingModels: e, deviceModels: t, browsing: n, onBrowse: r, er
 							})
 						]
 					}),
-					/* @__PURE__ */ (0, Q.jsx)(Cn, {
+					/* @__PURE__ */ (0, Q.jsx)(xn, {
 						scrollRoot: l,
 						enabled: o,
 						children: /* @__PURE__ */ (0, Q.jsxs)("div", {
 							className: "catalog-grid",
 							ref: l,
-							"aria-label": `${f} catalog`,
-							children: [d.map((e) => n.room === "my-models" && c ? /* @__PURE__ */ (0, Q.jsx)(Z.Fragment, { children: c(e) }, e.key) : /* @__PURE__ */ (0, Q.jsxs)("button", {
+							"aria-label": `${p} catalog`,
+							children: [f.map((e) => n.room === "my-models" && e.modelId.startsWith("custom:") && c ? /* @__PURE__ */ (0, Q.jsx)(Z.Fragment, { children: c(e) }, e.key) : /* @__PURE__ */ (0, Q.jsxs)("button", {
 								type: "button",
 								className: "catalog-card",
 								"aria-label": `Add ${e.definition.label}`,
 								disabled: e.kind === "device" && e.definition.supportedDomains.length === 0,
 								onClick: () => a(e),
 								children: [
-									/* @__PURE__ */ (0, Q.jsx)(An, { entry: e }),
+									/* @__PURE__ */ (0, Q.jsx)(On, { entry: e }),
 									/* @__PURE__ */ (0, Q.jsx)("strong", { children: e.definition.label }),
 									/* @__PURE__ */ (0, Q.jsx)("small", { children: e.kind === "device" ? "Device" : "Furniture" })
 								]
-							}, e.key)), d.length === 0 && /* @__PURE__ */ (0, Q.jsxs)("div", {
+							}, e.key)), f.length === 0 && /* @__PURE__ */ (0, Q.jsxs)("div", {
 								className: "catalog-empty",
 								role: "status",
 								children: [/* @__PURE__ */ (0, Q.jsx)("p", { children: n.query.trim() ? "No matching items" : n.room === "my-models" ? "Your models will appear here. Import one or create one with your AI." : "No items for this room type yet" }), (n.query.trim() || n.room !== "my-models") && /* @__PURE__ */ (0, Q.jsx)($, {
 									onClick: () => n.query.trim() ? r({
 										...n,
 										query: ""
-									}) : p("all"),
+									}) : m("all"),
 									children: n.query.trim() ? "Clear search" : "Browse all items"
 								})]
 							})]
@@ -10074,45 +10099,45 @@ function cc({ furnishingModels: e, deviceModels: t, browsing: n, onBrowse: r, er
 //#endregion
 //#region apps/web/src/editor-workspace/EditorSidebar.tsx
 var lc = !1;
-function uc({ northOrientation: e, floorNavigation: t, activeFloorId: n, stairPlacement: r, setStairPlacement: i, setFloorDialog: a, mode: o, editingLocked: s, publishOpen: c, previewOpen: l, connectManifest: u, connect: d, clearConstructionSelection: f, constructEditor: p, floorZoneDrawing: m, focusIssue: h, furnishingModels: g, deviceModels: _, floorPaintTarget: v, unsettled: y, onWorkspaces: b, workspace: x, runtime: S, reference: C, floorFinish: w, setFloorFinish: T, setFloorPaintTarget: E, homeAssistantUrl: D, snapshot: O, commit: k, catalogBrowsing: A, setCatalogBrowsing: j, catalogError: M, addCatalogItem: N, sidebar: P, iconUrl: F, shortcutsMode: I, floorControlsDisabled: L, addFloorAbove: R, addFloorBelow: z, tutorial: B, tutorialBusy: V, activateTutorial: ee, stairLiveIssues: H, importWorkspace: te, placingWalkStart: ne, setWalkStartFloor: re, sidebarIssues: ie, onHomeAssistantSettings: ae }) {
-	return /* @__PURE__ */ (0, Q.jsx)(Q.Fragment, { children: /* @__PURE__ */ (0, Q.jsxs)("aside", {
-		ref: P,
+function uc({ northOrientation: e, floorNavigation: t, activeFloorId: n, stairPlacement: r, setStairPlacement: i, setFloorDialog: a, mode: o, editingLocked: s, publishOpen: c, previewOpen: l, connectManifest: u, connect: d, clearConstructionSelection: f, constructEditor: p, floorZoneDrawing: m, furnishingModels: h, deviceModels: g, floorPaintTarget: _, unsettled: v, onWorkspaces: y, workspace: b, runtime: x, reference: S, floorFinish: C, setFloorFinish: w, setFloorPaintTarget: T, homeAssistantUrl: E, snapshot: D, commit: O, catalogBrowsing: k, setCatalogBrowsing: A, catalogError: j, addCatalogItem: M, sidebar: N, iconUrl: P, shortcutsMode: F, floorControlsDisabled: I, addFloorAbove: L, addFloorBelow: ee, tutorial: R, tutorialBusy: te, activateTutorial: z, stairLiveIssues: B, importWorkspace: V, placingWalkStart: ne, setWalkStartFloor: H, onHomeAssistantSettings: re }) {
+	return /* @__PURE__ */ (0, Q.jsx)(Q.Fragment, { children: /* @__PURE__ */ (0, Q.jsx)("aside", {
+		ref: N,
 		className: "direction-rail",
 		inert: s || c || l || e.active,
-		children: [/* @__PURE__ */ (0, Q.jsxs)("div", {
+		children: /* @__PURE__ */ (0, Q.jsxs)("div", {
 			className: "editor-sidebar-content",
 			children: [
 				/* @__PURE__ */ (0, Q.jsxs)("div", {
 					className: "direction-rail__brand",
 					children: [/* @__PURE__ */ (0, Q.jsx)("img", {
-						src: F,
+						src: P,
 						alt: "",
 						width: "43",
 						height: "51"
 					}), /* @__PURE__ */ (0, Q.jsxs)("div", {
 						className: "direction-rail__identity",
-						children: [/* @__PURE__ */ (0, Q.jsx)("h1", { children: "Cabane" }), b && /* @__PURE__ */ (0, Q.jsxs)("button", {
+						children: [/* @__PURE__ */ (0, Q.jsx)("h1", { children: "Cabane" }), y && /* @__PURE__ */ (0, Q.jsxs)("button", {
 							type: "button",
 							className: "editor-workspace-link",
-							title: `Switch workspace · ${O.project.home.name}`,
-							"aria-label": `Workspaces: ${O.project.home.name}`,
-							disabled: s || y,
-							onClick: b,
-							children: [/* @__PURE__ */ (0, Q.jsx)("span", { children: O.project.home.name }), /* @__PURE__ */ (0, Q.jsx)(X, { name: "chevron" })]
+							title: `Switch workspace · ${D.project.home.name}`,
+							"aria-label": `Workspaces: ${D.project.home.name}`,
+							disabled: s || v,
+							onClick: y,
+							children: [/* @__PURE__ */ (0, Q.jsx)("span", { children: D.project.home.name }), /* @__PURE__ */ (0, Q.jsx)(X, { name: "chevron" })]
 						})]
 					})]
 				}),
-				!I && o === "construct" && /* @__PURE__ */ (0, Q.jsx)(Yn, {
-					floors: O.project.floors,
+				!F && o === "construct" && /* @__PURE__ */ (0, Q.jsx)(Jn, {
+					floors: D.project.floors,
 					selectedId: n,
-					disabled: L,
+					disabled: I,
 					onSelect: (e) => t.selectFloor(e),
-					onAdd: R,
-					onAddBelow: z,
+					onAdd: L,
+					onAddBelow: ee,
 					onSettings: () => a("rename")
 				}),
-				/* @__PURE__ */ (0, Q.jsx)(Js, { mode: I ? "shortcuts" : o }),
-				I && /* @__PURE__ */ (0, Q.jsxs)("div", {
+				/* @__PURE__ */ (0, Q.jsx)(Js, { mode: F ? "shortcuts" : o }),
+				F && /* @__PURE__ */ (0, Q.jsxs)("div", {
 					className: "shortcuts-guide",
 					children: [
 						/* @__PURE__ */ (0, Q.jsx)("h3", { children: "Add a shortcut" }),
@@ -10123,50 +10148,50 @@ function uc({ northOrientation: e, floorNavigation: t, activeFloorId: n, stairPl
 						/* @__PURE__ */ (0, Q.jsx)("p", { children: "Your changes save as a draft. Choose Save when your bar is ready." })
 					]
 				}),
-				!I && B.state?.status === "active" && /* @__PURE__ */ (0, Q.jsx)(Xs, {
-					state: B.state,
+				!F && R.state?.status === "active" && /* @__PURE__ */ (0, Q.jsx)(Xs, {
+					state: R.state,
 					mode: o,
-					disabled: V,
-					warning: B.warning,
-					onAction: ee,
-					onSkip: B.skip,
-					onDismiss: B.dismiss
+					disabled: te,
+					warning: R.warning,
+					onAction: z,
+					onSkip: R.skip,
+					onDismiss: R.dismiss
 				}),
-				!I && o === "construct" && B.state?.status !== "active" && ho(p.previewFloor) && /* @__PURE__ */ (0, Q.jsx)("p", {
+				!F && o === "construct" && R.state?.status !== "active" && no(p.previewFloor) && /* @__PURE__ */ (0, Q.jsx)("p", {
 					className: "construction-empty-hint",
 					children: "Your plan starts here. Choose Wall, then click each corner to draw your first room."
 				}),
-				!I && o === "construct" && r && /* @__PURE__ */ (0, Q.jsx)(nr, {
+				!F && o === "construct" && r && /* @__PURE__ */ (0, Q.jsx)(tr, {
 					shape: r.shape ?? "straight",
-					issues: H ?? [],
-					onChange: (e) => i(cr(O.project, r, e)),
+					issues: B ?? [],
+					onChange: (e) => i(js(D.project, r, e)),
 					onCancel: () => i(null)
 				}),
-				!I && o === "construct" && !r && /* @__PURE__ */ (0, Q.jsx)(Wa, {
-					inert: C.adjusting,
+				!F && o === "construct" && !r && /* @__PURE__ */ (0, Q.jsx)(Ma, {
+					inert: S.adjusting,
 					referencePlanControls: /* @__PURE__ */ (0, Q.jsx)(Zs, {
-						reference: C,
+						reference: S,
 						floorName: p.previewFloor.name
 					}),
 					planImportControls: lc,
-					tutorialControls: B.state?.status !== "active" && /* @__PURE__ */ (0, Q.jsxs)("details", {
+					tutorialControls: R.state?.status !== "active" && /* @__PURE__ */ (0, Q.jsxs)("details", {
 						className: "construction-inspector__floor-disclosure",
-						children: [/* @__PURE__ */ (0, Q.jsx)(Fa, {
+						children: [/* @__PURE__ */ (0, Q.jsx)(Oa, {
 							icon: "tutorial",
 							title: "Tutorial",
 							description: "Learn to draw and furnish your first room."
 						}), /* @__PURE__ */ (0, Q.jsx)("div", {
 							className: "sidebar-section-content",
 							children: /* @__PURE__ */ (0, Q.jsx)($, {
-								disabled: V,
-								onClick: B.restart,
+								disabled: te,
+								onClick: R.restart,
 								children: "Restart tutorial"
 							})
 						})]
 					}),
 					walkStartControls: /* @__PURE__ */ (0, Q.jsxs)("details", {
 						className: "construction-inspector__floor-disclosure",
-						children: [/* @__PURE__ */ (0, Q.jsx)(Fa, {
+						children: [/* @__PURE__ */ (0, Q.jsx)(Oa, {
 							icon: "spawn",
 							title: "Spawn area",
 							description: "Choose where you start in Explore."
@@ -10177,27 +10202,27 @@ function uc({ northOrientation: e, floorNavigation: t, activeFloorId: n, stairPl
 							children: [
 								/* @__PURE__ */ (0, Q.jsx)($, {
 									"aria-pressed": ne,
-									disabled: y && !ne,
+									disabled: v && !ne,
 									onClick: () => {
-										f(), p.setTool("select"), re(ne ? null : n);
+										f(), p.setTool("select"), H(ne ? null : n);
 									},
-									children: ne ? "Cancel" : O.project.home.walkStart ? "Move starting point" : "Set starting point"
+									children: ne ? "Cancel" : D.project.home.walkStart ? "Move starting point" : "Set starting point"
 								}),
 								ne && /* @__PURE__ */ (0, Q.jsx)("p", {
 									role: "status",
 									children: "Click inside the floor to set your starting point. Escape cancels."
 								}),
-								O.project.home.walkStart && /* @__PURE__ */ (0, Q.jsx)($, {
+								D.project.home.walkStart && /* @__PURE__ */ (0, Q.jsx)($, {
 									variant: "text",
 									onClick: () => {
-										let { walkStart: e, ...t } = O.project.home;
-										k({
-											...O,
+										let { walkStart: e, ...t } = D.project.home;
+										O({
+											...D,
 											project: {
-												...O.project,
+												...D.project,
 												home: t
 											}
-										}), re(null);
+										}), H(null);
 									},
 									children: "Use automatic start"
 								})
@@ -10205,79 +10230,274 @@ function uc({ northOrientation: e, floorNavigation: t, activeFloorId: n, stairPl
 						})]
 					}),
 					northControls: /* @__PURE__ */ (0, Q.jsx)(Qs, {
-						value: O.project.home.northAngleDegrees ?? 0,
-						disabled: s || y || C.adjusting,
+						value: D.project.home.northAngleDegrees ?? 0,
+						disabled: s || v || S.adjusting,
 						onEdit: e.start
 					}),
-					roof: O.project.home.roof,
-					onRoofChange: (e) => k({
-						...O,
+					roof: D.project.home.roof,
+					onRoofChange: (e) => O({
+						...D,
 						project: {
-							...O.project,
+							...D.project,
 							home: {
-								...O.project.home,
+								...D.project.home,
 								roof: e
 							}
 						}
 					}),
 					editor: p,
 					floorPainting: {
-						finish: w,
-						target: v,
+						finish: C,
+						target: _,
 						drawingActive: m.active,
 						drawingError: m.error,
-						onFinishChange: T,
+						onFinishChange: w,
 						onTargetChange: (e) => {
-							m.cancel(), E(e);
+							m.cancel(), T(e);
 						},
 						onCancelDrawing: m.cancel
 					}
 				}),
-				!I && o === "connect" && /* @__PURE__ */ (0, Q.jsx)(nc, {
+				!F && o === "connect" && /* @__PURE__ */ (0, Q.jsx)(nc, {
 					editor: d,
 					manifest: u,
-					runtime: S,
-					deviceModels: _,
-					homeAssistantUrl: D,
-					onSettings: ae
+					runtime: x,
+					deviceModels: g,
+					homeAssistantUrl: E,
+					onSettings: re
 				}),
 				/* @__PURE__ */ (0, Q.jsx)("div", {
 					className: "arrange-catalog-mount",
-					hidden: I || o !== "furnish",
+					hidden: F || o !== "furnish",
 					children: /* @__PURE__ */ (0, Q.jsx)(cc, {
-						enabled: !I && o === "furnish",
-						furnishingModels: g,
-						deviceModels: _,
-						browsing: A,
-						onBrowse: j,
-						error: M,
-						onChoose: N,
+						enabled: !F && o === "furnish",
+						furnishingModels: h,
+						deviceModels: g,
+						browsing: k,
+						onBrowse: A,
+						error: j,
+						onChoose: M,
 						customModels: /* @__PURE__ */ (0, Q.jsx)(Gs, {
-							workspace: x,
-							disabled: s || y,
-							onBrowse: () => j({
+							workspace: b,
+							disabled: s || v,
+							onBrowse: () => A({
 								room: "my-models",
 								query: ""
 							})
 						}),
 						renderCustomModel: (e) => /* @__PURE__ */ (0, Q.jsx)(Ks, {
-							workspace: x,
+							workspace: b,
 							entry: e,
-							disabled: s || y,
-							onChoose: () => N(e)
+							disabled: s || v,
+							onChoose: () => M(e)
 						})
 					})
 				})
 			]
-		}), /* @__PURE__ */ (0, Q.jsx)(Rs, {
-			issues: ie,
-			onSelect: h
-		})]
+		})
 	}) });
 }
 //#endregion
+//#region apps/web/src/editor-workspace/EditorValidationPanel.tsx
+function dc({ issues: e, onSelect: t, expanded: n, onToggle: r, disabled: i = !1 }) {
+	let [a, o] = (0, Z.useState)(!1), s = n ?? a, c = (0, Z.useId)();
+	if (!e.length) return null;
+	let l = e.filter((e) => e.severity !== "warning").length, u = e.length - l;
+	return /* @__PURE__ */ (0, Q.jsxs)("section", {
+		className: "editor-issues construction-inspector__validation",
+		"data-expanded": s,
+		"aria-label": "Editor validation",
+		children: [/* @__PURE__ */ (0, Q.jsxs)("button", {
+			type: "button",
+			className: "editor-issues__disclosure",
+			"aria-label": `Issues: ${[l ? `${l} ${l === 1 ? "error" : "errors"}` : "", u ? `${u} ${u === 1 ? "warning" : "warnings"}` : ""].filter(Boolean).join(", ")}`,
+			"aria-expanded": s,
+			"aria-controls": c,
+			disabled: i,
+			onClick: r ?? (() => o((e) => !e)),
+			children: [
+				/* @__PURE__ */ (0, Q.jsx)("strong", { children: "Issues" }),
+				/* @__PURE__ */ (0, Q.jsxs)("span", {
+					className: "editor-issues__counts",
+					"aria-live": "polite",
+					"aria-atomic": "true",
+					children: [l > 0 && /* @__PURE__ */ (0, Q.jsxs)("span", {
+						"data-severity": "error",
+						children: [
+							/* @__PURE__ */ (0, Q.jsx)(X, { name: "warning" }),
+							l,
+							/* @__PURE__ */ (0, Q.jsxs)("span", {
+								className: "editor-issues__count-label",
+								children: [" ", l === 1 ? "error" : "errors"]
+							})
+						]
+					}), u > 0 && /* @__PURE__ */ (0, Q.jsxs)("span", {
+						"data-severity": "warning",
+						children: [
+							/* @__PURE__ */ (0, Q.jsx)(X, { name: "warning" }),
+							u,
+							/* @__PURE__ */ (0, Q.jsxs)("span", {
+								className: "editor-issues__count-label",
+								children: [" ", u === 1 ? "warning" : "warnings"]
+							})
+						]
+					})]
+				}),
+				/* @__PURE__ */ (0, Q.jsx)(X, { name: "chevron" })
+			]
+		}), /* @__PURE__ */ (0, Q.jsx)("ul", {
+			id: c,
+			hidden: !s,
+			children: e.map((e, n) => {
+				let r = /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [
+					/* @__PURE__ */ (0, Q.jsx)("span", {
+						className: "construction-inspector__validation-marker",
+						children: /* @__PURE__ */ (0, Q.jsx)(X, { name: "warning" })
+					}),
+					/* @__PURE__ */ (0, Q.jsxs)("span", { children: [/* @__PURE__ */ (0, Q.jsx)("strong", { children: e.message }), e.suggestion && /* @__PURE__ */ (0, Q.jsx)("small", { children: e.suggestion })] }),
+					e.target && /* @__PURE__ */ (0, Q.jsxs)("span", {
+						className: "editor-issues__locate",
+						"aria-hidden": "true",
+						children: [/* @__PURE__ */ (0, Q.jsx)(X, { name: "spawn" }), " Locate"]
+					})
+				] });
+				return /* @__PURE__ */ (0, Q.jsx)("li", {
+					"data-severity": e.severity,
+					children: e.target ? /* @__PURE__ */ (0, Q.jsx)("button", {
+						type: "button",
+						disabled: i,
+						"aria-label": `Locate ${e.target.kind} ${e.target.id}: ${e.message}`,
+						onClick: () => t(e),
+						children: r
+					}) : /* @__PURE__ */ (0, Q.jsx)("div", { children: r })
+				}, `${e.code}:${e.path}:${n}`);
+			})
+		})]
+	});
+}
+//#endregion
+//#region apps/web/src/editor-workspace/EditorPanelControls.tsx
+function fc({ panels: e, issueCount: t, disabled: n }) {
+	return /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [e.hasSelection && !e.propertiesOpen && /* @__PURE__ */ (0, Q.jsxs)("button", {
+		className: "editor-properties-toggle",
+		type: "button",
+		disabled: n,
+		onClick: e.openProperties,
+		"aria-expanded": !1,
+		"aria-controls": "editor-properties",
+		children: [/* @__PURE__ */ (0, Q.jsx)(X, { name: "details" }), "Properties"]
+	}), /* @__PURE__ */ (0, Q.jsxs)("div", {
+		className: "editor-panel-switcher",
+		role: "group",
+		"aria-label": "Editor panels",
+		children: [
+			/* @__PURE__ */ (0, Q.jsx)("button", {
+				type: "button",
+				disabled: n,
+				"aria-pressed": e.mobileSurface === "tools",
+				onClick: e.showTools,
+				children: "Tools"
+			}),
+			e.hasSelection && /* @__PURE__ */ (0, Q.jsx)("button", {
+				type: "button",
+				disabled: n,
+				"aria-pressed": e.mobileSurface === "properties",
+				onClick: e.openProperties,
+				children: "Properties"
+			}),
+			t > 0 && /* @__PURE__ */ (0, Q.jsxs)("button", {
+				type: "button",
+				disabled: n,
+				"aria-pressed": e.mobileSurface === "issues",
+				onClick: e.showIssues,
+				children: ["Issues ", /* @__PURE__ */ (0, Q.jsx)("span", { children: t })]
+			})
+		]
+	})] });
+}
+//#endregion
+//#region apps/web/src/editor-workspace/useEditorPanels.ts
+function pc({ mode: e, activeFloorId: t, constructEditor: n, stairDialog: r, furnishingEditor: i }, a) {
+	if (a) return null;
+	let o = null;
+	if (e === "construct") {
+		let e = n.selection;
+		o = r ? `stair:${r.id}` : e?.kind === "multiple" ? e.targets.map(({ kind: e, id: t }) => `${e}:${t}`).sort().join("|") : e ? `${e.kind}:${e.id}` : null;
+	} else e === "furnish" && i.selectedIds.length && (o = [...i.selectedIds].sort().join("|"));
+	return o ? `${e}:${t}:${o}` : null;
+}
+function mc(e, t) {
+	switch (t.type) {
+		case "selection": return t.selection === e.selection ? t.hasIssues === e.hasIssues ? e : {
+			...e,
+			hasIssues: t.hasIssues
+		} : {
+			...e,
+			selection: t.selection,
+			hasIssues: t.hasIssues,
+			collapsed: !1,
+			surface: t.selection ? "properties" : e.surface === "properties" ? "tools" : e.surface
+		};
+		case "properties": return {
+			...e,
+			collapsed: !1,
+			surface: "properties"
+		};
+		case "collapse": return {
+			...e,
+			collapsed: !0,
+			surface: "tools"
+		};
+		case "tools": return {
+			...e,
+			surface: "tools"
+		};
+		case "show-issues": return {
+			...e,
+			issuesExpanded: !0,
+			surface: "issues"
+		};
+		case "issues": return {
+			...e,
+			issuesExpanded: !e.issuesExpanded,
+			surface: e.issuesExpanded ? "tools" : "issues"
+		};
+	}
+}
+function hc(e, t, n = !0) {
+	let [r, i] = (0, Z.useReducer)(mc, {
+		selection: e,
+		hasIssues: n,
+		collapsed: !1,
+		issuesExpanded: !1,
+		surface: e ? "properties" : "tools"
+	});
+	return (0, Z.useEffect)(() => {
+		t || i({
+			type: "selection",
+			selection: e,
+			hasIssues: n
+		});
+	}, [
+		t,
+		e,
+		n
+	]), {
+		propertiesOpen: !!r.selection && !r.collapsed,
+		hasSelection: !!e,
+		issuesExpanded: r.issuesExpanded,
+		issuesOpen: r.issuesExpanded && r.hasIssues,
+		mobileSurface: r.surface,
+		openProperties: () => i({ type: "properties" }),
+		collapseProperties: () => i({ type: "collapse" }),
+		showIssues: () => i({ type: "show-issues" }),
+		showTools: () => i({ type: "tools" }),
+		toggleIssues: () => i({ type: "issues" })
+	};
+}
+//#endregion
 //#region apps/web/src/editor-action-bar/ShortcutPicker.tsx
-var dc = [
+var gc = [
 	"build",
 	"walk",
 	"night",
@@ -10285,7 +10505,7 @@ var dc = [
 	"view",
 	"all-lights"
 ];
-function fc({ picker: e, project: t, runtime: n, profile: r, actionMappingEnabled: i, deviceModels: a, walkTools: o, roomPictures: s, roomNames: c, deviceNames: l, disabled: u, rooms: f, devices: p, query: m, setQuery: h, matching: g, duplicate: _, choose: v, onClose: y }) {
+function _c({ picker: e, project: t, runtime: n, profile: r, actionMappingEnabled: i, deviceModels: a, walkTools: o, roomPictures: s, roomNames: c, deviceNames: l, disabled: u, rooms: d, devices: f, query: p, setQuery: m, matching: g, duplicate: _, choose: v, onClose: y }) {
 	return /* @__PURE__ */ (0, Q.jsxs)("div", {
 		className: "shortcuts-picker",
 		children: [
@@ -10302,16 +10522,16 @@ function fc({ picker: e, project: t, runtime: n, profile: r, actionMappingEnable
 				className: "shortcuts-picker__search",
 				children: [/* @__PURE__ */ (0, Q.jsx)(X, { name: "search" }), /* @__PURE__ */ (0, Q.jsx)("input", {
 					type: "search",
-					value: m,
+					value: p,
 					placeholder: "Search…",
 					"aria-label": "Search shortcut choices",
-					onChange: (e) => h(e.target.value)
+					onChange: (e) => m(e.target.value)
 				})]
 			}),
 			/* @__PURE__ */ (0, Q.jsxs)("div", {
 				className: "shortcuts-picker__grid",
 				children: [
-					(e.kind === "scene" || e.kind === "script") && /* @__PURE__ */ (0, Q.jsx)(Q.Fragment, { children: !i || n?.status !== "connected" ? /* @__PURE__ */ (0, Q.jsx)("p", { children: "Connect to Home Assistant to choose scenes and scripts." }) : /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [d(e.kind, n).filter((e) => g(e.label) || g(e.entityId)).map((t) => /* @__PURE__ */ (0, Q.jsxs)("button", {
+					(e.kind === "scene" || e.kind === "script") && /* @__PURE__ */ (0, Q.jsx)(Q.Fragment, { children: !i || n?.status !== "connected" ? /* @__PURE__ */ (0, Q.jsx)("p", { children: "Connect to Home Assistant to choose scenes and scripts." }) : /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [h(e.kind, n).filter((e) => g(e.label) || g(e.entityId)).map((t) => /* @__PURE__ */ (0, Q.jsxs)("button", {
 						type: "button",
 						"aria-label": t.label,
 						title: t.reason,
@@ -10326,25 +10546,25 @@ function fc({ picker: e, project: t, runtime: n, profile: r, actionMappingEnable
 							/* @__PURE__ */ (0, Q.jsx)("small", { children: t.entityId }),
 							!t.available && /* @__PURE__ */ (0, Q.jsx)("small", { children: "Unavailable" })
 						]
-					}, t.entityId)), d(e.kind, n).length === 0 && /* @__PURE__ */ (0, Q.jsxs)("p", { children: [
+					}, t.entityId)), h(e.kind, n).length === 0 && /* @__PURE__ */ (0, Q.jsxs)("p", { children: [
 						"No ",
 						e.kind,
 						"s are available in Home Assistant."
 					] })] }) }),
-					e.kind === "built-in" && dc.filter((e) => g(At[e])).map((e) => {
+					e.kind === "built-in" && gc.filter((e) => g(Dt[e])).map((e) => {
 						let t = {
 							kind: "built-in",
 							action: e
 						};
 						return /* @__PURE__ */ (0, Q.jsxs)("button", {
 							type: "button",
-							"aria-label": At[e],
+							"aria-label": Dt[e],
 							disabled: u || _(t),
 							onClick: () => v(t),
 							children: [/* @__PURE__ */ (0, Q.jsx)("span", {
 								className: "shortcuts-picker__icon",
 								children: /* @__PURE__ */ (0, Q.jsx)(Vt, { action: e })
-							}), /* @__PURE__ */ (0, Q.jsx)("strong", { children: At[e] })]
+							}), /* @__PURE__ */ (0, Q.jsx)("strong", { children: Dt[e] })]
 						}, e);
 					}),
 					e.kind === "built-in" && o.filter((e) => g(e.label)).map((e) => {
@@ -10367,7 +10587,7 @@ function fc({ picker: e, project: t, runtime: n, profile: r, actionMappingEnable
 							]
 						}, e.id);
 					}),
-					e.kind === "room" && f.filter((e) => g(c[e.id] ?? e.name)).map((e) => {
+					e.kind === "room" && d.filter((e) => g(c[e.id] ?? e.name)).map((e) => {
 						let t = {
 							kind: "room",
 							roomId: e.id
@@ -10386,8 +10606,8 @@ function fc({ picker: e, project: t, runtime: n, profile: r, actionMappingEnable
 							}), /* @__PURE__ */ (0, Q.jsx)("strong", { children: c[e.id] ?? e.name })]
 						}, e.id);
 					}),
-					e.kind === "device" && f.map((e) => {
-						let n = c[e.id] ?? e.name, r = p.filter((n) => Ue(n, t) === e.id).filter((e) => g(n) || g(l[e.id] ?? a[e.modelId]?.label ?? e.modelId));
+					e.kind === "device" && d.map((e) => {
+						let n = c[e.id] ?? e.name, r = f.filter((n) => He(n, t) === e.id).filter((e) => g(n) || g(l[e.id] ?? a[e.modelId]?.label ?? e.modelId));
 						return r.length ? /* @__PURE__ */ (0, Q.jsxs)("section", {
 							className: "shortcuts-picker__room",
 							"aria-label": n,
@@ -10405,7 +10625,7 @@ function fc({ picker: e, project: t, runtime: n, profile: r, actionMappingEnable
 										onClick: () => v(t),
 										children: [/* @__PURE__ */ (0, Q.jsx)("span", {
 											className: "shortcuts-picker__icon",
-											children: /* @__PURE__ */ (0, Q.jsx)(Mn, {
+											children: /* @__PURE__ */ (0, Q.jsx)(An, {
 												modelId: e.modelId,
 												models: a
 											})
@@ -10415,7 +10635,7 @@ function fc({ picker: e, project: t, runtime: n, profile: r, actionMappingEnable
 							})]
 						}, e.id) : null;
 					}),
-					e.kind === "device" && p.length === 0 && /* @__PURE__ */ (0, Q.jsx)("p", { children: "No room devices are available. Add one in Arrange first." })
+					e.kind === "device" && f.length === 0 && /* @__PURE__ */ (0, Q.jsx)("p", { children: "No room devices are available. Add one in Arrange first." })
 				]
 			})
 		]
@@ -10423,9 +10643,9 @@ function fc({ picker: e, project: t, runtime: n, profile: r, actionMappingEnable
 }
 //#endregion
 //#region apps/web/src/editor-action-bar/action-bar-edits.ts
-var pc = (e, t) => e.kind === t.kind && (e.kind === "built-in" && t.kind === "built-in" ? e.action === t.action : e.kind === "walk-tool" && t.kind === "walk-tool" ? e.toolId === t.toolId : e.kind === "room" && t.kind === "room" ? e.roomId === t.roomId : e.kind === "device" && t.kind === "device" && e.deviceId === t.deviceId);
-function mc(e, t, n, r) {
-	return e.some((e) => e.id !== t && pc(e.target, n)) ? e : t === null ? [...e, {
+var vc = (e, t) => e.kind === t.kind && (e.kind === "built-in" && t.kind === "built-in" ? e.action === t.action : e.kind === "walk-tool" && t.kind === "walk-tool" ? e.toolId === t.toolId : e.kind === "room" && t.kind === "room" ? e.roomId === t.roomId : e.kind === "device" && t.kind === "device" && e.deviceId === t.deviceId);
+function yc(e, t, n, r) {
+	return e.some((e) => e.id !== t && vc(e.target, n)) ? e : t === null ? [...e, {
 		id: r(),
 		target: n
 	}] : e.map((e) => e.id === t ? {
@@ -10433,57 +10653,57 @@ function mc(e, t, n, r) {
 		target: n
 	} : e);
 }
-function hc(e, t, n) {
+function bc(e, t, n) {
 	let r = e.findIndex((e) => e.id === t), i = r + n;
 	if (r < 0 || i < 0 || i >= e.length) return e;
 	let a = [...e];
 	return [a[r], a[i]] = [a[i], a[r]], a;
 }
-function gc(e, t) {
+function xc(e, t) {
 	return e.filter((e) => e.id !== t);
 }
 //#endregion
 //#region apps/web/src/editor-action-bar/ActionBarEditor.tsx
-function _c({ project: e, runtime: t, profile: n, actionMappingEnabled: r = !1, deviceModels: i, walkTools: a = [], roomPictures: o, roomNames: s = {}, deviceNames: c = {}, disabled: l, canUndo: u, canRedo: d, onUndo: f, onRedo: p, onChange: m }) {
-	let h = ze(), [g, _] = (0, Z.useState)(null), [v, y] = (0, Z.useState)(null), [b, x] = (0, Z.useState)(""), [S, C] = (0, Z.useState)(!1), [w, T] = (0, Z.useState)(null), E = (0, Z.useRef)(null), D = (0, Z.useRef)(null), O = mt(e.actionBar, a), k = e.floors.flatMap((e) => e.rooms), A = e.sceneItems.filter((t) => t.kind === "device" && Ut(e, t.id)), j = O.find((e) => e.id === g), M = t && n ? O.filter((e) => e.target.kind === "scene" || e.target.kind === "script").map((e) => B(e, n, t)).filter((e) => !e.available) : [], P = O.filter((e) => {
+function Sc({ project: e, runtime: t, profile: n, actionMappingEnabled: r = !1, deviceModels: i, walkTools: a = [], roomPictures: o, roomNames: s = {}, deviceNames: c = {}, disabled: l, canUndo: u, canRedo: d, onUndo: p, onRedo: m, onChange: h }) {
+	let g = ze(), [_, v] = (0, Z.useState)(null), [y, b] = (0, Z.useState)(null), [x, S] = (0, Z.useState)(""), [C, w] = (0, Z.useState)(!1), [T, E] = (0, Z.useState)(null), D = (0, Z.useRef)(null), O = (0, Z.useRef)(null), k = ee(e.actionBar, a), A = e.floors.flatMap((e) => e.rooms), j = e.sceneItems.filter((t) => t.kind === "device" && Ut(e, t.id)), M = k.find((e) => e.id === _), N = t && n ? k.filter((e) => e.target.kind === "scene" || e.target.kind === "script").map((e) => f(e, n, t)).filter((e) => !e.available) : [], P = k.filter((e) => {
 		let t = e.target;
-		return t.kind === "room" ? !k.some((e) => e.id === t.roomId) : t.kind === "device" && !A.some((e) => e.id === t.deviceId);
+		return t.kind === "room" ? !A.some((e) => e.id === t.roomId) : t.kind === "device" && !j.some((e) => e.id === t.deviceId);
 	}).length;
 	(0, Z.useEffect)(() => {
 		let e = () => {
-			if (!E.current) return;
-			if (E.current.clientWidth <= 0) {
-				T(null);
+			if (!D.current) return;
+			if (D.current.clientWidth <= 0) {
+				E(null);
 				return;
 			}
-			let e = Number.parseFloat(window.getComputedStyle(E.current).getPropertyValue("--scene-action-size")) || 64;
-			T(Math.max(2, Math.floor((E.current.clientWidth - 10 + 6) / (e + 6))));
+			let e = Number.parseFloat(window.getComputedStyle(D.current).getPropertyValue("--scene-action-size")) || 64;
+			E(Math.max(2, Math.floor((D.current.clientWidth - 10 + 6) / (e + 6))));
 		};
 		e();
 		let t = typeof ResizeObserver > "u" ? null : new ResizeObserver(e);
-		return E.current && t?.observe(E.current), window.addEventListener("resize", e), () => {
+		return D.current && t?.observe(D.current), window.addEventListener("resize", e), () => {
 			t?.disconnect(), window.removeEventListener("resize", e);
 		};
 	}, []), (0, Z.useEffect)(() => {
 		let e = (e) => {
-			e.key !== "Escape" || !v && g === null && !S || (e.preventDefault(), v ? y(null) : S ? C(!1) : _(null));
+			e.key !== "Escape" || !y && _ === null && !C || (e.preventDefault(), y ? b(null) : C ? w(!1) : v(null));
 		};
-		return h.events.addEventListener("keydown", e), () => h.events.removeEventListener("keydown", e);
+		return g.events.addEventListener("keydown", e), () => g.events.removeEventListener("keydown", e);
 	}, [
-		v,
-		g,
-		S,
-		h
+		y,
+		_,
+		C,
+		g
 	]);
-	let F = w !== null && O.length + 1 > w, I = F ? O.slice(0, Math.max(0, w - 2)) : O, L = F ? O.slice(I.length) : [], R = (e) => {
+	let F = T !== null && k.length + 1 > T, I = F ? k.slice(0, Math.max(0, T - 2)) : k, L = F ? k.slice(I.length) : [], R = (e) => {
 		let r = e.target;
-		if (r.kind === "built-in") return At[r.action];
+		if (r.kind === "built-in") return Dt[r.action];
 		if (r.kind === "walk-tool") return a.find((e) => e.id === r.toolId)?.label ?? "Unavailable tool";
-		if (r.kind === "room") return s[r.roomId] ?? k.find((e) => e.id === r.roomId)?.name ?? "Missing room";
-		if (r.kind === "scene" || r.kind === "script") return t && n ? B(e, n, t).label : `Unmapped ${r.kind}`;
-		let o = A.find((e) => e.id === r.deviceId);
+		if (r.kind === "room") return s[r.roomId] ?? A.find((e) => e.id === r.roomId)?.name ?? "Missing room";
+		if (r.kind === "scene" || r.kind === "script") return t && n ? f(e, n, t).label : `Unmapped ${r.kind}`;
+		let o = j.find((e) => e.id === r.deviceId);
 		return o ? c[o.id] ?? i[o.modelId]?.label ?? o.modelId.replaceAll("-", " ") : "Missing device";
-	}, z = (e) => {
+	}, te = (e) => {
 		let t = e.target;
 		if (t.kind === "built-in") return /* @__PURE__ */ (0, Q.jsx)(Vt, { action: t.action });
 		if (t.kind === "walk-tool") {
@@ -10495,25 +10715,25 @@ function _c({ project: e, runtime: t, profile: n, actionMappingEnabled: r = !1, 
 			pictureUrl: o[t.roomId]
 		});
 		if (t.kind === "scene" || t.kind === "script") return /* @__PURE__ */ (0, Q.jsx)(X, { name: t.kind === "scene" ? "grid" : "chevron" });
-		let n = A.find((e) => e.id === t.deviceId);
-		return n ? /* @__PURE__ */ (0, Q.jsx)(Mn, {
+		let n = j.find((e) => e.id === t.deviceId);
+		return n ? /* @__PURE__ */ (0, Q.jsx)(An, {
 			modelId: n.modelId,
 			models: i
 		}) : /* @__PURE__ */ (0, Q.jsx)(X, { name: "devices" });
-	}, V = (e) => /* @__PURE__ */ (0, Q.jsx)("button", {
+	}, z = (e) => /* @__PURE__ */ (0, Q.jsx)("button", {
 		type: "button",
 		className: "scene-action-slot is-filled",
 		"aria-label": `Edit ${R(e)} shortcut`,
-		"aria-pressed": g === e.id,
+		"aria-pressed": _ === e.id,
 		disabled: l,
 		onClick: () => {
-			_(e.id), y(null);
+			v(e.id), b(null);
 		},
 		onKeyDown: (t) => {
-			t.key === "ArrowUp" && (t.preventDefault(), _(e.id), requestAnimationFrame(() => D.current?.querySelector("button")?.focus()));
+			t.key === "ArrowUp" && (t.preventDefault(), v(e.id), requestAnimationFrame(() => O.current?.querySelector("button")?.focus()));
 		},
-		children: /* @__PURE__ */ (0, Q.jsx)(Je, {
-			icon: z(e),
+		children: /* @__PURE__ */ (0, Q.jsx)(qe, {
+			icon: te(e),
 			label: R(e),
 			shortcut: e.target.kind === "built-in" ? {
 				build: "B",
@@ -10525,18 +10745,18 @@ function _c({ project: e, runtime: t, profile: n, actionMappingEnabled: r = !1, 
 			}[e.target.action] : e.target.kind === "walk-tool" ? a.find((t) => e.target.kind === "walk-tool" && t.id === e.target.toolId)?.shortcutKey : void 0,
 			chevron: e.target.kind === "built-in" && (e.target.action === "build" || e.target.action === "view" || e.target.action === "weather")
 		})
-	}, e.id), ee = (e, t) => {
-		if (!v) return;
-		let n = v.replacingId ?? N();
-		m(mc(O, v.replacingId, e, () => n), t ? {
+	}, e.id), B = (e, t) => {
+		if (!y) return;
+		let n = y.replacingId ?? lt();
+		h(yc(k, y.replacingId, e, () => n), t ? {
 			id: n,
 			entityId: t
-		} : void 0), _(null), y(null), x(""), C(!1);
-	}, H = (e) => {
-		y({
+		} : void 0), v(null), b(null), S(""), w(!1);
+	}, V = (e) => {
+		b({
 			kind: e,
-			replacingId: j?.id ?? null
-		}), x("");
+			replacingId: M?.id ?? null
+		}), S("");
 	};
 	return /* @__PURE__ */ (0, Q.jsxs)("section", {
 		className: "shortcuts-workspace",
@@ -10552,13 +10772,13 @@ function _c({ project: e, runtime: t, profile: n, actionMappingEnabled: r = !1, 
 						/* @__PURE__ */ (0, Q.jsxs)("button", {
 							type: "button",
 							disabled: l || !u,
-							onClick: f,
+							onClick: p,
 							children: [/* @__PURE__ */ (0, Q.jsx)(X, { name: "undo" }), "Undo"]
 						}),
 						/* @__PURE__ */ (0, Q.jsxs)("button", {
 							type: "button",
 							disabled: l || !d,
-							onClick: p,
+							onClick: m,
 							children: [/* @__PURE__ */ (0, Q.jsx)(X, { name: "redo" }), "Redo"]
 						}),
 						/* @__PURE__ */ (0, Q.jsx)("button", {
@@ -10566,10 +10786,10 @@ function _c({ project: e, runtime: t, profile: n, actionMappingEnabled: r = !1, 
 							"aria-label": "Restore defaults",
 							disabled: l,
 							onClick: () => {
-								m(mt(void 0, a).map((e) => ({
+								h(ee(void 0, a).map((e) => ({
 									...e,
 									target: { ...e.target }
-								}))), _(null), y(null);
+								}))), v(null), b(null);
 							},
 							children: "Restore defaults"
 						})
@@ -10586,15 +10806,15 @@ function _c({ project: e, runtime: t, profile: n, actionMappingEnabled: r = !1, 
 					" missing. Replace or remove before Save."
 				]
 			}),
-			M.length > 0 && /* @__PURE__ */ (0, Q.jsx)("p", {
+			N.length > 0 && /* @__PURE__ */ (0, Q.jsx)("p", {
 				className: "shortcuts-workspace__warning",
 				role: "status",
-				children: M.map((e) => `${e.label}: ${e.reason}`).join(" ")
+				children: N.map((e) => `${e.label}: ${e.reason}`).join(" ")
 			}),
 			/* @__PURE__ */ (0, Q.jsx)("div", {
 				className: "shortcuts-workspace__canvas",
-				children: v ? /* @__PURE__ */ (0, Q.jsx)(fc, {
-					picker: v,
+				children: y ? /* @__PURE__ */ (0, Q.jsx)(_c, {
+					picker: y,
 					project: e,
 					runtime: t,
 					profile: n,
@@ -10605,14 +10825,14 @@ function _c({ project: e, runtime: t, profile: n, actionMappingEnabled: r = !1, 
 					roomNames: s,
 					deviceNames: c,
 					disabled: l,
-					rooms: k,
-					devices: A,
-					query: b,
-					setQuery: x,
-					matching: (e) => e.toLocaleLowerCase().includes(b.trim().toLocaleLowerCase()),
-					duplicate: (e) => O.some((t) => t.id !== v?.replacingId && JSON.stringify(t.target) === JSON.stringify(e)),
-					choose: ee,
-					onClose: () => y(null)
+					rooms: A,
+					devices: j,
+					query: x,
+					setQuery: S,
+					matching: (e) => e.toLocaleLowerCase().includes(x.trim().toLocaleLowerCase()),
+					duplicate: (e) => k.some((t) => t.id !== y?.replacingId && JSON.stringify(t.target) === JSON.stringify(e)),
+					choose: B,
+					onClose: () => b(null)
 				}) : /* @__PURE__ */ (0, Q.jsxs)("div", {
 					className: "shortcuts-workspace__prompt",
 					children: [/* @__PURE__ */ (0, Q.jsx)("h2", { children: "Choose a shortcut" }), /* @__PURE__ */ (0, Q.jsx)("p", { children: "Select a shortcut below to edit it, or select Add to create one." })]
@@ -10622,7 +10842,7 @@ function _c({ project: e, runtime: t, profile: n, actionMappingEnabled: r = !1, 
 				className: "shortcuts-workspace__bar-zone",
 				children: [/* @__PURE__ */ (0, Q.jsx)("div", {
 					className: "shortcuts-workspace__bar-measure",
-					ref: E,
+					ref: D,
 					children: /* @__PURE__ */ (0, Q.jsx)("nav", {
 						className: "scene-action-dock",
 						"aria-label": "Draft action bar",
@@ -10630,39 +10850,39 @@ function _c({ project: e, runtime: t, profile: n, actionMappingEnabled: r = !1, 
 							className: "scene-action-bar",
 							style: { "--scene-action-count": I.length + +!!F + 1 },
 							children: [
-								I.map(V),
+								I.map(z),
 								F && /* @__PURE__ */ (0, Q.jsxs)("div", {
 									className: "scene-action-overflow",
 									children: [/* @__PURE__ */ (0, Q.jsx)("button", {
 										type: "button",
 										className: "scene-action-slot is-filled",
 										"aria-label": "More shortcuts",
-										"aria-expanded": S,
-										onClick: () => C(!S),
-										children: /* @__PURE__ */ (0, Q.jsx)(Je, {
+										"aria-expanded": C,
+										onClick: () => w(!C),
+										children: /* @__PURE__ */ (0, Q.jsx)(qe, {
 											icon: "•••",
 											label: "More"
 										})
-									}), S && /* @__PURE__ */ (0, Q.jsx)("div", {
+									}), C && /* @__PURE__ */ (0, Q.jsx)("div", {
 										className: "scene-action-overflow__tray",
 										role: "group",
 										"aria-label": "More shortcuts",
-										children: L.map(V)
+										children: L.map(z)
 									})]
 								}),
 								/* @__PURE__ */ (0, Q.jsx)("button", {
 									type: "button",
 									className: "scene-action-slot shortcuts-workspace__empty",
 									"aria-label": "Add shortcut",
-									"aria-pressed": g === "",
+									"aria-pressed": _ === "",
 									disabled: l,
 									onClick: () => {
-										_(""), y(null);
+										v(""), b(null);
 									},
 									onKeyDown: (e) => {
-										e.key === "ArrowUp" && (e.preventDefault(), _(""), requestAnimationFrame(() => D.current?.querySelector("button")?.focus()));
+										e.key === "ArrowUp" && (e.preventDefault(), v(""), requestAnimationFrame(() => O.current?.querySelector("button")?.focus()));
 									},
-									children: /* @__PURE__ */ (0, Q.jsx)(Je, {
+									children: /* @__PURE__ */ (0, Q.jsx)(qe, {
 										icon: /* @__PURE__ */ (0, Q.jsx)(X, { name: "plus" }),
 										label: "Add"
 									})
@@ -10670,50 +10890,50 @@ function _c({ project: e, runtime: t, profile: n, actionMappingEnabled: r = !1, 
 							]
 						})
 					})
-				}), g !== null && !v && /* @__PURE__ */ (0, Q.jsxs)("div", {
+				}), _ !== null && !y && /* @__PURE__ */ (0, Q.jsxs)("div", {
 					className: "shortcuts-workspace__tray",
-					ref: D,
+					ref: O,
 					role: "group",
-					"aria-label": j ? `Edit ${R(j)}` : "Add shortcut",
+					"aria-label": M ? `Edit ${R(M)}` : "Add shortcut",
 					children: [
 						/* @__PURE__ */ (0, Q.jsxs)("button", {
 							type: "button",
 							disabled: l,
-							onClick: () => H("built-in"),
-							children: [/* @__PURE__ */ (0, Q.jsx)(X, { name: "grid" }), j ? "Replace with action" : "Add action"]
+							onClick: () => V("built-in"),
+							children: [/* @__PURE__ */ (0, Q.jsx)(X, { name: "grid" }), M ? "Replace with action" : "Add action"]
 						}),
 						/* @__PURE__ */ (0, Q.jsxs)("button", {
 							type: "button",
 							disabled: l,
-							onClick: () => H("room"),
-							children: [/* @__PURE__ */ (0, Q.jsx)(X, { name: "rooms" }), j ? "Replace with room" : "Add room"]
+							onClick: () => V("room"),
+							children: [/* @__PURE__ */ (0, Q.jsx)(X, { name: "rooms" }), M ? "Replace with room" : "Add room"]
 						}),
 						/* @__PURE__ */ (0, Q.jsxs)("button", {
 							type: "button",
 							disabled: l,
-							onClick: () => H("device"),
-							children: [/* @__PURE__ */ (0, Q.jsx)(X, { name: "devices" }), j ? "Replace with device" : "Add device"]
+							onClick: () => V("device"),
+							children: [/* @__PURE__ */ (0, Q.jsx)(X, { name: "devices" }), M ? "Replace with device" : "Add device"]
 						}),
 						["scene", "script"].map((e) => /* @__PURE__ */ (0, Q.jsxs)("button", {
 							type: "button",
 							disabled: l,
-							onClick: () => H(e),
-							children: [/* @__PURE__ */ (0, Q.jsx)(X, { name: e === "scene" ? "grid" : "chevron" }), j ? `Replace with ${e}` : `Add ${e}`]
+							onClick: () => V(e),
+							children: [/* @__PURE__ */ (0, Q.jsx)(X, { name: e === "scene" ? "grid" : "chevron" }), M ? `Replace with ${e}` : `Add ${e}`]
 						}, e)),
-						j && /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [
+						M && /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [
 							/* @__PURE__ */ (0, Q.jsx)("span", { className: "shortcuts-workspace__tray-separator" }),
 							/* @__PURE__ */ (0, Q.jsx)("button", {
 								type: "button",
 								"aria-label": "Move left",
-								disabled: l || O[0]?.id === j.id,
-								onClick: () => m(hc(O, j.id, -1)),
+								disabled: l || k[0]?.id === M.id,
+								onClick: () => h(bc(k, M.id, -1)),
 								children: /* @__PURE__ */ (0, Q.jsx)(X, { name: "chevronLeft" })
 							}),
 							/* @__PURE__ */ (0, Q.jsx)("button", {
 								type: "button",
 								"aria-label": "Move right",
-								disabled: l || O.at(-1)?.id === j.id,
-								onClick: () => m(hc(O, j.id, 1)),
+								disabled: l || k.at(-1)?.id === M.id,
+								onClick: () => h(bc(k, M.id, 1)),
 								children: /* @__PURE__ */ (0, Q.jsx)(X, { name: "chevron" })
 							}),
 							/* @__PURE__ */ (0, Q.jsx)("button", {
@@ -10721,7 +10941,7 @@ function _c({ project: e, runtime: t, profile: n, actionMappingEnabled: r = !1, 
 								"aria-label": "Remove shortcut",
 								disabled: l,
 								onClick: () => {
-									m(gc(O, j.id)), _(null);
+									h(xc(k, M.id)), v(null);
 								},
 								children: /* @__PURE__ */ (0, Q.jsx)(X, { name: "delete" })
 							})
@@ -10734,7 +10954,7 @@ function _c({ project: e, runtime: t, profile: n, actionMappingEnabled: r = !1, 
 }
 //#endregion
 //#region apps/web/src/editor-chrome/DecorationsTools.tsx
-var vc = [
+var Cc = [
 	{
 		tool: "niche",
 		label: "Niche"
@@ -10748,7 +10968,7 @@ var vc = [
 		label: "Pool"
 	}
 ];
-function yc({ tool: e, onToolChange: t, disabled: n }) {
+function wc({ tool: e, onToolChange: t, disabled: n }) {
 	let r = ze(), i = (0, Z.useId)(), a = (0, Z.useRef)(null), o = (0, Z.useRef)(null), s = (0, Z.useRef)(!1), c = (0, Z.useRef)(!1), l = (0, Z.useRef)(null), [u, d] = (0, Z.useState)(null), f = () => {
 		l.current && clearTimeout(l.current);
 	}, p = () => {
@@ -10801,20 +11021,20 @@ function yc({ tool: e, onToolChange: t, disabled: n }) {
 		},
 		onPointerLeave: h,
 		onKeyDown: g,
-		children: /* @__PURE__ */ (0, Q.jsx)(mr, {
+		children: /* @__PURE__ */ (0, Q.jsx)(cr, {
 			tooltip: !1,
 			disabled: n,
 			icon: "decorations",
 			label: "Decorations",
 			showLabel: !0,
-			pressed: vc.some((t) => t.tool === e),
+			pressed: Cc.some((t) => t.tool === e),
 			expanded: !!u,
 			controls: u ? i : void 0,
 			onClick: () => {
 				s.current ? p() : (s.current = !0, c.current = !0, m());
 			}
 		})
-	}), u && (0, pr.createPortal)(/* @__PURE__ */ (0, Q.jsx)("div", {
+	}), u && (0, sr.createPortal)(/* @__PURE__ */ (0, Q.jsx)("div", {
 		inert: n,
 		id: i,
 		ref: o,
@@ -10825,7 +11045,7 @@ function yc({ tool: e, onToolChange: t, disabled: n }) {
 		onPointerEnter: f,
 		onPointerLeave: h,
 		onKeyDown: g,
-		children: vc.map((n) => /* @__PURE__ */ (0, Q.jsx)(mr, {
+		children: Cc.map((n) => /* @__PURE__ */ (0, Q.jsx)(cr, {
 			tooltip: !1,
 			icon: n.tool,
 			label: n.label,
@@ -10839,7 +11059,7 @@ function yc({ tool: e, onToolChange: t, disabled: n }) {
 }
 //#endregion
 //#region apps/web/src/editor-chrome/EditorActionBar.tsx
-var bc = [
+var Tc = [
 	{
 		tool: "select",
 		label: "Select",
@@ -10876,7 +11096,7 @@ var bc = [
 		key: "M"
 	}
 ];
-function xc({ inert: e, mode: t, tool: n, onToolChange: r, canUndo: i, canRedo: a, onUndo: o, onRedo: s, onStairs: c, stairsActive: l, stairsDisabledReason: u }) {
+function Ec({ inert: e, mode: t, tool: n, onToolChange: r, canUndo: i, canRedo: a, onUndo: o, onRedo: s, onStairs: c, stairsActive: l, stairsDisabledReason: u }) {
 	let d = t === "construct";
 	return /* @__PURE__ */ (0, Q.jsxs)("div", {
 		inert: e,
@@ -10886,7 +11106,7 @@ function xc({ inert: e, mode: t, tool: n, onToolChange: r, canUndo: i, canRedo: 
 		"aria-label": d ? "Construction actions" : "Edit history",
 		children: [
 			d && /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [
-				bc.flatMap((e) => [/* @__PURE__ */ (0, Q.jsx)(mr, {
+				Tc.flatMap((e) => [/* @__PURE__ */ (0, Q.jsx)(cr, {
 					icon: e.tool,
 					label: e.label,
 					showLabel: !0,
@@ -10894,7 +11114,7 @@ function xc({ inert: e, mode: t, tool: n, onToolChange: r, canUndo: i, canRedo: 
 					shortcut: e.key,
 					keyShortcuts: e.key,
 					onClick: () => r(e.tool)
-				}, e.tool), ...e.tool === "wall" && c ? [/* @__PURE__ */ (0, Q.jsx)(mr, {
+				}, e.tool), ...e.tool === "wall" && c ? [/* @__PURE__ */ (0, Q.jsx)(cr, {
 					icon: "stairs",
 					label: "Stairs",
 					showLabel: !0,
@@ -10903,7 +11123,7 @@ function xc({ inert: e, mode: t, tool: n, onToolChange: r, canUndo: i, canRedo: 
 					disabledReason: u,
 					onClick: c
 				}, "stairs")] : []]),
-				/* @__PURE__ */ (0, Q.jsx)(yc, {
+				/* @__PURE__ */ (0, Q.jsx)(wc, {
 					tool: n,
 					onToolChange: r,
 					disabled: e
@@ -10913,7 +11133,7 @@ function xc({ inert: e, mode: t, tool: n, onToolChange: r, canUndo: i, canRedo: 
 					"aria-hidden": "true"
 				})
 			] }),
-			/* @__PURE__ */ (0, Q.jsx)(mr, {
+			/* @__PURE__ */ (0, Q.jsx)(cr, {
 				icon: "undo",
 				label: "Undo",
 				disabled: !i,
@@ -10921,7 +11141,7 @@ function xc({ inert: e, mode: t, tool: n, onToolChange: r, canUndo: i, canRedo: 
 				shortcut: "⌘/Ctrl Z",
 				keyShortcuts: "Control+Z Meta+Z"
 			}),
-			/* @__PURE__ */ (0, Q.jsx)(mr, {
+			/* @__PURE__ */ (0, Q.jsx)(cr, {
 				icon: "redo",
 				label: "Redo",
 				disabled: !a,
@@ -10934,7 +11154,7 @@ function xc({ inert: e, mode: t, tool: n, onToolChange: r, canUndo: i, canRedo: 
 }
 //#endregion
 //#region apps/web/src/editor-chrome/EditorModeNav.tsx
-function Sc({ mode: e, onModeChange: t }) {
+function Dc({ mode: e, onModeChange: t }) {
 	return /* @__PURE__ */ (0, Q.jsxs)("nav", {
 		className: "direction-modes",
 		"aria-label": "Editor mode",
@@ -10972,7 +11192,7 @@ function Sc({ mode: e, onModeChange: t }) {
 }
 //#endregion
 //#region apps/web/src/editor-connect/ConnectActionBar.tsx
-function Cc({ view: e, onViewChange: t, refreshing: n, disconnected: r, hasUnmappedRooms: i, onRefresh: a }) {
+function Oc({ view: e, onViewChange: t, refreshing: n, disconnected: r, hasUnmappedRooms: i, onRefresh: a }) {
 	return /* @__PURE__ */ (0, Q.jsxs)("div", {
 		className: "editor-action-bar connect-action-bar",
 		role: "group",
@@ -10980,7 +11200,7 @@ function Cc({ view: e, onViewChange: t, refreshing: n, disconnected: r, hasUnmap
 		"data-mode": "connect",
 		"aria-busy": n,
 		children: [
-			/* @__PURE__ */ (0, Q.jsx)(mr, {
+			/* @__PURE__ */ (0, Q.jsx)(cr, {
 				icon: "rooms",
 				label: "Rooms",
 				showLabel: !0,
@@ -10988,7 +11208,7 @@ function Cc({ view: e, onViewChange: t, refreshing: n, disconnected: r, hasUnmap
 				warning: i ? "Some rooms are not mapped to Home Assistant areas." : void 0,
 				onClick: () => t("rooms")
 			}),
-			/* @__PURE__ */ (0, Q.jsx)(mr, {
+			/* @__PURE__ */ (0, Q.jsx)(cr, {
 				icon: "devices",
 				label: "Devices",
 				showLabel: !0,
@@ -10999,7 +11219,7 @@ function Cc({ view: e, onViewChange: t, refreshing: n, disconnected: r, hasUnmap
 				className: "editor-action-bar__separator",
 				"aria-hidden": "true"
 			}),
-			/* @__PURE__ */ (0, Q.jsx)(mr, {
+			/* @__PURE__ */ (0, Q.jsx)(cr, {
 				icon: "refresh",
 				label: "Refresh from Home Assistant",
 				disabled: r || n,
@@ -11010,7 +11230,7 @@ function Cc({ view: e, onViewChange: t, refreshing: n, disconnected: r, hasUnmap
 }
 //#endregion
 //#region apps/web/src/editor-workspace/HomeEditorHeader.tsx
-function wc({ referenceAdjusting: e, activeFloorId: t, stairPlacement: n, setStairPlacement: r, startStairs: i, snapshot: a, editingLocked: o, publishOpen: s, previewOpen: c, mode: l, cameraView: u, setCameraView: d, walkButton: f, unsettled: p, setPreviewOpen: m, closeEditor: h, closing: g, setPublishMessage: _, setPublishOpen: v, publishErrors: y, publishProject: b, connect: x, runtime: S, constructEditor: C, dragging: w, floorZoneDrawing: T, poolDrawing: E, workspace: D, undoProject: O, redoProject: k, shortcutsMode: A, onModeTabChange: j, replaceEditorsFromProject: M }) {
+function kc({ referenceAdjusting: e, activeFloorId: t, stairPlacement: n, setStairPlacement: r, startStairs: i, snapshot: a, editingLocked: o, publishOpen: s, previewOpen: c, mode: l, cameraView: u, setCameraView: d, walkButton: f, unsettled: p, setPreviewOpen: m, closeEditor: h, closing: g, setPublishMessage: _, setPublishOpen: v, publishErrors: y, publishProject: b, connect: x, runtime: S, constructEditor: C, dragging: w, floorZoneDrawing: T, poolDrawing: E, workspace: D, undoProject: O, redoProject: k, shortcutsMode: A, onModeTabChange: j, replaceEditorsFromProject: M }) {
 	let [N, P] = (0, Z.useState)(null), F = D.record.publishedAt !== 0, I = (0, Z.useMemo)(() => JSON.stringify(a.project) !== JSON.stringify(D.record.published) || Object.values(a.bindings).some((e) => JSON.stringify(e.draft) !== JSON.stringify(e.published)), [
 		a.project,
 		a.bindings,
@@ -11087,7 +11307,7 @@ function wc({ referenceAdjusting: e, activeFloorId: t, stairPlacement: n, setSta
 									let t = e.currentTarget.closest("main");
 									try {
 										if (!t) throw Error("Pointer lock unavailable");
-										await gt(t), m(!0);
+										await pt(t), m(!0);
 									} catch {
 										P("Allow pointer lock in your browser to explore this home.");
 									}
@@ -11109,7 +11329,7 @@ function wc({ referenceAdjusting: e, activeFloorId: t, stairPlacement: n, setSta
 				role: "alert",
 				children: N
 			}),
-			/* @__PURE__ */ (0, Q.jsx)(Sc, {
+			/* @__PURE__ */ (0, Q.jsx)(Dc, {
 				mode: A ? "shortcuts" : l,
 				onModeChange: j
 			}),
@@ -11140,14 +11360,14 @@ function wc({ referenceAdjusting: e, activeFloorId: t, stairPlacement: n, setSta
 					children: [/* @__PURE__ */ (0, Q.jsx)(X, { name: "save" }), "Save"]
 				})]
 			}),
-			l === "connect" ? /* @__PURE__ */ (0, Q.jsx)(Cc, {
+			l === "connect" ? /* @__PURE__ */ (0, Q.jsx)(Oc, {
 				view: x.view,
 				onViewChange: x.setView,
 				hasUnmappedRooms: x.hasUnmappedRooms,
 				refreshing: S.refreshing,
 				disconnected: x.disconnected,
 				onRefresh: () => void x.refresh()
-			}) : /* @__PURE__ */ (0, Q.jsx)(xc, {
+			}) : /* @__PURE__ */ (0, Q.jsx)(Ec, {
 				inert: e,
 				mode: l,
 				tool: C.tool,
@@ -11167,7 +11387,7 @@ function wc({ referenceAdjusting: e, activeFloorId: t, stairPlacement: n, setSta
 }
 //#endregion
 //#region apps/web/src/editor-workspace/EditorConnectionMap.tsx
-function Tc({ connectFloor: e, connect: t }) {
+function Ac({ connectFloor: e, connect: t }) {
 	return /* @__PURE__ */ (0, Q.jsx)(S, {
 		floor: e,
 		selectedRoomId: t.roomId,
@@ -11182,14 +11402,14 @@ function Tc({ connectFloor: e, connect: t }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/NorthOrientationOverlay.tsx
-var Ec = (e) => (e % 360 + 360) % 360, Dc = (e, t) => {
+var jc = (e) => (e % 360 + 360) % 360, Mc = (e, t) => {
 	let n = e * Math.PI / 180;
 	return {
 		x: 200 + Math.sin(n) * t,
 		y: 200 - Math.cos(n) * t
 	};
 };
-function Oc({ angle: e, onRotate: t, onConfirm: n, onCancel: r }) {
+function Nc({ angle: e, onRotate: t, onConfirm: n, onCancel: r }) {
 	let i = ze(), a = (0, Z.useRef)(null), o = (0, Z.useRef)(null), s = (0, Z.useRef)(null), c = (0, Z.useRef)(null), [l, u] = (0, Z.useState)(0);
 	(0, Z.useEffect)(() => {
 		let e = a.current;
@@ -11209,7 +11429,7 @@ function Oc({ angle: e, onRotate: t, onConfirm: n, onCancel: r }) {
 		let n = c.current, r = d(e);
 		if (!n || n.pointerId !== e.pointerId || r === null) return;
 		let i = Math.atan2(Math.sin((r - n.bearing) * Math.PI / 180), Math.cos((r - n.bearing) * Math.PI / 180)) * 180 / Math.PI;
-		t(Ec(Math.round(n.angle + i)));
+		t(jc(Math.round(n.angle + i)));
 	};
 	return /* @__PURE__ */ (0, Q.jsxs)("dialog", {
 		open: !0,
@@ -11273,7 +11493,7 @@ function Oc({ angle: e, onRotate: t, onConfirm: n, onCancel: r }) {
 					},
 					onKeyDown: (n) => {
 						let r = n.shiftKey ? 1 : 5, i = ["ArrowRight", "ArrowDown"].includes(n.key) ? r : ["ArrowLeft", "ArrowUp"].includes(n.key) ? -r : null;
-						i !== null && (n.preventDefault(), t(Ec(e + i))), n.key === "Home" && (n.preventDefault(), t(0));
+						i !== null && (n.preventDefault(), t(jc(e + i))), n.key === "Home" && (n.preventDefault(), t(0));
 					},
 					children: /* @__PURE__ */ (0, Q.jsxs)("svg", {
 						viewBox: "0 0 400 400",
@@ -11286,7 +11506,7 @@ function Oc({ angle: e, onRotate: t, onConfirm: n, onCancel: r }) {
 								className: "north-orientation__ring"
 							}),
 							Array.from({ length: 72 }, (t, n) => {
-								let r = e + n * 5, i = Dc(r, 177), a = Dc(r, n % 18 == 0 ? 157 : n % 3 == 0 ? 163 : 170);
+								let r = e + n * 5, i = Mc(r, 177), a = Mc(r, n % 18 == 0 ? 157 : n % 3 == 0 ? 163 : 170);
 								return /* @__PURE__ */ (0, Q.jsx)("line", {
 									x1: a.x,
 									y1: a.y,
@@ -11301,7 +11521,7 @@ function Oc({ angle: e, onRotate: t, onConfirm: n, onCancel: r }) {
 								"S",
 								"W"
 							].map((t, n) => {
-								let r = Dc(e + n * 90, 193);
+								let r = Mc(e + n * 90, 193);
 								return /* @__PURE__ */ (0, Q.jsx)("text", {
 									x: r.x,
 									y: r.y,
@@ -11339,20 +11559,20 @@ function Oc({ angle: e, onRotate: t, onConfirm: n, onCancel: r }) {
 }
 //#endregion
 //#region apps/web/src/editor-workspace/editor-canvas-events.ts
-function kc(e) {
-	let t = nn(e);
+function Pc(e) {
+	let t = en(e);
 	return t.filter = (e) => [...e].sort((e, t) => Number(t.object.userData.constructionEditHandle === !0) - Number(e.object.userData.constructionEditHandle === !0)), t;
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/ConstructionPlatformLayer.tsx
-function Ac({ polygon: e, draft: t, name: n, color: r, opacity: i = 1, handlers: a }) {
+function Fc({ polygon: e, draft: t, name: n, color: r, opacity: i = 1, handlers: a }) {
 	let o = (0, Z.useMemo)(() => {
 		if (!Ee(e)) return null;
-		let n = new Ce();
+		let n = new _e();
 		return e.forEach((e, r) => {
-			let [i, a] = q(e, t.coordinates);
+			let [i, a] = J(e, t.coordinates);
 			r === 0 ? n.moveTo(i, -a) : n.lineTo(i, -a);
-		}), n.closePath(), new ie(n);
+		}), n.closePath(), new Ce(n);
 	}, [e, t.coordinates]);
 	return (0, Z.useEffect)(() => () => o?.dispose(), [o]), o ? /* @__PURE__ */ (0, Q.jsx)("mesh", {
 		name: n,
@@ -11368,15 +11588,15 @@ function Ac({ polygon: e, draft: t, name: n, color: r, opacity: i = 1, handlers:
 			0
 		],
 		...a,
-		...a ? {} : { raycast: Qr },
-		children: /* @__PURE__ */ (0, Q.jsx)(ei, {
+		...a ? {} : { raycast: ri },
+		children: /* @__PURE__ */ (0, Q.jsx)(ai, {
 			color: r,
 			opacity: i
 		})
 	}) : null;
 }
-function jc({ draft: e, selection: t, tool: n, points: r = [], preview: i = null, deletionTargets: a, selectedEdgeId: o, onSelectEdge: s, onSelect: c, onUpdate: l, onDraggingChange: u }) {
-	let { snap: d, drag: f, handlers: p } = da({
+function Ic({ draft: e, selection: t, tool: n, points: r = [], preview: i = null, deletionTargets: a, selectedEdgeId: o, onSelectEdge: s, onSelect: c, onUpdate: l, onDraggingChange: u }) {
+	let { snap: d, drag: f, handlers: p } = ma({
 		draft: e,
 		selection: t,
 		selectionKind: "outdoor-platform",
@@ -11388,16 +11608,16 @@ function jc({ draft: e, selection: t, tool: n, points: r = [], preview: i = null
 	return /* @__PURE__ */ (0, Q.jsxs)("group", {
 		name: "construction-platforms",
 		children: [
-			/* @__PURE__ */ (0, Q.jsx)(li, {
+			/* @__PURE__ */ (0, Q.jsx)(fi, {
 				snap: d,
 				coordinates: e.coordinates
 			}),
 			(e.outdoorPlatforms ?? []).map((r) => {
-				let i = f?.id === r.id ? f.polygon : r.polygon, c = a ? a.some((e) => e.kind === "outdoor-platform" && e.id === r.id) : Et(t, "outdoor-platform", r.id), l = t?.kind === "outdoor-platform" && t.id === r.id, u = Ee(i);
+				let i = f?.id === r.id ? f.polygon : r.polygon, c = a ? a.some((e) => e.kind === "outdoor-platform" && e.id === r.id) : Ct(t, "outdoor-platform", r.id), l = t?.kind === "outdoor-platform" && t.id === r.id, u = Ee(i);
 				return /* @__PURE__ */ (0, Q.jsxs)("group", {
 					name: `plan-platform-${r.id}`,
 					children: [
-						/* @__PURE__ */ (0, Q.jsx)(Ac, {
+						/* @__PURE__ */ (0, Q.jsx)(Fc, {
 							name: `construction-platform-${r.id}`,
 							polygon: i,
 							draft: e,
@@ -11406,10 +11626,10 @@ function jc({ draft: e, selection: t, tool: n, points: r = [], preview: i = null
 							handlers: n === "select" ? p(r.id, i) : void 0
 						}),
 						i.map((t, a) => {
-							let l = i[(a + 1) % i.length], d = Kr(t, l, e.coordinates);
-							return /* @__PURE__ */ (0, Q.jsxs)("group", { children: [/* @__PURE__ */ (0, Q.jsx)(ti, {
-								from: q(t, e.coordinates),
-								to: q(l, e.coordinates),
+							let l = i[(a + 1) % i.length], d = Xr(t, l, e.coordinates);
+							return /* @__PURE__ */ (0, Q.jsxs)("group", { children: [/* @__PURE__ */ (0, Q.jsx)(oi, {
+								from: J(t, e.coordinates),
+								to: J(l, e.coordinates),
 								color: u ? o === r.edges[a]?.id ? "#bc653c" : c ? "#ff754d" : "#8d806e" : "#c53f32",
 								width: c ? .065 : .035,
 								elevation: .06
@@ -11435,7 +11655,7 @@ function jc({ draft: e, selection: t, tool: n, points: r = [], preview: i = null
 									d.length,
 									.02,
 									.18
-								] }), /* @__PURE__ */ (0, Q.jsx)($r, {
+								] }), /* @__PURE__ */ (0, Q.jsx)(ii, {
 									visible: !1,
 									transparent: !0,
 									opacity: 0,
@@ -11445,8 +11665,8 @@ function jc({ draft: e, selection: t, tool: n, points: r = [], preview: i = null
 							})] }, a);
 						}),
 						l && n === "select" && i.map((t, n) => {
-							let [i, a] = q(t, e.coordinates);
-							return /* @__PURE__ */ (0, Q.jsx)(ca, {
+							let [i, a] = J(t, e.coordinates);
+							return /* @__PURE__ */ (0, Q.jsx)(da, {
 								name: `construction-platform-corner-${r.id}-${n}`,
 								at: [
 									i,
@@ -11459,7 +11679,7 @@ function jc({ draft: e, selection: t, tool: n, points: r = [], preview: i = null
 					]
 				}, r.id);
 			}),
-			f?.dragActive && /* @__PURE__ */ (0, Q.jsx)(la, {
+			f?.dragActive && /* @__PURE__ */ (0, Q.jsx)(fa, {
 				polygon: f.polygon,
 				corner: f.corner,
 				coordinates: e.coordinates,
@@ -11468,22 +11688,22 @@ function jc({ draft: e, selection: t, tool: n, points: r = [], preview: i = null
 			n === "platform" && /* @__PURE__ */ (0, Q.jsxs)("group", {
 				name: "construction-platform-draft",
 				children: [
-					/* @__PURE__ */ (0, Q.jsx)(Ac, {
+					/* @__PURE__ */ (0, Q.jsx)(Fc, {
 						polygon: m,
 						draft: e,
 						name: "construction-platform-draft-fill",
 						color: "#d5e4df"
 					}),
-					r.slice(1).map((t, n) => /* @__PURE__ */ (0, Q.jsx)(ti, {
-						from: q(r[n], e.coordinates),
-						to: q(t, e.coordinates),
+					r.slice(1).map((t, n) => /* @__PURE__ */ (0, Q.jsx)(oi, {
+						from: J(r[n], e.coordinates),
+						to: J(t, e.coordinates),
 						color: "#689ba1",
 						width: .055,
 						elevation: .08
 					}, n)),
 					r.map((t, n) => {
-						let [r, i] = q(t, e.coordinates);
-						return /* @__PURE__ */ (0, Q.jsx)(xi, {
+						let [r, i] = J(t, e.coordinates);
+						return /* @__PURE__ */ (0, Q.jsx)(wi, {
 							name: `construction-platform-point-${n}`,
 							position: [
 								r,
@@ -11501,9 +11721,9 @@ function jc({ draft: e, selection: t, tool: n, points: r = [], preview: i = null
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/ConstructionGrid.tsx
-function Mc() {
-	let e = (0, Z.useRef)(null), t = (0, Z.useMemo)(() => ({ cellSize: { value: Mt } }), []);
-	return lt(({ camera: t }) => {
+function Lc() {
+	let e = (0, Z.useRef)(null), t = (0, Z.useMemo)(() => ({ cellSize: { value: kt } }), []);
+	return st(({ camera: t }) => {
 		e.current && e.current.position.set(t.position.x, -.04, t.position.z);
 	}), /* @__PURE__ */ (0, Q.jsxs)("mesh", {
 		ref: e,
@@ -11526,21 +11746,21 @@ function Mc() {
 }
 //#endregion
 //#region apps/web/src/editor-reference-plan/reference-plan.ts
-var Nc = {
+var Rc = {
 	visible: !0,
 	opacity: .5
-}, Pc = (e) => e.width * e.pixelHeight / e.pixelWidth, Fc = ([e, t], n) => {
+}, zc = (e) => e.width * e.pixelHeight / e.pixelWidth, Bc = ([e, t], n) => {
 	let r = n * Math.PI / 180;
 	return [e * Math.cos(r) - t * Math.sin(r), e * Math.sin(r) + t * Math.cos(r)];
-}, Ic = (e, [t, n]) => {
-	let [r, i] = Fc([(t - .5) * e.width, (n - .5) * Pc(e)], e.angle);
+}, Vc = (e, [t, n]) => {
+	let [r, i] = Bc([(t - .5) * e.width, (n - .5) * zc(e)], e.angle);
 	return [e.center[0] + r, e.center[1] + i];
-}, Lc = (e, t) => {
-	let [n, r] = Fc([t[0] - e.center[0], t[1] - e.center[1]], -e.angle);
-	return [n / e.width + .5, r / Pc(e) + .5];
+}, Hc = (e, t) => {
+	let [n, r] = Bc([t[0] - e.center[0], t[1] - e.center[1]], -e.angle);
+	return [n / e.width + .5, r / zc(e) + .5];
 };
-function Rc(e, t, n, r) {
-	let i = Ic(e, t), a = Ic(e, n), o = Math.hypot(a[0] - i[0], a[1] - i[1]);
+function Uc(e, t, n, r) {
+	let i = Vc(e, t), a = Vc(e, n), o = Math.hypot(a[0] - i[0], a[1] - i[1]);
 	if (!Number.isFinite(r) || r <= 0) throw Error("Enter a distance greater than zero in metres.");
 	if (o < 1e-6) throw Error("Choose two different points on the image.");
 	let s = r / o;
@@ -11550,8 +11770,8 @@ function Rc(e, t, n, r) {
 		center: [i[0] + (e.center[0] - i[0]) * s, i[1] + (e.center[1] - i[1]) * s]
 	};
 }
-function zc(e, t, n) {
-	let r = Ic(e, [1 - t[0], 1 - t[1]]), i = Ic(e, t), a = i[0] - r[0], o = i[1] - r[1], s = Math.max(.01 / e.width, ((n[0] - r[0]) * a + (n[1] - r[1]) * o) / (a * a + o * o));
+function Wc(e, t, n) {
+	let r = Vc(e, [1 - t[0], 1 - t[1]]), i = Vc(e, t), a = i[0] - r[0], o = i[1] - r[1], s = Math.max(.01 / e.width, ((n[0] - r[0]) * a + (n[1] - r[1]) * o) / (a * a + o * o));
 	return {
 		...e,
 		width: e.width * s,
@@ -11560,25 +11780,25 @@ function zc(e, t, n) {
 }
 //#endregion
 //#region apps/web/src/editor-reference-plan/ReferenceCanvasLayers.tsx
-var Bc = [
+var Gc = [
 	[0, 0],
 	[1, 0],
 	[1, 1],
 	[0, 1]
-], Vc = new b(new J(0, 1, 0), 0);
-function Hc(e, t, n, r) {
-	let i = new J(e[0], 0, e[1]).project(t);
+], Kc = new me(new Y(0, 1, 0), 0);
+function qc(e, t, n, r) {
+	let i = new Y(e[0], 0, e[1]).project(t);
 	return [(i.x + 1) * n / 2, (1 - i.y) * r / 2];
 }
-function Uc(e, t) {
+function Jc(e, t) {
 	if (!t.canvas || !t.camera) return null;
-	let n = t.canvas.getBoundingClientRect(), r = new K();
-	r.setFromCamera(new st((e[0] - n.left) / n.width * 2 - 1, 1 - (e[1] - n.top) / n.height * 2), t.camera);
-	let i = r.ray.intersectPlane(Vc, new J());
+	let n = t.canvas.getBoundingClientRect(), r = new D();
+	r.setFromCamera(new Pt((e[0] - n.left) / n.width * 2 - 1, 1 - (e[1] - n.top) / n.height * 2), t.camera);
+	let i = r.ray.intersectPlane(Kc, new Y());
 	return i ? [i.x, i.z] : null;
 }
-function Wc({ projection: e }) {
-	let { set: t, invalidate: n } = Ae();
+function Yc({ projection: e }) {
+	let { set: t, invalidate: n } = q();
 	return (0, Z.useEffect)(() => {
 		let r = (e) => {
 			t({ camera: e }), n();
@@ -11592,13 +11812,13 @@ function Wc({ projection: e }) {
 		n
 	]), null;
 }
-function Gc({ projection: e, reference: t, image: n, outline: r }) {
-	let { setEvents: i, invalidate: a } = Ae();
+function Xc({ projection: e, reference: t, image: n, outline: r }) {
+	let { setEvents: i, invalidate: a } = q();
 	return (0, Z.useEffect)(() => (i({ enabled: !t.adjusting }), () => i({ enabled: !0 })), [t.adjusting, i]), (0, Z.useEffect)(() => {
 		a();
-	}), lt(({ camera: i, size: a, gl: o }) => {
+	}), st(({ camera: i, size: a, gl: o }) => {
 		e.current.camera = i, e.current.canvas = o.domElement, e.current.background?.(i);
-		let s = Uc([a.width / 2 + o.domElement.getBoundingClientRect().left, a.height / 2 + o.domElement.getBoundingClientRect().top], e.current), c = "zoom" in i ? Number(i.zoom) : 1;
+		let s = Jc([a.width / 2 + o.domElement.getBoundingClientRect().left, a.height / 2 + o.domElement.getBoundingClientRect().top], e.current), c = "zoom" in i ? Number(i.zoom) : 1;
 		s && (t.viewport.current = {
 			center: s,
 			width: a.width / c,
@@ -11606,7 +11826,7 @@ function Gc({ projection: e, reference: t, image: n, outline: r }) {
 		});
 		let l = t.plan;
 		if (!l) return;
-		let u = (e) => Hc(Ic(l, e), i, a.width, a.height), d = Bc.map(u), [f, p, , m] = d;
+		let u = (e) => qc(Vc(l, e), i, a.width, a.height), d = Gc.map(u), [f, p, , m] = d;
 		n.current && (n.current.style.transform = `matrix(${(p[0] - f[0]) / l.pixelWidth},${(p[1] - f[1]) / l.pixelWidth},${(m[0] - f[0]) / l.pixelHeight},${(m[1] - f[1]) / l.pixelHeight},${f[0]},${f[1]})`);
 		let h = r.current;
 		if (!h) return;
@@ -11623,7 +11843,7 @@ function Gc({ projection: e, reference: t, image: n, outline: r }) {
 		});
 	}), null;
 }
-function Kc(e, t, n) {
+function Zc(e, t, n) {
 	let r = (0, Z.useRef)({
 		camera: null,
 		canvas: null,
@@ -11649,10 +11869,10 @@ function Kc(e, t, n) {
 		onPointerDownCapture: (t) => {
 			if (!e.adjusting || !e.plan || t.button !== 0) return;
 			t.stopPropagation(), t.preventDefault(), t.currentTarget.focus();
-			let n = Uc([t.clientX, t.clientY], r.current);
+			let n = Jc([t.clientX, t.clientY], r.current);
 			if (!n) return;
 			if (e.calibrating) {
-				e.pickPoint(Lc(e.plan, n));
+				e.pickPoint(Hc(e.plan, n));
 				return;
 			}
 			let i = r.current.canvas.getBoundingClientRect(), o = [t.clientX - i.left, t.clientY - i.top], s = "move";
@@ -11661,7 +11881,7 @@ function Kc(e, t, n) {
 				s = t === "rotate" ? "rotate" : Number(t);
 				break;
 			}
-			let c = Lc(e.plan, n);
+			let c = Hc(e.plan, n);
 			s === "move" && c.some((e) => e < 0 || e > 1) || (p.current = {
 				plan: e.plan,
 				start: n,
@@ -11677,7 +11897,7 @@ function Kc(e, t, n) {
 			let n = p.current;
 			if (!n || n.pointerId !== t.pointerId) return;
 			t.stopPropagation();
-			let i = Uc([t.clientX, t.clientY], r.current);
+			let i = Jc([t.clientX, t.clientY], r.current);
 			if (!i) return;
 			let { plan: a, start: o, kind: s } = n;
 			s === "move" ? e.update({
@@ -11686,7 +11906,7 @@ function Kc(e, t, n) {
 			}) : s === "rotate" ? e.update({
 				...a,
 				angle: a.angle + (Math.atan2(i[1] - a.center[1], i[0] - a.center[0]) - Math.atan2(o[1] - a.center[1], o[0] - a.center[0])) * 180 / Math.PI
-			}) : e.update(zc(a, Bc[s], i));
+			}) : e.update(Wc(a, Gc[s], i));
 		},
 		onPointerUpCapture: (e) => {
 			p.current?.pointerId === e.pointerId && (e.stopPropagation(), m());
@@ -11699,18 +11919,18 @@ function Kc(e, t, n) {
 		background: f ? /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [/* @__PURE__ */ (0, Q.jsx)("div", {
 			className: "reference-canvas-layer",
 			"aria-hidden": "true",
-			children: /* @__PURE__ */ (0, Q.jsxs)(Tt, {
+			children: /* @__PURE__ */ (0, Q.jsxs)(St, {
 				frameloop: "demand",
 				dpr: 1,
 				gl: {
 					antialias: !0,
 					alpha: !0
 				},
-				...vt({ events: void 0 }),
+				...ht({ events: void 0 }),
 				children: [
-					/* @__PURE__ */ (0, Q.jsx)(Wc, { projection: r }),
-					/* @__PURE__ */ (0, Q.jsx)(Mc, {}),
-					/* @__PURE__ */ (0, Q.jsx)(ht, {
+					/* @__PURE__ */ (0, Q.jsx)(Yc, { projection: r }),
+					/* @__PURE__ */ (0, Q.jsx)(Lc, {}),
+					/* @__PURE__ */ (0, Q.jsx)(ft, {
 						floor: t,
 						variant: "plan"
 					})
@@ -11739,7 +11959,7 @@ function Kc(e, t, n) {
 					visibility: e.calibrating ? "hidden" : "visible",
 					children: [
 						/* @__PURE__ */ (0, Q.jsx)("polygon", {}),
-						Bc.map((e, t) => /* @__PURE__ */ (0, Q.jsx)("circle", {
+						Gc.map((e, t) => /* @__PURE__ */ (0, Q.jsx)("circle", {
 							"data-handle": t,
 							r: "7"
 						}, t)),
@@ -11761,7 +11981,7 @@ function Kc(e, t, n) {
 		}) : null,
 		handlers: h,
 		assetError: c,
-		bridge: n ? /* @__PURE__ */ (0, Q.jsx)(Gc, {
+		bridge: n ? /* @__PURE__ */ (0, Q.jsx)(Xc, {
 			projection: r,
 			reference: e,
 			image: i,
@@ -11771,8 +11991,8 @@ function Kc(e, t, n) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/WalkStartPointer.tsx
-function qc({ floor: e, start: t, placing: n, onPlace: r }) {
-	let i = t?.floorId === e.id ? q(t.at, e.coordinates) : null;
+function Qc({ floor: e, start: t, placing: n, onPlace: r }) {
+	let i = t?.floorId === e.id ? J(t.at, e.coordinates) : null;
 	return /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [n && /* @__PURE__ */ (0, Q.jsxs)("mesh", {
 		rotation: [
 			-Math.PI / 2,
@@ -11789,10 +12009,10 @@ function qc({ floor: e, start: t, placing: n, onPlace: r }) {
 		onPointerMove: (e) => e.stopPropagation(),
 		onClick: (t) => {
 			if (t.stopPropagation(), t.button !== 0) return;
-			let n = Xt(t.point, e.coordinates);
+			let n = c(t.point, e.coordinates);
 			qt(n, e) && r(n);
 		},
-		children: [/* @__PURE__ */ (0, Q.jsx)("planeGeometry", { args: [1e4, 1e4] }), /* @__PURE__ */ (0, Q.jsx)($r, {
+		children: [/* @__PURE__ */ (0, Q.jsx)("planeGeometry", { args: [1e4, 1e4] }), /* @__PURE__ */ (0, Q.jsx)(ii, {
 			visible: !1,
 			transparent: !0,
 			opacity: 0,
@@ -11811,12 +12031,12 @@ function qc({ floor: e, start: t, placing: n, onPlace: r }) {
 				0
 			],
 			renderOrder: 100,
-			raycast: Qr,
+			raycast: ri,
 			children: [/* @__PURE__ */ (0, Q.jsx)("ringGeometry", { args: [
 				.18,
 				.25,
 				32
-			] }), /* @__PURE__ */ (0, Q.jsx)($r, {
+			] }), /* @__PURE__ */ (0, Q.jsx)(ii, {
 				color: "#d16c39",
 				depthTest: !1,
 				depthWrite: !1
@@ -11828,8 +12048,8 @@ function qc({ floor: e, start: t, placing: n, onPlace: r }) {
 				0
 			],
 			renderOrder: 101,
-			raycast: Qr,
-			children: [/* @__PURE__ */ (0, Q.jsx)("circleGeometry", { args: [.14, 3] }), /* @__PURE__ */ (0, Q.jsx)($r, {
+			raycast: ri,
+			children: [/* @__PURE__ */ (0, Q.jsx)("circleGeometry", { args: [.14, 3] }), /* @__PURE__ */ (0, Q.jsx)(ii, {
 				color: "#d16c39",
 				depthTest: !1,
 				depthWrite: !1
@@ -11839,9 +12059,9 @@ function qc({ floor: e, start: t, placing: n, onPlace: r }) {
 }
 //#endregion
 //#region apps/web/src/editor-floors/useStairValidation.ts
-var Jc = [];
-function Yc(e, t, n) {
-	let [r, i] = (0, Z.useState)(Jc), a = (0, Z.useRef)({
+var $c = [];
+function el(e, t, n) {
+	let [r, i] = (0, Z.useState)($c), a = (0, Z.useRef)({
 		building: e,
 		candidate: t,
 		registries: n
@@ -11854,10 +12074,10 @@ function Yc(e, t, n) {
 	let o = (0, Z.useRef)(null), s = (0, Z.useRef)(-Infinity), c = (0, Z.useCallback)(() => {
 		o.current !== null && clearTimeout(o.current), o.current = null;
 	}, []), l = (0, Z.useCallback)(() => {
-		c(), s.current = -Infinity, i(Jc);
+		c(), s.current = -Infinity, i($c);
 	}, [c]), u = (0, Z.useCallback)((e = a.current.candidate) => {
 		c(), s.current = performance.now();
-		let t = e ? dr(a.current.building, e, a.current.registries) : Jc;
+		let t = e ? Ps(a.current.building, e, a.current.registries) : $c;
 		return i(t), t;
 	}, [c]);
 	return (0, Z.useEffect)(() => {
@@ -11874,15 +12094,15 @@ function Yc(e, t, n) {
 		l,
 		u
 	]), (0, Z.useEffect)(() => c, [c]), {
-		issues: t ? r : Jc,
+		issues: t ? r : $c,
 		flush: u,
 		cancel: l
 	};
 }
 //#endregion
 //#region apps/web/src/editor-floors/StairFeedback.tsx
-function Xc({ flight: e }) {
-	return /* @__PURE__ */ (0, Q.jsx)(_, {
+function tl({ flight: e }) {
+	return /* @__PURE__ */ (0, Q.jsx)(v, {
 		position: [
 			(Math.min(...e.footprintWorld.map((e) => e[0])) + Math.max(...e.footprintWorld.map((e) => e[0]))) / 2,
 			.3,
@@ -11894,7 +12114,7 @@ function Xc({ flight: e }) {
 			width: 250,
 			textAlign: "center"
 		},
-		children: /* @__PURE__ */ (0, Q.jsx)(_i, {
+		children: /* @__PURE__ */ (0, Q.jsx)(bi, {
 			label: e.spec.shape === "spiral" ? `Ø ${e.spec.diameterMeters.toFixed(2)} m · ${e.spec.totalTurnDegrees}°` : e.spec.shape === "l-shaped" || e.spec.shape === "u-shaped" ? `${e.spec.lowerRunMeters.toFixed(2)} + ${e.spec.upperRunMeters.toFixed(2)} m × ${e.widthMeters.toFixed(2)} m` : `${e.runMeters.toFixed(2)} m × ${e.widthMeters.toFixed(2)} m`,
 			ariaLabel: "Stair length and width"
 		})
@@ -11902,22 +12122,22 @@ function Xc({ flight: e }) {
 }
 //#endregion
 //#region apps/web/src/editor-floors/ConnectedFloorGuide.tsx
-function Zc({ floor: e }) {
-	let t = (t, n) => t.map((r, i) => /* @__PURE__ */ (0, Q.jsx)(ti, {
-		from: q(r, e.coordinates),
-		to: q(t[(i + 1) % t.length], e.coordinates),
+function nl({ floor: e }) {
+	let t = (t, n) => t.map((r, i) => /* @__PURE__ */ (0, Q.jsx)(oi, {
+		from: J(r, e.coordinates),
+		to: J(t[(i + 1) % t.length], e.coordinates),
 		color: "#b4bcb9",
 		width: .025,
 		elevation: .11,
 		overlay: !0
-	}, `${n}-${i}`)), n = e.footprint[0] ? q(e.footprint[0], e.coordinates) : [0, 0];
+	}, `${n}-${i}`)), n = e.footprint[0] ? J(e.footprint[0], e.coordinates) : [0, 0];
 	return /* @__PURE__ */ (0, Q.jsxs)("group", {
 		name: "connected-floor-guide",
 		children: [
 			t(e.footprint, "footprint"),
-			e.walls.map((t) => /* @__PURE__ */ (0, Q.jsx)(ti, {
-				from: q(t.from, e.coordinates),
-				to: q(t.to, e.coordinates),
+			e.walls.map((t) => /* @__PURE__ */ (0, Q.jsx)(oi, {
+				from: J(t.from, e.coordinates),
+				to: J(t.to, e.coordinates),
 				color: "#b4bcb9",
 				width: .045,
 				elevation: .11,
@@ -11926,10 +12146,10 @@ function Zc({ floor: e }) {
 			e.openings.map((t) => {
 				let n = e.walls.find((e) => e.id === t.wallId);
 				if (!n) return null;
-				let r = q(n.from, e.coordinates), i = q(n.to, e.coordinates), a = Math.hypot(i[0] - r[0], i[1] - r[1]);
+				let r = J(n.from, e.coordinates), i = J(n.to, e.coordinates), a = Math.hypot(i[0] - r[0], i[1] - r[1]);
 				if (!a) return null;
 				let o = t.offsetFromWallStartPlanUnits * e.coordinates.metersPerPlanUnit, s = (e) => [r[0] + (i[0] - r[0]) * e / a, r[1] + (i[1] - r[1]) * e / a];
-				return /* @__PURE__ */ (0, Q.jsx)(ti, {
+				return /* @__PURE__ */ (0, Q.jsx)(oi, {
 					from: s(o),
 					to: s(o + t.widthPlanUnits * e.coordinates.metersPerPlanUnit),
 					color: "#d8dfdc",
@@ -11939,7 +12159,7 @@ function Zc({ floor: e }) {
 				}, t.id);
 			}),
 			(e.pools ?? []).flatMap((e) => t(e.polygon, e.id)),
-			/* @__PURE__ */ (0, Q.jsxs)(_, {
+			/* @__PURE__ */ (0, Q.jsxs)(v, {
 				position: [
 					n[0],
 					.12,
@@ -11957,7 +12177,7 @@ function Zc({ floor: e }) {
 }
 //#endregion
 //#region apps/web/src/editor-chrome/SelectionActionBar.tsx
-var Qc = (0, Z.forwardRef)(function({ children: e, label: t, mode: n = "furnish" }, r) {
+var rl = (0, Z.forwardRef)(function({ children: e, label: t, mode: n = "furnish" }, r) {
 	return /* @__PURE__ */ (0, Q.jsx)("div", {
 		ref: r,
 		className: "selected-item-actions",
@@ -11968,7 +12188,7 @@ var Qc = (0, Z.forwardRef)(function({ children: e, label: t, mode: n = "furnish"
 		onClick: (e) => e.stopPropagation(),
 		children: e
 	});
-}), $c = ({ centerX: e, itemTop: t, itemBottom: n, width: r, height: i, toolbarWidth: a, toolbarHeight: o, topInset: s }) => {
+}), il = ({ centerX: e, itemTop: t, itemBottom: n, width: r, height: i, toolbarWidth: a, toolbarHeight: o, topInset: s }) => {
 	let c = Math.max(8, i - o - 8), l = Math.min(c, Math.max(8, s)), u = t - o - 18;
 	return {
 		x: Math.max(8, Math.min(r - a - 8, e - a / 2)),
@@ -11977,15 +12197,15 @@ var Qc = (0, Z.forwardRef)(function({ children: e, label: t, mode: n = "furnish"
 };
 //#endregion
 //#region apps/web/src/editor-floors/SelectedStairControls.tsx
-function el({ flight: e, destinationName: t, onGoToFloor: n, onDelete: r }) {
-	let { camera: i, gl: a, size: o, invalidate: s } = Ae(), c = (0, Z.useRef)(null), l = (0, Z.useRef)(null), u = (0, Z.useMemo)(() => new J(), []), d = (0, Z.useMemo)(() => [(Math.min(...e.footprintWorld.map((e) => e[0])) + Math.max(...e.footprintWorld.map((e) => e[0]))) / 2, (Math.min(...e.footprintWorld.map((e) => e[1])) + Math.max(...e.footprintWorld.map((e) => e[1]))) / 2], [e]);
+function al({ flight: e, destinationName: t, onGoToFloor: n, onDelete: r }) {
+	let { camera: i, gl: a, size: o, invalidate: s } = q(), c = (0, Z.useRef)(null), l = (0, Z.useRef)(null), u = (0, Z.useMemo)(() => new Y(), []), d = (0, Z.useMemo)(() => [(Math.min(...e.footprintWorld.map((e) => e[0])) + Math.max(...e.footprintWorld.map((e) => e[0]))) / 2, (Math.min(...e.footprintWorld.map((e) => e[1])) + Math.max(...e.footprintWorld.map((e) => e[1]))) / 2], [e]);
 	return (0, Z.useLayoutEffect)(() => {
 		s();
 	}, [
 		s,
 		e,
 		o
-	]), lt(() => {
+	]), st(() => {
 		if (!c.current || !l.current) return;
 		let t = (e, t) => (u.set(e, .13, t).project(i), {
 			x: (u.x + 1) * o.width / 2,
@@ -11993,7 +12213,7 @@ function el({ flight: e, destinationName: t, onGoToFloor: n, onDelete: r }) {
 			z: u.z
 		}), n = e.footprintWorld.map(([e, n]) => t(e, n)), r = t(...d);
 		if (l.current.style.visibility = "hidden", r.z < -1 || r.z > 1 || r.x < 0 || r.x > o.width || r.y < 0 || r.y > o.height) return;
-		let s = a.domElement.closest(".direction-preview")?.querySelector(".editor-header")?.getBoundingClientRect(), f = $c({
+		let s = a.domElement.closest(".direction-preview")?.querySelector(".editor-header")?.getBoundingClientRect(), f = il({
 			centerX: r.x,
 			itemTop: Math.min(...n.map((e) => e.y)),
 			itemBottom: Math.max(...n.map((e) => e.y)),
@@ -12004,7 +12224,7 @@ function el({ flight: e, destinationName: t, onGoToFloor: n, onDelete: r }) {
 			topInset: s ? s.bottom - a.domElement.getBoundingClientRect().top + 8 : 8
 		});
 		l.current.style.visibility = "visible", c.current.style.transform = `translate(${f.x}px, ${f.y}px)`;
-	}), /* @__PURE__ */ (0, Q.jsx)(_, {
+	}), /* @__PURE__ */ (0, Q.jsx)(v, {
 		fullscreen: !0,
 		calculatePosition: (e, t, n) => [n.width / 2, n.height / 2],
 		zIndexRange: [6, 6],
@@ -12012,12 +12232,12 @@ function el({ flight: e, destinationName: t, onGoToFloor: n, onDelete: r }) {
 		children: /* @__PURE__ */ (0, Q.jsx)("div", {
 			ref: l,
 			className: "selected-item-controls",
-			children: /* @__PURE__ */ (0, Q.jsxs)(Qc, {
+			children: /* @__PURE__ */ (0, Q.jsxs)(rl, {
 				ref: c,
 				mode: "construct",
 				label: "Selected stair actions",
 				children: [
-					/* @__PURE__ */ (0, Q.jsx)(mr, {
+					/* @__PURE__ */ (0, Q.jsx)(cr, {
 						icon: "floor",
 						label: `Go to ${t}`,
 						onClick: n
@@ -12026,7 +12246,7 @@ function el({ flight: e, destinationName: t, onGoToFloor: n, onDelete: r }) {
 						className: "selected-item-actions__separator",
 						"aria-hidden": "true"
 					}),
-					/* @__PURE__ */ (0, Q.jsx)(mr, {
+					/* @__PURE__ */ (0, Q.jsx)(cr, {
 						icon: "delete",
 						label: "Delete stairs",
 						onClick: r
@@ -12038,25 +12258,25 @@ function el({ flight: e, destinationName: t, onGoToFloor: n, onDelete: r }) {
 }
 //#endregion
 //#region apps/web/src/editor-floors/EditableStair.tsx
-function tl({ building: e, stair: t, activeFloorId: n, selected: r, enabled: i, registries: a, onIssuesChange: o, onSelect: s, onCommit: c, onDraggingChange: l, onGoToFloor: d, onDelete: f }) {
-	let { camera: p, size: m, gl: h, get: g } = Ae(), _ = (0, Z.useRef)(null), [v, y] = (0, Z.useState)(null), [x, S] = (0, Z.useState)(null), C = (0, Z.useRef)(null), w = v ?? t, T = Yc(e, r && i ? w : null, a), E = !!v;
+function ol({ building: e, stair: t, activeFloorId: n, selected: r, enabled: i, registries: a, onIssuesChange: o, onSelect: s, onCommit: l, onDraggingChange: u, onGoToFloor: f, onDelete: p }) {
+	let { camera: m, size: h, gl: g, get: _ } = q(), v = (0, Z.useRef)(null), [y, b] = (0, Z.useState)(null), [x, S] = (0, Z.useState)(null), C = (0, Z.useRef)(null), w = y ?? t, T = el(e, r && i ? w : null, a), E = !!y;
 	(0, Z.useEffect)(() => (o?.(r && E ? T.issues : null), () => o?.(null)), [
 		o,
 		r,
 		E,
 		T.issues
 	]);
-	let D = et(e, w), O = (0, Z.useRef)({
-		onDraggingChange: l,
+	let D = Qe(e, w), O = (0, Z.useRef)({
+		onDraggingChange: u,
 		validation: T
 	});
 	O.current = {
-		onDraggingChange: l,
+		onDraggingChange: u,
 		validation: T
 	};
 	let k = () => {
 		let e = C.current;
-		C.current = null, e?.target.hasPointerCapture(e.pointerId) && e.target.releasePointerCapture(e.pointerId), y(null), S(null), O.current.validation.cancel(), _.current &&= (_.current.enabled = !0, null), e && O.current.onDraggingChange(!1);
+		C.current = null, e?.target.hasPointerCapture(e.pointerId) && e.target.releasePointerCapture(e.pointerId), b(null), S(null), O.current.validation.cancel(), v.current &&= (v.current.enabled = !0, null), e && O.current.onDraggingChange(!1);
 	}, A = (0, Z.useRef)(k);
 	A.current = k;
 	let j = ze();
@@ -12072,45 +12292,45 @@ function tl({ building: e, stair: t, activeFloorId: n, selected: r, enabled: i, 
 		}, t = (e) => {
 			C.current?.pointerId === e.pointerId && A.current();
 		};
-		return j.events.addEventListener("keydown", e, !0), h.domElement.addEventListener("lostpointercapture", t), () => {
-			j.events.removeEventListener("keydown", e, !0), h.domElement.removeEventListener("lostpointercapture", t), A.current();
+		return j.events.addEventListener("keydown", e, !0), g.domElement.addEventListener("lostpointercapture", t), () => {
+			j.events.removeEventListener("keydown", e, !0), g.domElement.removeEventListener("lostpointercapture", t), A.current();
 		};
-	}, [h, j]);
+	}, [g, j]);
 	let M = (n, r) => {
-		let i = n.ray.intersectPlane(new b(new J(0, 1, 0), 0), new J());
+		let i = n.ray.intersectPlane(new me(new Y(0, 1, 0), 0), new Y());
 		if (!i) return null;
-		let a = e.coordinates, o = r && (r.handle === "bottom" || r.handle === "top"), s = r && et(e, r.original), c = s && (r?.handle === "bottom" ? s.path[s.path.length - 1] : s.path[0]), l = o ? Gr({
+		let a = e.coordinates, o = r && (r.handle === "bottom" || r.handle === "top"), s = r && Qe(e, r.original), l = s && (r?.handle === "bottom" ? s.path[s.path.length - 1] : s.path[0]), u = o ? Yr({
 			point: i,
 			coordinates: a,
 			walls: e.floors.filter((e) => e.id === t.lowerFloorId || e.id === t.upperFloorId).flatMap((e) => e.walls),
 			onSnap: S,
-			pixelsPerMeter: vi(p, m.height),
+			pixelsPerMeter: xi(m, h.height),
 			pointerType: n.nativeEvent.pointerType,
 			absolute: n.altKey,
-			angleOrigin: c ? Xt(c, a) : void 0
-		}) : Wr({
+			angleOrigin: l ? c(l, a) : void 0
+		}) : Jr({
 			point: i,
 			coordinates: a,
 			absolute: n.altKey
-		}), [u, d] = q(l, a);
+		}), [d, f] = J(u, a);
 		return {
-			x: u,
-			z: d
+			x: d,
+			z: f
 		};
 	}, N = (t, n) => {
 		let r = M(t, n);
-		return r ? sr(n.original, e.coordinates, n.start, n.grab, r, n.handle) : null;
+		return r ? As(n.original, e.coordinates, n.start, n.grab, r, n.handle) : null;
 	}, P = (e) => ({
 		onPointerDown: (n) => {
 			if (!i || n.button !== 0 || n.metaKey || n.ctrlKey || n.shiftKey || C.current) return;
 			let r = M(n);
 			if (!r || !D) return;
 			n.stopPropagation(), s();
-			let a = g().controls;
-			a?.enabled && (a.enabled = !1, _.current = a), l(!0);
+			let a = _().controls;
+			a?.enabled && (a.enabled = !1, v.current = a), u(!0);
 			let o = n.target;
 			o.setPointerCapture(n.pointerId), C.current = {
-				...ai(n.pointerId, [n.nativeEvent.clientX, n.nativeEvent.clientY]),
+				...ci(n.pointerId, [n.nativeEvent.clientX, n.nativeEvent.clientY]),
 				original: t,
 				candidate: t,
 				start: {
@@ -12126,21 +12346,21 @@ function tl({ building: e, stair: t, activeFloorId: n, selected: r, enabled: i, 
 			let t = C.current;
 			if (!t || t.pointerId !== e.pointerId) return;
 			e.stopPropagation();
-			let n = oi(t, e.pointerId, [e.nativeEvent.clientX, e.nativeEvent.clientY]);
+			let n = li(t, e.pointerId, [e.nativeEvent.clientX, e.nativeEvent.clientY]);
 			if (!n) return;
-			n.started && l(!0);
+			n.started && u(!0);
 			let r = N(e, n.drag) ?? n.drag.candidate;
 			C.current = {
 				...n.drag,
 				candidate: r
-			}, y(r);
+			}, b(r);
 		},
 		onPointerUp: (e) => {
 			let t = C.current;
 			if (!t || t.pointerId !== e.pointerId) return;
 			e.stopPropagation();
-			let n = h.domElement.getBoundingClientRect(), r = e.nativeEvent.clientX >= n.left && e.nativeEvent.clientX <= n.right && e.nativeEvent.clientY >= n.top && e.nativeEvent.clientY <= n.bottom, i = t.dragActive && r ? N(e, t) ?? t.candidate : null;
-			i && (T.flush(i), c(i)), k();
+			let n = g.domElement.getBoundingClientRect(), r = e.nativeEvent.clientX >= n.left && e.nativeEvent.clientX <= n.right && e.nativeEvent.clientY >= n.top && e.nativeEvent.clientY <= n.bottom, i = t.dragActive && r ? N(e, t) ?? t.candidate : null;
+			i && (T.flush(i), l(i)), k();
 		},
 		onPointerCancel: (e) => {
 			C.current?.pointerId === e.pointerId && (e.stopPropagation(), k());
@@ -12151,30 +12371,30 @@ function tl({ building: e, stair: t, activeFloorId: n, selected: r, enabled: i, 
 	return /* @__PURE__ */ (0, Q.jsxs)("group", {
 		name: `editable-stair-${t.id}`,
 		children: [
-			v && /* @__PURE__ */ (0, Q.jsx)(Zc, { floor: F }),
-			/* @__PURE__ */ (0, Q.jsx)(u, {
+			y && /* @__PURE__ */ (0, Q.jsx)(nl, { floor: F }),
+			/* @__PURE__ */ (0, Q.jsx)(d, {
 				flight: D,
 				upper: n === t.upperFloorId,
 				selected: r,
 				invalid: T.issues.some((e) => e.severity !== "warning"),
 				handlers: i ? P("body") : void 0
 			}),
-			/* @__PURE__ */ (0, Q.jsx)(li, {
+			/* @__PURE__ */ (0, Q.jsx)(fi, {
 				snap: x,
 				coordinates: e.coordinates
 			}),
 			r && /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [
-				lr(D).map(({ handle: e, at: n }) => /* @__PURE__ */ (0, Q.jsx)(ca, {
+				Ms(D).map(({ handle: e, at: n }) => /* @__PURE__ */ (0, Q.jsx)(da, {
 					name: `stair-${e}-${t.id}`,
 					handlers: P(e),
 					at: n
 				}, e)),
-				v && /* @__PURE__ */ (0, Q.jsx)(Xc, { flight: D }),
-				!v && /* @__PURE__ */ (0, Q.jsx)(el, {
+				y && /* @__PURE__ */ (0, Q.jsx)(tl, { flight: D }),
+				!y && /* @__PURE__ */ (0, Q.jsx)(al, {
 					flight: D,
 					destinationName: F.name,
-					onGoToFloor: d,
-					onDelete: f
+					onGoToFloor: f,
+					onDelete: p
 				})
 			] })
 		]
@@ -12182,11 +12402,11 @@ function tl({ building: e, stair: t, activeFloorId: n, selected: r, enabled: i, 
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/SelectedRoomControls.tsx
-function nl({ editor: e, disabled: t }) {
-	let n = It(e.selection).filter((e) => e.kind === "room"), r = e.previewFloor.rooms.filter((e) => n.some((t) => t.id === e.id));
+function sl({ editor: e, disabled: t }) {
+	let n = Ft(e.selection).filter((e) => e.kind === "room"), r = e.previewFloor.rooms.filter((e) => n.some((t) => t.id === e.id));
 	if (!r.length) return null;
-	let i = r.flatMap((e) => e.polygon), [a, o] = q(rn(r[0].polygon), e.draft.coordinates), [, s] = q([i[0][0], Math.min(...i.map((e) => e[1]))], e.draft.coordinates), c = !e.deletionTargets.some((e) => e.kind === "room");
-	return /* @__PURE__ */ (0, Q.jsx)(_, {
+	let i = r.flatMap((e) => e.polygon), [a, o] = J(Kt(r[0].polygon), e.draft.coordinates), [, s] = J([i[0][0], Math.min(...i.map((e) => e[1]))], e.draft.coordinates), c = !e.deletionTargets.some((e) => e.kind === "room");
+	return /* @__PURE__ */ (0, Q.jsx)(v, {
 		center: !0,
 		position: [
 			a,
@@ -12196,10 +12416,10 @@ function nl({ editor: e, disabled: t }) {
 		zIndexRange: [6, 6],
 		children: /* @__PURE__ */ (0, Q.jsx)("div", {
 			className: "selected-room-controls",
-			children: /* @__PURE__ */ (0, Q.jsx)(Qc, {
+			children: /* @__PURE__ */ (0, Q.jsx)(rl, {
 				mode: "construct",
 				label: "Selected room actions",
-				children: /* @__PURE__ */ (0, Q.jsx)(mr, {
+				children: /* @__PURE__ */ (0, Q.jsx)(cr, {
 					icon: "delete",
 					showLabel: !0,
 					label: e.selection?.kind === "multiple" ? "Delete selection" : "Delete room",
@@ -12213,8 +12433,8 @@ function nl({ editor: e, disabled: t }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/ConstructionHedgeLayer.tsx
-function rl({ editor: e, onDraggingChange: t }) {
-	let { draft: n, selection: r, tool: i } = e, { snap: a, drag: o, handlers: s } = da({
+function cl({ editor: e, onDraggingChange: t }) {
+	let { draft: n, selection: r, tool: i } = e, { snap: a, drag: o, handlers: s } = ma({
 		draft: n,
 		selection: r,
 		tool: i,
@@ -12238,11 +12458,11 @@ function rl({ editor: e, onDraggingChange: t }) {
 	});
 	return /* @__PURE__ */ (0, Q.jsxs)("group", {
 		name: "construction-hedges",
-		children: [/* @__PURE__ */ (0, Q.jsx)(li, {
+		children: [/* @__PURE__ */ (0, Q.jsx)(fi, {
 			snap: a,
 			coordinates: n.coordinates
 		}), (n.hedges ?? []).map((e) => {
-			let t = o?.id === e.id ? o.polygon : [e.from, e.to], a = Kr(t[0], t[1], n.coordinates), c = r?.kind === "hedge" && r.id === e.id;
+			let t = o?.id === e.id ? o.polygon : [e.from, e.to], a = Xr(t[0], t[1], n.coordinates), c = r?.kind === "hedge" && r.id === e.id;
 			return /* @__PURE__ */ (0, Q.jsxs)("group", { children: [/* @__PURE__ */ (0, Q.jsxs)("mesh", {
 				name: `construction-hedge-${e.id}`,
 				position: [
@@ -12260,16 +12480,16 @@ function rl({ editor: e, onDraggingChange: t }) {
 					a.length,
 					.04,
 					e.widthMeters
-				] }), /* @__PURE__ */ (0, Q.jsx)(ei, { color: c ? "#84a661" : "#597e43" })]
-			}), c && /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [/* @__PURE__ */ (0, Q.jsx)(ti, {
-				from: q(t[0], n.coordinates),
-				to: q(t[1], n.coordinates),
+				] }), /* @__PURE__ */ (0, Q.jsx)(ai, { color: c ? "#84a661" : "#597e43" })]
+			}), c && /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [/* @__PURE__ */ (0, Q.jsx)(oi, {
+				from: J(t[0], n.coordinates),
+				to: J(t[1], n.coordinates),
 				width: .035,
 				elevation: .13,
 				color: "#ff754d"
 			}), t.map((r, i) => {
-				let [a, o] = q(r, n.coordinates);
-				return /* @__PURE__ */ (0, Q.jsx)(ca, {
+				let [a, o] = J(r, n.coordinates);
+				return /* @__PURE__ */ (0, Q.jsx)(da, {
 					name: `construction-hedge-endpoint-${e.id}-${i}`,
 					at: [
 						a,
@@ -12284,132 +12504,132 @@ function rl({ editor: e, onDraggingChange: t }) {
 }
 //#endregion
 //#region apps/web/src/editor-floors/StairPlacement.tsx
-function il({ stair: e, coordinates: t, building: n, registries: r, onIssuesChange: i, onComplete: a, onCancel: o, onDraggingChange: s }) {
-	let { gl: c, camera: l } = Ae(), [d, f] = (0, Z.useState)(null), [p, m] = (0, Z.useState)(null), h = Yc(n, d, r);
-	(0, Z.useEffect)(() => (i?.(h.issues), () => i?.(null)), [i, h.issues]);
-	let g = (0, Z.useRef)({
+function ll({ stair: e, coordinates: t, building: n, registries: r, onIssuesChange: i, onComplete: a, onCancel: o, onDraggingChange: s }) {
+	let { gl: l, camera: u } = q(), [f, p] = (0, Z.useState)(null), [m, h] = (0, Z.useState)(null), g = el(n, f, r);
+	(0, Z.useEffect)(() => (i?.(g.issues), () => i?.(null)), [i, g.issues]);
+	let _ = (0, Z.useRef)({
 		stair: e,
 		coordinates: t,
 		building: n,
 		onComplete: a,
 		onCancel: o,
 		onDraggingChange: s,
-		validation: h
+		validation: g
 	});
-	g.current = {
+	_.current = {
 		stair: e,
 		coordinates: t,
 		building: n,
 		onComplete: a,
 		onCancel: o,
 		onDraggingChange: s,
-		validation: h
+		validation: g
 	};
-	let _ = d ? et(n, d) : null, v = ze();
+	let v = f ? Qe(n, f) : null, y = ze();
 	(0, Z.useEffect)(() => {
-		let e = c.domElement, t = new K(), n = new b(new J(0, 1, 0), 0), r = null, i = null, a = null, o = null, s = (a) => {
-			let { building: o, stair: s, coordinates: c } = g.current, u = e.getBoundingClientRect();
-			t.setFromCamera(new st((a.clientX - u.left) / u.width * 2 - 1, 1 - (a.clientY - u.top) / u.height * 2), l);
-			let d = t.ray.intersectPlane(n, new J());
-			if (!d) return null;
-			let f = o.floors.filter((e) => e.id === s.lowerFloorId || e.id === s.upperFloorId).flatMap((e) => e.walls), p = Gr(vt({
-				point: d,
-				coordinates: c,
-				walls: f,
-				onSnap: m,
-				pixelsPerMeter: vi(l, u.height),
+		let e = l.domElement, t = new D(), n = new me(new Y(0, 1, 0), 0), r = null, i = null, a = null, o = null, s = (a) => {
+			let { building: o, stair: s, coordinates: l } = _.current, d = e.getBoundingClientRect();
+			t.setFromCamera(new Pt((a.clientX - d.left) / d.width * 2 - 1, 1 - (a.clientY - d.top) / d.height * 2), u);
+			let f = t.ray.intersectPlane(n, new Y());
+			if (!f) return null;
+			let p = o.floors.filter((e) => e.id === s.lowerFloorId || e.id === s.upperFloorId).flatMap((e) => e.walls), m = Yr(ht({
+				point: f,
+				coordinates: l,
+				walls: p,
+				onSnap: h,
+				pixelsPerMeter: xi(u, d.height),
 				pointerType: a.pointerType,
 				absolute: a.altKey,
-				angleOrigin: i ?? r ? Xt(i ?? r, c) : void 0
-			})), [h, _] = q(p, c);
+				angleOrigin: i ?? r ? c(i ?? r, l) : void 0
+			})), [g, v] = J(m, l);
 			return {
-				x: h,
-				z: _
+				x: g,
+				z: v
 			};
-		}, u = (e) => {
+		}, d = (e) => {
 			if (!r) return null;
-			let t = g.current.stair, n = i && (t.shape === "l-shaped" || t.shape === "u-shaped") ? or(t, g.current.coordinates, r, i, e) : ar(t, g.current.coordinates, r, e);
-			return f(n), n;
-		}, d = () => {
+			let t = _.current.stair, n = i && (t.shape === "l-shaped" || t.shape === "u-shaped") ? ks(t, _.current.coordinates, r, i, e) : Os(t, _.current.coordinates, r, e);
+			return p(n), n;
+		}, f = () => {
 			let t = a;
-			a = null, t !== null && e.hasPointerCapture(t) && e.releasePointerCapture(t), g.current.onDraggingChange(!1);
-		}, p = () => {
-			d(), g.current.validation.cancel(), g.current.onCancel();
-		}, h = (t) => {
+			a = null, t !== null && e.hasPointerCapture(t) && e.releasePointerCapture(t), _.current.onDraggingChange(!1);
+		}, m = () => {
+			f(), _.current.validation.cancel(), _.current.onCancel();
+		}, g = (t) => {
 			if (t.stopImmediatePropagation(), t.button !== 0 || a !== null || t.metaKey || t.ctrlKey || t.shiftKey) return;
 			let n = s(t);
-			n && (t.preventDefault(), o = si(t.pointerId, [t.clientX, t.clientY], Xt(n, g.current.coordinates), !!r), r ??= n, a = t.pointerId, e.setPointerCapture(a), g.current.onDraggingChange(!0), u(n));
-		}, _ = (e) => {
+			n && (t.preventDefault(), o = ui(t.pointerId, [t.clientX, t.clientY], c(n, _.current.coordinates), !!r), r ??= n, a = t.pointerId, e.setPointerCapture(a), _.current.onDraggingChange(!0), d(n));
+		}, v = (e) => {
 			if (e.stopImmediatePropagation(), !r || a !== null && a !== e.pointerId) return;
 			let t = s(e);
-			t && u(t);
-		}, y = (t) => {
+			t && d(t);
+		}, b = (t) => {
 			if (t.stopImmediatePropagation(), a !== t.pointerId) return;
-			let n = ci(o, t.pointerId, [t.clientX, t.clientY]), r = e.getBoundingClientRect();
+			let n = di(o, t.pointerId, [t.clientX, t.clientY]), r = e.getBoundingClientRect();
 			if (t.clientX < r.left || t.clientX > r.right || t.clientY < r.top || t.clientY > r.bottom) {
-				p();
+				m();
 				return;
 			}
 			let c = s(t);
-			if (d(), n) {
-				f(null);
+			if (f(), n) {
+				p(null);
 				return;
 			}
-			let l = c && u(c);
+			let l = c && d(c);
 			if (l) {
-				if ((g.current.stair.shape === "l-shaped" || g.current.stair.shape === "u-shaped") && !i) {
-					i = c, m(null);
+				if ((_.current.stair.shape === "l-shaped" || _.current.stair.shape === "u-shaped") && !i) {
+					i = c, h(null);
 					return;
 				}
-				g.current.validation.flush(l), g.current.onComplete(l);
+				_.current.validation.flush(l), _.current.onComplete(l);
 			}
 		}, x = (e) => {
-			a === e.pointerId && p();
+			a === e.pointerId && m();
 		}, S = (e) => {
-			e.key === "Escape" && (e.preventDefault(), e.stopImmediatePropagation(), p());
+			e.key === "Escape" && (e.preventDefault(), e.stopImmediatePropagation(), m());
 		};
-		return e.addEventListener("pointerdown", h, !0), e.addEventListener("pointermove", _, !0), e.addEventListener("pointerup", y, !0), e.addEventListener("pointercancel", x, !0), e.addEventListener("lostpointercapture", x, !0), v.events.addEventListener("keydown", S, !0), () => {
-			e.removeEventListener("pointerdown", h, !0), e.removeEventListener("pointermove", _, !0), e.removeEventListener("pointerup", y, !0), e.removeEventListener("pointercancel", x, !0), e.removeEventListener("lostpointercapture", x, !0), v.events.removeEventListener("keydown", S, !0), d();
+		return e.addEventListener("pointerdown", g, !0), e.addEventListener("pointermove", v, !0), e.addEventListener("pointerup", b, !0), e.addEventListener("pointercancel", x, !0), e.addEventListener("lostpointercapture", x, !0), y.events.addEventListener("keydown", S, !0), () => {
+			e.removeEventListener("pointerdown", g, !0), e.removeEventListener("pointermove", v, !0), e.removeEventListener("pointerup", b, !0), e.removeEventListener("pointercancel", x, !0), e.removeEventListener("lostpointercapture", x, !0), y.events.removeEventListener("keydown", S, !0), f();
 		};
 	}, [
-		c,
 		l,
-		v
+		u,
+		y
 	]);
-	let y = n.floors.find((t) => t.id === e.upperFloorId);
+	let b = n.floors.find((t) => t.id === e.upperFloorId);
 	return /* @__PURE__ */ (0, Q.jsxs)("group", {
 		name: "stair-placement-preview",
 		children: [
-			y && /* @__PURE__ */ (0, Q.jsx)(Zc, { floor: y }),
-			/* @__PURE__ */ (0, Q.jsx)(li, {
-				snap: p,
+			b && /* @__PURE__ */ (0, Q.jsx)(nl, { floor: b }),
+			/* @__PURE__ */ (0, Q.jsx)(fi, {
+				snap: m,
 				coordinates: t
 			}),
-			_ && /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [/* @__PURE__ */ (0, Q.jsx)(u, {
-				flight: _,
-				invalid: h.issues.some((e) => e.severity !== "warning")
-			}), /* @__PURE__ */ (0, Q.jsx)(Xc, { flight: _ })] })
+			v && /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [/* @__PURE__ */ (0, Q.jsx)(d, {
+				flight: v,
+				invalid: g.issues.some((e) => e.severity !== "warning")
+			}), /* @__PURE__ */ (0, Q.jsx)(tl, { flight: v })] })
 		]
 	});
 }
 //#endregion
 //#region apps/web/src/editor-floors/AdjacentFloorGuide.tsx
-function al({ floor: e, direction: t }) {
+function ul({ floor: e, direction: t }) {
 	let n = t === "above" ? "#b7c4cc" : "#c6c9bd";
 	return /* @__PURE__ */ (0, Q.jsxs)("group", {
 		name: `adjacent-floor-guide-${t}`,
 		userData: { floorId: e.id },
-		children: [e.walls.map((t) => /* @__PURE__ */ (0, Q.jsx)(ti, {
-			from: q(t.from, e.coordinates),
-			to: q(t.to, e.coordinates),
+		children: [e.walls.map((t) => /* @__PURE__ */ (0, Q.jsx)(oi, {
+			from: J(t.from, e.coordinates),
+			to: J(t.to, e.coordinates),
 			color: n,
 			width: .035,
 			elevation: -.012
 		}, t.id)), (e.outdoorPlatforms ?? []).map((t) => /* @__PURE__ */ (0, Q.jsx)("group", {
 			name: `adjacent-platform-${t.id}`,
-			children: t.polygon.map((t, r, i) => /* @__PURE__ */ (0, Q.jsx)(ti, {
-				from: q(t, e.coordinates),
-				to: q(i[(r + 1) % i.length], e.coordinates),
+			children: t.polygon.map((t, r, i) => /* @__PURE__ */ (0, Q.jsx)(oi, {
+				from: J(t, e.coordinates),
+				to: J(i[(r + 1) % i.length], e.coordinates),
 				color: n,
 				width: .035,
 				elevation: -.012
@@ -12419,101 +12639,91 @@ function al({ floor: e, direction: t }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/SelectedOpeningControls.tsx
-var ol = (0, Z.forwardRef)(function({ opening: e, detailsOpen: t, disabled: n, canDuplicate: r, onDetails: i, onChange: a, onDuplicate: o, onDelete: s }, c) {
-	return /* @__PURE__ */ (0, Q.jsxs)(Qc, {
-		ref: c,
+var dl = (0, Z.forwardRef)(function({ opening: e, disabled: t, canDuplicate: n, onChange: r, onDuplicate: i, onDelete: a }, o) {
+	return /* @__PURE__ */ (0, Q.jsxs)(rl, {
+		ref: o,
 		mode: "construct",
 		label: "Selected opening actions",
 		children: [
-			/* @__PURE__ */ (0, Q.jsx)(mr, {
-				icon: "details",
-				label: "Details",
-				pressed: t,
-				disabled: n,
-				onClick: i
-			}),
-			/* @__PURE__ */ (0, Q.jsx)(mr, {
+			/* @__PURE__ */ (0, Q.jsx)(cr, {
 				icon: "duplicate",
 				label: "Duplicate",
-				disabled: n || !r,
-				disabledReason: r ? void 0 : "No free space on this wall.",
-				onClick: o
+				disabled: t || !n,
+				disabledReason: n ? void 0 : "No free space on this wall.",
+				onClick: i
 			}),
-			/* @__PURE__ */ (0, Q.jsx)(Cr, {
+			/* @__PURE__ */ (0, Q.jsx)(ur, {
 				opening: e,
-				onChange: a,
-				disabled: n
+				onChange: r,
+				disabled: t
 			}),
 			/* @__PURE__ */ (0, Q.jsx)("span", {
 				className: "selected-item-actions__separator",
 				"aria-hidden": "true"
 			}),
-			/* @__PURE__ */ (0, Q.jsx)(mr, {
+			/* @__PURE__ */ (0, Q.jsx)(cr, {
 				icon: "delete",
 				label: "Delete",
-				disabled: n,
-				onClick: s
+				disabled: t,
+				onClick: a
 			})
 		]
 	});
 });
-function sl({ opening: e, draft: t, detailsOpen: n, disabled: r, canDuplicate: i, onDetails: a, onChange: o, onDuplicate: s, onDelete: c }) {
-	let { camera: l, gl: u, size: d, invalidate: f } = Ae(), p = (0, Z.useRef)(null), m = (0, Z.useRef)(null), h = (0, Z.useMemo)(() => new J(), []), g = t.walls.find((t) => t.id === e.wallId);
+function fl({ opening: e, draft: t, disabled: n, canDuplicate: r, onChange: i, onDuplicate: a, onDelete: o }) {
+	let { camera: s, gl: c, size: l, invalidate: u } = q(), d = (0, Z.useRef)(null), f = (0, Z.useRef)(null), p = (0, Z.useMemo)(() => new Y(), []), m = t.walls.find((t) => t.id === e.wallId);
 	return (0, Z.useLayoutEffect)(() => {
-		f();
+		u();
 	}, [
-		f,
+		u,
 		e,
-		g,
-		d,
-		n
-	]), lt(() => {
-		if (!p.current || !m.current || (m.current.style.visibility = "hidden", !g)) return;
-		let n = q(g.from, t.coordinates), r = q(g.to, t.coordinates), i = Math.hypot(r[0] - n[0], r[1] - n[1]);
+		m,
+		l
+	]), st(() => {
+		if (!d.current || !f.current || (f.current.style.visibility = "hidden", !m)) return;
+		let n = J(m.from, t.coordinates), r = J(m.to, t.coordinates), i = Math.hypot(r[0] - n[0], r[1] - n[1]);
 		if (i < 1e-4) return;
-		let a = (r[0] - n[0]) / i, o = (r[1] - n[1]) / i, s = t.coordinates.metersPerPlanUnit, c = e.offsetPlanUnits * s, f = e.widthPlanUnits * s, _ = (e, t) => (h.set(n[0] + a * (c + e) - o * t, .05, n[1] + o * (c + e) + a * t).project(l), {
-			x: (h.x + 1) * d.width / 2,
-			y: (1 - h.y) * d.height / 2,
-			z: h.z
-		}), v = _(f / 2, 0);
-		if (v.z < -1 || v.z > 1 || v.x < 0 || v.x > d.width || v.y < 0 || v.y > d.height) return;
-		let y = Lr(e, f, g.thicknessMeters ?? t.interiorWallThicknessMeters).flatMap((e) => [_(...e.from), _(...e.to)]), b = u.domElement.closest(".direction-preview")?.querySelector(".editor-header")?.getBoundingClientRect(), x = $c({
+		let a = (r[0] - n[0]) / i, o = (r[1] - n[1]) / i, u = t.coordinates.metersPerPlanUnit, h = e.offsetPlanUnits * u, g = e.widthPlanUnits * u, _ = (e, t) => (p.set(n[0] + a * (h + e) - o * t, .05, n[1] + o * (h + e) + a * t).project(s), {
+			x: (p.x + 1) * l.width / 2,
+			y: (1 - p.y) * l.height / 2,
+			z: p.z
+		}), v = _(g / 2, 0);
+		if (v.z < -1 || v.z > 1 || v.x < 0 || v.x > l.width || v.y < 0 || v.y > l.height) return;
+		let y = wr(e, g, m.thicknessMeters ?? t.interiorWallThicknessMeters).flatMap((e) => [_(...e.from), _(...e.to)]), b = c.domElement.closest(".direction-preview")?.querySelector(".editor-header")?.getBoundingClientRect(), x = il({
 			centerX: v.x,
 			itemTop: Math.min(...y.map((e) => e.y)),
 			itemBottom: Math.max(...y.map((e) => e.y)),
-			width: d.width,
-			height: d.height,
-			toolbarWidth: p.current.offsetWidth,
-			toolbarHeight: p.current.offsetHeight,
-			topInset: b ? b.bottom - u.domElement.getBoundingClientRect().top + 8 : 8
+			width: l.width,
+			height: l.height,
+			toolbarWidth: d.current.offsetWidth,
+			toolbarHeight: d.current.offsetHeight,
+			topInset: b ? b.bottom - c.domElement.getBoundingClientRect().top + 8 : 8
 		});
-		m.current.style.visibility = "visible", p.current.style.transform = `translate(${x.x}px, ${x.y}px)`;
-	}), /* @__PURE__ */ (0, Q.jsx)(_, {
+		f.current.style.visibility = "visible", d.current.style.transform = `translate(${x.x}px, ${x.y}px)`;
+	}), /* @__PURE__ */ (0, Q.jsx)(v, {
 		fullscreen: !0,
 		calculatePosition: (e, t, n) => [n.width / 2, n.height / 2],
 		zIndexRange: [6, 6],
 		style: { pointerEvents: "none" },
 		children: /* @__PURE__ */ (0, Q.jsx)("div", {
-			ref: m,
+			ref: f,
 			className: "selected-item-controls",
 			"data-opening-id": e.id,
-			children: /* @__PURE__ */ (0, Q.jsx)(ol, {
-				ref: p,
+			children: /* @__PURE__ */ (0, Q.jsx)(dl, {
+				ref: d,
 				opening: e,
-				detailsOpen: n,
-				disabled: r,
-				canDuplicate: i,
-				onDetails: a,
-				onChange: o,
-				onDuplicate: s,
-				onDelete: c
+				disabled: n,
+				canDuplicate: r,
+				onChange: i,
+				onDuplicate: a,
+				onDelete: o
 			})
 		})
 	});
 }
 //#endregion
 //#region apps/web/src/editor-workspace/RetainedArrangeScene.tsx
-function cl({ active: e, children: t }) {
+function pl({ active: e, children: t }) {
 	let [n, r] = (0, Z.useState)(null);
 	return e && n !== t && r(t), /* @__PURE__ */ (0, Q.jsx)("group", {
 		name: "retained-arrange-scene",
@@ -12523,52 +12733,45 @@ function cl({ active: e, children: t }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/furnish/selection-geometry.ts
-var ll = (e) => e.kind === "wall" ? e.rotationOffsetRadians : e.rotationYRadians, ul = (e) => {
+var ml = (e) => e.kind === "wall" ? e.rotationOffsetRadians : e.rotationYRadians, hl = (e) => {
 	let t = Math.PI * 2;
 	return (e % t + t) % t;
-}, dl = (e, t) => Math.atan2(Math.sin(e - t), Math.cos(e - t)), fl = (e, t) => {
-	let n = ps(e, t);
+}, gl = (e, t) => Math.atan2(Math.sin(e - t), Math.cos(e - t)), _l = (e, t) => {
+	let n = ns(e, t);
 	return Math.hypot(Math.abs(n.center[0]) + n.size[0] / 2, Math.abs(n.center[2]) + n.size[2] / 2) + .12;
-}, pl = (0, Z.forwardRef)(function({ detailsOpen: e, isDevice: t, disabled: n, onDetails: r, onDuplicate: i, onDelete: a, onMap: o }, s) {
-	return /* @__PURE__ */ (0, Q.jsxs)(Qc, {
-		ref: s,
+}, vl = (0, Z.forwardRef)(function({ isDevice: e, disabled: t, onDuplicate: n, onDelete: r, onMap: i }, a) {
+	return /* @__PURE__ */ (0, Q.jsxs)(rl, {
+		ref: a,
 		label: "Selected item actions",
 		children: [
-			/* @__PURE__ */ (0, Q.jsx)(mr, {
-				icon: "details",
-				label: "Details",
-				pressed: e,
-				disabled: n,
-				onClick: r
-			}),
-			/* @__PURE__ */ (0, Q.jsx)(mr, {
+			/* @__PURE__ */ (0, Q.jsx)(cr, {
 				icon: "duplicate",
 				label: "Duplicate",
-				disabled: n,
-				onClick: i
+				disabled: t,
+				onClick: n
 			}),
-			t && o && /* @__PURE__ */ (0, Q.jsx)(mr, {
+			e && i && /* @__PURE__ */ (0, Q.jsx)(cr, {
 				icon: "connect",
 				label: "Connect device",
-				disabled: n,
-				onClick: () => o?.()
+				disabled: t,
+				onClick: () => i?.()
 			}),
 			/* @__PURE__ */ (0, Q.jsx)("span", {
 				className: "selected-item-actions__separator",
 				"aria-hidden": "true"
 			}),
-			/* @__PURE__ */ (0, Q.jsx)(mr, {
+			/* @__PURE__ */ (0, Q.jsx)(cr, {
 				icon: "delete",
 				label: "Delete",
-				disabled: n,
-				onClick: a
+				disabled: t,
+				onClick: r
 			})
 		]
 	});
 });
 //#endregion
 //#region apps/web/src/editor-preview/furnish/SelectedItemResizeButton.tsx
-function ml({ ref: e, item: t, definition: n, busy: r, onResize: i, onBegin: a, onCommit: o, onCancel: s }) {
+function yl({ ref: e, item: t, definition: n, busy: r, onResize: i, onBegin: a, onCommit: o, onCancel: s }) {
 	let c = ze(), l = (0, Z.useRef)(null), [u, d] = (0, Z.useState)(!1), f = (0, Z.useRef)({
 		onCommit: o,
 		onCancel: s
@@ -12617,7 +12820,7 @@ function ml({ ref: e, item: t, definition: n, busy: r, onResize: i, onBegin: a, 
 		},
 		onPointerCancel: () => p(!0),
 		onLostPointerCapture: () => p(!0),
-		children: /* @__PURE__ */ (0, Q.jsx)(mr, {
+		children: /* @__PURE__ */ (0, Q.jsx)(cr, {
 			icon: "resize",
 			label: "Drag to resize proportionally",
 			disabled: r && !u,
@@ -12627,29 +12830,29 @@ function ml({ ref: e, item: t, definition: n, busy: r, onResize: i, onBegin: a, 
 }
 //#endregion
 //#region apps/web/src/editor-preview/furnish/SelectedItemControls.tsx
-function hl({ item: e, definition: t, floor: n, actions: r, busy: i, onRotate: a, onMovePlacement: o, onResize: s, onSelect: c, onBegin: l, onCommit: u, onCancel: d }) {
-	let { camera: f, gl: p, size: m, invalidate: h } = Ae(), g = (0, Z.useRef)(null), v = (0, Z.useRef)(null), y = (0, Z.useRef)(null), x = (0, Z.useRef)(null), S = (0, Z.useRef)(null), C = (0, Z.useRef)(null), w = (0, Z.useRef)(null), T = (0, Z.useRef)(null), E = (0, Z.useRef)(null), D = (0, Z.useRef)(null), O = (0, Z.useRef)(null), [k, A] = (0, Z.useState)(!1), [j, M] = (0, Z.useState)(!1), [N, P] = (0, Z.useState)(!1), F = Y(e.placement, n), I = ps(e, t), L = fl(e, t), R = (0, Z.useMemo)(() => new J(), []), z = (0, Z.useMemo)(() => new K(), []), B = (0, Z.useMemo)(() => new st(), []), V = (0, Z.useMemo)(() => new b(new J(0, 1, 0)), []), ee = (0, Z.useRef)({
+function bl({ item: e, definition: t, floor: n, actions: r, busy: i, onRotate: a, onMovePlacement: o, onResize: s, onSelect: c, onBegin: l, onCommit: u, onCancel: d }) {
+	let { camera: f, gl: p, size: m, invalidate: h } = q(), g = (0, Z.useRef)(null), _ = (0, Z.useRef)(null), y = (0, Z.useRef)(null), b = (0, Z.useRef)(null), x = (0, Z.useRef)(null), S = (0, Z.useRef)(null), C = (0, Z.useRef)(null), w = (0, Z.useRef)(null), T = (0, Z.useRef)(null), E = (0, Z.useRef)(null), O = (0, Z.useRef)(null), [k, A] = (0, Z.useState)(!1), [j, M] = (0, Z.useState)(!1), [N, P] = (0, Z.useState)(!1), F = Ne(e.placement, n), I = ns(e, t), L = _l(e, t), ee = (0, Z.useMemo)(() => new Y(), []), R = (0, Z.useMemo)(() => new D(), []), te = (0, Z.useMemo)(() => new Pt(), []), z = (0, Z.useMemo)(() => new me(new Y(0, 1, 0)), []), B = (0, Z.useRef)({
 		onCancel: d,
 		onCommit: u
 	});
 	(0, Z.useLayoutEffect)(() => {
-		ee.current = {
+		B.current = {
 			onCancel: d,
 			onCommit: u
 		};
 	});
-	let H = (e) => {
+	let V = (e) => {
 		let t = O.current;
-		t && (O.current = null, A(!1), M(!1), P(!1), e ? ee.current.onCancel() : ee.current.onCommit(), t.target.hasPointerCapture?.(t.pointerId) && t.target.releasePointerCapture(t.pointerId));
-	}, te = ze();
+		t && (O.current = null, A(!1), M(!1), P(!1), e ? B.current.onCancel() : B.current.onCommit(), t.target.hasPointerCapture?.(t.pointerId) && t.target.releasePointerCapture(t.pointerId));
+	}, ne = ze();
 	(0, Z.useEffect)(() => {
 		let e = (e) => {
-			e.key !== "Escape" || !O.current || (e.preventDefault(), e.stopPropagation(), H(!0));
-		}, t = () => H(!0);
-		return te.events.addEventListener("keydown", e, !0), window.addEventListener("blur", t), () => {
-			te.events.removeEventListener("keydown", e, !0), window.removeEventListener("blur", t), O.current && (O.current = null, ee.current.onCancel());
+			e.key !== "Escape" || !O.current || (e.preventDefault(), e.stopPropagation(), V(!0));
+		}, t = () => V(!0);
+		return ne.events.addEventListener("keydown", e, !0), window.addEventListener("blur", t), () => {
+			ne.events.removeEventListener("keydown", e, !0), window.removeEventListener("blur", t), O.current && (O.current = null, B.current.onCancel());
 		};
-	}, [te]), (0, Z.useLayoutEffect)(() => {
+	}, [ne]), (0, Z.useLayoutEffect)(() => {
 		h();
 	}, [
 		f,
@@ -12657,33 +12860,33 @@ function hl({ item: e, definition: t, floor: n, actions: r, busy: i, onRotate: a
 		e,
 		m
 	]);
-	let ne = (e, t) => {
+	let H = (e, t) => {
 		let n = p.domElement.getBoundingClientRect();
-		return z.setFromCamera(B.set((e.clientX - n.left) / n.width * 2 - 1, -(e.clientY - n.top) / n.height * 2 + 1), f), V.constant = -t, z.ray.intersectPlane(V, R);
+		return R.setFromCamera(te.set((e.clientX - n.left) / n.width * 2 - 1, -(e.clientY - n.top) / n.height * 2 + 1), f), z.constant = -t, R.ray.intersectPlane(z, ee);
 	}, re = (e) => {
-		let t = ne(e, F.position[1]);
+		let t = H(e, F.position[1]);
 		return t ? Math.atan2(t.z - F.position[2], t.x - F.position[0]) : null;
 	};
-	lt(() => {
-		if (!g.current || !v.current) return;
-		let e = (e, t, n) => (R.set(e, t, n).project(f), {
-			x: (R.x + 1) * m.width / 2,
-			y: (1 - R.y) * m.height / 2,
-			z: R.z
+	st(() => {
+		if (!g.current || !_.current) return;
+		let e = (e, t, n) => (ee.set(e, t, n).project(f), {
+			x: (ee.x + 1) * m.width / 2,
+			y: (1 - ee.y) * m.height / 2,
+			z: ee.z
 		}), [t, n, r] = F.position, i = e(t, n, r), a = i.z >= -1 && i.z <= 1 && i.x >= 0 && i.x <= m.width && i.y >= 0 && i.y <= m.height;
 		if (g.current.style.visibility = a ? "visible" : "hidden", !a) return;
 		let o = e(t + 1, n, r), s = e(t, n, r + 1), c = Math.max(Math.hypot(o.x - i.x, o.y - i.y), Math.hypot(s.x - i.x, s.y - i.y), 1), l = Math.max(L, 72 / c), u = Array.from({ length: 65 }, (i, a) => {
 			let o = a / 64 * Math.PI * 2;
 			return e(t + Math.cos(o) * l, n, r + Math.sin(o) * l);
 		}), d = u.map((e, t) => `${t ? "L" : "M"}${e.x.toFixed(2)},${e.y.toFixed(2)}`).join(" ") + " Z";
-		y.current?.setAttribute("d", d), x.current?.setAttribute("d", d);
-		let h = u.reduce((e, t) => e.x < t.x ? e : t), _ = u.reduce((e, t) => e.x > t.x ? e : t), b = u.reduce((e, t) => e.y < t.y ? e : t), O = u.reduce((e, t) => e.y > t.y ? e : t), k = (e, t) => {
+		y.current?.setAttribute("d", d), b.current?.setAttribute("d", d);
+		let h = u.reduce((e, t) => e.x < t.x ? e : t), v = u.reduce((e, t) => e.x > t.x ? e : t), D = u.reduce((e, t) => e.y < t.y ? e : t), O = u.reduce((e, t) => e.y > t.y ? e : t), k = (e, t) => {
 			e && (e.style.transform = `translate(${Math.max(24, Math.min(m.width - 24, t.x))}px, ${Math.max(24, Math.min(m.height - 24, t.y))}px) translate(-50%, -50%)`);
 		};
-		k(S.current, h), k(C.current, i), k(w.current, _), k(T.current, {
-			x: _.x,
-			y: _.y - 52
-		}), k(E.current, {
+		k(x.current, h), k(S.current, i), k(C.current, v), k(w.current, {
+			x: v.x,
+			y: v.y - 52
+		}), k(T.current, {
 			x: h.x,
 			y: h.y + 52
 		});
@@ -12692,28 +12895,28 @@ function hl({ item: e, definition: t, floor: n, actions: r, busy: i, onRotate: a
 			let s = I.center[0] + i * I.size[0] / 2, c = I.center[2] + o * I.size[2] / 2;
 			A.push(e(t + s * j + c * M, n + I.center[1] + a * I.size[1] / 2, r - s * M + c * j));
 		}
-		let N = p.domElement.getBoundingClientRect(), P = p.domElement.closest(".direction-preview")?.querySelector(".editor-header")?.getBoundingClientRect(), z = $c({
+		let N = p.domElement.getBoundingClientRect(), P = p.domElement.closest(".direction-preview")?.querySelector(".editor-header")?.getBoundingClientRect(), R = il({
 			centerX: (Math.min(...A.map((e) => e.x)) + Math.max(...A.map((e) => e.x))) / 2,
 			itemTop: Math.min(...A.map((e) => e.y)),
 			itemBottom: Math.max(...A.map((e) => e.y)),
 			width: m.width,
 			height: m.height,
-			toolbarWidth: v.current.offsetWidth,
-			toolbarHeight: v.current.offsetHeight,
+			toolbarWidth: _.current.offsetWidth,
+			toolbarHeight: _.current.offsetHeight,
 			topInset: P ? P.bottom - N.top + 8 : 8
 		});
-		v.current.style.transform = `translate(${z.x}px, ${z.y}px)`;
-		let B = Math.min(m.height - 24, O.y + 25), V = O.x + 24 > z.x && O.x - 24 < z.x + v.current.offsetWidth && B + 14 > z.y && B - 14 < z.y + v.current.offsetHeight;
-		k(D.current, V ? {
-			x: b.x,
-			y: b.y - 25
+		_.current.style.transform = `translate(${R.x}px, ${R.y}px)`;
+		let te = Math.min(m.height - 24, O.y + 25), z = O.x + 24 > R.x && O.x - 24 < R.x + _.current.offsetWidth && te + 14 > R.y && te - 14 < R.y + _.current.offsetHeight;
+		k(E.current, z ? {
+			x: D.x,
+			y: D.y - 25
 		} : {
 			x: O.x,
-			y: B
+			y: te
 		});
 	});
-	let ie = ll(e.placement), ae = (t) => a(e.id, ul(ie + t * Math.PI / 2));
-	return /* @__PURE__ */ (0, Q.jsx)(_, {
+	let ie = ml(e.placement), ae = (t) => a(e.id, hl(ie + t * Math.PI / 2));
+	return /* @__PURE__ */ (0, Q.jsx)(v, {
 		fullscreen: !0,
 		calculatePosition: (e, t, n) => [n.width / 2, n.height / 2],
 		zIndexRange: [6, 6],
@@ -12734,7 +12937,7 @@ function hl({ item: e, definition: t, floor: n, actions: r, busy: i, onRotate: a
 						ref: y,
 						className: "selected-item-ring__line"
 					}), /* @__PURE__ */ (0, Q.jsx)("path", {
-						ref: x,
+						ref: b,
 						className: "selected-item-ring__target",
 						style: { pointerEvents: i && !k ? "none" : void 0 },
 						onClick: (e) => e.stopPropagation(),
@@ -12755,19 +12958,19 @@ function hl({ item: e, definition: t, floor: n, actions: r, busy: i, onRotate: a
 							if (n?.kind !== "rotation" || n.pointerId !== t.pointerId) return;
 							t.stopPropagation();
 							let r = re(t);
-							r !== null && (n.rotation += dl(n.previousAngle, r), n.previousAngle = r, a(e.id, ul(n.rotation)));
+							r !== null && (n.rotation += gl(n.previousAngle, r), n.previousAngle = r, a(e.id, hl(n.rotation)));
 						},
 						onPointerUp: (e) => {
-							e.stopPropagation(), e.pointerId === O.current?.pointerId && H(!1);
+							e.stopPropagation(), e.pointerId === O.current?.pointerId && V(!1);
 						},
-						onPointerCancel: () => H(!0),
-						onLostPointerCapture: () => H(!0)
+						onPointerCancel: () => V(!0),
+						onLostPointerCapture: () => V(!0)
 					})]
 				}),
 				/* @__PURE__ */ (0, Q.jsx)("div", {
-					ref: S,
+					ref: x,
 					className: "selected-item-rotation-button",
-					children: /* @__PURE__ */ (0, Q.jsx)(mr, {
+					children: /* @__PURE__ */ (0, Q.jsx)(cr, {
 						icon: "rotateLeft",
 						label: "Rotate counterclockwise 90°",
 						disabled: i,
@@ -12775,12 +12978,12 @@ function hl({ item: e, definition: t, floor: n, actions: r, busy: i, onRotate: a
 					})
 				}),
 				/* @__PURE__ */ (0, Q.jsx)("div", {
-					ref: C,
+					ref: S,
 					className: "selected-item-rotation-button selected-item-move-button",
 					onPointerDown: (t) => {
 						if (t.button !== 0 || i || O.current) return;
 						t.preventDefault(), t.stopPropagation();
-						let n = ne(t, F.position[1]);
+						let n = H(t, F.position[1]);
 						n && (t.currentTarget.setPointerCapture(t.pointerId), O.current = {
 							kind: "move",
 							pointerId: t.pointerId,
@@ -12794,8 +12997,8 @@ function hl({ item: e, definition: t, floor: n, actions: r, busy: i, onRotate: a
 						let i = O.current;
 						if (i?.kind !== "move" || i.pointerId !== r.pointerId) return;
 						r.stopPropagation();
-						let a = ne(r, i.elevation);
-						a && o(e.id, us({
+						let a = H(r, i.elevation);
+						a && o(e.id, $o({
 							world: {
 								x: a.x + i.offsetX,
 								z: a.z + i.offsetZ
@@ -12807,11 +13010,11 @@ function hl({ item: e, definition: t, floor: n, actions: r, busy: i, onRotate: a
 						}));
 					},
 					onPointerUp: (e) => {
-						e.stopPropagation(), e.pointerId === O.current?.pointerId && H(!1);
+						e.stopPropagation(), e.pointerId === O.current?.pointerId && V(!1);
 					},
-					onPointerCancel: () => H(!0),
-					onLostPointerCapture: () => H(!0),
-					children: /* @__PURE__ */ (0, Q.jsx)(mr, {
+					onPointerCancel: () => V(!0),
+					onLostPointerCapture: () => V(!0),
+					children: /* @__PURE__ */ (0, Q.jsx)(cr, {
 						icon: "move",
 						label: "Drag to move",
 						disabled: i && !j,
@@ -12819,9 +13022,9 @@ function hl({ item: e, definition: t, floor: n, actions: r, busy: i, onRotate: a
 					})
 				}),
 				/* @__PURE__ */ (0, Q.jsx)("div", {
-					ref: w,
+					ref: C,
 					className: "selected-item-rotation-button",
-					children: /* @__PURE__ */ (0, Q.jsx)(mr, {
+					children: /* @__PURE__ */ (0, Q.jsx)(cr, {
 						icon: "rotateRight",
 						label: "Rotate clockwise 90°",
 						disabled: i,
@@ -12829,12 +13032,12 @@ function hl({ item: e, definition: t, floor: n, actions: r, busy: i, onRotate: a
 					})
 				}),
 				/* @__PURE__ */ (0, Q.jsx)("div", {
-					ref: T,
+					ref: w,
 					className: "selected-item-rotation-button selected-item-elevation-button",
 					onPointerDown: (t) => {
 						if (t.button !== 0 || i || O.current) return;
 						t.preventDefault(), t.stopPropagation();
-						let n = new J(...F.position), r = n.clone().project(f), a = n.add(new J(0, 1, 0).applyQuaternion(f.quaternion)).project(f);
+						let n = new Y(...F.position), r = n.clone().project(f), a = n.add(new Y(0, 1, 0).applyQuaternion(f.quaternion)).project(f);
 						t.currentTarget.setPointerCapture(t.pointerId), O.current = {
 							kind: "elevation",
 							pointerId: t.pointerId,
@@ -12858,19 +13061,19 @@ function hl({ item: e, definition: t, floor: n, actions: r, busy: i, onRotate: a
 						});
 					},
 					onPointerUp: (e) => {
-						e.stopPropagation(), e.pointerId === O.current?.pointerId && H(!1);
+						e.stopPropagation(), e.pointerId === O.current?.pointerId && V(!1);
 					},
-					onPointerCancel: () => H(!0),
-					onLostPointerCapture: () => H(!0),
-					children: /* @__PURE__ */ (0, Q.jsx)(mr, {
+					onPointerCancel: () => V(!0),
+					onLostPointerCapture: () => V(!0),
+					children: /* @__PURE__ */ (0, Q.jsx)(cr, {
 						icon: "elevation",
 						label: "Drag to change elevation",
 						disabled: i && !N,
 						onClick: () => c(e.id)
 					})
 				}),
-				/* @__PURE__ */ (0, Q.jsx)(ml, {
-					ref: E,
+				/* @__PURE__ */ (0, Q.jsx)(yl, {
+					ref: T,
 					item: e,
 					definition: t,
 					busy: i,
@@ -12880,13 +13083,13 @@ function hl({ item: e, definition: t, floor: n, actions: r, busy: i, onRotate: a
 					onCancel: d
 				}),
 				/* @__PURE__ */ (0, Q.jsxs)("output", {
-					ref: D,
+					ref: E,
 					className: "selected-item-angle",
 					"aria-label": "Rotation angle",
-					children: [Number((ul(ie) * 180 / Math.PI).toFixed(1)), "°"]
+					children: [Number((hl(ie) * 180 / Math.PI).toFixed(1)), "°"]
 				}),
-				/* @__PURE__ */ (0, Q.jsx)(pl, {
-					ref: v,
+				/* @__PURE__ */ (0, Q.jsx)(vl, {
+					ref: _,
 					...r,
 					isDevice: e.kind === "device",
 					disabled: i
@@ -12897,7 +13100,7 @@ function hl({ item: e, definition: t, floor: n, actions: r, busy: i, onRotate: a
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/RoomNameControl.tsx
-function gl({ roomId: e, name: t, disabled: n, focusRequest: r, onFocusRequestHandled: i, onCommit: a }) {
+function xl({ roomId: e, name: t, disabled: n, focusRequest: r, onFocusRequestHandled: i, onCommit: a }) {
 	let [o, s] = (0, Z.useState)(!1), [c, l] = (0, Z.useState)(t), u = (0, Z.useRef)(!1), d = (0, Z.useRef)(null), f = (0, Z.useRef)(null);
 	return (0, Z.useLayoutEffect)(() => {
 		r?.roomId === e && !n && (u.current = !1, l(t), s(!0), i?.());
@@ -12949,21 +13152,21 @@ function gl({ roomId: e, name: t, disabled: n, focusRequest: r, onFocusRequestHa
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/ConstructionPlan.tsx
-var _l = (0, Z.memo)(function({ room: e, coordinates: t, namingDisabled: n, nameFocusRequest: r, onNameFocusHandled: i, onRoomNameChange: a }) {
-	let o = ze(), s = (0, Z.useRef)(null), l = (0, Z.useMemo)(() => c(e.polygon, t), [e.polygon, t]), u = (0, Z.useMemo)(() => Math.abs(Ne(e.polygon)) * t.metersPerPlanUnit ** 2, [e.polygon, t.metersPerPlanUnit]);
-	lt(({ camera: e }) => {
+var Sl = (0, Z.memo)(function({ room: e, coordinates: t, namingDisabled: n, nameFocusRequest: r, onNameFocusHandled: i, onRoomNameChange: a }) {
+	let o = ze(), s = (0, Z.useRef)(null), c = (0, Z.useMemo)(() => se(e.polygon, t), [e.polygon, t]), l = (0, Z.useMemo)(() => Math.abs(tn(e.polygon)) * t.metersPerPlanUnit ** 2, [e.polygon, t.metersPerPlanUnit]);
+	st(({ camera: e }) => {
 		if (!s.current || !("zoom" in e)) return;
-		let t = l.width * Number(e.zoom), n = l.depth * Number(e.zoom), r = !!s.current.querySelector("input") || s.current.contains(o.root.activeElement);
+		let t = c.width * Number(e.zoom), n = c.depth * Number(e.zoom), r = !!s.current.querySelector("input") || s.current.contains(o.root.activeElement);
 		s.current.style.visibility = !r && (t < 56 || n < 28) ? "hidden" : "visible", s.current.style.maxWidth = `${Math.min(130, t * .85)}px`, s.current.style.fontSize = t < 100 ? "9px" : "11px";
 	});
-	let [d, f] = q(qe(e.polygon), t);
+	let [u, d] = J(Ke(e.polygon), t);
 	return /* @__PURE__ */ (0, Q.jsx)("group", {
 		name: `plan-room-${e.id}`,
-		children: typeof document < "u" && /* @__PURE__ */ (0, Q.jsx)(_, {
+		children: typeof document < "u" && /* @__PURE__ */ (0, Q.jsx)(v, {
 			position: [
-				d,
+				u,
 				.025,
-				f
+				d
 			],
 			center: !0,
 			zIndexRange: [2, 0],
@@ -12971,7 +13174,7 @@ var _l = (0, Z.memo)(function({ room: e, coordinates: t, namingDisabled: n, name
 			children: /* @__PURE__ */ (0, Q.jsxs)("span", {
 				ref: s,
 				className: "construction-plan__room-label",
-				children: [a ? /* @__PURE__ */ (0, Q.jsx)(gl, {
+				children: [a ? /* @__PURE__ */ (0, Q.jsx)(xl, {
 					roomId: e.id,
 					name: e.name,
 					disabled: !!n,
@@ -12980,12 +13183,12 @@ var _l = (0, Z.memo)(function({ room: e, coordinates: t, namingDisabled: n, name
 					onCommit: (t) => a(e.id, t)
 				}) : e.name, /* @__PURE__ */ (0, Q.jsxs)("span", {
 					className: "construction-plan__room-area",
-					children: [u.toFixed(1), " m²"]
+					children: [l.toFixed(1), " m²"]
 				})]
 			})
 		})
 	});
-}), vl = (0, Z.memo)(function({ floor: e, items: t, furnishingModels: n, deviceModels: r, showFinishes: i = !0, ...a }) {
+}), Cl = (0, Z.memo)(function({ floor: e, items: t, furnishingModels: n, deviceModels: r, showFinishes: i = !0, ...a }) {
 	let o = (0, Z.useMemo)(() => {
 		let i = [];
 		for (let a of t) {
@@ -12993,11 +13196,11 @@ var _l = (0, Z.memo)(function({ room: e, coordinates: t, namingDisabled: n, name
 			if (!t) continue;
 			let o;
 			try {
-				o = Y(a.placement, e);
+				o = Ne(a.placement, e);
 			} catch {
 				continue;
 			}
-			let s = ps(a, a.kind === "device" ? {
+			let s = ns(a, a.kind === "device" ? {
 				...t,
 				defaultSize: t.bounds.max.map((e, n) => e - t.bounds.min[n])
 			} : t), [c, , l] = s.center, [u, , d] = s.size, f = [
@@ -13024,16 +13227,16 @@ var _l = (0, Z.memo)(function({ room: e, coordinates: t, namingDisabled: n, name
 	return /* @__PURE__ */ (0, Q.jsxs)("group", {
 		name: "construction-plan",
 		children: [
-			i && /* @__PURE__ */ (0, Q.jsx)(ht, {
+			i && /* @__PURE__ */ (0, Q.jsx)(ft, {
 				floor: e,
 				variant: "plan"
 			}),
-			e.rooms.map((t) => /* @__PURE__ */ (0, Q.jsx)(_l, {
+			e.rooms.map((t) => /* @__PURE__ */ (0, Q.jsx)(Sl, {
 				room: t,
 				coordinates: e.coordinates,
 				...a
 			}, t.id)),
-			/* @__PURE__ */ (0, Q.jsx)(di, {
+			/* @__PURE__ */ (0, Q.jsx)(mi, {
 				name: "plan-footprints",
 				strokes: o
 			})
@@ -13042,11 +13245,11 @@ var _l = (0, Z.memo)(function({ room: e, coordinates: t, namingDisabled: n, name
 });
 //#endregion
 //#region apps/web/src/editor-preview/construct/plan-wheel-navigation.ts
-function yl(e, t, n, r, i, a) {
+function wl(e, t, n, r, i, a) {
 	if (!r.width || !r.height) return;
 	let o = e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? r.height : 1;
 	t.updateMatrixWorld();
-	let s = new J().setFromMatrixColumn(t.matrixWorld, 0), c = new J().setFromMatrixColumn(t.matrixWorld, 1), l = (t.right - t.left) / t.zoom, u = (t.top - t.bottom) / t.zoom, d = new J();
+	let s = new Y().setFromMatrixColumn(t.matrixWorld, 0), c = new Y().setFromMatrixColumn(t.matrixWorld, 1), l = (t.right - t.left) / t.zoom, u = (t.top - t.bottom) / t.zoom, d = new Y();
 	if (e.ctrlKey || e.metaKey) {
 		let n = t.zoom;
 		t.zoom = Math.max(i, Math.min(a, n * Math.exp(-e.deltaY * o * .01)));
@@ -13057,11 +13260,11 @@ function yl(e, t, n, r, i, a) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/PreviewCamera.tsx
-function bl(e) {
+function Tl(e) {
 	let { view: t, resetKey: n, savedCamera: r, floor: i, northOrientation: a = !1 } = e, o = (0, Z.useRef)(null), s = (0, Z.useRef)(a), c = (0, Z.useRef)(i.id), l = (0, Z.useRef)(r.current), u = (0, Z.useRef)(n);
 	s.current !== a && (s.current = a, l.current = r.current, u.current = n), c.current !== i.id && (c.current = i.id, l.current = r.current, u.current = n);
 	let d = !a && u.current === n && l.current?.view === t ? l.current : null;
-	return /* @__PURE__ */ (0, Q.jsx)(xl, {
+	return /* @__PURE__ */ (0, Q.jsx)(El, {
 		...e,
 		savedCamera: a ? o : r,
 		onTargetChange: a ? () => void 0 : e.onTargetChange,
@@ -13069,33 +13272,45 @@ function bl(e) {
 		restored: d
 	}, `${t}-${n}-${a}`);
 }
-function xl({ view: e, floor: t, controlsEnabled: n, focusPoint: r, focusRoomId: i, onTargetChange: a, savedCamera: o, restored: s, planWheelNavigation: l, northOrientation: u }) {
-	let { width: d, height: f } = Ae((e) => e.size), p = Ae((e) => e.gl.domElement), m = Ae((e) => e.invalidate), h = (0, Z.useRef)(null), { origin: [g, _], metersPerPlanUnit: v } = t.coordinates, y = (0, Z.useCallback)(() => {
-		let t = h.current?.target, n = h.current?.object;
+function El({ view: e, floor: t, controlsEnabled: n, focusPoint: r, focusRoomId: i, onTargetChange: a, savedCamera: o, restored: s, planWheelNavigation: c, northOrientation: l, rightPanelOpen: u }) {
+	let { width: d, height: f } = q((e) => e.size), p = q((e) => e.gl.domElement), m = q((e) => e.invalidate), h = q((e) => e.camera), g = !l && u && p.ownerDocument.defaultView?.matchMedia?.("(min-width: 761px) and (max-width: 1240px)").matches ? 320 : 0;
+	(0, Z.useEffect)(() => {
+		if (!h.isOrthographicCamera || d <= 0 || f <= 0) return;
+		let e = h;
+		g ? e.setViewOffset(d, f, g / 2, 0, d, f) : e.clearViewOffset(), e.updateProjectionMatrix(), m();
+	}, [
+		h,
+		d,
+		f,
+		g,
+		m
+	]);
+	let _ = (0, Z.useRef)(null), { origin: [v, y], metersPerPlanUnit: b } = t.coordinates, x = (0, Z.useCallback)(() => {
+		let t = _.current?.target, n = _.current?.object;
 		t && n && (o.current = {
 			view: e,
 			position: n.position.toArray(),
 			target: t.toArray(),
 			zoom: n.zoom
-		}), t && n && a([t.x / v + g, t.z / v + _], (e) => {
-			let t = new J(e[0], e[1], e[2]).project(n);
+		}), t && n && a([t.x / b + v, t.z / b + y], (e) => {
+			let t = new Y(e[0], e[1], e[2]).project(n);
 			return Math.abs(t.x) < .9 && Math.abs(t.y) < .9 && t.z >= -1 && t.z <= 1;
 		});
 	}, [
-		v,
+		b,
 		a,
-		g,
-		_,
+		v,
+		y,
 		o,
 		e
-	]), b = (0, Z.useRef)(!1);
-	lt(() => {
-		u || b.current || !h.current || h.current.object.isOrthographicCamera && (b.current = !0, y());
+	]), S = (0, Z.useRef)(!1);
+	st(() => {
+		l || S.current || !_.current || _.current.object.isOrthographicCamera && (S.current = !0, x());
 	}), (0, Z.useEffect)(() => {
-		if (!l || e !== "top") return;
+		if (!c || e !== "top") return;
 		let t = (e) => {
-			let t = h.current, n = t?.object;
-			!t || !n?.isOrthographicCamera || (e.preventDefault(), e.stopImmediatePropagation(), yl(e, n, t.target, p.getBoundingClientRect(), t.minZoom, t.maxZoom), t.update(), y(), m());
+			let t = _.current, n = t?.object;
+			!t || !n?.isOrthographicCamera || (e.preventDefault(), e.stopImmediatePropagation(), wl(e, n, t.target, p.getBoundingClientRect(), t.minZoom, t.maxZoom), t.update(), x(), m());
 		};
 		return p.addEventListener("wheel", t, {
 			capture: !0,
@@ -13103,110 +13318,110 @@ function xl({ view: e, floor: t, controlsEnabled: n, focusPoint: r, focusRoomId:
 		}), () => p.removeEventListener("wheel", t, !0);
 	}, [
 		p,
-		y,
+		x,
 		m,
-		l,
+		c,
 		e
 	]), (0, Z.useEffect)(() => {
-		if (!u || !h.current) return;
-		let e = h.current.object, n = Ht(t), r = p.ownerDocument.defaultView?.matchMedia("(max-width: 760px)").matches, i = Math.min(d - (r ? 24 : 48), f - (r ? 128 : 162));
+		if (!l || !_.current) return;
+		let e = _.current.object, n = mt(t), r = p.ownerDocument.defaultView?.matchMedia("(max-width: 760px)").matches, i = Math.min(d - (r ? 24 : 48), f - (r ? 128 : 162));
 		e.zoom = Math.max(.1, i * .68 / Math.max(2, Math.hypot(n.width, n.depth)));
 		let a = Math.max(n.width, n.depth, 2);
-		e.position.set(n.centerX, a * 2.2 + 4, n.centerZ + .001), h.current.target.set(n.centerX, .2, n.centerZ), e.updateProjectionMatrix(), h.current.update(), m();
+		e.position.set(n.centerX, a * 2.2 + 4, n.centerZ + .001), _.current.target.set(n.centerX, .2, n.centerZ), e.updateProjectionMatrix(), _.current.update(), m();
 	}, [
-		u,
+		l,
 		d,
 		f,
 		t,
 		p,
 		m
 	]);
-	let [x] = (0, Z.useState)(() => {
+	let [C] = (0, Z.useState)(() => {
 		if (s) return s;
-		let n = !u && t.rooms.find((e) => e.id === i), a = n ? c(n.polygon, t.coordinates) : Ht(t), o = Math.max(a.width, a.depth, 2), l = u ? Math.max(.1, Math.min(d - 48, f - 162) * .68 / Math.max(2, Math.hypot(a.width, a.depth))) : Math.max(8, Math.min(110, d / (a.width * 1.48), f / (a.depth * 1.58))), p = !u && r ? (r[0] - t.coordinates.origin[0]) * t.coordinates.metersPerPlanUnit : a.centerX, m = !u && r ? (r[1] - t.coordinates.origin[1]) * t.coordinates.metersPerPlanUnit : a.centerZ;
+		let n = !l && t.rooms.find((e) => e.id === i), a = n ? se(n.polygon, t.coordinates) : mt(t), o = Math.max(a.width, a.depth, 2), c = l ? Math.max(.1, Math.min(d - 48, f - 162) * .68 / Math.max(2, Math.hypot(a.width, a.depth))) : Math.max(8, Math.min(110, (d - g) / (a.width * 1.48), f / (a.depth * 1.58))), u = !l && r ? (r[0] - t.coordinates.origin[0]) * t.coordinates.metersPerPlanUnit : a.centerX, p = !l && r ? (r[1] - t.coordinates.origin[1]) * t.coordinates.metersPerPlanUnit : a.centerZ;
 		return {
 			position: e === "top" ? [
-				p,
+				u,
 				o * 2.2 + 4,
-				m + .001
+				p + .001
 			] : [
-				p + o * .42,
+				u + o * .42,
 				o * .72 + 2.8,
-				m + o * .48
+				p + o * .48
 			],
 			target: [
-				p,
+				u,
 				.2,
-				m
+				p
 			],
-			zoom: n && e === "3d" ? l * .7 : !u && r && !n ? Math.min(180, l * 2.25) : l
+			zoom: n && e === "3d" ? c * .7 : !l && r && !n ? Math.min(180, c * 2.25) : c
 		};
 	});
-	return /* @__PURE__ */ (0, Q.jsxs)("group", { children: [/* @__PURE__ */ (0, Q.jsx)(L, {
+	return /* @__PURE__ */ (0, Q.jsxs)("group", { children: [/* @__PURE__ */ (0, Q.jsx)(I, {
 		makeDefault: !0,
-		position: x.position,
-		zoom: x.zoom,
+		position: C.position,
+		zoom: C.zoom,
 		near: .1,
 		far: 150
-	}), /* @__PURE__ */ (0, Q.jsx)(P, {
-		ref: h,
+	}), /* @__PURE__ */ (0, Q.jsx)(j, {
+		ref: _,
 		makeDefault: !0,
 		enabled: n,
-		target: x.target,
-		onChange: y,
+		target: C.target,
+		onChange: x,
 		enablePan: !0,
 		enableRotate: e === "3d",
 		enableZoom: !0,
 		minPolarAngle: 0,
 		maxPolarAngle: e === "top" ? .01 : 1.28,
-		minZoom: u ? .1 : 8,
+		minZoom: l ? .1 : 8,
 		maxZoom: 180,
 		zoomToCursor: !0
 	})] });
 }
 //#endregion
 //#region apps/web/src/editor-workspace/HomeEditorScene.tsx
-var Sl = () => void 0;
-function Cl({ reference: e, northOrientation: t, onStairIssuesChange: n, onNameFocusHandled: r, cameraFocusRoomId: i, nameFocusRequest: a, placingWalkStart: o, onWalkStartPlaced: s, placementFloor: c, selectSceneItem: u, stairDialog: d, floorNavigation: f, activeFloorId: p, stairPlacement: m, setStairPlacement: h, setStairDialog: g, floorReferences: _, commit: v, snapshot: y, connectFloor: b, mode: x, editingLocked: S, publishOpen: C, previewOpen: w, connect: T, clearConstructionSelection: E, clearFurnishingSelection: D, cameraView: O, cameraResetKey: k, constructEditor: A, dragging: j, cameraFocusPoint: N, handleCameraTargetChange: P, savedCamera: F, previewSceneItems: I, displayedContextualIssues: L, activeIssueKey: R, issueFocusVersion: z, poolDrawing: B, floorZoneDrawing: V, focusIssue: ee, furnishingModels: H, deviceModels: te, visualManifest: ne, selectedRoomId: re, editorResolvedBindings: ie, marqueeSelecting: ae, floorPaintTarget: oe, requestRoomPaint: U, setDragging: se, constructMeasure: W, setSelectedRoomId: ce, setMarqueeSelecting: le, selectedOpening: ue, detailsOpeningId: de, setDetailsOpeningId: fe, duplicateConstructionOpening: pe, visualSceneItems: me, furnishingEditor: G, selectedItem: he, selectedDefinition: ge, detailsItemId: _e, setDetailsItemId: ve, unsettled: ye, selectMode: K, duplicateArrangeItem: be, deleteSceneItem: xe }) {
-	let Se = (0, Z.useMemo)(() => ({
-		furnishingModels: H,
-		deviceModels: te
-	}), [H, te]), Ce = Kc(e, A.previewFloor, x === "construct"), we = l(ne.floors), Te = we.find((e) => e.floorId === p)?.elevationMeters ?? 0;
+var Dl = () => void 0;
+function Ol({ rightPanelOpen: e, reference: t, northOrientation: n, onStairIssuesChange: r, onNameFocusHandled: i, cameraFocusRoomId: a, nameFocusRequest: o, placingWalkStart: s, onWalkStartPlaced: c, placementFloor: u, selectSceneItem: d, stairDialog: f, floorNavigation: p, activeFloorId: m, stairPlacement: h, setStairPlacement: g, setStairDialog: _, floorReferences: v, commit: y, snapshot: b, connectFloor: x, mode: S, editingLocked: C, publishOpen: w, previewOpen: T, connect: E, clearConstructionSelection: D, clearFurnishingSelection: O, cameraView: k, cameraResetKey: j, constructEditor: M, dragging: N, cameraFocusPoint: P, handleCameraTargetChange: F, savedCamera: I, previewSceneItems: L, displayedContextualIssues: ee, activeIssueKey: R, issueFocusVersion: te, poolDrawing: z, floorZoneDrawing: B, focusIssue: V, furnishingModels: ne, deviceModels: H, visualManifest: re, selectedRoomId: ie, editorResolvedBindings: ae, marqueeSelecting: oe, floorPaintTarget: se, requestRoomPaint: ce, setDragging: U, constructMeasure: W, setSelectedRoomId: le, setMarqueeSelecting: ue, selectedOpening: de, duplicateConstructionOpening: fe, visualSceneItems: pe, furnishingEditor: G, selectedItem: me, selectedDefinition: he, unsettled: ge, selectMode: _e, duplicateArrangeItem: ve, deleteSceneItem: ye }) {
+	let be = (0, Z.useMemo)(() => ({
+		furnishingModels: ne,
+		deviceModels: H
+	}), [ne, H]), xe = Zc(t, M.previewFloor, S === "construct"), Se = l(re.floors), Ce = Se.find((e) => e.floorId === m)?.elevationMeters ?? 0;
 	return /* @__PURE__ */ (0, Q.jsxs)("div", {
-		...Ce.handlers,
+		...xe.handlers,
 		tabIndex: -1,
 		onDragOver: (e) => {
-			x === "construct" && e.dataTransfer.types.includes("Files") && e.preventDefault();
+			S === "construct" && e.dataTransfer.types.includes("Files") && e.preventDefault();
 		},
-		onDrop: (t) => {
-			x === "construct" && (t.preventDefault(), e.upload(t.dataTransfer.files));
+		onDrop: (e) => {
+			S === "construct" && (e.preventDefault(), t.upload(e.dataTransfer.files));
 		},
-		className: `direction-preview__model${x === "connect" ? " connect-map" : ""}`,
-		"aria-label": x === "connect" ? "Home connection map" : x === "construct" ? "2D construction plan" : "3D home editor",
-		inert: S || C || w,
+		className: `direction-preview__model${S === "connect" ? " connect-map" : ""}`,
+		"aria-label": S === "connect" ? "Home connection map" : S === "construct" ? "2D construction plan" : "3D home editor",
+		inert: C || w || T,
 		children: [
-			x === "connect" && /* @__PURE__ */ (0, Q.jsx)(Tc, {
-				connectFloor: b,
-				connect: T
+			S === "connect" && /* @__PURE__ */ (0, Q.jsx)(Ac, {
+				connectFloor: x,
+				connect: E
 			}),
-			Ce.background,
+			xe.background,
 			/* @__PURE__ */ (0, Q.jsx)("div", {
-				inert: t.active,
-				hidden: x === "connect",
+				inert: n.active,
+				hidden: S === "connect",
 				style: {
 					width: "100%",
 					height: "100%",
 					position: "relative"
 				},
-				children: /* @__PURE__ */ (0, Q.jsx)(Tt, {
-					events: kc,
+				children: /* @__PURE__ */ (0, Q.jsx)(St, {
+					events: Pc,
 					tabIndex: 0,
 					"aria-label": "Home editor canvas",
 					onPointerDownCapture: (e) => {
 						e.target instanceof HTMLCanvasElement && e.currentTarget.focus({ preventScroll: !0 });
 					},
 					onPointerMissed: (e) => {
-						e.type === "click" && e.button === 0 && (x === "construct" ? E() : x === "furnish" && D());
+						e.type === "click" && e.button === 0 && (S === "construct" ? D() : S === "furnish" && O());
 					},
 					shadows: !1,
 					dpr: 1,
@@ -13218,11 +13433,11 @@ function Cl({ reference: e, northOrientation: t, onStairIssuesChange: n, onNameF
 					children: /* @__PURE__ */ (0, Q.jsxs)(Z.Suspense, {
 						fallback: null,
 						children: [
-							Ce.bridge,
-							/* @__PURE__ */ (0, Q.jsxs)(M, {
-								active: x === "furnish",
+							xe.bridge,
+							/* @__PURE__ */ (0, Q.jsxs)(A, {
+								active: S === "furnish",
 								children: [
-									x !== "construct" && /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [/* @__PURE__ */ (0, Q.jsx)("hemisphereLight", { args: [
+									S !== "construct" && /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [/* @__PURE__ */ (0, Q.jsx)("hemisphereLight", { args: [
 										"#ecf4ff",
 										"#768b93",
 										.95
@@ -13236,254 +13451,253 @@ function Cl({ reference: e, northOrientation: t, onStairIssuesChange: n, onNameF
 										intensity: 1.8,
 										castShadow: !1
 									})] }),
-									x === "construct" && /* @__PURE__ */ (0, Q.jsx)(qc, {
-										floor: A.previewFloor,
-										start: y.project.home.walkStart,
-										placing: o,
+									S === "construct" && /* @__PURE__ */ (0, Q.jsx)(Qc, {
+										floor: M.previewFloor,
+										start: b.project.home.walkStart,
+										placing: s,
 										onPlace: (e) => {
-											v({
-												...y,
+											y({
+												...b,
 												project: {
-													...y.project,
+													...b.project,
 													home: {
-														...y.project.home,
+														...b.project.home,
 														walkStart: {
-															floorId: p,
+															floorId: m,
 															at: e
 														}
 													}
 												}
-											}), s();
+											}), c();
 										}
 									}),
-									x === "construct" && !Ce.visible && /* @__PURE__ */ (0, Q.jsx)(Mc, {}),
-									/* @__PURE__ */ (0, Q.jsx)(bl, {
-										northOrientation: t.active,
-										planWheelNavigation: x === "construct" || x === "furnish",
-										view: x === "construct" ? "top" : O,
-										resetKey: k,
-										floor: A.previewFloor,
-										controlsEnabled: !j && !o && !t.active,
-										focusPoint: N,
-										focusRoomId: i,
-										onTargetChange: P,
-										savedCamera: F
+									S === "construct" && !xe.visible && /* @__PURE__ */ (0, Q.jsx)(Lc, {}),
+									/* @__PURE__ */ (0, Q.jsx)(Tl, {
+										rightPanelOpen: e,
+										northOrientation: n.active,
+										planWheelNavigation: S === "construct" || S === "furnish",
+										view: S === "construct" ? "top" : k,
+										resetKey: j,
+										floor: M.previewFloor,
+										controlsEnabled: !N && !s && !n.active,
+										focusPoint: P,
+										focusRoomId: a,
+										onTargetChange: F,
+										savedCamera: I
 									}),
-									/* @__PURE__ */ (0, Q.jsx)(ro, {
-										planMode: x === "construct",
-										floor: A.previewFloor,
-										sceneItems: I,
-										issues: x === "construct" ? L.filter((e) => !e.code.startsWith("stair.") && e.code !== "room.name" && e.code !== "topology.room-name") : L,
+									/* @__PURE__ */ (0, Q.jsx)(Ga, {
+										planMode: S === "construct",
+										floor: M.previewFloor,
+										sceneItems: L,
+										issues: S === "construct" ? ee.filter((e) => !e.code.startsWith("stair.") && e.code !== "room.name" && e.code !== "topology.room-name") : ee,
 										activeIssueKey: R,
-										focusVersion: z,
-										showLabels: x !== "construct" || !j && !A.drawStart && !B.active && !V.active,
-										onActivate: ee
+										focusVersion: te,
+										showLabels: S !== "construct" || !N && !M.drawStart && !z.active && !B.active,
+										onActivate: V
 									}),
-									x === "construct" && !m && !(j && d) && _.references.map(({ direction: e, floor: t, visible: n }) => n && /* @__PURE__ */ (0, Q.jsx)(al, {
+									S === "construct" && !h && !(N && f) && v.references.map(({ direction: e, floor: t, visible: n }) => n && /* @__PURE__ */ (0, Q.jsx)(ul, {
 										floor: t,
 										direction: e
 									}, e)),
-									x === "construct" && y.project.stairs.map((e) => {
-										if (e.lowerFloorId !== p && e.upperFloorId !== p) return null;
-										let t = d?.id === e.id && A.tool === "select" && !m, r = e.lowerFloorId === p ? e.upperFloorId : e.lowerFloorId;
-										return /* @__PURE__ */ (0, Q.jsx)(tl, {
-											registries: Se,
-											onIssuesChange: t ? n : void 0,
-											building: y.project,
+									S === "construct" && b.project.stairs.map((e) => {
+										if (e.lowerFloorId !== m && e.upperFloorId !== m) return null;
+										let t = f?.id === e.id && M.tool === "select" && !h, n = e.lowerFloorId === m ? e.upperFloorId : e.lowerFloorId;
+										return /* @__PURE__ */ (0, Q.jsx)(ol, {
+											registries: be,
+											onIssuesChange: t ? r : void 0,
+											building: b.project,
 											stair: e,
-											activeFloorId: p,
+											activeFloorId: m,
 											selected: t,
-											enabled: A.tool === "select" && !m && !S,
+											enabled: M.tool === "select" && !h && !C,
 											onSelect: () => {
-												E(), g(e);
+												D(), _(e);
 											},
-											onDraggingChange: se,
-											onCommit: (e) => v({
-												...y,
+											onDraggingChange: U,
+											onCommit: (e) => y({
+												...b,
 												project: {
-													...y.project,
-													stairs: y.project.stairs.map((t) => t.id === e.id ? e : t)
+													...b.project,
+													stairs: b.project.stairs.map((t) => t.id === e.id ? e : t)
 												}
 											}),
-											onGoToFloor: () => f.selectFloor(r),
+											onGoToFloor: () => p.selectFloor(n),
 											onDelete: () => {
-												v({
-													...y,
+												y({
+													...b,
 													project: {
-														...y.project,
-														stairs: y.project.stairs.filter((t) => t.id !== e.id)
+														...b.project,
+														stairs: b.project.stairs.filter((t) => t.id !== e.id)
 													}
-												}), g(null);
+												}), _(null);
 											}
-										}, `${p}:${e.id}`);
+										}, `${m}:${e.id}`);
 									}),
-									x === "construct" ? /* @__PURE__ */ (0, Q.jsx)(vl, {
-										showFinishes: !Ce.visible,
-										nameFocusRequest: a,
-										onNameFocusHandled: r,
-										namingDisabled: e.adjusting || S || C || w || ye || !!A.drawStart || o || ae,
-										onRoomNameChange: (e, t) => A.updateRoom(e, { name: t }),
-										floor: A.previewFloor,
-										items: I,
-										furnishingModels: H,
-										deviceModels: te
+									S === "construct" ? /* @__PURE__ */ (0, Q.jsx)(Cl, {
+										showFinishes: !xe.visible,
+										nameFocusRequest: o,
+										onNameFocusHandled: i,
+										namingDisabled: t.adjusting || C || w || T || ge || !!M.drawStart || s || oe,
+										onRoomNameChange: (e, t) => M.updateRoom(e, { name: t }),
+										floor: M.previewFloor,
+										items: L,
+										furnishingModels: ne,
+										deviceModels: H
 									}) : null,
-									/* @__PURE__ */ (0, Q.jsx)(cl, {
-										active: x === "furnish",
-										children: /* @__PURE__ */ (0, Q.jsx)(Me, {
-											manifest: ne,
-											activeFloorId: p,
-											floorView: O === "top" ? "plan" : "cutaway",
+									/* @__PURE__ */ (0, Q.jsx)(pl, {
+										active: S === "furnish",
+										children: /* @__PURE__ */ (0, Q.jsx)(je, {
+											manifest: re,
+											activeFloorId: m,
+											floorView: k === "top" ? "plan" : "cutaway",
 											interactionMode: "editor",
-											architectureModels: On,
-											selectedRoomId: re,
+											architectureModels: En,
+											selectedRoomId: ie,
 											walkMode: !1,
-											wallFadeEnabled: O === "3d",
+											wallFadeEnabled: k === "3d",
 											reducedMotion: !0,
-											resolvedBindings: ie,
-											deviceModels: te,
+											resolvedBindings: ae,
+											deviceModels: H,
 											openingPositions: {},
-											onInteract: Sl
+											onInteract: Dl
 										})
 									}),
-									x === "construct" && /* @__PURE__ */ (0, Q.jsx)(ga, {
-										draft: A.draft,
-										floor: A.previewFloor,
-										selection: ae ? null : A.selection,
-										deletionTargets: ae ? [] : A.deletionTargets,
-										tool: A.tool,
-										paintTarget: oe,
-										drawingPoints: V.points,
-										drawingPreview: V.preview,
-										drawingRoomId: V.roomId,
-										onPaintRoom: U,
-										onSelectZone: A.selectFloorZone,
-										onUpdateZone: (e, t) => A.updateFloorZone(e, { polygon: t }),
-										onDraggingChange: se
+									S === "construct" && /* @__PURE__ */ (0, Q.jsx)(ya, {
+										draft: M.draft,
+										floor: M.previewFloor,
+										selection: oe ? null : M.selection,
+										deletionTargets: oe ? [] : M.deletionTargets,
+										tool: M.tool,
+										paintTarget: se,
+										drawingPoints: B.points,
+										drawingPreview: B.preview,
+										drawingRoomId: B.roomId,
+										onPaintRoom: ce,
+										onSelectZone: M.selectFloorZone,
+										onUpdateZone: (e, t) => M.updateFloorZone(e, { polygon: t }),
+										onDraggingChange: U
 									}),
-									x === "construct" && /* @__PURE__ */ (0, Q.jsx)(oa, {
-										doorConfiguration: A.doorConfiguration,
-										referenceWalls: _.referenceWalls,
+									S === "construct" && /* @__PURE__ */ (0, Q.jsx)(la, {
+										doorConfiguration: M.doorConfiguration,
+										referenceWalls: v.referenceWalls,
 										planMode: !0,
-										draft: A.draft,
-										coordinates: A.previewFloor.coordinates,
-										rooms: A.previewFloor.rooms,
-										selection: A.selection,
-										deletionTargets: A.deletionTargets,
-										previewFloor: A.previewFloor,
-										wallRuns: A.wallRuns,
-										tool: A.tool,
-										drawStart: A.tool === "pool" || A.tool === "platform" ? B.points.at(-1) ?? null : A.drawStart,
-										drawPreview: A.tool === "pool" || A.tool === "platform" ? B.preview : A.drawPreview,
-										drawAngleReferenceRadians: A.tool === "wall" ? A.drawAngleReferenceRadians : null,
-										wallExteriorColor: A.exteriorWallColor,
-										poolPoints: B.points,
-										floorPaintTarget: oe,
-										floorZonePoints: V.points,
-										floorZonePreview: V.preview,
-										onCancelFloorZone: V.cancel,
+										draft: M.draft,
+										coordinates: M.previewFloor.coordinates,
+										rooms: M.previewFloor.rooms,
+										selection: M.selection,
+										deletionTargets: M.deletionTargets,
+										previewFloor: M.previewFloor,
+										wallRuns: M.wallRuns,
+										tool: M.tool,
+										drawStart: M.tool === "pool" || M.tool === "platform" ? z.points.at(-1) ?? null : M.drawStart,
+										drawPreview: M.tool === "pool" || M.tool === "platform" ? z.preview : M.drawPreview,
+										drawAngleReferenceRadians: M.tool === "wall" ? M.drawAngleReferenceRadians : null,
+										wallExteriorColor: M.exteriorWallColor,
+										poolPoints: z.points,
+										floorPaintTarget: se,
+										floorZonePoints: B.points,
+										floorZonePreview: B.preview,
+										onCancelFloorZone: B.cancel,
 										measurePhase: W.phase,
 										onSelectWall: (e) => {
-											ce(null), A.selectWall(e);
+											le(null), M.selectWall(e);
 										},
 										onSelectOpening: (e) => {
-											ce(null), A.selectOpening(e);
+											le(null), M.selectOpening(e);
 										},
-										onSelectRoom: A.selectRoom,
-										onSelectMany: A.selectMany,
-										onClearSelection: E,
-										onMoveEndpoint: A.updateWallEndpoint,
-										onTranslateWall: A.translateWall,
-										onMoveOpening: A.moveOpening,
-										onResizeOpening: A.resizeSelectedOpening,
-										onPlaceOpening: A.placeOpening,
-										onBeginWall: A.tool === "pool" || A.tool === "platform" ? B.place : A.beginWall,
-										onPreviewWall: A.tool === "pool" || A.tool === "platform" ? B.previewPoint : A.previewWall,
-										onAddWall: A.tool === "pool" || A.tool === "platform" ? B.place : A.addWall,
-										onCancelWall: A.tool === "pool" || A.tool === "platform" ? B.cancel : A.cancelWall,
+										onSelectRoom: M.selectRoom,
+										onSelectMany: M.selectMany,
+										onClearSelection: D,
+										onMoveEndpoint: M.updateWallEndpoint,
+										onTranslateWall: M.translateWall,
+										onMoveOpening: M.moveOpening,
+										onResizeOpening: M.resizeSelectedOpening,
+										onPlaceOpening: M.placeOpening,
+										onBeginWall: M.tool === "pool" || M.tool === "platform" ? z.place : M.beginWall,
+										onPreviewWall: M.tool === "pool" || M.tool === "platform" ? z.previewPoint : M.previewWall,
+										onAddWall: M.tool === "pool" || M.tool === "platform" ? z.place : M.addWall,
+										onCancelWall: M.tool === "pool" || M.tool === "platform" ? z.cancel : M.cancelWall,
 										onPlaceMeasure: W.place,
 										onPreviewMeasure: W.preview,
-										onPlaceFloorZonePoint: V.place,
-										onPreviewFloorZonePoint: V.previewPoint,
-										onDraggingChange: se,
-										onMarqueeChange: le
+										onPlaceFloorZonePoint: B.place,
+										onPreviewFloorZonePoint: B.previewPoint,
+										onDraggingChange: U,
+										onMarqueeChange: ue
 									}),
-									x === "construct" && !S && /* @__PURE__ */ (0, Q.jsx)(rl, {
-										editor: A,
-										onDraggingChange: se
+									S === "construct" && !C && /* @__PURE__ */ (0, Q.jsx)(cl, {
+										editor: M,
+										onDraggingChange: U
 									}),
-									x === "construct" && /* @__PURE__ */ (0, Q.jsx)(jc, {
-										draft: A.draft,
-										selection: ae ? null : A.selection,
-										tool: A.tool,
-										points: B.points,
-										preview: B.preview,
-										deletionTargets: A.deletionTargets,
-										selectedEdgeId: A.selectedPlatformEdgeId,
-										onSelect: A.selectPlatform,
-										onSelectEdge: A.selectPlatformEdge,
-										onUpdate: (e, t) => A.updatePlatform(e, { polygon: t }),
-										onDraggingChange: se
+									S === "construct" && /* @__PURE__ */ (0, Q.jsx)(Ic, {
+										draft: M.draft,
+										selection: oe ? null : M.selection,
+										tool: M.tool,
+										points: z.points,
+										preview: z.preview,
+										deletionTargets: M.deletionTargets,
+										selectedEdgeId: M.selectedPlatformEdgeId,
+										onSelect: M.selectPlatform,
+										onSelectEdge: M.selectPlatformEdge,
+										onUpdate: (e, t) => M.updatePlatform(e, { polygon: t }),
+										onDraggingChange: U
 									}),
-									x === "construct" && /* @__PURE__ */ (0, Q.jsx)(pa, {
-										draft: A.draft,
-										selection: ae ? null : A.selection,
-										tool: A.tool,
-										points: B.points,
-										preview: B.preview,
-										deletionTargets: ae ? [] : A.deletionTargets,
-										onSelect: A.selectPool,
-										onUpdate: A.updatePool,
-										onDraggingChange: se
+									S === "construct" && /* @__PURE__ */ (0, Q.jsx)(ga, {
+										draft: M.draft,
+										selection: oe ? null : M.selection,
+										tool: M.tool,
+										points: z.points,
+										preview: z.preview,
+										deletionTargets: oe ? [] : M.deletionTargets,
+										onSelect: M.selectPool,
+										onUpdate: M.updatePool,
+										onDraggingChange: U
 									}),
-									x === "construct" && !ae && /* @__PURE__ */ (0, Q.jsx)(nl, {
-										editor: A,
-										disabled: j || S
+									S === "construct" && !oe && /* @__PURE__ */ (0, Q.jsx)(sl, {
+										editor: M,
+										disabled: N || C
 									}),
-									x === "construct" && !ae && ue && /* @__PURE__ */ (0, Q.jsx)(sl, {
-										opening: ue,
-										draft: A.draft,
-										detailsOpen: de === ue.id,
-										disabled: j || S,
-										canDuplicate: A.canDuplicateOpening(ue.id),
-										onDetails: () => fe((e) => e === ue.id ? null : ue.id),
-										onChange: (e) => A.dispatch({
+									S === "construct" && !oe && de && /* @__PURE__ */ (0, Q.jsx)(fl, {
+										opening: de,
+										draft: M.draft,
+										disabled: N || C,
+										canDuplicate: M.canDuplicateOpening(de.id),
+										onChange: (e) => M.dispatch({
 											type: "reorient-opening",
-											openingId: ue.id,
+											openingId: de.id,
 											change: e
 										}),
-										onDuplicate: () => pe(ue.id),
-										onDelete: A.deleteSelected
-									}, ue.id),
-									x === "construct" && A.tool === "measure" && /* @__PURE__ */ (0, Q.jsx)(Ga, {
+										onDuplicate: () => fe(de.id),
+										onDelete: M.deleteSelected
+									}, de.id),
+									S === "construct" && M.tool === "measure" && /* @__PURE__ */ (0, Q.jsx)(Na, {
 										planMode: !0,
 										measurement: W.measurement,
 										preview: W.phase === "drawing",
 										onCopy: (e) => void navigator.clipboard?.writeText(e)
 									}),
-									x === "furnish" && O === "top" && /* @__PURE__ */ (0, Q.jsx)(Is, { floor: A.previewFloor }),
-									x === "furnish" && O === "3d" && ne.floors.slice(0, ne.floors.findIndex((e) => e.id === p)).map((e) => /* @__PURE__ */ (0, Q.jsx)("group", {
+									S === "furnish" && k === "top" && /* @__PURE__ */ (0, Q.jsx)(Ts, { floor: M.previewFloor }),
+									S === "furnish" && k === "3d" && re.floors.slice(0, re.floors.findIndex((e) => e.id === m)).map((e) => /* @__PURE__ */ (0, Q.jsx)("group", {
 										position: [
 											0,
-											(we.find((t) => t.floorId === e.id)?.elevationMeters ?? 0) - Te,
+											(Se.find((t) => t.floorId === e.id)?.elevationMeters ?? 0) - Ce,
 											0
 										],
-										children: /* @__PURE__ */ (0, Q.jsx)(Os, {
-											items: ne.sceneItems.filter((t) => t.floorId === e.id),
+										children: /* @__PURE__ */ (0, Q.jsx)(_s, {
+											items: re.sceneItems.filter((t) => t.floorId === e.id),
 											floor: e,
-											furnishingModels: H,
-											deviceModels: te,
+											furnishingModels: ne,
+											deviceModels: H,
 											selectedId: null,
 											selectionOnly: !0,
-											onSelect: u,
-											onMovePlacement: Sl
+											onSelect: d,
+											onMovePlacement: Dl
 										})
 									}, e.id)),
-									x === "furnish" && /* @__PURE__ */ (0, Q.jsx)(Os, {
-										items: me,
-										floor: c,
-										furnishingModels: H,
-										deviceModels: te,
+									S === "furnish" && /* @__PURE__ */ (0, Q.jsx)(_s, {
+										items: pe,
+										floor: u,
+										furnishingModels: ne,
+										deviceModels: H,
 										selectedId: G.selectedId,
 										selectedIds: G.selectedIds,
 										onSelectMany: G.selectMany,
@@ -13493,79 +13707,77 @@ function Cl({ reference: e, northOrientation: t, onStairIssuesChange: n, onNameF
 										onDragStart: G.beginTransaction,
 										onDragEnd: G.commitTransaction,
 										onDragCancel: G.cancelTransaction,
-										onDraggingChange: se
+										onDraggingChange: U
 									}),
-									x === "furnish" && he && ge && /* @__PURE__ */ (0, Q.jsx)(hl, {
-										item: he,
-										definition: ge,
-										floor: c,
-										busy: j || !!G.transaction,
+									S === "furnish" && me && he && /* @__PURE__ */ (0, Q.jsx)(bl, {
+										item: me,
+										definition: he,
+										floor: u,
+										busy: N || !!G.transaction,
 										onRotate: G.rotate,
 										onResize: G.updateSize,
 										onMovePlacement: G.updatePlacement,
 										onSelect: G.select,
 										onBegin: () => {
-											G.beginTransaction(), se(!0);
+											G.beginTransaction(), U(!0);
 										},
 										onCommit: () => {
-											G.commitTransaction(), se(!1);
+											G.commitTransaction(), U(!1);
 										},
 										onCancel: () => {
-											G.cancelTransaction(), se(!1);
+											G.cancelTransaction(), U(!1);
 										},
 										actions: {
-											detailsOpen: _e === he.id,
-											onDetails: () => ve((e) => e === he.id ? null : he.id),
-											onMap: he.kind === "device" && he.entitySlots.length > 0 && !ye ? () => {
-												T.selectDevice(he.id) && K("connect", !0);
+											onMap: me.kind === "device" && me.entitySlots.length > 0 && !ge ? () => {
+												E.selectDevice(me.id) && _e("connect", !0);
 											} : void 0,
-											onDuplicate: () => be(he.id),
-											onDelete: () => xe(he.id)
+											onDuplicate: () => ve(me.id),
+											onDelete: () => ye(me.id)
 										}
-									}, he.id)
+									}, me.id)
 								]
 							}),
-							x === "construct" && m && /* @__PURE__ */ (0, Q.jsx)(il, {
-								registries: Se,
-								onIssuesChange: n,
-								building: y.project,
-								stair: m,
-								coordinates: y.project.coordinates,
-								onDraggingChange: se,
-								onCancel: () => h(null),
+							S === "construct" && h && /* @__PURE__ */ (0, Q.jsx)(ll, {
+								registries: be,
+								onIssuesChange: r,
+								building: b.project,
+								stair: h,
+								coordinates: b.project.coordinates,
+								onDraggingChange: U,
+								onCancel: () => g(null),
 								onComplete: (e) => {
 									let t = {
-										...y.project,
-										stairs: [...y.project.stairs, e]
+										...b.project,
+										stairs: [...b.project.stairs, e]
 									};
-									v({
-										...y,
+									y({
+										...b,
 										project: t
-									}), h(null), g(e);
+									}), g(null), _(e);
 								}
-							}, `${p}:${m.shape ?? "straight"}`)
+							}, `${m}:${h.shape ?? "straight"}`)
 						]
 					})
 				})
 			}),
-			t.active && /* @__PURE__ */ (0, Q.jsx)(Oc, {
-				angle: t.angle,
-				onRotate: t.rotate,
-				onCancel: t.cancel,
-				onConfirm: t.confirm
+			n.active && /* @__PURE__ */ (0, Q.jsx)(Nc, {
+				angle: n.angle,
+				onRotate: n.rotate,
+				onCancel: n.cancel,
+				onConfirm: n.confirm
 			}),
-			Ce.controls,
-			Ce.assetError && x === "construct" && /* @__PURE__ */ (0, Q.jsx)("p", {
+			xe.controls,
+			xe.assetError && S === "construct" && /* @__PURE__ */ (0, Q.jsx)("p", {
 				className: "reference-asset-error",
 				role: "alert",
-				children: Ce.assetError
+				children: xe.assetError
 			})
 		]
 	});
 }
 //#endregion
 //#region apps/web/src/editor-workspace/useNorthOrientation.ts
-function wl({ scope: e, enabled: t, snapshot: n, commit: r }) {
+function kl({ scope: e, enabled: t, snapshot: n, commit: r }) {
 	let [i, a] = (0, Z.useState)(null);
 	(0, Z.useEffect)(() => a(null), [e]);
 	let o = t && i?.scope === e, s = i?.angle ?? n.project.home.northAngleDegrees ?? 0;
@@ -13599,14 +13811,14 @@ function wl({ scope: e, enabled: t, snapshot: n, commit: r }) {
 }
 //#endregion
 //#region apps/web/src/editor-floors/useAdjacentFloorReferences.ts
-var Tl = ["above", "below"];
-function El(e, t) {
+var Al = ["above", "below"];
+function jl(e, t) {
 	let [n, r] = (0, Z.useState)({
 		above: !0,
 		below: !0
 	}), i = (0, Z.useMemo)(() => {
 		let r = e.findIndex((e) => e.id === t);
-		return r < 0 ? [] : Tl.flatMap((t) => {
+		return r < 0 ? [] : Al.flatMap((t) => {
 			let i = e[r + (t === "above" ? 1 : -1)];
 			return i ? [{
 				direction: t,
@@ -13630,16 +13842,16 @@ function El(e, t) {
 		}
 	};
 }
-var Dl = /* @__PURE__ */ new Set([
+var Ml = /* @__PURE__ */ new Set([
 	"image/png",
 	"image/jpeg",
 	"image/webp",
 	"image/svg+xml"
 ]);
-function Ol(e, t) {
+function Nl(e, t) {
 	if (!Number.isFinite(e * t) || e <= 0 || t <= 0 || e * t > 32e6) throw Error("Choose an image with positive dimensions and no more than 32 megapixels.");
 }
-function kl(e) {
+function Pl(e) {
 	if (/<!DOCTYPE|<!ENTITY/i.test(e)) throw Error("SVG declarations are unsupported. Export a plain SVG or PNG.");
 	let t = new DOMParser().parseFromString(e, "image/svg+xml");
 	if (t.querySelector("parsererror") || t.documentElement.localName !== "svg") throw Error("This SVG could not be read. Export it again or choose a PNG.");
@@ -13663,7 +13875,7 @@ function kl(e) {
 	if (/@import|@font-face|\\|\/\*/i.test(n) || /url\(\s*["']?(?!#)/i.test(n.replace(/url\(\s*(['"])(#[^'"]+)\1\s*\)/gi, "url($2)"))) throw Error("This SVG uses unsupported styles or external resources. Export a plain SVG or PNG.");
 	if (t.createTreeWalker(t, 64).nextNode()) throw Error("SVG processing instructions are unsupported. Export a plain SVG or PNG.");
 }
-async function Al(e) {
+async function Fl(e) {
 	if (e.size > 20971520) throw Error("Choose an image smaller than 20 MB.");
 	let t = e.name.split(".").at(-1)?.toLowerCase(), n = e.type || {
 		png: "image/png",
@@ -13672,9 +13884,9 @@ async function Al(e) {
 		webp: "image/webp",
 		svg: "image/svg+xml"
 	}[t ?? ""];
-	if (!n || !Dl.has(n)) throw Error("Choose a PNG, JPEG, WebP, or SVG image.");
+	if (!n || !Ml.has(n)) throw Error("Choose a PNG, JPEG, WebP, or SVG image.");
 	let r = e.slice(0, e.size, n);
-	if (n === "image/svg+xml") kl(await r.text());
+	if (n === "image/svg+xml") Pl(await r.text());
 	else {
 		let e = new Uint8Array(await r.slice(0, 12).arrayBuffer());
 		if (!(n === "image/png" ? [
@@ -13693,7 +13905,7 @@ async function Al(e) {
 		let e = new Image();
 		return e.src = i, await e.decode().catch(() => {
 			throw Error("This image could not be read. Export it again or choose another image.");
-		}), Ol(e.naturalWidth, e.naturalHeight), {
+		}), Nl(e.naturalWidth, e.naturalHeight), {
 			blob: r,
 			width: e.naturalWidth,
 			height: e.naturalHeight
@@ -13704,8 +13916,8 @@ async function Al(e) {
 }
 //#endregion
 //#region apps/web/src/editor-reference-plan/useReferencePlan.ts
-function jl(e, t, n, r) {
-	let { events: i } = ze(), a = e.referenceStorage, { preferences: o, setPreference: s, ready: c, addAsset: l } = a, u = (0, Z.useRef)(null), d = e.snapshot.references?.[t], f = o[t] ?? Nc, [p, m] = (0, Z.useState)(null), [h, g] = (0, Z.useState)(!1), [_, v] = (0, Z.useState)([]), [y, b] = (0, Z.useState)(null), [x, S] = (0, Z.useState)(!1), [C, w] = (0, Z.useState)(!0), T = (0, Z.useRef)({
+function Il(e, t, n, r) {
+	let { events: i } = ze(), a = e.referenceStorage, { preferences: o, setPreference: s, ready: c, addAsset: l } = a, u = (0, Z.useRef)(null), d = e.snapshot.references?.[t], f = o[t] ?? Rc, [p, m] = (0, Z.useState)(null), [h, g] = (0, Z.useState)(!1), [_, v] = (0, Z.useState)([]), [y, b] = (0, Z.useState)(null), [x, S] = (0, Z.useState)(!1), [C, w] = (0, Z.useState)(!0), T = (0, Z.useRef)({
 		center: [0, 0],
 		width: 15,
 		height: 10
@@ -13730,7 +13942,7 @@ function jl(e, t, n, r) {
 			...f,
 			visible: !0
 		}));
-	}, P = (e) => {
+	}, N = (e) => {
 		if (!Number.isFinite(e.width) || e.width < .01 || !Number.isFinite(e.angle) || !e.center.every(Number.isFinite)) {
 			b("Enter a positive width of at least 0.01 m and finite coordinates.");
 			return;
@@ -13769,7 +13981,7 @@ function jl(e, t, n, r) {
 		calibrating: h,
 		disabled: r || x || !c,
 		begin: M,
-		update: P,
+		update: N,
 		cancel: j,
 		done: () => {
 			!p || O.current || (e.commitReferences({
@@ -13786,9 +13998,9 @@ function jl(e, t, n, r) {
 			let i = e[0], a = ++E.current;
 			S(!0), b(null);
 			try {
-				let e = await Al(i);
+				let e = await Fl(i);
 				if (a !== E.current) return;
-				let n = N();
+				let n = lt();
 				l(n, e.blob);
 				let r = T.current, o = .8 * Math.min(r.width, r.height * e.width / e.height);
 				D.current = {
@@ -13805,7 +14017,7 @@ function jl(e, t, n, r) {
 						width: o,
 						angle: 0
 					}
-				}), w(!0), g(!1), v([]), s(t, Nc);
+				}), w(!0), g(!1), v([]), s(t, Rc);
 			} catch (e) {
 				a === E.current && b(e instanceof Error ? e.message : "Could not open this image.");
 			} finally {
@@ -13814,9 +14026,9 @@ function jl(e, t, n, r) {
 		},
 		calibrate: (e) => {
 			if (!(!k || _.length !== 2)) try {
-				let t = Rc(k, _[0], _[1], e);
+				let t = Uc(k, _[0], _[1], e);
 				if (!Number.isFinite(t.width) || t.width < .01 || !t.center.every(Number.isFinite)) throw Error("This scale is outside the supported range. The image width must be at least 0.01 m.");
-				P(t), g(!1), v([]);
+				N(t), g(!1), v([]);
 			} catch (e) {
 				b(e.message);
 			}
@@ -13841,7 +14053,7 @@ function jl(e, t, n, r) {
 }
 //#endregion
 //#region apps/web/src/editor-workspace/useEditorIssueNavigation.ts
-function Ml({ activeFloorId: e, previewFloorId: t, selectFloor: n, focusCameraIssue: r, selectMode: i }) {
+function Ll({ activeFloorId: e, previewFloorId: t, selectFloor: n, focusCameraIssue: r, selectMode: i }) {
 	let [a, o] = (0, Z.useState)(null), s = (0, Z.useCallback)((t) => {
 		t.floorId && t.floorId !== e ? (o(t), n(t.floorId)) : r(t, i);
 	}, [
@@ -13861,7 +14073,7 @@ function Ml({ activeFloorId: e, previewFloorId: t, selectFloor: n, focusCameraIs
 }
 //#endregion
 //#region apps/web/src/editor-workspace/useEditorCamera.ts
-function Nl({ initialRequest: e, constructEditor: t, furnishingEditor: n, previewSceneItems: r }) {
+function Rl({ initialRequest: e, constructEditor: t, furnishingEditor: n, previewSceneItems: r }) {
 	let { previewFloor: i, selectOpening: a, selectPool: o, selectPlatform: s, selectFloorZone: c, selectRoom: l, selectWall: u, setTool: d, wallRuns: f } = t, { select: p } = n, [m, h] = (0, Z.useState)(e?.arrange?.camera?.view ?? "3d"), g = (0, Z.useRef)(e?.arrange?.camera ?? null), [_, v] = (0, Z.useState)(0), [y, b] = (0, Z.useState)(null), [x, S] = (0, Z.useState)(null), [C, w] = (0, Z.useState)(null), [T, E] = (0, Z.useState)(0), [D, O] = (0, Z.useState)(null);
 	return {
 		cameraView: m,
@@ -13880,11 +14092,11 @@ function Nl({ initialRequest: e, constructEditor: t, furnishingEditor: n, previe
 		setSelectedRoomId: O,
 		focusRoom: (e) => {
 			let t = i.rooms.find((t) => t.id === e);
-			t && (O(e), b(e), S(qe(t.polygon)), v((e) => e + 1));
+			t && (O(e), b(e), S(Ke(t.polygon)), v((e) => e + 1));
 		},
 		focusIssue: (0, Z.useCallback)((e, t) => {
 			b(null);
-			let n = Xa(e, i, r), m = e.target && e.target.kind !== "junction" ? e.target : n.find((e) => e.kind === "scene-item" || e.kind === "opening" || e.kind === "niche") ?? n[0], h = m?.kind === "scene-item" ? m : void 0;
+			let n = Ra(e, i, r), m = e.target && e.target.kind !== "junction" ? e.target : n.find((e) => e.kind === "scene-item" || e.kind === "opening" || e.kind === "niche") ?? n[0], h = m?.kind === "scene-item" ? m : void 0;
 			if (h) t("furnish"), p(h.id);
 			else if (t("construct"), d("select"), m?.kind === "opening" || m?.kind === "niche") a(m.id);
 			else if (m?.kind === "pool") o(m.id);
@@ -13895,7 +14107,7 @@ function Nl({ initialRequest: e, constructEditor: t, furnishingEditor: n, previe
 				let e = i.ceilings?.find((e) => e.id === m.id)?.roomIds[0];
 				e && l(e);
 			} else m?.kind === "wall" && u(f.find((e) => e.wallId === m.id)?.sourceWallId ?? m.id);
-			w(Ya(e)), E((e) => e + 1), S(m ? eo(m, i, r) : to(e, i, r)), v((e) => e + 1);
+			w(La(e)), E((e) => e + 1), S(m ? Ha(m, i, r) : Ua(e, i, r)), v((e) => e + 1);
 		}, [
 			i,
 			a,
@@ -13913,13 +14125,13 @@ function Nl({ initialRequest: e, constructEditor: t, furnishingEditor: n, previe
 }
 //#endregion
 //#region apps/web/src/editor-preview/furnish/placement/item-creation.ts
-function Pl(e, t, n, r, i) {
-	let a = is([
+function zl(e, t, n, r, i) {
+	let a = qo([
 		...r,
 		...n.map((e) => e.id),
 		...n.flatMap((e) => e.kind === "device" ? e.entitySlots.map((e) => e.id) : [])
 	]), o = {
-		variant: W(e.definition).id,
+		variant: ce(e.definition).id,
 		id: a,
 		floorId: i,
 		modelId: e.modelId,
@@ -13932,7 +14144,7 @@ function Pl(e, t, n, r, i) {
 	};
 	let s = e.definition.supportedDomains[0];
 	if (!s) throw Error(`${e.definition.label} has no supported device domain.`);
-	let c = is([
+	let c = qo([
 		...r,
 		a,
 		...n.map((e) => e.id),
@@ -13960,8 +14172,8 @@ function Pl(e, t, n, r, i) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/furnish/placement/catalog-start-placement.ts
-var Fl = (e, t, n) => {
-	let r = Y(e.placement, n), i = ps(e, t, .035), a = Math.cos(r.rotationYRadians), o = Math.sin(r.rotationYRadians);
+var Bl = (e, t, n) => {
+	let r = Ne(e.placement, n), i = ns(e, t, .035), a = Math.cos(r.rotationYRadians), o = Math.sin(r.rotationYRadians);
 	return {
 		x: r.position[0] + i.center[0] * a + i.center[2] * o,
 		z: r.position[2] - i.center[0] * o + i.center[2] * a,
@@ -13969,24 +14181,24 @@ var Fl = (e, t, n) => {
 		depth: Math.abs(o) * i.size[0] + Math.abs(a) * i.size[2]
 	};
 };
-function Il(e, t, n, r, i) {
+function Vl(e, t, n, r, i) {
 	let a = (n, r = e.definition.defaultSize) => {
 		if (!i) return !0;
-		let a = Y(n, t), o = ps({ size: r }, e.definition, .035), s = Math.cos(a.rotationYRadians), c = Math.sin(a.rotationYRadians);
+		let a = Ne(n, t), o = ns({ size: r }, e.definition, .035), s = Math.cos(a.rotationYRadians), c = Math.sin(a.rotationYRadians);
 		return i([
 			a.position[0] + o.center[0] * s + o.center[2] * c,
 			a.position[1] + o.center[1],
 			a.position[2] - o.center[0] * c + o.center[2] * s
 		]);
 	}, o = (...e) => {
-		let t = Ho(...e);
+		let t = Ao(...e);
 		return t.placement && !a(t.placement) ? {
 			placement: null,
 			error: "No suitable support in the current view. Pan or zoom out and try again."
 		} : t;
 	};
 	if (e.definition.windowFit) {
-		let i = Uo(e.definition, t, n).filter((e) => a(e.placement, e.size)), o = i.find((t) => !r?.items.some((n) => n.modelId === e.modelId && n.placement.kind === "wall" && t.placement.kind === "wall" && n.placement.wallId === t.placement.wallId && n.placement.face === t.placement.face && Math.abs(n.placement.offsetFromWallStartPlanUnits - t.placement.offsetFromWallStartPlanUnits) < .01)) ?? i[0];
+		let i = Mo(e.definition, t, n).filter((e) => a(e.placement, e.size)), o = i.find((t) => !r?.items.some((n) => n.modelId === e.modelId && n.placement.kind === "wall" && t.placement.kind === "wall" && n.placement.wallId === t.placement.wallId && n.placement.face === t.placement.face && Math.abs(n.placement.offsetFromWallStartPlanUnits - t.placement.offsetFromWallStartPlanUnits) < .01)) ?? i[0];
 		return o ? {
 			placement: o.placement,
 			size: o.size,
@@ -13998,7 +14210,7 @@ function Il(e, t, n, r, i) {
 	}
 	let { origin: s, metersPerPlanUnit: c } = t.coordinates, l = r?.items.flatMap((e) => {
 		let n = (e.kind === "device" ? r.deviceModels : r.furnishingModels)[e.modelId];
-		return n ? [Fl(e, n, t)] : [];
+		return n ? [Bl(e, n, t)] : [];
 	}) ?? [], u = l.map((e, t) => ({
 		kind: "box",
 		id: String(t),
@@ -14007,7 +14219,7 @@ function Il(e, t, n, r, i) {
 		minZ: e.z - e.depth / 2,
 		maxZ: e.z + e.depth / 2
 	})), { min: d, max: f } = e.definition.bounds, p = Math.hypot(Math.max(Math.abs(d[0]), Math.abs(f[0])), Math.max(Math.abs(d[2]), Math.abs(f[2]))) + .035, m = (n) => {
-		let r = Fl({
+		let r = Bl({
 			placement: n,
 			size: e.definition.defaultSize
 		}, e.definition, t);
@@ -14016,11 +14228,11 @@ function Il(e, t, n, r, i) {
 	if (e.definition.placementEnvironment === "outdoor") {
 		let r = (t.footprintRegions ?? [t.footprint]).flat(), i = r.map((e) => e[0]), a = r.map((e) => e[1]), s = Math.min(...i), l = Math.max(...i), u = Math.min(...a), d = Math.max(...a), f = (p + .45) / c, h = (e, t, n) => Math.max(t, Math.min(n, e)), g = (t.outdoorPlatforms ?? []).flatMap((e) => {
 			let t = [];
-			Kt(n, e.polygon) && t.push(n);
+			K(n, e.polygon) && t.push(n);
 			let r = [e.polygon.reduce((e, t) => e + t[0], 0) / e.polygon.length, e.polygon.reduce((e, t) => e + t[1], 0) / e.polygon.length];
-			return Kt(r, e.polygon) && t.push(r), t;
+			return K(r, e.polygon) && t.push(r), t;
 		});
-		Pe(n, t) && g.push(n), g.push([h(n[0], s, l), u - f], [l + f, h(n[1], u, d)], [h(n[0], s, l), d + f], [s - f, h(n[1], u, d)]);
+		rn(n, t) && g.push(n), g.push([h(n[0], s, l), u - f], [l + f, h(n[1], u, d)], [h(n[0], s, l), d + f], [s - f, h(n[1], u, d)]);
 		for (let e = 0; e <= 4; e += 1) {
 			let t = e / 4;
 			g.push([s + (l - s) * t, u - f], [l + f, u + (d - u) * t], [l - (l - s) * t, d + f], [s - f, d - (d - u) * t]);
@@ -14048,7 +14260,7 @@ function Il(e, t, n, r, i) {
 			at: i,
 			distance: Math.hypot(i[0] - n[0], i[1] - n[1])
 		}];
-	}).sort((e, t) => Number(Kt(n, t.room.polygon)) - Number(Kt(n, e.room.polygon)) || e.distance - t.distance), g = e.definition.preferredPlacement, _ = null;
+	}).sort((e, t) => Number(K(n, t.room.polygon)) - Number(K(n, e.room.polygon)) || e.distance - t.distance), g = e.definition.preferredPlacement, _ = null;
 	for (let { room: r, at: i } of h) {
 		let a = [];
 		for (let e of [
@@ -14059,7 +14271,7 @@ function Il(e, t, n, r, i) {
 			2
 		]) for (let t = 0; t < (e ? 8 : 1); t += 1) {
 			let i = [n[0] + Math.cos(t * Math.PI / 4) * e / c, n[1] + Math.sin(t * Math.PI / 4) * e / c];
-			Kt(i, r.polygon) && a.push(i);
+			K(i, r.polygon) && a.push(i);
 		}
 		if (a.push(i), l.length) {
 			let e = Fe(r, t, u, p);
@@ -14083,7 +14295,7 @@ function Il(e, t, n, r, i) {
 					raw: !0
 				});
 				if (!i.placement) return [];
-				let { position: a } = Y(i.placement, t);
+				let { position: a } = Ne(i.placement, t);
 				return [{
 					candidate: i,
 					distance: Math.hypot(a[0] - (n[0] - s[0]) * c, a[2] - (n[1] - s[1]) * c)
@@ -14099,47 +14311,47 @@ function Il(e, t, n, r, i) {
 }
 //#endregion
 //#region apps/web/src/editor-workspace/useEditorCatalog.ts
-function Ll({ projection: e, furnishingEditor: t, disabled: n, onAdded: r }) {
-	let { placementFloor: i, visualSceneItems: a, furnishingModels: o, deviceModels: s, editorProject: c } = e, { items: l, addItem: u } = t, d = (0, Z.useRef)(null), f = (0, Z.useRef)(() => !1), p = (0, Z.useCallback)((e, t) => {
-		d.current = e, f.current = t;
-	}, []), [m, h] = (0, Z.useState)({
+function Hl({ projection: e, furnishingEditor: t, disabled: n }) {
+	let { placementFloor: r, visualSceneItems: i, furnishingModels: a, deviceModels: o, editorProject: s } = e, { items: c, addItem: l } = t, u = (0, Z.useRef)(null), d = (0, Z.useRef)(() => !1), f = (0, Z.useCallback)((e, t) => {
+		u.current = e, d.current = t;
+	}, []), [p, m] = (0, Z.useState)({
 		room: "all",
 		query: ""
-	}), [g, _] = (0, Z.useState)(null), [v, y] = (0, Z.useState)("");
+	}), [h, g] = (0, Z.useState)(null), [_, v] = (0, Z.useState)("");
 	return {
-		catalogBrowsing: m,
-		setCatalogBrowsing: h,
-		catalogError: g,
-		setCatalogError: _,
-		arrangeAnnouncement: v,
+		catalogBrowsing: p,
+		setCatalogBrowsing: m,
+		catalogError: h,
+		setCatalogError: g,
+		arrangeAnnouncement: _,
 		addCatalogItem: (e) => {
 			if (n) return;
-			let t = Il(e, i, d.current ?? rn(i.footprint), {
-				items: a,
-				furnishingModels: o,
-				deviceModels: s
-			}, f.current);
-			if (_(t.error), !t.placement) return;
-			let p = Pl(e, t.placement, l, Ye(c), i.id);
-			u(t.size ? {
-				...p,
+			let t = Vl(e, r, u.current ?? Kt(r.footprint), {
+				items: i,
+				furnishingModels: a,
+				deviceModels: o
+			}, d.current);
+			if (g(t.error), !t.placement) return;
+			let f = zl(e, t.placement, c, Je(s), r.id);
+			l(t.size ? {
+				...f,
 				size: t.size
-			} : p), r(), y(`${e.definition.label} added. Drag to move it; use Undo to remove it.`);
+			} : f), v(`${e.definition.label} added. Drag to move it; use Undo to remove it.`);
 		},
-		handleCameraTargetChange: p
+		handleCameraTargetChange: f
 	};
 }
 //#endregion
 //#region apps/web/src/editor-connect/useConnectEditor.ts
-function Rl({ manifest: e, bindings: t, runtime: n, origin: r, active: i, onChange: a, initialRequest: o, routeView: s, onViewChange: c, floorId: l }) {
-	let u = r ? pe(r) : null, d = (0, Z.useMemo)(() => Pt(e.home.id), [e.home.id]), f = u ? t[u] : void 0, p = f?.draft ?? d, m = (0, Z.useMemo)(() => (e.floors.find((e) => e.id === l) ?? e.floors[0])?.rooms ?? [], [e.floors, l]), h = m.some((e) => !p.roomAreaIds[e.id]), g = m.length > 0 && !h ? "devices" : "rooms", [_, v] = (0, Z.useState)(o?.relationshipId ? "devices" : o?.view ?? g), y = c ? s ?? g : _, b = (e) => {
+function Ul({ manifest: e, bindings: t, runtime: n, origin: r, active: i, onChange: a, initialRequest: o, routeView: s, onViewChange: c, floorId: l }) {
+	let u = r ? de(r) : null, d = (0, Z.useMemo)(() => Mt(e.home.id), [e.home.id]), f = u ? t[u] : void 0, p = f?.draft ?? d, m = (0, Z.useMemo)(() => (e.floors.find((e) => e.id === l) ?? e.floors[0])?.rooms ?? [], [e.floors, l]), h = m.some((e) => !p.roomAreaIds[e.id]), g = m.length > 0 && !h ? "devices" : "rooms", [_, v] = (0, Z.useState)(o?.relationshipId ? "devices" : o?.view ?? g), y = c ? s ?? g : _, b = (e) => {
 		v(e), c?.(e);
-	}, [x, S] = (0, Z.useState)(() => (o?.relationshipId ? Nn(e, o.relationshipId)?.id : null) ?? o?.roomId ?? null), [C, w] = (0, Z.useState)(o?.relationshipId ?? null), [T, E] = (0, Z.useState)(null), [D, O] = (0, Z.useState)(null), k = n.status !== "connected" || n.origin !== u, A = (0, Z.useRef)(null);
+	}, [x, S] = (0, Z.useState)(() => (o?.relationshipId ? jn(e, o.relationshipId)?.id : null) ?? o?.roomId ?? null), [C, w] = (0, Z.useState)(o?.relationshipId ?? null), [T, E] = (0, Z.useState)(null), [D, O] = (0, Z.useState)(null), k = n.status !== "connected" || n.origin !== u, A = (0, Z.useRef)(null);
 	!k && u && (A.current = {
 		origin: u,
 		runtime: n
 	});
-	let j = k && A.current?.origin === u ? A.current.runtime : n, M = (0, Z.useMemo)(() => Ke(e, l ?? e.floors[0]?.id), [e, l]), N = M.find((e) => e.id === x) ?? null, P = (0, Z.useMemo)(() => Object.fromEntries(M.map((t) => [t.id, fe(e, t.id)])), [e, M]), F = N ? P[N.id] : [], I = (0, Z.useMemo)(() => Object.fromEntries(m.map((e) => {
+	let j = k && A.current?.origin === u ? A.current.runtime : n, M = (0, Z.useMemo)(() => Ge(e, l ?? e.floors[0]?.id), [e, l]), N = M.find((e) => e.id === x) ?? null, P = (0, Z.useMemo)(() => Object.fromEntries(M.map((t) => [t.id, ue(e, t.id)])), [e, M]), F = N ? P[N.id] : [], I = (0, Z.useMemo)(() => Object.fromEntries(m.map((e) => {
 		let t = P[e.id].map((e) => ({
 			...e,
 			relationships: e.relationships.filter((e) => e.kind !== "entity-slot" || e.slotKind !== "opening-contact" && e.slotKind !== "opening-cover" || e.slotIds.some((e) => !!p.entityIdsBySlotId[e]))
@@ -14153,7 +14365,7 @@ function Rl({ manifest: e, bindings: t, runtime: n, origin: r, active: i, onChan
 		P,
 		p.entityIdsBySlotId,
 		m
-	]), L = F.flatMap((e) => e.relationships).find((e) => e.id === C) ?? null, R = (0, Z.useRef)({
+	]), L = F.flatMap((e) => e.relationships).find((e) => e.id === C) ?? null, ee = (0, Z.useRef)({
 		manifest: e,
 		bindings: t,
 		state: f,
@@ -14163,7 +14375,7 @@ function Rl({ manifest: e, bindings: t, runtime: n, origin: r, active: i, onChan
 		runtime: n,
 		disconnected: k
 	});
-	R.current = {
+	ee.current = {
 		manifest: e,
 		bindings: t,
 		state: f,
@@ -14173,10 +14385,10 @@ function Rl({ manifest: e, bindings: t, runtime: n, origin: r, active: i, onChan
 		runtime: n,
 		disconnected: k
 	}, (0, Z.useEffect)(() => {
-		o?.relationshipId ? (S(Nn(R.current.manifest, o.relationshipId)?.id ?? o.roomId ?? null), w(o.relationshipId)) : o?.roomId && S(o.roomId);
+		o?.relationshipId ? (S(jn(ee.current.manifest, o.relationshipId)?.id ?? o.roomId ?? null), w(o.relationshipId)) : o?.roomId && S(o.roomId);
 	}, [o]);
-	let z = (0, Z.useCallback)((e, t = [], n = []) => {
-		let r = R.current;
+	let R = (0, Z.useCallback)((e, t = [], n = []) => {
+		let r = ee.current;
 		r.key && (r.onChange({
 			...r.bindings,
 			[r.key]: {
@@ -14186,27 +14398,27 @@ function Rl({ manifest: e, bindings: t, runtime: n, origin: r, active: i, onChan
 				manualSlotIds: [.../* @__PURE__ */ new Set([...r.state?.manualSlotIds ?? [], ...n])]
 			}
 		}), O("Draft changes"));
-	}, [d]), B = JSON.stringify([
+	}, [d]), te = JSON.stringify([
 		u,
 		e,
 		n.areas,
 		n.devices,
 		n.entityRegistry
-	]), V = (0, Z.useRef)(null);
+	]), z = (0, Z.useRef)(null);
 	(0, Z.useEffect)(() => {
-		let e = R.current;
-		if (!i || e.disconnected || !e.key || V.current === B) return;
-		V.current = B;
-		let t = ae(e.manifest, e.profile, e.runtime, e.state);
-		t.applied.length && z(t.profile);
+		let e = ee.current;
+		if (!i || e.disconnected || !e.key || z.current === te) return;
+		z.current = te;
+		let t = re(e.manifest, e.profile, e.runtime, e.state);
+		t.applied.length && R(t.profile);
 	}, [
-		B,
+		te,
 		i,
 		k,
-		z
+		R
 	]), (0, Z.useEffect)(() => {
 		if (C && !L) {
-			let t = Nn(e, C);
+			let t = jn(e, C);
 			if (t) {
 				S(t.id);
 				return;
@@ -14220,7 +14432,7 @@ function Rl({ manifest: e, bindings: t, runtime: n, origin: r, active: i, onChan
 		L,
 		C
 	]);
-	let ee = we(p, e, k ? void 0 : n).issues.map((e) => ({
+	let B = we(p, e, k ? void 0 : n).issues.map((e) => ({
 		...e,
 		severity: [
 			"profile.area-missing",
@@ -14228,7 +14440,7 @@ function Rl({ manifest: e, bindings: t, runtime: n, origin: r, active: i, onChan
 			"profile.device-class"
 		].includes(e.code) ? "warning" : "error"
 	}));
-	return k && (Object.keys(p.roomAreaIds).length || Object.keys(p.entityIdsBySlotId).length) && ee.push({
+	return k && (Object.keys(p.roomAreaIds).length || Object.keys(p.entityIdsBySlotId).length) && B.push({
 		code: "connect.offline",
 		path: "bindings",
 		message: "Home Assistant is offline. Saved connections will be retained without registry verification.",
@@ -14254,31 +14466,31 @@ function Rl({ manifest: e, bindings: t, runtime: n, origin: r, active: i, onChan
 		roomDeviceSummaries: I,
 		profile: p,
 		selectDevice: (t) => {
-			let n = Nn(e, t);
+			let n = jn(e, t);
 			return b("devices"), E(null), n ? (S(n.id), w(t), O(null), !0) : (w(null), O("This device is no longer in the draft. Select another device to connect."), !1);
 		},
 		publishedProfile: f?.published ?? d,
 		displayRuntime: j,
 		disconnected: k,
-		issues: ee,
+		issues: B,
 		message: D,
 		pendingAreaChange: T,
 		assignArea: (t) => {
 			if (!N || !u || k && t || t && (!n.areas.some((e) => e.area_id === t) || Object.entries(p.roomAreaIds).some(([e, n]) => e !== N.id && n === t))) return;
-			let r = be(p, N.id, t || null), i = me({
+			let r = be(p, N.id, t || null), i = fe({
 				manifest: e,
 				savedProfile: p,
 				roomAreaIds: r.roomAreaIds
 			});
-			i.clearedSlotIds.length ? E(i) : z(i.profile, [N.id]);
+			i.clearedSlotIds.length ? E(i) : R(i.profile, [N.id]);
 		},
 		confirmAreaChange: () => {
-			T && (z(T.profile, T.changedRoomIds, T.clearedSlotIds), E(null));
+			T && (R(T.profile, T.changedRoomIds, T.clearedSlotIds), E(null));
 		},
 		cancelAreaChange: () => E(null),
 		assignEntities: (e) => {
 			let t = [.../* @__PURE__ */ new Set([...Object.keys(p.entityIdsBySlotId), ...Object.keys(e)])].filter((t) => p.entityIdsBySlotId[t] !== e[t]);
-			k && t.some((t) => e[t]) || z({
+			k && t.some((t) => e[t]) || R({
 				...p,
 				entityIdsBySlotId: e
 			}, [], [...t, ...L?.slotIds ?? []]);
@@ -14292,14 +14504,14 @@ function Rl({ manifest: e, bindings: t, runtime: n, origin: r, active: i, onChan
 		},
 		importProfile: (n) => {
 			if (!u) throw Error("Set a Home Assistant address before importing a profile.");
-			a(hn(t, u, n, e)), O("Connections imported into the draft. Save to activate them.");
+			a(Nn(t, u, n, e)), O("Connections imported into the draft. Save to activate them.");
 		}
 	};
 }
 //#endregion
 //#region apps/web/src/editor-workspace/useEditorConnection.ts
-function zl({ workspace: e, activeFloorId: t, runtime: n, mode: r, editingLocked: i, unsettled: a, publishOpen: o, initialRequest: s, navigation: c, homeAssistantUrl: l, onPrepareOrigin: u, savedCamera: d, furnishingEditorSelectedId: f, setConnectionBusy: p, homeId: m }) {
-	let { snapshot: h, commit: g, flush: _, getRecord: v, adoptRecord: y } = e, b = (0, Z.useMemo)(() => ke(h.project, pn.extensions), [h.project]), x = b.floors.find((e) => e.id === t) ?? b.floors[0], S = Rl({
+function Wl({ workspace: e, activeFloorId: t, runtime: n, mode: r, editingLocked: i, unsettled: a, publishOpen: o, initialRequest: s, navigation: c, homeAssistantUrl: l, onPrepareOrigin: u, savedCamera: d, furnishingEditorSelectedId: f, setConnectionBusy: p, homeId: m }) {
+	let { snapshot: h, commit: g, flush: _, getRecord: v, adoptRecord: y } = e, b = (0, Z.useMemo)(() => ke(h.project, dn.extensions), [h.project]), x = b.floors.find((e) => e.id === t) ?? b.floors[0], S = Ul({
 		manifest: b,
 		floorId: t,
 		bindings: h.bindings,
@@ -14327,12 +14539,12 @@ function zl({ workspace: e, activeFloorId: t, runtime: n, mode: r, editingLocked
 		O,
 		D
 	]);
-	let k = oe();
+	let A = ie();
 	return {
 		connect: S,
 		connectManifest: b,
 		connectFloor: x,
-		signIn: xn(n, async (e) => {
+		signIn: yn(n, async (e) => {
 			p(!0);
 			try {
 				if ((await _()).status !== "saved") throw Error("The draft could not be saved. Sign-in has not started.");
@@ -14341,7 +14553,7 @@ function zl({ workspace: e, activeFloorId: t, runtime: n, mode: r, editingLocked
 					let t = await u(v(), e);
 					if (!y(t)) throw Error("The workspace changed while connecting. Reopen Connect to retry.");
 				}
-				if (k) return;
+				if (A) return;
 				let n = {
 					floorId: t,
 					mode: "connect",
@@ -14354,7 +14566,7 @@ function zl({ workspace: e, activeFloorId: t, runtime: n, mode: r, editingLocked
 					}
 				};
 				try {
-					window.sessionStorage.setItem(En, JSON.stringify({
+					window.sessionStorage.setItem(wn, JSON.stringify({
 						...n,
 						workspaceId: m
 					}));
@@ -14365,7 +14577,7 @@ function zl({ workspace: e, activeFloorId: t, runtime: n, mode: r, editingLocked
 				p(!1);
 			}
 		}),
-		bindingIssues: (0, Z.useMemo)(() => [...j(h.bindings, b, ke(v().published, pn.extensions)), ...C], [
+		bindingIssues: (0, Z.useMemo)(() => [...k(h.bindings, b, ke(v().published, dn.extensions)), ...C], [
 			h.bindings,
 			b,
 			v,
@@ -14375,34 +14587,30 @@ function zl({ workspace: e, activeFloorId: t, runtime: n, mode: r, editingLocked
 }
 //#endregion
 //#region apps/web/src/editor-workspace/useEditorConstructionTools.ts
-function Bl(e, t, n, r) {
+function Gl(e, t, n, r) {
 	let { selection: i, draft: a, previewFloor: o, tool: s, clearSelection: c, setTool: l, addFloorZone: u, addGroundZone: d, paintRoomFloor: f } = r, [p, m] = (0, Z.useState)(null), [h, g] = (0, Z.useState)(null);
 	(0, Z.useEffect)(() => {
 		g((t) => t && !e.stairs.some((e) => e.id === t.id) ? null : t);
 	}, [e.stairs]), (0, Z.useEffect)(() => {
 		g((e) => n !== "construct" || e && ![e.lowerFloorId, e.upperFloorId].includes(t) ? null : e);
 	}, [t, n]);
-	let [_, v] = (0, Z.useState)(null), [y, b] = (0, Z.useState)(null), x = i?.kind === "opening" ? i.id : null, S = x ? Gt(a).find((e) => e.id === x) : void 0;
-	(0, Z.useEffect)(() => {
-		b(null);
-	}, [n, S?.id]);
-	let C = zo(o.coordinates), { cancel: w } = C, [T, E] = (0, Z.useState)({
+	let [_, v] = (0, Z.useState)(null), y = i?.kind === "opening" ? i.id : null, b = y ? Gt(a).find((e) => e.id === y) : void 0, x = Do(o.coordinates), { cancel: S } = x, [C, w] = (0, Z.useState)({
 		kind: "preset",
 		preset: "light-oak"
-	}), { floorPaintTarget: D, setFloorPaintTarget: O } = r, [k, A] = (0, Z.useState)(null), j = ba(o, (e, t) => e ? u(e, t, T) : d(t, T)), { cancel: M } = j;
+	}), { floorPaintTarget: T, setFloorPaintTarget: E } = r, [D, O] = (0, Z.useState)(null), k = Ca(o, (e, t) => e ? u(e, t, C) : d(t, C)), { cancel: A } = k;
 	return (0, Z.useEffect)(() => {
 		(i || s !== "select") && g(null);
 	}, [i, s]), (0, Z.useEffect)(() => {
-		(n !== "construct" || s !== "measure") && w();
+		(n !== "construct" || s !== "measure") && S();
 	}, [
 		s,
-		w,
+		S,
 		n
 	]), (0, Z.useEffect)(() => {
-		(n !== "construct" || s !== "floor") && (M(), A(null));
+		(n !== "construct" || s !== "floor") && (A(), O(null));
 	}, [
 		s,
-		M,
+		A,
 		n
 	]), {
 		stairPlacement: p,
@@ -14411,43 +14619,41 @@ function Bl(e, t, n, r) {
 		setStairDialog: g,
 		floorDialog: _,
 		setFloorDialog: v,
-		selectedOpening: S,
-		detailsOpeningId: y,
-		setDetailsOpeningId: b,
-		constructMeasure: C,
-		floorFinish: T,
-		setFloorFinish: E,
-		floorPaintTarget: D,
-		setFloorPaintTarget: O,
-		pendingRoomPaintId: k,
-		setPendingRoomPaintId: A,
-		floorZoneDrawing: j,
+		selectedOpening: b,
+		constructMeasure: x,
+		floorFinish: C,
+		setFloorFinish: w,
+		floorPaintTarget: T,
+		setFloorPaintTarget: E,
+		pendingRoomPaintId: D,
+		setPendingRoomPaintId: O,
+		floorZoneDrawing: k,
 		requestRoomPaint: (0, Z.useCallback)((e) => {
 			let t = o.rooms.find((t) => t.id === e);
 			if (t) {
 				if (t.floorZones?.length) {
-					A(e);
+					O(e);
 					return;
 				}
-				f(e, T, !1);
+				f(e, C, !1);
 			}
 		}, [
 			f,
 			o.rooms,
-			T
+			C
 		]),
 		confirmRoomPaint: (0, Z.useCallback)((e) => {
-			k && (f(k, T, e), A(null));
+			D && (f(D, C, e), O(null));
 		}, [
 			f,
-			T,
-			k
+			C,
+			D
 		]),
 		beginStairPlacement: () => {
 			l("select"), c();
 			let n = e.floors.findIndex((e) => e.id === t), r = e.floors[n], i = e.floors[n + 1];
 			!r || !i || (g(null), m({
-				id: `stairs-${N()}`,
+				id: `stairs-${lt()}`,
 				lowerFloorId: t,
 				upperFloorId: i.id,
 				at: r.footprint[0] ?? r.coordinates.origin,
@@ -14460,7 +14666,7 @@ function Bl(e, t, n, r) {
 }
 //#endregion
 //#region apps/web/src/editor-workspace/useEditorEntryRequest.ts
-function Vl(e, t, n, r, i) {
+function Kl(e, t, n, r, i) {
 	let a = (0, Z.useEffectEvent)(() => {
 		let n = e;
 		if (!n) return;
@@ -14480,36 +14686,30 @@ function Vl(e, t, n, r, i) {
 }
 //#endregion
 //#region apps/web/src/editor-workspace/useEditorItemActions.ts
-function Hl({ furnishingEditor: e, projection: t, mode: n, clearFocus: r, floor: i }) {
-	let { select: a, selectedId: o, deleteItem: s, duplicate: c, items: l } = e, { editorProject: u } = t, [d, f] = (0, Z.useState)(null);
-	(0, Z.useEffect)(() => {
-		f(null);
-	}, [n, o]);
-	let p = (0, Z.useCallback)(() => {
-		f(null), a(null), r();
-	}, [a, r]);
+function ql({ furnishingEditor: e, projection: t, clearFocus: n, floor: r }) {
+	let { select: i, deleteItem: a, duplicate: o, items: s } = e, { editorProject: c } = t, l = (0, Z.useCallback)(() => {
+		i(null), n();
+	}, [i, n]);
 	return {
-		detailsItemId: d,
-		setDetailsItemId: f,
-		clearFurnishingSelection: p,
+		clearFurnishingSelection: l,
 		deleteSceneItem: (0, Z.useCallback)((e) => {
-			s(e), p();
-		}, [p, s]),
-		duplicateArrangeItem: (0, Z.useCallback)((e) => l.some((t) => t.id === e) ? (f(null), c(e, i, Ye(u)), !0) : !1, [
-			i,
-			u,
+			a(e), l();
+		}, [l, a]),
+		duplicateArrangeItem: (0, Z.useCallback)((e) => s.some((t) => t.id === e) ? (o(e, r, Je(c)), !0) : !1, [
+			r,
 			c,
-			l
+			o,
+			s
 		])
 	};
 }
 //#endregion
 //#region apps/web/src/editor-preview/project-sync.ts
-var Ul = (e, t) => Object.is(e, t) || JSON.stringify(e) === JSON.stringify(t), Wl = (e, t, n, r = e.floors[0]?.id) => ({
-	floorChanged: !Ul(e.floors.find((e) => e.id === r), t.floors.find((e) => e.id === r)),
+var Jl = (e, t) => Object.is(e, t) || JSON.stringify(e) === JSON.stringify(t), Yl = (e, t, n, r = e.floors[0]?.id) => ({
+	floorChanged: !Jl(e.floors.find((e) => e.id === r), t.floors.find((e) => e.id === r)),
 	selectedItemId: t.sceneItems.find((t) => !e.sceneItems.some((e) => e.id === t.id))?.id ?? (t.sceneItems.some((e) => e.id === n) ? n : null)
-}), Gl = /* @__PURE__ */ new WeakMap(), Kl = (e) => {
-	let t = Gl.get(e);
+}), Xl = /* @__PURE__ */ new WeakMap(), Zl = (e) => {
+	let t = Xl.get(e);
 	if (t) return t;
 	let { ceilings: n, ...r } = e, i = {
 		...r,
@@ -14527,14 +14727,14 @@ var Ul = (e, t) => Object.is(e, t) || JSON.stringify(e) === JSON.stringify(t), W
 			return r;
 		})
 	};
-	return Gl.set(e, i), i;
-}, ql = (e, t, n) => {
-	let r = Kl(t), i = e.floors.find((e) => e.id === t.id);
+	return Xl.set(e, i), i;
+}, Ql = (e, t, n) => {
+	let r = Zl(t), i = e.floors.find((e) => e.id === t.id);
 	if (!i) return e;
-	let a = Ul(r, i) ? i : r, o = a === i ? e.floors : e.floors.map((e) => e.id === t.id ? a : e), s = Object.fromEntries(o.flatMap((e) => e.rooms).map((t) => [t.id, e.roomProfiles[t.id] ?? { dashboardSlots: [] }])), c = Object.fromEntries(o.flatMap((e) => e.openings).map((t) => [t.id, t.kind === "door" && t.operation === "roll-up" ? e.openingProfiles[t.id] ?? {} : (() => {
+	let a = Jl(r, i) ? i : r, o = a === i ? e.floors : e.floors.map((e) => e.id === t.id ? a : e), s = Object.fromEntries(o.flatMap((e) => e.rooms).map((t) => [t.id, e.roomProfiles[t.id] ?? { dashboardSlots: [] }])), c = Object.fromEntries(o.flatMap((e) => e.openings).map((t) => [t.id, t.kind === "door" && t.operation === "roll-up" ? e.openingProfiles[t.id] ?? {} : (() => {
 		let { coverSlot: n, ...r } = e.openingProfiles[t.id] ?? {};
 		return r;
-	})()])), l = Ul(s, e.roomProfiles) ? e.roomProfiles : s, u = Ul(c, e.openingProfiles) ? e.openingProfiles : c, d = [...e.sceneItems.filter((e) => e.floorId !== t.id), ...n.filter((e) => e.floorId === t.id)], f = new Map(e.sceneItems.map((e, t) => [e.id, t])), p = d.sort((e, t) => (f.get(e.id) ?? Infinity) - (f.get(t.id) ?? Infinity)), m = Ul(p, e.sceneItems) ? e.sceneItems : Ul(p, n) ? n : p;
+	})()])), l = Jl(s, e.roomProfiles) ? e.roomProfiles : s, u = Jl(c, e.openingProfiles) ? e.openingProfiles : c, d = [...e.sceneItems.filter((e) => e.floorId !== t.id), ...n.filter((e) => e.floorId === t.id)], f = new Map(e.sceneItems.map((e, t) => [e.id, t])), p = d.sort((e, t) => (f.get(e.id) ?? Infinity) - (f.get(t.id) ?? Infinity)), m = Jl(p, e.sceneItems) ? e.sceneItems : Jl(p, n) ? n : p;
 	return o === e.floors && m === e.sceneItems && l === e.roomProfiles && u === e.openingProfiles ? e : {
 		...e,
 		floors: o,
@@ -14542,10 +14742,10 @@ var Ul = (e, t) => Object.is(e, t) || JSON.stringify(e) === JSON.stringify(t), W
 		roomProfiles: l,
 		openingProfiles: u
 	};
-}, Jl = (e, t, n, r, i = []) => {
-	let a = ql(e.project, t, n), o = new Set(a.sceneItems.flatMap((e) => e.kind === "device" ? e.entitySlots.map((e) => e.id) : [])), s = e.project.sceneItems.flatMap((e) => e.kind === "device" ? e.entitySlots.map((e) => e.id).filter((e) => !o.has(e)) : []), c = x(e.bindings, s);
+}, $l = (e, t, n, r, i = []) => {
+	let a = Ql(e.project, t, n), o = new Set(a.sceneItems.flatMap((e) => e.kind === "device" ? e.entitySlots.map((e) => e.id) : [])), s = e.project.sceneItems.flatMap((e) => e.kind === "device" ? e.entitySlots.map((e) => e.id).filter((e) => !o.has(e)) : []), c = x(e.bindings, s);
 	try {
-		[...Re(a, r).issues, ...i].some((e) => e.severity === "error") || (c = ge(c, Ot(a, {
+		[...Re(a, r).issues, ...i].some((e) => e.severity === "error") || (c = he(c, Tt(a, {
 			furnishingModels: {},
 			deviceModels: {},
 			openingModels: {}
@@ -14558,13 +14758,13 @@ var Ul = (e, t) => Object.is(e, t) || JSON.stringify(e) === JSON.stringify(t), W
 };
 //#endregion
 //#region apps/web/src/editor-workspace/useEditorProjectHistory.ts
-function Yl({ runtime: e, homeAssistantUrl: t, workspace: n, constructEditor: r, furnishingEditor: i, floorZoneDrawing: a, activeFloorId: o, selectFloor: s, editingLocked: c, unsettled: l, dragging: u, previewSceneItems: d, editorProjectJson: f, editorProject: p, mode: m, onRestore: h }) {
+function eu({ runtime: e, homeAssistantUrl: t, workspace: n, constructEditor: r, furnishingEditor: i, floorZoneDrawing: a, activeFloorId: o, selectFloor: s, editingLocked: c, unsettled: l, dragging: u, previewSceneItems: d, editorProjectJson: f, editorProject: p, mode: m, onRestore: h }) {
 	let { snapshot: g, commit: _, undo: v, redo: y } = n, { draft: b, replaceFloor: x, previewFloor: S, topologyIssues: C, poolDrawing: w } = r, { selectedId: T, items: E, replaceItems: D, select: O, transaction: k } = i, { active: A, undo: j, redo: M } = a, N = (0, Z.useRef)(null), P = (0, Z.useRef)(null), F = (e) => {
 		if (l || c) return;
 		let t = g.project.sceneItems.find((t) => t.id === e);
 		t && (t.floorId === o ? O(e) : (P.current = e, s(t.floorId)));
 	}, I = (0, Z.useCallback)((e) => {
-		let t = g.project, n = Wl(t, e, T, o), r = Te({
+		let t = g.project, n = Yl(t, e, T, o), r = Te({
 			activeFloorId: o,
 			wholeBuilding: !1
 		}, t.floors.map((e) => e.id), e.floors.map((e) => e.id)).activeFloorId, i = e.floors.find((e) => e.id === r);
@@ -14603,7 +14803,7 @@ function Yl({ runtime: e, homeAssistantUrl: t, workspace: n, constructEditor: r,
 		v,
 		I,
 		j
-	]), R = (0, Z.useCallback)(() => {
+	]), ee = (0, Z.useCallback)(() => {
 		if (!c && !u && A) {
 			M();
 			return;
@@ -14632,7 +14832,7 @@ function Yl({ runtime: e, homeAssistantUrl: t, workspace: n, constructEditor: r,
 			(!e.floorChanged || b !== e.draft) && E !== e.items && (N.current = null);
 			return;
 		}
-		_(Jl(g, S, d, wn, C.map((e) => ({
+		_($l(g, S, d, Sn, C.map((e) => ({
 			...e,
 			severity: "error"
 		}))));
@@ -14655,10 +14855,10 @@ function Yl({ runtime: e, homeAssistantUrl: t, workspace: n, constructEditor: r,
 			if (c || l) return;
 			let i = g.bindings;
 			if (r) {
-				if (!t || e.status !== "connected" || e.origin !== pe(t)) return;
-				let n = pe(t), a = i[n] ?? {
-					draft: Pt(p.home.id),
-					published: Pt(p.home.id),
+				if (!t || e.status !== "connected" || e.origin !== de(t)) return;
+				let n = de(t), a = i[n] ?? {
+					draft: Mt(p.home.id),
+					published: Mt(p.home.id),
 					manualRoomIds: [],
 					manualSlotIds: []
 				};
@@ -14701,18 +14901,18 @@ function Yl({ runtime: e, homeAssistantUrl: t, workspace: n, constructEditor: r,
 		]),
 		replaceEditorsFromProject: I,
 		undoProject: L,
-		redoProject: R,
+		redoProject: ee,
 		selectSceneItem: F
 	};
 }
 //#endregion
 //#region apps/web/src/editor-preview/construct/useSceneItemDependencies.ts
-var Xl = (e, t, n) => {
-	let { transaction: r, items: i, selectedId: a, replaceItems: o } = e, s = (0, Z.useRef)(new Map(t.walls.map((e) => [e.id, e]))), c = r?.items ?? i, l = (0, Z.useMemo)(() => yo(c, t, s.current, n), [
+var tu = (e, t, n) => {
+	let { transaction: r, items: i, selectedId: a, replaceItems: o } = e, s = (0, Z.useRef)(new Map(t.walls.map((e) => [e.id, e]))), c = r?.items ?? i, l = (0, Z.useMemo)(() => oo(c, t, s.current, n), [
 		c,
 		t,
 		n
-	]), u = (0, Z.useMemo)(() => bo(l, t), [l, t]);
+	]), u = (0, Z.useMemo)(() => so(l, t), [l, t]);
 	return (0, Z.useLayoutEffect)(() => {
 		if (r || (t.walls.forEach((e) => s.current.set(e.id, e)), u.items.length === i.length && u.items.every((e, t) => e === i[t]))) return;
 		let e = u.items.some((e) => e.id === a) ? a : null;
@@ -14728,12 +14928,12 @@ var Xl = (e, t, n) => {
 };
 //#endregion
 //#region apps/web/src/editor-workspace/useEditorSceneProjection.ts
-function Zl({ project: e, constructEditor: t, furnishingEditor: n, activeFloorId: r }) {
-	let { previewFloor: i, wallRuns: a } = t, { transaction: o, items: s, selectedId: c } = n, { furnishingModels: u, deviceModels: d } = (0, Z.useMemo)(() => an(e, wn), [e]), f = Xl(n, i, a), p = f.items, m = o ? s : p, h = m.find((e) => e.id === c), g = h && ((h.kind === "device" ? d : u)[h.modelId] ?? Ss(h)), _ = (0, Z.useMemo)(() => sn(i), [i]), v = (0, Z.useMemo)(() => ql(e, i, p), [
+function nu({ project: e, constructEditor: t, furnishingEditor: n, activeFloorId: r }) {
+	let { previewFloor: i, wallRuns: a } = t, { transaction: o, items: s, selectedId: c } = n, { furnishingModels: u, deviceModels: d } = (0, Z.useMemo)(() => nn(e, Sn), [e]), f = tu(n, i, a), p = f.items, m = o ? s : p, h = m.find((e) => e.id === c), g = h && ((h.kind === "device" ? d : u)[h.modelId] ?? ds(h)), _ = (0, Z.useMemo)(() => an(i), [i]), v = (0, Z.useMemo)(() => Ql(e, i, p), [
 		i,
 		p,
 		e
-	]), y = (0, Z.useMemo)(() => JSON.stringify(v), [v]), b = (0, Z.useMemo)(() => Lt(v, pn.extensions).manifest, [v]), x = (0, Z.useMemo)(() => ({
+	]), y = (0, Z.useMemo)(() => JSON.stringify(v), [v]), b = (0, Z.useMemo)(() => Lt(v, dn.extensions).manifest, [v]), x = (0, Z.useMemo)(() => ({
 		...i,
 		elevationMeters: l(e.floors).find((e) => e.floorId === r)?.elevationMeters ?? 0
 	}), [
@@ -14762,7 +14962,7 @@ function Zl({ project: e, constructEditor: t, furnishingEditor: n, activeFloorId
 		editorProjectJson: y,
 		editedManifest: b,
 		placementFloor: x,
-		editorResolvedBindings: (0, Z.useMemo)(() => Tn(b), [S]),
+		editorResolvedBindings: (0, Z.useMemo)(() => Cn(b), [S]),
 		visualManifest: (0, Z.useMemo)(() => m === b.sceneItems ? b : {
 			...b,
 			sceneItems: [...b.sceneItems.filter((e) => e.floorId !== r), ...m]
@@ -14775,7 +14975,7 @@ function Zl({ project: e, constructEditor: t, furnishingEditor: n, activeFloorId
 }
 //#endregion
 //#region apps/web/src/editor-workspace/useEditorSession.ts
-function Ql(e, t, n) {
+function ru(e, t, n) {
 	let r = ze(), { flush: i, publish: a } = e, [o, s] = (0, Z.useState)(!1), [c, l] = (0, Z.useState)(!1);
 	(0, Z.useEffect)(() => {
 		l(!1);
@@ -14821,7 +15021,7 @@ function Ql(e, t, n) {
 		}, [n, a])
 	};
 }
-function $l(e, t) {
+function iu(e, t) {
 	let n = (0, Z.useMemo)(() => [...t, ...e.map((e) => ({
 		code: e.code,
 		path: e.path,
@@ -14834,7 +15034,7 @@ function $l(e, t) {
 		publishWarnings: n.filter((e) => e.severity === "warning")
 	};
 }
-function eu(e, t, n) {
+function au(e, t, n) {
 	let r = (0, Z.useRef)(!1);
 	(0, Z.useEffect)(() => {
 		if (!e) {
@@ -14850,10 +15050,10 @@ function eu(e, t, n) {
 }
 //#endregion
 //#region apps/web/src/editor-workspace/useEditorValidation.ts
-function tu({ editorProject: e, constructEditor: t, previewSceneItems: n, ceilingDependencies: r, walkNavigation: i, mode: a }) {
+function ou({ editorProject: e, constructEditor: t, previewSceneItems: n, ceilingDependencies: r, walkNavigation: i, mode: a }) {
 	let o = (0, Z.useMemo)(() => {
 		try {
-			return Re(e, wn);
+			return Re(e, Sn);
 		} catch {
 			return {
 				valid: !1,
@@ -14865,7 +15065,7 @@ function tu({ editorProject: e, constructEditor: t, previewSceneItems: n, ceilin
 				}]
 			};
 		}
-	}, [e]), s = (0, Z.useMemo)(() => _o({
+	}, [e]), s = (0, Z.useMemo)(() => io({
 		project: e,
 		floor: t.previewFloor,
 		sceneItems: n,
@@ -14884,7 +15084,7 @@ function tu({ editorProject: e, constructEditor: t, previewSceneItems: n, ceilin
 	]);
 	return {
 		contextualIssues: s,
-		displayedContextualIssues: (0, Z.useMemo)(() => go(s, a === "construct" ? t.tool : null, {
+		displayedContextualIssues: (0, Z.useMemo)(() => ro(s, a === "construct" ? t.tool : null, {
 			floor: t.previewFloor,
 			floorIndex: e.floors.findIndex((e) => e.id === t.previewFloor.id),
 			hasItems: n.length > 0
@@ -14900,7 +15100,7 @@ function tu({ editorProject: e, constructEditor: t, previewSceneItems: n, ceilin
 }
 //#endregion
 //#region apps/web/src/editor-workspace/useHomeEditorShortcuts.ts
-function nu({ clearConstructionSelection: e, clearFurnishingSelection: t, closeWalk: n, constructEditor: r, constructMeasure: i, dragging: a, duplicateArrangeItem: o, duplicateConstructionOpening: s, editingLocked: c, floorZoneDrawing: l, furnishingEditor: u, marqueeSelecting: d, mode: f, pendingRoomPaintId: p, previewOpen: m, publishOpen: h, redoProject: g, selectedOpening: _, undoProject: v, unsettled: y, setCameraView: b, walkButton: x, setPendingRoomPaintId: S, setDragging: C }) {
+function su({ clearConstructionSelection: e, clearFurnishingSelection: t, closeWalk: n, constructEditor: r, constructMeasure: i, dragging: a, duplicateArrangeItem: o, duplicateConstructionOpening: s, editingLocked: c, floorZoneDrawing: l, furnishingEditor: u, marqueeSelecting: d, mode: f, pendingRoomPaintId: p, previewOpen: m, publishOpen: h, redoProject: g, selectedOpening: _, undoProject: v, unsettled: y, setCameraView: b, walkButton: x, setPendingRoomPaintId: S, setDragging: C }) {
 	let w = ze(), T = (0, Z.useRef)(null);
 	(0, Z.useEffect)(() => {
 		if (c || h) return;
@@ -15001,16 +15201,16 @@ function nu({ clearConstructionSelection: e, clearFurnishingSelection: t, closeW
 }
 //#endregion
 //#region apps/web/src/editor-reference-plan/reference-history.ts
-var ru = (e) => ot(e), iu = (e, t) => ct({
+var cu = (e) => at(e), lu = (e, t) => ot({
 	project: e.project,
 	bindings: e.bindings
-}) !== ct({
+}) !== ot({
 	project: t.project,
 	bindings: t.bindings
 });
 //#endregion
 //#region apps/web/src/editor-reference-plan/useReferencePersistence.ts
-function au(e, t, n) {
+function uu(e, t, n) {
 	let [r, i] = (0, Z.useState)(!1), [a, o] = (0, Z.useState)(null), [s, c] = (0, Z.useState)({}), l = (0, Z.useRef)(/* @__PURE__ */ new Map()), u = (0, Z.useRef)(/* @__PURE__ */ new Map()), d = (0, Z.useRef)(Promise.resolve()), f = (0, Z.useRef)(!1), p = (0, Z.useRef)({
 		plans: t,
 		preferences: s
@@ -15022,15 +15222,15 @@ function au(e, t, n) {
 	let m = (0, Z.useRef)(!0), h = (0, Z.useRef)(0), g = (0, Z.useCallback)(async () => {
 		let t = ++h.current;
 		try {
-			let r = await Fn(e);
+			let r = await Pn(e);
 			if (!m.current || t !== h.current) return;
 			c(r.preferences);
 			let a = n(r.plans);
 			d.current = d.current.then(async () => {
-				await mn(e, {
+				await fn(e, {
 					plans: a,
 					preferences: r.preferences
-				}, /* @__PURE__ */ new Map()), await Pn(e, Object.values(a).map((e) => e.assetId));
+				}, /* @__PURE__ */ new Map()), await Mn(e, Object.values(a).map((e) => e.assetId));
 			}).catch(() => void 0), i(!0), o(null);
 		} catch {
 			m.current && t === h.current && o("Reference plans could not be loaded from this browser. Retry to use your saved plans.");
@@ -15044,7 +15244,7 @@ function au(e, t, n) {
 		if (!t.plans) return;
 		let n = new Map(u.current);
 		d.current = d.current.catch(() => void 0).then(async () => {
-			await mn(e, {
+			await fn(e, {
 				plans: t.plans,
 				preferences: t.preferences
 			}, n);
@@ -15070,7 +15270,7 @@ function au(e, t, n) {
 		getAsset: (0, Z.useCallback)(async (t) => {
 			let n = l.current.get(t);
 			if (n) return n;
-			let r = await yn(e, t);
+			let r = await _n(e, t);
 			if (!r) throw Error("The saved reference image is missing. Replace the image to continue tracing.");
 			return l.current.set(t, r), r;
 		}, [e]),
@@ -15085,10 +15285,10 @@ function au(e, t, n) {
 			d.current = d.current.then(async () => {
 				if (f.current) return;
 				let n = Object.fromEntries(Object.entries(p.current.preferences).filter(([e]) => e in t));
-				await mn(e, {
+				await fn(e, {
 					plans: t,
 					preferences: n
-				}, /* @__PURE__ */ new Map()), await Pn(e, Object.values(t).map((e) => e.assetId));
+				}, /* @__PURE__ */ new Map()), await Mn(e, Object.values(t).map((e) => e.assetId));
 			}).catch(() => void 0);
 		}, [e]),
 		retry: () => {
@@ -15098,12 +15298,12 @@ function au(e, t, n) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/useEditorWorkspace.ts
-var ou = (e) => ({
+var du = (e) => ({
 	project: e.draft,
 	bindings: e.bindings
-}), su = (e) => e instanceof Error ? e : /* @__PURE__ */ Error("Workspace storage failed.");
-function cu({ initialRecord: e, lifecycle: t, autosaveDelayMs: n = 280 }) {
-	let [r, i] = (0, Z.useState)(() => ru(ou(e))), a = (0, Z.useRef)(r), o = (0, Z.useCallback)((e) => {
+}), fu = (e) => e instanceof Error ? e : /* @__PURE__ */ Error("Workspace storage failed.");
+function pu({ initialRecord: e, lifecycle: t, autosaveDelayMs: n = 280 }) {
+	let [r, i] = (0, Z.useState)(() => cu(du(e))), a = (0, Z.useRef)(r), o = (0, Z.useCallback)((e) => {
 		let t = a.current, n = Object.fromEntries(Object.entries(e).filter(([e]) => t.present.project.floors.some((t) => t.id === e))), r = (e) => ({
 			...e,
 			references: n
@@ -15113,7 +15313,7 @@ function cu({ initialRecord: e, lifecycle: t, autosaveDelayMs: n = 280 }) {
 			future: t.future.map(r)
 		};
 		return a.current = o, i(o), n;
-	}, []), s = au(e.homeId, r.present.references, o), { cleanup: c } = s, l = (0, Z.useRef)(r);
+	}, []), s = uu(e.homeId, r.present.references, o), { cleanup: c } = s, l = (0, Z.useRef)(r);
 	l.current = r, (0, Z.useEffect)(() => () => {
 		let e = l.current.present;
 		if (!e.references) return;
@@ -15131,7 +15331,7 @@ function cu({ initialRecord: e, lifecycle: t, autosaveDelayMs: n = 280 }) {
 			--C.current;
 		}), t;
 	}, []), j = (0, Z.useCallback)(async (e, n, r = !1) => {
-		if (r && E.current?.status === "storage-error" && !(E.current.error instanceof un) && (E.current = null), E.current) return E.current;
+		if (r && E.current?.status === "storage-error" && !(E.current.error instanceof ln) && (E.current = null), E.current) return E.current;
 		if (n <= S.current) return b.current && r && (g(null), m(!1)), {
 			status: "saved",
 			record: f.current
@@ -15143,7 +15343,7 @@ function cu({ initialRecord: e, lifecycle: t, autosaveDelayMs: n = 280 }) {
 			return k({
 				status: "storage-error",
 				record: f.current,
-				error: su(e)
+				error: fu(e)
 			});
 		}
 	}, [
@@ -15170,7 +15370,7 @@ function cu({ initialRecord: e, lifecycle: t, autosaveDelayMs: n = 280 }) {
 	]);
 	let N = (0, Z.useCallback)(() => M(!0), [M]), P = (0, Z.useCallback)((e) => {
 		if (y.current || e === a.current) return null;
-		let t = iu(a.current.present, e.present);
+		let t = lu(a.current.present, e.present);
 		return a.current = e, i(e), t ? (x.current += 1, D(), E.current || (m(!0), T.current = globalThis.setTimeout(() => {
 			T.current = null, M(!1);
 		}, n)), e.present) : e.present;
@@ -15178,13 +15378,13 @@ function cu({ initialRecord: e, lifecycle: t, autosaveDelayMs: n = 280 }) {
 		n,
 		D,
 		M
-	]), F = (0, Z.useCallback)((e) => !y.current && P(Ft(a.current, {
+	]), F = (0, Z.useCallback)((e) => !y.current && P(Nt(a.current, {
 		...e,
 		...a.current.present.references === void 0 ? {} : { references: a.current.present.references }
-	})) !== null, [P]), I = (0, Z.useCallback)((e) => !y.current && P(Ft(a.current, {
+	})) !== null, [P]), I = (0, Z.useCallback)((e) => !y.current && P(Nt(a.current, {
 		...a.current.present,
 		references: e
-	})) !== null, [P]), L = (0, Z.useCallback)(() => P(Dt(a.current)), [P]), R = (0, Z.useCallback)(() => P(Oe(a.current)), [P]), z = (0, Z.useCallback)(async (e = {}) => {
+	})) !== null, [P]), L = (0, Z.useCallback)(() => P(wt(a.current)), [P]), ee = (0, Z.useCallback)(() => P(Oe(a.current)), [P]), R = (0, Z.useCallback)(async (e = {}) => {
 		if (y.current) return {
 			status: "blocked",
 			errors: [],
@@ -15208,7 +15408,7 @@ function cu({ initialRecord: e, lifecycle: t, autosaveDelayMs: n = 280 }) {
 				}), o;
 			});
 		} catch (e) {
-			let t = su(e);
+			let t = fu(e);
 			return k({
 				status: "storage-error",
 				record: f.current,
@@ -15229,13 +15429,13 @@ function cu({ initialRecord: e, lifecycle: t, autosaveDelayMs: n = 280 }) {
 		t,
 		j,
 		k
-	]), B = (0, Z.useCallback)((e) => {
-		let t = Object.fromEntries(Object.entries(a.current.present.references ?? {}).filter(([t]) => e.draft.floors.some((e) => e.id === t))), n = ru({
-			...ou(e),
+	]), te = (0, Z.useCallback)((e) => {
+		let t = Object.fromEntries(Object.entries(a.current.present.references ?? {}).filter(([t]) => e.draft.floors.some((e) => e.id === t))), n = cu({
+			...du(e),
 			...a.current.present.references ? { references: t } : {}
 		});
 		a.current = n, n.present.references && c(t), S.current = ++x.current, E.current = null, O(e), b.current && (i(n), m(!1), g(null));
-	}, [O, c]), V = (0, Z.useCallback)(async (e) => {
+	}, [O, c]), z = (0, Z.useCallback)(async (e) => {
 		if (y.current) return {
 			status: "storage-error",
 			record: f.current,
@@ -15245,13 +15445,13 @@ function cu({ initialRecord: e, lifecycle: t, autosaveDelayMs: n = 280 }) {
 		try {
 			return await A(async () => {
 				let n = await t[e](f.current);
-				return n.status === "saved" ? B(n.record) : k(n), n;
+				return n.status === "saved" ? te(n.record) : k(n), n;
 			});
 		} catch (e) {
 			return k({
 				status: "storage-error",
 				record: f.current,
-				error: su(e)
+				error: fu(e)
 			});
 		} finally {
 			y.current = !1, b.current && v(!1);
@@ -15259,10 +15459,10 @@ function cu({ initialRecord: e, lifecycle: t, autosaveDelayMs: n = 280 }) {
 	}, [
 		D,
 		A,
-		B,
+		te,
 		t,
 		k
-	]), ee = (0, Z.useCallback)(() => V("resetDraftToPublished"), [V]), H = (0, Z.useCallback)(() => V("resetToSeed"), [V]), te = (0, Z.useCallback)(() => f.current, []), ne = (0, Z.useCallback)((e) => y.current || C.current > 0 || T.current !== null || x.current !== S.current || e.homeId !== f.current.homeId || e.revision < f.current.revision ? !1 : (B(e), !0), [B]);
+	]), B = (0, Z.useCallback)(() => z("resetDraftToPublished"), [z]), V = (0, Z.useCallback)(() => z("resetToSeed"), [z]), ne = (0, Z.useCallback)(() => f.current, []), H = (0, Z.useCallback)((e) => y.current || C.current > 0 || T.current !== null || x.current !== S.current || e.homeId !== f.current.homeId || e.revision < f.current.revision ? !1 : (te(e), !0), [te]);
 	return {
 		record: u,
 		modelAssetReferences: Se([
@@ -15274,514 +15474,513 @@ function cu({ initialRecord: e, lifecycle: t, autosaveDelayMs: n = 280 }) {
 		snapshot: r.present,
 		commit: F,
 		undo: L,
-		redo: R,
+		redo: ee,
 		commitReferences: I,
 		referenceStorage: s,
 		canUndo: r.past.length > 0,
 		canRedo: r.future.length > 0,
 		flush: N,
-		publish: z,
+		publish: R,
 		saving: p,
 		error: h,
 		busy: _,
-		resetDraftToPublished: ee,
-		resetToSeed: H,
-		getRecord: te,
-		adoptRecord: ne
+		resetDraftToPublished: B,
+		resetToSeed: V,
+		getRecord: ne,
+		adoptRecord: H
 	};
 }
 //#endregion
 //#region apps/web/src/editor-workspace/useHomeEditorController.ts
-function lu({ initialRecord: e, lifecycle: t, onClose: n, onWorkspaces: r, autosaveDelayMs: i, initialRequest: o, navigation: s, homeAssistantUrl: c = null, onPrepareOrigin: l }) {
-	let [u, d] = (0, Z.useState)(o?.mode ?? "construct"), f = s?.request.mode ?? u, p = cu({
+function mu({ initialRecord: e, lifecycle: t, onClose: n, onWorkspaces: r, autosaveDelayMs: i, initialRequest: o, navigation: s, homeAssistantUrl: c = null, onPrepareOrigin: l }) {
+	let [u, d] = (0, Z.useState)(o?.mode ?? "construct"), f = s?.request.mode ?? u, p = pu({
 		initialRecord: e,
 		lifecycle: t,
 		...i === void 0 ? {} : { autosaveDelayMs: i }
-	}), { error: m, saving: h, busy: g } = p, { snapshot: _, commit: v, flush: y } = p, b = Qe(_.project.floors), { activeFloorId: x, selectFloor: S } = b, C = x, w = El(_.project.floors, C), T = a(), [E, D] = (0, Z.useState)(!1), [O, k] = (0, Z.useState)(!1), [A, j] = (0, Z.useState)(!1), M = e.draft.floors.find((e) => e.id === C) ?? e.draft.floors[0], N = Ro(M, pn.floors.find((e) => e.id === M.id) ?? M, e.draft.home.palette.exterior, wt(e.draft) && e.draft.floors.every(ho) ? "wall" : "select", _.project.floors.filter((e) => e.id !== C).flatMap((e) => e.rooms.map((e) => e.name))), { draft: P, previewFloor: F, poolDrawing: I, isSettling: L, drawStart: R, clearSelection: z, cancelWall: B, duplicateOpening: V } = N, ee = xs(e.draft.sceneItems.filter((e) => e.floorId === M.id)), { select: H, selectedId: te, transaction: ne, cancelTransaction: re } = ee, ie = Zl({
+	}), { error: m, saving: h, busy: g } = p, { snapshot: _, commit: v, flush: y } = p, b = Ze(_.project.floors), { activeFloorId: x, selectFloor: S } = b, C = x, w = jl(_.project.floors, C), T = a(), [E, D] = (0, Z.useState)(!1), [O, k] = (0, Z.useState)(!1), [A, j] = (0, Z.useState)(!1), M = e.draft.floors.find((e) => e.id === C) ?? e.draft.floors[0], N = Eo(M, dn.floors.find((e) => e.id === M.id) ?? M, e.draft.home.palette.exterior, xt(e.draft) && e.draft.floors.every(no) ? "wall" : "select", _.project.floors.filter((e) => e.id !== C).flatMap((e) => e.rooms.map((e) => e.name))), { draft: P, previewFloor: F, poolDrawing: I, isSettling: L, drawStart: ee, clearSelection: R, cancelWall: te, duplicateOpening: z } = N, B = us(e.draft.sceneItems.filter((e) => e.floorId === M.id)), { select: V, selectedId: ne, transaction: H, cancelTransaction: re } = B, ie = nu({
 		project: _.project,
 		constructEditor: N,
-		furnishingEditor: ee,
+		furnishingEditor: B,
 		activeFloorId: C
-	}), { furnishingModels: ae, deviceModels: oe, ceilingDependencies: U, previewSceneItems: se, visualSceneItems: W, selectedItem: ce, selectedDefinition: le, walkNavigation: ue, editorProject: de, editorProjectJson: fe, editedManifest: pe, placementFloor: me, editorResolvedBindings: G, visualManifest: he } = ie, { cameraView: ge, setCameraView: _e, savedCamera: ve, cameraResetKey: ye, cameraFocusRoomId: K, setCameraFocusRoomId: be, cameraFocusPoint: xe, setCameraFocusPoint: Se, activeIssueKey: Ce, setActiveIssueKey: we, issueFocusVersion: Te, selectedRoomId: q, setSelectedRoomId: Ee, focusRoom: De, focusIssue: Oe } = Nl({
+	}), { furnishingModels: ae, deviceModels: oe, ceilingDependencies: se, previewSceneItems: ce, visualSceneItems: U, selectedItem: W, selectedDefinition: le, walkNavigation: ue, editorProject: de, editorProjectJson: fe, editedManifest: pe, placementFloor: G, editorResolvedBindings: me, visualManifest: he } = ie, { cameraView: ge, setCameraView: _e, savedCamera: ve, cameraResetKey: ye, cameraFocusRoomId: be, setCameraFocusRoomId: xe, cameraFocusPoint: Se, setCameraFocusPoint: Ce, activeIssueKey: we, setActiveIssueKey: Te, issueFocusVersion: K, selectedRoomId: Ee, setSelectedRoomId: De, focusRoom: Oe, focusIssue: ke } = Rl({
 		initialRequest: o,
 		constructEditor: N,
-		furnishingEditor: ee,
-		previewSceneItems: se
+		furnishingEditor: B,
+		previewSceneItems: ce
 	});
-	Vl(o, _.project, e.draft.sceneItems, S, H);
-	let { detailsItemId: J, setDetailsItemId: ke, clearFurnishingSelection: Ae, deleteSceneItem: je, duplicateArrangeItem: Me } = Hl({
-		furnishingEditor: ee,
+	Kl(o, _.project, e.draft.sceneItems, S, V);
+	let { clearFurnishingSelection: q, deleteSceneItem: Ae, duplicateArrangeItem: je } = ql({
+		furnishingEditor: B,
 		projection: ie,
-		mode: f,
 		clearFocus: (0, Z.useCallback)(() => {
-			Ee(null), we(null);
-		}, [Ee, we]),
+			De(null), Te(null);
+		}, [De, Te]),
 		floor: F
-	}), Ne = m ? "error" : h ? "saving" : "saved", { closing: Y, previewOpen: Pe, setPreviewOpen: Fe, walkButton: Ie, closeWalk: Le, publishOpen: Re, setPublishOpen: ze, publishing: Be, publishMessage: Ve, setPublishMessage: He, saveDraft: Ue, applyDraft: We } = Ql(p, f, n), Ge = I, { beginStairPlacement: Ke, ...qe } = Bl(_.project, C, f, N), { stairPlacement: Je, setStairDialog: Ye, selectedOpening: Xe, setDetailsOpeningId: Ze, constructMeasure: $e, pendingRoomPaintId: et, setPendingRoomPaintId: tt, floorZoneDrawing: nt } = qe, { active: rt, cancel: it } = nt, at = !!Je || O || L || !!ne || Ge.active || rt || et !== null, ot = g || Y || E, st = ot || at || Re || Pe, ct = jl(p, C, f === "construct", st || !!R), lt = wl({
+	}), Me = m ? "error" : h ? "saving" : "saved", { closing: Ne, previewOpen: Pe, setPreviewOpen: Fe, walkButton: Ie, closeWalk: Le, publishOpen: Re, setPublishOpen: ze, publishing: Be, publishMessage: Ve, setPublishMessage: He, saveDraft: Ue, applyDraft: We } = ru(p, f, n), Ge = I, { beginStairPlacement: Ke, ...qe } = Gl(_.project, C, f, N), { stairPlacement: Je, setStairDialog: Ye, selectedOpening: Xe, constructMeasure: J, pendingRoomPaintId: Qe, setPendingRoomPaintId: $e, floorZoneDrawing: et } = qe, { active: tt, cancel: nt } = et, rt = !!Je || O || L || !!H || Ge.active || tt || Qe !== null, it = g || Ne || E, at = it || rt || Re || Pe, Y = Il(p, C, f === "construct", at || !!ee), ot = kl({
 		scope: `${f}:${C}`,
-		enabled: f === "construct" && !st && !ct.adjusting,
+		enabled: f === "construct" && !at && !Y.adjusting,
 		snapshot: _,
 		commit: v
-	}), ut = at || ct.adjusting || lt.active, dt = (0, Z.useCallback)(() => ke(null), [ke]), { catalogBrowsing: ft, setCatalogBrowsing: pt, catalogError: mt, setCatalogError: ht, arrangeAnnouncement: gt, addCatalogItem: _t, handleCameraTargetChange: vt } = Ll({
+	}), st = rt || Y.adjusting || ot.active, { catalogBrowsing: ct, setCatalogBrowsing: lt, catalogError: ut, setCatalogError: dt, arrangeAnnouncement: ft, addCatalogItem: pt, handleCameraTargetChange: mt } = Hl({
 		projection: ie,
-		furnishingEditor: ee,
-		disabled: ot || ut,
-		onAdded: dt
-	}), yt = (0, Z.useCallback)(() => {
-		Ye(null), z(), we(null);
+		furnishingEditor: B,
+		disabled: it || st
+	}), ht = (0, Z.useCallback)(() => {
+		Ye(null), R(), Te(null);
 	}, [
-		z,
-		we,
+		R,
+		Te,
 		Ye
-	]), bt = (0, Z.useCallback)((e) => (Ze(null), V(e)), [V, Ze]), { setActionBarItems: xt, replaceEditorsFromProject: St, undoProject: Ct, redoProject: Tt, selectSceneItem: Et } = Yl({
+	]), gt = (0, Z.useCallback)((e) => z(e), [z]), { setActionBarItems: _t, replaceEditorsFromProject: vt, undoProject: yt, redoProject: bt, selectSceneItem: St } = eu({
 		runtime: T,
 		homeAssistantUrl: c,
 		workspace: p,
 		constructEditor: N,
-		furnishingEditor: ee,
-		floorZoneDrawing: nt,
+		furnishingEditor: B,
+		floorZoneDrawing: et,
 		activeFloorId: C,
 		selectFloor: S,
-		editingLocked: ot,
-		unsettled: ut,
+		editingLocked: it,
+		unsettled: st,
 		dragging: O,
-		previewSceneItems: se,
+		previewSceneItems: ce,
 		editorProjectJson: fe,
 		editorProject: de,
 		mode: f,
 		onRestore: (0, Z.useCallback)(() => {
-			ke(null), Ee(null), k(!1), j(!1);
-		}, [Ee, ke])
+			De(null), k(!1), j(!1);
+		}, [De])
 	});
 	(0, Z.useEffect)(() => {
-		P.floorId !== C && (St(_.project), Ze(null), ke(null), Se(null), be(null));
+		P.floorId !== C && (vt(_.project), Ce(null), xe(null));
 	}, [
 		C,
 		P.floorId,
-		St,
+		vt,
 		_.project,
-		Se,
-		be,
-		Ze,
-		ke
-	]), nu({
-		clearConstructionSelection: yt,
-		clearFurnishingSelection: Ae,
+		Ce,
+		xe
+	]), su({
+		clearConstructionSelection: ht,
+		clearFurnishingSelection: q,
 		closeWalk: Le,
 		constructEditor: N,
-		constructMeasure: $e,
+		constructMeasure: J,
 		dragging: O,
-		duplicateArrangeItem: Me,
-		duplicateConstructionOpening: bt,
-		editingLocked: ot || ct.adjusting || lt.active,
-		floorZoneDrawing: nt,
-		furnishingEditor: ee,
+		duplicateArrangeItem: je,
+		duplicateConstructionOpening: gt,
+		editingLocked: it || Y.adjusting || ot.active,
+		floorZoneDrawing: et,
+		furnishingEditor: B,
 		marqueeSelecting: A,
 		mode: f,
-		pendingRoomPaintId: et,
+		pendingRoomPaintId: Qe,
 		previewOpen: Pe,
 		publishOpen: Re,
-		redoProject: Tt,
+		redoProject: bt,
 		selectedOpening: Xe,
-		undoProject: Ct,
-		unsettled: ut,
+		undoProject: yt,
+		unsettled: st,
 		setCameraView: _e,
 		walkButton: Ie,
-		setPendingRoomPaintId: tt,
+		setPendingRoomPaintId: $e,
 		setDragging: k
 	});
-	let Dt = () => {
-		ot || ut || (we(null), Ke());
-	}, Ot = (0, Z.useCallback)(async () => {
-		ot || ut || await Ue();
+	let Ct = () => {
+		it || st || (Te(null), Ke());
+	}, wt = (0, Z.useCallback)(async () => {
+		it || st || await Ue();
 	}, [
-		ot,
-		ut,
+		it,
+		st,
 		Ue
 	]);
-	eu(s?.exitRequested, ot || ut, Ot);
-	let { connect: kt, connectManifest: At, connectFloor: jt, signIn: Mt, bindingIssues: Nt } = zl({
+	au(s?.exitRequested, it || st, wt);
+	let { connect: Tt, connectManifest: Et, connectFloor: Dt, signIn: Ot, bindingIssues: kt } = Wl({
 		workspace: p,
 		activeFloorId: C,
 		runtime: T,
 		mode: f,
-		editingLocked: ot,
-		unsettled: ut,
+		editingLocked: it,
+		unsettled: st,
 		publishOpen: Re,
 		initialRequest: o,
 		navigation: s,
 		homeAssistantUrl: c,
 		onPrepareOrigin: l,
 		savedCamera: ve,
-		furnishingEditorSelectedId: te,
+		furnishingEditorSelectedId: ne,
 		setConnectionBusy: D,
 		homeId: e.homeId
-	}), { setView: Pt, defaultView: Ft } = kt, { cancel: It } = Ge, Lt = (0, Z.useCallback)((e, t = !1) => {
-		ot || (ht(null), ne && re(), ke(null), e !== "construct" && (B(), It(), it(), tt(null)), k(!1), j(!1), s ? t || s.go({ mode: e }) : e === "connect" && f !== "connect" && !t && Pt(Ft), d(e));
+	}), { setView: At, defaultView: jt } = Tt, { cancel: Mt } = Ge, Nt = (0, Z.useCallback)((e, t = !1) => {
+		it || (dt(null), H && re(), e !== "construct" && (te(), Mt(), nt(), $e(null)), k(!1), j(!1), s ? t || s.go({ mode: e }) : e === "connect" && f !== "connect" && !t && At(jt), d(e));
 	}, [
-		ot,
-		ne,
-		re,
-		B,
-		It,
 		it,
+		H,
+		re,
+		te,
+		Mt,
+		nt,
 		s,
 		f,
-		Pt,
-		Ft,
-		ht,
-		tt,
-		ke
-	]), { contextualIssues: Rt, displayedContextualIssues: zt } = tu({
+		At,
+		jt,
+		dt,
+		$e
+	]), { contextualIssues: Pt, displayedContextualIssues: Ft } = ou({
 		editorProject: de,
 		constructEditor: N,
-		previewSceneItems: se,
-		ceilingDependencies: U,
+		previewSceneItems: ce,
+		ceilingDependencies: se,
 		walkNavigation: ue,
 		mode: f
-	}), Bt = Ml({
+	}), It = Ll({
 		activeFloorId: C,
 		previewFloorId: F.id,
 		selectFloor: S,
-		focusCameraIssue: Oe,
-		selectMode: Lt
-	}), { publishIssues: Vt, publishErrors: Ht, publishWarnings: Ut } = $l(Rt, Nt), Wt = (0, Z.useCallback)(async () => {
-		Ht.length || ot || ut || await We(Nt);
+		focusCameraIssue: ke,
+		selectMode: Nt
+	}), { publishIssues: Lt, publishErrors: Rt, publishWarnings: zt } = iu(Pt, kt), Bt = (0, Z.useCallback)(async () => {
+		Rt.length || it || st || await We(kt);
 	}, [
-		Ht.length,
-		ot,
-		ut,
+		Rt.length,
+		it,
+		st,
 		We,
-		Nt
+		kt
 	]);
 	return {
-		northOrientation: lt,
+		northOrientation: ot,
 		...qe,
 		editorProject: de,
-		setActionBarItems: xt,
-		cameraFocusRoomId: K,
-		focusRoom: De,
-		placementFloor: me,
-		selectSceneItem: Et,
+		setActionBarItems: _t,
+		cameraFocusRoomId: be,
+		focusRoom: Oe,
+		placementFloor: G,
+		selectSceneItem: St,
 		floorNavigation: b,
 		activeFloorId: C,
 		floorReferences: w,
-		startStairs: Dt,
-		connectFloor: jt,
+		startStairs: Ct,
+		connectFloor: Dt,
 		mode: f,
-		editingLocked: ot,
+		editingLocked: it,
 		publishOpen: Re,
 		previewOpen: Pe,
-		connectManifest: At,
-		connect: kt,
-		clearConstructionSelection: yt,
-		clearFurnishingSelection: Ae,
+		connectManifest: Et,
+		connect: Tt,
+		clearConstructionSelection: ht,
+		clearFurnishingSelection: q,
 		cameraView: ge,
 		cameraResetKey: ye,
 		constructEditor: N,
 		dragging: O,
-		cameraFocusPoint: xe,
-		handleCameraTargetChange: vt,
+		cameraFocusPoint: Se,
+		handleCameraTargetChange: mt,
 		savedCamera: ve,
-		previewSceneItems: se,
-		displayedContextualIssues: zt,
-		activeIssueKey: Ce,
-		issueFocusVersion: Te,
+		previewSceneItems: ce,
+		displayedContextualIssues: Ft,
+		activeIssueKey: we,
+		issueFocusVersion: K,
 		poolDrawing: Ge,
-		focusIssue: Bt,
+		focusIssue: It,
 		furnishingModels: ae,
 		deviceModels: oe,
 		visualManifest: he,
-		selectedRoomId: q,
-		editorResolvedBindings: G,
+		selectedRoomId: Ee,
+		editorResolvedBindings: me,
 		marqueeSelecting: A,
 		setDragging: k,
-		setSelectedRoomId: Ee,
+		setSelectedRoomId: De,
 		setMarqueeSelecting: j,
-		duplicateConstructionOpening: bt,
-		visualSceneItems: W,
-		furnishingEditor: ee,
-		selectedItem: ce,
+		duplicateConstructionOpening: gt,
+		visualSceneItems: U,
+		furnishingEditor: B,
+		selectedItem: W,
 		selectedDefinition: le,
-		detailsItemId: J,
-		setDetailsItemId: ke,
-		unsettled: ut,
-		selectMode: Lt,
-		duplicateArrangeItem: Me,
-		deleteSceneItem: je,
+		unsettled: st,
+		selectMode: Nt,
+		duplicateArrangeItem: je,
+		deleteSceneItem: Ae,
 		setCameraView: _e,
 		walkButton: Ie,
 		setPreviewOpen: Fe,
-		closeEditor: Ot,
+		closeEditor: wt,
 		onWorkspaces: r,
-		closing: Y,
+		closing: Ne,
 		setPublishMessage: He,
 		setPublishOpen: ze,
 		runtime: T,
-		reference: ct,
+		reference: Y,
 		workspace: p,
-		undoProject: Ct,
-		redoProject: Tt,
+		undoProject: yt,
+		redoProject: bt,
 		homeAssistantUrl: c,
-		signIn: Mt,
+		signIn: Ot,
 		snapshot: _,
 		flush: y,
 		lifecycle: t,
 		commit: v,
-		replaceEditorsFromProject: St,
-		catalogBrowsing: ft,
-		setCatalogBrowsing: pt,
-		catalogError: mt,
-		addCatalogItem: _t,
-		arrangeAnnouncement: gt,
-		autosaveStatus: Ne,
+		replaceEditorsFromProject: vt,
+		catalogBrowsing: ct,
+		setCatalogBrowsing: lt,
+		catalogError: ut,
+		addCatalogItem: pt,
+		arrangeAnnouncement: ft,
+		autosaveStatus: Me,
 		editedManifest: pe,
 		closeWalk: Le,
-		publishErrors: Ht,
-		publishWarnings: Ut,
-		publishIssues: Vt,
+		publishErrors: Rt,
+		publishWarnings: zt,
+		publishIssues: Lt,
 		publishMessage: Ve,
 		publishing: Be,
-		publishProject: Wt
+		publishProject: Bt
 	};
 }
 //#endregion
 //#region apps/web/src/editor-workspace/EditorWorkspace.tsx
-function uu(e) {
-	let t = lu(e), { editorProject: n, northOrientation: r, setActionBarItems: a, focusRoom: o, floorNavigation: s, activeFloorId: c, stairPlacement: l, stairDialog: u, setStairDialog: d, floorDialog: f, setFloorDialog: p, floorReferences: m, mode: h, editingLocked: g, publishOpen: _, previewOpen: y, connect: b, constructEditor: x, displayedContextualIssues: S, furnishingModels: C, deviceModels: w, furnishingEditor: T, unsettled: E, selectMode: D, runtime: O, reference: k, workspace: A, undoProject: j, redoProject: M, homeAssistantUrl: P, snapshot: I, commit: L, replaceEditorsFromProject: R, autosaveStatus: B, editedManifest: V } = t, [ee, H] = (0, Z.useState)(null), te = (0, Z.useMemo)(() => ({
-		furnishingModels: C,
-		deviceModels: w
-	}), [C, w]);
+function hu(e) {
+	let t = mu(e), { editorProject: n, northOrientation: r, setActionBarItems: a, focusRoom: o, floorNavigation: s, activeFloorId: c, stairPlacement: l, stairDialog: u, floorDialog: d, setFloorDialog: f, floorReferences: p, mode: m, editingLocked: h, publishOpen: g, previewOpen: _, connect: v, constructEditor: b, displayedContextualIssues: x, deviceModels: S, furnishingEditor: C, unsettled: w, selectMode: T, runtime: E, reference: D, workspace: O, undoProject: k, redoProject: A, homeAssistantUrl: j, snapshot: M, commit: P, replaceEditorsFromProject: F, autosaveStatus: I, editedManifest: ee } = t, [R, te] = (0, Z.useState)(null);
 	(0, Z.useEffect)(() => {
-		H(null);
+		te(null);
 	}, [
-		h,
+		m,
 		c,
 		u?.id,
 		l?.shape
 	]);
-	let re = u ? `stairs[${I.project.stairs.findIndex((e) => e.id === u.id)}]` : null, ie = re ? S.filter((e) => e.path !== re && !e.path.startsWith(`${re}.`)) : S, ae = xr(n, h, Object.keys(A.snapshot.references ?? {}).length > 0), oe = e.navigation?.request.panel === "action-bar" || e.initialRequest?.panel === "action-bar", [U, se] = (0, Z.useState)(oe), W = ze(), ce = Rt("cabane-icon.png");
+	let z = ar(n, m, Object.keys(O.snapshot.references ?? {}).length > 0), B = e.navigation?.request.panel === "action-bar" || e.initialRequest?.panel === "action-bar", [ne, H] = (0, Z.useState)(B), re = ze(), ie = Rt("cabane-icon.png");
 	(0, Z.useEffect)(() => {
-		se(oe);
-	}, [oe]);
-	let le = e.navigation ? oe : U, ue = (0, Z.useRef)(null);
+		H(B);
+	}, [B]);
+	let ae = e.navigation ? B : ne, oe = (0, Z.useRef)(null);
 	(0, Z.useEffect)(() => {
-		let e = ue.current?.querySelector(".editor-sidebar-content");
+		let e = oe.current?.querySelector(".editor-sidebar-content");
 		e && (e.scrollTop = 0);
-	}, [h, le]);
-	let de = (t) => {
-		k.cancel(), t === "shortcuts" ? (se(!0), e.navigation?.go({
+	}, [m, ae]);
+	let se = (t) => {
+		D.cancel(), t === "shortcuts" ? (H(!0), e.navigation?.go({
 			mode: "construct",
 			panel: "action-bar"
-		})) : (se(!1), D(t));
-	}, fe = P ? pe(P) : null, me = fe ? I.bindings[fe]?.draft.roomAreaIds : void 0, G = Object.fromEntries(n.floors.flatMap((e) => e.rooms.map((e) => {
-		let t = O.areas.find((t) => t.area_id === me?.[e.id]);
-		return [e.id, at(t?.picture, O.origin)];
+		})) : (H(!1), T(t));
+	}, ce = w || t.marqueeSelecting || !!b.drawStart, U = hc(pc(t, ae), ce, x.length > 0), W = x, le = h || g || _ || r.active || ce, ue = U.issuesOpen, fe = () => {
+		U.collapseProperties(), requestAnimationFrame(() => re.root.querySelector(".editor-properties-toggle, .editor-panel-switcher button")?.focus());
+	}, pe = j ? de(j) : null, G = pe ? M.bindings[pe]?.draft.roomAreaIds : void 0, me = Object.fromEntries(n.floors.flatMap((e) => e.rooms.map((e) => {
+		let t = E.areas.find((t) => t.area_id === G?.[e.id]);
+		return [e.id, it(t?.picture, E.origin)];
 	}))), he = Object.fromEntries(n.floors.flatMap((e) => e.rooms.map((e) => {
-		let t = O.areas.find((t) => t.area_id === me?.[e.id]);
+		let t = E.areas.find((t) => t.area_id === G?.[e.id]);
 		return [e.id, t?.name?.trim() || e.name];
-	}))), ge = (0, Z.useMemo)(() => Ct(V, b.profile, O, w), [
-		V,
-		b.profile,
-		O,
-		w
-	]), _e = Object.fromEntries(Object.values(ge.rooms).flatMap((e) => e.devices.flatMap((e) => e.displayName ? [[e.slot.id, e.displayName]] : []))), [ve, ye] = (0, Z.useState)(null), [K, be] = (0, Z.useState)(null), xe = ae.state?.step === "reference" && !k.storage.ready || g || E || !!x.drawStart || _ || y, Se = (e) => {
-		let t = dn({
-			...A.getRecord(),
-			draft: I.project,
-			bindings: I.bindings
-		}, e, wn);
-		L(t), R(t.project);
-	}, Ce = () => {
-		let e = ae.state;
-		if (!e || xe) return;
+	}))), ge = (0, Z.useMemo)(() => bt(ee, v.profile, E, S), [
+		ee,
+		v.profile,
+		E,
+		S
+	]), _e = Object.fromEntries(Object.values(ge.rooms).flatMap((e) => e.devices.flatMap((e) => e.displayName ? [[e.slot.id, e.displayName]] : []))), [ve, ye] = (0, Z.useState)(null), [be, xe] = (0, Z.useState)(null), Se = z.state?.step === "reference" && !D.storage.ready || h || w || !!b.drawStart || g || _, Ce = (e) => {
+		let t = pn({
+			...O.getRecord(),
+			draft: M.project,
+			bindings: M.bindings
+		}, e, Sn);
+		P(t), F(t.project);
+	}, we = () => {
+		let e = z.state;
+		if (!e || Se) return;
 		if (e.step === "reference") {
-			k.openPicker();
+			D.openPicker();
 			return;
 		}
-		if (e.step === "arrange" && h === "furnish") {
-			ae.ready();
+		if (e.step === "arrange" && m === "furnish") {
+			z.ready();
 			return;
 		}
 		let t = e.step === "arrange" ? "furnish" : e.step === "connect" ? "connect" : "construct";
-		e.target && s.selectFloor(e.target.floorId), D(t), be({
+		e.target && s.selectFloor(e.target.floorId), T(t), xe({
 			step: e.step,
 			...e.target === void 0 ? {} : { target: e.target }
 		});
 	};
 	(0, Z.useEffect)(() => {
-		if (!K || xe) return;
-		let { step: e, target: t } = K;
-		h !== (e === "arrange" ? "furnish" : e === "connect" ? "connect" : "construct") || t && (c !== t.floorId || x.previewFloor.id !== t.floorId) || (t && o(t.roomId), e === "walls" && x.setTool("wall"), (e === "door" || e === "window") && x.setTool(e), e === "name" && t && (x.setTool("select"), x.selectRoom(t.roomId), ye({
+		if (!be || Se) return;
+		let { step: e, target: t } = be;
+		m !== (e === "arrange" ? "furnish" : e === "connect" ? "connect" : "construct") || t && (c !== t.floorId || b.previewFloor.id !== t.floorId) || (t && o(t.roomId), e === "walls" && b.setTool("wall"), (e === "door" || e === "window") && b.setTool(e), e === "name" && t && (b.setTool("select"), b.selectRoom(t.roomId), ye({
 			roomId: t.roomId,
 			serial: Date.now()
-		})), be(null));
+		})), xe(null));
 	}, [
-		K,
-		xe,
-		h,
+		be,
+		Se,
+		m,
 		c,
-		x.previewFloor.id,
-		x,
+		b.previewFloor.id,
+		b,
 		o
 	]);
-	let [we, Te] = (0, Z.useState)(null);
+	let [Te, K] = (0, Z.useState)(null);
 	(0, Z.useEffect)(() => {
-		Te(null);
+		K(null);
 	}, [
-		h,
+		m,
 		c,
-		k.adjusting
+		D.adjusting
 	]), (0, Z.useEffect)(() => {
 		let e = (e) => {
-			e.key === "Escape" && Te(null);
+			e.key === "Escape" && K(null);
 		};
-		return W.events.addEventListener("keydown", e), () => W.events.removeEventListener("keydown", e);
-	}, [W]), (0, Z.useEffect)(() => {
-		(x.tool !== "select" || l) && Te(null);
-	}, [x.tool, l]);
-	let q = h === "construct" && we === c, Ee = g || r.active || E && !k.adjusting || !!f, De = F(I.project.floors, c), Oe = () => {
-		let e = i(I, `floor-${N()}`);
-		L(e), s.selectFloor(e.project.floors[0].id), x.replaceFloor(e.project.floors[0]), T.replaceItems([]);
-	}, J = () => {
-		let e = pt(I, `floor-${N()}`);
-		L(e), s.selectFloor(e.project.floors.at(-1).id), x.replaceFloor(e.project.floors.at(-1)), T.replaceItems([]);
+		return re.events.addEventListener("keydown", e), () => re.events.removeEventListener("keydown", e);
+	}, [re]), (0, Z.useEffect)(() => {
+		(b.tool !== "select" || l) && K(null);
+	}, [b.tool, l]);
+	let Ee = m === "construct" && Te === c, De = h || r.active || w && !D.adjusting || !!d, Oe = N(M.project.floors, c), ke = () => {
+		let e = i(M, `floor-${lt()}`);
+		P(e), s.selectFloor(e.project.floors[0].id), b.replaceFloor(e.project.floors[0]), C.replaceItems([]);
+	}, q = () => {
+		let e = dt(M, `floor-${lt()}`);
+		P(e), s.selectFloor(e.project.floors.at(-1).id), b.replaceFloor(e.project.floors.at(-1)), C.replaceItems([]);
 	};
-	return /* @__PURE__ */ (0, Q.jsx)(Kn, {
+	return /* @__PURE__ */ (0, Q.jsx)(Gn, {
 		palette: n.home.palette,
 		children: /* @__PURE__ */ (0, Q.jsxs)("main", {
-			className: `direction-preview${r.active ? " is-orienting-north" : ""}${le ? " is-shortcuts" : h === "connect" ? " is-connect" : h === "construct" ? " is-plan" : ""}`,
-			"data-editor-mode": le ? "shortcuts" : h,
+			className: `direction-preview${r.active ? " is-orienting-north" : ""}${ae ? " is-shortcuts" : m === "connect" ? " is-connect" : m === "construct" ? " is-plan" : ""}`,
+			"data-editor-mode": ae ? "shortcuts" : m,
+			"data-properties-open": U.propertiesOpen,
+			"data-has-issues": W.length > 0,
+			"data-issues-expanded": ue,
+			"data-mobile-panel": U.mobileSurface === "issues" && !W.length ? "tools" : U.mobileSurface,
 			children: [
-				!le && /* @__PURE__ */ (0, Q.jsx)(Cl, {
-					onStairIssuesChange: H,
+				!ae && /* @__PURE__ */ (0, Q.jsx)(Ol, {
+					rightPanelOpen: U.propertiesOpen,
+					onStairIssuesChange: te,
 					onNameFocusHandled: () => ye(null),
 					nameFocusRequest: ve,
-					placingWalkStart: q,
-					onWalkStartPlaced: () => Te(null),
+					placingWalkStart: Ee,
+					onWalkStartPlaced: () => K(null),
 					...t
 				}),
 				/* @__PURE__ */ (0, Q.jsxs)("div", {
 					className: "editor-floor-controls",
-					inert: _ || y || r.active,
-					children: [/* @__PURE__ */ (0, Q.jsx)(bt, {
-						floors: I.project.floors,
+					inert: g || _ || r.active,
+					children: [/* @__PURE__ */ (0, Q.jsx)(_t, {
+						floors: M.project.floors,
 						selectedId: c,
-						disabled: Ee,
+						disabled: De,
 						onSelect: (e) => s.selectFloor(e),
-						onAdd: h === "construct" ? J : void 0,
-						onAddBelow: h === "construct" ? Oe : void 0,
-						onRename: h === "construct" ? () => p("rename") : void 0,
-						onRemove: h === "construct" && !De ? () => p("remove") : void 0
-					}), h === "construct" && m.references.map(({ direction: e, floor: t, visible: n }) => /* @__PURE__ */ (0, Q.jsxs)("label", {
+						onAdd: m === "construct" ? q : void 0,
+						onAddBelow: m === "construct" ? ke : void 0,
+						onRename: m === "construct" ? () => f("rename") : void 0,
+						onRemove: m === "construct" && !Oe ? () => f("remove") : void 0
+					}), m === "construct" && p.references.map(({ direction: e, floor: t, visible: n }) => /* @__PURE__ */ (0, Q.jsxs)("label", {
 						title: t.name,
 						children: [
 							/* @__PURE__ */ (0, Q.jsx)("input", {
 								type: "checkbox",
 								checked: n,
-								onChange: (t) => m.setVisible(e, t.target.checked)
+								onChange: (t) => p.setVisible(e, t.target.checked)
 							}),
 							"Show floor ",
 							e
 						]
 					}, e))]
 				}),
-				h === "construct" && u && /* @__PURE__ */ (0, Q.jsx)(_r, {
-					registries: te,
-					liveIssues: ee,
-					project: I.project,
-					stair: I.project.stairs.find((e) => e.id === u.id) ?? u,
-					onCancel: () => d(null),
-					onSave: (e) => {
-						L({
-							...I,
-							project: {
-								...I.project,
-								stairs: [...I.project.stairs.filter((t) => t.id !== e.id), e]
-							}
-						});
-					}
-				}, `${c}:${u.id}`),
-				f && /* @__PURE__ */ (0, Q.jsx)(Jn, {
-					action: f,
-					onRemove: De ? void 0 : () => p("remove"),
-					removeDisabledReason: De,
-					name: I.project.floors.find((e) => e.id === c).name,
-					height: I.project.floors.find((e) => e.id === c).floorToFloorHeightMeters,
-					itemCount: I.project.sceneItems.filter((e) => e.floorId === c).length,
-					stairCount: I.project.stairs.filter((e) => e.upperFloorId === c || e.lowerFloorId === c).length,
-					onCancel: () => p(null),
+				d && /* @__PURE__ */ (0, Q.jsx)(qn, {
+					action: d,
+					onRemove: Oe ? void 0 : () => f("remove"),
+					removeDisabledReason: Oe,
+					name: M.project.floors.find((e) => e.id === c).name,
+					height: M.project.floors.find((e) => e.id === c).floorToFloorHeightMeters,
+					itemCount: M.project.sceneItems.filter((e) => e.floorId === c).length,
+					stairCount: M.project.stairs.filter((e) => e.upperFloorId === c || e.lowerFloorId === c).length,
+					onCancel: () => f(null),
 					onSave: (e, t) => {
-						let n = f === "remove" ? z(I, c) : v(ne(I, c, e), c, t);
-						L(n), R(n.project), p(null);
+						let n = d === "remove" ? L(M, c) : y(V(M, c, e), c, t);
+						P(n), F(n.project), f(null);
 					}
 				}),
-				/* @__PURE__ */ (0, Q.jsx)(wc, {
-					referenceAdjusting: k.adjusting,
+				/* @__PURE__ */ (0, Q.jsx)(kc, {
+					referenceAdjusting: D.adjusting,
 					...t,
-					editingLocked: g || r.active,
-					shortcutsMode: le,
-					onModeTabChange: de
+					editingLocked: h || r.active,
+					shortcutsMode: ae,
+					onModeTabChange: se
 				}),
-				le && /* @__PURE__ */ (0, Q.jsx)(Dn, { children: /* @__PURE__ */ (0, Q.jsx)(_c, {
-					walkTools: kn,
+				ae && /* @__PURE__ */ (0, Q.jsx)(Tn, { children: /* @__PURE__ */ (0, Q.jsx)(Sc, {
+					walkTools: Dn,
 					project: n,
-					runtime: O,
-					profile: b.profile,
-					actionMappingEnabled: !!fe && O.origin === fe,
-					deviceModels: w,
-					roomPictures: G,
+					runtime: E,
+					profile: v.profile,
+					actionMappingEnabled: !!pe && E.origin === pe,
+					deviceModels: S,
+					roomPictures: me,
 					roomNames: he,
 					deviceNames: _e,
-					disabled: g || E || _ || y,
-					canUndo: A.canUndo && !E,
-					canRedo: A.canRedo && !E,
-					onUndo: j,
-					onRedo: M,
+					disabled: h || w || g || _,
+					canUndo: O.canUndo && !w,
+					canRedo: O.canRedo && !w,
+					onUndo: k,
+					onRedo: A,
 					onChange: a
 				}) }),
 				/* @__PURE__ */ (0, Q.jsx)(uc, {
 					...t,
-					focusIssue: (e) => {
-						se(!1), t.focusIssue(e);
-					},
-					sidebar: ue,
-					iconUrl: ce,
-					shortcutsMode: le,
-					floorControlsDisabled: Ee,
-					addFloorAbove: J,
-					addFloorBelow: Oe,
-					tutorial: ae,
-					tutorialBusy: xe,
-					activateTutorial: Ce,
-					stairLiveIssues: ee,
-					importWorkspace: Se,
-					placingWalkStart: q,
-					setWalkStartFloor: Te,
-					sidebarIssues: ie,
+					sidebar: oe,
+					iconUrl: ie,
+					shortcutsMode: ae,
+					floorControlsDisabled: De,
+					addFloorAbove: q,
+					addFloorBelow: ke,
+					tutorial: z,
+					tutorialBusy: Se,
+					activateTutorial: we,
+					stairLiveIssues: R,
+					importWorkspace: Ce,
+					placingWalkStart: Ee,
+					setWalkStartFloor: K,
 					onHomeAssistantSettings: e.onHomeAssistantSettings
 				}),
-				/* @__PURE__ */ (0, Q.jsx)(Ls, { ...t }),
-				B !== "saved" && /* @__PURE__ */ (0, Q.jsxs)("div", {
-					className: `direction-status is-${B}`,
+				/* @__PURE__ */ (0, Q.jsx)(Rs, {
+					...t,
+					open: U.propertiesOpen && !ae,
+					onCollapse: fe,
+					liveStairIssues: R,
+					disabled: le
+				}),
+				/* @__PURE__ */ (0, Q.jsxs)("div", {
+					inert: h || g || _ || r.active,
+					children: [/* @__PURE__ */ (0, Q.jsx)(dc, {
+						issues: W,
+						expanded: U.issuesExpanded,
+						onToggle: U.toggleIssues,
+						disabled: ce,
+						onSelect: (e) => {
+							H(!1), U.openProperties(), t.focusIssue(e);
+						}
+					}), /* @__PURE__ */ (0, Q.jsx)(fc, {
+						panels: U,
+						issueCount: W.length,
+						disabled: le
+					})]
+				}),
+				I !== "saved" && /* @__PURE__ */ (0, Q.jsxs)("div", {
+					className: `direction-status is-${I}`,
 					children: [
 						/* @__PURE__ */ (0, Q.jsx)("span", {}),
-						B === "saving" && "Saving draft…",
-						B === "error" && "Could not save · Changes kept in memory"
+						I === "saving" && "Saving draft…",
+						I === "error" && "Could not save · Changes kept in memory"
 					]
 				}),
-				/* @__PURE__ */ (0, Q.jsx)(Sr, { ...t })
+				/* @__PURE__ */ (0, Q.jsx)(or, { ...t })
 			]
 		})
 	});
 }
 //#endregion
 //#region apps/web/src/HomeEditor.tsx
-var du = (e, t) => {
+var gu = (e, t) => {
 	let n = URL.createObjectURL(new Blob([t], { type: "application/json" })), r = document.createElement("a");
 	r.href = n, r.download = `${e}.corrupt-project.json`, r.click(), URL.revokeObjectURL(n);
 };
-function fu({ initialRecord: e, lifecycle: t, recoveryMessage: n, recoveryRaw: r, onClose: i, autosaveDelayMs: a, ...o }) {
+function _u({ initialRecord: e, lifecycle: t, recoveryMessage: n, recoveryRaw: r, onClose: i, autosaveDelayMs: a, ...o }) {
 	let [s, c] = (0, Z.useState)(() => ({
 		record: e,
 		recoveryMessage: n,
@@ -15798,7 +15997,7 @@ function fu({ initialRecord: e, lifecycle: t, recoveryMessage: n, recoveryRaw: r
 				children: [
 					/* @__PURE__ */ (0, Q.jsx)("button", {
 						type: "button",
-						onClick: () => du(s.record.homeId, s.recoveryRaw ?? ""),
+						onClick: () => gu(s.record.homeId, s.recoveryRaw ?? ""),
 						children: "Download recovery data"
 					}),
 					/* @__PURE__ */ (0, Q.jsx)("button", {
@@ -15846,7 +16045,7 @@ function fu({ initialRecord: e, lifecycle: t, recoveryMessage: n, recoveryRaw: r
 				]
 			})
 		]
-	}) : /* @__PURE__ */ (0, Q.jsx)(uu, {
+	}) : /* @__PURE__ */ (0, Q.jsx)(hu, {
 		initialRecord: s.record,
 		lifecycle: t,
 		onClose: i,
@@ -15855,4 +16054,4 @@ function fu({ initialRecord: e, lifecycle: t, recoveryMessage: n, recoveryRaw: r
 	});
 }
 //#endregion
-export { fu as HomeEditor };
+export { _u as HomeEditor };

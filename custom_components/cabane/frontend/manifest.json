@@ -3,26 +3,27 @@
   "kind": "cabane-native-ha-panel",
   "element": "cabane-panel",
   "entrypoint": "cabane-panel.js",
-  "source_commit": "95cbbb41473555cd10b3b13c5512c6aec114498f",
+  "source_commit": "eab84d8c392ac96e20def3c4b07dcdf79a31f8d2",
   "workspace_contract": {
     "revision": 10,
     "fingerprint": "e3116eaf15243c13d69c3005ea363bd5301a3e66bbd16b82363ea8ad481dee8d"
   },
   "files": {
     "assets/geometry-lod.worker-DiHITZ_3.js": "007a253b22e7bd6fbda95ce1ec5449ea363ffda3891953402160565620328c19",
-    "assets/HomeEditor-kfnE-Loy.js": "77caef2077dc2888a81a4a590c99a6855717614ef1317f376e10242fae19abb5",
-    "assets/LaserIcon-DRDYMTYZ.js": "7f8f9d25092919464f62d89f1cfb1b8205a98c275759f46f9b56e34b968301bc",
-    "assets/LaserWalkTool-uqeX5C-9.js": "7dd4b07e2dd83113ad4bc671718ab2e5a889caa97385946b9cac1f21bbbe6e4a",
+    "assets/HomeEditor-CWydcU_J.js": "28ddcb49bd3b13b5c86f0ee8631953f7bde2e992463636a9f8a114464cf86b09",
+    "assets/LaserIcon-DwnO5L13.js": "eb81ed2ed85ff223f3bef1a7d70af3f15284a070eeb74247e589a4b3a4dc4a07",
+    "assets/LaserWalkTool-BMJIajit.js": "56445177c88e96b087411fb4291b126b5315e34397b9f383ad43b8f0960c8d37",
     "assets/rolldown-runtime-B0aSnxlc.js": "50b894ddf9c639d2ca2628890682a4d50293bb652fee4875174e780a8149580d",
-    "assets/ShortcutDeviceIcon-BStKqIN7.js": "a1e678195ffedee3a7f81a49524bf7df4a02545e3fd73f6a9b583aa4e0bb69df",
+    "assets/ShortcutDeviceIcon-DaDAJaAp.js": "0c21c309f09b778d8894ef579c239781859940a62a1edc2d132e470780734d76",
     "cabane-fonts.css": "4f2cf4a3883a3c6db3969ba2e13594c1426a5bcfa173d1a828c06e21ee0845af",
     "cabane-icon.png": "7b99e53cf6aa96a44377563d5ff2db7548bd15ae79b8237c3c0ed05169d9f92b",
-    "cabane-panel.css": "5e0a7be1104cf3c83e656f18903125d1d1fa51e31236cba9df4d59774bfe83f4",
-    "cabane-panel.js": "b496b9f6b3d8415ecb094dc808f1f3fe51c29850cf418cba92d6cf57741912f1",
-    "LICENSE": "6d4d2f020b355362cd7a435fee57ad230d8593eb904c4398ac4d7fcd9243bf34",
+    "cabane-panel.css": "9aca0cefce480062b714286cb6a8cad119ddb0605a489dd4c4139efcd09b5643",
+    "cabane-panel.js": "b390554be3f004ccebd919e1abada05c7d0ed56f2e0ca14101c3588fba829d8a",
+    "LICENSE": "ffcca38841adb694b6f380647e15f17c446a4d1656fed51a1e2041d064c94cc8",
     "onboarding/build.png": "0922e02c25ce3ba7b0839c0b8a22cac674ff3616ed02771e5136545e43d20c41",
     "onboarding/connect.png": "3d58958b582fb88efda8b64ca6c3aaa9b36a5dde530dc209dfda38acc514df3a",
     "onboarding/control.png": "d790f5a55823d883ad1a5b341b9d273057b5f8d1b888c69ef36916715b96e42e",
-    "THIRD_PARTY_LICENSES.txt": "8848916b662fb714b74134fb7ebe2a02146418edea2299f2d79fbbbe97761f5c"
+    "THIRD_PARTY_LICENSES.txt": "ec033febffad3bd7ff63f6a41f7a5f657fb301f8b5c28427962c8c6025fc9fc7",
+    "THIRD_PARTY_NOTICES.md": "0c6753a348f28197bee55e15645ec35c414caf164dd264df16cd506a27deb1bc"
   }
 }
