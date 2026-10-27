@@ -1,5 +1,5 @@
 import { r as e } from "./rolldown-runtime-B0aSnxlc.js";
-import { An as t, Ci as n, Di as r, E as i, Ei as a, Et as o, Fn as s, Fr as c, Gr as l, Gt as u, H as d, I as f, In as p, Ir as m, Jn as h, Jr as g, Jt as _, K as v, Ki as y, Kr as b, Kt as x, Lr as ee, Mn as S, Mr as C, Mt as w, Ni as T, Nr as E, Or as D, Pr as te, Qn as ne, Qr as O, Qt as re, R as k, Rn as A, Rr as ie, Ti as ae, Tt as oe, Ur as se, Wn as ce, Wr as le, Wt as j, Xn as ue, Xr as de, Xt as fe, Yn as pe, Yt as me, Z as he, Zn as ge, Zr as _e, Zt as ve, _n as ye, _r as be, ai as xe, an as Se, ar as Ce, cn as we, cr as M, di as Te, dn as Ee, en as De, er as Oe, fi as ke, fr as N, ft as Ae, gi as P, gn as je, hi as Me, in as Ne, jr as Pe, jt as Fe, kr as Ie, kt as Le, ln as Re, mi as ze, mn as Be, n as F, ni as Ve, nn as He, nr as Ue, pi as We, pn as Ge, pr as Ke, qi as qe, qn as Je, ri as Ye, si as I, sn as Xe, t as Ze, ti as Qe, tn as $e, tr as et, ur as tt, wi as nt, wt as rt, xn as it, z as at, zn as L, zr as ot } from "./LaserIcon-Co-FoQhL.js";
+import { An as t, Ci as n, Di as r, E as i, Ei as a, Et as o, Fn as s, Fr as c, Gr as l, Gt as u, H as d, I as f, In as p, Ir as m, Jn as h, Jr as g, Jt as _, K as v, Ki as y, Kr as b, Kt as x, Lr as ee, Mn as S, Mr as C, Mt as w, Ni as T, Nr as E, Or as D, Pr as te, Qn as ne, Qr as O, Qt as re, R as k, Rn as A, Rr as ie, Ti as ae, Tt as oe, Ur as se, Wn as ce, Wr as le, Wt as j, Xn as ue, Xr as de, Xt as fe, Yn as pe, Yt as me, Z as he, Zn as ge, Zr as _e, Zt as ve, _n as ye, _r as be, ai as xe, an as Se, ar as Ce, cn as we, cr as M, di as Te, dn as Ee, en as De, er as Oe, fi as ke, fr as N, ft as Ae, gi as P, gn as je, hi as Me, in as Ne, jr as Pe, jt as Fe, kr as Ie, kt as Le, ln as Re, mi as ze, mn as Be, n as F, ni as Ve, nn as He, nr as Ue, pi as We, pn as Ge, pr as Ke, qi as qe, qn as Je, ri as Ye, si as I, sn as Xe, t as Ze, ti as Qe, tn as $e, tr as et, ur as tt, wi as nt, wt as rt, xn as it, z as at, zn as L, zr as ot } from "./LaserIcon-ByFNe0VC.js";
 //#region node_modules/@react-three/drei/core/Billboard.js
 var R = /* @__PURE__ */ e(qe()), st = /* @__PURE__ */ R.forwardRef(function({ children: e, follow: t = !0, lockX: n = !1, lockY: r = !1, lockZ: i = !1, ...a }, o) {
 	let s = R.useRef(null), c = R.useRef(null), l = new Ye();
@@ -50034,6 +50034,15 @@ async function ly(e, t) {
 //#endregion
 //#region apps/web/src/editor-chrome/EditorIcon.tsx
 var uy = {
+	floorAbove: /* @__PURE__ */ (0, U.jsx)("path", { d: "M3 14h12v7H3zM3 17.5h12M19 13V3m-3 3 3-3 3 3" }),
+	floorBelow: /* @__PURE__ */ (0, U.jsx)("path", { d: "M3 3h12v7H3zM3 6.5h12M19 11v10m-3-3 3 3 3-3" }),
+	apartmentFloor: /* @__PURE__ */ (0, U.jsxs)(U.Fragment, { children: [/* @__PURE__ */ (0, U.jsx)("rect", {
+		x: "4",
+		y: "3",
+		width: "16",
+		height: "18",
+		rx: "1"
+	}), /* @__PURE__ */ (0, U.jsx)("path", { d: "M4 9h16M4 15h16M9 5.5v1M15 5.5v1M9 11.5v1M15 11.5v1M10 21v-3h4v3" })] }),
 	niche: /* @__PURE__ */ (0, U.jsxs)(U.Fragment, { children: [/* @__PURE__ */ (0, U.jsx)("path", { d: "M3 21V3h18v18M6 18V6h12v12Z" }), /* @__PURE__ */ (0, U.jsx)("path", { d: "M6 12h12" })] }),
 	decorations: /* @__PURE__ */ (0, U.jsx)(U.Fragment, { children: /* @__PURE__ */ (0, U.jsx)("path", { d: "M3 21h18M5 21V9h14v12M8 9V5h8v4M8 15h8" }) }),
 	check: /* @__PURE__ */ (0, U.jsx)("path", { d: "m5 12 4 4L19 6" }),
@@ -50368,7 +50377,7 @@ var Dy = [{
 	defaultShortcut: !0,
 	shortcutKey: "G",
 	Icon: Ze,
-	Scene: (0, R.lazy)(() => import("./LaserWalkTool-BF6k_0yI.js").then((e) => ({ default: e.LaserWalkTool })))
+	Scene: (0, R.lazy)(() => import("./LaserWalkTool-DFBsQcZw.js").then((e) => ({ default: e.LaserWalkTool })))
 }];
 //#endregion
 //#region apps/web/src/editor-connect/useConnectSignIn.ts
@@ -51801,7 +51810,7 @@ function _b({ entry: e }) {
 }
 //#endregion
 //#region apps/web/src/editor-preview/furnish/catalog/thumbnailCache.ts
-var vb = "cabane-model-previews-fd825587ca925c3ceec9", yb = /* @__PURE__ */ new Map(), bb = 400;
+var vb = "cabane-model-previews-6888bc0ff4a9fcb053b4", yb = /* @__PURE__ */ new Map(), bb = 400;
 function xb(e, t) {
 	yb.delete(e), yb.set(e, t), yb.size > bb && yb.delete(yb.keys().next().value);
 }

@@ -1,6 +1,6 @@
 import { r as e } from "./assets/rolldown-runtime-B0aSnxlc.js";
-import { $n as t, B as n, Dn as r, Ft as i, G as a, It as o, J as s, K as c, Ki as l, Kt as u, L as d, Lt as f, Mt as p, Nt as m, Pt as h, R as g, S as _, T as v, U as y, Vi as b, W as x, Wi as S, Xn as C, Zt as w, _r as T, ar as E, fn as D, gr as O, hr as k, in as A, ir as j, mr as M, nn as ee, nr as N, or as P, qi as te, qn as ne, s as F, tn as I, tr as re, z as ie } from "./assets/LaserIcon-Co-FoQhL.js";
-import { B as L, D as R, E as ae, F as oe, I as se, L as ce, M as le, O as z, P as ue, U as de, V as fe, b as pe, f as me, g as he, h as ge, j as _e, k as ve, l as ye, m as be, n as xe, o as Se, p as Ce, t as we, u as B, w as Te, z as Ee } from "./assets/ShortcutDeviceIcon-D7yz_qZx.js";
+import { $n as t, B as n, Dn as r, Ft as i, G as a, It as o, J as s, K as c, Ki as l, Kt as u, L as d, Lt as f, Mt as p, Nt as m, Pt as h, R as g, S as _, T as v, U as y, Vi as b, W as x, Wi as S, Xn as C, Zt as w, _r as T, ar as E, fn as D, gr as O, hr as k, in as A, ir as j, mr as M, nn as ee, nr as N, or as P, qi as te, qn as ne, s as F, tn as I, tr as re, z as ie } from "./assets/LaserIcon-ByFNe0VC.js";
+import { B as L, D as R, E as ae, F as oe, I as se, L as ce, M as le, O as z, P as ue, U as de, V as fe, b as pe, f as me, g as he, h as ge, j as _e, k as ve, l as ye, m as be, n as xe, o as Se, p as Ce, t as we, u as B, w as Te, z as Ee } from "./assets/ShortcutDeviceIcon-XLGa5Ci1.js";
 //#region node_modules/react-router/dist/development/chunk-BV7QT456.mjs
 var V = /* @__PURE__ */ e(te(), 1), De = (e) => {
 	throw TypeError(e);
@@ -6032,7 +6032,7 @@ function Go({ record: e, lifecycle: t, origin: n, onChangeOrigin: r, onRecordCha
 }
 //#endregion
 //#region apps/web/src/RoutedHomeEditor.tsx
-var Ko = (0, V.lazy)(() => import("./assets/HomeEditor-i6odAYVV.js").then((e) => ({ default: e.HomeEditor })));
+var Ko = (0, V.lazy)(() => import("./assets/HomeEditor-dKwQvcP-.js").then((e) => ({ default: e.HomeEditor })));
 function qo({ onClose: e, ...t }) {
 	let n = X(), r = qr(), i = (0, V.useMemo)(() => ({
 		...n.state?.editorRequest,
