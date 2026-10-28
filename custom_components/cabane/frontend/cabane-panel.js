@@ -1,17 +1,17 @@
 import { r as e } from "./assets/rolldown-runtime-B0aSnxlc.js";
-import { $n as t, B as n, Dn as r, Ft as i, G as a, It as o, J as s, Ji as c, K as l, Ki as u, Kt as d, L as f, Lt as p, Mt as m, Nt as h, Pt as g, R as _, S as v, T as y, U as b, Ui as x, W as S, Xn as C, Yi as w, Zt as T, _r as E, ar as D, fn as O, gr as k, hr as A, in as j, ir as M, mr as N, nn as ee, nr as P, or as te, qn as ne, s as F, tn as I, tr as re, z as ie } from "./assets/LaserIcon-DLbwRXWn.js";
-import { B as L, D as R, E as ae, F as oe, I as se, L as ce, M as le, O as z, P as ue, U as de, V as fe, b as pe, f as me, g as he, h as ge, j as _e, k as ve, l as ye, m as be, n as xe, o as Se, p as Ce, t as we, u as B, w as Te, z as Ee } from "./assets/ShortcutDeviceIcon-B2SN-Nj-.js";
+import { B as t, C as n, Dr as r, E as i, Er as a, Ft as o, G as s, It as c, K as l, Kt as u, Lt as d, Mt as f, Nt as p, On as m, Or as h, Pt as g, R as _, V as v, W as y, Y as b, Zt as x, _r as S, aa as C, ar as w, c as T, ca as E, cr as D, dr as O, fn as k, gr as A, in as j, kr as M, mr as N, na as ee, nn as P, pr as F, q as I, sa as L, tn as R, vr as te, z as ne } from "./assets/LaserIcon-C8fw9i7U.js";
+import { A as re, B as z, D as ie, F as ae, H as oe, I as se, L as ce, M as B, N as le, O as V, R as ue, T as de, V as fe, W as pe, _ as me, d as he, g as ge, h as _e, k as ve, m as ye, n as be, p as xe, s as Se, t as Ce, u as we, x as Te } from "./assets/ShortcutDeviceIcon-CVUw6QSn.js";
 //#region node_modules/react-router/dist/development/chunk-BV7QT456.mjs
-var V = /* @__PURE__ */ e(w(), 1), De = (e) => {
+var H = /* @__PURE__ */ e(E(), 1), Ee = (e) => {
 	throw TypeError(e);
-}, Oe = (e, t, n) => t.has(e) || De("Cannot " + n), H = (e, t, n) => (Oe(e, t, "read from private field"), n ? n.call(e) : t.get(e)), ke = (e, t, n) => t.has(e) ? De("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(e) : t.set(e, n), Ae = (e, t, n, r) => (Oe(e, t, "write to private field"), r ? r.call(e, n) : t.set(e, n), n), je = /^(?:[a-z][a-z0-9+.-]*:|[\\/]{2})/i, Me = /^[\\/]{2}/;
-function Ne(e, t) {
+}, De = (e, t, n) => t.has(e) || Ee("Cannot " + n), U = (e, t, n) => (De(e, t, "read from private field"), n ? n.call(e) : t.get(e)), Oe = (e, t, n) => t.has(e) ? Ee("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(e) : t.set(e, n), ke = (e, t, n, r) => (De(e, t, "write to private field"), r ? r.call(e, n) : t.set(e, n), n), Ae = /^(?:[a-z][a-z0-9+.-]*:|[\\/]{2})/i, je = /^[\\/]{2}/;
+function Me(e, t) {
 	return t + e.replace(/\\/g, "/");
 }
-function Pe(e) {
+function Ne(e) {
 	return typeof e == "object" && !!e && "pathname" in e && "search" in e && "hash" in e && "state" in e && "key" in e;
 }
-function Fe(e = {}) {
+function Pe(e = {}) {
 	let { initialEntries: t = ["/"], initialIndex: n, v5Compat: r = !1 } = e, i;
 	i = t.map((e, t) => u(e, typeof e == "string" ? null : e.state, t === 0 ? "default" : void 0, typeof e == "string" ? void 0 : e.mask));
 	let a = c(n ?? i.length - 1), o = "POP", s = null;
@@ -22,11 +22,11 @@ function Fe(e = {}) {
 		return i[a];
 	}
 	function u(e, t = null, n, r) {
-		let a = Le(i ? l().pathname : "/", e, t, n, r);
-		return W(a.pathname.charAt(0) === "/", `relative pathnames are not supported in memory history: ${JSON.stringify(e)}`), a;
+		let a = Ie(i ? l().pathname : "/", e, t, n, r);
+		return G(a.pathname.charAt(0) === "/", `relative pathnames are not supported in memory history: ${JSON.stringify(e)}`), a;
 	}
 	function d(e) {
-		return typeof e == "string" ? e : G(e);
+		return typeof e == "string" ? e : K(e);
 	}
 	return {
 		get index() {
@@ -43,7 +43,7 @@ function Fe(e = {}) {
 			return new URL(d(e), "http://localhost");
 		},
 		encodeLocation(e) {
-			let t = typeof e == "string" ? Re(e) : e;
+			let t = typeof e == "string" ? Le(e) : e;
 			return {
 				pathname: t.pathname || "",
 				search: t.search || "",
@@ -52,7 +52,7 @@ function Fe(e = {}) {
 		},
 		push(e, t) {
 			o = "PUSH";
-			let n = Pe(e) ? e : u(e, t);
+			let n = Ne(e) ? e : u(e, t);
 			a += 1, i.splice(a, i.length, n), r && s && s({
 				action: o,
 				location: n,
@@ -61,7 +61,7 @@ function Fe(e = {}) {
 		},
 		replace(e, t) {
 			o = "REPLACE";
-			let n = Pe(e) ? e : u(e, t);
+			let n = Ne(e) ? e : u(e, t);
 			i[a] = n, r && s && s({
 				action: o,
 				location: n,
@@ -84,10 +84,10 @@ function Fe(e = {}) {
 		}
 	};
 }
-function U(e, t) {
+function W(e, t) {
 	if (e === !1 || e == null) throw Error(t);
 }
-function W(e, t) {
+function G(e, t) {
 	if (!e) {
 		typeof console < "u" && console.warn(t);
 		try {
@@ -95,24 +95,24 @@ function W(e, t) {
 		} catch {}
 	}
 }
-function Ie() {
+function Fe() {
 	return Math.random().toString(36).substring(2, 10);
 }
-function Le(e, t, n = null, r, i) {
+function Ie(e, t, n = null, r, i) {
 	return {
 		pathname: typeof e == "string" ? e : e.pathname,
 		search: "",
 		hash: "",
-		...typeof t == "string" ? Re(t) : t,
+		...typeof t == "string" ? Le(t) : t,
 		state: n,
-		key: t && t.key || r || Ie(),
+		key: t && t.key || r || Fe(),
 		mask: i
 	};
 }
-function G({ pathname: e = "/", search: t = "", hash: n = "" }) {
+function K({ pathname: e = "/", search: t = "", hash: n = "" }) {
 	return t && t !== "?" && (e += t.charAt(0) === "?" ? t : "?" + t), n && n !== "#" && (e += n.charAt(0) === "#" ? n : "#" + n), e;
 }
-function Re(e) {
+function Le(e) {
 	let t = {};
 	if (e) {
 		let n = e.indexOf("#");
@@ -122,27 +122,27 @@ function Re(e) {
 	}
 	return t;
 }
-function ze(e, t, n = !1) {
+function Re(e, t, n = !1) {
 	let r = "http://localhost";
-	e && (r = e.location.origin === "null" ? e.location.href : e.location.origin), U(r, "No window.location.(origin|href) available to create URL");
-	let i = typeof t == "string" ? t : G(t);
-	return i = i.replace(/ $/, "%20"), !n && Me.test(i) && (i = r + i), new URL(i, r);
+	e && (r = e.location.origin === "null" ? e.location.href : e.location.origin), W(r, "No window.location.(origin|href) available to create URL");
+	let i = typeof t == "string" ? t : K(t);
+	return i = i.replace(/ $/, "%20"), !n && je.test(i) && (i = r + i), new URL(i, r);
 }
-var Be, Ve = class {
+var ze, Be = class {
 	constructor(e) {
-		if (ke(this, Be, /* @__PURE__ */ new Map()), e) for (let [t, n] of e) this.set(t, n);
+		if (Oe(this, ze, /* @__PURE__ */ new Map()), e) for (let [t, n] of e) this.set(t, n);
 	}
 	get(e) {
-		if (H(this, Be).has(e)) return H(this, Be).get(e);
+		if (U(this, ze).has(e)) return U(this, ze).get(e);
 		if (e.defaultValue !== void 0) return e.defaultValue;
 		throw Error("No value found for context");
 	}
 	set(e, t) {
-		H(this, Be).set(e, t);
+		U(this, ze).set(e, t);
 	}
 };
-Be = /* @__PURE__ */ new WeakMap();
-var He = /* @__PURE__ */ new Set([
+ze = /* @__PURE__ */ new WeakMap();
+var Ve = /* @__PURE__ */ new Set([
 	"lazy",
 	"caseSensitive",
 	"path",
@@ -150,10 +150,10 @@ var He = /* @__PURE__ */ new Set([
 	"index",
 	"children"
 ]);
-function Ue(e) {
-	return He.has(e);
+function He(e) {
+	return Ve.has(e);
 }
-var We = /* @__PURE__ */ new Set([
+var Ue = /* @__PURE__ */ new Set([
 	"lazy",
 	"caseSensitive",
 	"path",
@@ -162,21 +162,21 @@ var We = /* @__PURE__ */ new Set([
 	"middleware",
 	"children"
 ]);
-function Ge(e) {
-	return We.has(e);
+function We(e) {
+	return Ue.has(e);
 }
-function Ke(e) {
+function Ge(e) {
 	return e.index === !0;
 }
-function qe(e, t, n = [], r = {}, i = !1) {
+function Ke(e, t, n = [], r = {}, i = !1) {
 	return e.map((e, a) => {
 		let o = [...n, String(a)], s = typeof e.id == "string" ? e.id : o.join("-");
-		if (U(e.index !== !0 || !e.children, "Cannot specify children on an index route"), U(i || !r[s], `Found a route id collision on id "${s}".  Route id's must be globally unique within Data Router usages`), Ke(e)) {
+		if (W(e.index !== !0 || !e.children, "Cannot specify children on an index route"), W(i || !r[s], `Found a route id collision on id "${s}".  Route id's must be globally unique within Data Router usages`), Ge(e)) {
 			let n = {
 				...e,
 				id: s
 			};
-			return r[s] = Je(n, t(n)), n;
+			return r[s] = qe(n, t(n)), n;
 		}
 		{
 			let n = {
@@ -184,11 +184,11 @@ function qe(e, t, n = [], r = {}, i = !1) {
 				id: s,
 				children: void 0
 			};
-			return r[s] = Je(n, t(n)), e.children && (n.children = qe(e.children, t, o, r, i)), n;
+			return r[s] = qe(n, t(n)), e.children && (n.children = Ke(e.children, t, o, r, i)), n;
 		}
 	});
 }
-function Je(e, t) {
+function qe(e, t) {
 	return Object.assign(e, {
 		...t,
 		...typeof t.lazy == "object" && t.lazy != null ? { lazy: {
@@ -197,17 +197,17 @@ function Je(e, t) {
 		} } : {}
 	});
 }
-function Ye(e, t, n = "/") {
-	return Xe(e, t, n, !1);
+function Je(e, t, n = "/") {
+	return Ye(e, t, n, !1);
 }
-function Xe(e, t, n, r, i) {
-	let a = K((typeof t == "string" ? Re(t) : t).pathname || "/", n);
+function Ye(e, t, n, r, i) {
+	let a = q((typeof t == "string" ? Le(t) : t).pathname || "/", n);
 	if (a == null) return null;
-	let o = i ?? Qe(e), s = null, c = ht(a);
-	for (let e = 0; s == null && e < o.length; ++e) s = dt(o[e], c, r);
+	let o = i ?? Ze(e), s = null, c = mt(a);
+	for (let e = 0; s == null && e < o.length; ++e) s = ut(o[e], c, r);
 	return s;
 }
-function Ze(e, t) {
+function Xe(e, t) {
 	let { route: n, pathname: r, params: i } = e;
 	return {
 		id: n.id,
@@ -218,11 +218,11 @@ function Ze(e, t) {
 		handle: n.handle
 	};
 }
-function Qe(e) {
-	let t = $e(e);
-	return tt(t), t;
+function Ze(e) {
+	let t = Qe(e);
+	return et(t), t;
 }
-function $e(e, t = [], n = [], r = "", i = !1) {
+function Qe(e, t = [], n = [], r = "", i = !1) {
 	let a = (e, a, o = i, s) => {
 		let c = {
 			relativePath: s === void 0 ? e.path || "" : s,
@@ -232,14 +232,14 @@ function $e(e, t = [], n = [], r = "", i = !1) {
 		};
 		if (c.relativePath.startsWith("/")) {
 			if (!c.relativePath.startsWith(r) && o) return;
-			U(c.relativePath.startsWith(r), `Absolute route path "${c.relativePath}" nested under path "${r}" is not valid. An absolute child route path must start with the combined path of all its parent routes.`), c.relativePath = c.relativePath.slice(r.length);
+			W(c.relativePath.startsWith(r), `Absolute route path "${c.relativePath}" nested under path "${r}" is not valid. An absolute child route path must start with the combined path of all its parent routes.`), c.relativePath = c.relativePath.slice(r.length);
 		}
-		let l = Tt([r, c.relativePath]), u = n.concat(c);
-		e.children && e.children.length > 0 && (U(e.index !== !0, `Index routes must not have child routes. Please remove all child routes from route path "${l}".`), $e(e.children, t, u, l, o)), !(e.path == null && !e.index) && t.push({
+		let l = wt([r, c.relativePath]), u = n.concat(c);
+		e.children && e.children.length > 0 && (W(e.index !== !0, `Index routes must not have child routes. Please remove all child routes from route path "${l}".`), Qe(e.children, t, u, l, o)), !(e.path == null && !e.index) && t.push({
 			path: l,
-			score: lt(l, e.index),
+			score: ct(l, e.index),
 			routesMeta: u.map((e, t) => {
-				let [n, r] = mt(e.relativePath, e.caseSensitive, t === u.length - 1);
+				let [n, r] = pt(e.relativePath, e.caseSensitive, t === u.length - 1);
 				return {
 					...e,
 					matcher: n,
@@ -250,68 +250,68 @@ function $e(e, t = [], n = [], r = "", i = !1) {
 	};
 	return e.forEach((e, t) => {
 		if (e.path === "" || !e.path?.includes("?")) a(e, t);
-		else for (let n of et(e.path)) a(e, t, !0, n);
+		else for (let n of $e(e.path)) a(e, t, !0, n);
 	}), t;
 }
-function et(e) {
+function $e(e) {
 	let t = e.split("/");
 	if (t.length === 0) return [];
 	let [n, ...r] = t, i = n.endsWith("?"), a = n.replace(/\?$/, "");
 	if (r.length === 0) return i ? [a, ""] : [a];
-	let o = et(r.join("/")), s = [];
+	let o = $e(r.join("/")), s = [];
 	return s.push(...o.map((e) => e === "" ? a : [a, e].join("/"))), i && s.push(...o), s.map((t) => e.startsWith("/") && t === "" ? "/" : t);
 }
-function tt(e) {
-	e.sort((e, t) => e.score === t.score ? ut(e.routesMeta.map((e) => e.childrenIndex), t.routesMeta.map((e) => e.childrenIndex)) : t.score - e.score);
+function et(e) {
+	e.sort((e, t) => e.score === t.score ? lt(e.routesMeta.map((e) => e.childrenIndex), t.routesMeta.map((e) => e.childrenIndex)) : t.score - e.score);
 }
-var nt = /^:[\w-]+$/, rt = 3, it = 2, at = 1, ot = 10, st = -2, ct = (e) => e === "*";
-function lt(e, t) {
+var tt = /^:[\w-]+$/, nt = 3, rt = 2, it = 1, at = 10, ot = -2, st = (e) => e === "*";
+function ct(e, t) {
 	let n = e.split("/"), r = n.length;
-	return n.some(ct) && (r += st), t && (r += it), n.filter((e) => !ct(e)).reduce((e, t) => e + (nt.test(t) ? rt : t === "" ? at : ot), r);
+	return n.some(st) && (r += ot), t && (r += rt), n.filter((e) => !st(e)).reduce((e, t) => e + (tt.test(t) ? nt : t === "" ? it : at), r);
 }
-function ut(e, t) {
+function lt(e, t) {
 	return e.length === t.length && e.slice(0, -1).every((e, n) => e === t[n]) ? e[e.length - 1] - t[t.length - 1] : 0;
 }
-function dt(e, t, n = !1) {
+function ut(e, t, n = !1) {
 	let { routesMeta: r } = e, i = {}, a = "/", o = [];
 	for (let e = 0; e < r.length; ++e) {
 		let s = r[e], c = e === r.length - 1, l = a === "/" ? t : t.slice(a.length) || "/", u = {
 			path: s.relativePath,
 			caseSensitive: s.caseSensitive,
 			end: c
-		}, d = s.matcher && s.compiledParams ? pt(u, l, s.matcher, s.compiledParams) : ft(u, l), f = s.route;
-		if (!d && c && n && !r[r.length - 1].route.index && (d = ft({
+		}, d = s.matcher && s.compiledParams ? ft(u, l, s.matcher, s.compiledParams) : dt(u, l), f = s.route;
+		if (!d && c && n && !r[r.length - 1].route.index && (d = dt({
 			path: s.relativePath,
 			caseSensitive: s.caseSensitive,
 			end: !1
 		}, l)), !d) return null;
 		Object.assign(i, d.params), o.push({
 			params: i,
-			pathname: Tt([a, d.pathname]),
-			pathnameBase: Dt(Tt([a, d.pathnameBase])),
+			pathname: wt([a, d.pathname]),
+			pathnameBase: Et(wt([a, d.pathnameBase])),
 			route: f
-		}), d.pathnameBase !== "/" && (a = Tt([a, d.pathnameBase]));
+		}), d.pathnameBase !== "/" && (a = wt([a, d.pathnameBase]));
 	}
 	return o;
 }
-function ft(e, t) {
+function dt(e, t) {
 	typeof e == "string" && (e = {
 		path: e,
 		caseSensitive: !1,
 		end: !0
 	});
-	let [n, r] = mt(e.path, e.caseSensitive, e.end);
-	return pt(e, t, n, r);
+	let [n, r] = pt(e.path, e.caseSensitive, e.end);
+	return ft(e, t, n, r);
 }
-function pt(e, t, n, r) {
+function ft(e, t, n, r) {
 	let i = t.match(n);
 	if (!i) return null;
-	let a = i[0], o = Et(a, 1), s = i.slice(1);
+	let a = i[0], o = Tt(a, 1), s = i.slice(1);
 	return {
 		params: r.reduce((e, { paramName: t, isOptional: n }, r) => {
 			if (t === "*") {
 				let e = s[r] || "";
-				o = Et(a.slice(0, a.length - e.length), 1);
+				o = Tt(a.slice(0, a.length - e.length), 1);
 			}
 			let i = s[r];
 			return e[t] = n && !i ? void 0 : (i || "").replace(/%2F/g, "/"), e;
@@ -321,8 +321,8 @@ function pt(e, t, n, r) {
 		pattern: e
 	};
 }
-function mt(e, t = !1, n = !0) {
-	W(e === "*" || !e.endsWith("*") || e.endsWith("/*"), `Route path "${e}" will be treated as if it were "${e.replace(/\*$/, "/*")}" because the \`*\` character must always follow a \`/\` in the pattern. To get rid of this warning, please change the route path to "${e.replace(/\*$/, "/*")}".`);
+function pt(e, t = !1, n = !0) {
+	G(e === "*" || !e.endsWith("*") || e.endsWith("/*"), `Route path "${e}" will be treated as if it were "${e.replace(/\*$/, "/*")}" because the \`*\` character must always follow a \`/\` in the pattern. To get rid of this warning, please change the route path to "${e.replace(/\*$/, "/*")}".`);
 	let r = [], i = "^" + e.replace(/\/*\*?$/, "").replace(/^\/*/, "/").replace(/[\\.*+^${}|()[\]]/g, "\\$&").replace(/\/:([\w-]+)(\?)?/g, (e, t, n, i, a) => {
 		if (r.push({
 			paramName: t,
@@ -335,50 +335,50 @@ function mt(e, t = !1, n = !0) {
 	}).replace(/\/([\w-]+)\?(\/|$)/g, "(/$1)?$2");
 	return e.endsWith("*") ? (r.push({ paramName: "*" }), i += e === "*" || e === "/*" ? "(.*)$" : "(?:\\/(.+)|\\/*)$") : n ? i += "\\/*$" : e !== "" && e !== "/" && (i += "(?:(?=\\/|$))"), [new RegExp(i, t ? void 0 : "i"), r];
 }
-function ht(e) {
+function mt(e) {
 	try {
 		return e.split("/").map((e) => decodeURIComponent(e).replace(/\//g, "%2F")).join("/");
 	} catch (t) {
-		return W(!1, `The URL path "${e}" could not be decoded because it is a malformed URL segment. This is probably due to a bad percent encoding (${t}).`), e;
+		return G(!1, `The URL path "${e}" could not be decoded because it is a malformed URL segment. This is probably due to a bad percent encoding (${t}).`), e;
 	}
 }
-function K(e, t) {
+function q(e, t) {
 	if (t === "/") return e;
 	if (!e.toLowerCase().startsWith(t.toLowerCase())) return null;
 	let n = t.endsWith("/") ? t.length - 1 : t.length, r = e.charAt(n);
 	return r && r !== "/" ? null : e.slice(n) || "/";
 }
-function gt({ basename: e, pathname: t }) {
-	return t === "/" ? e : Tt([e, t]);
+function ht({ basename: e, pathname: t }) {
+	return t === "/" ? e : wt([e, t]);
 }
-var _t = (e) => je.test(e);
-function vt(e, t = "/") {
-	let { pathname: n, search: r = "", hash: i = "" } = typeof e == "string" ? Re(e) : e, a;
-	return n ? (n = wt(n), a = n.startsWith("/") || n.startsWith("\\") ? yt(n.substring(1), "/") : yt(n, t)) : a = t, {
+var gt = (e) => Ae.test(e);
+function _t(e, t = "/") {
+	let { pathname: n, search: r = "", hash: i = "" } = typeof e == "string" ? Le(e) : e, a;
+	return n ? (n = Ct(n), a = n.startsWith("/") || n.startsWith("\\") ? vt(n.substring(1), "/") : vt(n, t)) : a = t, {
 		pathname: a,
-		search: Ot(r),
-		hash: kt(i)
+		search: Dt(r),
+		hash: Ot(i)
 	};
 }
-function yt(e, t) {
-	let n = Et(t).split("/");
+function vt(e, t) {
+	let n = Tt(t).split("/");
 	return e.split("/").forEach((e) => {
 		e === ".." ? n.length > 1 && n.pop() : e !== "." && n.push(e);
 	}), n.length > 1 ? n.join("/") : "/";
 }
-function bt(e, t, n, r) {
+function yt(e, t, n, r) {
 	return `Cannot include a '${e}' character in a manually specified \`to.${t}\` field [${JSON.stringify(r)}].  Please separate it out to the \`to.${n}\` field. Alternatively you may provide the full path as a string in <Link to="..."> and the router will parse it for you.`;
 }
-function xt(e) {
+function bt(e) {
 	return e.filter((e, t) => t === 0 || e.route.path && e.route.path.length > 0);
 }
-function St(e) {
-	let t = xt(e);
+function xt(e) {
+	let t = bt(e);
 	return t.map((e, n) => n === t.length - 1 ? e.pathname : e.pathnameBase);
 }
-function Ct(e, t, n, r = !1) {
+function St(e, t, n, r = !1) {
 	let i;
-	typeof e == "string" ? i = Re(e) : (i = { ...e }, U(!i.pathname || !i.pathname.includes("?"), bt("?", "pathname", "search", i)), U(!i.pathname || !i.pathname.includes("#"), bt("#", "pathname", "hash", i)), U(!i.search || !i.search.includes("#"), bt("#", "search", "hash", i)));
+	typeof e == "string" ? i = Le(e) : (i = { ...e }, W(!i.pathname || !i.pathname.includes("?"), yt("?", "pathname", "search", i)), W(!i.pathname || !i.pathname.includes("#"), yt("#", "pathname", "hash", i)), W(!i.search || !i.search.includes("#"), yt("#", "search", "hash", i)));
 	let a = e === "" || i.pathname === "", o = a ? "/" : i.pathname, s;
 	if (o == null) s = n;
 	else {
@@ -390,40 +390,40 @@ function Ct(e, t, n, r = !1) {
 		}
 		s = e >= 0 ? t[e] : "/";
 	}
-	let c = vt(i, s), l = o && o !== "/" && o.endsWith("/"), u = (a || o === ".") && n.endsWith("/");
+	let c = _t(i, s), l = o && o !== "/" && o.endsWith("/"), u = (a || o === ".") && n.endsWith("/");
 	return !c.pathname.endsWith("/") && (l || u) && (c.pathname += "/"), c;
 }
-var wt = (e) => e.replace(/[\\/]{2,}/g, "/"), Tt = (e) => wt(e.join("/"));
-function Et(e, t = 0) {
+var Ct = (e) => e.replace(/[\\/]{2,}/g, "/"), wt = (e) => Ct(e.join("/"));
+function Tt(e, t = 0) {
 	let n = e.length;
 	for (; n > t && e.charCodeAt(n - 1) === 47;) n--;
 	return n === e.length ? e : e.slice(0, n);
 }
-var Dt = (e) => Et(e).replace(/^\/*/, "/"), Ot = (e) => !e || e === "?" ? "" : e.startsWith("?") ? e : "?" + e, kt = (e) => !e || e === "#" ? "" : e.startsWith("#") ? e : "#" + e, At = class {
+var Et = (e) => Tt(e).replace(/^\/*/, "/"), Dt = (e) => !e || e === "?" ? "" : e.startsWith("?") ? e : "?" + e, Ot = (e) => !e || e === "#" ? "" : e.startsWith("#") ? e : "#" + e, kt = class {
 	constructor(e, t, n, r = !1) {
 		this.status = e, this.statusText = t || "", this.internal = r, n instanceof Error ? (this.data = n.toString(), this.error = n) : this.data = n;
 	}
 };
-function jt(e) {
+function At(e) {
 	return e != null && typeof e.status == "number" && typeof e.statusText == "string" && typeof e.internal == "boolean" && "data" in e;
 }
-function Mt(e) {
-	return Tt(e.map((e) => e.route.path).filter(Boolean)) || "/";
+function jt(e) {
+	return wt(e.map((e) => e.route.path).filter(Boolean)) || "/";
 }
-var Nt = typeof window < "u" && window.document !== void 0 && window.document.createElement !== void 0;
-function Pt(e, t) {
+var Mt = typeof window < "u" && window.document !== void 0 && window.document.createElement !== void 0;
+function Nt(e, t) {
 	let n = e;
-	if (typeof n != "string" || !je.test(n)) return {
+	if (typeof n != "string" || !Ae.test(n)) return {
 		absoluteURL: void 0,
 		isExternal: !1,
 		to: n
 	};
 	let r = n, i = !1;
-	if (Nt) try {
-		let e = new URL(window.location.href), r = Me.test(n) ? new URL(Ne(n, e.protocol)) : new URL(n), a = K(r.pathname, t);
+	if (Mt) try {
+		let e = new URL(window.location.href), r = je.test(n) ? new URL(Me(n, e.protocol)) : new URL(n), a = q(r.pathname, t);
 		r.origin === e.origin && a != null ? n = a + r.search + r.hash : i = !0;
 	} catch {
-		W(!1, `<Link to="${n}"> contains an invalid URL which will probably break when clicked - please update to a valid URL path.`);
+		G(!1, `<Link to="${n}"> contains an invalid URL which will probably break when clicked - please update to a valid URL path.`);
 	}
 	return {
 		absoluteURL: r,
@@ -431,8 +431,8 @@ function Pt(e, t) {
 		to: n
 	};
 }
-var Ft = Symbol("Uninstrumented");
-function It(e, t) {
+var Pt = Symbol("Uninstrumented");
+function Ft(e, t) {
 	let n = {
 		lazy: [],
 		"lazy.loader": [],
@@ -453,7 +453,7 @@ function It(e, t) {
 	}));
 	let r = {};
 	if (typeof t.lazy == "function" && n.lazy.length > 0) {
-		let e = Rt(n.lazy, t.lazy, () => void 0);
+		let e = Lt(n.lazy, t.lazy, () => void 0);
 		e && (r.lazy = e);
 	}
 	if (typeof t.lazy == "object") {
@@ -465,7 +465,7 @@ function It(e, t) {
 		].forEach((t) => {
 			let i = e[t], a = n[`lazy.${t}`];
 			if (typeof i == "function" && a.length > 0) {
-				let e = Rt(a, i, () => void 0);
+				let e = Lt(a, i, () => void 0);
 				e && (r.lazy = Object.assign(r.lazy || {}, { [t]: e }));
 			}
 		});
@@ -473,15 +473,15 @@ function It(e, t) {
 	return ["loader", "action"].forEach((e) => {
 		let i = t[e];
 		if (typeof i == "function" && n[e].length > 0) {
-			let t = i[Ft] ?? i, a = Rt(n[e], t, (...e) => Bt(e[0]));
-			a && (e === "loader" && t.hydrate === !0 && (a.hydrate = !0), a[Ft] = t, r[e] = a);
+			let t = i[Pt] ?? i, a = Lt(n[e], t, (...e) => zt(e[0]));
+			a && (e === "loader" && t.hydrate === !0 && (a.hydrate = !0), a[Pt] = t, r[e] = a);
 		}
 	}), t.middleware && t.middleware.length > 0 && n.middleware.length > 0 && (r.middleware = t.middleware.map((e) => {
-		let t = e[Ft] ?? e, r = Rt(n.middleware, t, (...e) => Bt(e[0]));
-		return r ? (r[Ft] = t, r) : e;
+		let t = e[Pt] ?? e, r = Lt(n.middleware, t, (...e) => zt(e[0]));
+		return r ? (r[Pt] = t, r) : e;
 	})), r;
 }
-function Lt(e, t) {
+function It(e, t) {
 	let n = {
 		navigate: [],
 		fetch: []
@@ -490,39 +490,39 @@ function Lt(e, t) {
 		let t = Object.keys(e);
 		for (let r of t) e[r] && n[r].push(e[r]);
 	} })), n.navigate.length > 0) {
-		let t = e.navigate[Ft] ?? e.navigate, r = Rt(n.navigate, t, (...t) => {
+		let t = e.navigate[Pt] ?? e.navigate, r = Lt(n.navigate, t, (...t) => {
 			let [n, r] = t;
 			return {
-				to: typeof n == "number" || typeof n == "string" ? n : n ? G(n) : ".",
-				...Vt(e, r ?? {})
+				to: typeof n == "number" || typeof n == "string" ? n : n ? K(n) : ".",
+				...Bt(e, r ?? {})
 			};
 		});
-		r && (r[Ft] = t, e.navigate = r);
+		r && (r[Pt] = t, e.navigate = r);
 	}
 	if (n.fetch.length > 0) {
-		let t = e.fetch[Ft] ?? e.fetch, r = Rt(n.fetch, t, (...t) => {
+		let t = e.fetch[Pt] ?? e.fetch, r = Lt(n.fetch, t, (...t) => {
 			let [n, , r, i] = t;
 			return {
 				href: r ?? ".",
 				fetcherKey: n,
-				...Vt(e, i ?? {})
+				...Bt(e, i ?? {})
 			};
 		});
-		r && (r[Ft] = t, e.fetch = r);
+		r && (r[Pt] = t, e.fetch = r);
 	}
 	return e;
 }
-function Rt(e, t, n) {
+function Lt(e, t, n) {
 	return e.length === 0 ? null : async (...r) => {
-		let i = await zt(e, n(...r), () => t(...r), e.length - 1);
+		let i = await Rt(e, n(...r), () => t(...r), e.length - 1);
 		if (i.type === "error") throw i.value;
 		return i.value;
 	};
 }
-async function zt(e, t, n, r) {
+async function Rt(e, t, n, r) {
 	let i = e[r], a;
 	if (i) {
-		let o, s = async () => (o ? console.error("You cannot call instrumented handlers more than once") : o = zt(e, t, n, r - 1), a = await o, U(a, "Expected a result"), a.type === "error" && a.value instanceof Error ? {
+		let o, s = async () => (o ? console.error("You cannot call instrumented handlers more than once") : o = Rt(e, t, n, r - 1), a = await o, W(a, "Expected a result"), a.type === "error" && a.value instanceof Error ? {
 			status: "error",
 			error: a.value
 		} : {
@@ -551,83 +551,83 @@ async function zt(e, t, n, r) {
 		value: /* @__PURE__ */ Error("No result assigned in instrumentation chain.")
 	};
 }
-function Bt(e) {
+function zt(e) {
 	let { request: t, context: n, params: r, pattern: i } = e;
 	return {
-		request: Ht(t),
+		request: Vt(t),
 		params: { ...r },
 		pattern: i,
-		context: Ut(n)
+		context: Ht(n)
 	};
 }
-function Vt(e, t) {
+function Bt(e, t) {
 	return {
-		currentUrl: G(e.state.location),
+		currentUrl: K(e.state.location),
 		..."formMethod" in t ? { formMethod: t.formMethod } : {},
 		..."formEncType" in t ? { formEncType: t.formEncType } : {},
 		..."formData" in t ? { formData: t.formData } : {},
 		..."body" in t ? { body: t.body } : {}
 	};
 }
-function Ht(e) {
+function Vt(e) {
 	return {
 		method: e.method,
 		url: e.url,
 		headers: { get: (...t) => e.headers.get(...t) }
 	};
 }
-function Ut(e) {
-	if (Gt(e)) {
+function Ht(e) {
+	if (Wt(e)) {
 		let t = { ...e };
 		return Object.freeze(t), t;
 	}
 	return { get: (t) => e.get(t) };
 }
-var Wt = Object.getOwnPropertyNames(Object.prototype).sort().join("\0");
-function Gt(e) {
+var Ut = Object.getOwnPropertyNames(Object.prototype).sort().join("\0");
+function Wt(e) {
 	if (typeof e != "object" || !e) return !1;
 	let t = Object.getPrototypeOf(e);
-	return t === Object.prototype || t === null || Object.getOwnPropertyNames(t).sort().join("\0") === Wt;
+	return t === Object.prototype || t === null || Object.getOwnPropertyNames(t).sort().join("\0") === Ut;
 }
-var Kt = new URL("http://localhost");
-function qt(e) {
+var Gt = new URL("http://localhost");
+function Kt(e) {
 	if (e.createURL) return e.createURL("/");
 	try {
-		return new URL(e.createHref("/"), Kt);
+		return new URL(e.createHref("/"), Gt);
 	} catch {
-		return Kt;
+		return Gt;
 	}
 }
-function Jt(e, t) {
+function qt(e, t) {
 	return e.origin === t.origin && (e.origin !== "null" || e.protocol === t.protocol && e.host === t.host);
 }
-function Yt(e, t) {
+function Jt(e, t) {
 	if (e.startsWith("//")) return !0;
 	let n = t.protocol.toLowerCase();
 	return e.toLowerCase().startsWith(n) ? t.host === "" || e.slice(n.length).startsWith("//") : !1;
 }
-function Xt(e, t, n, r) {
+function Yt(e, t, n, r) {
 	let i = null;
 	try {
 		i = e == null ? null : new URL(e, n);
 	} catch {}
-	let a = new URL(t, n), o = i != null && !Jt(i, n), s = !Jt(a, n);
+	let a = new URL(t, n), o = i != null && !qt(i, n), s = !qt(a, n);
 	if (r === "reject") {
 		if (o || s) throw Error("External navigation is not allowed");
-	} else if (s && (i == null || !Yt(e, i) || !Jt(i, a))) throw Error("External navigation is not allowed");
+	} else if (s && (i == null || !Jt(e, i) || !qt(i, a))) throw Error("External navigation is not allowed");
 }
-var Zt = [
+var Xt = [
 	"POST",
 	"PUT",
 	"PATCH",
 	"DELETE"
-], Qt = new Set(Zt), $t = ["GET", ...Zt], en = new Set($t), tn = /* @__PURE__ */ new Set([
+], Zt = new Set(Xt), Qt = ["GET", ...Xt], $t = new Set(Qt), en = /* @__PURE__ */ new Set([
 	301,
 	302,
 	303,
 	307,
 	308
-]), nn = /* @__PURE__ */ new Set([307, 308]), rn = {
+]), tn = /* @__PURE__ */ new Set([307, 308]), nn = {
 	state: "idle",
 	location: void 0,
 	matches: void 0,
@@ -638,7 +638,7 @@ var Zt = [
 	formData: void 0,
 	json: void 0,
 	text: void 0
-}, an = {
+}, rn = {
 	state: "idle",
 	data: void 0,
 	formMethod: void 0,
@@ -647,61 +647,61 @@ var Zt = [
 	formData: void 0,
 	json: void 0,
 	text: void 0
-}, on = {
+}, an = {
 	state: "unblocked",
 	proceed: void 0,
 	reset: void 0,
 	location: void 0
-}, sn = (e) => ({ hasErrorBoundary: !!e.hasErrorBoundary }), cn = "remix-router-transitions", ln = Symbol("ResetLoaderData"), un, dn, fn, pn, mn = class {
+}, on = (e) => ({ hasErrorBoundary: !!e.hasErrorBoundary }), sn = "remix-router-transitions", cn = Symbol("ResetLoaderData"), ln, un, dn, fn, pn = class {
 	constructor(e) {
-		ke(this, un), ke(this, dn), ke(this, fn), ke(this, pn), Ae(this, un, e), Ae(this, dn, Qe(e));
+		Oe(this, ln), Oe(this, un), Oe(this, dn), Oe(this, fn), ke(this, ln, e), ke(this, un, Ze(e));
 	}
 	get stableRoutes() {
-		return H(this, un);
+		return U(this, ln);
 	}
 	get activeRoutes() {
-		return H(this, fn) ?? H(this, un);
+		return U(this, dn) ?? U(this, ln);
 	}
 	get branches() {
-		return H(this, pn) ?? H(this, dn);
+		return U(this, fn) ?? U(this, un);
 	}
 	get hasHMRRoutes() {
-		return H(this, fn) != null;
+		return U(this, dn) != null;
 	}
 	setRoutes(e) {
-		Ae(this, un, e), Ae(this, dn, Qe(e));
+		ke(this, ln, e), ke(this, un, Ze(e));
 	}
 	setHmrRoutes(e) {
-		Ae(this, fn, e), Ae(this, pn, Qe(e));
+		ke(this, dn, e), ke(this, fn, Ze(e));
 	}
 	commitHmrRoutes() {
-		H(this, fn) && (Ae(this, un, H(this, fn)), Ae(this, dn, H(this, pn)), Ae(this, fn, void 0), Ae(this, pn, void 0));
+		U(this, dn) && (ke(this, ln, U(this, dn)), ke(this, un, U(this, fn)), ke(this, dn, void 0), ke(this, fn, void 0));
 	}
 };
-un = /* @__PURE__ */ new WeakMap(), dn = /* @__PURE__ */ new WeakMap(), fn = /* @__PURE__ */ new WeakMap(), pn = /* @__PURE__ */ new WeakMap();
-function hn(e) {
+ln = /* @__PURE__ */ new WeakMap(), un = /* @__PURE__ */ new WeakMap(), dn = /* @__PURE__ */ new WeakMap(), fn = /* @__PURE__ */ new WeakMap();
+function mn(e) {
 	let t = e.window ? e.window : typeof window < "u" ? window : void 0, n = t !== void 0 && t.document !== void 0 && t.document.createElement !== void 0;
-	U(e.routes.length > 0, "You must provide a non-empty routes array to createRouter");
-	let r = e.hydrationRouteProperties || [], i = e.mapRouteProperties || sn, a = i;
+	W(e.routes.length > 0, "You must provide a non-empty routes array to createRouter");
+	let r = e.hydrationRouteProperties || [], i = e.mapRouteProperties || on, a = i;
 	if (e.instrumentations) {
 		let t = e.instrumentations;
 		a = (e) => ({
 			...i(e),
-			...It(t.map((e) => e.route).filter(Boolean), e)
+			...Ft(t.map((e) => e.route).filter(Boolean), e)
 		});
 	}
-	let o = {}, s = new mn(qe(e.routes, a, void 0, o)), c = e.basename || "/";
+	let o = {}, s = new pn(Ke(e.routes, a, void 0, o)), c = e.basename || "/";
 	c.startsWith("/") || (c = `/${c}`);
-	let l = e.dataStrategy || Mn, u = { ...e.future }, d = null, f = /* @__PURE__ */ new Set(), p = null, m = null, h = null, g = null, _ = e.hydrationData != null, v = Xe(s.activeRoutes, e.history.location, c, !1, s.branches), y = !1, b = null, x, S;
+	let l = e.dataStrategy || jn, u = { ...e.future }, d = null, f = /* @__PURE__ */ new Set(), p = null, m = null, h = null, g = null, _ = e.hydrationData != null, v = Ye(s.activeRoutes, e.history.location, c, !1, s.branches), y = !1, b = null, x, S;
 	if (v == null && !e.patchRoutesOnNavigation) {
-		let t = rr(404, { pathname: e.history.location.pathname }), { matches: n, route: r } = nr(s.activeRoutes);
+		let t = nr(404, { pathname: e.history.location.pathname }), { matches: n, route: r } = tr(s.activeRoutes);
 		x = !0, S = !x, v = n, b = { [r.id]: t };
-	} else if (v && !e.hydrationData && Ke(v, s.activeRoutes, e.history.location.pathname).active && (v = null), !v) {
+	} else if (v && !e.hydrationData && Ge(v, s.activeRoutes, e.history.location.pathname).active && (v = null), !v) {
 		x = !1, S = !x, v = [];
-		let t = Ke(null, s.activeRoutes, e.history.location.pathname);
+		let t = Ge(null, s.activeRoutes, e.history.location.pathname);
 		t.active && t.matches && (y = !0, v = t.matches);
 	} else if (v.some((e) => e.route.lazy)) x = !1, S = !x;
-	else if (!v.some((e) => bn(e.route))) x = !0, S = !x;
+	else if (!v.some((e) => yn(e.route))) x = !0, S = !x;
 	else {
 		let t = e.hydrationData ? e.hydrationData.loaderData : null, n = e.hydrationData ? e.hydrationData.errors : null, r = v;
 		if (n) {
@@ -709,7 +709,7 @@ function hn(e) {
 			r = r.slice(0, e + 1);
 		}
 		S = !1, x = !0, r.forEach((e) => {
-			let r = xn(e.route, t, n);
+			let r = bn(e.route, t, n);
 			S ||= r.renderFallback, x &&= !r.shouldLoad;
 		});
 	}
@@ -719,7 +719,7 @@ function hn(e) {
 		matches: v,
 		initialized: x,
 		renderFallback: S,
-		navigation: rn,
+		navigation: nn,
 		restoreScrollPosition: e.hydrationData == null && null,
 		preventScrollReset: !1,
 		revalidation: "idle",
@@ -728,28 +728,28 @@ function hn(e) {
 		errors: e.hydrationData && e.hydrationData.errors || b,
 		fetchers: /* @__PURE__ */ new Map(),
 		blockers: /* @__PURE__ */ new Map()
-	}, T = "POP", E = null, D = !1, O, k = !1, A = /* @__PURE__ */ new Map(), j = null, M = !1, N = !1, ee = /* @__PURE__ */ new Set(), P = /* @__PURE__ */ new Map(), te = 0, ne = -1, F = /* @__PURE__ */ new Map(), I = /* @__PURE__ */ new Set(), re = /* @__PURE__ */ new Map(), ie = /* @__PURE__ */ new Map(), L = /* @__PURE__ */ new Set(), R = /* @__PURE__ */ new Map(), ae, oe = null;
-	function se() {
+	}, T = "POP", E = null, D = !1, O, k = !1, A = /* @__PURE__ */ new Map(), j = null, M = !1, N = !1, ee = /* @__PURE__ */ new Set(), P = /* @__PURE__ */ new Map(), F = 0, I = -1, L = /* @__PURE__ */ new Map(), R = /* @__PURE__ */ new Set(), te = /* @__PURE__ */ new Map(), ne = /* @__PURE__ */ new Map(), re = /* @__PURE__ */ new Set(), z = /* @__PURE__ */ new Map(), ie, ae = null;
+	function oe() {
 		if (d = e.history.listen(({ action: t, location: n, delta: r }) => {
-			if (ae) {
-				ae(), ae = void 0;
+			if (ie) {
+				ie(), ie = void 0;
 				return;
 			}
-			W(R.size === 0 || r != null, "You are trying to use a blocker on a POP navigation to a location that was not created by @remix-run/router. This will fail silently in production. This can happen if you are navigating outside the router via `window.history.pushState`/`window.location.hash` instead of using router navigation APIs.  This can also happen if you are using createHashRouter and the user manually changes the URL.");
-			let i = Ie({
+			G(z.size === 0 || r != null, "You are trying to use a blocker on a POP navigation to a location that was not created by @remix-run/router. This will fail silently in production. This can happen if you are navigating outside the router via `window.history.pushState`/`window.location.hash` instead of using router navigation APIs.  This can also happen if you are using createHashRouter and the user manually changes the URL.");
+			let i = Fe({
 				currentLocation: w.location,
 				nextLocation: n,
 				historyAction: t
 			});
 			if (i && r != null) {
 				let t = new Promise((e) => {
-					ae = e;
+					ie = e;
 				});
-				e.history.go(r * -1), Fe(i, {
+				e.history.go(r * -1), Pe(i, {
 					state: "blocked",
 					location: n,
 					proceed() {
-						Fe(i, {
+						Pe(i, {
 							state: "proceeding",
 							proceed: void 0,
 							reset: void 0,
@@ -758,23 +758,23 @@ function hn(e) {
 					},
 					reset() {
 						let e = new Map(w.blockers);
-						e.set(i, on), z({ blockers: e });
+						e.set(i, an), B({ blockers: e });
 					}
 				}), E?.resolve(), E = null;
 				return;
 			}
-			return pe(t, n);
+			return de(t, n);
 		}), n) {
-			Tr(t, A);
-			let e = () => Er(t, A);
+			wr(t, A);
+			let e = () => Tr(t, A);
 			t.addEventListener("pagehide", e), j = () => t.removeEventListener("pagehide", e);
 		}
-		return w.initialized || pe("POP", w.location, { initialHydration: !0 }), C;
+		return w.initialized || de("POP", w.location, { initialHydration: !0 }), C;
 	}
-	function ce() {
-		d && d(), j && j(), f.clear(), O && O.abort(), w.fetchers.forEach((e, t) => De(w.fetchers, t)), w.blockers.forEach((e, t) => Pe(t));
+	function se() {
+		d && d(), j && j(), f.clear(), O && O.abort(), w.fetchers.forEach((e, t) => Ee(w.fetchers, t)), w.blockers.forEach((e, t) => Ne(t));
 	}
-	function le(e) {
+	function ce(e) {
 		if (f.add(e), p) {
 			let { newErrors: t } = p;
 			p = null, e(w, {
@@ -786,7 +786,7 @@ function hn(e) {
 		}
 		return () => f.delete(e);
 	}
-	function z(e, t = {}) {
+	function B(e, t = {}) {
 		e.matches &&= e.matches.map((e) => {
 			let t = o[e.route.id], n = e.route;
 			return n.element !== t.element || n.errorElement !== t.errorElement || n.hydrateFallbackElement !== t.hydrateFallbackElement ? {
@@ -799,22 +799,22 @@ function hn(e) {
 		};
 		let n = [], r = [];
 		w.fetchers.forEach((e, t) => {
-			e.state === "idle" && (L.has(t) ? n.push(t) : r.push(t));
-		}), L.forEach((e) => {
+			e.state === "idle" && (re.has(t) ? n.push(t) : r.push(t));
+		}), re.forEach((e) => {
 			!w.fetchers.has(e) && !P.has(e) && n.push(e);
 		}), f.size === 0 && (p = { newErrors: e.errors ?? null }), [...f].forEach((r) => r(w, {
 			deletedFetchers: n,
 			newErrors: e.errors ?? null,
 			viewTransitionOpts: t.viewTransitionOpts,
 			flushSync: t.flushSync === !0
-		})), n.forEach((e) => De(w.fetchers, e)), r.forEach((e) => w.fetchers.delete(e));
+		})), n.forEach((e) => Ee(w.fetchers, e)), r.forEach((e) => w.fetchers.delete(e));
 	}
-	function ue(t, n, { flushSync: r } = {}) {
-		let i = w.actionData != null && w.navigation.formMethod != null && J(w.navigation.formMethod) && w.navigation.state === "loading" && t.state?._isRedirect !== !0, a;
+	function le(t, n, { flushSync: r } = {}) {
+		let i = w.actionData != null && w.navigation.formMethod != null && Y(w.navigation.formMethod) && w.navigation.state === "loading" && t.state?._isRedirect !== !0, a;
 		a = n.actionData ? Object.keys(n.actionData).length > 0 ? n.actionData : null : i ? w.actionData : null;
-		let o = n.loaderData ? $n(w.loaderData, n.loaderData, n.matches || [], n.errors) : w.loaderData, c = w.blockers;
-		c.size > 0 && (c = new Map(c), c.forEach((e, t) => c.set(t, on)));
-		let l = !M && Ge(t, n.matches || w.matches), u = D === !0 || w.navigation.formMethod != null && J(w.navigation.formMethod) && t.state?._isRedirect !== !0;
+		let o = n.loaderData ? Qn(w.loaderData, n.loaderData, n.matches || [], n.errors) : w.loaderData, c = w.blockers;
+		c.size > 0 && (c = new Map(c), c.forEach((e, t) => c.set(t, an)));
+		let l = !M && We(t, n.matches || w.matches), u = D === !0 || w.navigation.formMethod != null && Y(w.navigation.formMethod) && t.state?._isRedirect !== !0;
 		s.commitHmrRoutes(), M || T === "POP" || (T === "PUSH" ? e.history.push(t, t.state) : T === "REPLACE" && e.history.replace(t, t.state));
 		let d;
 		if (T === "POP") {
@@ -833,7 +833,7 @@ function hn(e) {
 				nextLocation: t
 			};
 		}
-		z({
+		B({
 			...n,
 			actionData: a,
 			loaderData: o,
@@ -841,7 +841,7 @@ function hn(e) {
 			location: t,
 			initialized: !0,
 			renderFallback: !1,
-			navigation: rn,
+			navigation: nn,
 			revalidation: "idle",
 			restoreScrollPosition: l,
 			preventScrollReset: u,
@@ -849,17 +849,17 @@ function hn(e) {
 		}, {
 			viewTransitionOpts: d,
 			flushSync: r === !0
-		}), T = "POP", D = !1, k = !1, M = !1, N = !1, E?.resolve(), E = null, oe?.resolve(), oe = null;
+		}), T = "POP", D = !1, k = !1, M = !1, N = !1, E?.resolve(), E = null, ae?.resolve(), ae = null;
 	}
-	async function de(t, n) {
+	async function V(t, n) {
 		if (E?.resolve(), E = null, typeof t == "number") {
-			E ||= Dr();
+			E ||= Er();
 			let n = E.promise;
 			return e.history.go(t), n;
 		}
-		let { path: r, submission: i, error: a } = vn(!1, _n(w.location, w.matches, c, t, n?.fromRouteId, n?.relative), n), o;
+		let { path: r, submission: i, error: a } = _n(!1, gn(w.location, w.matches, c, t, n?.fromRouteId, n?.relative), n), o;
 		if (n?.mask) {
-			let t = typeof n.mask == "string" ? Re(n.mask) : {
+			let t = typeof n.mask == "string" ? Le(n.mask) : {
 				...w.location.mask,
 				...n.mask
 			};
@@ -867,41 +867,41 @@ function hn(e) {
 				pathname: t.pathname ?? "",
 				search: t.search ?? "",
 				hash: t.hash ?? ""
-			}, Me.test(o.pathname)) throw Error("External navigation is not allowed");
-			o.pathname.startsWith("\\") && (o.pathname = o.pathname.replace(/^\\+/, "/")), Xt(typeof n.mask == "string" ? n.mask : G(n.mask), G(o), e.history.createURL("/"), "reject");
+			}, je.test(o.pathname)) throw Error("External navigation is not allowed");
+			o.pathname.startsWith("\\") && (o.pathname = o.pathname.replace(/^\\+/, "/")), Yt(typeof n.mask == "string" ? n.mask : K(n.mask), K(o), e.history.createURL("/"), "reject");
 		}
-		let s = w.location, l = Le(s, r, n && n.state, void 0, o);
+		let s = w.location, l = Ie(s, r, n && n.state, void 0, o);
 		l = {
 			...l,
 			...e.history.encodeLocation(l)
-		}, Xt(t == null ? e.history.createHref(w.location) : typeof t == "string" ? t : G(t), e.history.createHref(l.mask || l), e.history.createURL("/"), "reject");
+		}, Yt(t == null ? e.history.createHref(w.location) : typeof t == "string" ? t : K(t), e.history.createHref(l.mask || l), e.history.createURL("/"), "reject");
 		let u = n && n.replace != null ? n.replace : void 0, d = "PUSH";
-		u === !0 ? d = "REPLACE" : u === !1 || i != null && J(i.formMethod) && i.formAction === w.location.pathname + w.location.search && (d = "REPLACE");
-		let f = n && "preventScrollReset" in n ? n.preventScrollReset === !0 : void 0, p = (n && n.flushSync) === !0, m = Ie({
+		u === !0 ? d = "REPLACE" : u === !1 || i != null && Y(i.formMethod) && i.formAction === w.location.pathname + w.location.search && (d = "REPLACE");
+		let f = n && "preventScrollReset" in n ? n.preventScrollReset === !0 : void 0, p = (n && n.flushSync) === !0, m = Fe({
 			currentLocation: s,
 			nextLocation: l,
 			historyAction: d
 		});
 		if (m) {
-			Fe(m, {
+			Pe(m, {
 				state: "blocked",
 				location: l,
 				proceed() {
-					Fe(m, {
+					Pe(m, {
 						state: "proceeding",
 						proceed: void 0,
 						reset: void 0,
 						location: l
-					}), de(t, n);
+					}), V(t, n);
 				},
 				reset() {
 					let e = new Map(w.blockers);
-					e.set(m, on), z({ blockers: e });
+					e.set(m, an), B({ blockers: e });
 				}
 			});
 			return;
 		}
-		await pe(d, l, {
+		await de(d, l, {
 			submission: i,
 			pendingError: a,
 			preventScrollReset: f,
@@ -911,25 +911,25 @@ function hn(e) {
 			callSiteDefaultShouldRevalidate: n && n.defaultShouldRevalidate
 		});
 	}
-	function fe() {
-		oe ||= Dr(), we(), z({ revalidation: "loading" });
-		let e = oe.promise;
-		return w.navigation.state === "submitting" ? e : w.navigation.state === "idle" ? (pe(w.historyAction, w.location, { startUninterruptedRevalidation: !0 }), e) : (pe(T || w.historyAction, w.navigation.location, {
+	function ue() {
+		ae ||= Er(), Se(), B({ revalidation: "loading" });
+		let e = ae.promise;
+		return w.navigation.state === "submitting" ? e : w.navigation.state === "idle" ? (de(w.historyAction, w.location, { startUninterruptedRevalidation: !0 }), e) : (de(T || w.historyAction, w.navigation.location, {
 			overrideNavigation: w.navigation,
 			enableViewTransition: k === !0
 		}), e);
 	}
-	async function pe(t, n, r) {
-		O && O.abort(), O = null, T = t, M = (r && r.startUninterruptedRevalidation) === !0, We(w.location, w.matches), D = (r && r.preventScrollReset) === !0, k = (r && r.enableViewTransition) === !0;
-		let i = s.activeRoutes, a = r?.initialHydration && w.matches && w.matches.length > 0 && !y ? w.matches : Xe(i, n, c, !1, s.branches), o = (r && r.flushSync) === !0;
-		if (a && w.initialized && !N && or(w.location, n) && !(r && r.submission && J(r.submission.formMethod))) {
-			ue(n, { matches: a }, { flushSync: o });
+	async function de(t, n, r) {
+		O && O.abort(), O = null, T = t, M = (r && r.startUninterruptedRevalidation) === !0, Ue(w.location, w.matches), D = (r && r.preventScrollReset) === !0, k = (r && r.enableViewTransition) === !0;
+		let i = s.activeRoutes, a = r?.initialHydration && w.matches && w.matches.length > 0 && !y ? w.matches : Ye(i, n, c, !1, s.branches), o = (r && r.flushSync) === !0;
+		if (a && w.initialized && !N && ar(w.location, n) && !(r && r.submission && Y(r.submission.formMethod))) {
+			le(n, { matches: a }, { flushSync: o });
 			return;
 		}
-		let l = Ke(a, i, n.pathname);
+		let l = Ge(a, i, n.pathname);
 		if (l.active && l.matches && (a = l.matches), !a) {
-			let { error: e, notFoundMatches: t, route: r } = Be(n.pathname);
-			ue(n, {
+			let { error: e, notFoundMatches: t, route: r } = ze(n.pathname);
+			le(n, {
 				matches: t,
 				loaderData: {},
 				errors: { [r.id]: e }
@@ -942,21 +942,21 @@ function hn(e) {
 			historyAction: t
 		} : void 0;
 		O = new AbortController();
-		let d = qn(e.history, n, O.signal, r && r.submission), f = e.getContext ? await e.getContext() : new Ve(), p;
-		if (r && r.pendingError) p = [tr(a).route.id, {
+		let d = Kn(e.history, n, O.signal, r && r.submission), f = e.getContext ? await e.getContext() : new Be(), p;
+		if (r && r.pendingError) p = [er(a).route.id, {
 			type: "error",
 			error: r.pendingError
 		}];
-		else if (r && r.submission && J(r.submission.formMethod)) {
-			let i = await me(d, n, r.submission, a, t, f, l.active, r && r.initialHydration === !0, {
+		else if (r && r.submission && Y(r.submission.formMethod)) {
+			let i = await fe(d, n, r.submission, a, t, f, l.active, r && r.initialHydration === !0, {
 				replace: r.replace,
 				flushSync: o
 			});
 			if (i.shortCircuited) return;
 			if (i.pendingActionResult) {
 				let [e, t] = i.pendingActionResult;
-				if (q(t) && jt(t.error) && t.error.status === 404) {
-					O = null, ue(n, {
+				if (J(t) && At(t.error) && t.error.status === 404) {
+					O = null, le(n, {
 						matches: i.matches,
 						loaderData: {},
 						errors: { [e]: t.error }
@@ -964,24 +964,24 @@ function hn(e) {
 					return;
 				}
 			}
-			a = i.matches || a, p = i.pendingActionResult, u = br(n, a, t, r.submission), o = !1, l.active = !1, d = qn(e.history, d.url, d.signal);
+			a = i.matches || a, p = i.pendingActionResult, u = yr(n, a, t, r.submission), o = !1, l.active = !1, d = Kn(e.history, d.url, d.signal);
 		}
-		let { shortCircuited: m, matches: h, loaderData: g, errors: _, workingFetchers: v } = await he(d, n, a, t, f, l.active, u, r && r.submission, r && r.fetcherSubmission, r && r.replace, r && r.initialHydration === !0, o, p, r && r.callSiteDefaultShouldRevalidate);
-		m || (O = null, ue(n, {
+		let { shortCircuited: m, matches: h, loaderData: g, errors: _, workingFetchers: v } = await pe(d, n, a, t, f, l.active, u, r && r.submission, r && r.fetcherSubmission, r && r.replace, r && r.initialHydration === !0, o, p, r && r.callSiteDefaultShouldRevalidate);
+		m || (O = null, le(n, {
 			matches: h || a,
-			...er(p),
+			...$n(p),
 			loaderData: g,
 			errors: _,
 			...v ? { fetchers: v } : {}
 		}));
 	}
-	async function me(t, n, i, l, u, d, f, p, m = {}) {
-		if (we(), z({ navigation: xr(n, l, u, i) }, { flushSync: m.flushSync === !0 }), f) {
-			let e = await Je(l, n.pathname, t.signal);
+	async function fe(t, n, i, l, u, d, f, p, m = {}) {
+		if (Se(), B({ navigation: br(n, l, u, i) }, { flushSync: m.flushSync === !0 }), f) {
+			let e = await qe(l, n.pathname, t.signal);
 			if (e.type === "aborted") return { shortCircuited: !0 };
 			if (e.type === "error") {
 				if (e.partialMatches.length === 0) {
-					let { matches: t, route: n } = nr(s.activeRoutes);
+					let { matches: t, route: n } = tr(s.activeRoutes);
 					return {
 						matches: t,
 						pendingActionResult: [n.id, {
@@ -990,7 +990,7 @@ function hn(e) {
 						}]
 					};
 				}
-				let t = tr(e.partialMatches).route.id;
+				let t = er(e.partialMatches).route.id;
 				return {
 					matches: e.partialMatches,
 					pendingActionResult: [t, {
@@ -1001,7 +1001,7 @@ function hn(e) {
 			}
 			if (e.matches) l = e.matches;
 			else {
-				let { notFoundMatches: e, error: t, route: r } = Be(n.pathname);
+				let { notFoundMatches: e, error: t, route: r } = ze(n.pathname);
 				return {
 					matches: e,
 					pendingActionResult: [r.id, {
@@ -1011,17 +1011,17 @@ function hn(e) {
 				};
 			}
 		}
-		let h, g = vr(l, n);
+		let h, g = _r(l, n);
 		if (!g.route.action && !g.route.lazy) h = {
 			type: "error",
-			error: rr(405, {
+			error: nr(405, {
 				method: t.method,
 				pathname: n.pathname,
 				routeId: g.route.id
 			})
 		};
 		else {
-			let e = await Se(t, n, Rn(a, o, t, n, l, g, p ? [] : r, d), d, null);
+			let e = await be(t, n, Ln(a, o, t, n, l, g, p ? [] : r, d), d, null);
 			if (h = e[g.route.id], !h) {
 				for (let t of l) if (e[t.route.id]) {
 					h = e[t.route.id];
@@ -1030,15 +1030,15 @@ function hn(e) {
 			}
 			if (t.signal.aborted) return { shortCircuited: !0 };
 		}
-		if (dr(h)) {
+		if (ur(h)) {
 			let n;
-			return n = m && m.replace != null ? m.replace : Kn(h.response.headers.get("Location"), new URL(t.url), c, e.history) === w.location.pathname + w.location.search, await xe(t, h, !0, {
+			return n = m && m.replace != null ? m.replace : Gn(h.response.headers.get("Location"), new URL(t.url), c, e.history) === w.location.pathname + w.location.search, await ye(t, h, !0, {
 				submission: i,
 				replace: n
 			}), { shortCircuited: !0 };
 		}
-		if (q(h)) {
-			let e = tr(l, g.route.id);
+		if (J(h)) {
+			let e = er(l, g.route.id);
 			return (m && m.replace) !== !0 && (T = "PUSH"), {
 				matches: l,
 				pendingActionResult: [
@@ -1053,28 +1053,28 @@ function hn(e) {
 			pendingActionResult: [g.route.id, h]
 		};
 	}
-	async function he(t, n, i, l, u, d, f, p, m, h, g, _, v, y) {
-		let b = f || br(n, i, l, p), x = p || m || yr(b), S = !M && !g;
+	async function pe(t, n, i, l, u, d, f, p, m, h, g, _, v, y) {
+		let b = f || yr(n, i, l, p), x = p || m || vr(b), S = !M && !g;
 		if (d) {
 			if (S) {
-				let e = ge(v);
-				z({
+				let e = me(v);
+				B({
 					navigation: b,
 					...e === void 0 ? {} : { actionData: e }
 				}, { flushSync: _ });
 			}
-			let e = await Je(i, n.pathname, t.signal);
+			let e = await qe(i, n.pathname, t.signal);
 			if (e.type === "aborted") return { shortCircuited: !0 };
 			if (e.type === "error") {
 				if (e.partialMatches.length === 0) {
-					let { matches: t, route: n } = nr(s.activeRoutes);
+					let { matches: t, route: n } = tr(s.activeRoutes);
 					return {
 						matches: t,
 						loaderData: {},
 						errors: { [n.id]: e.error }
 					};
 				}
-				let t = tr(e.partialMatches).route.id;
+				let t = er(e.partialMatches).route.id;
 				return {
 					matches: e.partialMatches,
 					loaderData: {},
@@ -1083,7 +1083,7 @@ function hn(e) {
 			}
 			if (e.matches) i = e.matches;
 			else {
-				let { error: e, notFoundMatches: t, route: r } = Be(n.pathname);
+				let { error: e, notFoundMatches: t, route: r } = ze(n.pathname);
 				return {
 					matches: t,
 					loaderData: {},
@@ -1091,14 +1091,14 @@ function hn(e) {
 				};
 			}
 		}
-		let C = s.activeRoutes, { dsMatches: T, revalidatingFetchers: E } = yn(t, u, a, o, e.history, w, i, x, n, g ? [] : r, g === !0, N, ee, L, re, I, C, c, e.patchRoutesOnNavigation != null, s.branches, v, y);
-		if (ne = ++te, !e.dataStrategy && !T.some((e) => e.shouldLoad) && !T.some((e) => e.route.middleware && e.route.middleware.length > 0) && E.length === 0) {
-			let e = new Map(w.fetchers), t = Ae(e);
-			return ue(n, {
+		let C = s.activeRoutes, { dsMatches: T, revalidatingFetchers: E } = vn(t, u, a, o, e.history, w, i, x, n, g ? [] : r, g === !0, N, ee, re, te, R, C, c, e.patchRoutesOnNavigation != null, s.branches, v, y);
+		if (I = ++F, !e.dataStrategy && !T.some((e) => e.shouldLoad) && !T.some((e) => e.route.middleware && e.route.middleware.length > 0) && E.length === 0) {
+			let e = new Map(w.fetchers), t = ke(e);
+			return le(n, {
 				matches: i,
 				loaderData: {},
-				errors: v && q(v[1]) ? { [v[0]]: v[1].error } : null,
-				...er(v),
+				errors: v && J(v[1]) ? { [v[0]]: v[1].error } : null,
+				...$n(v),
 				...t ? { fetchers: e } : {}
 			}, { flushSync: _ }), { shortCircuited: !0 };
 		}
@@ -1106,87 +1106,87 @@ function hn(e) {
 			let e = {};
 			if (!d) {
 				e.navigation = b;
-				let t = ge(v);
+				let t = me(v);
 				t !== void 0 && (e.actionData = t);
 			}
-			E.length > 0 && (e.fetchers = _e(E)), z(e, { flushSync: _ });
+			E.length > 0 && (e.fetchers = he(E)), B(e, { flushSync: _ });
 		}
 		E.forEach((e) => {
-			H(e.key), e.controller && P.set(e.key, e.controller);
+			U(e.key), e.controller && P.set(e.key, e.controller);
 		});
-		let D = () => E.forEach((e) => H(e.key));
+		let D = () => E.forEach((e) => U(e.key));
 		O && O.signal.addEventListener("abort", D);
-		let { loaderResults: k, fetcherResults: A } = await Ce(T, E, t, n, u);
+		let { loaderResults: k, fetcherResults: A } = await xe(T, E, t, n, u);
 		if (t.signal.aborted) return { shortCircuited: !0 };
 		O && O.signal.removeEventListener("abort", D), E.forEach((e) => P.delete(e.key));
-		let j = ir(k);
-		if (j) return await xe(t, j.result, !0, { replace: h }), { shortCircuited: !0 };
-		if (j = ir(A), j) return I.add(j.key), await xe(t, j.result, !0, { replace: h }), { shortCircuited: !0 };
-		let F = new Map(w.fetchers), { loaderData: ie, errors: R } = Qn(w, i, k, v, E, A, F);
-		g && w.errors && (R = {
+		let j = rr(k);
+		if (j) return await ye(t, j.result, !0, { replace: h }), { shortCircuited: !0 };
+		if (j = rr(A), j) return R.add(j.key), await ye(t, j.result, !0, { replace: h }), { shortCircuited: !0 };
+		let L = new Map(w.fetchers), { loaderData: ne, errors: z } = Zn(w, i, k, v, E, A, L);
+		g && w.errors && (z = {
 			...w.errors,
-			...R
+			...z
 		});
-		let ae = Ae(F), oe = je(ne, F), se = ae || oe || E.length > 0;
+		let ie = ke(L), ae = Ae(I, L), oe = ie || ae || E.length > 0;
 		return {
 			matches: i,
-			loaderData: ie,
-			errors: R,
-			...se ? { workingFetchers: F } : {}
+			loaderData: ne,
+			errors: z,
+			...oe ? { workingFetchers: L } : {}
 		};
 	}
-	function ge(e) {
-		if (e && !q(e[1])) return { [e[0]]: e[1].data };
+	function me(e) {
+		if (e && !J(e[1])) return { [e[0]]: e[1].data };
 		if (w.actionData) return Object.keys(w.actionData).length === 0 ? null : w.actionData;
 	}
-	function _e(e) {
+	function he(e) {
 		let t = new Map(w.fetchers);
 		return e.forEach((e) => {
-			let n = t.get(e.key), r = Sr(void 0, n ? n.data : void 0);
+			let n = t.get(e.key), r = xr(void 0, n ? n.data : void 0);
 			t.set(e.key, r);
 		}), t;
 	}
-	async function ve(t, n, r, i) {
-		H(t);
-		let a = (i && i.flushSync) === !0, o = s.activeRoutes, l = _n(w.location, w.matches, c, r, n, i?.relative), u = Xe(o, l, c, !1, s.branches), d = Ke(u, o, l);
+	async function ge(t, n, r, i) {
+		U(t);
+		let a = (i && i.flushSync) === !0, o = s.activeRoutes, l = gn(w.location, w.matches, c, r, n, i?.relative), u = Ye(o, l, c, !1, s.branches), d = Ge(u, o, l);
 		if (d.active && d.matches && (u = d.matches), !u) {
-			Te(t, n, rr(404, { pathname: l }), { flushSync: a });
+			we(t, n, nr(404, { pathname: l }), { flushSync: a });
 			return;
 		}
-		let { path: f, submission: p, error: m } = vn(!0, l, i);
+		let { path: f, submission: p, error: m } = _n(!0, l, i);
 		if (m) {
-			Te(t, n, m, { flushSync: a });
+			we(t, n, m, { flushSync: a });
 			return;
 		}
-		let h = e.getContext ? await e.getContext() : new Ve(), g = (i && i.preventScrollReset) === !0;
-		if (p && J(p.formMethod)) {
-			await ye(t, n, f, u, h, d.active, a, g, p, i && i.defaultShouldRevalidate);
+		let h = e.getContext ? await e.getContext() : new Be(), g = (i && i.preventScrollReset) === !0;
+		if (p && Y(p.formMethod)) {
+			await _e(t, n, f, u, h, d.active, a, g, p, i && i.defaultShouldRevalidate);
 			return;
 		}
-		re.set(t, {
+		te.set(t, {
 			routeId: n,
 			path: f
-		}), await be(t, n, f, u, h, d.active, a, g, p);
+		}), await ve(t, n, f, u, h, d.active, a, g, p);
 	}
-	async function ye(t, n, i, l, u, d, f, p, m, h) {
-		we(), re.delete(t), B(t, Cr(m, w.fetchers.get(t)), { flushSync: f });
-		let g = new AbortController(), _ = qn(e.history, i, g.signal, m);
+	async function _e(t, n, i, l, u, d, f, p, m, h) {
+		Se(), te.delete(t), Ce(t, Sr(m, w.fetchers.get(t)), { flushSync: f });
+		let g = new AbortController(), _ = Kn(e.history, i, g.signal, m);
 		if (d) {
-			let e = await Je(l, new URL(_.url).pathname, _.signal, t);
+			let e = await qe(l, new URL(_.url).pathname, _.signal, t);
 			if (e.type === "aborted") return;
 			if (e.type === "error") {
-				Te(t, n, e.error, { flushSync: f });
+				we(t, n, e.error, { flushSync: f });
 				return;
 			}
 			if (e.matches) l = e.matches;
 			else {
-				Te(t, n, rr(404, { pathname: i }), { flushSync: f });
+				we(t, n, nr(404, { pathname: i }), { flushSync: f });
 				return;
 			}
 		}
-		let v = vr(l, i);
+		let v = _r(l, i);
 		if (!v.route.action && !v.route.lazy) {
-			Te(t, n, rr(405, {
+			we(t, n, nr(405, {
 				method: m.formMethod,
 				pathname: i,
 				routeId: n
@@ -1194,7 +1194,7 @@ function hn(e) {
 			return;
 		}
 		P.set(t, g);
-		let y = te, b = Rn(a, o, _, i, l, v, r, u), x = await Se(_, i, b, u, t), S = x[v.route.id];
+		let y = F, b = Ln(a, o, _, i, l, v, r, u), x = await be(_, i, b, u, t), S = x[v.route.id];
 		if (!S) {
 			for (let e of b) if (x[e.route.id]) {
 				S = x[e.route.id];
@@ -1205,85 +1205,85 @@ function hn(e) {
 			P.get(t) === g && P.delete(t);
 			return;
 		}
-		if (L.has(t)) {
-			if (dr(S) || q(S)) {
-				B(t, wr(void 0));
+		if (re.has(t)) {
+			if (ur(S) || J(S)) {
+				Ce(t, Cr(void 0));
 				return;
 			}
 		} else {
-			if (dr(S)) {
-				if (P.delete(t), ne > y) {
-					B(t, wr(void 0));
+			if (ur(S)) {
+				if (P.delete(t), I > y) {
+					Ce(t, Cr(void 0));
 					return;
 				}
-				return I.add(t), B(t, Sr(m)), xe(_, S, !1, {
+				return R.add(t), Ce(t, xr(m)), ye(_, S, !1, {
 					fetcherSubmission: m,
 					preventScrollReset: p
 				});
 			}
-			if (q(S)) {
-				Te(t, n, S.error);
+			if (J(S)) {
+				we(t, n, S.error);
 				return;
 			}
 		}
-		let C = w.navigation.location || w.location, E = qn(e.history, C, g.signal), D = s.activeRoutes, k = w.navigation.state === "idle" ? w.matches : Xe(D, w.navigation.location, c, !1, s.branches);
-		U(k, "Didn't find any matches after fetcher action");
-		let A = ++te;
-		F.set(t, A);
-		let { dsMatches: j, revalidatingFetchers: M } = yn(E, u, a, o, e.history, w, k, m, C, r, !1, N, ee, L, re, I, D, c, e.patchRoutesOnNavigation != null, s.branches, [v.route.id, S], h), ie = Sr(m, S.data), R = new Map(w.fetchers);
-		R.set(t, ie), M.filter((e) => e.key !== t).forEach((e) => {
-			let t = e.key, n = R.get(t), r = Sr(void 0, n ? n.data : void 0);
-			R.set(t, r), H(t), e.controller && P.set(t, e.controller);
-		}), z({ fetchers: R });
-		let ae = () => M.forEach((e) => H(e.key));
-		g.signal.addEventListener("abort", ae);
-		let { loaderResults: oe, fetcherResults: se } = await Ce(j, M, E, C, u);
+		let C = w.navigation.location || w.location, E = Kn(e.history, C, g.signal), D = s.activeRoutes, k = w.navigation.state === "idle" ? w.matches : Ye(D, w.navigation.location, c, !1, s.branches);
+		W(k, "Didn't find any matches after fetcher action");
+		let A = ++F;
+		L.set(t, A);
+		let { dsMatches: j, revalidatingFetchers: M } = vn(E, u, a, o, e.history, w, k, m, C, r, !1, N, ee, re, te, R, D, c, e.patchRoutesOnNavigation != null, s.branches, [v.route.id, S], h), ne = xr(m, S.data), z = new Map(w.fetchers);
+		z.set(t, ne), M.filter((e) => e.key !== t).forEach((e) => {
+			let t = e.key, n = z.get(t), r = xr(void 0, n ? n.data : void 0);
+			z.set(t, r), U(t), e.controller && P.set(t, e.controller);
+		}), B({ fetchers: z });
+		let ie = () => M.forEach((e) => U(e.key));
+		g.signal.addEventListener("abort", ie);
+		let { loaderResults: ae, fetcherResults: oe } = await xe(j, M, E, C, u);
 		if (g.signal.aborted) return;
-		g.signal.removeEventListener("abort", ae), F.delete(t), P.delete(t), M.forEach((e) => P.delete(e.key));
-		let ce = w.fetchers.has(t), le = (e) => {
-			if (!ce) return e;
+		g.signal.removeEventListener("abort", ie), L.delete(t), P.delete(t), M.forEach((e) => P.delete(e.key));
+		let se = w.fetchers.has(t), ce = (e) => {
+			if (!se) return e;
 			let n = new Map(e.fetchers);
-			return n.set(t, wr(S.data)), {
+			return n.set(t, Cr(S.data)), {
 				...e,
 				fetchers: n
 			};
-		}, de = ir(oe);
-		if (de) return w = le(w), xe(E, de.result, !1, { preventScrollReset: p });
-		if (de = ir(se), de) return I.add(de.key), w = le(w), xe(E, de.result, !1, { preventScrollReset: p });
-		let fe = new Map(w.fetchers);
-		ce && fe.set(t, wr(S.data));
-		let { loaderData: pe, errors: me } = Qn(w, k, oe, void 0, M, se, fe);
-		je(A, fe), w.navigation.state === "loading" && A > ne ? (U(T, "Expected pending action"), O && O.abort(), ue(w.navigation.location, {
+		}, V = rr(ae);
+		if (V) return w = ce(w), ye(E, V.result, !1, { preventScrollReset: p });
+		if (V = rr(oe), V) return R.add(V.key), w = ce(w), ye(E, V.result, !1, { preventScrollReset: p });
+		let ue = new Map(w.fetchers);
+		se && ue.set(t, Cr(S.data));
+		let { loaderData: de, errors: fe } = Zn(w, k, ae, void 0, M, oe, ue);
+		Ae(A, ue), w.navigation.state === "loading" && A > I ? (W(T, "Expected pending action"), O && O.abort(), le(w.navigation.location, {
 			matches: k,
-			loaderData: pe,
-			errors: me,
-			fetchers: fe
-		})) : (z({
-			errors: me,
-			loaderData: $n(w.loaderData, pe, k, me),
-			fetchers: fe
+			loaderData: de,
+			errors: fe,
+			fetchers: ue
+		})) : (B({
+			errors: fe,
+			loaderData: Qn(w.loaderData, de, k, fe),
+			fetchers: ue
 		}), N = !1);
 	}
-	async function be(t, n, i, s, c, l, u, d, f) {
+	async function ve(t, n, i, s, c, l, u, d, f) {
 		let p = w.fetchers.get(t);
-		B(t, Sr(f, p ? p.data : void 0), { flushSync: u });
-		let m = new AbortController(), h = qn(e.history, i, m.signal);
+		Ce(t, xr(f, p ? p.data : void 0), { flushSync: u });
+		let m = new AbortController(), h = Kn(e.history, i, m.signal);
 		if (l) {
-			let e = await Je(s, new URL(h.url).pathname, h.signal, t);
+			let e = await qe(s, new URL(h.url).pathname, h.signal, t);
 			if (e.type === "aborted") return;
 			if (e.type === "error") {
-				Te(t, n, e.error, { flushSync: u });
+				we(t, n, e.error, { flushSync: u });
 				return;
 			}
 			if (e.matches) s = e.matches;
 			else {
-				Te(t, n, rr(404, { pathname: i }), { flushSync: u });
+				we(t, n, nr(404, { pathname: i }), { flushSync: u });
 				return;
 			}
 		}
-		let g = vr(s, i);
+		let g = _r(s, i);
 		P.set(t, m);
-		let _ = te, v = await Se(h, i, Rn(a, o, h, i, s, g, r, c), c, t), y = v[g.route.id];
+		let _ = F, v = await be(h, i, Ln(a, o, h, i, s, g, r, c), c, t), y = v[g.route.id];
 		if (!y) {
 			for (let e of s) if (v[e.route.id]) {
 				y = v[e.route.id];
@@ -1291,38 +1291,38 @@ function hn(e) {
 			}
 		}
 		if (P.get(t) === m && P.delete(t), !h.signal.aborted) {
-			if (L.has(t)) {
-				B(t, wr(void 0));
+			if (re.has(t)) {
+				Ce(t, Cr(void 0));
 				return;
 			}
-			if (dr(y)) {
-				if (ne > _) {
-					B(t, wr(void 0));
+			if (ur(y)) {
+				if (I > _) {
+					Ce(t, Cr(void 0));
 					return;
 				}
-				I.add(t), await xe(h, y, !1, { preventScrollReset: d });
+				R.add(t), await ye(h, y, !1, { preventScrollReset: d });
 				return;
 			}
-			if (q(y)) {
-				Te(t, n, y.error);
+			if (J(y)) {
+				we(t, n, y.error);
 				return;
 			}
-			B(t, wr(y.data));
+			Ce(t, Cr(y.data));
 		}
 	}
-	async function xe(r, i, a, { submission: o, fetcherSubmission: s, preventScrollReset: l, replace: u } = {}) {
+	async function ye(r, i, a, { submission: o, fetcherSubmission: s, preventScrollReset: l, replace: u } = {}) {
 		a || (E?.resolve(), E = null), i.response.headers.has("X-Remix-Revalidate") && (N = !0);
 		let d = i.response.headers.get("Location");
-		U(d, "Expected a Location header on the redirect Response");
+		W(d, "Expected a Location header on the redirect Response");
 		let f = d, p = new URL(r.url);
-		d = Kn(d, p, c, e.history), Xt(f, d, p, "allow-explicit");
-		let m = Le(w.location, d, { _isRedirect: !0 });
+		d = Gn(d, p, c, e.history), Yt(f, d, p, "allow-explicit");
+		let m = Ie(w.location, d, { _isRedirect: !0 });
 		if (n) {
 			let e = !1;
 			if (i.response.headers.has("X-Remix-Reload-Document")) e = !0;
-			else if (_t(d)) {
-				let n = ze(t, d, !0);
-				e = n.origin !== t.location.origin || K(n.pathname, c) == null;
+			else if (gt(d)) {
+				let n = Re(t, d, !0);
+				e = n.origin !== t.location.origin || q(n.pathname, c) == null;
 			}
 			if (e) {
 				u ? t.location.replace(d) : t.location.assign(d);
@@ -1331,26 +1331,26 @@ function hn(e) {
 		}
 		O = null;
 		let h = u === !0 || i.response.headers.has("X-Remix-Replace") ? "REPLACE" : "PUSH", { formMethod: g, formAction: _, formEncType: v } = w.navigation;
-		!o && !s && g && _ && v && (o = yr(w.navigation));
+		!o && !s && g && _ && v && (o = vr(w.navigation));
 		let y = o || s;
-		nn.has(i.response.status) && y && J(y.formMethod) ? await pe(h, m, {
+		tn.has(i.response.status) && y && Y(y.formMethod) ? await de(h, m, {
 			submission: {
 				...y,
 				formAction: d
 			},
 			preventScrollReset: l || D,
 			enableViewTransition: a ? k : void 0
-		}) : await pe(h, m, {
-			overrideNavigation: br(m, [], h, o),
+		}) : await de(h, m, {
+			overrideNavigation: yr(m, [], h, o),
 			fetcherSubmission: s,
 			preventScrollReset: l || D,
 			enableViewTransition: a ? k : void 0
 		});
 	}
-	async function Se(e, t, n, r, i) {
+	async function be(e, t, n, r, i) {
 		let a, o = {};
 		try {
-			a = await zn(l, e, t, n, i, r, !1);
+			a = await Rn(l, e, t, n, i, r, !1);
 		} catch (e) {
 			return n.filter((e) => e.shouldLoad).forEach((t) => {
 				o[t.route.id] = {
@@ -1360,31 +1360,31 @@ function hn(e) {
 			}), o;
 		}
 		if (e.signal.aborted) return o;
-		if (!J(e.method)) for (let e of n) {
+		if (!Y(e.method)) for (let e of n) {
 			if (a[e.route.id]?.type === "error") break;
 			!a.hasOwnProperty(e.route.id) && !w.loaderData.hasOwnProperty(e.route.id) && (!w.errors || !w.errors.hasOwnProperty(e.route.id)) && e.shouldCallHandler() && (a[e.route.id] = {
 				type: "error",
 				result: /* @__PURE__ */ Error(`No result returned from dataStrategy for route ${e.route.id}`)
 			});
 		}
-		for (let [t, r] of Object.entries(a)) if (ur(r)) {
+		for (let [t, r] of Object.entries(a)) if (lr(r)) {
 			let i = r.result;
 			o[t] = {
 				type: "redirect",
-				response: Un(i, e, t, n, c)
+				response: Hn(i, e, t, n, c)
 			};
-		} else o[t] = await Hn(r);
+		} else o[t] = await Vn(r);
 		return o;
 	}
-	async function Ce(e, t, n, r, i) {
-		let a = Se(n, r, e, i, null), o = Promise.all(t.map(async (e) => {
+	async function xe(e, t, n, r, i) {
+		let a = be(n, r, e, i, null), o = Promise.all(t.map(async (e) => {
 			if (e.matches && e.match && e.request && e.controller) {
-				let t = (await Se(e.request, e.path, e.matches, i, e.key))[e.match.route.id];
+				let t = (await be(e.request, e.path, e.matches, i, e.key))[e.match.route.id];
 				return { [e.key]: t };
 			}
 			return Promise.resolve({ [e.key]: {
 				type: "error",
-				error: rr(404, { pathname: e.path })
+				error: nr(404, { pathname: e.path })
 			} });
 		}));
 		return {
@@ -1392,131 +1392,131 @@ function hn(e) {
 			fetcherResults: (await o).reduce((e, t) => Object.assign(e, t), {})
 		};
 	}
-	function we() {
-		N = !0, re.forEach((e, t) => {
-			P.has(t) && ee.add(t), H(t);
+	function Se() {
+		N = !0, te.forEach((e, t) => {
+			P.has(t) && ee.add(t), U(t);
 		});
 	}
-	function B(e, t, n = {}) {
+	function Ce(e, t, n = {}) {
 		let r = new Map(w.fetchers);
-		r.set(e, t), z({ fetchers: r }, { flushSync: (n && n.flushSync) === !0 });
+		r.set(e, t), B({ fetchers: r }, { flushSync: (n && n.flushSync) === !0 });
 	}
-	function Te(e, t, n, r = {}) {
-		let i = tr(w.matches, t), a = new Map(w.fetchers);
-		De(a, e), z({
+	function we(e, t, n, r = {}) {
+		let i = er(w.matches, t), a = new Map(w.fetchers);
+		Ee(a, e), B({
 			errors: { [i.route.id]: n },
 			fetchers: a
 		}, { flushSync: (r && r.flushSync) === !0 });
 	}
-	function Ee(e) {
-		return ie.set(e, (ie.get(e) || 0) + 1), L.has(e) && L.delete(e), w.fetchers.get(e) || an;
-	}
-	function V(e, t) {
-		H(e, t?.reason), B(e, wr(null));
-	}
-	function De(e, t) {
-		let n = w.fetchers.get(t);
-		P.has(t) && !(n && n.state === "loading" && F.has(t)) && H(t), re.delete(t), F.delete(t), I.delete(t), L.delete(t), ee.delete(t), e.delete(t);
-	}
-	function Oe(e) {
-		let t = (ie.get(e) || 0) - 1;
-		t <= 0 ? (ie.delete(e), L.add(e)) : ie.set(e, t), z({ fetchers: new Map(w.fetchers) });
+	function Te(e) {
+		return ne.set(e, (ne.get(e) || 0) + 1), re.has(e) && re.delete(e), w.fetchers.get(e) || rn;
 	}
 	function H(e, t) {
+		U(e, t?.reason), Ce(e, Cr(null));
+	}
+	function Ee(e, t) {
+		let n = w.fetchers.get(t);
+		P.has(t) && !(n && n.state === "loading" && L.has(t)) && U(t), te.delete(t), L.delete(t), R.delete(t), re.delete(t), ee.delete(t), e.delete(t);
+	}
+	function De(e) {
+		let t = (ne.get(e) || 0) - 1;
+		t <= 0 ? (ne.delete(e), re.add(e)) : ne.set(e, t), B({ fetchers: new Map(w.fetchers) });
+	}
+	function U(e, t) {
 		let n = P.get(e);
 		n && (n.abort(t), P.delete(e));
 	}
-	function ke(e, t) {
+	function Oe(e, t) {
 		for (let n of e) {
 			let e = t.get(n);
-			U(e, `Expected fetcher: ${n}`);
-			let r = wr(e.data);
+			W(e, `Expected fetcher: ${n}`);
+			let r = Cr(e.data);
 			t.set(n, r);
 		}
 	}
-	function Ae(e) {
+	function ke(e) {
 		let t = [], n = !1;
-		for (let r of I) {
+		for (let r of R) {
 			let i = e.get(r);
-			U(i, `Expected fetcher: ${r}`), i.state === "loading" && (I.delete(r), t.push(r), n = !0);
+			W(i, `Expected fetcher: ${r}`), i.state === "loading" && (R.delete(r), t.push(r), n = !0);
 		}
-		return ke(t, e), n;
+		return Oe(t, e), n;
 	}
-	function je(e, t) {
+	function Ae(e, t) {
 		let n = [];
-		for (let [r, i] of F) if (i < e) {
+		for (let [r, i] of L) if (i < e) {
 			let e = t.get(r);
-			U(e, `Expected fetcher: ${r}`), e.state === "loading" && (H(r), F.delete(r), n.push(r));
+			W(e, `Expected fetcher: ${r}`), e.state === "loading" && (U(r), L.delete(r), n.push(r));
 		}
-		return ke(n, t), n.length > 0;
+		return Oe(n, t), n.length > 0;
 	}
-	function Ne(e, t) {
-		let n = w.blockers.get(e) || on;
-		return R.get(e) !== t && R.set(e, t), n;
+	function Me(e, t) {
+		let n = w.blockers.get(e) || an;
+		return z.get(e) !== t && z.set(e, t), n;
 	}
-	function Pe(e) {
-		w.blockers.delete(e), R.delete(e);
+	function Ne(e) {
+		w.blockers.delete(e), z.delete(e);
 	}
-	function Fe(e, t) {
-		let n = w.blockers.get(e) || on;
-		U(n.state === "unblocked" && t.state === "blocked" || n.state === "blocked" && t.state === "blocked" || n.state === "blocked" && t.state === "proceeding" || n.state === "blocked" && t.state === "unblocked" || n.state === "proceeding" && t.state === "unblocked", `Invalid blocker state transition: ${n.state} -> ${t.state}`);
+	function Pe(e, t) {
+		let n = w.blockers.get(e) || an;
+		W(n.state === "unblocked" && t.state === "blocked" || n.state === "blocked" && t.state === "blocked" || n.state === "blocked" && t.state === "proceeding" || n.state === "blocked" && t.state === "unblocked" || n.state === "proceeding" && t.state === "unblocked", `Invalid blocker state transition: ${n.state} -> ${t.state}`);
 		let r = new Map(w.blockers);
-		r.set(e, t), z({ blockers: r });
+		r.set(e, t), B({ blockers: r });
 	}
-	function Ie({ currentLocation: e, nextLocation: t, historyAction: n }) {
-		if (R.size === 0) return;
-		R.size > 1 && W(!1, "A router only supports one blocker at a time");
-		let r = Array.from(R.entries()), [i, a] = r[r.length - 1], o = w.blockers.get(i);
+	function Fe({ currentLocation: e, nextLocation: t, historyAction: n }) {
+		if (z.size === 0) return;
+		z.size > 1 && G(!1, "A router only supports one blocker at a time");
+		let r = Array.from(z.entries()), [i, a] = r[r.length - 1], o = w.blockers.get(i);
 		if (!(o && o.state === "proceeding") && a({
 			currentLocation: e,
 			nextLocation: t,
 			historyAction: n
 		})) return i;
 	}
-	function Be(e) {
-		let t = rr(404, { pathname: e }), n = s.activeRoutes, { matches: r, route: i } = nr(n);
+	function ze(e) {
+		let t = nr(404, { pathname: e }), n = s.activeRoutes, { matches: r, route: i } = tr(n);
 		return {
 			notFoundMatches: r,
 			route: i,
 			error: t
 		};
 	}
-	function He(e, t, n) {
-		if (m = e, g = t, h = n || null, !_ && w.navigation === rn) {
+	function Ve(e, t, n) {
+		if (m = e, g = t, h = n || null, !_ && w.navigation === nn) {
 			_ = !0;
-			let e = Ge(w.location, w.matches);
-			e != null && z({ restoreScrollPosition: e });
+			let e = We(w.location, w.matches);
+			e != null && B({ restoreScrollPosition: e });
 		}
 		return () => {
 			m = null, g = null, h = null;
 		};
 	}
-	function Ue(e, t) {
-		return h && h(e, t.map((e) => Ze(e, w.loaderData))) || e.key;
+	function He(e, t) {
+		return h && h(e, t.map((e) => Xe(e, w.loaderData))) || e.key;
 	}
-	function We(e, t) {
+	function Ue(e, t) {
 		if (m && g) {
-			let n = Ue(e, t);
+			let n = He(e, t);
 			m[n] = g();
 		}
 	}
-	function Ge(e, t) {
+	function We(e, t) {
 		if (m) {
-			let n = Ue(e, t), r = m[n];
+			let n = He(e, t), r = m[n];
 			if (typeof r == "number") return r;
 		}
 		return null;
 	}
-	function Ke(t, n, r) {
+	function Ge(t, n, r) {
 		if (e.patchRoutesOnNavigation) {
 			let e = s.branches;
 			if (!t) return {
 				active: !0,
-				matches: Xe(n, r, c, !0, e) || []
+				matches: Ye(n, r, c, !0, e) || []
 			};
 			if (Object.keys(t[0].params).length > 0) return {
 				active: !0,
-				matches: Xe(n, r, c, !0, e)
+				matches: Ye(n, r, c, !0, e)
 			};
 		}
 		return {
@@ -1524,7 +1524,7 @@ function hn(e) {
 			matches: null
 		};
 	}
-	async function Je(t, n, r, i) {
+	async function qe(t, n, r, i) {
 		if (!e.patchRoutesOnNavigation) return {
 			type: "success",
 			matches: t
@@ -1539,7 +1539,7 @@ function hn(e) {
 					matches: l,
 					fetcherKey: i,
 					patch: (e, n) => {
-						r.aborted || Tn(e, n, s, t, a, !1);
+						r.aborted || wn(e, n, s, t, a, !1);
 					}
 				});
 			} catch (e) {
@@ -1550,26 +1550,26 @@ function hn(e) {
 				};
 			}
 			if (r.aborted) return { type: "aborted" };
-			let u = s.branches, d = Xe(s.activeRoutes, n, c, !1, u), f = null;
-			if (d && (Object.keys(d[0].params).length === 0 || (f = Xe(s.activeRoutes, n, c, !0, u), !(f && l.length < f.length && Ye(l, f.slice(0, l.length)))))) return {
+			let u = s.branches, d = Ye(s.activeRoutes, n, c, !1, u), f = null;
+			if (d && (Object.keys(d[0].params).length === 0 || (f = Ye(s.activeRoutes, n, c, !0, u), !(f && l.length < f.length && Je(l, f.slice(0, l.length)))))) return {
 				type: "success",
 				matches: d
 			};
-			if (f ||= Xe(s.activeRoutes, n, c, !0, u), !f || Ye(l, f)) return {
+			if (f ||= Ye(s.activeRoutes, n, c, !0, u), !f || Je(l, f)) return {
 				type: "success",
 				matches: null
 			};
 			l = f;
 		}
 	}
-	function Ye(e, t) {
+	function Je(e, t) {
 		return e.length === t.length && e.every((e, n) => e.route.id === t[n].route.id);
 	}
-	function Qe(e) {
-		o = {}, s.setHmrRoutes(qe(e, a, void 0, o));
+	function Ze(e) {
+		o = {}, s.setHmrRoutes(Ke(e, a, void 0, o));
 	}
-	function $e(e, t, n = !1) {
-		Tn(e, t, s, o, a, n), s.hasHMRRoutes || z({});
+	function Qe(e, t, n = !1) {
+		wn(e, t, s, o, a, n), s.hasHMRRoutes || B({});
 	}
 	return C = {
 		get basename() {
@@ -1593,33 +1593,33 @@ function hn(e) {
 		get window() {
 			return t;
 		},
-		initialize: se,
-		subscribe: le,
-		enableScrollRestoration: He,
-		navigate: de,
-		fetch: ve,
-		revalidate: fe,
+		initialize: oe,
+		subscribe: ce,
+		enableScrollRestoration: Ve,
+		navigate: V,
+		fetch: ge,
+		revalidate: ue,
 		createHref: (t) => e.history.createHref(t),
 		createURL: (t) => e.history.createURL(t),
 		encodeLocation: (t) => e.history.encodeLocation(t),
-		getFetcher: Ee,
-		resetFetcher: V,
-		deleteFetcher: Oe,
-		dispose: ce,
-		getBlocker: Ne,
-		deleteBlocker: Pe,
-		patchRoutes: $e,
+		getFetcher: Te,
+		resetFetcher: H,
+		deleteFetcher: De,
+		dispose: se,
+		getBlocker: Me,
+		deleteBlocker: Ne,
+		patchRoutes: Qe,
 		_internalFetchControllers: P,
-		_internalSetRoutes: Qe,
+		_internalSetRoutes: Ze,
 		_internalSetStateDoNotUseOrYouWillBreakYourApp(e) {
-			z(e);
+			B(e);
 		}
-	}, e.instrumentations && (C = Lt(C, e.instrumentations.map((e) => e.router).filter(Boolean))), C;
+	}, e.instrumentations && (C = It(C, e.instrumentations.map((e) => e.router).filter(Boolean))), C;
 }
-function gn(e) {
+function hn(e) {
 	return e != null && ("formData" in e && e.formData != null || "body" in e && e.body !== void 0);
 }
-function _n(e, t, n, r, i, a) {
+function gn(e, t, n, r, i, a) {
 	let o, s;
 	if (i) {
 		o = [];
@@ -1628,9 +1628,9 @@ function _n(e, t, n, r, i, a) {
 			break;
 		}
 	} else o = t, s = t[t.length - 1];
-	let c = Ct(r || ".", St(o), K(e.pathname, n) || e.pathname, a === "path");
+	let c = St(r || ".", xt(o), q(e.pathname, n) || e.pathname, a === "path");
 	if (r ?? (c.search = e.search, c.hash = e.hash), (r == null || r === "" || r === ".") && s) {
-		let e = _r(c.search);
+		let e = gr(c.search);
 		if (s.route.index && !e) c.search = c.search ? c.search.replace(/^\?/, "?index&") : "?index";
 		else if (!s.route.index && e) {
 			let e = new URLSearchParams(c.search), t = e.getAll("index");
@@ -1639,24 +1639,24 @@ function _n(e, t, n, r, i, a) {
 			c.search = n ? `?${n}` : "";
 		}
 	}
-	return n !== "/" && (c.pathname = gt({
+	return n !== "/" && (c.pathname = ht({
 		basename: n,
 		pathname: c.pathname
-	})), G(c);
+	})), K(c);
 }
-function vn(e, t, n) {
-	if (!n || !gn(n)) return { path: t };
-	if (n.formMethod && !gr(n.formMethod)) return {
+function _n(e, t, n) {
+	if (!n || !hn(n)) return { path: t };
+	if (n.formMethod && !hr(n.formMethod)) return {
 		path: t,
-		error: rr(405, { method: n.formMethod })
+		error: nr(405, { method: n.formMethod })
 	};
 	let r = () => ({
 		path: t,
-		error: rr(400, { type: "invalid-body" })
-	}), i = (n.formMethod || "get").toUpperCase(), a = ar(t);
+		error: nr(400, { type: "invalid-body" })
+	}), i = (n.formMethod || "get").toUpperCase(), a = ir(t);
 	if (n.body !== void 0) {
 		if (n.formEncType === "text/plain") {
-			if (!J(i)) return r();
+			if (!Y(i)) return r();
 			let e = typeof n.body == "string" ? n.body : n.body instanceof FormData || n.body instanceof URLSearchParams ? Array.from(n.body.entries()).reduce((e, [t, n]) => `${e}${t}=${n}
 `, "") : String(n.body);
 			return {
@@ -1672,7 +1672,7 @@ function vn(e, t, n) {
 			};
 		}
 		if (n.formEncType === "application/json") {
-			if (!J(i)) return r();
+			if (!Y(i)) return r();
 			try {
 				let e = typeof n.body == "string" ? JSON.parse(n.body) : n.body;
 				return {
@@ -1691,14 +1691,14 @@ function vn(e, t, n) {
 			}
 		}
 	}
-	U(typeof FormData == "function", "FormData is not available in this environment");
+	W(typeof FormData == "function", "FormData is not available in this environment");
 	let o, s;
-	if (n.formData) o = Yn(n.formData), s = n.formData;
-	else if (n.body instanceof FormData) o = Yn(n.body), s = n.body;
-	else if (n.body instanceof URLSearchParams) o = n.body, s = Xn(o);
+	if (n.formData) o = Jn(n.formData), s = n.formData;
+	else if (n.body instanceof FormData) o = Jn(n.body), s = n.body;
+	else if (n.body instanceof URLSearchParams) o = n.body, s = Yn(o);
 	else if (n.body == null) o = new URLSearchParams(), s = new FormData();
 	else try {
-		o = new URLSearchParams(n.body), s = Xn(o);
+		o = new URLSearchParams(n.body), s = Yn(o);
 	} catch {
 		return r();
 	}
@@ -1710,22 +1710,22 @@ function vn(e, t, n) {
 		json: void 0,
 		text: void 0
 	};
-	if (J(c.formMethod)) return {
+	if (Y(c.formMethod)) return {
 		path: t,
 		submission: c
 	};
-	let l = Re(t);
-	return e && l.search && _r(l.search) && o.append("index", ""), l.search = `?${o}`, {
-		path: G(l),
+	let l = Le(t);
+	return e && l.search && gr(l.search) && o.append("index", ""), l.search = `?${o}`, {
+		path: K(l),
 		submission: c
 	};
 }
-function yn(e, t, n, r, i, a, o, s, c, l, u, d, f, p, m, h, g, _, v, y, b, x) {
-	let S = b ? q(b[1]) ? b[1].error : b[1].data : void 0, C = i.createURL(a.location), w = i.createURL(c), T;
+function vn(e, t, n, r, i, a, o, s, c, l, u, d, f, p, m, h, g, _, v, y, b, x) {
+	let S = b ? J(b[1]) ? b[1].error : b[1].data : void 0, C = i.createURL(a.location), w = i.createURL(c), T;
 	if (u && a.errors) {
 		let e = Object.keys(a.errors)[0];
 		T = o.findIndex((t) => t.route.id === e);
-	} else if (b && q(b[1])) {
+	} else if (b && J(b[1])) {
 		let e = b[0];
 		T = o.findIndex((t) => t.route.id === e) - 1;
 	}
@@ -1737,27 +1737,27 @@ function yn(e, t, n, r, i, a, o, s, c, l, u, d, f, p, m, h, g, _, v, y, b, x) {
 		...s,
 		actionResult: S,
 		actionStatus: E
-	}, k = Mt(o), A = o.map((i, o) => {
+	}, k = jt(o), A = o.map((i, o) => {
 		let { route: s } = i, f = null;
 		if (T != null && o > T) f = !1;
 		else if (s.lazy) f = !0;
-		else if (!bn(s)) f = !1;
+		else if (!yn(s)) f = !1;
 		else if (u) {
-			let { shouldLoad: e } = xn(s, a.loaderData, a.errors);
+			let { shouldLoad: e } = bn(s, a.loaderData, a.errors);
 			f = e;
-		} else Sn(a.loaderData, a.matches[o], i) && (f = !0);
-		if (f !== null) return Ln(n, r, e, c, k, i, l, t, f);
+		} else xn(a.loaderData, a.matches[o], i) && (f = !0);
+		if (f !== null) return In(n, r, e, c, k, i, l, t, f);
 		let p = !1;
-		typeof x == "boolean" ? p = x : D ? p = !1 : d || C.pathname + C.search === w.pathname + w.search ? p = !0 : C.search === w.search ? Cn(a.matches[o], i) && (p = !0) : p = !0;
+		typeof x == "boolean" ? p = x : D ? p = !1 : d || C.pathname + C.search === w.pathname + w.search ? p = !0 : C.search === w.search ? Sn(a.matches[o], i) && (p = !0) : p = !0;
 		let m = {
 			...O,
 			defaultShouldRevalidate: p
-		}, h = wn(i, m);
-		return Ln(n, r, e, c, k, i, l, t, h, m, x);
+		}, h = Cn(i, m);
+		return In(n, r, e, c, k, i, l, t, h, m, x);
 	}), j = [];
 	return m.forEach((e, s) => {
 		if (u || !o.some((t) => t.route.id === e.routeId) || p.has(s)) return;
-		let c = a.fetchers.get(s), m = c && c.state !== "idle" && c.data === void 0, b = Xe(g, e.path, _ ?? "/", !1, y);
+		let c = a.fetchers.get(s), m = c && c.state !== "idle" && c.data === void 0, b = Ye(g, e.path, _ ?? "/", !1, y);
 		if (!b) {
 			if (v && m) return;
 			j.push({
@@ -1772,9 +1772,9 @@ function yn(e, t, n, r, i, a, o, s, c, l, u, d, f, p, m, h, g, _, v, y, b, x) {
 			return;
 		}
 		if (h.has(s)) return;
-		let S = vr(b, e.path), C = new AbortController(), w = qn(i, e.path, C.signal), T = null;
-		if (f.has(s)) f.delete(s), T = Rn(n, r, w, e.path, b, S, l, t);
-		else if (m) d && (T = Rn(n, r, w, e.path, b, S, l, t));
+		let S = _r(b, e.path), C = new AbortController(), w = Kn(i, e.path, C.signal), T = null;
+		if (f.has(s)) f.delete(s), T = Ln(n, r, w, e.path, b, S, l, t);
+		else if (m) d && (T = Ln(n, r, w, e.path, b, S, l, t));
 		else {
 			let i;
 			i = typeof x == "boolean" ? x : !D && d;
@@ -1782,7 +1782,7 @@ function yn(e, t, n, r, i, a, o, s, c, l, u, d, f, p, m, h, g, _, v, y, b, x) {
 				...O,
 				defaultShouldRevalidate: i
 			};
-			wn(S, a) && (T = Rn(n, r, w, e.path, b, S, l, t, a));
+			Cn(S, a) && (T = Ln(n, r, w, e.path, b, S, l, t, a));
 		}
 		T && j.push({
 			key: s,
@@ -1798,15 +1798,15 @@ function yn(e, t, n, r, i, a, o, s, c, l, u, d, f, p, m, h, g, _, v, y, b, x) {
 		revalidatingFetchers: j
 	};
 }
-function bn(e) {
+function yn(e) {
 	return e.loader != null || e.middleware != null && e.middleware.length > 0;
 }
-function xn(e, t, n) {
+function bn(e, t, n) {
 	if (e.lazy) return {
 		shouldLoad: !0,
 		renderFallback: !0
 	};
-	if (!bn(e)) return {
+	if (!yn(e)) return {
 		shouldLoad: !1,
 		renderFallback: !1
 	};
@@ -1825,36 +1825,36 @@ function xn(e, t, n) {
 		renderFallback: a
 	};
 }
-function Sn(e, t, n) {
+function xn(e, t, n) {
 	let r = !t || n.route.id !== t.route.id, i = !e.hasOwnProperty(n.route.id);
 	return r || i;
 }
-function Cn(e, t) {
+function Sn(e, t) {
 	let n = e.route.path;
 	return e.pathname !== t.pathname || n != null && n.endsWith("*") && e.params["*"] !== t.params["*"];
 }
-function wn(e, t) {
+function Cn(e, t) {
 	if (e.route.shouldRevalidate) {
 		let n = e.route.shouldRevalidate(t);
 		if (typeof n == "boolean") return n;
 	}
 	return t.defaultShouldRevalidate;
 }
-function Tn(e, t, n, r, i, a) {
+function wn(e, t, n, r, i, a) {
 	let o;
 	if (e) {
 		let t = r[e];
-		U(t, `No route found to patch children into: routeId = ${e}`), t.children ||= [], o = t.children;
+		W(t, `No route found to patch children into: routeId = ${e}`), t.children ||= [], o = t.children;
 	} else o = n.activeRoutes;
 	let s = [], c = [];
 	if (t.forEach((e) => {
-		let t = o.find((t) => En(e, t));
+		let t = o.find((t) => Tn(e, t));
 		t ? c.push({
 			existingRoute: t,
 			newRoute: e
 		}) : s.push(e);
 	}), s.length > 0) {
-		let t = qe(s, i, [
+		let t = Ke(s, i, [
 			e || "_",
 			"patch",
 			String(o?.length || "0")
@@ -1862,7 +1862,7 @@ function Tn(e, t, n, r, i, a) {
 		o.push(...t);
 	}
 	if (a && c.length > 0) for (let e = 0; e < c.length; e++) {
-		let { existingRoute: t, newRoute: n } = c[e], r = t, [a] = qe([n], i, [], {}, !0);
+		let { existingRoute: t, newRoute: n } = c[e], r = t, [a] = Ke([n], i, [], {}, !0);
 		Object.assign(r, {
 			element: a.element ? a.element : r.element,
 			errorElement: a.errorElement ? a.errorElement : r.errorElement,
@@ -1871,22 +1871,22 @@ function Tn(e, t, n, r, i, a) {
 	}
 	n.hasHMRRoutes || n.setRoutes([...n.activeRoutes]);
 }
-function En(e, t) {
-	return "id" in e && "id" in t && e.id === t.id ? !0 : e.index !== t.index || e.path !== t.path || e.caseSensitive !== t.caseSensitive ? !1 : (!e.children || e.children.length === 0) && (!t.children || t.children.length === 0) ? !0 : e.children?.every((e, n) => t.children?.some((t) => En(e, t))) ?? !1;
+function Tn(e, t) {
+	return "id" in e && "id" in t && e.id === t.id ? !0 : e.index !== t.index || e.path !== t.path || e.caseSensitive !== t.caseSensitive ? !1 : (!e.children || e.children.length === 0) && (!t.children || t.children.length === 0) ? !0 : e.children?.every((e, n) => t.children?.some((t) => Tn(e, t))) ?? !1;
 }
-var Dn = /* @__PURE__ */ new WeakMap(), On = ({ key: e, route: t, manifest: n, mapRouteProperties: r }) => {
+var En = /* @__PURE__ */ new WeakMap(), Dn = ({ key: e, route: t, manifest: n, mapRouteProperties: r }) => {
 	let i = n[t.id];
-	if (U(i, "No route found in manifest"), !i.lazy || typeof i.lazy != "object") return;
+	if (W(i, "No route found in manifest"), !i.lazy || typeof i.lazy != "object") return;
 	let a = i.lazy[e];
 	if (!a) return;
-	let o = Dn.get(i);
-	o || (o = {}, Dn.set(i, o));
+	let o = En.get(i);
+	o || (o = {}, En.set(i, o));
 	let s = o[e];
 	if (s) return s;
 	let c = (async () => {
-		let t = Ue(e), n = i[e] !== void 0 && e !== "hasErrorBoundary";
-		if (t) W(!t, "Route property " + e + " is not a supported lazy route property. This property will be ignored."), o[e] = Promise.resolve();
-		else if (n) W(!1, `Route "${i.id}" has a static property "${e}" defined. The lazy property will be ignored.`);
+		let t = He(e), n = i[e] !== void 0 && e !== "hasErrorBoundary";
+		if (t) G(!t, "Route property " + e + " is not a supported lazy route property. This property will be ignored."), o[e] = Promise.resolve();
+		else if (n) G(!1, `Route "${i.id}" has a static property "${e}" defined. The lazy property will be ignored.`);
 		else {
 			let t = await a();
 			t != null && (Object.assign(i, { [e]: t }), Object.assign(i, r(i)));
@@ -1894,34 +1894,34 @@ var Dn = /* @__PURE__ */ new WeakMap(), On = ({ key: e, route: t, manifest: n, m
 		typeof i.lazy == "object" && (i.lazy[e] = void 0, Object.values(i.lazy).every((e) => e === void 0) && (i.lazy = void 0));
 	})();
 	return o[e] = c, c;
-}, kn = /* @__PURE__ */ new WeakMap();
-function An(e, t, n, r, i) {
+}, On = /* @__PURE__ */ new WeakMap();
+function kn(e, t, n, r, i) {
 	let a = n[e.id];
-	if (U(a, "No route found in manifest"), !e.lazy) return {
+	if (W(a, "No route found in manifest"), !e.lazy) return {
 		lazyRoutePromise: void 0,
 		lazyHandlerPromise: void 0
 	};
 	if (typeof e.lazy == "function") {
-		let t = kn.get(a);
+		let t = On.get(a);
 		if (t) return {
 			lazyRoutePromise: t,
 			lazyHandlerPromise: t
 		};
 		let n = (async () => {
-			U(typeof e.lazy == "function", "No lazy route function found");
+			W(typeof e.lazy == "function", "No lazy route function found");
 			let t = await e.lazy(), n = {};
 			for (let e in t) {
 				let r = t[e];
 				if (r === void 0) continue;
-				let i = Ge(e), o = a[e] !== void 0 && e !== "hasErrorBoundary";
-				i ? W(!i, "Route property " + e + " is not a supported property to be returned from a lazy route function. This property will be ignored.") : o ? W(!o, `Route "${a.id}" has a static property "${e}" defined but its lazy function is also returning a value for this property. The lazy route property "${e}" will be ignored.`) : n[e] = r;
+				let i = We(e), o = a[e] !== void 0 && e !== "hasErrorBoundary";
+				i ? G(!i, "Route property " + e + " is not a supported property to be returned from a lazy route function. This property will be ignored.") : o ? G(!o, `Route "${a.id}" has a static property "${e}" defined but its lazy function is also returning a value for this property. The lazy route property "${e}" will be ignored.`) : n[e] = r;
 			}
 			Object.assign(a, n), Object.assign(a, {
 				...r(a),
 				lazy: void 0
 			});
 		})();
-		return kn.set(a, n), n.catch(() => {}), {
+		return On.set(a, n), n.catch(() => {}), {
 			lazyRoutePromise: n,
 			lazyHandlerPromise: n
 		};
@@ -1929,7 +1929,7 @@ function An(e, t, n, r, i) {
 	let o = Object.keys(e.lazy), s = [], c;
 	for (let a of o) {
 		if (i && i.includes(a)) continue;
-		let o = On({
+		let o = Dn({
 			key: a,
 			route: e,
 			manifest: n,
@@ -1943,27 +1943,27 @@ function An(e, t, n, r, i) {
 		lazyHandlerPromise: c
 	};
 }
-async function jn(e) {
+async function An(e) {
 	let t = e.matches.filter((e) => e.shouldLoad), n = {};
 	return (await Promise.all(t.map((e) => e.resolve()))).forEach((e, r) => {
 		n[t[r].route.id] = e;
 	}), n;
 }
-async function Mn(e) {
-	return e.matches.some((e) => e.route.middleware) ? Nn(e, () => jn(e)) : jn(e);
+async function jn(e) {
+	return e.matches.some((e) => e.route.middleware) ? Mn(e, () => An(e)) : An(e);
 }
-function Nn(e, t) {
-	return Pn(e, t, (e) => {
-		if (hr(e)) throw e;
+function Mn(e, t) {
+	return Nn(e, t, (e) => {
+		if (mr(e)) throw e;
 		return e;
-	}, cr, n);
+	}, sr, n);
 	function n(t, n, r) {
 		if (r) return Promise.resolve(Object.assign(r.value, { [n]: {
 			type: "error",
 			result: t
 		} }));
 		{
-			let { matches: r } = e, i = tr(r, r[Math.min(Math.max(r.findIndex((e) => e.route.id === n), 0), Math.max(r.findIndex((e) => e.shouldCallHandler()), 0))].route.id).route.id;
+			let { matches: r } = e, i = er(r, r[Math.min(Math.max(r.findIndex((e) => e.route.id === n), 0), Math.max(r.findIndex((e) => e.shouldCallHandler()), 0))].route.id).route.id;
 			return Promise.resolve({ [i]: {
 				type: "error",
 				result: t
@@ -1971,11 +1971,11 @@ function Nn(e, t) {
 		}
 	}
 }
-async function Pn(e, t, n, r, i) {
+async function Nn(e, t, n, r, i) {
 	let { matches: a, ...o } = e;
-	return await Fn(o, a.flatMap((e) => e.route.middleware ? e.route.middleware.map((t) => [e.route.id, t]) : []), t, n, r, i);
+	return await Pn(o, a.flatMap((e) => e.route.middleware ? e.route.middleware.map((t) => [e.route.id, t]) : []), t, n, r, i);
 }
-async function Fn(e, t, n, r, i, a, o = 0) {
+async function Pn(e, t, n, r, i, a, o = 0) {
 	let { request: s } = e;
 	if (s.signal.aborted) throw s.signal.reason ?? /* @__PURE__ */ Error(`Request aborted: ${s.method} ${s.url}`);
 	let c = t[o];
@@ -1983,7 +1983,7 @@ async function Fn(e, t, n, r, i, a, o = 0) {
 	let [l, u] = c, d, f = async () => {
 		if (d) throw Error("You may only call `next()` once per middleware");
 		try {
-			return d = { value: await Fn(e, t, n, r, i, a, o + 1) }, d.value;
+			return d = { value: await Pn(e, t, n, r, i, a, o + 1) }, d.value;
 		} catch (e) {
 			return d = { value: await a(e, l, d) }, d.value;
 		}
@@ -1995,38 +1995,38 @@ async function Fn(e, t, n, r, i, a, o = 0) {
 		return await a(e, l, d);
 	}
 }
-function In(e, t, n, r, i) {
-	let a = On({
+function Fn(e, t, n, r, i) {
+	let a = Dn({
 		key: "middleware",
 		route: r.route,
 		manifest: t,
 		mapRouteProperties: e
-	}), o = An(r.route, J(n.method) ? "action" : "loader", t, e, i);
+	}), o = kn(r.route, Y(n.method) ? "action" : "loader", t, e, i);
 	return {
 		middleware: a,
 		route: o.lazyRoutePromise,
 		handler: o.lazyHandlerPromise
 	};
 }
-function Ln(e, t, n, r, i, a, o, s, c, l = null, u) {
-	let d = !1, f = In(e, t, n, a, o);
+function In(e, t, n, r, i, a, o, s, c, l = null, u) {
+	let d = !1, f = Fn(e, t, n, a, o);
 	return {
 		...a,
 		_lazyPromises: f,
 		shouldLoad: c,
 		shouldRevalidateArgs: l,
 		shouldCallHandler(e) {
-			return d = !0, l ? typeof u == "boolean" ? wn(a, {
+			return d = !0, l ? typeof u == "boolean" ? Cn(a, {
 				...l,
 				defaultShouldRevalidate: u
-			}) : typeof e == "boolean" ? wn(a, {
+			}) : typeof e == "boolean" ? Cn(a, {
 				...l,
 				defaultShouldRevalidate: e
-			}) : wn(a, l) : c;
+			}) : Cn(a, l) : c;
 		},
 		resolve(e) {
-			let { lazy: t, loader: o, middleware: l } = a.route, u = d || c || e && !J(n.method) && (t || o), p = l && l.length > 0 && !o && !t;
-			return u && (J(n.method) || !p) ? Bn({
+			let { lazy: t, loader: o, middleware: l } = a.route, u = d || c || e && !Y(n.method) && (t || o), p = l && l.length > 0 && !o && !t;
+			return u && (Y(n.method) || !p) ? zn({
 				request: n,
 				path: r,
 				pattern: i,
@@ -2042,25 +2042,25 @@ function Ln(e, t, n, r, i, a, o, s, c, l = null, u) {
 		}
 	};
 }
-function Rn(e, t, n, r, i, a, o, s, c = null) {
-	return i.map((l) => l.route.id === a.route.id ? Ln(e, t, n, r, Mt(i), l, o, s, !0, c) : {
+function Ln(e, t, n, r, i, a, o, s, c = null) {
+	return i.map((l) => l.route.id === a.route.id ? In(e, t, n, r, jt(i), l, o, s, !0, c) : {
 		...l,
 		shouldLoad: !1,
 		shouldRevalidateArgs: c,
 		shouldCallHandler: () => !1,
-		_lazyPromises: In(e, t, n, l, o),
+		_lazyPromises: Fn(e, t, n, l, o),
 		resolve: () => Promise.resolve({
 			type: "data",
 			result: void 0
 		})
 	});
 }
-async function zn(e, t, n, r, i, a, o) {
+async function Rn(e, t, n, r, i, a, o) {
 	r.some((e) => e._lazyPromises?.middleware) && await Promise.all(r.map((e) => e._lazyPromises?.middleware));
 	let s = {
 		request: t,
-		url: Jn(t, n),
-		pattern: Mt(r),
+		url: qn(t, n),
+		pattern: jt(r),
 		params: r[0].params,
 		context: a,
 		matches: r
@@ -2068,7 +2068,7 @@ async function zn(e, t, n, r, i, a, o) {
 		throw Error("You cannot call `runClientMiddleware()` from a static handler `dataStrategy`. Middleware is run outside of `dataStrategy` during SSR in order to bubble up the Response.  You can enable middleware via the `respond` API in `query`/`queryRoute`");
 	} : (e) => {
 		let t = s;
-		return Nn(t, () => e({
+		return Mn(t, () => e({
 			...t,
 			fetcherKey: i,
 			runClientMiddleware: () => {
@@ -2085,13 +2085,13 @@ async function zn(e, t, n, r, i, a, o) {
 	} catch {}
 	return l;
 }
-async function Bn({ request: e, path: t, pattern: n, match: r, lazyHandlerPromise: i, lazyRoutePromise: a, handlerOverride: o, scopedContext: s }) {
-	let c, l, u = J(e.method), d = u ? "action" : "loader", f = (i) => {
+async function zn({ request: e, path: t, pattern: n, match: r, lazyHandlerPromise: i, lazyRoutePromise: a, handlerOverride: o, scopedContext: s }) {
+	let c, l, u = Y(e.method), d = u ? "action" : "loader", f = (i) => {
 		let a, c = new Promise((e, t) => a = t);
 		l = () => a(), e.signal.addEventListener("abort", l);
 		let u = (a) => typeof i == "function" ? i({
 			request: e,
-			url: Jn(e, t),
+			url: qn(e, t),
 			pattern: n,
 			params: r.params,
 			context: s
@@ -2129,7 +2129,7 @@ async function Bn({ request: e, path: t, pattern: n, match: r, lazyHandlerPromis
 				if (t) [c] = await Promise.all([f(t), a]);
 				else if (d === "action") {
 					let t = new URL(e.url), n = t.pathname + t.search;
-					throw rr(405, {
+					throw nr(405, {
 						method: e.method,
 						pathname: n,
 						routeId: r.route.id
@@ -2142,7 +2142,7 @@ async function Bn({ request: e, path: t, pattern: n, match: r, lazyHandlerPromis
 		} else if (t) c = await f(t);
 		else {
 			let t = new URL(e.url);
-			throw rr(404, { pathname: t.pathname + t.search });
+			throw nr(404, { pathname: t.pathname + t.search });
 		}
 	} catch (e) {
 		return {
@@ -2154,16 +2154,16 @@ async function Bn({ request: e, path: t, pattern: n, match: r, lazyHandlerPromis
 	}
 	return c;
 }
-async function Vn(e) {
+async function Bn(e) {
 	let t = e.headers.get("Content-Type");
 	return t && /\bapplication\/json\b/.test(t) ? e.body == null ? null : e.json() : e.text();
 }
-async function Hn(e) {
+async function Vn(e) {
 	let { result: t, type: n } = e;
-	if (pr(t)) {
+	if (fr(t)) {
 		let e;
 		try {
-			e = await Vn(t);
+			e = await Bn(t);
 		} catch (e) {
 			return {
 				type: "error",
@@ -2172,7 +2172,7 @@ async function Hn(e) {
 		}
 		return n === "error" ? {
 			type: "error",
-			error: new At(t.status, t.statusText, e),
+			error: new kt(t.status, t.statusText, e),
 			statusCode: t.status,
 			headers: t.headers
 		} : {
@@ -2182,21 +2182,21 @@ async function Hn(e) {
 			headers: t.headers
 		};
 	}
-	return n === "error" ? fr(t) ? t.data instanceof Error ? {
+	return n === "error" ? dr(t) ? t.data instanceof Error ? {
 		type: "error",
 		error: t.data,
 		statusCode: t.init?.status,
 		headers: t.init?.headers ? new Headers(t.init.headers) : void 0
 	} : {
 		type: "error",
-		error: sr(t),
-		statusCode: jt(t) ? t.status : void 0,
+		error: or(t),
+		statusCode: At(t) ? t.status : void 0,
 		headers: t.init?.headers ? new Headers(t.init.headers) : void 0
 	} : {
 		type: "error",
 		error: t,
-		statusCode: jt(t) ? t.status : void 0
-	} : fr(t) ? {
+		statusCode: At(t) ? t.status : void 0
+	} : dr(t) ? {
 		type: "data",
 		data: t.data,
 		statusCode: t.init?.status,
@@ -2206,15 +2206,15 @@ async function Hn(e) {
 		data: t
 	};
 }
-function Un(e, t, n, r, i) {
+function Hn(e, t, n, r, i) {
 	let a = e.headers.get("Location");
-	if (U(a, "Redirects returned/thrown from loaders/actions must have a Location header"), !_t(a)) {
+	if (W(a, "Redirects returned/thrown from loaders/actions must have a Location header"), !gt(a)) {
 		let o = r.slice(0, r.findIndex((e) => e.route.id === n) + 1);
-		a = _n(new URL(t.url), o, i, a), e.headers.set("Location", a);
+		a = gn(new URL(t.url), o, i, a), e.headers.set("Location", a);
 	}
 	return e;
 }
-var Wn = [
+var Un = [
 	"about:",
 	"blob:",
 	"chrome:",
@@ -2226,35 +2226,35 @@ var Wn = [
 	"filesystem:",
 	"javascript:"
 ];
-function Gn(e) {
+function Wn(e) {
 	try {
-		return Wn.includes(new URL(e).protocol);
+		return Un.includes(new URL(e).protocol);
 	} catch {
 		return !1;
 	}
 }
-function Kn(e, t, n, r) {
-	if (_t(e)) {
-		let r = e, i = Me.test(r) ? new URL(Ne(r, t.protocol)) : new URL(r);
-		if (Gn(i.toString())) throw Error("Invalid redirect location");
-		let a = K(i.pathname, n) != null;
-		if (i.origin === t.origin && a) return wt(i.pathname) + i.search + i.hash;
+function Gn(e, t, n, r) {
+	if (gt(e)) {
+		let r = e, i = je.test(r) ? new URL(Me(r, t.protocol)) : new URL(r);
+		if (Wn(i.toString())) throw Error("Invalid redirect location");
+		let a = q(i.pathname, n) != null;
+		if (i.origin === t.origin && a) return Ct(i.pathname) + i.search + i.hash;
 	}
 	try {
-		if (Gn(r.createURL(e).toString())) throw Error("Invalid redirect location");
+		if (Wn(r.createURL(e).toString())) throw Error("Invalid redirect location");
 	} catch {}
 	return e;
 }
-function qn(e, t, n, r) {
-	let i = e.createURL(ar(t)).toString(), a = { signal: n };
-	if (r && J(r.formMethod)) {
+function Kn(e, t, n, r) {
+	let i = e.createURL(ir(t)).toString(), a = { signal: n };
+	if (r && Y(r.formMethod)) {
 		let { formMethod: e, formEncType: t } = r;
-		a.method = e.toUpperCase(), t === "application/json" ? (a.headers = new Headers({ "Content-Type": t }), a.body = JSON.stringify(r.json)) : a.body = t === "text/plain" ? r.text : t === "application/x-www-form-urlencoded" && r.formData ? Yn(r.formData) : r.formData;
+		a.method = e.toUpperCase(), t === "application/json" ? (a.headers = new Headers({ "Content-Type": t }), a.body = JSON.stringify(r.json)) : a.body = t === "text/plain" ? r.text : t === "application/x-www-form-urlencoded" && r.formData ? Jn(r.formData) : r.formData;
 	}
 	return new Request(i, a);
 }
-function Jn(e, t) {
-	let n = new URL(e.url), r = typeof t == "string" ? Re(t) : t;
+function qn(e, t) {
+	let n = new URL(e.url), r = typeof t == "string" ? Le(t) : t;
 	if (n.pathname = r.pathname || "/", r.search) {
 		let e = new URLSearchParams(r.search), t = e.getAll("index");
 		e.delete("index");
@@ -2263,29 +2263,29 @@ function Jn(e, t) {
 	} else n.search = "";
 	return n.hash = r.hash || "", n;
 }
-function Yn(e) {
+function Jn(e) {
 	let t = new URLSearchParams();
 	for (let [n, r] of e.entries()) t.append(n, typeof r == "string" ? r : r.name);
 	return t;
 }
-function Xn(e) {
+function Yn(e) {
 	let t = new FormData();
 	for (let [n, r] of e.entries()) t.append(n, r);
 	return t;
 }
-function Zn(e, t, n, r = !1, i = !1) {
-	let a = {}, o = null, s, c = !1, l = {}, u = n && q(n[1]) ? n[1].error : void 0;
+function Xn(e, t, n, r = !1, i = !1) {
+	let a = {}, o = null, s, c = !1, l = {}, u = n && J(n[1]) ? n[1].error : void 0;
 	return e.forEach((n) => {
 		if (!(n.route.id in t)) return;
 		let d = n.route.id, f = t[d];
-		if (U(!dr(f), "Cannot handle redirect results in processLoaderData"), q(f)) {
+		if (W(!ur(f), "Cannot handle redirect results in processLoaderData"), J(f)) {
 			let t = f.error;
 			if (u !== void 0 && (t = u, u = void 0), o ||= {}, i) o[d] = t;
 			else {
-				let n = tr(e, d);
+				let n = er(e, d);
 				o[n.route.id] ?? (o[n.route.id] = t);
 			}
-			r || (a[d] = ln), c || (c = !0, s = jt(f.error) ? f.error.status : 500), f.headers && (l[d] = f.headers);
+			r || (a[d] = cn), c || (c = !0, s = At(f.error) ? f.error.status : 500), f.headers && (l[d] = f.headers);
 		} else a[d] = f.data, f.statusCode && f.statusCode !== 200 && !c && (s = f.statusCode), f.headers && (l[d] = f.headers);
 	}), u !== void 0 && n && (o = { [n[0]]: u }, n[2] && (a[n[2]] = void 0)), {
 		loaderData: a,
@@ -2294,21 +2294,21 @@ function Zn(e, t, n, r = !1, i = !1) {
 		loaderHeaders: l
 	};
 }
-function Qn(e, t, n, r, i, a, o) {
-	let { loaderData: s, errors: c } = Zn(t, n, r);
+function Zn(e, t, n, r, i, a, o) {
+	let { loaderData: s, errors: c } = Xn(t, n, r);
 	return i.filter((e) => !e.matches || e.matches.some((e) => e.shouldLoad)).forEach((t) => {
 		let { key: n, match: r, controller: i } = t;
 		if (i && i.signal.aborted) return;
 		let s = a[n];
-		if (U(s, "Did not find corresponding fetcher result"), q(s)) {
-			let t = tr(e.matches, r?.route.id);
+		if (W(s, "Did not find corresponding fetcher result"), J(s)) {
+			let t = er(e.matches, r?.route.id);
 			c && c[t.route.id] || (c = {
 				...c,
 				[t.route.id]: s.error
 			}), o.delete(n);
-		} else if (dr(s)) U(!1, "Unhandled fetcher revalidation redirect");
+		} else if (ur(s)) W(!1, "Unhandled fetcher revalidation redirect");
 		else {
-			let e = wr(s.data);
+			let e = Cr(s.data);
 			o.set(n, e);
 		}
 	}), {
@@ -2316,21 +2316,21 @@ function Qn(e, t, n, r, i, a, o) {
 		errors: c
 	};
 }
-function $n(e, t, n, r) {
-	let i = Object.entries(t).filter(([, e]) => e !== ln).reduce((e, [t, n]) => (e[t] = n, e), {});
+function Qn(e, t, n, r) {
+	let i = Object.entries(t).filter(([, e]) => e !== cn).reduce((e, [t, n]) => (e[t] = n, e), {});
 	for (let a of n) {
 		let n = a.route.id;
 		if (!t.hasOwnProperty(n) && e.hasOwnProperty(n) && a.route.loader && (i[n] = e[n]), r && r.hasOwnProperty(n)) break;
 	}
 	return i;
 }
-function er(e) {
-	return e ? q(e[1]) ? { actionData: {} } : { actionData: { [e[0]]: e[1].data } } : {};
+function $n(e) {
+	return e ? J(e[1]) ? { actionData: {} } : { actionData: { [e[0]]: e[1].data } } : {};
 }
-function tr(e, t) {
+function er(e, t) {
 	return (t ? e.slice(0, e.findIndex((e) => e.route.id === t) + 1) : [...e]).reverse().find((e) => e.route.hasErrorBoundary === !0) || e[0];
 }
-function nr(e) {
+function tr(e) {
 	let t = e.length === 1 ? e[0] : e.find((e) => e.index || !e.path || e.path === "/") || { id: "__shim-error-route__" };
 	return {
 		matches: [{
@@ -2342,75 +2342,75 @@ function nr(e) {
 		route: t
 	};
 }
-function rr(e, { pathname: t, routeId: n, method: r, type: i, message: a } = {}) {
+function nr(e, { pathname: t, routeId: n, method: r, type: i, message: a } = {}) {
 	let o = "Unknown Server Error", s = "Unknown @remix-run/router error";
-	return e === 400 ? (o = "Bad Request", r && t && n ? s = `You made a ${r} request to "${t}" but did not provide a \`loader\` for route "${n}", so there is no way to handle the request.` : i === "invalid-body" && (s = "Unable to encode submission body")) : e === 403 ? (o = "Forbidden", s = `Route "${n}" does not match URL "${t}"`) : e === 404 ? (o = "Not Found", s = `No route matches URL "${t}"`) : e === 405 && (o = "Method Not Allowed", r && t && n ? s = `You made a ${r.toUpperCase()} request to "${t}" but did not provide an \`action\` for route "${n}", so there is no way to handle the request.` : r && (s = `Invalid request method "${r.toUpperCase()}"`)), new At(e || 500, o, Error(s), !0);
+	return e === 400 ? (o = "Bad Request", r && t && n ? s = `You made a ${r} request to "${t}" but did not provide a \`loader\` for route "${n}", so there is no way to handle the request.` : i === "invalid-body" && (s = "Unable to encode submission body")) : e === 403 ? (o = "Forbidden", s = `Route "${n}" does not match URL "${t}"`) : e === 404 ? (o = "Not Found", s = `No route matches URL "${t}"`) : e === 405 && (o = "Method Not Allowed", r && t && n ? s = `You made a ${r.toUpperCase()} request to "${t}" but did not provide an \`action\` for route "${n}", so there is no way to handle the request.` : r && (s = `Invalid request method "${r.toUpperCase()}"`)), new kt(e || 500, o, Error(s), !0);
 }
-function ir(e) {
+function rr(e) {
 	let t = Object.entries(e);
 	for (let e = t.length - 1; e >= 0; e--) {
 		let [n, r] = t[e];
-		if (dr(r)) return {
+		if (ur(r)) return {
 			key: n,
 			result: r
 		};
 	}
 }
-function ar(e) {
-	return G({
-		...typeof e == "string" ? Re(e) : e,
+function ir(e) {
+	return K({
+		...typeof e == "string" ? Le(e) : e,
 		hash: ""
 	});
 }
-function or(e, t) {
+function ar(e, t) {
 	return e.pathname !== t.pathname || e.search !== t.search ? !1 : e.hash === "" ? t.hash !== "" : e.hash === t.hash || t.hash !== "";
 }
+function or(e) {
+	return new kt(e.init?.status ?? 500, e.init?.statusText ?? "Internal Server Error", e.data);
+}
 function sr(e) {
-	return new At(e.init?.status ?? 500, e.init?.statusText ?? "Internal Server Error", e.data);
+	return typeof e == "object" && !!e && Object.entries(e).every(([e, t]) => typeof e == "string" && cr(t));
 }
 function cr(e) {
-	return typeof e == "object" && !!e && Object.entries(e).every(([e, t]) => typeof e == "string" && lr(t));
-}
-function lr(e) {
 	return typeof e == "object" && !!e && "type" in e && "result" in e && (e.type === "data" || e.type === "error");
 }
-function ur(e) {
-	return pr(e.result) && tn.has(e.result.status);
-}
-function q(e) {
-	return e.type === "error";
-}
-function dr(e) {
-	return (e && e.type) === "redirect";
-}
-function fr(e) {
-	return typeof e == "object" && !!e && "type" in e && "data" in e && "init" in e && e.type === "DataWithResponseInit";
-}
-function pr(e) {
-	return e != null && typeof e.status == "number" && typeof e.statusText == "string" && typeof e.headers == "object" && e.body !== void 0;
-}
-function mr(e) {
-	return tn.has(e);
-}
-function hr(e) {
-	return pr(e) && mr(e.status) && e.headers.has("Location");
-}
-function gr(e) {
-	return en.has(e.toUpperCase());
+function lr(e) {
+	return fr(e.result) && en.has(e.result.status);
 }
 function J(e) {
-	return Qt.has(e.toUpperCase());
+	return e.type === "error";
 }
-function _r(e) {
+function ur(e) {
+	return (e && e.type) === "redirect";
+}
+function dr(e) {
+	return typeof e == "object" && !!e && "type" in e && "data" in e && "init" in e && e.type === "DataWithResponseInit";
+}
+function fr(e) {
+	return e != null && typeof e.status == "number" && typeof e.statusText == "string" && typeof e.headers == "object" && e.body !== void 0;
+}
+function pr(e) {
+	return en.has(e);
+}
+function mr(e) {
+	return fr(e) && pr(e.status) && e.headers.has("Location");
+}
+function hr(e) {
+	return $t.has(e.toUpperCase());
+}
+function Y(e) {
+	return Zt.has(e.toUpperCase());
+}
+function gr(e) {
 	return new URLSearchParams(e).getAll("index").some((e) => e === "");
 }
-function vr(e, t) {
-	let n = typeof t == "string" ? Re(t).search : t.search;
-	if (e[e.length - 1].route.index && _r(n || "")) return e[e.length - 1];
-	let r = xt(e);
+function _r(e, t) {
+	let n = typeof t == "string" ? Le(t).search : t.search;
+	if (e[e.length - 1].route.index && gr(n || "")) return e[e.length - 1];
+	let r = bt(e);
 	return r[r.length - 1];
 }
-function yr(e) {
+function vr(e) {
 	let { formMethod: t, formAction: n, formEncType: r, text: i, formData: a, json: o } = e;
 	if (!(!t || !n || !r)) {
 		if (i != null) return {
@@ -2439,7 +2439,7 @@ function yr(e) {
 		};
 	}
 }
-function br(e, t, n, r) {
+function yr(e, t, n, r) {
 	return r ? {
 		state: "loading",
 		location: e,
@@ -2464,7 +2464,7 @@ function br(e, t, n, r) {
 		text: void 0
 	};
 }
-function xr(e, t, n, r) {
+function br(e, t, n, r) {
 	return {
 		state: "submitting",
 		location: e,
@@ -2478,7 +2478,7 @@ function xr(e, t, n, r) {
 		text: r.text
 	};
 }
-function Sr(e, t) {
+function xr(e, t) {
 	return e ? {
 		state: "loading",
 		formMethod: e.formMethod,
@@ -2499,7 +2499,7 @@ function Sr(e, t) {
 		data: t
 	};
 }
-function Cr(e, t) {
+function Sr(e, t) {
 	return {
 		state: "submitting",
 		formMethod: e.formMethod,
@@ -2511,7 +2511,7 @@ function Cr(e, t) {
 		data: t ? t.data : void 0
 	};
 }
-function wr(e) {
+function Cr(e) {
 	return {
 		state: "idle",
 		formMethod: void 0,
@@ -2523,27 +2523,27 @@ function wr(e) {
 		data: e
 	};
 }
-function Tr(e, t) {
+function wr(e, t) {
 	try {
-		let n = e.sessionStorage.getItem(cn);
+		let n = e.sessionStorage.getItem(sn);
 		if (n) {
 			let e = JSON.parse(n);
 			for (let [n, r] of Object.entries(e || {})) r && Array.isArray(r) && t.set(n, new Set(r || []));
 		}
 	} catch {}
 }
-function Er(e, t) {
+function Tr(e, t) {
 	if (t.size > 0) {
 		let n = {};
 		for (let [e, r] of t) n[e] = [...r];
 		try {
-			e.sessionStorage.setItem(cn, JSON.stringify(n));
+			e.sessionStorage.setItem(sn, JSON.stringify(n));
 		} catch (e) {
-			W(!1, `Failed to save applied view transitions in sessionStorage (${e}).`);
+			G(!1, `Failed to save applied view transitions in sessionStorage (${e}).`);
 		}
 	}
 }
-function Dr() {
+function Er() {
 	let e, t, n = new Promise((r, i) => {
 		e = async (e) => {
 			r(e);
@@ -2563,31 +2563,31 @@ function Dr() {
 		reject: t
 	};
 }
-var Or = V.createContext(null);
-Or.displayName = "DataRouter";
-var kr = V.createContext(null);
-kr.displayName = "DataRouterState";
-var Ar = V.createContext(!1);
-function jr() {
-	return V.useContext(Ar);
+var Dr = H.createContext(null);
+Dr.displayName = "DataRouter";
+var Or = H.createContext(null);
+Or.displayName = "DataRouterState";
+var kr = H.createContext(!1);
+function Ar() {
+	return H.useContext(kr);
 }
-var Mr = V.createContext({ isTransitioning: !1 });
-Mr.displayName = "ViewTransition";
-var Nr = V.createContext(/* @__PURE__ */ new Map());
-Nr.displayName = "Fetchers";
-var Pr = V.createContext(null);
-Pr.displayName = "Await";
-var Y = V.createContext(null);
-Y.displayName = "Navigation";
-var Fr = V.createContext(null);
+var jr = H.createContext({ isTransitioning: !1 });
+jr.displayName = "ViewTransition";
+var Mr = H.createContext(/* @__PURE__ */ new Map());
+Mr.displayName = "Fetchers";
+var Nr = H.createContext(null);
+Nr.displayName = "Await";
+var Pr = H.createContext(null);
+Pr.displayName = "Navigation";
+var Fr = H.createContext(null);
 Fr.displayName = "Location";
-var Ir = V.createContext({
+var Ir = H.createContext({
 	outlet: null,
 	matches: [],
 	isDataRoute: !1
 });
 Ir.displayName = "Route";
-var Lr = V.createContext(null);
+var Lr = H.createContext(null);
 Lr.displayName = "RouteError";
 var Rr = "REACT_ROUTER_ERROR", zr = "REDIRECT", Br = "ROUTE_ERROR_RESPONSE";
 function Vr(e) {
@@ -2599,45 +2599,45 @@ function Vr(e) {
 function Hr(e) {
 	if (e.startsWith(`${Rr}:${Br}:{`)) try {
 		let t = JSON.parse(e.slice(40));
-		if (typeof t == "object" && t && typeof t.status == "number" && typeof t.statusText == "string") return new At(t.status, t.statusText, t.data);
+		if (typeof t == "object" && t && typeof t.status == "number" && typeof t.statusText == "string") return new kt(t.status, t.statusText, t.data);
 	} catch {}
 }
 function Ur(e, { relative: t } = {}) {
-	U(Wr(), "useHref() may be used only in the context of a <Router> component.");
-	let { basename: n, navigator: r } = V.useContext(Y), { hash: i, pathname: a, search: o } = Yr(e, { relative: t }), s = a;
-	return n !== "/" && (s = a === "/" ? n : Tt([n, a])), r.createHref({
+	W(Wr(), "useHref() may be used only in the context of a <Router> component.");
+	let { basename: n, navigator: r } = H.useContext(Pr), { hash: i, pathname: a, search: o } = Yr(e, { relative: t }), s = a;
+	return n !== "/" && (s = a === "/" ? n : wt([n, a])), r.createHref({
 		pathname: s,
 		search: o,
 		hash: i
 	});
 }
 function Wr() {
-	return V.useContext(Fr) != null;
+	return H.useContext(Fr) != null;
 }
 function X() {
-	return U(Wr(), "useLocation() may be used only in the context of a <Router> component."), V.useContext(Fr).location;
+	return W(Wr(), "useLocation() may be used only in the context of a <Router> component."), H.useContext(Fr).location;
 }
 var Gr = "You should call navigate() in a React.useEffect(), not when your component is first rendered.";
 function Kr(e) {
-	V.useContext(Y).static || V.useLayoutEffect(e);
+	H.useContext(Pr).static || H.useLayoutEffect(e);
 }
 function qr() {
-	let { isDataRoute: e } = V.useContext(Ir);
+	let { isDataRoute: e } = H.useContext(Ir);
 	return e ? mi() : Jr();
 }
 function Jr() {
-	U(Wr(), "useNavigate() may be used only in the context of a <Router> component.");
-	let e = V.useContext(Or), { basename: t, navigator: n } = V.useContext(Y), { matches: r } = V.useContext(Ir), { pathname: i } = X(), a = JSON.stringify(St(r)), o = V.useRef(!1);
+	W(Wr(), "useNavigate() may be used only in the context of a <Router> component.");
+	let e = H.useContext(Dr), { basename: t, navigator: n } = H.useContext(Pr), { matches: r } = H.useContext(Ir), { pathname: i } = X(), a = JSON.stringify(xt(r)), o = H.useRef(!1);
 	return Kr(() => {
 		o.current = !0;
-	}), V.useCallback((r, s = {}) => {
-		if (W(o.current, Gr), !o.current) return;
+	}), H.useCallback((r, s = {}) => {
+		if (G(o.current, Gr), !o.current) return;
 		if (typeof r == "number") {
 			n.go(r);
 			return;
 		}
-		let c = Ct(r, JSON.parse(a), i, s.relative === "path");
-		e == null && t !== "/" && (c.pathname = c.pathname === "/" ? t : Tt([t, c.pathname])), Xt(typeof r == "string" ? r : G(r), n.createHref(c), qt(n), "reject"), (s.replace ? n.replace : n.push)(c, s.state, s);
+		let c = St(r, JSON.parse(a), i, s.relative === "path");
+		e == null && t !== "/" && (c.pathname = c.pathname === "/" ? t : wt([t, c.pathname])), Yt(typeof r == "string" ? r : K(r), n.createHref(c), Kt(n), "reject"), (s.replace ? n.replace : n.push)(c, s.state, s);
 	}, [
 		t,
 		n,
@@ -2646,10 +2646,10 @@ function Jr() {
 		e
 	]);
 }
-V.createContext(null);
+H.createContext(null);
 function Yr(e, { relative: t } = {}) {
-	let { matches: n } = V.useContext(Ir), { pathname: r } = X(), i = JSON.stringify(St(n));
-	return V.useMemo(() => Ct(e, JSON.parse(i), r, t === "path"), [
+	let { matches: n } = H.useContext(Ir), { pathname: r } = X(), i = JSON.stringify(xt(n));
+	return H.useMemo(() => St(e, JSON.parse(i), r, t === "path"), [
 		e,
 		i,
 		r,
@@ -2660,8 +2660,8 @@ function Xr(e, t) {
 	return Zr(e, t);
 }
 function Zr(e, t, n) {
-	U(Wr(), "useRoutes() may be used only in the context of a <Router> component.");
-	let { navigator: r } = V.useContext(Y), { matches: i } = V.useContext(Ir), a = i[i.length - 1], o = a ? a.params : {}, s = a ? a.pathname : "/", c = a ? a.pathnameBase : "/", l = a && a.route;
+	W(Wr(), "useRoutes() may be used only in the context of a <Router> component.");
+	let { navigator: r } = H.useContext(Pr), { matches: i } = H.useContext(Ir), a = i[i.length - 1], o = a ? a.params : {}, s = a ? a.pathname : "/", c = a ? a.pathnameBase : "/", l = a && a.route;
 	{
 		let e = l && l.path || "";
 		gi(s, !l || e.endsWith("*") || e.endsWith("*?"), `You rendered descendant <Routes> (or called \`useRoutes()\`) at "${s}" (under <Route path="${e}">) but the parent route path has no trailing "*". This means if you navigate deeper, the parent won't match anymore and therefore the child routes will never render.
@@ -2670,22 +2670,22 @@ Please change the parent <Route path="${e}"> to <Route path="${e === "/" ? "*" :
 	}
 	let u = X(), d;
 	if (t) {
-		let e = typeof t == "string" ? Re(t) : t;
-		U(c === "/" || e.pathname?.startsWith(c), `When overriding the location using \`<Routes location>\` or \`useRoutes(routes, location)\`, the location pathname must begin with the portion of the URL pathname that was matched by all parent routes. The current pathname base is "${c}" but pathname "${e.pathname}" was given in the \`location\` prop.`), d = e;
+		let e = typeof t == "string" ? Le(t) : t;
+		W(c === "/" || e.pathname?.startsWith(c), `When overriding the location using \`<Routes location>\` or \`useRoutes(routes, location)\`, the location pathname must begin with the portion of the URL pathname that was matched by all parent routes. The current pathname base is "${c}" but pathname "${e.pathname}" was given in the \`location\` prop.`), d = e;
 	} else d = u;
 	let f = d.pathname || "/", p = f;
 	if (c !== "/") {
 		let e = c.replace(/^\//, "").split("/");
 		p = "/" + f.replace(/^\//, "").split("/").slice(e.length).join("/");
 	}
-	let m = n && n.state.matches.length ? n.state.matches.map((e) => Object.assign(e, { route: n.manifest[e.route.id] || e.route })) : Ye(e, { pathname: p });
-	W(l || m != null, `No routes matched location "${d.pathname}${d.search}${d.hash}" `), W(m == null || m[m.length - 1].route.element !== void 0 || m[m.length - 1].route.Component !== void 0 || m[m.length - 1].route.lazy !== void 0, `Matched leaf route at location "${d.pathname}${d.search}${d.hash}" does not have an element or Component. This means it will render an <Outlet /> with a null value by default resulting in an "empty" page.`);
+	let m = n && n.state.matches.length ? n.state.matches.map((e) => Object.assign(e, { route: n.manifest[e.route.id] || e.route })) : Je(e, { pathname: p });
+	G(l || m != null, `No routes matched location "${d.pathname}${d.search}${d.hash}" `), G(m == null || m[m.length - 1].route.element !== void 0 || m[m.length - 1].route.Component !== void 0 || m[m.length - 1].route.lazy !== void 0, `Matched leaf route at location "${d.pathname}${d.search}${d.hash}" does not have an element or Component. This means it will render an <Outlet /> with a null value by default resulting in an "empty" page.`);
 	let h = ii(m && m.map((e) => Object.assign({}, e, {
 		params: Object.assign({}, o, e.params),
-		pathname: Tt([c, r.encodeLocation ? r.encodeLocation(e.pathname.replace(/%/g, "%25").replace(/\?/g, "%3F").replace(/#/g, "%23")).pathname : e.pathname]),
-		pathnameBase: e.pathnameBase === "/" ? c : Tt([c, r.encodeLocation ? r.encodeLocation(e.pathnameBase.replace(/%/g, "%25").replace(/\?/g, "%3F").replace(/#/g, "%23")).pathname : e.pathnameBase])
+		pathname: wt([c, r.encodeLocation ? r.encodeLocation(e.pathname.replace(/%/g, "%25").replace(/\?/g, "%3F").replace(/#/g, "%23")).pathname : e.pathname]),
+		pathnameBase: e.pathnameBase === "/" ? c : wt([c, r.encodeLocation ? r.encodeLocation(e.pathnameBase.replace(/%/g, "%25").replace(/\?/g, "%3F").replace(/#/g, "%23")).pathname : e.pathnameBase])
 	})), i, n);
-	return t && h ? /* @__PURE__ */ V.createElement(Fr.Provider, { value: {
+	return t && h ? /* @__PURE__ */ H.createElement(Fr.Provider, { value: {
 		location: {
 			pathname: "/",
 			search: "",
@@ -2699,16 +2699,16 @@ Please change the parent <Route path="${e}"> to <Route path="${e === "/" ? "*" :
 	} }, h) : h;
 }
 function Qr() {
-	let e = di(), t = jt(e) ? `${e.status} ${e.statusText}` : e instanceof Error ? e.message : JSON.stringify(e), n = e instanceof Error ? e.stack : null, r = "rgba(200,200,200, 0.5)", i = {
+	let e = di(), t = At(e) ? `${e.status} ${e.statusText}` : e instanceof Error ? e.message : JSON.stringify(e), n = e instanceof Error ? e.stack : null, r = "rgba(200,200,200, 0.5)", i = {
 		padding: "0.5rem",
 		backgroundColor: r
 	}, a = {
 		padding: "2px 4px",
 		backgroundColor: r
 	}, o = null;
-	return console.error("Error handled by React Router default ErrorBoundary:", e), o = /* @__PURE__ */ V.createElement(V.Fragment, null, /* @__PURE__ */ V.createElement("p", null, "💿 Hey developer 👋"), /* @__PURE__ */ V.createElement("p", null, "You can provide a way better UX than this when your app throws errors by providing your own ", /* @__PURE__ */ V.createElement("code", { style: a }, "ErrorBoundary"), " or", " ", /* @__PURE__ */ V.createElement("code", { style: a }, "errorElement"), " prop on your route.")), /* @__PURE__ */ V.createElement(V.Fragment, null, /* @__PURE__ */ V.createElement("h2", null, "Unexpected Application Error!"), /* @__PURE__ */ V.createElement("h3", { style: { fontStyle: "italic" } }, t), n ? /* @__PURE__ */ V.createElement("pre", { style: i }, n) : null, o);
+	return console.error("Error handled by React Router default ErrorBoundary:", e), o = /* @__PURE__ */ H.createElement(H.Fragment, null, /* @__PURE__ */ H.createElement("p", null, "💿 Hey developer 👋"), /* @__PURE__ */ H.createElement("p", null, "You can provide a way better UX than this when your app throws errors by providing your own ", /* @__PURE__ */ H.createElement("code", { style: a }, "ErrorBoundary"), " or", " ", /* @__PURE__ */ H.createElement("code", { style: a }, "errorElement"), " prop on your route.")), /* @__PURE__ */ H.createElement(H.Fragment, null, /* @__PURE__ */ H.createElement("h2", null, "Unexpected Application Error!"), /* @__PURE__ */ H.createElement("h3", { style: { fontStyle: "italic" } }, t), n ? /* @__PURE__ */ H.createElement("pre", { style: i }, n) : null, o);
 }
-var $r = /* @__PURE__ */ V.createElement(Qr, null), ei = class extends V.Component {
+var $r = /* @__PURE__ */ H.createElement(Qr, null), ei = class extends H.Component {
 	constructor(e) {
 		super(e), this.state = {
 			location: e.location,
@@ -2739,32 +2739,32 @@ var $r = /* @__PURE__ */ V.createElement(Qr, null), ei = class extends V.Compone
 			let t = Hr(e.digest);
 			t && (e = t);
 		}
-		let t = e === void 0 ? this.props.children : /* @__PURE__ */ V.createElement(Ir.Provider, { value: this.props.routeContext }, /* @__PURE__ */ V.createElement(Lr.Provider, {
+		let t = e === void 0 ? this.props.children : /* @__PURE__ */ H.createElement(Ir.Provider, { value: this.props.routeContext }, /* @__PURE__ */ H.createElement(Lr.Provider, {
 			value: e,
 			children: this.props.component
 		}));
-		return this.context ? /* @__PURE__ */ V.createElement(ni, { error: e }, t) : t;
+		return this.context ? /* @__PURE__ */ H.createElement(ni, { error: e }, t) : t;
 	}
 };
-ei.contextType = Ar;
+ei.contextType = kr;
 var ti = /* @__PURE__ */ new WeakMap();
 function ni({ children: e, error: t }) {
-	let { basename: n, navigator: r } = V.useContext(Y);
+	let { basename: n, navigator: r } = H.useContext(Pr);
 	if (typeof t == "object" && t && "digest" in t && typeof t.digest == "string") {
 		let e = Vr(t.digest);
 		if (e) {
 			let i = ti.get(t);
 			if (i) throw i;
-			let a = Pt(e.location, n), o = a.absoluteURL || a.to;
-			if (Xt(e.location, o, qt(r), "allow-explicit"), Gn(o)) throw Error("Invalid redirect location");
-			if (Nt && !ti.get(t)) {
+			let a = Nt(e.location, n), o = a.absoluteURL || a.to;
+			if (Yt(e.location, o, Kt(r), "allow-explicit"), Wn(o)) throw Error("Invalid redirect location");
+			if (Mt && !ti.get(t)) {
 				if (a.isExternal || e.reloadDocument) window.location.href = o;
 				else {
 					let n = Promise.resolve().then(() => window.__reactRouterDataRouter.navigate(a.to, { replace: e.replace }));
 					throw ti.set(t, n), n;
 				}
 			}
-			return /* @__PURE__ */ V.createElement("meta", {
+			return /* @__PURE__ */ H.createElement("meta", {
 				httpEquiv: "refresh",
 				content: `0;url=${o}`
 			});
@@ -2773,8 +2773,8 @@ function ni({ children: e, error: t }) {
 	return e;
 }
 function ri({ routeContext: e, match: t, children: n }) {
-	let r = V.useContext(Or);
-	return r && r.static && r.staticContext && (t.route.errorElement || t.route.ErrorBoundary) && (r.staticContext._deepestRenderedBoundaryId = t.route.id), /* @__PURE__ */ V.createElement(Ir.Provider, { value: e }, n);
+	let r = H.useContext(Dr);
+	return r && r.static && r.staticContext && (t.route.errorElement || t.route.ErrorBoundary) && (r.staticContext._deepestRenderedBoundaryId = t.route.id), /* @__PURE__ */ H.createElement(Ir.Provider, { value: e }, n);
 }
 function ii(e, t = [], n) {
 	let r = n?.state;
@@ -2787,7 +2787,7 @@ function ii(e, t = [], n) {
 	let i = e, a = r?.errors;
 	if (a != null) {
 		let e = i.findIndex((e) => e.route.id && a?.[e.route.id] !== void 0);
-		U(e >= 0, `Could not find a matching route for errors on route IDs: ${Object.keys(a).join(",")}`), i = i.slice(0, Math.min(i.length, e + 1));
+		W(e >= 0, `Could not find a matching route for errors on route IDs: ${Object.keys(a).join(",")}`), i = i.slice(0, Math.min(i.length, e + 1));
 	}
 	let o = !1, s = -1;
 	if (n && r) {
@@ -2807,7 +2807,7 @@ function ii(e, t = [], n) {
 		c(e, {
 			location: r.location,
 			params: r.matches?.[0]?.params ?? {},
-			pattern: Mt(r.matches),
+			pattern: jt(r.matches),
 			errorInfo: t
 		});
 	} : void 0;
@@ -2816,7 +2816,7 @@ function ii(e, t = [], n) {
 		r && (u = a && n.route.id ? a[n.route.id] : void 0, f = n.route.errorElement || $r, o && (s < 0 && c === 0 ? (gi("route-fallback", !1, "No `HydrateFallback` element provided to render during initial hydration"), d = !0, p = null) : s === c && (d = !0, p = n.route.hydrateFallbackElement || null)));
 		let m = t.concat(i.slice(0, c + 1)), h = () => {
 			let t;
-			return t = u ? f : d ? p : n.route.Component ? /* @__PURE__ */ V.createElement(n.route.Component, null) : n.route.element ? n.route.element : e, /* @__PURE__ */ V.createElement(ri, {
+			return t = u ? f : d ? p : n.route.Component ? /* @__PURE__ */ H.createElement(n.route.Component, null) : n.route.element ? n.route.element : e, /* @__PURE__ */ H.createElement(ri, {
 				match: n,
 				routeContext: {
 					outlet: e,
@@ -2826,7 +2826,7 @@ function ii(e, t = [], n) {
 				children: t
 			});
 		};
-		return r && (n.route.ErrorBoundary || n.route.errorElement || c === 0) ? /* @__PURE__ */ V.createElement(ei, {
+		return r && (n.route.ErrorBoundary || n.route.errorElement || c === 0) ? /* @__PURE__ */ H.createElement(ei, {
 			location: r.location,
 			revalidation: r.revalidation,
 			component: f,
@@ -2845,63 +2845,63 @@ function ai(e) {
 	return `${e} must be used within a data router.  See https://reactrouter.com/en/main/routers/picking-a-router.`;
 }
 function oi(e) {
-	let t = V.useContext(Or);
-	return U(t, ai(e)), t;
+	let t = H.useContext(Dr);
+	return W(t, ai(e)), t;
 }
 function si(e) {
-	let t = V.useContext(kr);
-	return U(t, ai(e)), t;
+	let t = H.useContext(Or);
+	return W(t, ai(e)), t;
 }
 function ci(e) {
-	let t = V.useContext(Ir);
-	return U(t, ai(e)), t;
+	let t = H.useContext(Ir);
+	return W(t, ai(e)), t;
 }
 function li(e) {
 	let t = ci(e), n = t.matches[t.matches.length - 1];
-	return U(n.route.id, `${e} can only be used on routes that contain a unique "id"`), n.route.id;
+	return W(n.route.id, `${e} can only be used on routes that contain a unique "id"`), n.route.id;
 }
 function ui() {
 	return li("useRouteId");
 }
 function di() {
-	let e = V.useContext(Lr), t = si("useRouteError"), n = li("useRouteError");
+	let e = H.useContext(Lr), t = si("useRouteError"), n = li("useRouteError");
 	return e === void 0 ? t.errors?.[n] : e;
 }
 var fi = 0;
 function pi(e) {
-	let { router: t, basename: n } = oi("useBlocker"), r = si("useBlocker"), [i, a] = V.useState(""), o = V.useCallback((t) => {
+	let { router: t, basename: n } = oi("useBlocker"), r = si("useBlocker"), [i, a] = H.useState(""), o = H.useCallback((t) => {
 		if (typeof e != "function") return !!e;
 		if (n === "/") return e(t);
 		let { currentLocation: r, nextLocation: i, historyAction: a } = t;
 		return e({
 			currentLocation: {
 				...r,
-				pathname: K(r.pathname, n) || r.pathname
+				pathname: q(r.pathname, n) || r.pathname
 			},
 			nextLocation: {
 				...i,
-				pathname: K(i.pathname, n) || i.pathname
+				pathname: q(i.pathname, n) || i.pathname
 			},
 			historyAction: a
 		});
 	}, [n, e]);
-	return V.useEffect(() => {
+	return H.useEffect(() => {
 		let e = String(++fi);
 		return a(e), () => t.deleteBlocker(e);
-	}, [t]), V.useEffect(() => {
+	}, [t]), H.useEffect(() => {
 		i !== "" && t.getBlocker(i, o);
 	}, [
 		t,
 		i,
 		o
-	]), i && r.blockers.has(i) ? r.blockers.get(i) : on;
+	]), i && r.blockers.has(i) ? r.blockers.get(i) : an;
 }
 function mi() {
-	let { router: e } = oi("useNavigate"), t = li("useNavigate"), n = V.useRef(!1);
+	let { router: e } = oi("useNavigate"), t = li("useNavigate"), n = H.useRef(!1);
 	return Kr(() => {
 		n.current = !0;
-	}), V.useCallback(async (r, i = {}) => {
-		W(n.current, Gr), n.current && (typeof r == "number" ? await e.navigate(r) : await e.navigate(r, {
+	}), H.useCallback(async (r, i = {}) => {
+		G(n.current, Gr), n.current && (typeof r == "number" ? await e.navigate(r) : await e.navigate(r, {
 			fromRouteId: t,
 			...i
 		}));
@@ -2909,36 +2909,36 @@ function mi() {
 }
 var hi = {};
 function gi(e, t, n) {
-	!t && !hi[e] && (hi[e] = !0, W(!1, n));
+	!t && !hi[e] && (hi[e] = !0, G(!1, n));
 }
 var _i = {};
 function vi(e, t) {
 	!e && !_i[t] && (_i[t] = !0, console.warn(t));
 }
-var yi = V.useOptimistic, bi = () => void 0;
+var yi = H.useOptimistic, bi = () => void 0;
 function xi(e) {
 	return yi ? yi(e) : [e, bi];
 }
 function Si(e) {
 	let t = { hasErrorBoundary: e.hasErrorBoundary || e.ErrorBoundary != null || e.errorElement != null };
-	return e.Component && (e.element && W(!1, "You should not include both `Component` and `element` on your route - `Component` will be used."), Object.assign(t, {
-		element: V.createElement(e.Component),
+	return e.Component && (e.element && G(!1, "You should not include both `Component` and `element` on your route - `Component` will be used."), Object.assign(t, {
+		element: H.createElement(e.Component),
 		Component: void 0
-	})), e.HydrateFallback && (e.hydrateFallbackElement && W(!1, "You should not include both `HydrateFallback` and `hydrateFallbackElement` on your route - `HydrateFallback` will be used."), Object.assign(t, {
-		hydrateFallbackElement: V.createElement(e.HydrateFallback),
+	})), e.HydrateFallback && (e.hydrateFallbackElement && G(!1, "You should not include both `HydrateFallback` and `hydrateFallbackElement` on your route - `HydrateFallback` will be used."), Object.assign(t, {
+		hydrateFallbackElement: H.createElement(e.HydrateFallback),
 		HydrateFallback: void 0
-	})), e.ErrorBoundary && (e.errorElement && W(!1, "You should not include both `ErrorBoundary` and `errorElement` on your route - `ErrorBoundary` will be used."), Object.assign(t, {
-		errorElement: V.createElement(e.ErrorBoundary),
+	})), e.ErrorBoundary && (e.errorElement && G(!1, "You should not include both `ErrorBoundary` and `errorElement` on your route - `ErrorBoundary` will be used."), Object.assign(t, {
+		errorElement: H.createElement(e.ErrorBoundary),
 		ErrorBoundary: void 0
 	})), t;
 }
 var Ci = ["HydrateFallback", "hydrateFallbackElement"];
 function wi(e, t) {
-	return hn({
+	return mn({
 		basename: t?.basename,
 		getContext: t?.getContext,
 		future: t?.future,
-		history: Fe({
+		history: Pe({
 			initialEntries: t?.initialEntries,
 			initialIndex: t?.initialIndex
 		}),
@@ -2963,18 +2963,18 @@ var Ti = class {
 	}
 };
 function Ei({ router: e, flushSync: t, onError: n, useTransitions: r }) {
-	r = jr() || r;
-	let [i, a] = V.useState(e.state), [o, s] = xi(i), [c, l] = V.useState(), [u, d] = V.useState({ isTransitioning: !1 }), [f, p] = V.useState(), [m, h] = V.useState(), [g, _] = V.useState(), v = V.useRef(/* @__PURE__ */ new Map()), y = V.useCallback((i, { deletedFetchers: o, newErrors: c, flushSync: u, viewTransitionOpts: g }) => {
+	r = Ar() || r;
+	let [i, a] = H.useState(e.state), [o, s] = xi(i), [c, l] = H.useState(), [u, d] = H.useState({ isTransitioning: !1 }), [f, p] = H.useState(), [m, h] = H.useState(), [g, _] = H.useState(), v = H.useRef(/* @__PURE__ */ new Map()), y = H.useCallback((i, { deletedFetchers: o, newErrors: c, flushSync: u, viewTransitionOpts: g }) => {
 		c && n && Object.values(c).forEach((e) => n(e, {
 			location: i.location,
 			params: i.matches[0]?.params ?? {},
-			pattern: Mt(i.matches)
+			pattern: jt(i.matches)
 		})), i.fetchers.forEach((e, t) => {
 			e.data !== void 0 && v.current.set(t, e.data);
 		}), o.forEach((e) => v.current.delete(e)), vi(u === !1 || t != null, "You provided the `flushSync` option to a router update, but you are not using the `<RouterProvider>` from `react-router/dom` so `ReactDOM.flushSync()` is unavailable.  Please update your app to `import { RouterProvider } from \"react-router/dom\"` and ensure you have `react-dom` installed as a dependency to use the `flushSync` option.");
 		let y = e.window != null && e.window.document != null && typeof e.window.document.startViewTransition == "function";
 		if (vi(g == null || y, "You provided the `viewTransition` option to a router update, but you do not appear to be running in a DOM environment as `window.startViewTransition` is not available."), !g || !y) {
-			t && u ? t(() => a(i)) : r === !1 ? a(i) : V.startTransition(() => {
+			t && u ? t(() => a(i)) : r === !1 ? a(i) : H.startTransition(() => {
 				r === !0 && s((e) => Di(e, i)), a(i);
 			});
 			return;
@@ -3017,12 +3017,12 @@ function Ei({ router: e, flushSync: t, onError: n, useTransitions: r }) {
 		s,
 		n
 	]);
-	V.useLayoutEffect(() => e.subscribe(y), [e, y]), V.useEffect(() => {
+	H.useLayoutEffect(() => e.subscribe(y), [e, y]), H.useEffect(() => {
 		u.isTransitioning && !u.flushSync && p(new Ti());
-	}, [u]), V.useEffect(() => {
+	}, [u]), H.useEffect(() => {
 		if (f && c && e.window) {
 			let t = c, n = f.promise, i = e.window.document.startViewTransition(async () => {
-				r === !1 ? a(t) : V.startTransition(() => {
+				r === !1 ? a(t) : H.startTransition(() => {
 					r === !0 && s((e) => Di(e, t)), a(t);
 				}), await n;
 			});
@@ -3036,14 +3036,14 @@ function Ei({ router: e, flushSync: t, onError: n, useTransitions: r }) {
 		e.window,
 		r,
 		s
-	]), V.useEffect(() => {
+	]), H.useEffect(() => {
 		f && c && o.location.key === c.location.key && f.resolve();
 	}, [
 		f,
 		m,
 		o.location,
 		c
-	]), V.useEffect(() => {
+	]), H.useEffect(() => {
 		!u.isTransitioning && g && (l(g.state), d({
 			isTransitioning: !0,
 			flushSync: !1,
@@ -3051,7 +3051,7 @@ function Ei({ router: e, flushSync: t, onError: n, useTransitions: r }) {
 			nextLocation: g.nextLocation
 		}), _(void 0));
 	}, [u.isTransitioning, g]);
-	let b = V.useMemo(() => ({
+	let b = H.useMemo(() => ({
 		createHref: e.createHref,
 		createURL: e.createURL,
 		encodeLocation: e.encodeLocation,
@@ -3065,7 +3065,7 @@ function Ei({ router: e, flushSync: t, onError: n, useTransitions: r }) {
 			state: n,
 			preventScrollReset: r?.preventScrollReset
 		})
-	}), [e]), x = e.basename || "/", S = V.useMemo(() => ({
+	}), [e]), x = e.basename || "/", S = H.useMemo(() => ({
 		router: e,
 		navigator: b,
 		static: !1,
@@ -3077,13 +3077,13 @@ function Ei({ router: e, flushSync: t, onError: n, useTransitions: r }) {
 		x,
 		n
 	]);
-	return /* @__PURE__ */ V.createElement(V.Fragment, null, /* @__PURE__ */ V.createElement(Or.Provider, { value: S }, /* @__PURE__ */ V.createElement(kr.Provider, { value: o }, /* @__PURE__ */ V.createElement(Nr.Provider, { value: v.current }, /* @__PURE__ */ V.createElement(Mr.Provider, { value: u }, /* @__PURE__ */ V.createElement(Mi, {
+	return /* @__PURE__ */ H.createElement(H.Fragment, null, /* @__PURE__ */ H.createElement(Dr.Provider, { value: S }, /* @__PURE__ */ H.createElement(Or.Provider, { value: o }, /* @__PURE__ */ H.createElement(Mr.Provider, { value: v.current }, /* @__PURE__ */ H.createElement(jr.Provider, { value: u }, /* @__PURE__ */ H.createElement(Mi, {
 		basename: x,
 		location: o.location,
 		navigationType: o.historyAction,
 		navigator: b,
 		useTransitions: r
-	}, /* @__PURE__ */ V.createElement(Oi, {
+	}, /* @__PURE__ */ H.createElement(Oi, {
 		routes: e.routes,
 		manifest: e.manifest,
 		future: e.future,
@@ -3101,7 +3101,7 @@ function Di(e, t) {
 		fetchers: t.fetchers
 	};
 }
-var Oi = V.memo(ki);
+var Oi = H.memo(ki);
 function ki({ routes: e, manifest: t, future: n, state: r, isStatic: i, onError: a }) {
 	return Zr(e, void 0, {
 		manifest: t,
@@ -3112,13 +3112,13 @@ function ki({ routes: e, manifest: t, future: n, state: r, isStatic: i, onError:
 	});
 }
 function Ai({ to: e, replace: t, state: n, relative: r }) {
-	U(Wr(), "<Navigate> may be used only in the context of a <Router> component.");
-	let { static: i, navigator: a } = V.useContext(Y);
-	W(!i, "<Navigate> must not be used on the initial render in a <StaticRouter>. This is a no-op, but you should modify your code so the <Navigate> is only ever rendered in response to some user interaction or state change.");
-	let { matches: o } = V.useContext(Ir), { pathname: s } = X(), c = qr(), l = Ct(e, St(o), s, r === "path");
-	Xt(typeof e == "string" ? e : G(e), a.createHref(l), qt(a), "reject");
+	W(Wr(), "<Navigate> may be used only in the context of a <Router> component.");
+	let { static: i, navigator: a } = H.useContext(Pr);
+	G(!i, "<Navigate> must not be used on the initial render in a <StaticRouter>. This is a no-op, but you should modify your code so the <Navigate> is only ever rendered in response to some user interaction or state change.");
+	let { matches: o } = H.useContext(Ir), { pathname: s } = X(), c = qr(), l = St(e, xt(o), s, r === "path");
+	Yt(typeof e == "string" ? e : K(e), a.createHref(l), Kt(a), "reject");
 	let u = JSON.stringify(l);
-	return V.useEffect(() => {
+	return H.useEffect(() => {
 		c(JSON.parse(u), {
 			replace: t,
 			state: n,
@@ -3133,11 +3133,11 @@ function Ai({ to: e, replace: t, state: n, relative: r }) {
 	]), null;
 }
 function ji(e) {
-	U(!1, "A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.");
+	W(!1, "A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.");
 }
 function Mi({ basename: e = "/", children: t = null, location: n, navigationType: r = "POP", navigator: i, static: a = !1, useTransitions: o }) {
-	U(!Wr(), "You cannot render a <Router> inside another <Router>. You should never have more than one in your app.");
-	let s = e.replace(/^\/*/, "/"), c = V.useMemo(() => ({
+	W(!Wr(), "You cannot render a <Router> inside another <Router>. You should never have more than one in your app.");
+	let s = e.replace(/^\/*/, "/"), c = H.useMemo(() => ({
 		basename: s,
 		navigator: i,
 		static: a,
@@ -3149,9 +3149,9 @@ function Mi({ basename: e = "/", children: t = null, location: n, navigationType
 		a,
 		o
 	]);
-	typeof n == "string" && (n = Re(n));
-	let { pathname: l = "/", search: u = "", hash: d = "", state: f = null, key: p = "default", mask: m } = n, h = V.useMemo(() => {
-		let e = K(l, s);
+	typeof n == "string" && (n = Le(n));
+	let { pathname: l = "/", search: u = "", hash: d = "", state: f = null, key: p = "default", mask: m } = n, h = H.useMemo(() => {
+		let e = q(l, s);
 		return e == null ? null : {
 			location: {
 				pathname: e,
@@ -3173,7 +3173,7 @@ function Mi({ basename: e = "/", children: t = null, location: n, navigationType
 		r,
 		m
 	]);
-	return W(h != null, `<Router basename="${s}"> is not able to match the URL "${l}${u}${d}" because it does not start with the basename, so the <Router> won't render anything.`), h == null ? null : /* @__PURE__ */ V.createElement(Y.Provider, { value: c }, /* @__PURE__ */ V.createElement(Fr.Provider, {
+	return G(h != null, `<Router basename="${s}"> is not able to match the URL "${l}${u}${d}" because it does not start with the basename, so the <Router> won't render anything.`), h == null ? null : /* @__PURE__ */ H.createElement(Pr.Provider, { value: c }, /* @__PURE__ */ H.createElement(Fr.Provider, {
 		children: t,
 		value: h
 	}));
@@ -3181,17 +3181,17 @@ function Mi({ basename: e = "/", children: t = null, location: n, navigationType
 function Ni({ children: e, location: t }) {
 	return Xr(Pi(e), t);
 }
-V.Component;
+H.Component;
 function Pi(e, t = []) {
 	let n = [];
-	return V.Children.forEach(e, (e, r) => {
-		if (!V.isValidElement(e)) return;
+	return H.Children.forEach(e, (e, r) => {
+		if (!H.isValidElement(e)) return;
 		let i = [...t, r];
-		if (e.type === V.Fragment) {
+		if (e.type === H.Fragment) {
 			n.push.apply(n, Pi(e.props.children, i));
 			return;
 		}
-		U(e.type === ji, `[${typeof e.type == "string" ? e.type : e.type.name}] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>`), U(!e.props.index || !e.props.children, "An index route cannot have child routes.");
+		W(e.type === ji, `[${typeof e.type == "string" ? e.type : e.type.name}] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>`), W(!e.props.index || !e.props.children, "An index route cannot have child routes.");
 		let a = {
 			id: e.props.id || i.join("-"),
 			caseSensitive: e.props.caseSensitive,
@@ -3262,18 +3262,18 @@ var qi = /* @__PURE__ */ new Set([
 	"text/plain"
 ]);
 function Ji(e) {
-	return e != null && !qi.has(e) ? (W(!1, `"${e}" is not a valid \`encType\` for \`<Form>\`/\`<fetcher.Form>\` and will default to "${Ii}"`), null) : e;
+	return e != null && !qi.has(e) ? (G(!1, `"${e}" is not a valid \`encType\` for \`<Form>\`/\`<fetcher.Form>\` and will default to "${Ii}"`), null) : e;
 }
 function Yi(e, t) {
 	let n, r, i, a, o;
 	if (zi(e)) {
 		let o = e.getAttribute("action");
-		r = o ? K(o, t) : null, n = e.getAttribute("method") || Fi, i = Ji(e.getAttribute("enctype")) || Ii, a = new FormData(e);
+		r = o ? q(o, t) : null, n = e.getAttribute("method") || Fi, i = Ji(e.getAttribute("enctype")) || Ii, a = new FormData(e);
 	} else if (Ri(e) || Bi(e) && (e.type === "submit" || e.type === "image")) {
 		let o = e.form;
 		if (o == null) throw Error("Cannot submit a <button> or <input type=\"submit\"> without a <form>");
 		let s = e.getAttribute("formaction") || o.getAttribute("action");
-		if (r = s ? K(s, t) : null, n = e.getAttribute("formmethod") || o.getAttribute("method") || Fi, i = Ji(e.getAttribute("formenctype")) || Ji(o.getAttribute("enctype")) || Ii, a = new FormData(o, e), !Ki()) {
+		if (r = s ? q(s, t) : null, n = e.getAttribute("formmethod") || o.getAttribute("method") || Fi, i = Ji(e.getAttribute("formenctype")) || Ji(o.getAttribute("enctype")) || Ii, a = new FormData(o, e), !Ki()) {
 			let { name: t, type: n, value: r } = e;
 			if (n === "image") {
 				let e = t ? `${t}.` : "";
@@ -3296,7 +3296,7 @@ function Xi(e, t) {
 }
 function Zi(e, t, n, r) {
 	let i = typeof e == "string" ? new URL(e, typeof window > "u" ? "server://singlefetch/" : window.location.origin) : e;
-	return i.pathname = n ? i.pathname.endsWith("/") ? `${i.pathname}_.${r}` : `${i.pathname}.${r}` : i.pathname === "/" ? `_root.${r}` : t && K(i.pathname, t) === "/" ? `${Et(t)}/_root.${r}` : `${Et(i.pathname)}.${r}`, i;
+	return i.pathname = n ? i.pathname.endsWith("/") ? `${i.pathname}_.${r}` : `${i.pathname}.${r}` : i.pathname === "/" ? `_root.${r}` : t && q(i.pathname, t) === "/" ? `${Tt(t)}/_root.${r}` : `${Tt(i.pathname)}.${r}`, i;
 }
 async function Qi(e, t) {
 	if (e.id in t) return t[e.id];
@@ -3381,22 +3381,22 @@ function oa(e, t) {
 	}, []);
 }
 function sa() {
-	let e = V.useContext(Or);
+	let e = H.useContext(Dr);
 	return Xi(e, "You must render this element inside a <DataRouterContext.Provider> element"), e;
 }
 function ca() {
-	let e = V.useContext(kr);
+	let e = H.useContext(Or);
 	return Xi(e, "You must render this element inside a <DataRouterStateContext.Provider> element"), e;
 }
-var la = V.createContext(void 0);
+var la = H.createContext(void 0);
 la.displayName = "FrameworkContext";
 function ua() {
-	let e = V.useContext(la);
+	let e = H.useContext(la);
 	return Xi(e, "You must render this element inside a <HydratedRouter> element"), e;
 }
 function da(e, t) {
-	let n = V.useContext(la), [r, i] = V.useState(!1), [a, o] = V.useState(!1), { onFocus: s, onBlur: c, onMouseEnter: l, onMouseLeave: u, onTouchStart: d } = t, f = V.useRef(null);
-	V.useEffect(() => {
+	let n = H.useContext(la), [r, i] = H.useState(!1), [a, o] = H.useState(!1), { onFocus: s, onBlur: c, onMouseEnter: l, onMouseLeave: u, onTouchStart: d } = t, f = H.useRef(null);
+	H.useEffect(() => {
 		if (e === "render" && o(!0), e === "viewport") {
 			let e = new IntersectionObserver((e) => {
 				e.forEach((e) => {
@@ -3407,7 +3407,7 @@ function da(e, t) {
 				e.disconnect();
 			};
 		}
-	}, [e]), V.useEffect(() => {
+	}, [e]), H.useEffect(() => {
 		if (r) {
 			let e = setTimeout(() => {
 				o(!0);
@@ -3448,7 +3448,7 @@ function fa(e, t) {
 	};
 }
 function pa({ page: e, ...t }) {
-	let n = jr(), { nonce: r } = ua(), { router: i } = sa(), a = V.useMemo(() => Ye(i.routes, e, i.basename), [
+	let n = Ar(), { nonce: r } = ua(), { router: i } = sa(), a = H.useMemo(() => Je(i.routes, e, i.basename), [
 		i.routes,
 		e,
 		i.basename
@@ -3456,19 +3456,19 @@ function pa({ page: e, ...t }) {
 	return a ? (t.nonce == null && r && (t = {
 		...t,
 		nonce: r
-	}), n ? /* @__PURE__ */ V.createElement(ha, {
+	}), n ? /* @__PURE__ */ H.createElement(ha, {
 		page: e,
 		matches: a,
 		...t
-	}) : /* @__PURE__ */ V.createElement(ga, {
+	}) : /* @__PURE__ */ H.createElement(ga, {
 		page: e,
 		matches: a,
 		...t
 	})) : null;
 }
 function ma(e) {
-	let { manifest: t, routeModules: n } = ua(), [r, i] = V.useState([]);
-	return V.useEffect(() => {
+	let { manifest: t, routeModules: n } = ua(), [r, i] = H.useState([]);
+	return H.useEffect(() => {
 		let r = !1;
 		return ta(e, t, n).then((e) => {
 			r || i(e);
@@ -3482,7 +3482,7 @@ function ma(e) {
 	]), r;
 }
 function ha({ page: e, matches: t, ...n }) {
-	let r = X(), { future: i } = ua(), { basename: a } = sa(), o = V.useMemo(() => {
+	let r = X(), { future: i } = ua(), { basename: a } = sa(), o = H.useMemo(() => {
 		if (e === r.pathname + r.search + r.hash) return [];
 		let n = Zi(e, a, i.v8_trailingSlashAwareDataRequests, "rsc"), o = !1, s = [];
 		for (let e of t) typeof e.route.shouldRevalidate == "function" ? o = !0 : s.push(e.route.id);
@@ -3494,7 +3494,7 @@ function ha({ page: e, matches: t, ...n }) {
 		r,
 		t
 	]);
-	return /* @__PURE__ */ V.createElement(V.Fragment, null, o.map((e) => /* @__PURE__ */ V.createElement("link", {
+	return /* @__PURE__ */ H.createElement(H.Fragment, null, o.map((e) => /* @__PURE__ */ H.createElement("link", {
 		key: e,
 		rel: "prefetch",
 		as: "fetch",
@@ -3503,19 +3503,19 @@ function ha({ page: e, matches: t, ...n }) {
 	})));
 }
 function ga({ page: e, matches: t, ...n }) {
-	let r = X(), { future: i, manifest: a, routeModules: o } = ua(), { basename: s } = sa(), { loaderData: c, matches: l } = ca(), u = V.useMemo(() => na(e, t, l, a, r, "data"), [
+	let r = X(), { future: i, manifest: a, routeModules: o } = ua(), { basename: s } = sa(), { loaderData: c, matches: l } = ca(), u = H.useMemo(() => na(e, t, l, a, r, "data"), [
 		e,
 		t,
 		l,
 		a,
 		r
-	]), d = V.useMemo(() => na(e, t, l, a, r, "assets"), [
+	]), d = H.useMemo(() => na(e, t, l, a, r, "assets"), [
 		e,
 		t,
 		l,
 		a,
 		r
-	]), f = V.useMemo(() => {
+	]), f = H.useMemo(() => {
 		if (e === r.pathname + r.search + r.hash) return [];
 		let n = /* @__PURE__ */ new Set(), l = !1;
 		if (t.forEach((e) => {
@@ -3534,19 +3534,19 @@ function ga({ page: e, matches: t, ...n }) {
 		t,
 		e,
 		o
-	]), p = V.useMemo(() => ra(d, a), [d, a]), m = ma(d);
-	return /* @__PURE__ */ V.createElement(V.Fragment, null, f.map((e) => /* @__PURE__ */ V.createElement("link", {
+	]), p = H.useMemo(() => ra(d, a), [d, a]), m = ma(d);
+	return /* @__PURE__ */ H.createElement(H.Fragment, null, f.map((e) => /* @__PURE__ */ H.createElement("link", {
 		key: e,
 		rel: "prefetch",
 		as: "fetch",
 		href: e,
 		...n
-	})), p.map((e) => /* @__PURE__ */ V.createElement("link", {
+	})), p.map((e) => /* @__PURE__ */ H.createElement("link", {
 		key: e,
 		rel: "modulepreload",
 		href: e,
 		...n
-	})), m.map(({ key: e, link: t }) => /* @__PURE__ */ V.createElement("link", {
+	})), m.map(({ key: e, link: t }) => /* @__PURE__ */ H.createElement("link", {
 		key: e,
 		nonce: n.nonce,
 		...t,
@@ -3560,18 +3560,18 @@ function _a(...e) {
 		});
 	};
 }
-V.Component;
+H.Component;
 var va = typeof window < "u" && window.document !== void 0 && window.document.createElement !== void 0;
 try {
 	va && (window.__reactRouterVersion = "7.18.3");
 } catch {}
-var Z = V.forwardRef(function({ onClick: e, discover: t = "render", prefetch: n = "none", relative: r, reloadDocument: i, replace: a, mask: o, state: s, target: c, to: l, preventScrollReset: u, viewTransition: d, defaultShouldRevalidate: f, ...p }, m) {
-	let { basename: h, navigator: g, useTransitions: _ } = V.useContext(Y), v = typeof l == "string" && je.test(l), y = Pt(l, h);
+var Z = H.forwardRef(function({ onClick: e, discover: t = "render", prefetch: n = "none", relative: r, reloadDocument: i, replace: a, mask: o, state: s, target: c, to: l, preventScrollReset: u, viewTransition: d, defaultShouldRevalidate: f, ...p }, m) {
+	let { basename: h, navigator: g, useTransitions: _ } = H.useContext(Pr), v = typeof l == "string" && Ae.test(l), y = Nt(l, h);
 	l = y.to;
 	let b = Ur(l, { relative: r }), x = X(), S = null;
 	if (o) {
-		let e = Ct(o, [], x.mask ? x.mask.pathname : "/", !0);
-		h !== "/" && (e.pathname = e.pathname === "/" ? h : Tt([h, e.pathname])), S = g.createHref(e);
+		let e = St(o, [], x.mask ? x.mask.pathname : "/", !0);
+		h !== "/" && (e.pathname = e.pathname === "/" ? h : wt([h, e.pathname])), S = g.createHref(e);
 	}
 	let [C, w, T] = da(n, p), E = Ca(l, {
 		replace: a,
@@ -3587,7 +3587,7 @@ var Z = V.forwardRef(function({ onClick: e, discover: t = "render", prefetch: n 
 	function D(t) {
 		e && e(t), t.defaultPrevented || E(t);
 	}
-	let O = !(y.isExternal || i), k = /* @__PURE__ */ V.createElement("a", {
+	let O = !(y.isExternal || i), k = /* @__PURE__ */ H.createElement("a", {
 		...p,
 		...T,
 		href: (O ? S : void 0) || y.absoluteURL || b,
@@ -3596,12 +3596,12 @@ var Z = V.forwardRef(function({ onClick: e, discover: t = "render", prefetch: n 
 		target: c,
 		"data-discover": !v && t === "render" ? "true" : void 0
 	});
-	return C && !v ? /* @__PURE__ */ V.createElement(V.Fragment, null, k, /* @__PURE__ */ V.createElement(pa, { page: b })) : k;
+	return C && !v ? /* @__PURE__ */ H.createElement(H.Fragment, null, k, /* @__PURE__ */ H.createElement(pa, { page: b })) : k;
 });
 Z.displayName = "Link";
-var ya = V.forwardRef(function({ "aria-current": e = "page", caseSensitive: t = !1, className: n = "", end: r = !1, style: i, to: a, viewTransition: o, children: s, ...c }, l) {
-	let u = Yr(a, { relative: c.relative }), d = X(), f = V.useContext(kr), { navigator: p, basename: m } = V.useContext(Y), h = f != null && ka(u) && o === !0, g = p.encodeLocation ? p.encodeLocation(u).pathname : u.pathname, _ = d.pathname, v = f && f.navigation && f.navigation.location ? f.navigation.location.pathname : null;
-	t || (_ = _.toLowerCase(), v = v ? v.toLowerCase() : null, g = g.toLowerCase()), v && m && (v = K(v, m) || v);
+var ya = H.forwardRef(function({ "aria-current": e = "page", caseSensitive: t = !1, className: n = "", end: r = !1, style: i, to: a, viewTransition: o, children: s, ...c }, l) {
+	let u = Yr(a, { relative: c.relative }), d = X(), f = H.useContext(Or), { navigator: p, basename: m } = H.useContext(Pr), h = f != null && ka(u) && o === !0, g = p.encodeLocation ? p.encodeLocation(u).pathname : u.pathname, _ = d.pathname, v = f && f.navigation && f.navigation.location ? f.navigation.location.pathname : null;
+	t || (_ = _.toLowerCase(), v = v ? v.toLowerCase() : null, g = g.toLowerCase()), v && m && (v = q(v, m) || v);
 	let y = g !== "/" && g.endsWith("/") ? g.length - 1 : g.length, b = _ === g || !r && _.startsWith(g) && _.charAt(y) === "/", x = v != null && (v === g || !r && v.startsWith(g) && v.charAt(g.length) === "/"), S = {
 		isActive: b,
 		isPending: x,
@@ -3614,7 +3614,7 @@ var ya = V.forwardRef(function({ "aria-current": e = "page", caseSensitive: t = 
 		h ? "transitioning" : null
 	].filter(Boolean).join(" ");
 	let T = typeof i == "function" ? i(S) : i;
-	return /* @__PURE__ */ V.createElement(Z, {
+	return /* @__PURE__ */ H.createElement(Z, {
 		...c,
 		"aria-current": C,
 		className: w,
@@ -3625,9 +3625,9 @@ var ya = V.forwardRef(function({ "aria-current": e = "page", caseSensitive: t = 
 	}, typeof s == "function" ? s(S) : s);
 });
 ya.displayName = "NavLink";
-var ba = V.forwardRef(({ discover: e = "render", fetcherKey: t, navigate: n, reloadDocument: r, replace: i, state: a, method: o = Fi, action: s, onSubmit: c, relative: l, preventScrollReset: u, viewTransition: d, defaultShouldRevalidate: f, ...p }, m) => {
-	let { useTransitions: h } = V.useContext(Y), g = Da(), _ = Oa(s, { relative: l }), v = o.toLowerCase() === "get" ? "get" : "post", y = typeof s == "string" && je.test(s);
-	return /* @__PURE__ */ V.createElement("form", {
+var ba = H.forwardRef(({ discover: e = "render", fetcherKey: t, navigate: n, reloadDocument: r, replace: i, state: a, method: o = Fi, action: s, onSubmit: c, relative: l, preventScrollReset: u, viewTransition: d, defaultShouldRevalidate: f, ...p }, m) => {
+	let { useTransitions: h } = H.useContext(Pr), g = Da(), _ = Oa(s, { relative: l }), v = o.toLowerCase() === "get" ? "get" : "post", y = typeof s == "string" && Ae.test(s);
+	return /* @__PURE__ */ H.createElement("form", {
 		ref: m,
 		method: v,
 		action: _,
@@ -3645,7 +3645,7 @@ var ba = V.forwardRef(({ discover: e = "render", fetcherKey: t, navigate: n, rel
 				viewTransition: d,
 				defaultShouldRevalidate: f
 			});
-			h && n !== !1 ? V.startTransition(() => p()) : p();
+			h && n !== !1 ? H.startTransition(() => p()) : p();
 		},
 		...p,
 		"data-discover": !y && e === "render" ? "true" : void 0
@@ -3656,15 +3656,15 @@ function xa(e) {
 	return `${e} must be used within a data router.  See https://reactrouter.com/en/main/routers/picking-a-router.`;
 }
 function Sa(e) {
-	let t = V.useContext(Or);
-	return U(t, xa(e)), t;
+	let t = H.useContext(Dr);
+	return W(t, xa(e)), t;
 }
 function Ca(e, { target: t, replace: n, mask: r, state: i, preventScrollReset: a, relative: o, viewTransition: s, defaultShouldRevalidate: c, useTransitions: l } = {}) {
 	let u = qr(), d = X(), f = Yr(e, { relative: o });
-	return V.useCallback((p) => {
+	return H.useCallback((p) => {
 		if (Hi(p, t)) {
 			p.preventDefault();
-			let t = n === void 0 ? G(d) === G(f) : n, m = () => u(e, {
+			let t = n === void 0 ? K(d) === K(f) : n, m = () => u(e, {
 				replace: t,
 				mask: r,
 				state: i,
@@ -3673,7 +3673,7 @@ function Ca(e, { target: t, replace: n, mask: r, state: i, preventScrollReset: a
 				viewTransition: s,
 				defaultShouldRevalidate: c
 			});
-			l ? V.startTransition(() => m()) : m();
+			l ? H.startTransition(() => m()) : m();
 		}
 	}, [
 		d,
@@ -3692,17 +3692,17 @@ function Ca(e, { target: t, replace: n, mask: r, state: i, preventScrollReset: a
 	]);
 }
 function wa(e) {
-	W(typeof URLSearchParams < "u", "You cannot use the `useSearchParams` hook in a browser that does not support the URLSearchParams API. If you need to support Internet Explorer 11, we recommend you load a polyfill such as https://github.com/ungap/url-search-params.");
-	let t = V.useRef(Ui(e)), n = V.useRef(!1), r = X(), i = V.useMemo(() => Wi(r.search, n.current ? null : t.current), [r.search]), a = qr();
-	return [i, V.useCallback((e, t) => {
+	G(typeof URLSearchParams < "u", "You cannot use the `useSearchParams` hook in a browser that does not support the URLSearchParams API. If you need to support Internet Explorer 11, we recommend you load a polyfill such as https://github.com/ungap/url-search-params.");
+	let t = H.useRef(Ui(e)), n = H.useRef(!1), r = X(), i = H.useMemo(() => Wi(r.search, n.current ? null : t.current), [r.search]), a = qr();
+	return [i, H.useCallback((e, t) => {
 		let r = Ui(typeof e == "function" ? e(new URLSearchParams(i)) : e);
 		n.current = !0, a("?" + r, t);
 	}, [a, i])];
 }
 var Ta = 0, Ea = () => `__${String(++Ta)}__`;
 function Da() {
-	let { router: e } = Sa("useSubmit"), { basename: t } = V.useContext(Y), n = ui(), r = e.fetch, i = e.navigate;
-	return V.useCallback(async (e, a = {}) => {
+	let { router: e } = Sa("useSubmit"), { basename: t } = H.useContext(Pr), n = ui(), r = e.fetch, i = e.navigate;
+	return H.useCallback(async (e, a = {}) => {
 		let { action: o, method: s, encType: c, formData: l, body: u } = Yi(e, t);
 		if (a.navigate === !1) {
 			let e = a.fetcherKey || Ea();
@@ -3736,8 +3736,8 @@ function Da() {
 	]);
 }
 function Oa(e, { relative: t } = {}) {
-	let { basename: n } = V.useContext(Y), r = V.useContext(Ir);
-	U(r, "useFormAction must be used inside a RouteContext");
+	let { basename: n } = H.useContext(Pr), r = H.useContext(Ir);
+	W(r, "useFormAction must be used inside a RouteContext");
 	let [i] = r.matches.slice(-1), a = { ...Yr(e || ".", { relative: t }) }, o = X();
 	if (e == null) {
 		a.search = o.search;
@@ -3748,19 +3748,19 @@ function Oa(e, { relative: t } = {}) {
 			a.search = n ? `?${n}` : "";
 		}
 	}
-	return (!e || e === ".") && i.route.index && (a.search = a.search ? a.search.replace(/^\?/, "?index&") : "?index"), n !== "/" && (a.pathname = a.pathname === "/" ? n : Tt([n, a.pathname])), G(a);
+	return (!e || e === ".") && i.route.index && (a.search = a.search ? a.search.replace(/^\?/, "?index&") : "?index"), n !== "/" && (a.pathname = a.pathname === "/" ? n : wt([n, a.pathname])), K(a);
 }
 function ka(e, { relative: t } = {}) {
-	let n = V.useContext(Mr);
-	U(n != null, "`useViewTransitionState` must be used within `react-router-dom`'s `RouterProvider`.  Did you accidentally import `RouterProvider` from `react-router`?");
+	let n = H.useContext(jr);
+	W(n != null, "`useViewTransitionState` must be used within `react-router-dom`'s `RouterProvider`.  Did you accidentally import `RouterProvider` from `react-router`?");
 	let { basename: r } = Sa("useViewTransitionState"), i = Yr(e, { relative: t });
 	if (!n.isTransitioning) return !1;
-	let a = K(n.currentLocation.pathname, r) || n.currentLocation.pathname, o = K(n.nextLocation.pathname, r) || n.nextLocation.pathname;
-	return ft(i.pathname, o) != null || ft(i.pathname, a) != null;
+	let a = q(n.currentLocation.pathname, r) || n.currentLocation.pathname, o = q(n.nextLocation.pathname, r) || n.nextLocation.pathname;
+	return dt(i.pathname, o) != null || dt(i.pathname, a) != null;
 }
 //#endregion
 //#region apps/web/src/ApplicationErrorBoundary.tsx
-var Q = c();
+var Q = L();
 function Aa() {
 	return /* @__PURE__ */ (0, Q.jsxs)("main", {
 		className: "direction-project-loading is-error application-error",
@@ -3778,11 +3778,11 @@ function Aa() {
 }
 function ja() {
 	let e = di();
-	return (0, V.useEffect)(() => {
+	return (0, H.useEffect)(() => {
 		console.error("Cabane route failed:", e);
 	}, [e]), /* @__PURE__ */ (0, Q.jsx)(Aa, {});
 }
-var Ma = class extends V.Component {
+var Ma = class extends H.Component {
 	state = { hasError: !1 };
 	static getDerivedStateFromError() {
 		return { hasError: !0 };
@@ -3793,7 +3793,7 @@ var Ma = class extends V.Component {
 	render() {
 		return this.state.hasError ? /* @__PURE__ */ (0, Q.jsx)(Aa, {}) : this.props.children;
 	}
-}, Na = /* @__PURE__ */ e(u(), 1), Pa = class extends Error {
+}, Na = /* @__PURE__ */ e(C(), 1), Pa = class extends Error {
 	constructor() {
 		super("This workspace changed on Home Assistant."), this.name = "HaWorkspaceConflictError";
 	}
@@ -3839,8 +3839,8 @@ function La(e) {
 //#endregion
 //#region apps/web/src/workspaces/WorkspaceDialog.tsx
 function Ra({ title: e, titleIcon: t, busy: n, error: r, onCancel: i, children: a }) {
-	let o = k(), s = (0, V.useRef)(null);
-	return (0, V.useEffect)(() => {
+	let o = h(), s = (0, H.useRef)(null);
+	return (0, H.useEffect)(() => {
 		let e = o.root.activeElement;
 		return s.current?.showModal?.(), () => e?.focus();
 	}, [o]), /* @__PURE__ */ (0, Q.jsxs)("dialog", {
@@ -3885,7 +3885,7 @@ function Ha(e) {
 	let t = async () => {
 		try {
 			let t = await e({ type: "cabane/assets/capabilities" });
-			if (t.version !== 1 || t.chunk_bytes !== P.chunkBytes) throw new za();
+			if (t.version !== 1 || t.chunk_bytes !== N.chunkBytes) throw new za();
 		} catch (e) {
 			throw e instanceof za || e && typeof e == "object" && "code" in e && e.code === "unknown_command" ? new za() : e;
 		}
@@ -3909,8 +3909,8 @@ function Ha(e) {
 					sha256: t.sha256,
 					byte_length: t.byteLength
 				});
-				for (let r = 0; r < t.byteLength; r += P.chunkBytes) {
-					let i = t.bytes.subarray(r, r + P.chunkBytes);
+				for (let r = 0; r < t.byteLength; r += N.chunkBytes) {
+					let i = t.bytes.subarray(r, r + N.chunkBytes);
 					if ((await e({
 						type: "cabane/assets/upload",
 						upload_id: n,
@@ -3933,7 +3933,7 @@ function Ha(e) {
 				try {
 					n = await r(t.sha256);
 				} catch {}
-				if (n && n.byteLength === t.byteLength && await M(n) === t.sha256) continue;
+				if (n && n.byteLength === t.byteLength && await A(n) === t.sha256) continue;
 				let a = new Uint8Array(t.byteLength);
 				for (let n = 0; n < t.byteLength;) {
 					let r = await e({
@@ -3941,16 +3941,16 @@ function Ha(e) {
 						sha256: t.sha256,
 						offset: n
 					}), i = Va(r.data);
-					if (r.byte_length !== t.byteLength || r.offset !== n || !i.length || i.length > P.chunkBytes || n + i.length > a.length) throw Error("The GLB download is incomplete. Retry synchronization.");
+					if (r.byte_length !== t.byteLength || r.offset !== n || !i.length || i.length > N.chunkBytes || n + i.length > a.length) throw Error("The GLB download is incomplete. Retry synchronization.");
 					a.set(i, n), n += i.length;
 				}
-				if (await M(a) !== t.sha256) throw Error("GLB integrity check failed. The previous home is unchanged.");
+				if (await A(a) !== t.sha256) throw Error("GLB integrity check failed. The previous home is unchanged.");
 				i.push({
 					...t,
 					bytes: a
 				});
 			}
-			await C(i);
+			await D(i);
 		}
 	};
 }
@@ -3960,9 +3960,9 @@ function Ua(e, t) {
 		...n,
 		get: async (e) => {
 			let i = await n.get(e);
-			return i?.document && !i.corrupt && await r.download(Ee(i.document), (e) => t.read(e)), i;
+			return i?.document && !i.corrupt && await r.download(z(i.document), (e) => t.read(e)), i;
 		},
-		put: async (e, i, a) => (await r.upload(await t.verify(Ee(i))), n.put(e, i, a))
+		put: async (e, i, a) => (await r.upload(await t.verify(z(i))), n.put(e, i, a))
 	};
 }
 //#endregion
@@ -4017,7 +4017,7 @@ function Wa(e) {
 				detail: "restored"
 			};
 		} catch (e) {
-			return E({
+			return M({
 				kind: "conflict",
 				detail: e instanceof Error ? e.message : void 0
 			});
@@ -4099,9 +4099,9 @@ function Wa(e) {
 }
 //#endregion
 //#region apps/web/src/workspaces/workspace-sync-state.ts
-var Ga = (e, t) => `${e}\u0000${t}`, Ka = (e, n, r) => re(e, "readonly", t, (e, i, a) => i(e.objectStore(t).get(Ga(n, r)), (e) => a(e ?? null))), qa = (e, n) => re(e, "readwrite", t, (e, r, i) => r(e.objectStore(t).put(n, Ga(n.origin, n.homeId)), () => i())), Ja = (e, n, r) => re(e, "readwrite", t, (e, i, a) => i(e.objectStore(t).delete(Ga(n, r)), () => a()));
+var Ga = (e, t) => `${e}\u0000${t}`, Ka = (e, t, n) => F(e, "readonly", O, (e, r, i) => r(e.objectStore(O).get(Ga(t, n)), (e) => i(e ?? null))), qa = (e, t) => F(e, "readwrite", O, (e, n, r) => n(e.objectStore(O).put(t, Ga(t.origin, t.homeId)), () => r())), Ja = (e, t, n) => F(e, "readwrite", O, (e, r, i) => r(e.objectStore(O).delete(Ga(t, n)), () => i()));
 async function Ya(e, t) {
-	let n = O(JSON.parse(oe(e, t)));
+	let n = k(JSON.parse(se(e, t)));
 	return te(new TextEncoder().encode(n));
 }
 //#endregion
@@ -4114,26 +4114,26 @@ function Xa(e, t, n, r, i) {
 		throw Error("The HA workspace copy is not valid JSON.");
 	}
 	if (!a || typeof a != "object" || !("format" in a) || a.format !== "cabane-workspace") throw Error("The HA workspace copy is not a private Cabane backup.");
-	let s = se(t, le);
-	if (r && s.record.homeId !== r) throw Error("The HA workspace copy belongs to a different workspace.");
-	if (i && o(s.homeAssistantUrl) !== o(i)) throw Error("This saved workspace belongs to a different Home Assistant. Open it from its original server.");
-	let c = {
-		id: s.record.homeId,
-		name: s.name,
-		homeAssistantUrl: s.homeAssistantUrl,
-		hasPublished: s.hasPublished,
+	let o = ce(t, le);
+	if (r && o.record.homeId !== r) throw Error("The HA workspace copy belongs to a different workspace.");
+	if (i && c(o.homeAssistantUrl) !== c(i)) throw Error("This saved workspace belongs to a different Home Assistant. Open it from its original server.");
+	let s = {
+		id: o.record.homeId,
+		name: o.name,
+		homeAssistantUrl: o.homeAssistantUrl,
+		hasPublished: o.hasPublished,
 		createdAt: Date.now()
 	};
-	return e.restoreExact(s.record, c, n);
+	return e.restoreExact(o.record, s, n);
 }
 //#endregion
 //#region apps/web/src/workspaces/useWorkspaceSyncCoordinator.ts
 function Za(e, t) {
-	let n = s(), r = (0, V.useMemo)(() => Ua(n.sendStorageMessage, ne(window.indexedDB)), [n.sendStorageMessage]);
+	let n = b(), r = (0, H.useMemo)(() => Ua(n.sendStorageMessage, w(window.indexedDB)), [n.sendStorageMessage]);
 	return {
 		runtime: n,
 		client: r,
-		coordinator: (0, V.useMemo)(() => Wa({
+		coordinator: (0, H.useMemo)(() => Wa({
 			repository: e,
 			client: r,
 			cursors: {
@@ -4142,7 +4142,7 @@ function Za(e, t) {
 				remove: (e, t) => Ja(window.indexedDB, e, t)
 			},
 			fingerprint: (e) => Ya(e.metadata, e.record),
-			serialize: (e) => oe(e.metadata, e.record),
+			serialize: (e) => se(e.metadata, e.record),
 			restore: (r, i, a) => Xa(e, r, i, a, t ?? n.origin ?? void 0)
 		}), [
 			r,
@@ -4167,54 +4167,54 @@ function Qa() {
 //#endregion
 //#region apps/web/src/workspaces/WorkspaceHaLibrary.tsx
 function $a({ repository: e, onRestored: t, onBusyChange: n, localWorkspaceIds: r, disabled: i = !1 }) {
-	let a = l(), { runtime: o, client: s, coordinator: c } = Za(e), [u, d] = (0, V.useState)([]), [f, p] = (0, V.useState)(null), [m, h] = (0, V.useState)(null), g = m !== null;
-	(0, V.useEffect)(() => {
-		n?.(g);
-	}, [g, n]);
-	let _ = (0, V.useCallback)(async () => {
+	let a = I(), { runtime: o, client: s, coordinator: c } = Za(e), [l, u] = (0, H.useState)([]), [d, f] = (0, H.useState)(null), [p, m] = (0, H.useState)(null), h = p !== null;
+	(0, H.useEffect)(() => {
+		n?.(h);
+	}, [h, n]);
+	let g = (0, H.useCallback)(async () => {
 		try {
-			d(await s.list()), p(null);
+			u(await s.list()), f(null);
 		} catch (e) {
-			p(e instanceof Error ? e.message : "Could not list HA workspaces.");
+			f(e instanceof Error ? e.message : "Could not list HA workspaces.");
 		}
 	}, [s]);
-	(0, V.useEffect)(() => {
+	(0, H.useEffect)(() => {
 		if (o.status !== "connected") return;
-		_();
-		let e = () => void _();
+		g();
+		let e = () => void g();
 		return window.addEventListener("focus", e), () => window.removeEventListener("focus", e);
-	}, [o.status, _]);
-	let v = async (e) => {
-		h(e.home_id), p(null);
+	}, [o.status, g]);
+	let _ = async (e) => {
+		m(e.home_id), f(null);
 		try {
 			if ((await c.openRemote(e.home_id, o.origin)).kind === "conflict") throw Error("This browser has different changes. Open the local workspace to review its saved copies.");
 			await t(e.home_id);
 		} catch (e) {
-			p(e instanceof Error ? e.message : "Could not restore this workspace.");
+			f(e instanceof Error ? e.message : "Could not restore this workspace.");
 		} finally {
-			h(null);
+			m(null);
 		}
-	}, y = async (e) => {
+	}, v = async (e) => {
 		try {
 			let t = await s.get(e.home_id);
 			if (!t?.document) throw Error("No HA copy exists.");
-			Te(t.document, `${e.home_id}-ha-recovery.json`);
+			de(t.document, `${e.home_id}-ha-recovery.json`);
 		} catch (e) {
-			p(e instanceof Error ? e.message : "Could not download HA data.");
+			f(e instanceof Error ? e.message : "Could not download HA data.");
 		}
 	};
 	if (r) {
-		let e = u.filter((e) => !e.corrupt && !r.includes(e.home_id));
+		let e = l.filter((e) => !e.corrupt && !r.includes(e.home_id));
 		return /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [o.status === "connected" && e.map((e) => /* @__PURE__ */ (0, Q.jsxs)("article", {
 			className: "workspace-card workspace-card--suggested",
 			children: [
 				/* @__PURE__ */ (0, Q.jsx)("button", {
 					type: "button",
 					className: "workspace-card-target",
-					disabled: g || i,
+					disabled: h || i,
 					"aria-label": `Add ${e.name} from Home Assistant`,
-					"aria-busy": m === e.home_id,
-					onClick: () => void v(e)
+					"aria-busy": p === e.home_id,
+					onClick: () => void _(e)
 				}),
 				/* @__PURE__ */ (0, Q.jsx)("h2", { children: e.name }),
 				/* @__PURE__ */ (0, Q.jsx)("p", {
@@ -4229,21 +4229,21 @@ function $a({ repository: e, onRestored: t, onBusyChange: n, localWorkspaceIds: 
 					className: "workspace-card-footer",
 					children: /* @__PURE__ */ (0, Q.jsxs)("span", {
 						className: "workspace-suggestion-action",
-						children: [/* @__PURE__ */ (0, Q.jsx)(R, { name: "plus" }), m === e.home_id ? "Adding workspace…" : "Add workspace"]
+						children: [/* @__PURE__ */ (0, Q.jsx)(V, { name: "plus" }), p === e.home_id ? "Adding workspace…" : "Add workspace"]
 					})
 				})
 			]
-		}, e.home_id)), (f || o.error) && /* @__PURE__ */ (0, Q.jsxs)("div", {
+		}, e.home_id)), (d || o.error) && /* @__PURE__ */ (0, Q.jsxs)("div", {
 			className: "workspace-suggestion-error",
 			children: [/* @__PURE__ */ (0, Q.jsx)("p", {
 				role: "alert",
 				className: "workspace-error",
-				children: f ?? o.error
+				children: d ?? o.error
 			}), /* @__PURE__ */ (0, Q.jsx)("button", {
 				type: "button",
-				disabled: g || i,
+				disabled: h || i,
 				onClick: () => {
-					o.status === "connected" ? _() : o.retry();
+					o.status === "connected" ? g() : o.retry();
 				},
 				children: "Retry suggested workspaces"
 			})]
@@ -4255,14 +4255,14 @@ function $a({ repository: e, onRestored: t, onBusyChange: n, localWorkspaceIds: 
 			o.status === "connected" ? /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [
 				/* @__PURE__ */ (0, Q.jsx)("button", {
 					type: "button",
-					onClick: () => void _(),
+					onClick: () => void g(),
 					children: "Refresh"
 				}),
-				u.length === 0 && !f && /* @__PURE__ */ (0, Q.jsx)("p", { children: "No Cabane workspaces saved on this HA instance." }),
-				u.map((e) => /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("span", { children: e.name }), /* @__PURE__ */ (0, Q.jsx)("button", {
+				l.length === 0 && !d && /* @__PURE__ */ (0, Q.jsx)("p", { children: "No Cabane workspaces saved on this HA instance." }),
+				l.map((e) => /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("span", { children: e.name }), /* @__PURE__ */ (0, Q.jsx)("button", {
 					type: "button",
-					disabled: g,
-					onClick: () => void (e.corrupt ? y(e) : v(e)),
+					disabled: h,
+					onClick: () => void (e.corrupt ? v(e) : _(e)),
 					children: e.corrupt ? "Download raw data" : "Open"
 				})] }, e.home_id))
 			] }) : a ? /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("p", {
@@ -4281,18 +4281,18 @@ function $a({ repository: e, onRestored: t, onBusyChange: n, localWorkspaceIds: 
 				role: "alert",
 				children: o.error
 			}),
-			f && /* @__PURE__ */ (0, Q.jsx)("p", {
+			d && /* @__PURE__ */ (0, Q.jsx)("p", {
 				role: "alert",
-				children: f
+				children: d
 			})
 		]
 	});
 }
 function eo({ repository: e, onRestored: t, initialOrigin: n, onBusyChange: r }) {
-	let i = l(), [a, s] = (0, V.useState)(() => window.sessionStorage.getItem("cabane:ha-library-origin") ?? n ?? ""), c = i?.origin ?? o(a);
-	return (0, V.useEffect)(() => {
-		c && !i && window.sessionStorage.setItem("cabane:ha-library-origin", c);
-	}, [c, i]), /* @__PURE__ */ (0, Q.jsxs)("section", {
+	let i = I(), [a, o] = (0, H.useState)(() => window.sessionStorage.getItem("cabane:ha-library-origin") ?? n ?? ""), l = i?.origin ?? c(a);
+	return (0, H.useEffect)(() => {
+		l && !i && window.sessionStorage.setItem("cabane:ha-library-origin", l);
+	}, [l, i]), /* @__PURE__ */ (0, Q.jsxs)("section", {
 		className: "workspace-ha-library",
 		children: [
 			i ? /* @__PURE__ */ (0, Q.jsxs)("p", { children: [
@@ -4302,23 +4302,23 @@ function eo({ repository: e, onRestored: t, initialOrigin: n, onBusyChange: r })
 			] }) : /* @__PURE__ */ (0, Q.jsx)("p", { children: "Sign in to choose a saved workspace." }),
 			!i && /* @__PURE__ */ (0, Q.jsxs)("label", { children: ["Home Assistant address", /* @__PURE__ */ (0, Q.jsx)("input", {
 				value: a,
-				onChange: (e) => s(e.target.value),
+				onChange: (e) => o(e.target.value),
 				placeholder: "Enter HTTPS address"
 			})] }),
-			c && /* @__PURE__ */ (0, Q.jsx)(S, {
-				homeAssistantUrl: c,
+			l && /* @__PURE__ */ (0, Q.jsx)(s, {
+				homeAssistantUrl: l,
 				children: /* @__PURE__ */ (0, Q.jsx)($a, {
 					repository: e,
 					onRestored: t,
 					onBusyChange: r
 				})
-			}, c)
+			}, l)
 		]
 	});
 }
 function to({ repository: e, onRestored: t, localWorkspaceIds: n, busy: r, onBusyChange: i }) {
-	let a = l();
-	return a ? /* @__PURE__ */ (0, Q.jsx)(S, {
+	let a = I();
+	return a ? /* @__PURE__ */ (0, Q.jsx)(s, {
 		homeAssistantUrl: a.origin,
 		children: /* @__PURE__ */ (0, Q.jsx)($a, {
 			repository: e,
@@ -4332,8 +4332,8 @@ function to({ repository: e, onRestored: t, localWorkspaceIds: n, busy: r, onBus
 //#endregion
 //#region apps/web/src/workspaces/NativeWorkspaceWelcome.tsx
 function no({ session: e, repository: t, onRestored: n, onBuild: r, onExplore: i, onCancel: a }) {
-	let [o, s] = (0, V.useState)({ kind: "checking" }), [c, l] = (0, V.useState)(!1), [u, d] = (0, V.useState)(0);
-	return (0, V.useEffect)(() => {
+	let [o, s] = (0, H.useState)({ kind: "checking" }), [c, l] = (0, H.useState)(!1), [u, d] = (0, H.useState)(0);
+	return (0, H.useEffect)(() => {
 		let t = !0;
 		s({ kind: "checking" });
 		let n = window.setTimeout(() => {
@@ -4343,7 +4343,7 @@ function no({ session: e, repository: t, onRestored: n, onBuild: r, onExplore: i
 			});
 		}, 1e4);
 		return (async () => {
-			let t = g(window.location.href, e.origin);
+			let t = p(window.location.href, e.origin);
 			if (t) throw Error(t);
 			if (e.connection.connected === !1) throw Error("Home Assistant is disconnected. Reconnect and try again.");
 			return La((t) => e.connection.sendMessagePromise(t)).list();
@@ -4404,7 +4404,7 @@ function no({ session: e, repository: t, onRestored: n, onBuild: r, onExplore: i
 //#endregion
 //#region apps/web/src/workspaces/workspace-open-link.ts
 var ro = (e) => /^[A-Za-z0-9_-]{1,200}$/.test(e), io = (e) => {
-	let t = o(e);
+	let t = c(e);
 	return t && (e === t || e === `${t}/`) ? t : null;
 };
 function ao(e) {
@@ -4482,13 +4482,13 @@ function lo(e, t) {
 	return `${$(e)}/mobile-editor?mode=${t === "furnish" ? "arrange" : "construct"}`;
 }
 function uo(e) {
-	return Ye(co, e)?.[0].route.handle ?? null;
+	return Je(co, e)?.[0].route.handle ?? null;
 }
 function $(e) {
 	return `/workspaces/${encodeURIComponent(e)}`;
 }
 function fo(e) {
-	return Ye([{ path: "/workspaces/:workspaceId/*" }], e)?.[0].params.workspaceId ?? null;
+	return Je([{ path: "/workspaces/:workspaceId/*" }], e)?.[0].params.workspaceId ?? null;
 }
 function po(e, t) {
 	let n = $(t);
@@ -4500,7 +4500,7 @@ function mo(e, t) {
 //#endregion
 //#region apps/web/src/workspaces/WorkspaceOpenPage.tsx
 function ho({ repository: e, target: t, onOpened: n }) {
-	let { runtime: r, coordinator: i } = Za(e, t.origin), a = (0, V.useRef)(!1), [o, s] = (0, V.useState)(!1), [c, l] = (0, V.useState)(null), [u, d] = (0, V.useState)(!1), f = (0, V.useCallback)(async () => {
+	let { runtime: r, coordinator: i } = Za(e, t.origin), a = (0, H.useRef)(!1), [o, s] = (0, H.useState)(!1), [c, l] = (0, H.useState)(null), [u, d] = (0, H.useState)(!1), f = (0, H.useCallback)(async () => {
 		s(!0), l(null), d(!1);
 		try {
 			if ((await i.openRemote(t.homeId, t.origin)).kind === "conflict") {
@@ -4519,7 +4519,7 @@ function ho({ repository: e, target: t, onOpened: n }) {
 		t.origin,
 		n
 	]);
-	(0, V.useEffect)(() => {
+	(0, H.useEffect)(() => {
 		r.status === "connected" && !a.current && (a.current = !0, f());
 	}, [r.status, f]);
 	let p = [
@@ -4544,7 +4544,7 @@ function ho({ repository: e, target: t, onOpened: n }) {
 				className: "ha-primary",
 				disabled: p,
 				onClick: r.connect,
-				children: [p ? "Signing in…" : "Sign in & open", /* @__PURE__ */ (0, Q.jsx)(R, { name: "external" })]
+				children: [p ? "Signing in…" : "Sign in & open", /* @__PURE__ */ (0, Q.jsx)(V, { name: "external" })]
 			})] }),
 			r.error && /* @__PURE__ */ (0, Q.jsx)("p", {
 				role: "alert",
@@ -4583,9 +4583,9 @@ function go({ repository: e, onOpened: t }) {
 				className: "ha-page__nav",
 				children: /* @__PURE__ */ (0, Q.jsxs)(Z, {
 					to: "/workspaces",
-					children: [/* @__PURE__ */ (0, Q.jsx)(R, { name: "back" }), "Workspaces"]
+					children: [/* @__PURE__ */ (0, Q.jsx)(V, { name: "back" }), "Workspaces"]
 				})
-			}), r ? /* @__PURE__ */ (0, Q.jsx)(S, {
+			}), r ? /* @__PURE__ */ (0, Q.jsx)(s, {
 				homeAssistantUrl: r.origin,
 				children: /* @__PURE__ */ (0, Q.jsx)(ho, {
 					repository: e,
@@ -4665,94 +4665,94 @@ function To(e, t) {
 //#endregion
 //#region apps/web/src/workspaces/useWorkspaceOnboarding.ts
 function Eo(e) {
-	let t = qr(), n = X(), [r, i] = (0, V.useState)(null), [a, o] = (0, V.useState)(!1), [s, c] = (0, V.useState)(!1), l = (0, V.useRef)(!1), [u, d] = (0, V.useState)(null), [m, h] = (0, V.useState)(null), g = (0, V.useCallback)(async () => {
+	let n = qr(), r = X(), [i, a] = (0, H.useState)(null), [o, s] = (0, H.useState)(!1), [c, l] = (0, H.useState)(!1), u = (0, H.useRef)(!1), [f, p] = (0, H.useState)(null), [m, h] = (0, H.useState)(null), g = (0, H.useCallback)(async () => {
 		if (e) try {
-			i(await e.readOnboarding());
+			a(await e.readOnboarding());
 		} catch {
-			d("Getting-started preferences are unavailable. Your workspaces are still available.");
+			p("Getting-started preferences are unavailable. Your workspaces are still available.");
 		} finally {
-			o(!0);
+			s(!0);
 		}
 	}, [e]);
-	return (0, V.useEffect)(() => {
+	return (0, H.useEffect)(() => {
 		g();
 		let e = () => {
 			g();
 		};
 		return window.addEventListener("focus", e), () => window.removeEventListener("focus", e);
 	}, [g]), {
-		state: r,
-		loaded: a,
-		busy: s,
-		error: u,
+		state: i,
+		loaded: o,
+		busy: c,
+		error: f,
 		deleted: m,
-		dismiss: (0, V.useCallback)(async (t) => {
-			i((e) => e && {
+		dismiss: (0, H.useCallback)(async (t) => {
+			a((e) => e && {
 				...e,
 				[t === "welcome" ? "welcomeDismissed" : "nudgeDismissed"]: !0
 			});
 			try {
 				await e?.dismissOnboarding(t);
 			} catch {
-				d("This preference could not be saved. You can keep using your home.");
+				p("This preference could not be saved. You can keep using your home.");
 			}
 		}, [e]),
-		start: (0, V.useCallback)(async (r, i) => {
-			if (!(!e || l.current)) {
-				l.current = !0, c(!0), d(null), h(null);
+		start: (0, H.useCallback)(async (i, a) => {
+			if (!(!e || u.current)) {
+				u.current = !0, l(!0), p(null), h(null);
 				try {
-					let a = await e.readOnboarding(), o = await e.startOnboarding(r, { ...i === void 0 ? {} : { replaceDeletedId: i } });
-					if (!o.record) throw Error(o.error ?? "Open Workspaces to recover this home.");
-					let s = f();
+					let o = await e.readOnboarding(), s = await e.startOnboarding(i, { ...a === void 0 ? {} : { replaceDeletedId: a } });
+					if (!s.record) throw Error(s.error ?? "Open Workspaces to recover this home.");
+					let c = _();
 					try {
-						s = _(window.localStorage, o.metadata.id).record;
+						c = ne(window.localStorage, s.metadata.id).record;
 					} catch {}
-					let c = s.launch?.target ?? (r === "connect" && o.record.publishedAt !== 0 ? To(z(o.record.published), "open-plan-living") : void 0), l = {
-						...s,
+					let l = c.launch?.target ?? (i === "connect" && s.record.publishedAt !== 0 ? To(ve(s.record.published), "open-plan-living") : void 0), u = {
+						...c,
 						launch: {
-							entry: r,
+							entry: i,
 							introductionDismissed: !0,
 							starterConsumed: !0,
 							nudgeDismissed: !0,
-							firstControlConfirmed: s.launch?.firstControlConfirmed ?? !1,
-							...c ? { target: c } : {}
+							firstControlConfirmed: c.launch?.firstControlConfirmed ?? !1,
+							...l ? { target: l } : {}
 						}
-					}, u = !1;
+					}, d = !1;
 					try {
-						u = ie(window.localStorage, o.metadata.id, l);
+						d = t(window.localStorage, s.metadata.id, u);
 					} catch {}
-					if (u || d("Setup progress could not be saved. Your new home is safe in Workspaces."), r === "build" && a?.destinations.build !== o.metadata.id && ge(o.metadata.id), await g(), r === "build") {
-						n.pathname !== "/build" && await t("/build");
+					if (d || p("Setup progress could not be saved. Your new home is safe in Workspaces."), i === "build" && o?.destinations.build !== s.metadata.id && ge(s.metadata.id), await g(), i === "build") {
+						r.pathname !== "/build" && await n("/build");
 						return;
 					}
-					c && o.metadata.homeAssistantUrl && o.record.bindings[o.metadata.homeAssistantUrl]?.published.entityIdsBySlotId[c.slotId] ? await t($(o.metadata.id)) : await t(po({
+					l && s.metadata.homeAssistantUrl && s.record.bindings[s.metadata.homeAssistantUrl]?.published.entityIdsBySlotId[l.slotId] ? await n($(s.metadata.id)) : await n(po({
 						mode: "connect",
 						view: "devices",
-						...c?.roomId === void 0 ? {} : { roomId: c?.roomId },
-						...c?.deviceId === void 0 ? {} : { relationshipId: c?.deviceId }
-					}, o.metadata.id), { state: { editorRequest: {
+						...l?.roomId === void 0 ? {} : { roomId: l?.roomId },
+						...l?.deviceId === void 0 ? {} : { relationshipId: l?.deviceId }
+					}, s.metadata.id), { state: { editorRequest: {
 						mode: "connect",
 						view: "devices",
-						roomId: c?.roomId,
-						relationshipId: c?.deviceId
+						roomId: l?.roomId,
+						relationshipId: l?.deviceId
 					} } });
 				} catch (e) {
-					d(e instanceof Error ? e.message : "Could not open your home. Please try again."), e instanceof p && h({
-						path: r,
+					p(e instanceof Error ? e.message : "Could not open your home. Please try again."), e instanceof d && h({
+						path: i,
 						id: e.workspaceId
 					});
 				} finally {
-					l.current = !1, c(!1);
+					u.current = !1, l(!1);
 				}
 			}
 		}, [
 			e,
-			t,
+			n,
 			g,
-			n.pathname
+			r.pathname
 		]),
 		clearError: () => {
-			d(null), h(null);
+			p(null), h(null);
 		}
 	};
 }
@@ -4785,8 +4785,8 @@ function Do(e, t = !1, n) {
 //#endregion
 //#region apps/web/src/workspaces/WorkspaceCard.tsx
 function Oo({ entry: e, busy: t, onOpen: n, onAction: r, onRecover: i, onExportRaw: a }) {
-	let { metadata: o, record: s, error: c } = e, [l, u] = (0, V.useState)(null), [d, f] = (0, V.useState)(!1), [p, m] = (0, V.useState)(!1), [h, g] = (0, V.useState)(!o.homeAssistantUrl);
-	(0, V.useEffect)(() => {
+	let { metadata: o, record: s, error: c } = e, [l, u] = (0, H.useState)(null), [d, f] = (0, H.useState)(!1), [p, m] = (0, H.useState)(!1), [h, g] = (0, H.useState)(!o.homeAssistantUrl);
+	(0, H.useEffect)(() => {
 		let e = !0;
 		u(null), f(!1), m(!1), g(!o.homeAssistantUrl);
 		let t = () => {
@@ -4857,7 +4857,7 @@ function Oo({ entry: e, busy: t, onOpen: n, onAction: r, onRecover: i, onExportR
 			/* @__PURE__ */ (0, Q.jsx)("h2", { children: o.name }),
 			/* @__PURE__ */ (0, Q.jsxs)("dl", {
 				className: "workspace-availability",
-				children: [/* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Connection" }), /* @__PURE__ */ (0, Q.jsxs)("dd", { children: [/* @__PURE__ */ (0, Q.jsx)(R, { name: "devices" }), o.homeAssistantUrl ? "HA configured" : "HA not connected"] })] }), /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Storage" }), /* @__PURE__ */ (0, Q.jsxs)("dd", { children: [/* @__PURE__ */ (0, Q.jsx)(R, { name: p ? "warning" : _.icon }), p ? "Storage unavailable" : h ? _.label : "Checking storage…"] })] })]
+				children: [/* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Connection" }), /* @__PURE__ */ (0, Q.jsxs)("dd", { children: [/* @__PURE__ */ (0, Q.jsx)(V, { name: "devices" }), o.homeAssistantUrl ? "HA configured" : "HA not connected"] })] }), /* @__PURE__ */ (0, Q.jsxs)("div", { children: [/* @__PURE__ */ (0, Q.jsx)("dt", { children: "Storage" }), /* @__PURE__ */ (0, Q.jsxs)("dd", { children: [/* @__PURE__ */ (0, Q.jsx)(V, { name: p ? "warning" : _.icon }), p ? "Storage unavailable" : h ? _.label : "Checking storage…"] })] })]
 			}),
 			(c || !o.hasPublished || b) && /* @__PURE__ */ (0, Q.jsx)("p", {
 				className: "workspace-status",
@@ -4895,7 +4895,7 @@ function Oo({ entry: e, busy: t, onOpen: n, onAction: r, onRecover: i, onExportR
 //#endregion
 //#region apps/web/src/workspaces/WorkspaceNameDialog.tsx
 function ko({ action: e, initialName: t, busy: n, error: r, onSave: i, onCancel: a }) {
-	let [o, s] = (0, V.useState)(t);
+	let [o, s] = (0, H.useState)(t);
 	return /* @__PURE__ */ (0, Q.jsx)(Ra, {
 		title: e === "create" ? "New workspace" : e === "rename" ? "Rename workspace" : "Duplicate workspace",
 		busy: n,
@@ -4941,10 +4941,10 @@ function Ao({ name: e, busy: t, error: n, onDelete: r, onCancel: i }) {
 //#endregion
 //#region apps/web/src/workspaces/WorkspaceTransferDialog.tsx
 function jo({ mode: e, busy: t, error: n, onImport: r, onExport: i, onCancel: a, remoteImport: o }) {
-	let s = X(), c = qr(), [l, u] = (0, V.useState)(() => new URLSearchParams(s.search).get("import") === "home-assistant" ? "ha" : "file"), [d, f] = (0, V.useState)(""), [p, m] = (0, V.useState)(null);
+	let s = X(), c = qr(), [l, u] = (0, H.useState)(() => new URLSearchParams(s.search).get("import") === "home-assistant" ? "ha" : "file"), [d, f] = (0, H.useState)(""), [p, m] = (0, H.useState)(null);
 	return /* @__PURE__ */ (0, Q.jsxs)(Ra, {
 		title: e === "import" ? "Import workspace" : "Export workspace",
-		titleIcon: e === "import" ? /* @__PURE__ */ (0, Q.jsx)(R, { name: "import" }) : void 0,
+		titleIcon: e === "import" ? /* @__PURE__ */ (0, Q.jsx)(V, { name: "import" }) : void 0,
 		busy: t,
 		error: p ?? n,
 		onCancel: a,
@@ -4956,7 +4956,7 @@ function jo({ mode: e, busy: t, error: n, onImport: r, onExport: i, onCancel: a,
 				onClick: () => {
 					c("/workspaces", { replace: !0 }), u("file");
 				},
-				children: [/* @__PURE__ */ (0, Q.jsx)(R, { name: "file" }), "From file"]
+				children: [/* @__PURE__ */ (0, Q.jsx)(V, { name: "file" }), "From file"]
 			}), /* @__PURE__ */ (0, Q.jsxs)("button", {
 				"aria-pressed": l === "ha",
 				onClick: () => {
@@ -4978,7 +4978,7 @@ function jo({ mode: e, busy: t, error: n, onImport: r, onExport: i, onCancel: a,
 						(async () => {
 							let t = e.target.files?.[0];
 							if (m(null), f(""), t) try {
-								f((await fe(t)).json);
+								f((await oe(t)).json);
 							} catch (e) {
 								m(e instanceof Error ? e.message : "Could not read that file. Please choose it again.");
 							}
@@ -4988,7 +4988,7 @@ function jo({ mode: e, busy: t, error: n, onImport: r, onExport: i, onCancel: a,
 				/* @__PURE__ */ (0, Q.jsxs)("button", {
 					className: "workspace-primary",
 					disabled: t || !d,
-					children: [/* @__PURE__ */ (0, Q.jsx)(R, { name: "import" }), t ? "Importing…" : "Import workspace"]
+					children: [/* @__PURE__ */ (0, Q.jsx)(V, { name: "import" }), t ? "Importing…" : "Import workspace"]
 				})
 			]
 		}) : /* @__PURE__ */ (0, Q.jsxs)("div", {
@@ -5012,21 +5012,21 @@ function jo({ mode: e, busy: t, error: n, onImport: r, onExport: i, onCancel: a,
 //#endregion
 //#region apps/web/src/workspaces/WorkspaceLibrary.tsx
 function Mo(e) {
-	let t = l(), n = A("cabane-icon.png"), r = X(), i = qr(), [a, o] = (0, V.useState)(() => new URLSearchParams(r.search).get("import") === "home-assistant" ? { action: "import" } : null), [s, c] = (0, V.useState)(!1), [u, d] = (0, V.useState)(null), f = (e) => {
-		d(null), o(e);
+	let t = I(), n = r("cabane-icon.png"), i = X(), a = qr(), [o, s] = (0, H.useState)(() => new URLSearchParams(i.search).get("import") === "home-assistant" ? { action: "import" } : null), [c, l] = (0, H.useState)(!1), [u, d] = (0, H.useState)(null), f = (e) => {
+		d(null), s(e);
 	}, p = async (e) => {
-		c(!0), d(null);
+		l(!0), d(null);
 		try {
-			await e(), o(null);
+			await e(), s(null);
 		} catch (e) {
 			d(e instanceof Error ? e.message : "Could not complete this action. Please try again.");
 		} finally {
-			c(!1);
+			l(!1);
 		}
 	}, m = e.entries.filter((t) => !t.error && t.metadata.id !== e.demoWorkspaceId), h = () => {
 		m.length === 1 ? p(() => e.onSettings(m[0].metadata.id, "dashboard")) : f({ action: "setup-ha" });
 	}, g = () => {
-		o(null), d(null), i("/workspaces", { replace: !0 });
+		s(null), d(null), a("/workspaces", { replace: !0 });
 	};
 	return /* @__PURE__ */ (0, Q.jsxs)("main", {
 		className: "workspace-library",
@@ -5045,25 +5045,25 @@ function Mo(e) {
 					className: "workspace-library-actions",
 					children: [/* @__PURE__ */ (0, Q.jsxs)("button", {
 						className: "workspace-primary",
-						disabled: s,
+						disabled: c,
 						onClick: () => f({ action: "create" }),
-						children: [/* @__PURE__ */ (0, Q.jsx)(R, { name: "plus" }), "New workspace"]
+						children: [/* @__PURE__ */ (0, Q.jsx)(V, { name: "plus" }), "New workspace"]
 					}), /* @__PURE__ */ (0, Q.jsxs)("button", {
-						disabled: s,
+						disabled: c,
 						onClick: () => f({ action: "import" }),
-						children: [/* @__PURE__ */ (0, Q.jsx)(R, { name: "import" }), "Import workspace"]
+						children: [/* @__PURE__ */ (0, Q.jsx)(V, { name: "import" }), "Import workspace"]
 					})]
 				})]
 			}),
 			e.onSettings && !t && /* @__PURE__ */ (0, Q.jsx)("div", {
 				className: "workspace-ha-entry",
 				children: /* @__PURE__ */ (0, Q.jsxs)("button", {
-					disabled: s,
+					disabled: c,
 					onClick: h,
-					children: ["Add Cabane to Home Assistant", /* @__PURE__ */ (0, Q.jsx)(R, { name: "chevron" })]
+					children: ["Add Cabane to Home Assistant", /* @__PURE__ */ (0, Q.jsx)(V, { name: "chevron" })]
 				})
 			}),
-			!a && u && /* @__PURE__ */ (0, Q.jsx)("p", {
+			!o && u && /* @__PURE__ */ (0, Q.jsx)("p", {
 				role: "alert",
 				className: "workspace-error",
 				children: u
@@ -5077,7 +5077,7 @@ function Mo(e) {
 				"aria-label": "Homes",
 				children: [e.entries.map((t) => /* @__PURE__ */ (0, Q.jsx)(Oo, {
 					entry: t,
-					busy: s,
+					busy: c,
 					onOpen: () => void p(() => e.onOpen(t.metadata.id)),
 					onAction: (n) => [
 						"settings",
@@ -5090,11 +5090,11 @@ function Mo(e) {
 					}),
 					onRecover: () => void p(() => e.onRecover(t.metadata.id)),
 					onExportRaw: () => void p(() => e.onExportRaw(t.metadata.id))
-				}, t.metadata.id)), e.renderSuggestions?.(s, c)]
+				}, t.metadata.id)), e.renderSuggestions?.(c, l)]
 			}),
-			a?.action === "setup-ha" && /* @__PURE__ */ (0, Q.jsxs)(Ra, {
+			o?.action === "setup-ha" && /* @__PURE__ */ (0, Q.jsxs)(Ra, {
 				title: "Add Cabane to Home Assistant",
-				busy: s,
+				busy: c,
 				error: u,
 				onCancel: g,
 				children: [
@@ -5102,7 +5102,7 @@ function Mo(e) {
 					/* @__PURE__ */ (0, Q.jsx)("div", {
 						className: "workspace-setup-homes",
 						children: m.map((t) => /* @__PURE__ */ (0, Q.jsx)("button", {
-							disabled: s,
+							disabled: c,
 							onClick: () => void p(() => e.onSettings(t.metadata.id, "dashboard")),
 							children: t.metadata.name
 						}, t.metadata.id))
@@ -5113,29 +5113,29 @@ function Mo(e) {
 					})
 				]
 			}),
-			a && (a.action === "create" || a.action === "rename" || a.action === "duplicate") && /* @__PURE__ */ (0, Q.jsx)(ko, {
-				action: a.action,
-				initialName: a.action === "create" ? "" : `${a.entry.metadata.name}${a.action === "duplicate" ? " copy" : ""}`,
-				busy: s,
+			o && (o.action === "create" || o.action === "rename" || o.action === "duplicate") && /* @__PURE__ */ (0, Q.jsx)(ko, {
+				action: o.action,
+				initialName: o.action === "create" ? "" : `${o.entry.metadata.name}${o.action === "duplicate" ? " copy" : ""}`,
+				busy: c,
 				error: u,
 				onCancel: g,
-				onSave: (t) => void p(() => a.action === "create" ? e.onCreate(t) : a.action === "rename" ? e.onRename(a.entry.metadata.id, t) : e.onDuplicate(a.entry.metadata.id, t))
+				onSave: (t) => void p(() => o.action === "create" ? e.onCreate(t) : o.action === "rename" ? e.onRename(o.entry.metadata.id, t) : e.onDuplicate(o.entry.metadata.id, t))
 			}),
-			a?.action === "delete" && /* @__PURE__ */ (0, Q.jsx)(Ao, {
-				name: a.entry.metadata.name,
-				busy: s,
+			o?.action === "delete" && /* @__PURE__ */ (0, Q.jsx)(Ao, {
+				name: o.entry.metadata.name,
+				busy: c,
 				error: u,
 				onCancel: g,
-				onDelete: () => void p(() => e.onDelete(a.entry.metadata.id))
+				onDelete: () => void p(() => e.onDelete(o.entry.metadata.id))
 			}),
-			(a?.action === "import" || a?.action === "export") && /* @__PURE__ */ (0, Q.jsx)(jo, {
-				mode: a.action,
-				busy: s,
+			(o?.action === "import" || o?.action === "export") && /* @__PURE__ */ (0, Q.jsx)(jo, {
+				mode: o.action,
+				busy: c,
 				error: u,
 				onCancel: g,
 				remoteImport: e.remoteImport,
 				onImport: (t) => void p(() => e.onImport(t)),
-				onExport: (t) => void p(() => e.onExport(a.entry.metadata.id, t))
+				onExport: (t) => void p(() => e.onExport(o.entry.metadata.id, t))
 			})
 		]
 	});
@@ -5143,9 +5143,9 @@ function Mo(e) {
 //#endregion
 //#region apps/web/src/workspaces/workspace-weather-source.ts
 function No(e, t, n) {
-	let r = T(t), i = e.bindings[r] ?? {
-		draft: I(e.homeId),
-		published: I(e.homeId),
+	let r = x(t), i = e.bindings[r] ?? {
+		draft: R(e.homeId),
+		published: R(e.homeId),
 		manualRoomIds: [],
 		manualSlotIds: []
 	};
@@ -5188,20 +5188,20 @@ function Po(e, t, n) {
 //#endregion
 //#region apps/web/src/workspaces/useWorkspaceToolStorage.ts
 function Fo(e, t, n) {
-	let r = (0, V.useRef)(e), i = (0, V.useRef)({
+	let r = (0, H.useRef)(e), i = (0, H.useRef)({
 		onSaved: t,
 		onError: n
 	});
-	(0, V.useLayoutEffect)(() => {
+	(0, H.useLayoutEffect)(() => {
 		r.current = e;
-	}, [e]), (0, V.useLayoutEffect)(() => {
+	}, [e]), (0, H.useLayoutEffect)(() => {
 		i.current = {
 			onSaved: t,
 			onError: n
 		};
 	});
-	let a = (0, V.useMemo)(() => d(de(window.indexedDB), le), []);
-	return (0, V.useMemo)(() => {
+	let a = (0, H.useMemo)(() => u(pe(window.indexedDB), le), []);
+	return (0, H.useMemo)(() => {
 		let e = Promise.resolve();
 		return {
 			storage: {
@@ -5232,15 +5232,15 @@ function Fo(e, t, n) {
 //#endregion
 //#region apps/web/src/workspaces/WorkspaceDestinations.tsx
 function Io({ id: e, origin: t, intent: n, ready: r, panelReady: i }) {
-	let a = l(), [o, s] = (0, V.useState)(n === "device" ? n : null), [c, u] = (0, V.useState)("");
-	(0, V.useEffect)(() => {
+	let a = I(), [o, s] = (0, H.useState)(n === "device" ? n : null), [c, l] = (0, H.useState)("");
+	(0, H.useEffect)(() => {
 		n === "device" && s(n);
 	}, [n]);
-	let d = a ? "" : oo(window.location.origin, e, t, o === "dashboard"), f = async () => {
+	let u = a ? "" : oo(window.location.origin, e, t, o === "dashboard"), d = async () => {
 		try {
-			await navigator.clipboard.writeText(d), u("Link copied.");
+			await navigator.clipboard.writeText(u), l("Link copied.");
 		} catch {
-			u("Select the URL above to copy it.");
+			l("Select the URL above to copy it.");
 		}
 	};
 	return a ? /* @__PURE__ */ (0, Q.jsxs)("div", {
@@ -5264,9 +5264,9 @@ function Io({ id: e, origin: t, intent: n, ready: r, panelReady: i }) {
 					className: "ha-sidebar-preview",
 					"aria-label": "Cabane sidebar entry",
 					children: [
-						/* @__PURE__ */ (0, Q.jsx)(R, { name: "roof" }),
+						/* @__PURE__ */ (0, Q.jsx)(V, { name: "roof" }),
 						"Cabane",
-						/* @__PURE__ */ (0, Q.jsx)(R, { name: "check" })
+						/* @__PURE__ */ (0, Q.jsx)(V, { name: "check" })
 					]
 				}),
 				/* @__PURE__ */ (0, Q.jsxs)("a", {
@@ -5274,7 +5274,7 @@ function Io({ id: e, origin: t, intent: n, ready: r, panelReady: i }) {
 					href: `${t}/cabane`,
 					target: "_blank",
 					rel: "noreferrer",
-					children: ["Open in Home Assistant", /* @__PURE__ */ (0, Q.jsx)(R, { name: "external" })]
+					children: ["Open in Home Assistant", /* @__PURE__ */ (0, Q.jsx)(V, { name: "external" })]
 				}),
 				/* @__PURE__ */ (0, Q.jsxs)("details", {
 					className: "ha-setup-disclosure",
@@ -5295,15 +5295,15 @@ function Io({ id: e, origin: t, intent: n, ready: r, panelReady: i }) {
 					children: [/* @__PURE__ */ (0, Q.jsxs)("button", {
 						"aria-pressed": o === "dashboard",
 						onClick: () => {
-							s("dashboard"), u("");
+							s("dashboard"), l("");
 						},
-						children: [/* @__PURE__ */ (0, Q.jsx)(R, { name: "grid" }), "Use a Webpage card"]
+						children: [/* @__PURE__ */ (0, Q.jsx)(V, { name: "grid" }), "Use a Webpage card"]
 					}), /* @__PURE__ */ (0, Q.jsxs)("button", {
 						"aria-pressed": o === "device",
 						onClick: () => {
-							s("device"), u("");
+							s("device"), l("");
 						},
-						children: [/* @__PURE__ */ (0, Q.jsx)(R, { name: "external" }), "Open on another device"]
+						children: [/* @__PURE__ */ (0, Q.jsx)(V, { name: "external" }), "Open on another device"]
 					})]
 				}),
 				o && /* @__PURE__ */ (0, Q.jsxs)("div", {
@@ -5319,12 +5319,12 @@ function Io({ id: e, origin: t, intent: n, ready: r, panelReady: i }) {
 							/* @__PURE__ */ (0, Q.jsx)("input", {
 								id: "ha-workspace-link",
 								readOnly: !0,
-								value: d,
+								value: u,
 								onFocus: (e) => e.currentTarget.select()
 							}),
 							/* @__PURE__ */ (0, Q.jsxs)("button", {
-								onClick: () => void f(),
-								children: [/* @__PURE__ */ (0, Q.jsx)(R, { name: "duplicate" }), o === "dashboard" ? "Copy dashboard URL" : "Copy link"]
+								onClick: () => void d(),
+								children: [/* @__PURE__ */ (0, Q.jsx)(V, { name: "duplicate" }), o === "dashboard" ? "Copy dashboard URL" : "Copy link"]
 							})
 						] }) : /* @__PURE__ */ (0, Q.jsx)("p", {
 							role: "status",
@@ -5388,12 +5388,12 @@ function zo({ origin: e, checking: t, panelError: n, onCheck: r }) {
 						href: `${e}/hacs`,
 						target: "_blank",
 						rel: "noreferrer",
-						children: ["Install with HACS", /* @__PURE__ */ (0, Q.jsx)(R, { name: "external" })]
+						children: ["Install with HACS", /* @__PURE__ */ (0, Q.jsx)(V, { name: "external" })]
 					}), /* @__PURE__ */ (0, Q.jsxs)("a", {
 						href: `${e}/config/integrations/dashboard`,
 						target: "_blank",
 						rel: "noreferrer",
-						children: ["Open integrations", /* @__PURE__ */ (0, Q.jsx)(R, { name: "external" })]
+						children: ["Open integrations", /* @__PURE__ */ (0, Q.jsx)(V, { name: "external" })]
 					})]
 				})
 			] }),
@@ -5412,7 +5412,7 @@ function zo({ origin: e, checking: t, panelError: n, onCheck: r }) {
 						href: Ro,
 						target: "_blank",
 						rel: "noreferrer",
-						children: ["Setup guide", /* @__PURE__ */ (0, Q.jsx)(R, { name: "external" })]
+						children: ["Setup guide", /* @__PURE__ */ (0, Q.jsx)(V, { name: "external" })]
 					})
 				]
 			})
@@ -5421,9 +5421,9 @@ function zo({ origin: e, checking: t, panelError: n, onCheck: r }) {
 }
 //#endregion
 //#region apps/web/src/workspaces/WorkspaceHaStorage.tsx
-var Bo = (0, V.createContext)(null);
+var Bo = (0, H.createContext)(null);
 function Vo({ id: e, origin: t, repository: n, hidden: r = !1, children: i }) {
-	let { runtime: a, coordinator: o } = Za(n, t), [s, c] = (0, V.useState)({ kind: "off" }), l = (0, V.useRef)(!1), u = (0, V.useRef)(0), d = (0, V.useCallback)(async () => {
+	let { runtime: a, coordinator: o } = Za(n, t), [s, c] = (0, H.useState)({ kind: "off" }), l = (0, H.useRef)(!1), u = (0, H.useRef)(0), d = (0, H.useCallback)(async () => {
 		if (r || !t || l.current) return;
 		let n = u.current;
 		l.current = !0;
@@ -5446,7 +5446,7 @@ function Vo({ id: e, origin: t, repository: n, hidden: r = !1, children: i }) {
 		a.status,
 		o
 	]);
-	return (0, V.useEffect)(() => {
+	return (0, H.useEffect)(() => {
 		c({ kind: "off" }), d();
 		let e = window.setInterval(() => {
 			d();
@@ -5466,66 +5466,66 @@ function Vo({ id: e, origin: t, repository: n, hidden: r = !1, children: i }) {
 		children: i
 	});
 }
-var Ho = () => (0, V.useContext)(Bo);
+var Ho = () => (0, H.useContext)(Bo);
 function Uo() {
-	let e = (0, V.useContext)(Bo);
+	let e = (0, H.useContext)(Bo);
 	return e ? /* @__PURE__ */ (0, Q.jsx)(Wo, { ...e }) : null;
 }
 function Wo({ id: e, origin: t, repository: n }) {
-	let r = X(), i = l(), a = !!(i && i.origin === t), o = Za(n, t), s = (0, V.useContext)(Bo), c = s?.coordinator ?? o.coordinator, { runtime: u, client: d } = o, [f, p] = (0, V.useState)("checking"), m = (0, V.useRef)(0), [h, g] = (0, V.useState)(!1), [_, v] = (0, V.useState)(!1), [y, b] = (0, V.useState)(!1), [x, S] = (0, V.useState)(!1), [C, w] = (0, V.useState)(!1), [T, E] = (0, V.useState)({ kind: "off" }), [D, O] = (0, V.useState)(!1), [k, A] = (0, V.useState)(null), [j, M] = (0, V.useState)(null), N = (0, V.useCallback)(async () => {
+	let r = X(), i = I(), a = !!(i && i.origin === t), o = Za(n, t), s = (0, H.useContext)(Bo), c = s?.coordinator ?? o.coordinator, { runtime: l, client: u } = o, [d, f] = (0, H.useState)("checking"), p = (0, H.useRef)(0), [m, h] = (0, H.useState)(!1), [g, _] = (0, H.useState)(!1), [v, y] = (0, H.useState)(!1), [b, x] = (0, H.useState)(!1), [S, C] = (0, H.useState)(!1), [T, E] = (0, H.useState)({ kind: "off" }), [D, O] = (0, H.useState)(!1), [k, A] = (0, H.useState)(null), [j, M] = (0, H.useState)(null), N = (0, H.useCallback)(async () => {
 		if (!t) return;
 		let n = await Ka(window.indexedDB, t, e);
-		w(n?.enabled ?? !1);
-		let r = await d.get(e);
-		return S(!!r?.document), n;
+		C(n?.enabled ?? !1);
+		let r = await u.get(e);
+		return x(!!r?.document), n;
 	}, [
-		d,
+		u,
 		e,
 		t
-	]), { sendStorageMessage: ee } = u, P = (0, V.useCallback)(async () => {
-		let e = ++m.current;
-		b(!0), A(null), p("checking");
-		let [t, n] = await Promise.allSettled([d.list(), a ? Promise.resolve(null) : ee({ type: "get_panels" })]);
-		if (e === m.current) {
-			p(a ? "ready" : n.status === "rejected" ? "error" : n.value?.cabane?.component_name === "custom" && n.value.cabane.config?._panel_custom?.name === "cabane-panel" ? "ready" : "missing");
+	]), { sendStorageMessage: ee } = l, P = (0, H.useCallback)(async () => {
+		let e = ++p.current;
+		y(!0), A(null), f("checking");
+		let [t, n] = await Promise.allSettled([u.list(), a ? Promise.resolve(null) : ee({ type: "get_panels" })]);
+		if (e === p.current) {
+			f(a ? "ready" : n.status === "rejected" ? "error" : n.value?.cabane?.component_name === "custom" && n.value.cabane.config?._panel_custom?.name === "cabane-panel" ? "ready" : "missing");
 			try {
 				if (t.status === "rejected") throw t.reason;
-				await N(), e === m.current && v(!0);
+				await N(), e === p.current && _(!0);
 			} catch (t) {
-				if (e !== m.current) return;
-				v(!1), t instanceof Fa || A(t instanceof Error ? t.message : "Could not reach Home Assistant. Try again.");
+				if (e !== p.current) return;
+				_(!1), t instanceof Fa || A(t instanceof Error ? t.message : "Could not reach Home Assistant. Try again.");
 			} finally {
-				e === m.current && (g(!0), b(!1));
+				e === p.current && (h(!0), y(!1));
 			}
 		}
 	}, [
-		d,
+		u,
 		N,
 		ee,
 		a
 	]);
-	(0, V.useEffect)(() => {
+	(0, H.useEffect)(() => {
 		let n = !0;
-		return S(!1), w(!1), t && Ka(window.indexedDB, t, e).then((e) => {
-			n && (S(!!e), w(e?.enabled ?? !1));
+		return x(!1), C(!1), t && Ka(window.indexedDB, t, e).then((e) => {
+			n && (x(!!e), C(e?.enabled ?? !1));
 		}).catch(() => {
 			n && A("Could not read this browser's sync settings.");
 		}), () => {
 			n = !1;
 		};
-	}, [t, e]), (0, V.useEffect)(() => (g(!1), v(!1), E({ kind: "off" }), A(null), M(null), t && u.status === "connected" && P(), () => {
-		m.current += 1;
+	}, [t, e]), (0, H.useEffect)(() => (h(!1), _(!1), E({ kind: "off" }), A(null), M(null), t && l.status === "connected" && P(), () => {
+		p.current += 1;
 	}), [
 		t,
-		u.status,
+		l.status,
 		e,
 		P
 	]);
-	let te = s?.backgroundStatus;
-	(0, V.useEffect)(() => {
-		te && te.kind !== "off" && E(te);
-	}, [te]), (0, V.useEffect)(() => {
-		if (s || !C || !t) return;
+	let F = s?.backgroundStatus;
+	(0, H.useEffect)(() => {
+		F && F.kind !== "off" && E(F);
+	}, [F]), (0, H.useEffect)(() => {
+		if (s || !S || !t) return;
 		let n = window.setInterval(() => {
 			c.reconcile(e, t).then((e) => {
 				E(e), e.detail === "restored" && window.location.reload();
@@ -5534,12 +5534,12 @@ function Wo({ id: e, origin: t, repository: n }) {
 		return () => window.clearInterval(n);
 	}, [
 		s,
-		C,
+		S,
 		t,
 		c,
 		e
 	]);
-	let F = async (e, t, n = !1) => {
+	let L = async (e, t, n = !1) => {
 		O(!0), A(null), M(null);
 		try {
 			let r = await e();
@@ -5549,17 +5549,17 @@ function Wo({ id: e, origin: t, repository: n }) {
 		} finally {
 			O(!1);
 		}
-	}, I = async (e, t) => {
-		let n = await ne(window.indexedDB).verify(Ee(e));
-		L(ce(e, n), t, "application/zip");
-	}, re = async () => {
+	}, R = async (e, t) => {
+		let n = await w(window.indexedDB).verify(z(e));
+		fe(ue(e, n), t, "application/zip");
+	}, te = async () => {
 		let t = await n.read(e);
-		t?.record && await I(oe(t.metadata, t.record), `${e}-before-load.cabane`);
-	}, ie = (n) => F(async () => {
-		if (n === "remote") return await re(), c.resolveConflict(e, t, n);
-		let r = await d.get(e);
-		return r?.document && await I(r.document, `${e}-before-replace.cabane`), c.resolveConflict(e, t, n, r?.version);
-	}, "Copy updated.", n === "remote"), ae = ao(r.search), se = C ? u.status !== "connected" || T.kind === "disconnected" || T.kind === "unavailable" ? "Sync interrupted" : T.kind === "conflict" ? "Sync needs attention" : T.kind === "synced" ? "Synced with HA" : T.kind === "pending" ? "Changes pending" : "Checking sync…" : x ? "Saved to HA · sync off" : y ? "Checking storage…" : "Local only", le = f !== "ready" || !_ ? 1 : !C || T.kind !== "synced" ? 2 : 3;
+		t?.record && await R(se(t.metadata, t.record), `${e}-before-load.cabane`);
+	}, ne = (n) => L(async () => {
+		if (n === "remote") return await te(), c.resolveConflict(e, t, n);
+		let r = await u.get(e);
+		return r?.document && await R(r.document, `${e}-before-replace.cabane`), c.resolveConflict(e, t, n, r?.version);
+	}, "Copy updated.", n === "remote"), re = ao(r.search), ie = S ? l.status !== "connected" || T.kind === "disconnected" || T.kind === "unavailable" ? "Sync interrupted" : T.kind === "conflict" ? "Sync needs attention" : T.kind === "synced" ? "Synced with HA" : T.kind === "pending" ? "Changes pending" : "Checking sync…" : b ? "Saved to HA · sync off" : v ? "Checking storage…" : "Local only", ae = d !== "ready" || !g ? 1 : !S || T.kind !== "synced" ? 2 : 3;
 	return /* @__PURE__ */ (0, Q.jsxs)("section", {
 		className: "ha-section ha-setup",
 		id: "workspace-storage",
@@ -5571,12 +5571,12 @@ function Wo({ id: e, origin: t, repository: n }) {
 					id: "ha-storage-title",
 					children: "Set up Cabane"
 				}), /* @__PURE__ */ (0, Q.jsxs)("span", {
-					className: `ha-status${T.kind === "synced" && C && u.status === "connected" ? " is-connected" : ""}`,
-					children: [/* @__PURE__ */ (0, Q.jsx)(R, { name: C ? "refresh" : x ? "save" : "monitor" }), se]
+					className: `ha-status${T.kind === "synced" && S && l.status === "connected" ? " is-connected" : ""}`,
+					children: [/* @__PURE__ */ (0, Q.jsx)(V, { name: S ? "refresh" : b ? "save" : "monitor" }), ie]
 				})]
 			}),
 			/* @__PURE__ */ (0, Q.jsx)("p", { children: "Your home, available inside Home Assistant." }),
-			u.status === "connected" && /* @__PURE__ */ (0, Q.jsx)("ol", {
+			l.status === "connected" && /* @__PURE__ */ (0, Q.jsx)("ol", {
 				className: "ha-setup-progress",
 				"aria-label": "Setup progress",
 				children: [
@@ -5584,27 +5584,27 @@ function Wo({ id: e, origin: t, repository: n }) {
 					"Sync your home",
 					"Open Cabane"
 				].map((e, t) => /* @__PURE__ */ (0, Q.jsxs)("li", {
-					"aria-current": le === t + 1 ? "step" : void 0,
-					className: le > t + 1 ? "is-complete" : "",
-					children: [/* @__PURE__ */ (0, Q.jsx)(R, { name: le > t + 1 ? "check" : t === 0 ? "import" : t === 1 ? "refresh" : "grid" }), e]
+					"aria-current": ae === t + 1 ? "step" : void 0,
+					className: ae > t + 1 ? "is-complete" : "",
+					children: [/* @__PURE__ */ (0, Q.jsx)(V, { name: ae > t + 1 ? "check" : t === 0 ? "import" : t === 1 ? "refresh" : "grid" }), e]
 				}, e))
 			}),
-			u.status === "connected" ? y || !h ? /* @__PURE__ */ (0, Q.jsx)("p", {
+			l.status === "connected" ? v || !m ? /* @__PURE__ */ (0, Q.jsx)("p", {
 				role: "status",
 				children: "Checking the Cabane integration…"
 			}) : /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [
-				(f !== "ready" || !_) && /* @__PURE__ */ (0, Q.jsx)(zo, {
+				(d !== "ready" || !g) && /* @__PURE__ */ (0, Q.jsx)(zo, {
 					origin: t,
-					checking: y,
-					panelError: f === "error" || !!k,
+					checking: v,
+					panelError: d === "error" || !!k,
 					onCheck: () => void P()
 				}),
 				T.kind === "unavailable" && T.detail && /* @__PURE__ */ (0, Q.jsx)("p", {
 					role: "alert",
 					children: T.detail
 				}),
-				_ && /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [
-					!C && (f === "ready" || ae !== "dashboard") ? /* @__PURE__ */ (0, Q.jsxs)("div", {
+				g && /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [
+					!S && (d === "ready" || re !== "dashboard") ? /* @__PURE__ */ (0, Q.jsxs)("div", {
 						className: "ha-storage-activate",
 						children: [
 							/* @__PURE__ */ (0, Q.jsx)("h3", { children: "Bring your home with you" }),
@@ -5612,8 +5612,8 @@ function Wo({ id: e, origin: t, repository: n }) {
 							/* @__PURE__ */ (0, Q.jsxs)("button", {
 								className: "ha-primary",
 								disabled: D,
-								onClick: () => void F(() => c.enableSync(e, t)),
-								children: [/* @__PURE__ */ (0, Q.jsx)(R, { name: "refresh" }), D ? "Enabling sync…" : "Enable sync"]
+								onClick: () => void L(() => c.enableSync(e, t)),
+								children: [/* @__PURE__ */ (0, Q.jsx)(V, { name: "refresh" }), D ? "Enabling sync…" : "Enable sync"]
 							}),
 							/* @__PURE__ */ (0, Q.jsx)("p", {
 								className: "ha-help",
@@ -5631,11 +5631,11 @@ function Wo({ id: e, origin: t, repository: n }) {
 								className: "ha-actions",
 								children: [/* @__PURE__ */ (0, Q.jsx)("button", {
 									disabled: D,
-									onClick: () => void ie("local"),
+									onClick: () => void ne("local"),
 									children: "Keep browser copy"
 								}), /* @__PURE__ */ (0, Q.jsx)("button", {
 									disabled: D,
-									onClick: () => void ie("remote"),
+									onClick: () => void ne("remote"),
 									children: "Keep Home Assistant copy"
 								})]
 							})
@@ -5645,29 +5645,29 @@ function Wo({ id: e, origin: t, repository: n }) {
 						role: "status",
 						children: "Sync paused. Your changes are saved in this browser."
 					}),
-					t && x && C && /* @__PURE__ */ (0, Q.jsx)(Io, {
+					t && b && S && /* @__PURE__ */ (0, Q.jsx)(Io, {
 						id: e,
 						origin: t,
-						intent: ae,
-						panelReady: f === "ready",
-						ready: T.kind === "synced" && u.status === "connected"
+						intent: re,
+						panelReady: d === "ready",
+						ready: T.kind === "synced" && l.status === "connected"
 					}),
 					/* @__PURE__ */ (0, Q.jsxs)("details", {
 						className: "ha-storage-manage",
 						children: [
 							/* @__PURE__ */ (0, Q.jsx)("summary", { children: "Manage saved copy" }),
-							C && /* @__PURE__ */ (0, Q.jsxs)("div", {
+							S && /* @__PURE__ */ (0, Q.jsxs)("div", {
 								className: "ha-sync-row",
 								children: [/* @__PURE__ */ (0, Q.jsx)("label", {
 									id: "ha-auto-label",
 									htmlFor: "ha-auto",
 									children: "Sync automatically"
-								}), /* @__PURE__ */ (0, Q.jsx)(ye, {
+								}), /* @__PURE__ */ (0, Q.jsx)(we, {
 									id: "ha-auto",
 									labelledBy: "ha-auto-label",
-									checked: C,
+									checked: S,
 									disabled: D,
-									onChange: () => void F(() => c.setEnabled(e, t, !1))
+									onChange: () => void L(() => c.setEnabled(e, t, !1))
 								})]
 							}),
 							/* @__PURE__ */ (0, Q.jsxs)("div", {
@@ -5675,23 +5675,23 @@ function Wo({ id: e, origin: t, repository: n }) {
 								children: [
 									/* @__PURE__ */ (0, Q.jsxs)("button", {
 										disabled: D,
-										onClick: () => void F(() => c.manualSave(e, t)),
-										children: [/* @__PURE__ */ (0, Q.jsx)(R, { name: "export" }), "Save a copy now"]
+										onClick: () => void L(() => c.manualSave(e, t)),
+										children: [/* @__PURE__ */ (0, Q.jsx)(V, { name: "export" }), "Save a copy now"]
 									}),
 									/* @__PURE__ */ (0, Q.jsxs)("button", {
-										disabled: D || !x,
+										disabled: D || !b,
 										onClick: () => {
-											window.confirm("Load the Home Assistant copy? Your browser copy will be downloaded as a backup first.") && F(async () => (await re(), c.manualRestore(e, t)), void 0, !0);
+											window.confirm("Load the Home Assistant copy? Your browser copy will be downloaded as a backup first.") && L(async () => (await te(), c.manualRestore(e, t)), void 0, !0);
 										},
-										children: [/* @__PURE__ */ (0, Q.jsx)(R, { name: "import" }), "Load saved copy"]
+										children: [/* @__PURE__ */ (0, Q.jsx)(V, { name: "import" }), "Load saved copy"]
 									}),
 									/* @__PURE__ */ (0, Q.jsxs)("button", {
 										className: "ha-danger",
-										disabled: D || !x,
+										disabled: D || !b,
 										onClick: () => {
-											window.confirm("Delete the copy on Home Assistant? Your browser's workspace will remain. Automatic sync will turn off.") && F(() => c.deleteRemote(e, t), "Home Assistant copy deleted. Your browser copy is safe.");
+											window.confirm("Delete the copy on Home Assistant? Your browser's workspace will remain. Automatic sync will turn off.") && L(() => c.deleteRemote(e, t), "Home Assistant copy deleted. Your browser copy is safe.");
 										},
-										children: [/* @__PURE__ */ (0, Q.jsx)(R, { name: "delete" }), "Delete saved copy"]
+										children: [/* @__PURE__ */ (0, Q.jsx)(V, { name: "delete" }), "Delete saved copy"]
 									})
 								]
 							})
@@ -5714,40 +5714,40 @@ function Wo({ id: e, origin: t, repository: n }) {
 }
 //#endregion
 //#region apps/web/src/workspaces/HomeAssistantPage.tsx
-function Go({ record: e, lifecycle: t, origin: n, onChangeOrigin: r, onRecordChange: i, isDemo: a, onCreatePersonal: o }) {
-	let c = X(), u = ao(c.search) === "dashboard", d = l(), f = A("cabane-icon.png"), p = s(), m = Ho(), [h, g] = (0, V.useState)(n ?? ""), [_, v] = (0, V.useState)(!n), [y, x] = (0, V.useState)(!1), [S, C] = (0, V.useState)(null), [w, T] = (0, V.useState)(null), [E, D] = (0, V.useState)(null), O = [
+function Go({ record: e, lifecycle: t, origin: n, onChangeOrigin: i, onRecordChange: a, isDemo: o, onCreatePersonal: s }) {
+	let c = X(), l = ao(c.search) === "dashboard", u = I(), d = r("cabane-icon.png"), f = b(), p = Ho(), [m, h] = (0, H.useState)(n ?? ""), [g, _] = (0, H.useState)(!n), [v, x] = (0, H.useState)(!1), [S, C] = (0, H.useState)(null), [T, E] = (0, H.useState)(null), [D, O] = (0, H.useState)(null), k = [
 		"authenticating",
 		"connecting",
 		"reconnecting"
-	].includes(p.status), k = p.status === "connected";
-	(0, V.useEffect)(() => {
-		if (k && !d) try {
+	].includes(f.status), A = f.status === "connected";
+	(0, H.useEffect)(() => {
+		if (A && !u) try {
 			let t = JSON.parse(window.sessionStorage.getItem("cabane:editor-return:v1") ?? "null"), n = t && typeof t == "object" ? t : null;
-			n?.workspaceId === e.homeId && n?.panel === "home-assistant" && window.sessionStorage.removeItem(B);
+			n?.workspaceId === e.homeId && n?.panel === "home-assistant" && window.sessionStorage.removeItem(he);
 		} catch {}
 	}, [
-		k,
+		A,
 		e.homeId,
-		d
+		u
 	]);
 	let j = async (e) => {
-		x(!0), T(null), D(null);
+		x(!0), E(null), O(null);
 		try {
 			await e();
 		} catch (e) {
-			T(e instanceof Error ? e.message : "Please try again.");
+			E(e instanceof Error ? e.message : "Please try again.");
 		} finally {
 			x(!1);
 		}
-	}, M = Ce(p, async (t) => {
-		await r(t), d || window.sessionStorage.setItem(B, JSON.stringify({
+	}, M = ye(f, async (t) => {
+		await i(t), u || window.sessionStorage.setItem(he, JSON.stringify({
 			workspaceId: e.homeId,
 			mode: "connect",
 			panel: "home-assistant",
 			destination: ao(c.search)
-		})), v(!1);
-	}), N = u && k ? "details" : "div", ee = u ? "details" : "div", P = async (e) => {
-		if (!(y || O)) {
+		})), _(!1);
+	}), N = l && A ? "details" : "div", ee = l ? "details" : "div", P = async (e) => {
+		if (!(v || k)) {
 			x(!0), C(null);
 			try {
 				await M(e);
@@ -5757,24 +5757,24 @@ function Go({ record: e, lifecycle: t, origin: n, onChangeOrigin: r, onRecordCha
 				x(!1);
 			}
 		}
-	}, te = async () => (await m?.repository.read(e.homeId))?.record ?? e, F = async () => {
-		let t = await te(), r = oe({
+	}, F = async () => (await p?.repository.read(e.homeId))?.record ?? e, L = async () => {
+		let t = await F(), r = se({
 			name: t.draft.home.name,
 			homeAssistantUrl: n,
 			hasPublished: t.publishedAt !== 0
-		}, t), i = await ne(window.indexedDB).verify(Ee(r));
-		L(ce(r, i), `${e.homeId}-backup.cabane`, "application/zip"), D("Backup downloaded.");
-	}, I = async (e) => {
-		let n = await te(), r = ae(n, (await fe(e)).json, le);
+		}, t), i = await w(window.indexedDB).verify(z(r));
+		fe(ue(r, i), `${e.homeId}-backup.cabane`, "application/zip"), O("Backup downloaded.");
+	}, R = async (e) => {
+		let n = await F(), r = ie(n, (await oe(e)).json, le);
 		if (!window.confirm("Replace this home's draft with the backup? Your current draft will be downloaded first. The published home stays unchanged until you save in the editor.")) return;
-		await F();
-		let a = await t.autosave(n, r.project, void 0, r.bindings);
-		if (a.status === "storage-error") throw a.error;
-		if (a.status !== "saved") throw Error("This backup could not be saved. Your draft is unchanged.");
-		i(a.record), D("Backup imported into the draft. Open the editor to review and save it.");
+		await L();
+		let i = await t.autosave(n, r.project, void 0, r.bindings);
+		if (i.status === "storage-error") throw i.error;
+		if (i.status !== "saved") throw Error("This backup could not be saved. Your draft is unchanged.");
+		a(i.record), O("Backup imported into the draft. Open the editor to review and save it.");
 	};
 	return /* @__PURE__ */ (0, Q.jsx)("main", {
-		className: `ha-page${u ? " ha-page--setup" : ""}`,
+		className: `ha-page${l ? " ha-page--setup" : ""}`,
 		children: /* @__PURE__ */ (0, Q.jsxs)("div", {
 			className: "ha-page__content",
 			children: [
@@ -5783,31 +5783,31 @@ function Go({ record: e, lifecycle: t, origin: n, onChangeOrigin: r, onRecordCha
 					"aria-label": "Workspace navigation",
 					children: [/* @__PURE__ */ (0, Q.jsxs)(Z, {
 						to: "/workspaces",
-						children: [/* @__PURE__ */ (0, Q.jsx)(R, { name: "back" }), "Workspaces"]
+						children: [/* @__PURE__ */ (0, Q.jsx)(V, { name: "back" }), "Workspaces"]
 					}), /* @__PURE__ */ (0, Q.jsxs)(Z, {
 						to: $(e.homeId),
-						children: ["Open home", /* @__PURE__ */ (0, Q.jsx)(R, { name: "chevron" })]
+						children: ["Open home", /* @__PURE__ */ (0, Q.jsx)(V, { name: "chevron" })]
 					})]
 				}),
 				/* @__PURE__ */ (0, Q.jsxs)("header", {
 					className: "ha-page__header",
-					children: [/* @__PURE__ */ (0, Q.jsx)("h1", { children: u ? "Cabane in Home Assistant" : "Home Assistant" }), /* @__PURE__ */ (0, Q.jsx)("p", { children: e.draft.home.name })]
+					children: [/* @__PURE__ */ (0, Q.jsx)("h1", { children: l ? "Cabane in Home Assistant" : "Home Assistant" }), /* @__PURE__ */ (0, Q.jsx)("p", { children: e.draft.home.name })]
 				}),
-				a ? /* @__PURE__ */ (0, Q.jsxs)("section", {
+				o ? /* @__PURE__ */ (0, Q.jsxs)("section", {
 					className: "ha-section",
 					children: [
 						/* @__PURE__ */ (0, Q.jsx)("h2", { children: "Make this home yours" }),
 						/* @__PURE__ */ (0, Q.jsx)("p", { children: "The demo uses simulated devices. Create your own workspace to connect Home Assistant and save across devices." }),
 						/* @__PURE__ */ (0, Q.jsxs)("button", {
 							className: "ha-primary",
-							onClick: o,
-							children: ["Create my workspace", /* @__PURE__ */ (0, Q.jsx)(R, { name: "chevron" })]
+							onClick: s,
+							children: ["Create my workspace", /* @__PURE__ */ (0, Q.jsx)(V, { name: "chevron" })]
 						})
 					]
 				}) : /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [/* @__PURE__ */ (0, Q.jsxs)(N, {
-					className: u && k ? "ha-connection-details" : void 0,
-					children: [u && k && /* @__PURE__ */ (0, Q.jsxs)("summary", { children: [
-						/* @__PURE__ */ (0, Q.jsx)(R, { name: "check" }),
+					className: l && A ? "ha-connection-details" : void 0,
+					children: [l && A && /* @__PURE__ */ (0, Q.jsxs)("summary", { children: [
+						/* @__PURE__ */ (0, Q.jsx)(V, { name: "check" }),
 						"Connected to ",
 						n ? new URL(n).host : "Home Assistant"
 					] }), /* @__PURE__ */ (0, Q.jsxs)("section", {
@@ -5821,19 +5821,19 @@ function Go({ record: e, lifecycle: t, origin: n, onChangeOrigin: r, onRecordCha
 									children: "Connection"
 								}), /* @__PURE__ */ (0, Q.jsxs)("span", {
 									role: "status",
-									className: `ha-status${k ? " is-connected" : ""}`,
-									children: [/* @__PURE__ */ (0, Q.jsx)("i", {}), k ? "Connected" : O ? "Connecting…" : n ? "Disconnected" : "Not connected"]
+									className: `ha-status${A ? " is-connected" : ""}`,
+									children: [/* @__PURE__ */ (0, Q.jsx)("i", {}), A ? "Connected" : k ? "Connecting…" : n ? "Disconnected" : "Not connected"]
 								})]
 							}),
-							d ? /* @__PURE__ */ (0, Q.jsxs)("div", {
+							u ? /* @__PURE__ */ (0, Q.jsxs)("div", {
 								className: "ha-connection-row",
 								children: [
 									/* @__PURE__ */ (0, Q.jsx)("p", { children: "Sign-in is managed by Home Assistant." }),
 									/* @__PURE__ */ (0, Q.jsx)("p", {
 										className: "ha-address",
-										children: d.origin
+										children: u.origin
 									}),
-									n && n !== d.origin && /* @__PURE__ */ (0, Q.jsxs)("p", {
+									n && n !== u.origin && /* @__PURE__ */ (0, Q.jsxs)("p", {
 										role: "alert",
 										children: [
 											"This workspace uses a different Home Assistant: ",
@@ -5844,21 +5844,21 @@ function Go({ record: e, lifecycle: t, origin: n, onChangeOrigin: r, onRecordCha
 									/* @__PURE__ */ (0, Q.jsxs)("div", {
 										className: "ha-actions",
 										children: [
-											n !== d.origin && /* @__PURE__ */ (0, Q.jsx)("button", {
+											n !== u.origin && /* @__PURE__ */ (0, Q.jsx)("button", {
 												className: "ha-primary",
-												disabled: y,
-												onClick: () => void j(() => r(d.origin)),
+												disabled: v,
+												onClick: () => void j(() => i(u.origin)),
 												children: "Use this Home Assistant"
 											}),
-											n === d.origin && ["error", "disconnected"].includes(p.status) && /* @__PURE__ */ (0, Q.jsx)("button", {
-												disabled: y,
-												onClick: p.retry,
+											n === u.origin && ["error", "disconnected"].includes(f.status) && /* @__PURE__ */ (0, Q.jsx)("button", {
+												disabled: v,
+												onClick: f.retry,
 												children: "Retry connection"
 											}),
 											n && /* @__PURE__ */ (0, Q.jsx)("button", {
-												disabled: y,
+												disabled: v,
 												onClick: () => void j(async () => {
-													await r(null), await p.disconnect();
+													await i(null), await f.disconnect();
 												}),
 												children: "Disconnect workspace"
 											})
@@ -5869,11 +5869,11 @@ function Go({ record: e, lifecycle: t, origin: n, onChangeOrigin: r, onRecordCha
 										children: "Disconnecting this workspace keeps you signed in to Home Assistant."
 									})
 								]
-							}) : _ ? /* @__PURE__ */ (0, Q.jsxs)("form", {
+							}) : g ? /* @__PURE__ */ (0, Q.jsxs)("form", {
 								noValidate: !0,
 								onSubmit: (e) => {
-									if (e.preventDefault(), y || O) return;
-									let t = b(h);
+									if (e.preventDefault(), v || k) return;
+									let t = y(m);
 									C(t.error), t.normalized && P(t.normalized);
 								},
 								children: [
@@ -5894,22 +5894,22 @@ function Go({ record: e, lifecycle: t, origin: n, onChangeOrigin: r, onRecordCha
 												placeholder: "https://home.example.com",
 												autoCapitalize: "none",
 												spellCheck: !1,
-												value: h,
-												disabled: y || O,
+												value: m,
+												disabled: v || k,
 												onChange: (e) => {
-													g(e.target.value), C(null);
+													h(e.target.value), C(null);
 												}
 											}),
 											/* @__PURE__ */ (0, Q.jsxs)("button", {
 												className: "ha-primary",
-												disabled: y || O,
-												children: [y ? "Preparing sign-in…" : O ? "Connecting…" : "Connect", /* @__PURE__ */ (0, Q.jsx)(R, { name: "external" })]
+												disabled: v || k,
+												children: [v ? "Preparing sign-in…" : k ? "Connecting…" : "Connect", /* @__PURE__ */ (0, Q.jsx)(V, { name: "external" })]
 											}),
 											n && /* @__PURE__ */ (0, Q.jsx)("button", {
 												type: "button",
-												disabled: y,
+												disabled: v,
 												onClick: () => {
-													v(!1), g(n), C(null);
+													_(!1), h(n), C(null);
 												},
 												children: "Cancel"
 											})
@@ -5929,22 +5929,22 @@ function Go({ record: e, lifecycle: t, origin: n, onChangeOrigin: r, onRecordCha
 								}), /* @__PURE__ */ (0, Q.jsxs)("div", {
 									className: "ha-actions",
 									children: [/* @__PURE__ */ (0, Q.jsx)("button", {
-										disabled: y || O,
+										disabled: v || k,
 										onClick: () => {
-											v(!0), C(null);
+											_(!0), C(null);
 										},
 										children: "Change URL"
-									}), k ? /* @__PURE__ */ (0, Q.jsx)("button", {
-										disabled: y,
+									}), A ? /* @__PURE__ */ (0, Q.jsx)("button", {
+										disabled: v,
 										onClick: () => void j(async () => {
-											await p.disconnect(), await r(null), g(""), v(!0);
+											await f.disconnect(), await i(null), h(""), _(!0);
 										}),
 										children: "Disconnect"
 									}) : /* @__PURE__ */ (0, Q.jsx)("button", {
 										className: "ha-primary",
-										disabled: y || O,
+										disabled: v || k,
 										onClick: () => void P(n),
-										children: y ? "Preparing sign-in…" : O ? "Connecting…" : "Reconnect"
+										children: v ? "Preparing sign-in…" : k ? "Connecting…" : "Reconnect"
 									})]
 								})]
 							}),
@@ -5954,17 +5954,17 @@ function Go({ record: e, lifecycle: t, origin: n, onChangeOrigin: r, onRecordCha
 								className: "ha-error",
 								children: S
 							}),
-							p.error && /* @__PURE__ */ (0, Q.jsx)("p", {
+							f.error && /* @__PURE__ */ (0, Q.jsx)("p", {
 								role: "alert",
 								className: "ha-error",
-								children: p.error
+								children: f.error
 							})
 						]
 					})]
 				}), /* @__PURE__ */ (0, Q.jsx)(Uo, {})] }),
 				/* @__PURE__ */ (0, Q.jsxs)(ee, {
-					className: u ? "ha-setup-disclosure" : void 0,
-					children: [u && /* @__PURE__ */ (0, Q.jsx)("summary", { children: "File backups" }), /* @__PURE__ */ (0, Q.jsxs)("section", {
+					className: l ? "ha-setup-disclosure" : void 0,
+					children: [l && /* @__PURE__ */ (0, Q.jsx)("summary", { children: "File backups" }), /* @__PURE__ */ (0, Q.jsxs)("section", {
 						className: "ha-section",
 						"aria-labelledby": "ha-backups-title",
 						children: [
@@ -5976,21 +5976,21 @@ function Go({ record: e, lifecycle: t, origin: n, onChangeOrigin: r, onRecordCha
 							/* @__PURE__ */ (0, Q.jsxs)("div", {
 								className: "ha-actions",
 								children: [/* @__PURE__ */ (0, Q.jsxs)("button", {
-									disabled: y,
-									onClick: () => void j(F),
-									children: [/* @__PURE__ */ (0, Q.jsx)(R, { name: "export" }), "Export backup"]
+									disabled: v,
+									onClick: () => void j(L),
+									children: [/* @__PURE__ */ (0, Q.jsx)(V, { name: "export" }), "Export backup"]
 								}), /* @__PURE__ */ (0, Q.jsxs)("label", {
-									className: `ha-file-button${y ? " is-disabled" : ""}`,
+									className: `ha-file-button${v ? " is-disabled" : ""}`,
 									children: [
-										/* @__PURE__ */ (0, Q.jsx)(R, { name: "import" }),
+										/* @__PURE__ */ (0, Q.jsx)(V, { name: "import" }),
 										"Import backup",
 										/* @__PURE__ */ (0, Q.jsx)("input", {
 											type: "file",
 											accept: ".cabane,.json,application/zip,application/json",
-											disabled: y,
+											disabled: v,
 											onChange: (e) => {
 												let t = e.target.files?.[0];
-												e.target.value = "", t && j(() => I(t));
+												e.target.value = "", t && j(() => R(t));
 											}
 										})
 									]
@@ -6003,21 +6003,21 @@ function Go({ record: e, lifecycle: t, origin: n, onChangeOrigin: r, onRecordCha
 						]
 					})]
 				}),
-				w && /* @__PURE__ */ (0, Q.jsx)("p", {
+				T && /* @__PURE__ */ (0, Q.jsx)("p", {
 					role: "alert",
 					className: "ha-error",
-					children: w
+					children: T
 				}),
-				E && /* @__PURE__ */ (0, Q.jsx)("p", {
+				D && /* @__PURE__ */ (0, Q.jsx)("p", {
 					role: "status",
 					className: "ha-notice",
-					children: E
+					children: D
 				}),
 				/* @__PURE__ */ (0, Q.jsxs)("footer", {
 					className: "ha-page__footer",
 					children: [
 						/* @__PURE__ */ (0, Q.jsx)("img", {
-							src: f,
+							src: d,
 							alt: "",
 							width: "18",
 							height: "22"
@@ -6032,18 +6032,18 @@ function Go({ record: e, lifecycle: t, origin: n, onChangeOrigin: r, onRecordCha
 }
 //#endregion
 //#region apps/web/src/RoutedHomeEditor.tsx
-var Ko = (0, V.lazy)(() => import("./assets/HomeEditor-CRZblDjE.js").then((e) => ({ default: e.HomeEditor })));
+var Ko = (0, H.lazy)(() => import("./assets/HomeEditor-z1Mvbvcs.js").then((e) => ({ default: e.HomeEditor })));
 function qo({ onClose: e, ...t }) {
-	let n = X(), r = qr(), i = (0, V.useMemo)(() => ({
+	let n = X(), r = qr(), i = (0, H.useMemo)(() => ({
 		...n.state?.editorRequest,
 		...uo(n.pathname)
-	}), [n.pathname, n.state]), a = (0, V.useRef)(!1), o = pi(({ nextLocation: e }) => !a.current && mo(t.initialRecord.homeId, e.pathname)), s = (e, n = !1) => {
+	}), [n.pathname, n.state]), a = (0, H.useRef)(!1), o = pi(({ nextLocation: e }) => !a.current && mo(t.initialRecord.homeId, e.pathname)), s = (e, n = !1) => {
 		r(po(e, t.initialRecord.homeId), {
 			replace: n,
 			state: { editorRequest: e }
 		});
 	};
-	return /* @__PURE__ */ (0, Q.jsx)(V.Suspense, {
+	return /* @__PURE__ */ (0, Q.jsx)(H.Suspense, {
 		fallback: /* @__PURE__ */ (0, Q.jsx)("main", {
 			className: "direction-project-loading",
 			children: "Opening the editor…"
@@ -6081,7 +6081,7 @@ function Zo() {
 	}
 }
 function Qo({ workspaceId: e, demoWorkspaceId: t }) {
-	let n = qr(), [r] = wa(), [i, a] = (0, V.useState)(""), o = r.get("mode") === "arrange" ? "furnish" : "construct", s = () => {
+	let n = qr(), [r] = wa(), [i, a] = (0, H.useState)(""), o = r.get("mode") === "arrange" ? "furnish" : "construct", s = () => {
 		try {
 			window.sessionStorage.setItem(Jo, "true");
 		} catch {}
@@ -6207,132 +6207,132 @@ function Qo({ workspaceId: e, demoWorkspaceId: t }) {
 }
 //#endregion
 //#region apps/web/src/ConnectedProduct.tsx
-function $o({ record: e, lifecycle: t, homeAssistantUrl: n, onHomeAssistantUrlChange: i, recoveryMessage: a, recoveryRaw: o, initialRequest: s, onboarding: c, demoWorkspaceId: u }) {
-	let [d, f] = (0, V.useState)(e), p = (0, V.useMemo)(() => d.publishedAt === 0 ? null : z(d.published), [d.published, d.publishedAt]), m = (0, V.useMemo)(() => r(d.published, le).deviceModels, [d.published]), [h, g] = (0, V.useState)({
+function $o({ record: e, lifecycle: t, homeAssistantUrl: r, onHomeAssistantUrlChange: i, recoveryMessage: a, recoveryRaw: o, initialRequest: s, onboarding: c, demoWorkspaceId: l }) {
+	let [u, d] = (0, H.useState)(e), f = (0, H.useMemo)(() => u.publishedAt === 0 ? null : ve(u.published), [u.published, u.publishedAt]), p = (0, H.useMemo)(() => m(u.published, le).deviceModels, [u.published]), [h, g] = (0, H.useState)({
 		message: a,
 		raw: o
-	}), [_, y] = (0, V.useState)(null), b = Fo(d, f, y), [S, C] = (0, V.useState)(!1), w = qr(), E = X(), D = l(), [O] = (0, V.useState)(() => s ?? (D ? null : me(e.homeId))), k = (0, V.useEffectEvent)(() => {
-		if (O) {
-			let e = new URLSearchParams(E.search);
-			O.destination && e.set("action", O.destination), w(`${po(O, d.homeId)}${e.size ? `?${e}` : ""}`, {
+	}), [_, v] = (0, H.useState)(null), y = Fo(u, d, v), [b, S] = (0, H.useState)(!1), C = qr(), w = X(), E = I(), [D] = (0, H.useState)(() => s ?? (E ? null : xe(e.homeId))), O = (0, H.useEffectEvent)(() => {
+		if (D) {
+			let e = new URLSearchParams(w.search);
+			D.destination && e.set("action", D.destination), C(`${po(D, u.homeId)}${e.size ? `?${e}` : ""}`, {
 				replace: !0,
-				state: { editorRequest: O }
-			}), window.sessionStorage.removeItem(B);
+				state: { editorRequest: D }
+			}), window.sessionStorage.removeItem(he);
 		}
 	});
-	(0, V.useEffect)(() => {
-		k();
+	(0, H.useEffect)(() => {
+		O();
 	}, []);
-	let A = async (e) => {
-		await b.flush();
-		let t = (e.mode === "construct" || e.mode === "furnish") && !e.panel && Xo() && !Zo() ? lo(d.homeId, e.mode) : po(e, d.homeId);
-		w(t, { state: { editorRequest: e } });
-	}, j = n ? T(n) : null, M = (0, V.useMemo)(() => ({
-		profile: (j ? d.bindings[j]?.published : void 0) ?? I(d.homeId),
-		saveWeatherSource: j ? (e) => b.saveWeatherSource(j, e) : void 0,
+	let k = async (e) => {
+		await y.flush();
+		let t = (e.mode === "construct" || e.mode === "furnish") && !e.panel && Xo() && !Zo() ? lo(u.homeId, e.mode) : po(e, u.homeId);
+		C(t, { state: { editorRequest: e } });
+	}, A = r ? x(r) : null, j = (0, H.useMemo)(() => ({
+		profile: (A ? u.bindings[A]?.published : void 0) ?? R(u.homeId),
+		saveWeatherSource: A ? (e) => y.saveWeatherSource(A, e) : void 0,
 		loaded: !0,
-		hasStoredProfile: !!(j && d.bindings[j]),
+		hasStoredProfile: !!(A && u.bindings[A]),
 		save: () => void 0
 	}), [
-		j,
-		d,
-		b
-	]), N = /* @__PURE__ */ (0, Q.jsx)(qo, {
-		initialRecord: d,
+		A,
+		u,
+		y
+	]), M = /* @__PURE__ */ (0, Q.jsx)(qo, {
+		initialRecord: u,
 		lifecycle: t,
 		recoveryMessage: h.message,
 		recoveryRaw: h.raw,
-		homeAssistantUrl: n,
+		homeAssistantUrl: r,
 		onPrepareOrigin: async (e, t) => {
 			let n = await i(t, e) ?? e;
-			return f(n), n;
+			return d(n), n;
 		},
 		onClose: (e, t) => {
 			g({
 				message: void 0,
 				raw: void 0
-			}), f(e), C(t === "applied"), window.sessionStorage.removeItem(B);
+			}), d(e), S(t === "applied"), window.sessionStorage.removeItem(he);
 		}
-	}), ee = d.publishedAt === 0 ? /* @__PURE__ */ (0, Q.jsx)(Ai, {
-		to: po({ mode: "construct" }, d.homeId),
+	}), N = u.publishedAt === 0 ? /* @__PURE__ */ (0, Q.jsx)(Ai, {
+		to: po({ mode: "construct" }, u.homeId),
 		replace: !0
-	}) : /* @__PURE__ */ (0, Q.jsx)(x, {
-		storage: b.storage,
-		children: /* @__PURE__ */ (0, Q.jsx)(xe, { children: /* @__PURE__ */ (0, Q.jsx)(F, {
-			manifest: p,
+	}) : /* @__PURE__ */ (0, Q.jsx)(ee, {
+		storage: y.storage,
+		children: /* @__PURE__ */ (0, Q.jsx)(be, { children: /* @__PURE__ */ (0, Q.jsx)(T, {
+			manifest: f,
 			architectureModels: Se,
 			onboarding: c,
-			walkTools: be,
-			deviceModels: m,
-			homeAssistantUrl: n,
+			walkTools: _e,
+			deviceModels: p,
+			homeAssistantUrl: r,
 			onHomeAssistantUrlChange: (e) => {
-				y(null), Promise.resolve().then(() => i(e, d)).then((e) => {
-					e && f(e);
-				}).catch((e) => y(e instanceof Error ? e.message : "Connection settings could not be saved."));
+				v(null), Promise.resolve().then(() => i(e, u)).then((e) => {
+					e && d(e);
+				}).catch((e) => v(e instanceof Error ? e.message : "Connection settings could not be saved."));
 			},
-			onHomeAssistantSettings: () => void w(`${$(d.homeId)}/home-assistant`),
-			onWorkspaces: () => void w("/workspaces"),
-			renderActionBarDeviceIcon: (e) => /* @__PURE__ */ (0, Q.jsx)(we, {
+			onHomeAssistantSettings: () => void C(`${$(u.homeId)}/home-assistant`),
+			onWorkspaces: () => void C("/workspaces"),
+			renderActionBarDeviceIcon: (e) => /* @__PURE__ */ (0, Q.jsx)(Ce, {
 				modelId: e,
-				models: m
+				models: p
 			}),
-			bindingManager: M,
-			constructionApplied: S,
+			bindingManager: j,
+			constructionApplied: b,
 			onEditHome: (e = "construct") => {
-				A({ mode: e });
+				k({ mode: e });
 			},
 			onCustomizeActionBar: () => {
-				A({
+				k({
 					mode: "construct",
 					panel: "action-bar"
 				});
 			},
 			onOpenConnect: (e, t) => {
-				A({
+				k({
 					mode: "connect",
 					view: e,
 					...t === void 0 ? {} : { roomId: t }
 				});
 			},
-			onExportBrowserData: () => Te(oe({
-				name: d.draft.home.name,
-				homeAssistantUrl: n,
-				hasPublished: d.publishedAt !== 0
-			}, d), `${d.homeId}-private-workspace.json`)
+			onExportBrowserData: () => de(se({
+				name: u.draft.home.name,
+				homeAssistantUrl: r,
+				hasPublished: u.publishedAt !== 0
+			}, u), `${u.homeId}-private-workspace.json`)
 		}) })
 	});
-	return /* @__PURE__ */ (0, Q.jsxs)(v, { children: [_ && /* @__PURE__ */ (0, Q.jsxs)("div", {
+	return /* @__PURE__ */ (0, Q.jsxs)(n, { children: [_ && /* @__PURE__ */ (0, Q.jsxs)("div", {
 		className: "workspace-connection-error",
 		role: "alert",
 		children: [_, /* @__PURE__ */ (0, Q.jsx)("button", {
 			type: "button",
-			onClick: () => y(null),
+			onClick: () => v(null),
 			children: "Dismiss"
 		})]
 	}), /* @__PURE__ */ (0, Q.jsxs)(Ni, { children: [
 		/* @__PURE__ */ (0, Q.jsx)(ji, {
 			path: "/welcome",
-			element: ee
+			element: N
 		}),
 		/* @__PURE__ */ (0, Q.jsx)(ji, {
 			path: "/demo",
-			element: ee
+			element: N
 		}),
 		/* @__PURE__ */ (0, Q.jsx)(ji, {
 			path: "/workspaces/:workspaceId",
-			element: ee
+			element: N
 		}),
 		/* @__PURE__ */ (0, Q.jsx)(ji, {
 			path: "/workspaces/:workspaceId/home-assistant",
 			element: /* @__PURE__ */ (0, Q.jsx)(Go, {
-				record: d,
+				record: u,
 				lifecycle: t,
-				origin: n,
+				origin: r,
 				onChangeOrigin: async (e) => {
-					let t = await i(e, d);
-					t && f(t);
+					let t = await i(e, u);
+					t && d(t);
 				},
-				onRecordChange: f,
+				onRecordChange: d,
 				isDemo: c?.isDemo ?? !1,
 				onCreatePersonal: () => {
 					c?.start("connect");
@@ -6342,38 +6342,38 @@ function $o({ record: e, lifecycle: t, homeAssistantUrl: n, onHomeAssistantUrlCh
 		/* @__PURE__ */ (0, Q.jsx)(ji, {
 			path: "/workspaces/:workspaceId/mobile-editor",
 			element: /* @__PURE__ */ (0, Q.jsx)(Qo, {
-				workspaceId: d.homeId,
-				demoWorkspaceId: u
+				workspaceId: u.homeId,
+				demoWorkspaceId: l
 			})
 		}),
 		co.map(({ path: e, handle: t }) => /* @__PURE__ */ (0, Q.jsx)(ji, {
 			path: e,
 			element: (t.mode === "construct" || t.mode === "furnish") && !t.panel && Xo() && !Zo() ? e === "/build" ? /* @__PURE__ */ (0, Q.jsx)(Qo, {
-				workspaceId: d.homeId,
-				demoWorkspaceId: u
+				workspaceId: u.homeId,
+				demoWorkspaceId: l
 			}) : /* @__PURE__ */ (0, Q.jsx)(Ai, {
-				to: lo(d.homeId, t.mode),
+				to: lo(u.homeId, t.mode),
 				replace: !0
-			}) : N
+			}) : M
 		}, e)),
 		/* @__PURE__ */ (0, Q.jsx)(ji, {
 			path: "*",
 			element: /* @__PURE__ */ (0, Q.jsx)(Ai, {
-				to: $(d.homeId),
+				to: $(u.homeId),
 				replace: !0
 			})
 		})
-	] })] }, d.homeId);
+	] })] }, u.homeId);
 }
 //#endregion
 //#region apps/web/src/workspaces/WorkspaceModelAssetNotice.tsx
 function es({ record: e, id: t }) {
-	let [n, r] = (0, V.useState)(!1);
-	return (0, V.useEffect)(() => {
+	let [n, r] = (0, H.useState)(!1);
+	return (0, H.useEffect)(() => {
 		let t = !0;
 		r(!1);
-		let n = D([e.draft, e.published]);
-		return n.length && ne(window.indexedDB).verify(n).catch(() => {
+		let n = S([e.draft, e.published]);
+		return n.length && w(window.indexedDB).verify(n).catch(() => {
 			t && r(!0);
 		}), () => {
 			t = !1;
@@ -6404,20 +6404,20 @@ function es({ record: e, id: t }) {
 //#endregion
 //#region apps/web/src/workspaces/WorkspaceHost.tsx
 function ts({ id: e, repository: t, onboarding: n, demoWorkspaceId: r }) {
-	let i = X(), a = qr(), o = (0, V.useCallback)((t) => So(e, t), [e]), s = n.state?.demoWorkspaceId === e, [c] = (0, V.useState)(() => ve(window.indexedDB, e)), [l, u] = (0, V.useState)(null), [d, f] = (0, V.useState)(null);
-	return (0, V.useEffect)(() => {
+	let a = X(), o = qr(), c = (0, H.useCallback)((t) => So(e, t), [e]), l = n.state?.demoWorkspaceId === e, [u] = (0, H.useState)(() => re(window.indexedDB, e)), [d, f] = (0, H.useState)(null), [p, m] = (0, H.useState)(null);
+	return (0, H.useEffect)(() => {
 		let n = !0;
 		return t.read(e).then(async (t) => {
 			let r = t?.record ? {
 				status: "ready",
 				record: t.record
-			} : await c.load();
+			} : await u.load();
 			if (n) {
 				if (!t) {
-					f("This workspace is not saved in this browser.");
+					m("This workspace is not saved in this browser.");
 					return;
 				}
-				bo(e), u({
+				bo(e), f({
 					record: r.record,
 					metadata: t.metadata,
 					...r.status === "recovery" ? {
@@ -6427,20 +6427,20 @@ function ts({ id: e, repository: t, onboarding: n, demoWorkspaceId: r }) {
 				});
 			}
 		}).catch((e) => {
-			n && f(e instanceof Error ? e.message : "Could not load this home.");
+			n && m(e instanceof Error ? e.message : "Could not load this home.");
 		}), () => {
 			n = !1;
 		};
 	}, [
 		e,
-		c,
+		u,
 		t
-	]), (0, V.useEffect)(() => {
+	]), (0, H.useEffect)(() => {
 		let n = !0, r = () => {
 			t.read(e).then((e) => {
-				n && (e ? l && e.metadata.homeAssistantUrl !== l.metadata.homeAssistantUrl && f("This workspace's connection changed in another tab. Reopen it from Workspaces.") : f("This workspace was deleted in another tab."));
+				n && (e ? d && e.metadata.homeAssistantUrl !== d.metadata.homeAssistantUrl && m("This workspace's connection changed in another tab. Reopen it from Workspaces.") : m("This workspace was deleted in another tab."));
 			}).catch(() => {
-				n && f("Could not verify this workspace. Reopen it from Workspaces.");
+				n && m("Could not verify this workspace. Reopen it from Workspaces.");
 			});
 		};
 		return window.addEventListener("focus", r), () => {
@@ -6449,12 +6449,12 @@ function ts({ id: e, repository: t, onboarding: n, demoWorkspaceId: r }) {
 	}, [
 		e,
 		t,
-		l
-	]), d ? /* @__PURE__ */ (0, Q.jsxs)("main", {
+		d
+	]), p ? /* @__PURE__ */ (0, Q.jsxs)("main", {
 		className: "direction-project-loading is-error",
 		children: [
 			/* @__PURE__ */ (0, Q.jsx)("strong", { children: "Could not open this workspace." }),
-			/* @__PURE__ */ (0, Q.jsx)("p", { children: d }),
+			/* @__PURE__ */ (0, Q.jsx)("p", { children: p }),
 			/* @__PURE__ */ (0, Q.jsx)(Z, {
 				to: "/workspaces?import=home-assistant",
 				children: "Open from Home Assistant"
@@ -6464,42 +6464,42 @@ function ts({ id: e, repository: t, onboarding: n, demoWorkspaceId: r }) {
 				children: "Workspaces"
 			})
 		]
-	}) : l ? /* @__PURE__ */ (0, Q.jsx)(y.Provider, {
-		value: o,
-		children: /* @__PURE__ */ (0, Q.jsx)(S, {
-			hostSession: s ? null : void 0,
-			homeAssistantUrl: s ? null : l.metadata.homeAssistantUrl,
+	}) : d ? /* @__PURE__ */ (0, Q.jsx)(i.Provider, {
+		value: c,
+		children: /* @__PURE__ */ (0, Q.jsx)(s, {
+			hostSession: l ? null : void 0,
+			homeAssistantUrl: l ? null : d.metadata.homeAssistantUrl,
 			children: /* @__PURE__ */ (0, Q.jsxs)(Vo, {
 				id: e,
-				origin: l.metadata.homeAssistantUrl,
+				origin: d.metadata.homeAssistantUrl,
 				repository: t,
-				hidden: s,
+				hidden: l,
 				children: [/* @__PURE__ */ (0, Q.jsx)(es, {
-					record: l.record,
+					record: d.record,
 					id: e
 				}), /* @__PURE__ */ (0, Q.jsx)($o, {
 					demoWorkspaceId: r,
 					onboarding: {
-						isDemo: s,
-						welcome: s && i.pathname === "/welcome",
+						isDemo: l,
+						welcome: l && a.pathname === "/welcome",
 						nudgeDismissed: n.state?.nudgeDismissed ?? !0,
 						busy: n.busy,
 						start: n.start,
 						dismiss: async (e) => {
-							e === "welcome" && a("/demo"), await n.dismiss(e);
+							e === "welcome" && o("/demo"), await n.dismiss(e);
 						},
-						openWelcome: () => void a("/welcome"),
+						openWelcome: () => void o("/welcome"),
 						links: wo
 					},
-					record: l.record,
-					lifecycle: c,
-					recoveryMessage: l.recoveryMessage,
-					recoveryRaw: l.recoveryRaw,
-					homeAssistantUrl: l.metadata.homeAssistantUrl,
+					record: d.record,
+					lifecycle: u,
+					recoveryMessage: d.recoveryMessage,
+					recoveryRaw: d.recoveryRaw,
+					homeAssistantUrl: d.metadata.homeAssistantUrl,
 					onHomeAssistantUrlChange: async (n, r) => {
-						let i = await t.setConnection(e, (r ?? l.record).revision, n);
+						let i = await t.setConnection(e, (r ?? d.record).revision, n);
 						if (!i.record) throw Error("Could not save the connection.");
-						return u((e) => e && {
+						return f((e) => e && {
 							...e,
 							metadata: i.metadata,
 							record: i.record
@@ -6516,8 +6516,8 @@ function ts({ id: e, repository: t, onboarding: n, demoWorkspaceId: r }) {
 //#endregion
 //#region apps/web/src/workspaces/BuildWorkspaceEntry.tsx
 function ns({ onboarding: e }) {
-	let t = (0, V.useRef)(!1);
-	return (0, V.useEffect)(() => {
+	let t = (0, H.useRef)(!1);
+	return (0, H.useEffect)(() => {
 		t.current || (t.current = !0, e.start("build"));
 	}, [e, e.start]), /* @__PURE__ */ (0, Q.jsx)("main", {
 		className: "direction-project-loading",
@@ -6540,42 +6540,42 @@ function ns({ onboarding: e }) {
 //#region apps/web/src/workspaces/migrate-single-home-storage.ts
 var rs = "cabane:ha-url:v1", is = "cabane:ha-auth:v1";
 function as(e) {
-	return o(e.getItem(rs));
+	return c(e.getItem(rs));
 }
 async function os(e, t, n) {
 	if (await e.migrationDone()) return;
 	let r = await e.read(t);
 	if (r?.error) return;
-	let a = as(n);
-	r?.record && a && !r.metadata.homeAssistantUrl && (r = await e.setConnection(t, r.record.revision, a)), r?.record && a && await _e(r.record, a);
-	let s = n.getItem(is);
-	if (s) {
-		let e = JSON.parse(s), t = o(e.hassUrl);
+	let i = as(n);
+	r?.record && i && !r.metadata.homeAssistantUrl && (r = await e.setConnection(t, r.record.revision, i)), r?.record && i && await B(r.record, i);
+	let a = n.getItem(is);
+	if (a) {
+		let e = JSON.parse(a), t = c(e.hassUrl);
 		if (!t || !e.clientId) throw Error("The saved Home Assistant sign-in needs recovery.");
-		let r = h(t, e.clientId);
-		if (n.getItem(r) === null && n.setItem(r, s), !i(n, t, e.clientId)) throw Error("Could not preserve the saved Home Assistant sign-in.");
+		let r = g(t, e.clientId);
+		if (n.getItem(r) === null && n.setItem(r, a), !o(n, t, e.clientId)) throw Error("Could not preserve the saved Home Assistant sign-in.");
 	}
-	n.removeItem(is), n.removeItem(rs), r?.record && a && (n.removeItem(j(a, t)), n.removeItem(ee(a, t))), await e.finishMigration();
+	n.removeItem(is), n.removeItem(rs), r?.record && i && (n.removeItem(j(i, t)), n.removeItem(P(i, t))), await e.finishMigration();
 }
 //#endregion
 //#region apps/web/src/workspaces/initialize-workspaces.ts
 async function ss(e, t, { skipLegacyMigration: n = !1 } = {}) {
-	let r = m(e, le), i, a = null;
+	let r = f(e, le), i, a = null;
 	try {
 		!n && !await r.migrationDone() && (a = as(t));
 	} catch (e) {
 		i = e instanceof Error ? e.message : "Saved connection data needs recovery.";
 	}
 	let o = {
-		...ue,
+		...ae,
 		home: {
-			...ue.home,
+			...ae.home,
 			name: "Demo home"
 		}
 	};
 	await r.initialize(o, a);
 	try {
-		n || await os(r, ue.home.id, t);
+		n || await os(r, ae.home.id, t);
 	} catch (e) {
 		i = e instanceof Error ? e.message : "Saved connection data needs recovery.";
 	}
@@ -6587,145 +6587,145 @@ async function ss(e, t, { skipLegacyMigration: n = !1 } = {}) {
 //#endregion
 //#region apps/web/src/workspaces/WorkspaceApplication.tsx
 function cs() {
-	let e = X(), t = l(), r = qr(), [i, a] = (0, V.useState)(null);
-	(0, V.useEffect)(() => {
-		e.pathname !== "/" && a(null);
+	let e = X(), t = I(), n = qr(), [r, i] = (0, H.useState)(null);
+	(0, H.useEffect)(() => {
+		e.pathname !== "/" && i(null);
 	}, [e.pathname]);
-	let [o, s] = (0, V.useState)(null), c = Eo(o), [u, d] = (0, V.useState)(null), [f, p] = (0, V.useState)(null), [m, h] = (0, V.useState)(), [g] = (0, V.useState)(() => !!t), [_] = (0, V.useState)(() => t ? null : me());
-	(0, V.useEffect)(() => {
+	let [a, o] = (0, H.useState)(null), s = Eo(a), [c, l] = (0, H.useState)(null), [u, d] = (0, H.useState)(null), [f, p] = (0, H.useState)(), [m] = (0, H.useState)(() => !!t), [h] = (0, H.useState)(() => t ? null : xe());
+	(0, H.useEffect)(() => {
 		let e = !0;
-		return ss(window.indexedDB, window.localStorage, { skipLegacyMigration: g }).then(async (t) => {
+		return ss(window.indexedDB, window.localStorage, { skipLegacyMigration: m }).then(async (t) => {
 			let n = await t.repository.list();
-			e && (s(t.repository), d(n), h(t.migrationError));
+			e && (o(t.repository), l(n), p(t.migrationError));
 		}).catch((t) => {
-			e && p(t instanceof Error ? t.message : "Browser storage is unavailable.");
+			e && d(t instanceof Error ? t.message : "Browser storage is unavailable.");
 		}), () => {
 			e = !1;
 		};
-	}, [g]);
-	let v = (0, V.useCallback)(async () => {
-		o && d(await o.list());
-	}, [o]);
-	(0, V.useEffect)(() => {
+	}, [m]);
+	let g = (0, H.useCallback)(async () => {
+		a && l(await a.list());
+	}, [a]);
+	(0, H.useEffect)(() => {
 		if (e.pathname !== "/" && e.pathname !== "/workspaces") return;
 		let t = () => {
-			v().catch((e) => p(String(e)));
+			g().catch((e) => d(String(e)));
 		};
 		return t(), window.addEventListener("focus", t), () => window.removeEventListener("focus", t);
-	}, [v, e.pathname]);
-	let y = (0, V.useCallback)(async (e) => {
-		await v(), await r($(e), { replace: !0 });
-	}, [v, r]);
-	if (f) return /* @__PURE__ */ (0, Q.jsxs)("main", {
+	}, [g, e.pathname]);
+	let _ = (0, H.useCallback)(async (e) => {
+		await g(), await n($(e), { replace: !0 });
+	}, [g, n]);
+	if (u) return /* @__PURE__ */ (0, Q.jsxs)("main", {
 		className: "direction-project-loading is-error",
 		children: [
 			/* @__PURE__ */ (0, Q.jsx)("strong", { children: "Could not load your workspaces." }),
-			/* @__PURE__ */ (0, Q.jsx)("p", { children: f }),
+			/* @__PURE__ */ (0, Q.jsx)("p", { children: u }),
 			/* @__PURE__ */ (0, Q.jsx)("button", {
 				onClick: () => window.location.reload(),
 				children: "Try again"
 			})
 		]
 	});
-	if (!o || !u) return /* @__PURE__ */ (0, Q.jsx)("main", {
+	if (!a || !c) return /* @__PURE__ */ (0, Q.jsx)("main", {
 		className: "direction-project-loading",
 		children: "Loading your workspaces…"
 	});
 	if (e.pathname.startsWith("/open/")) return /* @__PURE__ */ (0, Q.jsx)(go, {
-		repository: o,
-		onOpened: y
+		repository: a,
+		onOpened: _
 	});
-	let b = !t && e.pathname !== "/workspaces" && new URLSearchParams(e.search).has("auth_callback"), x = b ? _ : null;
-	if (b) {
-		if (!x || !u.some((e) => e.metadata.id === x.workspaceId)) return /* @__PURE__ */ (0, Q.jsxs)("main", {
+	let y = !t && e.pathname !== "/workspaces" && new URLSearchParams(e.search).has("auth_callback"), b = y ? h : null;
+	if (y) {
+		if (!b || !c.some((e) => e.metadata.id === b.workspaceId)) return /* @__PURE__ */ (0, Q.jsxs)("main", {
 			className: "direction-project-loading is-error",
 			children: [
 				/* @__PURE__ */ (0, Q.jsx)("strong", { children: "This sign-in no longer has a workspace." }),
 				/* @__PURE__ */ (0, Q.jsx)("p", { children: "Open the intended workspace and sign in again." }),
 				/* @__PURE__ */ (0, Q.jsx)("button", {
-					onClick: () => void r("/workspaces", { replace: !0 }),
+					onClick: () => void n("/workspaces", { replace: !0 }),
 					children: "Workspaces"
 				})
 			]
 		});
-		if (fo(e.pathname) !== x.workspaceId) return /* @__PURE__ */ (0, Q.jsx)(Ai, {
-			to: `${$(x.workspaceId)}${e.search}`,
+		if (fo(e.pathname) !== b.workspaceId) return /* @__PURE__ */ (0, Q.jsx)(Ai, {
+			to: `${$(b.workspaceId)}${e.search}`,
 			replace: !0
 		});
 	}
 	if (e.pathname === "/") {
-		if (i) return /* @__PURE__ */ (0, Q.jsx)(Ai, {
-			to: i,
+		if (r) return /* @__PURE__ */ (0, Q.jsx)(Ai, {
+			to: r,
 			replace: !0
 		});
-		if (!c.loaded) return /* @__PURE__ */ (0, Q.jsx)("main", {
+		if (!s.loaded) return /* @__PURE__ */ (0, Q.jsx)("main", {
 			className: "direction-project-loading",
 			children: "Loading your home…"
 		});
-		if (t && c.state && !c.state.welcomeDismissed && u.length === 1 && u[0].metadata.id === c.state.demoWorkspaceId) return /* @__PURE__ */ (0, Q.jsx)(no, {
+		if (t && s.state && !s.state.welcomeDismissed && c.length === 1 && c[0].metadata.id === s.state.demoWorkspaceId) return /* @__PURE__ */ (0, Q.jsx)(no, {
 			session: t,
-			repository: o,
+			repository: a,
 			onRestored: async (e) => {
-				a($(e)), await v(), await c.dismiss("welcome");
+				i($(e)), await g(), await s.dismiss("welcome");
 			},
 			onBuild: async () => {
-				a("/build");
+				i("/build");
 			},
 			onExplore: async () => {
-				a("/demo"), await c.dismiss("welcome");
+				i("/demo"), await s.dismiss("welcome");
 			},
 			onCancel: async () => {
-				a("/workspaces"), await c.dismiss("welcome");
+				i("/workspaces"), await s.dismiss("welcome");
 			}
 		});
-		let e = u.find((e) => e.metadata.id === yo()) ?? (u.length === 1 ? u[0] : void 0);
-		return e && c.state && e.metadata.id === c.state.demoWorkspaceId ? /* @__PURE__ */ (0, Q.jsx)(Ai, {
-			to: c.state.welcomeDismissed ? "/demo" : "/welcome",
+		let e = c.find((e) => e.metadata.id === yo()) ?? (c.length === 1 ? c[0] : void 0);
+		return e && s.state && e.metadata.id === s.state.demoWorkspaceId ? /* @__PURE__ */ (0, Q.jsx)(Ai, {
+			to: s.state.welcomeDismissed ? "/demo" : "/welcome",
 			replace: !0
 		}) : /* @__PURE__ */ (0, Q.jsx)(Ai, {
 			to: e ? $(e.metadata.id) : "/workspaces",
 			replace: !0
 		});
 	}
-	let S = e.pathname === "/welcome" || e.pathname === "/demo", C = e.pathname === "/build";
-	if ((S || C) && !c.loaded) return /* @__PURE__ */ (0, Q.jsx)("main", {
+	let x = e.pathname === "/welcome" || e.pathname === "/demo", S = e.pathname === "/build";
+	if ((x || S) && !s.loaded) return /* @__PURE__ */ (0, Q.jsx)("main", {
 		className: "direction-project-loading",
 		children: "Loading your home…"
 	});
-	if (S && !u.some((e) => e.metadata.id === c.state?.demoWorkspaceId)) return /* @__PURE__ */ (0, Q.jsxs)("main", {
+	if (x && !c.some((e) => e.metadata.id === s.state?.demoWorkspaceId)) return /* @__PURE__ */ (0, Q.jsxs)("main", {
 		className: "direction-project-loading is-error",
 		children: [/* @__PURE__ */ (0, Q.jsx)("strong", { children: "The demo home is no longer in this browser." }), /* @__PURE__ */ (0, Q.jsx)(Z, {
 			to: "/workspaces",
 			children: "Workspaces"
 		})]
 	});
-	if (C && !c.state?.destinations.build) return /* @__PURE__ */ (0, Q.jsx)(ns, { onboarding: c });
-	let w = S ? c.state?.demoWorkspaceId : C ? c.state?.destinations.build : fo(e.pathname);
-	if (w) return /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [c.error && /* @__PURE__ */ (0, Q.jsxs)("div", {
+	if (S && !s.state?.destinations.build) return /* @__PURE__ */ (0, Q.jsx)(ns, { onboarding: s });
+	let C = x ? s.state?.demoWorkspaceId : S ? s.state?.destinations.build : fo(e.pathname);
+	if (C) return /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [s.error && /* @__PURE__ */ (0, Q.jsxs)("div", {
 		className: "workspace-connection-error",
 		role: "alert",
 		children: [
-			c.error,
-			c.deleted && /* @__PURE__ */ (0, Q.jsx)("button", {
-				disabled: c.busy,
-				onClick: () => void c.start(c.deleted.path, c.deleted.id),
+			s.error,
+			s.deleted && /* @__PURE__ */ (0, Q.jsx)("button", {
+				disabled: s.busy,
+				onClick: () => void s.start(s.deleted.path, s.deleted.id),
 				children: "Create a new home"
 			}),
 			/* @__PURE__ */ (0, Q.jsx)("button", {
-				onClick: () => void r("/workspaces"),
+				onClick: () => void n("/workspaces"),
 				children: "Workspaces"
 			}),
 			/* @__PURE__ */ (0, Q.jsx)("button", {
-				onClick: c.clearError,
+				onClick: s.clearError,
 				children: "Dismiss"
 			})
 		]
-	}), c.loaded ? /* @__PURE__ */ (0, Q.jsx)(ts, {
-		id: w,
-		repository: o,
-		onboarding: c,
-		demoWorkspaceId: u.some((e) => e.metadata.id === c.state?.demoWorkspaceId) ? c.state?.demoWorkspaceId ?? null : null
-	}, w) : /* @__PURE__ */ (0, Q.jsx)("main", {
+	}), s.loaded ? /* @__PURE__ */ (0, Q.jsx)(ts, {
+		id: C,
+		repository: a,
+		onboarding: s,
+		demoWorkspaceId: c.some((e) => e.metadata.id === s.state?.demoWorkspaceId) ? s.state?.demoWorkspaceId ?? null : null
+	}, C) : /* @__PURE__ */ (0, Q.jsx)("main", {
 		className: "direction-project-loading",
 		children: "Loading your home…"
 	})] });
@@ -6734,7 +6734,7 @@ function cs() {
 		replace: !0
 	});
 	let T = (e) => {
-		let t = u.find((t) => t.metadata.id === e);
+		let t = c.find((t) => t.metadata.id === e);
 		if (!t) throw Error("Workspace no longer exists. Refresh the library.");
 		return t;
 	}, E = (e) => {
@@ -6742,65 +6742,65 @@ function cs() {
 		if (!t.record) throw Error(t.error ?? "This home needs recovery.");
 		return t.record;
 	}, D = async (e) => {
-		await r($(e));
+		await n($(e));
 	};
-	return /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [m && /* @__PURE__ */ (0, Q.jsxs)("p", {
+	return /* @__PURE__ */ (0, Q.jsxs)(Q.Fragment, { children: [f && /* @__PURE__ */ (0, Q.jsxs)("p", {
 		role: "alert",
 		className: "workspace-error",
-		children: [m, " Your saved source data has been retained."]
+		children: [f, " Your saved source data has been retained."]
 	}), /* @__PURE__ */ (0, Q.jsx)(Mo, {
-		demoWorkspaceId: c.state?.demoWorkspaceId,
+		demoWorkspaceId: s.state?.demoWorkspaceId,
 		onSettings: async (e, t) => {
-			await r(`${$(e)}/home-assistant${t ? `?action=${t}` : ""}`);
+			await n(`${$(e)}/home-assistant${t ? `?action=${t}` : ""}`);
 		},
-		entries: u,
+		entries: c,
 		onOpen: D,
 		onRecover: D,
 		onCreate: async (e) => {
-			let t = await o.createBlank(e);
-			ge(t.metadata.id), await v(), await D(t.metadata.id);
+			let t = await a.createBlank(e);
+			ge(t.metadata.id), await g(), await D(t.metadata.id);
 		},
 		onRename: async (e, t) => {
-			await o.rename(e, E(e).revision, t), await v();
+			await a.rename(e, E(e).revision, t), await g();
 		},
 		onDuplicate: async (e, t) => {
-			await o.duplicate(e, E(e).revision, t), await v();
+			await a.duplicate(e, E(e).revision, t), await g();
 		},
 		onDelete: async (e) => {
-			let t = T(e), r = await o.readRaw(e);
-			if (t.record && (await o.read(e))?.record?.revision !== t.record.revision) throw Error("This workspace changed. Refresh before deleting it.");
-			await o.delete(e, r), await pe(e), Co(e), he(e);
+			let t = T(e), n = await a.readRaw(e);
+			if (t.record && (await a.read(e))?.record?.revision !== t.record.revision) throw Error("This workspace changed. Refresh before deleting it.");
+			await a.delete(e, n), await Te(e), Co(e), me(e);
 			try {
-				window.localStorage.removeItem(n(e));
+				window.localStorage.removeItem(v(e));
 			} catch {}
-			await v();
+			await g();
 		},
 		onImport: async (e) => {
-			let t = se(e, le), n = await o.create(t.record, t);
-			await v(), await D(n.metadata.id);
+			let t = ce(e, le), n = await a.create(t.record, t);
+			await g(), await D(n.metadata.id);
 		},
 		onExport: async (e, t) => {
-			let n = T(e), r = E(e), i = t ? oe(n.metadata, r) : O(r.draft), a = await ne(window.indexedDB).verify(Ee(i));
-			L(ce(i, a), `${e}-${t ? "backup" : "project"}.cabane`, "application/zip");
+			let n = T(e), r = E(e), i = t ? se(n.metadata, r) : k(r.draft), a = await w(window.indexedDB).verify(z(i));
+			fe(ue(i, a), `${e}-${t ? "backup" : "project"}.cabane`, "application/zip");
 		},
 		onExportRaw: async (e) => {
-			let t = await o.readRaw(e);
+			let t = await a.readRaw(e);
 			if (t === null) throw Error("No saved record exists.");
-			Te(t, `${e}-recovery.json`);
+			de(t, `${e}-recovery.json`);
 		},
 		renderSuggestions: (e, t) => /* @__PURE__ */ (0, Q.jsx)(to, {
-			repository: o,
-			onRestored: y,
-			localWorkspaceIds: u.map((e) => e.metadata.id),
+			repository: a,
+			onRestored: _,
+			localWorkspaceIds: c.map((e) => e.metadata.id),
 			busy: e,
 			onBusyChange: t
 		}),
 		remoteImport: /* @__PURE__ */ (0, Q.jsx)(eo, {
-			repository: o,
+			repository: a,
 			onRestored: async (e) => {
-				await v(), await D(e);
+				await g(), await D(e);
 			},
-			initialOrigin: u.find((e) => e.metadata.homeAssistantUrl)?.metadata.homeAssistantUrl ?? null
+			initialOrigin: c.find((e) => e.metadata.homeAssistantUrl)?.metadata.homeAssistantUrl ?? null
 		})
 	})] });
 }
@@ -6909,9 +6909,9 @@ customElements.get("cabane-panel") || customElements.define("cabane-panel", ds({
 			portalContainer: t,
 			eventTarget: n,
 			assetBaseUrl: fs
-		}, c = (e) => i.render(/* @__PURE__ */ (0, Q.jsx)(V.StrictMode, { children: /* @__PURE__ */ (0, Q.jsx)(Ma, { children: /* @__PURE__ */ (0, Q.jsx)(N, {
+		}, c = (e) => i.render(/* @__PURE__ */ (0, Q.jsx)(H.StrictMode, { children: /* @__PURE__ */ (0, Q.jsx)(Ma, { children: /* @__PURE__ */ (0, Q.jsx)(a, {
 			environment: s,
-			children: /* @__PURE__ */ (0, Q.jsx)(a, {
+			children: /* @__PURE__ */ (0, Q.jsx)(l, {
 				session: e,
 				children: /* @__PURE__ */ (0, Q.jsx)(Ei, { router: o })
 			})
