@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Cabane app bug or feature request
+    url: https://github.com/cabane-app/cabane/issues/new/choose
+    about: Floor plans, 3D rendering, furniture, models, lighting, device controls, and app features, including in the HA panel.

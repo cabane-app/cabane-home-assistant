@@ -138,7 +138,16 @@ not a backup.
 | Changes are missing on another device | Open the same workspace and enable auto-sync, or choose Load. |
 | Loading reports that `outdoorPlatforms` or `edgeColor` is not part of the HomeProject schema | The receiving frontend is older than the saved home. Update the integration to 0.3.4 or newer, restart HA and reload the panel. On cabane.my, reload the website in the receiving browser. Keep the saved copy; no manual JSON edits are needed. |
 
-Still stuck? [Open an issue](https://github.com/cabane-app/cabane-home-assistant/issues).
+### Where to report an issue
+
+- **[Home Assistant integration](https://github.com/cabane-app/cabane-home-assistant/issues/new/choose):**
+  HACS installation or updates, integration setup, the sidebar panel failing to
+  load, and workspace storage or sync on Home Assistant.
+- **[Cabane app](https://github.com/cabane-app/cabane/issues/new/choose):**
+  floor plans, 3D rendering, furniture, models, lighting, device controls, and app
+  feature requests. Use this repository even if you use Cabane inside Home Assistant.
+
+If you are unsure, report it in the main Cabane repository and we can help route it.
 Do not attach credentials or private workspace backups.
 
 ## Development
