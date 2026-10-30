@@ -18,6 +18,8 @@ class SetupTests(unittest.IsolatedAsyncioTestCase):
         store_module.Store = lambda hass, version, key: MemoryStore()
         websocket = types.ModuleType("custom_components.cabane.websocket")
         websocket.register_commands = lambda hass, store: self.handlers.append(store)
+        agent = types.ModuleType("custom_components.cabane.agent_transport")
+        agent.register_agent_relay = lambda hass: None
         config_entries = types.ModuleType("homeassistant.config_entries")
         config_entries.SOURCE_IMPORT = "import"
         self.panel = types.ModuleType("custom_components.cabane.panel")
@@ -32,6 +34,7 @@ class SetupTests(unittest.IsolatedAsyncioTestCase):
             "homeassistant.helpers.event": event_module,
             "homeassistant.config_entries": config_entries,
             "custom_components.cabane.websocket": websocket,
+            "custom_components.cabane.agent_transport": agent,
             "custom_components.cabane.panel": self.panel,
         }
         self.module_patch = patch.dict(sys.modules, modules)

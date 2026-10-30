@@ -97,6 +97,23 @@ save it to Home Assistant or export a private workspace backup on cabane.my,
 then import it in the panel. If the workspace connects to a different Home
 Assistant instance, change that connection explicitly.
 
+## Connect an LLM agent
+
+The Cabane panel can pair an external agent with its open workspace. Choose
+**Connect LLM agent → Generate pairing code** from that workspace's menu, then
+run the displayed `npm run agent:pair` command in a matching Cabane checkout.
+The agent and browser may use different devices that can reach this HA instance.
+
+The relay runs inside this integration. It forwards requests over the panel's
+existing HA WebSocket, and the panel executes the same editing actions as the UI.
+The agent receives a temporary Cabane relay token, never your HA access token.
+Pairing codes expire after five minutes and can be used once. Sessions expire
+after eight hours and are revoked when the editor disconnects or HA restarts.
+Keep the paired editor open. Changes stay in the draft until explicitly saved.
+
+This feature requires the matching agent-enabled frontend and CLI (protocol 3).
+See [the relay protocol](docs/agent-relay.md) for transport and security details.
+
 ## Updates and migration
 
 Update through HACS, restart Home Assistant, then reload your browser or the

@@ -19,6 +19,7 @@ async def async_setup(hass, config):
     from .model_assets import ModelAssetStore
     from .storage import WorkspaceStore
     from .websocket import register_commands
+    from .agent_transport import register_agent_relay
 
     # Commands capture this store, so both must live for the HA process lifetime.
     # Panel failure/unload must not reset storage or register duplicate handlers.
@@ -33,6 +34,7 @@ async def async_setup(hass, config):
         async_track_time_interval(hass, cleanup, timedelta(hours=1))
         register_commands(hass, store)
         hass.data[DOMAIN] = store
+        register_agent_relay(hass)
     if DOMAIN in config:
         hass.async_create_task(
             hass.config_entries.flow.async_init(
