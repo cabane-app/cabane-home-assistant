@@ -99,9 +99,27 @@ Assistant instance, change that connection explicitly.
 
 ## Connect an LLM agent
 
-The Cabane panel can pair an external agent with its open workspace. Choose
-**Connect LLM agent → Generate pairing code** from that workspace's menu, then
-run the displayed `npm run agent:pair` command in a matching Cabane checkout.
+Bootstrap a home by giving your coding agent a floor plan or a description.
+It can draw the architecture and place furniture in the open Cabane editor,
+where you can watch, adjust and undo the changes.
+
+1. Open **Cabane** from the HA sidebar and create or choose a workspace.
+2. In **Workspaces**, open that home's **••• → Connect LLM agent → Generate
+   pairing code**.
+3. Give your agent a [Cabane checkout with Node.js and npm](https://github.com/cabane-app/cabane#run-locally).
+   Run the displayed `npm run agent:pair` command from that checkout and keep
+   the editor open. A separate Cabane development server is not needed.
+4. Give the agent your plan, dimensions and instructions. For architecture,
+   use [build-floor-layout](https://github.com/cabane-app/cabane/blob/main/.agents/skills/build-floor-layout/SKILL.md)
+   and review the unfurnished floor before furnishing it.
+
+After pairing, the agent can discover commands and inspect the draft:
+
+```sh
+npm run agent:request -- --method get_capabilities --pretty
+npm run agent:inspect -- --pretty
+```
+
 The agent and browser may use different devices that can reach this HA instance.
 
 The relay runs inside this integration. It forwards requests over the panel's
@@ -109,7 +127,8 @@ existing HA WebSocket, and the panel executes the same editing actions as the UI
 The agent receives a temporary Cabane relay token, never your HA access token.
 Pairing codes expire after five minutes and can be used once. Sessions expire
 after eight hours and are revoked when the editor disconnects or HA restarts.
-Keep the paired editor open. Changes stay in the draft until explicitly saved.
+Keep the paired editor open. Edits autosave to the browser draft; **Save**
+publishes them. Enable HA storage separately to sync the home to other devices.
 
 This feature requires the matching agent-enabled frontend and CLI (protocol 3).
 See [the relay protocol](docs/agent-relay.md) for transport and security details.
