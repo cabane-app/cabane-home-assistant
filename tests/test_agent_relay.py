@@ -6,6 +6,7 @@ from custom_components.cabane.agent_relay import (
     AgentRelay,
     RelayError,
     MAX_REQUEST_BYTES,
+    MAX_RESPONSE_BYTES,
 )
 
 
@@ -143,6 +144,15 @@ class RelayTests(unittest.IsolatedAsyncioTestCase):
             await self.relay.request(session, "inspect_workspace", {})
         self.assertEqual(caught.exception.status, 429)
         request_id = next(iter(session.pending))
+        with self.assertRaises(RelayError) as caught:
+            self.relay.respond(
+                session.id,
+                self.owner,
+                request_id,
+                {"ok": True, "result": {"data": "x" * MAX_RESPONSE_BYTES}},
+            )
+        self.assertEqual(caught.exception.status, 413)
+        self.assertFalse(session.pending[request_id].done())
         self.relay.respond(
             session.id,
             self.owner,

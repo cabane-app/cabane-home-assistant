@@ -45,7 +45,8 @@ can answer requests. Sessions, codes, tokens and request contents stay in memory
 and are not logged or persisted by the relay.
 
 The relay limits pairing to 60 attempts per minute, 32 open sessions, 16 pending
-requests per session, 128 KiB requests and 8 MiB responses. A request times out
+requests per session, 128 KiB requests and 2 MiB responses. The panel rejects
+oversized responses before sending them to keep HA's WebSocket connected. A request times out
 after 30 seconds and is never retried automatically. An accepted edit may still
 finish after a timeout; inspect the draft before repeating a mutation.
 

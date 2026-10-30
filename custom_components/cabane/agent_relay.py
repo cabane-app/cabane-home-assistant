@@ -14,7 +14,7 @@ PAIRING_SECONDS = 300
 SESSION_SECONDS = 8 * 60 * 60
 REQUEST_SECONDS = 30
 MAX_REQUEST_BYTES = 128 * 1024
-MAX_RESPONSE_BYTES = 8 * 1024 * 1024
+MAX_RESPONSE_BYTES = 2 * 1024 * 1024
 
 
 class RelayError(Exception):
@@ -27,7 +27,14 @@ def json_object(value, limit):
     if not isinstance(value, dict):
         raise RelayError("Expected a JSON object.")
     try:
-        if len(json.dumps(value, allow_nan=False).encode()) > limit:
+        if (
+            len(
+                json.dumps(
+                    value, allow_nan=False, ensure_ascii=False, separators=(",", ":")
+                ).encode()
+            )
+            > limit
+        ):
             raise RelayError("The relay message is too large.", 413)
     except (TypeError, ValueError, RecursionError) as error:
         raise RelayError("The relay message must be JSON.") from error
