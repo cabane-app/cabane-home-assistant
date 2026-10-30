@@ -53329,7 +53329,7 @@ var rV = (0, p.memo)(function({ activeFloorId: e, floorView: t, selectedRoomId: 
 		}, s = (e) => {
 			let t = e.composedPath()[0] ?? e.target;
 			if (!(t instanceof HTMLElement && (t.isContentEditable || t.closest("input, textarea, select")))) {
-				if (e.code === "Space") {
+				if (e.stopPropagation(), e.code === "Space") {
 					e.preventDefault(), !e.repeat && !a.has("Space") && r && (r.current = !0), a.add("Space");
 					return;
 				}
@@ -53347,7 +53347,7 @@ var rV = (0, p.memo)(function({ activeFloorId: e, floorView: t, selectedRoomId: 
 				].includes(e.code) && (e.preventDefault(), a.add(e.code), o());
 			}
 		}, c = (e) => {
-			a.delete(e.code), o();
+			e.stopPropagation(), a.delete(e.code), o();
 		}, l = () => {
 			a.clear(), r && (r.current = !1), o();
 		}, u = (e) => {
@@ -80807,8 +80807,10 @@ function e8({ manifest: e, floor: t, runtime: n, resolvedBindings: r, deviceMode
 //#endregion
 //#region packages/engine/src/request-walk-pointer-lock.ts
 function t8(e) {
-	let t = e.getRootNode();
-	return t.pointerLockElement === e ? Promise.resolve() : new Promise((n, r) => {
+	let t = e.getRootNode(), n = () => {
+		e.hasAttribute("tabindex") || (e.tabIndex = -1), e.focus({ preventScroll: !0 });
+	};
+	return t.pointerLockElement === e ? (n(), Promise.resolve()) : new Promise((n, r) => {
 		let i = () => {
 			clearTimeout(s), document.removeEventListener("pointerlockchange", o), document.removeEventListener("pointerlockerror", a);
 		}, a = () => {
@@ -80827,7 +80829,7 @@ function t8(e) {
 		} catch {
 			a();
 		}
-	});
+	}).then(n);
 }
 //#endregion
 //#region packages/engine/src/useDashboardWalk.ts

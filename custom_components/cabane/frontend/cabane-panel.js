@@ -1,6 +1,6 @@
 import { r as e } from "./assets/rolldown-runtime-B0aSnxlc.js";
-import { $t as t, B as n, Cr as r, D as i, Da as a, Ea as o, Fr as s, Ft as c, G as l, H as u, It as d, J as f, K as p, Lt as m, Mn as h, Mr as g, Nr as _, Nt as v, Pr as y, Pt as b, Rt as x, Sr as S, V as C, X as w, _r as T, ba as E, br as D, dr as O, in as k, l as A, mn as j, mr as M, on as N, q as ee, qt as P, rn as te, w as ne, wa as F, wr as re, yr as ie, z as ae } from "./assets/LaserIcon-CwMkoGXe.js";
-import { A as I, B as L, E as R, H as oe, I as se, K as ce, L as le, N as z, O as ue, P as B, R as de, S as fe, U as pe, W as me, _ as he, d as ge, f as _e, g as ve, h as ye, j as be, k as V, m as xe, n as Se, s as Ce, t as we, v as Te, z as Ee } from "./assets/ShortcutDeviceIcon-CpNtYCXu.js";
+import { $t as t, B as n, Cr as r, D as i, Da as a, Ea as o, Fr as s, Ft as c, G as l, H as u, It as d, J as f, K as p, Lt as m, Mn as h, Mr as g, Nr as _, Nt as v, Pr as y, Pt as b, Rt as x, Sr as S, V as C, X as w, _r as T, ba as E, br as D, dr as O, in as k, l as A, mn as j, mr as M, on as N, q as ee, qt as P, rn as te, w as ne, wa as F, wr as re, yr as ie, z as ae } from "./assets/LaserIcon-CWcHrvsH.js";
+import { A as I, B as L, E as R, H as oe, I as se, K as ce, L as le, N as z, O as ue, P as B, R as de, S as fe, U as pe, W as me, _ as he, d as ge, f as _e, g as ve, h as ye, j as be, k as V, m as xe, n as Se, s as Ce, t as we, v as Te, z as Ee } from "./assets/ShortcutDeviceIcon-DFvKs-Re.js";
 //#region node_modules/react-router/dist/development/chunk-BV7QT456.mjs
 var H = /* @__PURE__ */ e(a(), 1), De = (e) => {
 	throw TypeError(e);
@@ -6199,7 +6199,7 @@ function Jo({ record: e, lifecycle: t, origin: n, onChangeOrigin: r, onRecordCha
 }
 //#endregion
 //#region apps/web/src/RoutedHomeEditor.tsx
-var Yo = (0, H.lazy)(() => import("./assets/HomeEditor-B8__6aYg.js").then((e) => ({ default: e.HomeEditor })));
+var Yo = (0, H.lazy)(() => import("./assets/HomeEditor-D8epZJ4y.js").then((e) => ({ default: e.HomeEditor })));
 function Xo({ onClose: e, ...t }) {
 	let n = X(), r = Jr(), i = (0, H.useMemo)(() => ({
 		...n.state?.editorRequest,
