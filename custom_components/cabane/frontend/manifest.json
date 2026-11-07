@@ -3,10 +3,10 @@
   "kind": "cabane-native-ha-panel",
   "element": "cabane-panel",
   "entrypoint": "cabane-panel.js",
-  "source_commit": "bcca49307804589ea97fab2ad30576d24493ff91",
+  "source_commit": "5a3bf36d5924816ecb3f6cd5cd1bf1ae6b2bf294",
   "workspace_contract": {
-    "revision": 36,
-    "fingerprint": "c2f99daa12cfcff015820c42e74fabce36216ad318dfbce948609cd041f22523"
+    "revision": 37,
+    "fingerprint": "6a324a47ef170799a2da3e67503650776bfbfad4e0e29b114682cef277569cd1"
   },
   "files": {
     "assets/all-lights-JYR1gTtZ.png": "e64ae654a2a706ae6a95fff00d62023a6b875a326e9c231731f8e4b343e0357d",
@@ -19,10 +19,10 @@
     "assets/day-night-BRykFV9D.png": "9efa4d7b9a15649ad4fd5153393e4101e41e6b88e7dc044cf29503b95861687a",
     "assets/examine-room-CyJ4vd0e.png": "167dc217cd31d12c5daea0ddf25838480b790d5f500d010c008b36bbeae7a71b",
     "assets/geometry-lod.worker-DiHITZ_3.js": "007a253b22e7bd6fbda95ce1ec5449ea363ffda3891953402160565620328c19",
-    "assets/HomeEditor-vQ1UNoaM.js": "1fbc17cf9f8f7a24c6fdf5c00edb11d2bb295549805665a840069910b468936a",
+    "assets/HomeEditor-DdMHs0nD.js": "c2dbcf081fc90a00e5669624291fbeb403078647a319fad2cc848de07410eb44",
     "assets/laser-icon-BIKG0zVS.png": "4aa3475f334e7356152b57a50a026a382955297b3c231e5de6badb6a48980ad8",
-    "assets/LaserIcon-OGRfhhet.js": "3fcb65b60b6bd53673e9e640b03ed881c6271a74cde650bfbbfb06984279a76a",
-    "assets/LaserWalkTool-Dw7WDioD.js": "a780fd2f025a1474a52d0adcff72072e874f08445cce5a0814abd48d2283fa91",
+    "assets/LaserIcon-BUQk4r_d.js": "0453ca2ed9c801b2254bae5e578584c09fcad507f7d21299ae23d692d5514887",
+    "assets/LaserWalkTool-NDkyxe75.js": "e738f8343dea1214bb84b1f51a700f6b73f1753f67297305678d1bc832a9c7ce",
     "assets/materialdesignicons-webfont-Dp5v-WZN.woff2": "662fefa8f2f8a95c18588d21774789c107c64e771cbe65a69af46291c4311afc",
     "assets/photo-to-model-CxSu2HMg.png": "1376f89ef0e44c72847b1fb43bc1449cca2bfc32423bf79036e7ea05249b85ae",
     "assets/provence-village-DmKTh2BT.png": "ce02b6e79e1be744c181863ddff3d4d252aa630200779b4a1b7441fc46f4f283",
@@ -44,8 +44,8 @@
     "assets/weather-thunderstorm-CcvoPxUh.png": "358e786ac59ea007964be7a92c34dbbc315633f5a8b20bfe1c6e9d3f50d36548",
     "cabane-fonts.css": "4da53835a22e87d4afb23df400215277b4791c1301614f897e030b7cf74022d2",
     "cabane-icon.png": "7b99e53cf6aa96a44377563d5ff2db7548bd15ae79b8237c3c0ed05169d9f92b",
-    "cabane-panel.css": "b9f2f18e1940e3dec4e80bd34055973fd677655bc972cb2014f19a66b264bcbb",
-    "cabane-panel.js": "b259768a99e754f606ddb9d00e3b9e51feac543848c10a48bf3e8b15497c89ad",
+    "cabane-panel.css": "c1881357add30dd61f29c73f060202c75d48bf45e270aaf0bf01a6c07dcacf7d",
+    "cabane-panel.js": "e90649a00b1b4e4f4cd793daae7572303e158984a51c6059ae979c9c161cff09",
     "LICENSE": "ffcca38841adb694b6f380647e15f17c446a4d1656fed51a1e2041d064c94cc8",
     "onboarding/build.png": "0922e02c25ce3ba7b0839c0b8a22cac674ff3616ed02771e5136545e43d20c41",
     "onboarding/connect.png": "3d58958b582fb88efda8b64ca6c3aaa9b36a5dde530dc209dfda38acc514df3a",
