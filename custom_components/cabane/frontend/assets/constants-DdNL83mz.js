@@ -1,0 +1,1 @@
+var e=parseInt(`182`.replace(/\D+/g,``));export{e as t};
